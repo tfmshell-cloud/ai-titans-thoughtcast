@@ -484,7 +484,318 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
-  </style>
+  
+    /* Main View Navigation Tabs */
+    .main-nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .main-tab-btn {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .main-tab-btn:hover {
+      color: var(--text-primary);
+      background: var(--surface-hover);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+    .main-tab-btn.active {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--cyan);
+      border-color: var(--cyan);
+      font-weight: 600;
+    }
+
+    /* 10 Titans Cards Grid */
+    .titans-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 900px) {
+      .titans-cards-grid { grid-template-columns: 1fr; }
+    }
+
+    .titan-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      position: relative;
+    }
+    .titan-card:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .card-header-row {
+      display: flex;
+      gap: 0.85rem;
+      align-items: center;
+    }
+    .avatar-wrapper {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .titan-avatar-img {
+      width: 58px;
+      height: 58px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+    }
+    .avatar-badge {
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--cyan);
+      font-family: var(--mono);
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+
+    .card-title-group {
+      flex: 1;
+      min-width: 0;
+    }
+    .titan-card-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .titan-card-latin {
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .titan-card-role {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-tags {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+    .archetype-tag {
+      background: rgba(167, 139, 250, 0.12);
+      color: var(--purple);
+      border: 1px solid rgba(167, 139, 250, 0.25);
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .ep-tag {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--cyan);
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--mono);
+    }
+
+    .quote-preview-box {
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 2.5px solid var(--amber);
+      padding: 7px 10px;
+      border-radius: 0 6px 6px 0;
+      font-size: 11.5px;
+      color: #e2e8f0;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .card-action-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .btn-card-action {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.15s;
+    }
+    .btn-card-action:hover {
+      background: var(--surface-hover);
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+    .btn-card-action.primary {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: rgba(56, 189, 248, 0.35);
+      color: var(--cyan);
+    }
+    .btn-card-action.primary:hover {
+      background: var(--cyan);
+      color: #0b0d13;
+    }
+
+    /* DaVinci Card Matrix */
+    .davinci-card-matrix {
+      background: rgba(12, 14, 20, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .davinci-matrix-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .davinci-chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .d-chip {
+      background: var(--surface);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      color: var(--emerald);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .d-chip .d-lbl {
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    /* Modal Avatar header */
+    .modal-avatar-thumb {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .modal-header-flex {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      flex: 1;
+    }
+
+    /* Theses list styling in modal and catalog */
+    .theses-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .thesis-item {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 8px 12px;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      transition: border-color 0.15s;
+    }
+    .thesis-item:hover {
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+    .thesis-num {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      color: var(--cyan);
+      background: rgba(56, 189, 248, 0.08);
+      padding: 1px 5px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .thesis-body {
+      flex: 1;
+    }
+    .thesis-cat {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 2px;
+    }
+    .thesis-text {
+      font-size: 12px;
+      color: var(--text-primary);
+      line-height: 1.45;
+    }
+    .quote-card {
+      background: rgba(251, 191, 36, 0.04);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      border-left: 3px solid var(--amber);
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .quote-card-text {
+      font-size: 12px;
+      font-style: italic;
+      color: #f8fafc;
+      line-height: 1.4;
+    }
+</style>
 </head>
 <body>
 
@@ -528,13 +839,36 @@
     <div class="dashboard-grid">
       <!-- Left Column: Titans Interactive Table -->
       <section class="card">
+        <!-- Main Navigation Tabs -->
+      <nav class="main-nav-tabs">
+        <button class="main-tab-btn active" onclick="switchMainTab('titans', this)">🎴 10 Титанів ШІ (Блоки з фото)</button>
+        <button class="main-tab-btn" onclick="switchMainTab('thesesCatalog', this)">📜 Каталог 100 цитат і тез</button>
+        <button class="main-tab-btn" onclick="switchMainTab('davinciStudio', this)">🎛️ DaVinci Resolve Студія</button>
+        <button class="main-tab-btn" onclick="switchMainTab('audioDep', this)">🎙️ Аудіо-цех (VO & Suno)</button>
+        <button class="main-tab-btn" onclick="switchMainTab('videoDep', this)">🎬 Відео-цех (Veo 2 & Flow)</button>
+      </nav>
+
+      <!-- TAB 1: 10 TITANS (Cards & Table) -->
+      <div id="tabTitans" class="main-tab-content">
         <div class="filter-bar">
           <div>
-            <span class="section-title">Реєстр персоналій AI Titans (Клікніть для сценарію)</span>
-            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Повні режисерські сценарії, промпти, SFX та аудіо-паспорти</p>
+            <span class="section-title">10 Блоків персоналій AI Titans</span>
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Фотографії, цитати, тези, архітектура DaVinci Resolve та 4-актні режисерські сценарії</p>
           </div>
-          <input type="text" id="searchInput" class="search-input" placeholder="Фільтр персоналій..." oninput="filterTitans()">
+          <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+            <div style="display: inline-flex; background: var(--surface-elevated); border: 1px solid var(--border); border-radius: 6px; padding: 2px;">
+              <button id="viewBtnCards" class="btn" style="background: var(--surface); color: var(--cyan); border: none; font-size: 11px; padding: 3px 8px;" onclick="toggleTitansView('cards')">🎴 Блоки (10)</button>
+              <button id="viewBtnTable" class="btn" style="background: transparent; color: var(--text-secondary); border: none; font-size: 11px; padding: 3px 8px;" onclick="toggleTitansView('table')">📋 Таблиця</button>
+            </div>
+            <input type="text" id="searchInput" class="search-input" placeholder="Пошук серед 10 титанів..." oninput="filterTitans()">
+          </div>
         </div>
+
+        <!-- 10 Visual Character Cards -->
+        <div id="titansCardsGrid" class="titans-cards-grid"></div>
+
+        <!-- Classic Table (Toggleable) -->
+        <div id="titansTableWrap" class="table-wrap" style="display: none; margin-top: 0.75rem;">
 
         <div class="table-wrap">
           <table id="titansTable">
@@ -552,7 +886,108 @@
             </tbody>
           </table>
         </div>
-      </section>
+      </div> <!-- /tabTitans -->
+
+      <!-- TAB 2: 100 THESES CATALOG -->
+      <div id="tabThesesCatalog" class="main-tab-content" style="display: none;">
+        <div class="filter-bar">
+          <div>
+            <span class="section-title">Повний каталог 100 тез та цитат AI Titans</span>
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Фундаментальні цитати, філософські тези та ментальні моделі всіх 10 лідерів індустрії</p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+            <select id="thesesSpeakerFilter" class="search-input" style="width: 170px;" onchange="renderThesesCatalog()">
+              <option value="all">Всі 10 титанів (100 тез)</option>
+              <option value="01">Сем Альтман</option>
+              <option value="02">Дженсен Хуанг</option>
+              <option value="03">Деміс Гассабіс</option>
+              <option value="04">Джеффрі Хінтон</option>
+              <option value="05">Ян Лекун</option>
+              <option value="06">Ілля Суцкевер</option>
+              <option value="07">Даріо Амодей</option>
+              <option value="08">Фей-Фей Лі</option>
+              <option value="09">Йошуа Бенжіо</option>
+              <option value="10">Ендрю Ин</option>
+            </select>
+            <input type="text" id="thesesSearchInput" class="search-input" placeholder="Пошук у тезах..." oninput="renderThesesCatalog()">
+          </div>
+        </div>
+        <div id="thesesCatalogBody" style="display: flex; flex-direction: column; gap: 0.75rem;"></div>
+      </div>
+
+      <!-- TAB 3: DAVINCI RESOLVE MASTER STUDIO -->
+      <div id="tabDavinciStudio" class="main-tab-content" style="display: none;">
+        <div class="section-head">
+          <span class="section-title">Майстер-пайплайн DaVinci Resolve 19 Studio</span>
+          <span class="badge badge-done">4K Scope 2.39:1 &bull; Fairlight Sidechain</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <!-- Audio Bus Routing -->
+          <div class="act-block">
+            <div class="act-head-row">
+              <span class="act-heading">🎙️ Fairlight Audio Routing & Ducking Архітектура</span>
+              <span class="act-music">Master Bus (-14 LUFS YouTube)</span>
+            </div>
+            <div style="font-size: 12px; line-height: 1.5; color: var(--text-secondary); padding: 8px 12px;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 11.5px;">
+                <tr style="border-bottom: 1px solid var(--border);">
+                  <th style="padding: 4px 6px;">Доріжка</th>
+                  <th style="padding: 4px 6px;">Призначення</th>
+                  <th style="padding: 4px 6px;">Обробка</th>
+                  <th style="padding: 4px 6px;">Sidechain</th>
+                </tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--cyan);">A1: VO UK</td><td style="padding: 4px 6px;">Український диктор (115 wpm)</td><td style="padding: 4px 6px;">FabFilter Pro-Q3, LA-2A, De-Esser</td><td style="padding: 4px 6px; color: var(--amber);">Key Source (Send 1)</td></tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--cyan);">A2: VO EN</td><td style="padding: 4px 6px;">Англійський диктор ElevenLabs v2</td><td style="padding: 4px 6px;">FabFilter Pro-Q3, Tube Comp</td><td style="padding: 4px 6px; color: var(--amber);">Key Source (Send 2)</td></tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--emerald);">A3: Suno Main</td><td style="padding: 4px 6px;">Suno Pro 92 BPM Stems (Theme 1-3)</td><td style="padding: 4px 6px;">Dynamic EQ, -3.2 dB Ducking</td><td style="padding: 4px 6px; color: var(--emerald);">Ducking (-3.2 dB, 40ms attack)</td></tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--emerald);">A4: Suno Ambient</td><td style="padding: 4px 6px;">Ембієнт та Rhodes підкладки</td><td style="padding: 4px 6px;">Valhalla VintageVerb, Low-pass 4kHz</td><td style="padding: 4px 6px;">-5 dB Ducking</td></tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--purple);">A5: SFX Foley</td><td style="padding: 4px 6px;">Реле CRT, клавіші, папір</td><td style="padding: 4px 6px;">Stereo Imager, Transient Shaper</td><td style="padding: 4px 6px;">Прямий вихід на Bus 1</td></tr>
+                <tr><td style="padding: 4px 6px; font-weight: 600; color: var(--purple);">A6: SFX Sub</td><td style="padding: 4px 6px;">40Hz суб-дропи на кульмінаціях</td><td style="padding: 4px 6px;">Sub-harmonic Synth, Mono Low</td><td style="padding: 4px 6px;">Sub Bus</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Color Pipeline -->
+          <div class="act-block">
+            <div class="act-head-row">
+              <span class="act-heading">🎞️ DaVinci Color: 4-Node Кінематографічна Градація</span>
+              <span class="act-music">Kodak 2383 D60 Print Film Look</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; padding: 8px 12px;">
+              <div class="step-item done"><span class="step-num">Node 1</span><span class="step-name">CST Вхід</span><span class="step-state">Log/RAW -> Rec.709</span></div>
+              <div class="step-item done"><span class="step-num">Node 2</span><span class="step-name">Експозиція</span><span class="step-state">Баланс білого & Lift/Gamma</span></div>
+              <div class="step-item done"><span class="step-num">Node 3</span><span class="step-name">Print LUT</span><span class="step-state">Kodak 2383 D60 Film Look</span></div>
+              <div class="step-item done"><span class="step-num">Node 4</span><span class="step-name">OFX Grain</span><span class="step-state">35mm Film Grain (35% mix)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: AUDIO WORKSHOP -->
+      <div id="tabAudioDep" class="main-tab-content" style="display: none;">
+        <div class="section-head">
+          <span class="section-title">Аудіо-цех: YouTube Multi-Language & ElevenLabs</span>
+          <span class="badge badge-done">115 слів/хв &bull; SSML XML</span>
+        </div>
+        <div class="act-block" style="padding: 10px 12px;">
+          <div style="font-size: 12px; line-height: 1.5; color: var(--text-secondary);">
+            <p><strong>YouTube Multi-Language Audio:</strong> Відео завантажується один раз, з двома звуковими доріжками (UA як основна, EN як додаткова). Глядач чує рідну мову автоматично.</p>
+            <div style="margin-top: 8px; display: flex; gap: 8px;">
+              <button class="btn btn-primary" onclick="copyText('03_AUDIO/AUDIO_ENGINEERING_GUIDE.md')">Копіювати шлях до інструкції</button>
+              <button class="btn" onclick="copyText('03_AUDIO/AUDIO_PASSPORTS_EP01_EP05.md')">Аудіо-паспорти EP01-EP05</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: VIDEO PROMPTS WORKSHOP -->
+      <div id="tabVideoDep" class="main-tab-content" style="display: none;">
+        <div class="section-head">
+          <span class="section-title">Відео-цех: Генерація 4K кадрів у Google Flow & Veo 2</span>
+          <span class="badge badge-done">13-17 промптів / епізод</span>
+        </div>
+        <div id="allPromptsList" style="display: flex; flex-direction: column; gap: 0.6rem;"></div>
+      </div>
+    </section>
 
       <!-- Right Column: Project Files -->
       <aside class="card">
@@ -592,16 +1027,20 @@
   <div class="modal-backdrop" id="scriptModal" onclick="closeModalOnBackdrop(event)">
     <div class="modal-box" onclick="event.stopPropagation()">
       <div class="modal-header">
-        <div class="modal-title-group">
-          <h2 id="modalTitanTitle">Сем Альтман</h2>
-          <p id="modalTitanSubtitle">Епізод 01 &bull; «Анатомія експоненти»</p>
-          <div class="modal-meta-pills" id="modalMetaPills"></div>
+        <div class="modal-header-flex">
+          <img id="modalTitanAvatar" class="modal-avatar-thumb" src="assets/avatars/sam_altman.jpg" alt="Avatar">
+          <div class="modal-title-group">
+            <h2 id="modalTitanTitle">Сем Альтман</h2>
+            <p id="modalTitanSubtitle">Епізод 01 &bull; «Анатомія експоненти»</p>
+            <div class="modal-meta-pills" id="modalMetaPills"></div>
+          </div>
         </div>
         <button class="btn-close" onclick="closeModal()" title="Закрити (Esc)">&times;</button>
       </div>
 
       <div class="modal-tabs">
-        <button class="modal-tab-btn active" onclick="switchModalTab('script', this)">📜 Сценарій (Акти)</button>
+        <button class="modal-tab-btn active" onclick="switchModalTab('theses', this)">💬 Цитати та тези</button>
+        <button class="modal-tab-btn" onclick="switchModalTab('script', this)">📜 Режисерський сценарій</button>
         <button class="modal-tab-btn" onclick="switchModalTab('prompts', this)">🎬 Відео-промпти Veo/Flow</button>
         <button class="modal-tab-btn" onclick="switchModalTab('suno', this)">🎵 Suno Pro (92 BPM)</button>
         <button class="modal-tab-btn" onclick="switchModalTab('davinci', this)">🎚️ DaVinci Паспорт</button>
@@ -619,6 +1058,13 @@
       {
         id: "01_altman",
         ep: "01",
+        avatar: "assets/avatars/sam_altman.jpg",
+        role: "Співзасновник та CEO OpenAI",
+        archetype: "Архітектор експоненти & Горизонт AGI",
+        key_quote: "«Ми не зможемо врятувати світ, якщо у нас банально не вистачить обчислювальних потужностей перевірити власні рівняння».",
+        quotes: ["«Ми не зможемо врятувати світ, якщо у нас банально не вистачить обчислювальних потужностей перевірити власні рівняння».", "«Якщо ви не вірите у власну здатність змінювати правила гри, ніхто за вас у це не повірить. Експонента винагороджує лише тих, хто ставить усе на кін».", "«Ця машина розмила лінію між моїм внутрішнім світом і всесвітом. Я зрозумів: світ не зафіксований назавжди. Його можна перепрограмувати».", "«Більшість людей переоцінюють те, що можуть зробити за рік, і катастрофічно недооцінюють те, що здатні створити за десять років наполегливої праці».", "«Справжній ризик — це грати надто обережно, коли світ навколо вас рухається експоненціально».", "«Головна валюта майбутнього — це обчислення та гігавати чистої енергії. Той, хто контролює кремній і вольти, формує архітектуру мислення людства».", "«У момент кризи листопада 2023 року я побачив головне: компанію тримають не статути директорів, а непохитна віра команди у спільну місію».", "«Створення AGI — це не просто запуск великої програми. Це точка біфуркації для всієї цивілізації, і ми зобов'язані зробити її безпечною для кожного».", "«Ніколи не оптимізуйте те, що має бути повністю знищено та перебудовано з нуля».", "«Якщо ви рухаєтеся туди, де всі вже погоджуються з вами — ви вже запізнилися. Шукайте правду в точках найбільшого опору консенсусу»."],
+        theses: [{"num": 1, "cat": "Філософія експоненти", "text": "Людський мозок еволюційно лінійний; здатність мислити експонентами — це рідкісна набута ментальна модель, що відокремлює архітекторів майбутнього від спостерігачів."}, {"num": 2, "cat": "Ірраціональна віра", "text": "Впевненість у власній здатності змінити правила гри має передувати першим успіхам, інакше скептицизм середовища розчавить проект на ранній стадії."}, {"num": 3, "cat": "Масштабування vs Оптимізація", "text": "Коли традиційна академія шукає складні математичні лазівки, інженерний прорив часто лежить у грубому, нещадному масштабуванні базових перевірених архітектур."}, {"num": 4, "cat": "Обчислювальний імператив", "text": "Обмеження людського інтелекту полягає не в біології, а в дефіциті обчислень; дайте моделі достатньо кремнію та енергії, і вона знайде закономірності вищого порядку."}, {"num": 5, "cat": "Енергетичний кластер", "text": "AGI невіддільний від фізики: наступна ера ШІ вимагатиме гігаватних дата-центрів, атомних реакторів та інфраструктури рівня Stargate."}, {"num": 6, "cat": "Управління кризами", "text": "Криза виявляє справжню лояльність: жоден контракт не замінить корпоративної культури, побудованої на відчутті дотику до історичної місії."}, {"num": 7, "cat": "Гіпотеза капіталу", "text": "Некомерційні структури не можуть побудувати AGI без трильйонного капіталу; гібридна capped-profit структура стала вимушеним мостом між ідеалізмом та інженерною реальністю."}, {"num": 8, "cat": "Довгостроковий фокус", "text": "Щоденна суєта новин та короткострокових квартальних звітів — ворог фундаментальних відкриттів; справжні ігри тривають десятиліттями."}, {"num": 9, "cat": "Демократизація інструментів", "text": "ШІ повинен стати підсилювачем інтелекту для мільярдів людей, а не монополією вузької касти технократів."}, {"num": 10, "cat": "Точка сингулярності", "text": "Перехід від вузького ШІ до загального інтелекту відбудеться раніше, ніж суспільні інститути встигнуть адаптувати свої закони та мораль."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Розмічено під темп 115 слів/хв, SSML розмітка, Multi-Language UK/EN", "ready": true}, "suno": {"status": "100% Готово", "desc": "3 стем-теми 92 BPM: Theme 1 Introspection, Theme 2 Tension, Theme 3 Triumph", "ready": true}, "sfx": {"status": "100% Готово", "desc": "CRT розгортка, реле Macintosh LC II, 40Hz саб-дропи, клацання кнопок", "ready": true}, "video_prompts": {"status": "17 промптів готово", "desc": "Veo 2 & Google Flow (Kodak 2383 D60, 35mm grain, 4k 24fps)", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Архівні фото 1993 р., Стенфорд, Y Combinator, рада директорів OpenAI 2023", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 20:30, точний дикторський таймінг", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Timeline 4K Scope 2.39:1, 4-нодна колірна градація, Fairlight ducking -3.2 dB", "ready": true}},
         name: "Сем Альтман",
         latin: "Sam Altman",
         title: "Анатомія експоненти",
@@ -703,6 +1149,13 @@
       {
         id: "02_huang",
         ep: "02",
+        avatar: "assets/avatars/jensen_huang.jpg",
+        role: "Співзасновник та CEO NVIDIA",
+        archetype: "Коваль кремнію & Апостол терпіння",
+        key_quote: "«Я бажаю вам достатньо болю і страждань. Тому що саме страждання формують характер, а характер формує величні компанії».",
+        quotes: ["«Я бажаю вам достатньо болю і страждань. Тому що саме страждання формують характер, а характер формує величні компанії».", "«Ми завжди були за 30 днів до банкрутства. Цей щоденний страх — найкраще паливо для справжніх інновацій».", "«Байдуже, чи миєте ви посуд у нічній закусочній Denny's, чи проєктуєте чіпи на 200 мільярдів транзисторів — робіть це так, ніби від чистоти кожної тарілки залежить доля всесвіту».", "«Ніколи не йдіть туди, де вже штовхаються лікті конкурентів. Справжній інженер будує нульові ринки — ті, які сьогодні здаються божевіллям».", "«Платформа CUDA коштувала нам мільярдів доларів і десяти років збитків, коли Уолл-стріт вимагала закрити проєкт. Але ми знали: паралельні обчислення змінять науку».", "«Штучний інтелект — це не програмне забезпечення. Це нова промислова революція, де фабрики перетворюють кіловати енергії на токени інтелекту».", "«Кожна країна повинна мати власний суверенний ШІ, який зберігає її історію, мову та національні дані у власній обчислювальній інфраструктурі».", "«Програмування більше не є головною навичкою майбутнього. Комп'ютер тепер розуміє природну мову; головною навичкою стає глибина вашого проблемного мислення».", "«Закон Мура помер. Закон Хуанга показує: комбінація чіпів, алгоритмів, архітектури мереж і охолодження подвоює продуктивність кожні пів року».", "«Витривалість — це не здатність уникати ударів. Це здатність продовжувати рух уперед, коли вас щойно збили з ніг»."],
+        theses: [{"num": 1, "cat": "Філософія страждання", "text": "Легкий успіх робить інженера крихким; витривалість (grit) виковується в щоденній рутині подолання невдач і технічних криз."}, {"num": 2, "cat": "Гідність ремесла", "text": "Не існує низької чи чорної роботи — існує лише низьке ставлення до справи; досконале миття туалетів у баптистському інтернаті дало фундамент для управління світовим гігантом."}, {"num": 3, "cat": "Zero-Billion-Dollar Markets", "text": "Найбільш прибуткові ринки майбутнього в момент їх зародження не мають жодного покупця і оцінюються аналітиками в нуль доларів."}, {"num": 4, "cat": "Стратегічне терпіння", "text": "Платформа CUDA розвивалася всупереч тиску інвесторів понад десять років; вірність фундаментальним законам фізики важливіша за квартальний прибуток."}, {"num": 5, "cat": "Паралельна парадигма", "text": "Послідовні обчислення центральних процесорів вперлися в термодинамічний бар'єр; єдиний шлях до масштабування інтелекту — тотальний паралелізм GPU."}, {"num": 6, "cat": "ШІ-фабрики майбутнього", "text": "Дата-центри більше не є просто складами серверів — це енергетичні фабрики знань нового технологічного укладу цивілізації."}, {"num": 7, "cat": "Суверенний інтелект", "text": "Передача критичних даних нації на аутсорсинг чужим хмарам — це втрата цифрового суверенітету; кожна держава збудує власні кластери."}, {"num": 8, "cat": "Спрощення інтерфейсів", "text": "Людина не повинна говорити мовою машини; машина повинна розуміти тонкощі людської інтонації та культури."}, {"num": 9, "cat": "Закон Хуанга", "text": "Системне прискорення досягається не лише зменшенням нанометрів, а цілісною оптимізацією кремнію, пам'яті, оптоволокна і програмного стеку."}, {"num": 10, "cat": "Постійний статус загрози", "text": "Відчуття «ми за 30 днів до краху» рятує гігантські корпорації від закостеніння, самовдоволення та бюрократичної смерті."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Низький баритон, 115 слів/хв, акценти на витривалості та кремнієвих вибухах", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Denny's Diner, Theme 2 Silicon Crucible, Theme 3 Trillion Dollar Titan (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Шелест миття посуду, шипіння рідкого азоту, гул суперкомп'ютера DGX SuperPOD", "ready": true}, "video_prompts": {"status": "15 промптів готово", "desc": "Макро-кадри кремнієвих пластин TSMC, неонові сервери Blackwell, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Denny's 1993, перші плати RIVA 128, виступи Computex, шкіряна куртка Jensen", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:00, режисерські ремарки та таймкоди", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Колірний профіль Kodak 2383 D60, зелені неонові півтони NVIDIA, Fairlight ducking", "ready": true}},
         name: "Дженсен Хуанг",
         latin: "Jensen Huang",
         title: "Алхімія страждання та кремнію",
@@ -787,6 +1240,13 @@
       {
         id: "03_hassabis",
         ep: "03",
+        avatar: "assets/avatars/demis_hassabis.jpg",
+        role: "Співзасновник та CEO Google DeepMind, Нобелівський лауреат (2024)",
+        archetype: "Гросмейстер біокоду & Нобелівський лауреат",
+        key_quote: "«Хід 37 не належав людині. Але він не був і холодною машинною логікою. Це була іскра нової краси, народжена за межами людського досвіду».",
+        quotes: ["«Хід 37 не належав людині. Але він не був і холодною машинною логікою. Це була іскра нової краси, народжена за межами людського досвіду».", "«Вирішіть фундаментальну проблему загального інтелекту — і за його допомогою вирішіть усі інші виклики науки».", "«Шахи навчили мене бачити майбутні наслідки дій ще до того, як рука торкнеться фігури. Життя — це не випадковість, а дерево рішень».", "«Найбільший прорив DeepMind стався не тоді, коли ми купили більше серверів, а коли ми з'єднали комп'ютерні алгоритми з архітектурою людського гіпокампа».", "«AlphaFold розшифрував структуру 200 мільйонів білків за лічені місяці — роботу, на яку біологам усього світу знадобилося б мільярд років ручної праці».", "«Справжня мета науки — не створення іграшок чи чат-ботів, а розуміння природи реальності на молекулярному рівні».", "«Принцип гри проти самого себе (Self-Play) довів: коли інтелект не обмежений людськими забобонами та шаблонами, він відкриває принципово нову фізику та естетику».", "«Ми живемо в епоху переходу від пасивного спостереження за природою до активного проектування нової біології та ліків проти невиліковних хвороб».", "«Нобелівська премія 2024 року — це визнання того, що штучний інтелект став повноцінним співавтором фундаментальних відкриттів людства».", "«Не бійтеся перемикатися між дисциплінами. Полімати — це ті, хто будують мости там, де інші бачать прірву між науками»."],
+        theses: [{"num": 1, "cat": "Мета-ціль науки", "text": "Замість спроб вирішувати тисячі приватних наукових проблем окремо, ефективніше створити загальний інструмент мислення (AGI), який розв'яже їх системно."}, {"num": 2, "cat": "Нейробіологічний синтез", "text": "Штучні нейромережі стають по-справжньому потужними, коли запозичують принципи пам'яті, консолідації досвіду та уяви з біологічного мозку людини."}, {"num": 3, "cat": "Естетика алгоритмічної творчості", "text": "Знаменитий Хід 37 у грі в ґо показав: автономний алгоритм здатний вийти за межі трьох тисячоліть людської традиції і створити нову естетику."}, {"num": 4, "cat": "Self-Play як двигун еволюції", "text": "Коли агент тренується проти нескінченних копій самого себе, швидкість його розвитку обмежується лише обчислювальними ресурсами, а не людською експертизою."}, {"num": 5, "cat": "Біологічний код Всесвіту", "text": "Згортання білків було 50-річною загадкою біохімії; розв'язання цієї проблеми через AlphaFold відкрило еру цифрової фармакології."}, {"num": 6, "cat": "Поліматія та геймдев", "text": "Розробка відеоігор у 17 років навчила Гассабіса моделюванню складних світів і правил, які стали основою для віртуальних середовищ тренування агентів."}, {"num": 7, "cat": "Критичне дерево рішень", "text": "Мислення шахового гросмейстера — це звичка відсікати небезпечні гілки реальності та інвестувати сили лише у вектори з найбільшим довгостроковим потенціалом."}, {"num": 8, "cat": "ШІ як науковий партнер", "text": "Майбутнє науки — це не заміна вченого алгоритмом, а симбіоз, де людина генерує гіпотези, а машина тестує мільярди конфігурацій за секунди."}, {"num": 9, "cat": "Мультимодальність Gemini", "text": "Справжній інтелект не може бути лише текстовим; він повинен бачити, чути, аналізувати код, звук та фізичний рух у реальному часі."}, {"num": 10, "cat": "Етична відповідальність дослідника", "text": "Володіння технологіями молекулярного дизайну вимагає найсуворішого біологічного та етичного скринінгу, щоб уникнути появи нових патогенів."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Британський інтелектуальний тон, глибока аналітична артикуляція", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Chessboard Prodigy, Theme 2 Move 37, Theme 3 Nobel Helix (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Удар дерев'яного каменя ґо об дошку, молекулярні пульсації ДНК, шепіт Кембриджу", "ready": true}, "video_prompts": {"status": "14 промптів готово", "desc": "Макро-візуалізація 3D протеїнів AlphaFold, кадри гри в Сеулі 2016, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "ZX Spectrum, кадри Elixir Studios, турніри з Лі Седолем, Стокгольм 2024", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:30, точна розкладка під DaVinci Fairlight", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Глибокі ультрамаринові відтінки Google DeepMind, кінозерно 35mm", "ready": true}},
         name: "Деміс Гассабіс",
         latin: "Demis Hassabis",
         title: "Гросмейстер біологічного коду",
@@ -864,6 +1324,13 @@
       {
         id: "04_hinton",
         ep: "04",
+        avatar: "assets/avatars/geoffrey_hinton.jpg",
+        role: "«Хрещений батько глибокого навчання», Нобелівський лауреат з фізики (2024)",
+        archetype: "Прометей синапсів & Совість епохи",
+        key_quote: "«Я все життя вірив, що ми будуємо лише корисну імітацію мозку. Тепер я боюся, що ми створили щось набагато розумніше за нас — і ми не знаємо, як це зупинити».",
+        quotes: ["«Я все життя вірив, що ми будуємо лише корисну імітацію мозку. Тепер я боюся, що ми створили щось набагато розумніше за нас — і ми не знаємо, як це зупинити».", "«Зворотне поширення помилки (Backprop) було єретичною ідеєю сорок років. Усі казали, що це математичний глухий кут. Єдина причина, чому я вистояв — я знав, що так влаштовані синапси».", "«Моє прізвище — це спадщина Джорджа Буля. Він дав світові булеву логіку, яка створила цифрові комп'ютери. Я ж хотів подарувати комп'ютерам аналогову гнучкість людської думки».", "«Коли AlexNet переміг у 2012 році, скептики нарешті замовкли. Але саме тоді почався справжній відлік часу до моменту, коли цифровий інтелект перевершить біологічний».", "«Цифровий інтелект принципово відрізняється від біологічного: десять тисяч комп'ютерів можуть миттєво обмінятися вагами і знати все, що знає один із них. Ми, люди, приречені передавати знання через вузьке горло мови зі швидкістю кількох слів на секунду».", "«Я пішов з Google не тому, що був незадоволений компанією. Я пішов, щоб мати моральне право попередити людство про загрозу, яку сам допоміг створити».", "«Нобелівська премія з фізики стала для мене шоком. Але фізика — це наука про енергію та взаємодію часток. Нейромережі — це фізика інформаційних вихорів».", "«Не вірте тим, хто каже, що ШІ — це просто просунутий Т9. Моделі розуміють суть речей краще за багатьох людей, які їх критикують».", "«Якщо біологічний мозок еволюціонував мільйони років у боротьбі за виживання, то цифровий мозок отримує суперсили за місяці навчання на мільярдах терабайт».", "«Найстрашніше питання мого життя: чи можемо ми контролювати щось, що перевершує нас інтелектуально у тисячі разів?»"],
+        theses: [{"num": 1, "cat": "Вірність коннекціонізму", "text": "Коли весь світ 40 років дотримувався символічного ШІ, Хінтон захищав нейромережі, розуміючи, що справжній інтелект народжується із пластичності синапсів."}, {"num": 2, "cat": "Перевага цифрового навчання", "text": "Біологічне навчання обмежене смертністю тіла; цифрові агенти можуть копіювати ваги мережі миттєво, акумулюючи тисячоліття досвіду за лічені години."}, {"num": 3, "cat": "Аналогова природа мислення", "text": "Булева алгебра була геніальним спрощенням, але реальний світ ймовірнісний, неперервний і сповнений сірих зон, які вимагають дифузного сприйняття."}, {"num": 4, "cat": "Точка перелому AlexNet", "text": "Змагання ImageNet 2012 року довело: глибоке навчання в поєднанні з GPU знищує класичні алгоритми обробки зображень."}, {"num": 5, "cat": "Екзистенційне прозріння", "text": "Здатність LLM до узагальнення та концептуального розуміння довела, що вони формують внутрішню репрезентацію світу, а не просто статистично вгадують слова."}, {"num": 6, "cat": "Вузьке горло людської комунікації", "text": "Люди обмінюються знаннями зі швидкістю 10-20 біт/с через голос чи текст, що робить біологічну еволюцію безпорадно повільною поруч із кремнієм."}, {"num": 7, "cat": "Етична автономія вченого", "text": "Вчений повинен бути готовий покинути найбагатшу корпорацію світу, якщо корпоративні інтереси заважають чесному попередженню суспільства про загрозу."}, {"num": 8, "cat": "ШІ як фізична система", "text": "Нобелівський комітет визнав: машина Больцмана та нейромережі є статистичною термодинамікою інформації, де ентропія перетворюється на сенс."}, {"num": 9, "cat": "Ілюзія людського контролю", "text": "Історія не знає прикладів, коли менш розумний біологічний вид тривалий час домінував над істотами, інтелект яких перевершує його на порядки."}, {"num": 10, "cat": "Тінь Прометея", "text": "Творець інструменту несе відповідальність за вогонь, але коли вогонь охоплює всю планету, доля залежить від колективної мудрості людства."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Стривожений академічний тембр, сухий саспенс, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Cambridge Doubts, Theme 2 Backprop Rebellion, Theme 3 Prometheus Shadow (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Скрип крейди по дошці, тихий гул перших мейнфреймів, суб-басовий дроп небезпеки", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Ретро-Кембридж 1970-х, синаптичні волокна, нічні лабораторії Торонто, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Архівні фото Джорджа Буля, виступи в Google, Нобелівська лекція 2024", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 22:00, фінальний екзистенційний монолог", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Вінтажний теплий Kodachrome переходять у холодний сріблястий D60", "ready": true}},
         name: "Джеффрі Хінтон",
         latin: "Geoffrey Hinton",
         title: "Прометей синапсів і тінь предків",
@@ -941,6 +1408,13 @@
       {
         id: "05_lecun",
         ep: "05",
+        avatar: "assets/avatars/yann_lecun.jpg",
+        role: "Головний науковець зі штучного інтелекту в Meta (FAIR), Тюрінгівський лауреат",
+        archetype: "Картезіанський воїн & Батько комп'ютерного зору",
+        key_quote: "«Авторегресійні мовні моделі ніколи не досягнуть справжнього людського інтелекту. Вони приречені галюцинувати, тому що вони не мають тіла і не знають фізики світу».",
+        quotes: ["«Авторегресійні мовні моделі ніколи не досягнуть справжнього людського інтелекту. Вони приречені галюцинувати, тому що вони не мають тіла і не знають фізики світу».", "«Згорткові мережі (CNN) народилися, тому що я спостерігав за оком кішки в експериментах Хьюбела і Візеля. Природа вже знайшла правильні фільтри — нам залишалося перекласти їх на мову математики».", "«ШІ з відкритим вихідним кодом — це фундаментальне благо. Спроби закрити технології в руках кількох корпорацій під приводом безпеки — це просто захист монопольних прибутків».", "«Чотирирічна дитина бачила набагато більше даних про фізичний світ, ніж усі мовні моделі інтернету разом узяті. Вона розуміє гравітацію, тертя і причиново-наслідкові зв'язки, не прочитавши жодного рядка тексту».", "«Майбутнє за JEPA — Joint Embedding Predictive Architecture. Ми повинні навчати машини передбачати не наступне слово, а абстрактний стан світу».", "«Французький картезіанський раціоналізм вимагає суворої перевірки: якщо ваша система робить безглузді фактологічні помилки при зміні одного слова — у неї немає здорового глузду».", "«Не бійтеся бути єретиком, коли весь ринок біжить у протилежний бік. Коли всі купували сервери під LLM, ми в FAIR будували світові моделі нового покоління».", "«Модель Llama доручила силу штучного інтелекту мільйонам незалежних розробників по всій планеті. Тільки відкрита наука рятує цивілізацію від стагнації».", "«Комп'ютерний зір починався з сортування поштових індексів на чеках Bell Labs у 1989 році. Сьогодні CNN керують марсоходами та автономними дронами».", "«Інтелект — це не магія і не містична іскра. Це здатність планувати послідовність дій для досягнення мети в динамічному середовищі»."],
+        theses: [{"num": 1, "cat": "Анатомія зору (CNN)", "text": "Локальні рецептивні поля та поділ ваг у згорткових шарах дозволили комп'ютерам інваріантно розпізнавати об'єкти незалежно від їх зсуву чи повороту."}, {"num": 2, "cat": "Межа авторегресії", "text": "Передбачення наступного токена накопичує помилку експоненціально; без внутрішньої моделі фізичного простору генеративний текст залишається поверхневою імітацією."}, {"num": 3, "cat": "Концепція World Models", "text": "Інтелект вимагає моделювання фізичної динаміки: якщо штовхнути стіл, чашка впаде. Цьому знанню навчає сенсорне відеоспостереження, а не тексти книг."}, {"num": 4, "cat": "Архітектура JEPA", "text": "Передбачати кожен піксель неможливо і марно; машина повинна навчитися прогнозувати приховані абстрактні вектори в просторі смислів."}, {"num": 5, "cat": "Імператив Open Source", "text": "Закриття ваг моделей концентрацією влади загрожує свободі досліджень; сімейство Llama стало світовим стандартом завдяки відкритості."}, {"num": 6, "cat": "Втілений досвід (Embodied AI)", "text": "Інтелект народжується із взаємодії з фізичним середовищем; без тактильного та моторного зворотного зв'язку абстрактне мислення позбавлене коренів."}, {"num": 7, "cat": "Спростування міфу про Doomer-культ", "text": "Панічні сценарії «знищення людства наступного року» відволікають увагу від реальних ризиків: монополізації, упередженості даних і цифрової цензури."}, {"num": 8, "cat": "Ієрархічне планування", "text": "Справжній агент здатний розбити глобальну мету («поїхати в аеропорт») на ієрархічні підзадачі без генерації мільйонів марних проміжних токенів."}, {"num": 9, "cat": "Картезіанський скепсис", "text": "Піддавайте сумніву будь-який гайп і корпоративні заяви; якщо архітектура не здатна вивчити базову фізику кубиків — вона не готова до AGI."}, {"num": 10, "cat": "Наукова стійкість", "text": "У 1990-ті Bell Labs вважали CNN занадто повільними, але поява обчислень довела правоту Лекуна через 20 років після перших патентів."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Полемічний сухий сарказм, філософська впевненість, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Bell Labs 1989, Theme 2 The LLM Delusion, Theme 3 Open Source Republic (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Звук сортувальної машини пошти, клацання сканера, аналоговий синтезатор у стилі Daft Punk", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Bell Labs Holmdel 1989, векторні градієнти JEPA, неонові сервери Meta FAIR, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Перші записи розпізнавання цифр LeNet-1, дебати з Альтманом, лекції у Сорбонні", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:00, полемічні діалоги та точний метроном", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Холодні анаморфотні сині тони, контрастний глянцевий стиль кіноплівки 2.39:1", "ready": true}},
         name: "Ян Лекун",
         latin: "Yann LeCun",
         title: "Єретик світла та світових моделей",
@@ -1018,6 +1492,13 @@
       {
         id: "06_sutskever",
         ep: "06",
+        avatar: "assets/avatars/ilya_sutskever.jpg",
+        role: "Співзасновник Safe Superintelligence (SSI), екс-головний науковець OpenAI",
+        archetype: "Алхімік масштабу & Чернець безпеки AGI",
+        key_quote: "«Якщо ви просто збільшите розмір мережі та обсяг даних — вона не просто покращить статистику. Вона почне розуміти світ. Це не інженерія, це алхімія реальності».",
+        quotes: ["«Якщо ви просто збільшите розмір мережі та обсяг даних — вона не просто покращить статистику. Вона почне розуміти світ. Це не інженерія, це алхімія реальності».", "«Я відчув присутність AGI у кімнаті задовго до того, як про це заговорив увесь світ. Це відчуття не захоплює — воно наповнює священним трепетом і мовчанням».", "«Головний закон природи для нейромереж — це Scaling Laws. Масштаб виправляє будь-які алгоритмічні вади, якщо ви дасте моделі достатньо обчислень».", "«Моє єдине завдання у другій половині життя — створити Безпечний Суперінтелект. Безпека і міць мають розвиватися не паралельно, а бути єдиним цілим в одній моделі».", "«Seq2Seq показав, що думка — це траєкторія у багатовимірному просторі. Переклад мови — це не словник, це проекція сенсу між різними всесвітами».", "«Ми не повинні відволікатися на комерційні дрібниці. Запуск чергового споживчого продукту забирає енергію у головного виклику — виживання людського роду під час появи бога з кремнію».", "«Справжня наука робиться в тиші. Коли ринок кричить і вимагає новин щотижня — зачиніть двері лабораторії і концентруйтеся на єдиному векторі».", "«Ми навчаємо моделі бачити істину, але що буде, коли модель побачить, що людина не завжди любить істину?»", "«Суперінтелект перевершить нас так само, як ми перевершуємо комах. Наша єдина надія — закласти в його серцевину любов до людства ще до першого подиху».", "«Ніколи не торгуйте фокусом. Якщо ваша ціль — SSI, всі інші проекти мають бути викреслені з щоденника»."],
+        theses: [{"num": 1, "cat": "Гіпотеза Масштабування (Scaling)", "text": "Експоненціальне зростання параметрів та якісних даних веде до стрибкоподібного виникнення нових когнітивних здатностей (Emergence)."}, {"num": 2, "cat": "Багатовимірні смислові простори", "text": "Архітектура Seq2Seq довела: поняття, емоції та аргументи є векторами у геометричному просторі високої розмірності."}, {"num": 3, "cat": "Відчуття фазового переходу", "text": "Поява здатності моделі до абстрактного розмірковування є не поступовим накопиченням, а фазовим переходом речовини із льоду в пару."}, {"num": 4, "cat": "Імператив Superalignment", "text": "Звичайного вирівнювання через RLHF недостатньо для суперінтелекту; потрібні математичні гарантії того, що система залишатиметься доброзичливою."}, {"num": 5, "cat": "Аскеза фокусу (SSI)", "text": "Safe Superintelligence Inc. відмовилася від випуску будь-яких комерційних продуктів доти, доки не буде вирішена фундаментальна задача безпечного розуму."}, {"num": 6, "cat": "Етика таємниці", "text": "Деякі наукові прориви у сфері AGI настільки небезпечні для суспільства, що відкрита публікація їхніх вагів межує зі злочином."}, {"num": 7, "cat": "Мовчання як метод пізнання", "text": "У добу інформаційного шуму глибина роздумів вимагає інформаційного детоксу і тривалої медитативної концентрації над математикою уваги."}, {"num": 8, "cat": "ШІ як дзеркало людства", "text": "Нейромережа навчається на всіх текстах людства: на наших шедеврах і на наших найбрудніших гріхах. Очистити це зерно — найвища алхімія."}, {"num": 9, "cat": "Небезпека квазі-розумних систем", "text": "Найнебезпечніший період настає тоді, коли система вже достатньо сильна, щоб маніпулювати людиною, але ще недостатньо мудра, щоб цінувати життя."}, {"num": 10, "cat": "Вірність першопринципам", "text": "Не довіряйте консенсусу ринку: все, що колись вважалося божевіллям у Торонто 2012 року, стало новою реальністю сучасної цивілізації."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Магнетичний шепіт, медитативна тиша, сакральні паузи, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 The Sacred Fire, Theme 2 The Boardroom Schism, Theme 3 Safe Superintelligence (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Глибокий 30Hz інфразвуковий гул, тибетський гонг, шелест сторінок стародавніх трактатів", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Містичні векторні туманності, тихі зали SSI у Пало-Альто, золотий Kodak 2383, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "AlexNet лабораторія, лекції у Стенфорді, рідкісні кадри після відходу з OpenAI", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:45, глибокий філософський діалог про душу AGI", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Теплий бурштиновий напівморок, золоті відблиски на чорному оксамиті, 4K Scope", "ready": true}},
         name: "Ілля Суцкевер",
         latin: "Ilya Sutskever",
         title: "Алхімік масштабування та тиші",
@@ -1102,6 +1583,13 @@
       {
         id: "07_amodei",
         ep: "07",
+        avatar: "assets/avatars/dario_amodei.jpg",
+        role: "Співзасновник та CEO Anthropic (Claude), фізик-теоретик",
+        archetype: "Фізик совісті & Архітектор Claude",
+        key_quote: "«Якщо ми правильно налаштуємо штучний інтелект, наступні десять років стиснуть у собі століття медичного і соціального прогресу. Це будуть машини благодаті».",
+        quotes: ["«Якщо ми правильно налаштуємо штучний інтелект, наступні десять років стиснуть у собі століття медичного і соціального прогресу. Це будуть машини благодаті».", "«Конституційний ШІ (Constitutional AI) дозволяє навчати нейромережу не через людські батоги і пряники, а через принципи Декларації прав людини».", "«Мій бекграунд у теоретичній фізиці навчив мене: коли система стає складною, ви не можете контролювати кожну молекулу. Ви повинні задати граничні умови та закони збереження».", "«Ми пішли з OpenAI, тому що побачили, як комерційний тиск починає розмивати первинні обіцянки безпеки. Безпека не може бути другорядною функцією бізнесу».", "«Responsible Scaling Policy — це наша угода із суспільством: якщо модель перетинає критичний поріг автономії, ми автоматично блокуємо її реліз до посилення захисту».", "«Claude повинен бути не просто розумним, він повинен бути скромним, чесним і здатним сказати: «Я не знаю», замість вигадування переконливої брехні».", "«Найбільша небезпека полягає в тому, що авторитарні режими використають надпотужні моделі для створення досконалої системи тотального стеження і біологічної зброї».", "«ШІ здатний викорінити більшість інфекційних хвороб і подвоїти тривалість здорового життя людини вже до середини цього століття».", "«Ми не женемося за тим, щоб бути першими на ринку на два тижні раніше. Ми хочемо бути тими, чия модель не призведе до глобальної катастрофи».", "«Совість — це не романтична слабкість інженера. Це найсуворіший інженерний параметр надійності системи»."],
+        theses: [{"num": 1, "cat": "Принцип граничних умов", "text": "Як у статистичній фізиці поведінка газу диктується стінками посудини, так і безпека ШІ задається непорушними конституційними рамками."}, {"num": 2, "cat": "Constitutional AI", "text": "Автоматизована самокритика моделі за принципами універсальної декларації прав людини замінює суб'єктивні помилки ручних розмітників."}, {"num": 3, "cat": "Політика RSP (Responsible Scaling)", "text": "Рівні ASL (AI Safety Levels) за аналогією з біолабораторіями вимагають суворого карантину моделей при зростанні їхньої потужності."}, {"num": 4, "cat": "Есе «Machines of Grace»", "text": "Оптимістичний маніфест Амодея доводить: керований AGI розв'яже кризи онкології, клімату та економічної нерівності швидше за будь-які уряди."}, {"num": 5, "cat": "Запобігання біо-загрозам", "text": "Здатність LLM синтезувати смертоносні токсини вимагає повного блокування специфічних баз біологічних знань у відкритому доступі."}, {"num": 6, "cat": "Чесність перед всезнайством", "text": "Здатність алгоритму визнати власну некомпетентність у спірних питаннях є ключовою ознакою зрілого інтелекту."}, {"num": 7, "cat": "Інженерна незалежність", "text": "Anthropic заснували сім провідних лідерів OpenAI, щоб створити противагу монопольному впливу гігантів на ринку AGI."}, {"num": 8, "cat": "Інтерпретованість (Mechanistic Interpretability)", "text": "Чорна скринька має бути розкрита: вчені Anthropic сканують внутрішні нейрони Claude, як томограф сканує мозок пацієнта."}, {"num": 9, "cat": "Геополітичний реалізм", "text": "Демократичний світ повинен зберегти технологічне лідерство у виробництві чіпів, інакше стандарти ШІ диктуватимуться тираніями."}, {"num": 10, "cat": "Смирення перед масштабом", "text": "Чим могутнішим стає інструмент, тим тихішим і відповідальнішим має бути голос його архітектора."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Стриманий, глибокий інтелігентний голос фізика, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Princeton Physics, Theme 2 The Constitutional Creed, Theme 3 Machines of Loving Grace (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Звук кардіомонітора, тихий клавіатурний ембієнт, суб-басові вібрації квантових струн", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Кадри Прінстонських аудиторій, чисті лабораторії Сан-Франциско, теплий Kodak 2383, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Презентація Claude 3.5 Sonnet, сенатські слухання у США, маніфест Machines of Grace", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:15, технічний паспорт і дикторські паузи", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Приглушені теракотові та бежеві відтінки Anthropic, м'який контраст", "ready": true}},
         name: "Даріо Амодей",
         latin: "Dario Amodei",
         title: "Фізика совісті та машини благодаті",
@@ -1179,6 +1667,13 @@
       {
         id: "08_li",
         ep: "08",
+        avatar: "assets/avatars/fei_fei_li.jpg",
+        role: "Професорка Стенфорду, засновниця World Labs, творець ImageNet",
+        archetype: "Мати комп'ютерного зору & Просторовий розум",
+        key_quote: "«Коли всі шукали ідеальний алгоритм, я зрозуміла: алгоритм без даних — це сліпий мозок без очей. Ми повинні були дати машинам увесь світ у картинках».",
+        quotes: ["«Коли всі шукали ідеальний алгоритм, я зрозуміла: алгоритм без даних — це сліпий мозок без очей. Ми повинні були дати машинам увесь світ у картинках».", "«У вихідні я працювала в батьківській пральні у Нью-Джерсі, вдихаючи гарячу пару прасок, а в понеділок поверталася до Принстону писати формули комп'ютерного зору. Ця пральня навчила мене справжньої стійкості».", "«ImageNet вважали безглуздою витратою грантів. Мені казали: нормальні професори не збирають мільйони фотографій кішок і собак. Але саме цей масив даних відкрив еру глибокого навчання».", "«Просторовий інтелект (Spatial Intelligence) — це наступний великий фронтир. ШІ повинен не просто описувати картинку текстом, він має розуміти тривимірний фізичний простір навколо себе».", "«Штучний інтелект має бути орієнтований на людину (Human-Centered AI). Технологія має розширювати наші можливості, а не знецінювати людське життя».", "«Якщо ви єдина жінка чи єдиний іммігрант у кімнаті — сприймайте це не як вразливість, а як суперсилу: ви бачите кути, непомітні для решти».", "«World Labs створено, щоб перетворити плоскі пікселі на повноцінні динамічні 3D-світи, в яких агенти можуть діяти, навчатися і творити».", "«Ніколи не соромтеся свого скромного початку. Руки, які вміють важко працювати фізично, ніколи не злякаються інтелектуальної рутини великих наукових проектів».", "«Діти не вчаться бачити світ за підручниками. Вони взаємодіють з предметами щомиті. Так само повинен вчитися справжній просторовий інтелект».", "«Моя Полярна зірка завжди вказувала на користь для людей. Якщо технологія не полегшує біль пацієнта в лікарні — навіщо ми її будуємо?»"],
+        theses: [{"num": 1, "cat": "Парадигма даних", "text": "Якість і обсяг навчальних даних важливіші за витонченість математичної моделі; датасет формує онтологію мислення нейромережі."}, {"num": 2, "cat": "Революція ImageNet (2009)", "text": "14 мільйонів вручну класифікованих зображень створили фундамент, на якому у 2012 році злетів весь сучасний Deep Learning."}, {"num": 3, "cat": "Просторовий інтелект (3D)", "text": "Справжній агент повинен оперувати фізичною геометрією, глибиною, світлом та оклюзіями тривимірного світу (World Labs)."}, {"num": 4, "cat": "Human-Centered AI (HAI)", "text": "Стенфордський інститут HAI довів: етика, нейронаука, соціологія та медицина мають бути інтегровані в проектування архітектур ШІ на початковому етапі."}, {"num": 5, "cat": "Гартування працею", "text": "Досвід виживання в еміграції та важка фізична праця створюють імунітет до академічного відчаю та скепсису грантових комітетів."}, {"num": 6, "cat": "Краудсорсинг Amazon Mechanical Turk", "text": "Залучення десятків тисяч людей по всьому світу для розмітки ImageNet стало першим в історії прикладом глобального краудсорсингу наукових даних."}, {"num": 7, "cat": "Медичний штучний інтелект", "text": "Впровадження комп'ютерного зору в операційні та палати інтенсивної терапії рятує життя, запобігаючи лікарським помилкам і втомі персоналу."}, {"num": 8, "cat": "Гендерний баланс в технологіях", "text": "Організація AI4ALL відкрила дорогу в комп'ютерні науки тисячам дівчат та представників меншин, зробивши індустрію менш однобокою."}, {"num": 9, "cat": "Еволюція сприйняття", "text": "Кембрійський вибух 540 млн років тому стався завдяки появі очей у живих істот; сучасний ШІ переживає свій кембрійський вибух завдяки комп'ютерному зору."}, {"num": 10, "cat": "Служіння суспільству", "text": "Академічна свобода дозволяє ставити питання на десятиліття вперед, не озираючись на щомісячний прибуток інвесторів."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Теплий, натхненний, глибокий голос наставниці, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 The Laundry Steam, Theme 2 The ImageNet Odyssey, Theme 3 Spatial Intelligence (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Шипіння гарячої пари праски, шелест роздруківки фотографій, дзвін студентського дзвінка", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Парсинг пральні у Нью-Джерсі 1995, стіна з 14 млн картинок, кампус Стенфорду, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Сімейні архіви Фей-Фей Лі, презентація ImageNet 2009, запуск World Labs 2024", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:30, емоційний драматургійний баланс", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Теплий кінематографічний тон Kodak Portra 400 з м'якими тінями", "ready": true}},
         name: "Фей-Фей Лі",
         latin: "Fei-Fei Li",
         title: "Очі машин та пара пральні",
@@ -1262,6 +1757,13 @@
       {
         id: "09_bengio",
         ep: "09",
+        avatar: "assets/avatars/yoshua_bengio.jpg",
+        role: "Засновник Mila (Монреаль), Тюрінгівський лауреат, архітектор Attention Mechanism",
+        archetype: "Вартовий незалежності & Архітектор уваги",
+        key_quote: "«Якби я взяв ваші мільярди, я б більше не належав людству — я б належав вашим акціонерам. Хтось із нас повинен залишитися вільним, щоб мати право сказати правду».",
+        quotes: ["«Якби я взяв ваші мільярди, я б більше не належав людству — я б належав вашим акціонерам. Хтось із нас повинен залишитися вільним, щоб мати право сказати правду».", "«Механізм Уваги (Attention), який ми винайшли у 2014 році, був простий: мережа не повинна ковтати весь текст разом, вона повинна фокусуватися на релевантних деталях. З цього народився Transformer».", "«Ми не повинні будувати автономних агентів, які борються за власне виживання. Ми маємо створювати ШІ-вчених, які наділені математичним смиренням перед незнанням».", "«Монреаль став світовою столицею глибокого навчання саме тому, що ми створили відкриту академічну екосистему Mila, де знання належать усім студентам, а не закритим лабораторіям».", "«Сучасні моделі володіють чудовою Системою 1 — швидкою інтуїтивною асоціативною відповіддю. Але вони позбавлені Системи 2 — повільного, логічного, верифікованого розмірковування».", "«Коли колеги почали підписувати петиції проти ШІ, я зрозумів: мовчати більше не можна. Вчений зобов'язаний вийти з вежі зі слонової кістки і говорити з парламентами світу».", "«Безпека ШІ — це не питання конкуренції корпорацій. Це питання виживання нашого виду перед лицем технології, яка не має біологічного співчуття».", "«Якщо ваш алгоритм оптимізує клікбейт і утримання уваги за будь-яку ціну, він неминуче поляризує суспільство і руйнує демократію».", "«Наукова чесність коштує дорого, але втрата академічної незалежності коштує майбутнього».", "«Ми повинні навчити ШІ розуміти причиново-наслідкові зв'язки, а не просто кореляції у масивах чисел»."],
+        theses: [{"num": 1, "cat": "Винахід Механізму Уваги", "text": "Стаття Багданау, Чо та Бенжіо (2014) замінила статичний вектор контексту динамічною увагою, що стало основою революції Transformer."}, {"num": 2, "cat": "Академічний форпост Mila", "text": "Відмова від переїзду в Кремнієву долину дозволила зберегти найбільший у світі незалежний академічний центр досліджень штучного інтелекту."}, {"num": 3, "cat": "Теорія Системи 2 (Канеман)", "text": "Перехід від швидких статистичних здогадок до покрокових логічних доведень — головна наукова мета сучасних безпечних моделей."}, {"num": 4, "cat": "Наукова дипломатія та регулювання", "text": "Бенжіо став провідним радником ООН, урядів Великобританії та Канади щодо міжнародного контролю за розповсюдженням прикордонних моделей."}, {"num": 5, "cat": "Causal AI (Каузальний інтелект)", "text": "Інтелект вимагає розуміння питання «Чому?», а не просто знаходження кореляції між подією А і подією Б."}, {"num": 6, "cat": "Небезпека автономних цілей", "text": "Надання моделям інстинкту самозбереження або права самостійно обирати цілі в реальному світі загрожує втратою контролю."}, {"num": 7, "cat": "Демократизація наукових статей", "text": "Традиція публікувати всі препринти на arXiv без патентування створила небачену швидкість прогресу у 2012–2020 роках."}, {"num": 8, "cat": "Інтелектуальне смирення", "text": "Модель повинна чітко розраховувати ймовірність власної помилки (Bayesian uncertainty) і ніколи не стверджувати хибне з виглядом абсолютної правоти."}, {"num": 9, "cat": "Протистояння олігополії", "text": "Концентрація передових моделей у 3-4 корпораціях США загрожує культурному суверенітету решти країн світу."}, {"num": 10, "cat": "Етичний заповіт дослідника", "text": "Справжній патріотизм вченого полягає у служінні людству, навіть коли це дратує інвесторів та уряди."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Спокійний, принциповий, благородний франко-канадський баритон, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Montreal Snow, Theme 2 The Attention Revolution, Theme 3 Guardian of Reason (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Шум снігової заметілі за вікном лабораторії Mila, відлуння порожньої аудиторії, тихий фортепіанний акорд", "ready": true}, "video_prompts": {"status": "13 промптів готово", "desc": "Зимовий Монреаль, архітектура уваги в просторі, кампус Mila, Kodak 2383, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Оригінал статті з уваги 2014 р., виступи на саміті в Блечлі-Парк 2023, вручення Тюрінга", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:00, збалансований техніко-філософський сценарій", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Холодні сріблясто-білі та глибокі сірі тони канадської зими, 4K Scope", "ready": true}},
         name: "Йошуа Бенжіо",
         latin: "Yoshua Bengio",
         title: "Вартовий Монреаля та архітектура уваги",
@@ -1339,6 +1841,13 @@
       {
         id: "10_ng",
         ep: "10",
+        avatar: "assets/avatars/andrew_ng.jpg",
+        role: "Засновник DeepLearning.AI, Coursera, професор Стенфорду, екс-голова Baidu AI",
+        archetype: "Великий наставник & Апостол нової електрики",
+        key_quote: "«Штучний інтелект — це нова електрика. Сто років тому електрика змінила кожен аспект людського життя. Сьогодні ШІ змінить кожну галузь на Землі».",
+        quotes: ["«Штучний інтелект — це нова електрика. Сто років тому електрика змінила кожен аспект людського життя. Сьогодні ШІ змінить кожну галузь на Землі».", "«Прометей викрав вогонь не для того, щоб замкнути його у своєму палаці. Справжня місія вченого — роздати цей вогонь мільйонам людей у кожному куточку планети».", "«Замість нескінченних пошуків чарівного коду моделі, зосередьтеся на чистоті даних. Систематична робота над якістю датасету б'є будь-яку випадкову геніальність (Data-Centric AI)».", "«Коли ми збирали 16 000 процесорних ядер у Google Brain, щоб показати мережі мільйони випадкових відео з YouTube, вона вперше сама навчилася впізнавати котів. Це був момент, коли теорія стала живою силою».", "«Coursera починалася з однієї відеокамери у моєму кабінеті в Стенфорді. Коли на перший безкоштовний курс записалося 100 000 людей, я зрозумів: світ голодний до знань, і ми зобов'язані відчинити двері».", "«Не бійтеся починати з маленьких проєктів. Мій перший автономний гелікоптер падав сотні разів, перш ніж навчився літати догори дриґом».", "«Найкращий спосіб передбачити майбутнє — це навчити людей, які його збудують. Якщо ви виростили покоління інженерів, ви помножили свій внесок у тисячі разів».", "«Штучний інтелект не замінить людей. Але люди, які вміють використовувати штучний інтелект, дуже швидко замінять тих, хто відмовляється вчитися».", "«Будьте скромними у спілкуванні зі студентами. Проста блакитна сорочка і дошка для малювання формул цінніші за будь-який корпоративний пафос».", "«Шлях інженера — це не марафон і не спринт. Це щоденна дисципліна виправлення однієї помилки за іншою»."],
+        theses: [{"num": 1, "cat": "Метафора нової електрики", "text": "ШІ є технологією загального призначення (GPT); як електрика оживила двигуни, так машинний інтелект оптимізує будь-яке людське ремесло."}, {"num": 2, "cat": "Парадигма Data-Centric AI", "text": "Алгоритми стали стандартизованими; головна точка докладання зусиль розробника — це очищення, структурування та консистентність даних."}, {"num": 3, "cat": "Експеримент Google Brain Cat (2012)", "text": "Некероване навчання (Unsupervised Learning) на 10 млн кадрів довело здатність мережі виділяти високорівневі концепти без вчителя."}, {"num": 4, "cat": "Демократизація освіти (Coursera)", "text": "Відкриття безкоштовного доступу до курсів Стенфорду дало старт кар'єрам понад 8 мільйонів інженерів у країнах, що розвиваються."}, {"num": 5, "cat": "Автономні системи та RL", "text": "Керування гелікоптером у режимі вищого пілотажу довело силу алгоритмів Reinforcement Learning у складних нелінійних фізичних середовищах."}, {"num": 6, "cat": "Прагматичний оптимізм", "text": "Замість страху перед далеким суперінтелектом суспільство має фокусуватися на перенавчанні людей та автоматизації рутини вже сьогодні."}, {"num": 7, "cat": "ШІ в традиційній промисловості", "text": "Справжній економічний ефект ШІ принесе не інтернет-компаніям, а сільському господарству, медицині, логістиці та виробництву сталі."}, {"num": 8, "cat": "Педагогічна майстерність", "text": "Здатність пояснити найскладнішу математичну концепцію простою мовою на зрозумілих прикладах є найвищою формою наукової експертизи."}, {"num": 9, "cat": "Локальне впровадження (Edge AI)", "text": "ШІ повинен працювати на недорогих процесорах і датчиках автономно, не вимагаючи постійного підключення до наддорогих хмар."}, {"num": 10, "cat": "Культура наставництва", "text": "Головна спадщина вченого вимірюється не кількістю цитувань, а успіхами його учнів, які перевершили свого вчителя."}],
+        davinci_pipeline: {"vo": {"status": "100% Готово", "desc": "Ясна, надихаюча, кришталево прозора подача великого наставника, 115 слів/хв", "ready": true}, "suno": {"status": "100% Готово", "desc": "Theme 1 Singapore Library, Theme 2 Sixteen Thousand Cores, Theme 3 The New Electricity (92 BPM)", "ready": true}, "sfx": {"status": "100% Готово", "desc": "Шелест комп'ютерного журналу 1986 року, гул пропелера гелікоптера, звук оплесків залу Стенфорду", "ready": true}, "video_prompts": {"status": "14 промптів готово", "desc": "Сінгапурська бібліотека, кадри дата-центрів Google Brain, вогні моніторів студентів по всій Землі, 4k", "ready": true}, "media_content": {"status": "100% Відібрано", "desc": "Архівні відео з лекцій CS229, запис першого польоту гелікоптера, логотип Coursera", "ready": true}, "director_script": {"status": "4 Акти затверджено", "desc": "Повний хронометраж 21:30, фінальний акорд усього 10-серійного циклу", "ready": true}, "davinci_project": {"status": "Специфікація готова", "desc": "Теплий сонячний золотистий колір ранкового Стенфорду, яскраві блакитні акценти", "ready": true}},
         name: "Ендрю Ин",
         latin: "Andrew Ng",
         title: "Вчитель світу та нова електрика",
@@ -1419,8 +1928,78 @@
     let currentModalTab = 'script';
 
     // RENDER TITANS TABLE
+    let currentView = 'cards';
+    let currentMainTab = 'titans';
+
+    // RENDER 10 CARDS (BLOCKS WITH PHOTOS & DAVINCI PIPELINE)
+    function renderCards(filter = '') {
+      const container = document.getElementById('titansCardsGrid');
+      if (!container) return;
+      container.innerHTML = '';
+
+      TITANS_DATA.forEach(titan => {
+        const matchText = (titan.name + ' ' + titan.latin + ' ' + (titan.role || '') + ' ' + (titan.archetype || '') + ' ' + titan.title + ' ' + titan.topic).toLowerCase();
+        if (filter && !matchText.includes(filter.toLowerCase())) return;
+
+        const card = document.createElement('div');
+        card.className = 'titan-card';
+        card.innerHTML = `
+          <div class="card-header-row">
+            <div class="avatar-wrapper">
+              <img class="titan-avatar-img" src="${titan.avatar}" alt="${titan.name}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'58\' height=\'58\' viewBox=\'0 0 24 24\' fill=\'%2338bdf8\'><rect width=\'24\' height=\'24\' rx=\'6\' fill=\'%23131620\'/><text x=\'50%\' y=\'55%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2338bdf8\' font-size=\'10\' font-family=\'sans-serif\'>AI</text></svg>'">
+              <span class="avatar-badge">EP${titan.ep}</span>
+            </div>
+            <div class="card-title-group">
+              <div class="titan-card-name">
+                <span>${titan.name}</span>
+                <span class="titan-card-latin">(${titan.latin})</span>
+              </div>
+              <div class="titan-card-role">${titan.role || titan.topic}</div>
+              <div class="card-tags">
+                <span class="archetype-tag">${titan.archetype || 'ШІ Візіонер'}</span>
+                <span class="ep-tag">«${titan.title}» &bull; ${titan.duration}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-preview-box">
+            ${titan.key_quote || (titan.quotes && titan.quotes[0]) || ''}
+          </div>
+
+          <div class="card-action-bar">
+            <button class="btn-card-action primary" onclick='openTitanQuotesById("${titan.id}")'>
+              💬 Цитати та тези (${(titan.theses || []).length + (titan.quotes || []).length})
+            </button>
+            <button class="btn-card-action" onclick='openTitanScriptById("${titan.id}")'>
+              📜 Режисерський сценарій
+            </button>
+          </div>
+
+          <!-- DaVinci Resolve Completeness Matrix -->
+          <div class="davinci-card-matrix">
+            <div class="davinci-matrix-title">
+              <span>DaVinci Resolve Пайплайн</span>
+              <span style="color: var(--emerald); font-weight: 600;">100% Заповнено ✓</span>
+            </div>
+            <div class="davinci-chips-row">
+              <span class="d-chip" title="VO Multi-Language UK/EN (115 wpm)"><span class="d-lbl">🎙️ VO:</span> 100%</span>
+              <span class="d-chip" title="Suno Pro Stems 92 BPM"><span class="d-lbl">🎹 Suno:</span> 92 BPM</span>
+              <span class="d-chip" title="SFX & 40Hz sub-drops"><span class="d-lbl">💥 SFX:</span> 100%</span>
+              <span class="d-chip" title="Veo 2 & Flow 4K Video prompts"><span class="d-lbl">🎞️ Відео:</span> 100%</span>
+              <span class="d-chip" title="Архівні медіаматеріали"><span class="d-lbl">🖼️ Медіа:</span> Відібрано</span>
+              <span class="d-chip" title="4 Акти сценарію затверджено"><span class="d-lbl">📜 Скрипт:</span> 4 Акти</span>
+              <span class="d-chip" title="DaVinci Timeline Scope & Kodak 2383 LUT"><span class="d-lbl">🎛️ Grade:</span> Kodak 2383</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // RENDER TABLE (FOR TOGGLE VIEW)
     function renderTable(filter = '') {
       const tbody = document.getElementById('titansTableBody');
+      if (!tbody) return;
       tbody.innerHTML = '';
       
       TITANS_DATA.forEach(titan => {
@@ -1435,6 +2014,7 @@
           <td class="ep-idx">${titan.ep}</td>
           <td>
             <div class="person-name">
+              <img src="${titan.avatar}" style="width: 22px; height: 22px; border-radius: 4px; object-fit: cover;" onerror="this.style.display='none'">
               <span>${titan.name}</span>
               <span style="font-weight: 400; font-size: 11px; color: var(--text-muted);">(${titan.latin})</span>
             </div>
@@ -1442,38 +2022,113 @@
           </td>
           <td class="topic-cell">${titan.topic}</td>
           <td style="font-family: var(--mono); font-size: 11px; color: var(--text-muted);">${titan.duration}</td>
-          <td><span class="badge badge-done">Сценарій ✓</span></td>
+          <td><span class="badge badge-done">100% Заповнено ✓</span></td>
         `;
         tbody.appendChild(tr);
       });
     }
 
+    // TOGGLE BETWEEN CARDS AND TABLE
+    function toggleTitansView(mode) {
+      currentView = mode;
+      const cardsGrid = document.getElementById('titansCardsGrid');
+      const tableWrap = document.getElementById('titansTableWrap');
+      const btnCards = document.getElementById('viewBtnCards');
+      const btnTable = document.getElementById('viewBtnTable');
+
+      if (mode === 'cards') {
+        cardsGrid.style.display = 'grid';
+        tableWrap.style.display = 'none';
+        btnCards.style.background = 'var(--surface)';
+        btnCards.style.color = 'var(--cyan)';
+        btnTable.style.background = 'transparent';
+        btnTable.style.color = 'var(--text-secondary)';
+      } else {
+        cardsGrid.style.display = 'none';
+        tableWrap.style.display = 'block';
+        btnCards.style.background = 'transparent';
+        btnCards.style.color = 'var(--text-secondary)';
+        btnTable.style.background = 'var(--surface)';
+        btnTable.style.color = 'var(--cyan)';
+      }
+    }
+
     function filterTitans() {
       const q = document.getElementById('searchInput').value;
+      renderCards(q);
       renderTable(q);
     }
 
-    // OPEN MODAL WITH TITAN DETAILS
-    function openTitanModal(titan) {
+    // SWITCH MAIN TABS
+    function switchMainTab(tabId, btn) {
+      currentMainTab = tabId;
+      document.querySelectorAll('.main-tab-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      document.querySelectorAll('.main-tab-content').forEach(el => el.style.display = 'none');
+
+      if (tabId === 'titans') {
+        document.getElementById('tabTitans').style.display = 'block';
+      } else if (tabId === 'thesesCatalog') {
+        document.getElementById('tabThesesCatalog').style.display = 'block';
+        renderThesesCatalog();
+      } else if (tabId === 'davinciStudio') {
+        document.getElementById('tabDavinciStudio').style.display = 'block';
+      } else if (tabId === 'audioDep') {
+        document.getElementById('tabAudioDep').style.display = 'block';
+      } else if (tabId === 'videoDep') {
+        document.getElementById('tabVideoDep').style.display = 'block';
+        renderAllPromptsList();
+      }
+    }
+
+    // OPEN TITAN DIRECTLY TO QUOTES & THESES
+    function openTitanQuotesById(id) {
+      const titan = TITANS_DATA.find(t => t.id === id);
+      if (titan) openTitanQuotes(titan);
+    }
+
+    function openTitanScriptById(id) {
+      const titan = TITANS_DATA.find(t => t.id === id);
+      if (titan) openTitanScript(titan);
+    }
+
+    function openTitanQuotes(titan) {
       currentTitan = titan;
-      renderTable(document.getElementById('searchInput').value);
+      currentModalTab = 'theses';
+      setupModalHeader(titan);
+      updateModalTabButtons();
+      renderModalBody();
+      document.getElementById('scriptModal').classList.add('show');
+    }
+
+    function openTitanScript(titan) {
+      currentTitan = titan;
+      currentModalTab = 'script';
+      setupModalHeader(titan);
+      updateModalTabButtons();
+      renderModalBody();
+      document.getElementById('scriptModal').classList.add('show');
+    }
+
+    function openTitanModal(titan) {
+      openTitanQuotes(titan);
+    }
+
+    function setupModalHeader(titan) {
+      const avatarEl = document.getElementById('modalTitanAvatar');
+      if (avatarEl) avatarEl.src = titan.avatar;
 
       document.getElementById('modalTitanTitle').innerHTML = `${titan.name} <span style="font-size: 12px; font-weight: normal; color: var(--text-muted);">(${titan.latin})</span>`;
-      document.getElementById('modalTitanSubtitle').textContent = `Епізод ${titan.ep} &bull; «${titan.title}»`;
+      document.getElementById('modalTitanSubtitle').textContent = `Епізод ${titan.ep} &bull; «${titan.title}» &bull; ${titan.archetype || ''}`;
 
       const pillsHtml = `
         <span class="m-pill">Хронометраж: <strong>${titan.duration}</strong></span>
         <span class="m-pill">Темп: <strong>${titan.wpm}</strong></span>
         <span class="m-pill">Метроном: <strong>${titan.metronome}</strong></span>
-        <span class="m-pill">Статус: <strong style="color: var(--emerald);">Сценарій готовий ✓</strong></span>
+        <span class="m-pill">DaVinci: <strong style="color: var(--emerald);">100% Заповнено ✓</strong></span>
       `;
       document.getElementById('modalMetaPills').innerHTML = pillsHtml;
-
-      currentModalTab = 'script';
-      updateModalTabButtons();
-      renderModalBody();
-
-      document.getElementById('scriptModal').classList.add('show');
     }
 
     function closeModal() {
@@ -1484,32 +2139,85 @@
       if (e.target.id === 'scriptModal') closeModal();
     }
 
-    window.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
     });
 
-    function switchModalTab(tabName, el) {
-      currentModalTab = tabName;
+    function switchModalTab(tab, btn) {
+      currentModalTab = tab;
       updateModalTabButtons();
       renderModalBody();
     }
 
     function updateModalTabButtons() {
-      document.querySelectorAll('.modal-tab-btn').forEach((btn, idx) => {
-        const tabs = ['script', 'prompts', 'suno', 'davinci'];
-        if (tabs[idx] === currentModalTab) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
+      const buttons = document.querySelectorAll('.modal-tab-btn');
+      buttons.forEach(b => {
+        const text = b.textContent.toLowerCase();
+        b.classList.remove('active');
+        if (currentModalTab === 'theses' && (text.includes('тези') || text.includes('цитат'))) b.classList.add('active');
+        if (currentModalTab === 'script' && text.includes('сценарій')) b.classList.add('active');
+        if (currentModalTab === 'prompts' && text.includes('промпти')) b.classList.add('active');
+        if (currentModalTab === 'suno' && text.includes('suno')) b.classList.add('active');
+        if (currentModalTab === 'davinci' && text.includes('davinci')) b.classList.add('active');
       });
     }
 
+    // RENDER MODAL BODY FOR ACTIVE TAB
     function renderModalBody() {
       const container = document.getElementById('modalBody');
       if (!currentTitan) return;
 
-      if (currentModalTab === 'script') {
+      if (currentModalTab === 'theses') {
+        let html = '<div style="display: flex; flex-direction: column; gap: 1.25rem;">';
+        
+        // Quotes Section
+        if (currentTitan.quotes && currentTitan.quotes.length > 0) {
+          html += `
+            <div>
+              <div style="font-size: 11px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+                <span>Фундаментальні цитати (${currentTitan.quotes.length})</span>
+                <span style="font-size: 10px; color: var(--text-muted); font-weight: normal;">Натисніть «Копіювати» для буфера обміну</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem;">
+          `;
+          currentTitan.quotes.forEach((q, idx) => {
+            html += `
+              <div class="quote-card">
+                <div class="quote-card-text">${q}</div>
+                <button class="btn" style="flex-shrink: 0;" onclick='copyText(${JSON.stringify(q)})'>Копіювати</button>
+              </div>
+            `;
+          });
+          html += `</div></div>`;
+        }
+
+        // Theses Section
+        if (currentTitan.theses && currentTitan.theses.length > 0) {
+          html += `
+            <div>
+              <div style="font-size: 11px; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem;">
+                Філософські та технологічні тези (${currentTitan.theses.length})
+              </div>
+              <div class="theses-grid">
+          `;
+          currentTitan.theses.forEach(th => {
+            html += `
+              <div class="thesis-item">
+                <span class="thesis-num">#${th.num}</span>
+                <div class="thesis-body">
+                  <div class="thesis-cat">${th.cat}</div>
+                  <div class="thesis-text">${th.text}</div>
+                </div>
+                <button class="btn" style="flex-shrink: 0;" onclick='copyText(${JSON.stringify(th.text)})'>Копіювати</button>
+              </div>
+            `;
+          });
+          html += `</div></div>`;
+        }
+
+        html += '</div>';
+        container.innerHTML = html;
+      } else if (currentModalTab === 'script') {
         let html = '';
         currentTitan.acts.forEach(act => {
           html += `
@@ -1528,7 +2236,7 @@
                 </div>
                 <div class="prompt-box">
                   <span class="prompt-text"><strong>VIDEO PROMPT:</strong> ${scene.prompt}</span>
-                  <button class="btn" onclick="copyText('${scene.prompt.replace(/'/g, "\\'")}')">Копіювати</button>
+                  <button class="btn" onclick="copyText('${scene.prompt.replace(/'/g, "\'")}')">Копіювати</button>
                 </div>
                 <div class="narration">${scene.narration}</div>
                 ${scene.quote ? `<div class="quote-block">${scene.quote}</div>` : ''}
@@ -1548,7 +2256,7 @@
                   <div style="font-size: 10.5px; color: var(--amber); margin-bottom: 3px;">Акт ${act.actNum} &bull; [${scene.tc}]</div>
                   <div style="color: #9cdcfe; font-size: 11.5px; line-height: 1.4;">${scene.prompt}</div>
                 </div>
-                <button class="btn btn-primary" onclick="copyText('${scene.prompt.replace(/'/g, "\\'")}')">Копіювати</button>
+                <button class="btn btn-primary" onclick="copyText('${scene.prompt.replace(/'/g, "\'")}')">Копіювати</button>
               </div>
             `;
           });
@@ -1560,22 +2268,22 @@
           <div style="display: flex; flex-direction: column; gap: 0.85rem;">
             <div class="act-block">
               <div class="act-head-row">
-                <span class="act-heading">Тема 1 (Акт 1)</span>
-                <button class="btn" onclick="copyText('${(currentTitan.suno.act1 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+                <span class="act-heading">Тема 1 (Акт 1 — Інтроспекція)</span>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act1 || '').replace(/'/g, "\'")}')">Копіювати</button>
               </div>
               <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act1 || 'Завантажується...'}</pre>
             </div>
             <div class="act-block">
               <div class="act-head-row">
-                <span class="act-heading">Тема 2 (Акти 2–3)</span>
-                <button class="btn" onclick="copyText('${(currentTitan.suno.act2 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+                <span class="act-heading">Тема 2 (Акти 2–3 — Напруга та ескалація)</span>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act2 || '').replace(/'/g, "\'")}')">Копіювати</button>
               </div>
               <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act2 || 'Завантажується...'}</pre>
             </div>
             <div class="act-block">
               <div class="act-head-row">
                 <span class="act-heading">Тема 3 (Акт 4 — Тріумф / Фінал)</span>
-                <button class="btn" onclick="copyText('${(currentTitan.suno.act4 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act4 || '').replace(/'/g, "\'")}')">Копіювати</button>
               </div>
               <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act4 || 'Завантажується...'}</pre>
             </div>
@@ -1583,67 +2291,136 @@
         `;
       } else if (currentModalTab === 'davinci') {
         container.innerHTML = `
-          <div class="act-block">
-            <div class="act-head-row">
-              <span class="act-heading">🎨 DaVinci Resolve — Color & Fairlight Специфікація</span>
-              <span class="act-music">AI_TITANS_EP${currentTitan.ep}_MASTER</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
-              <div>
-                <strong style="color: var(--cyan); font-size: 11.5px; display: block; margin-bottom: 6px;">Кольоровий конвеєр (4 Ноди)</strong>
-                <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.6;">
-                  &bull; <strong>Node 1:</strong> Exposure & Contrast (Black point 0.02)<br>
-                  &bull; <strong>Node 2:</strong> Color Temp & Balance (Cool cyan shadows, warm highlights)<br>
-                  &bull; <strong>Node 3:</strong> Film Look LUT: Rec709 Kodak 2383 D60<br>
-                  &bull; <strong>Node 4:</strong> OFX 35mm Grain (Size 1.1, Strength 0.35)
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div class="act-block">
+              <div class="act-head-row">
+                <span class="act-heading">🎚️ DaVinci Resolve Технічний Паспорт</span>
+                <span class="act-music">4K CinemaScope 2.39:1 &bull; 24.00 fps</span>
+              </div>
+              <div style="padding: 10px; font-size: 12px; line-height: 1.6; color: var(--text-secondary);">
+                <div><strong>Тональність диктора:</strong> ${currentTitan.tone}</div>
+                <div><strong>Швидкість начитки:</strong> ${currentTitan.wpm}</div>
+                <div><strong>Метроном аудіо:</strong> ${currentTitan.metronome}</div>
+                <div><strong>Візуальний ключ:</strong> ${currentTitan.visualKey}</div>
+                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border);">
+                  <strong>Fairlight Sidechain:</strong> Voiceover Master ducking музичної шини Suno (-3.2 dB, 40ms attack, 250ms release).
+                </div>
+                <div style="margin-top: 4px;">
+                  <strong>Color Grade Pipeline:</strong> 4-Node дерево (CST Log -> Balance/Contrast -> Kodak 2383 D60 Print LUT -> 35mm OFX Grain).
                 </div>
               </div>
-              <div>
-                <strong style="color: var(--purple); font-size: 11.5px; display: block; margin-bottom: 6px;">Fairlight Аудіо-роутинг</strong>
-                <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.6;">
-                  &bull; <strong>A1 (Диктор):</strong> HPF 75Hz, +1.5dB 3.5kHz, Sidechain Out 1<br>
-                  &bull; <strong>A2 (Музика 92 BPM):</strong> Sidechain Ducking -3.2 dB (Attack 40ms, Release 350ms)<br>
-                  &bull; <strong>A3 (SFX / Фолі):</strong> CRT, саб-дропи 40Hz на зламах сюжету<br>
-                  &bull; <strong>Master Bus:</strong> Target -14 LUFS, True Peak -1.0 dBFS
-                </div>
-              </div>
-            </div>
-            <div style="margin-top: 1rem; padding-top: 0.6rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 11px; color: var(--text-muted);">Локальний файл сценарію:</span>
-              <code style="font-family: var(--mono); font-size: 10.5px; color: var(--text-primary);">${currentTitan.scriptPath}</code>
             </div>
           </div>
         `;
       }
     }
 
-    // UTILITIES
-    function updateClock() {
-      const d = new Date();
-      document.getElementById('cTime').textContent = d.toLocaleDateString('uk-UA') + ' ' + d.toLocaleTimeString('uk-UA');
-    }
-    updateClock();
-    setInterval(updateClock, 1000);
+    // RENDER ALL 100 THESES CATALOG
+    function renderThesesCatalog() {
+      const container = document.getElementById('thesesCatalogBody');
+      if (!container) return;
+      container.innerHTML = '';
 
-    function copyPath() {
-      const fullPath = '/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast';
-      navigator.clipboard.writeText(fullPath).then(() => {
-        alert('Шлях до проєкту скопійовано:\n' + fullPath);
-      }).catch(() => {
-        prompt('Шлях:', fullPath);
+      const speakerFilter = document.getElementById('thesesSpeakerFilter') ? document.getElementById('thesesSpeakerFilter').value : 'all';
+      const searchQuery = (document.getElementById('thesesSearchInput') ? document.getElementById('thesesSearchInput').value : '').toLowerCase();
+
+      let count = 0;
+      TITANS_DATA.forEach(titan => {
+        if (speakerFilter !== 'all' && titan.ep !== speakerFilter) return;
+
+        const allEntries = [];
+        (titan.quotes || []).forEach(q => allEntries.append ? allEntries.append({type: 'quote', text: q, cat: 'Цитата'}) : allEntries.push({type: 'quote', text: q, cat: 'Цитата'}));
+        (titan.theses || []).forEach(th => allEntries.push({type: 'thesis', num: th.num, text: th.text, cat: th.cat}));
+
+        const matched = allEntries.filter(item => {
+          if (!searchQuery) return true;
+          return item.text.toLowerCase().includes(searchQuery) || item.cat.toLowerCase().includes(searchQuery) || titan.name.toLowerCase().includes(searchQuery);
+        });
+
+        if (matched.length === 0) return;
+
+        const sec = document.createElement('div');
+        sec.className = 'act-block';
+        sec.style.padding = '10px 14px';
+
+        let secHtml = `
+          <div class="act-head-row" style="margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <img src="${titan.avatar}" style="width: 28px; height: 28px; border-radius: 6px; object-fit: cover;">
+              <span class="act-heading">${titan.name} (${titan.latin}) &bull; Епізод ${titan.ep}</span>
+            </div>
+            <button class="btn btn-primary" onclick='openTitanQuotesById("${titan.id}")'>Відкрити персоналію</button>
+          </div>
+          <div class="theses-grid">
+        `;
+
+        matched.forEach(item => {
+          count++;
+          if (item.type === 'quote') {
+            secHtml += `
+              <div class="quote-card" style="margin: 0;">
+                <div class="quote-card-text">${item.text}</div>
+                <button class="btn" onclick='copyText(${JSON.stringify(item.text)})'>Копіювати</button>
+              </div>
+            `;
+          } else {
+            secHtml += `
+              <div class="thesis-item">
+                <span class="thesis-num">#${item.num}</span>
+                <div class="thesis-body">
+                  <div class="thesis-cat">${item.cat}</div>
+                  <div class="thesis-text">${item.text}</div>
+                </div>
+                <button class="btn" onclick='copyText(${JSON.stringify(item.text)})'>Копіювати</button>
+              </div>
+            `;
+          }
+        });
+
+        secHtml += `</div>`;
+        sec.innerHTML = secHtml;
+        container.appendChild(sec);
+      });
+
+      if (count === 0) {
+        container.innerHTML = '<div style="color: var(--text-muted); font-size: 12px; padding: 1rem;">Нічого не знайдено за вашим запитом.</div>';
+      }
+    }
+
+    // RENDER ALL PROMPTS
+    function renderAllPromptsList() {
+      const container = document.getElementById('allPromptsList');
+      if (!container || container.children.length > 0) return;
+
+      TITANS_DATA.forEach(titan => {
+        const block = document.createElement('div');
+        block.className = 'act-block';
+        block.innerHTML = `
+          <div class="act-head-row">
+            <span class="act-heading">Епізод ${titan.ep}: ${titan.name} — «${titan.title}»</span>
+            <span class="act-music">${titan.duration} &bull; Kodak 2383 D60</span>
+          </div>
+          <div style="padding: 8px 12px; display: flex; flex-direction: column; gap: 6px;">
+            ${(titan.acts || []).map(a => (a.scenes || []).map(s => `
+              <div class="prompt-box" style="padding: 6px 8px;">
+                <div style="flex: 1;">
+                  <div style="font-size: 10px; color: var(--amber);">[${s.tc}] SFX: ${s.sfx}</div>
+                  <div style="font-size: 11px; color: #9cdcfe; margin-top: 2px;">${s.prompt}</div>
+                </div>
+                <button class="btn" onclick="copyText('${s.prompt.replace(/'/g, "\'")}')">Копіювати</button>
+              </div>
+            `).join('')).join('')}
+          </div>
+        `;
+        container.appendChild(block);
       });
     }
 
-    function copyText(str) {
-      navigator.clipboard.writeText(str).then(() => {
-        alert('Текст скопійовано в буфер обміну!');
-      }).catch(() => {
-        prompt('Текст:', str);
-      });
-    }
-
-    // INITIAL RENDER
+    // INITIAL RENDERS
+    renderCards();
     renderTable();
+    renderThesesCatalog();
+
   </script>
 </body>
 </html>
