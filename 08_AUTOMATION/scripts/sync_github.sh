@@ -12,7 +12,8 @@ git add -A
 if git diff --staged --quiet; then
   echo "Nothing new to commit."
 else
-  COMMIT_MSG="feat(studio): 10 standalone hero master-dossier studio pages, SOP roadmap & 8-workshop architecture ($(date '+%Y-%m-%d %H:%M:%S'))"
+  DEFAULT_MSG="feat(audio): import 10 Suno 92 BPM stems, Smart Bin mapping & web audio player ($(date '+%Y-%m-%d %H:%M:%S'))"
+  COMMIT_MSG="${1:-$DEFAULT_MSG}"
   git commit -m "$COMMIT_MSG"
   echo "Committed changes: $COMMIT_MSG"
 fi

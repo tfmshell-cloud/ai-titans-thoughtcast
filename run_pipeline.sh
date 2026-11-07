@@ -13,6 +13,7 @@ import glob, subprocess
 JSC = "/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc"
 files = [
     "07_DASHBOARD/data/season1_index.js",
+    "07_DASHBOARD/data/suno_master_pool.js",
     "07_DASHBOARD/data/titans_1000_quotes.js",
     "07_DASHBOARD/assets/hub_app.js",
     "07_DASHBOARD/assets/episode_app.js",
@@ -21,7 +22,7 @@ files = [
 for f in files:
     src = open(f, encoding="utf-8").read()
     stub = (
-        "var window={addEventListener:function(){}}, "
+        "var window={addEventListener:function(){},scrollTo:function(){}}, "
         "document={title:'',body:{},getElementById:function(){return null;},querySelectorAll:function(){return [];}}, "
         "localStorage={getItem:function(){return null;},setItem:function(){}}, "
         "location={hash:''}, history={replaceState:function(){}};\n" + src

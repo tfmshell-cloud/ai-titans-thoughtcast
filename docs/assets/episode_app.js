@@ -872,6 +872,24 @@
   /* ---------------- TAB 6: SUNO 92 BPM & VO REGISTRY ---------------- */
   function renderAudio() {
     var pane = document.getElementById("pane-audio");
+    var masterPool = window.SUNO_MASTER_POOL || [];
+    var importedMap = {};
+    masterPool.forEach(function (t) {
+      importedMap[t.smart_bin] = t;
+    });
+
+    var poolRowsHtml = masterPool.map(function (t, idx) {
+      return [
+        "<tr>",
+        "  <td><span class=\"chip chip-emerald\">#" + esc(t.num) + "</span></td>",
+        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.smart_bin) + "</div></td>",
+        "  <td><span class=\"chip chip-purple\">" + esc(t.module) + "</span><div style=\"font-size:11px;color:var(--text-muted);margin-top:3px;\">" + esc(t.specs) + "</div></td>",
+        "  <td style=\"min-width:235px;\"><audio controls preload=\"none\" style=\"height:32px;width:230px;\" src=\"../assets/audio_previews/" + esc(t.preview) + "\"></audio></td>",
+        "  <td style=\"font-size:11.5px;color:var(--text-secondary);max-width:290px;\">" + esc(t.usage) + "</td>",
+        "  <td><button class=\"btn\" style=\"padding:3px 7px;font-size:11px;\" data-copy-pool-path=\"" + idx + "\">Шлях WAV</button></td>",
+        "</tr>"
+      ].join("\n");
+    }).join("\n");
 
     var masterModules = [
       {
@@ -899,12 +917,13 @@
     }).join("\n");
 
     var sunoRows = (epData.suno_registry || []).map(function (item, idx) {
-      var done = !!state.checked["suno_" + idx];
+      var matchedWav = importedMap[item.filename];
+      var done = !!state.checked["suno_" + idx] || !!matchedWav;
       return [
         "<tr>",
         "  <td><input type=\"checkbox\" class=\"sop-checkbox\" data-suno-check=\"" + idx + "\"" + (done ? " checked" : "") + "></td>",
-        "  <td><span class=\"chip chip-cyan\">" + esc(item.category) + " • " + esc(item.act) + "</span></td>",
-        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span></td>",
+        "  <td><span class=\"chip chip-cyan\">" + esc(item.category) + " • " + esc(item.act) + "</span>" + (matchedWav ? "<div style=\"margin-top:4px;\"><span class=\"chip chip-emerald\">✅ WAV у 03_AUDIO</span></div>" : "") + "</td>",
+        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span>" + (matchedWav ? ("<div style=\"font-size:10.5px;color:var(--emerald);margin-top:3px;\">Джерело: " + esc(matchedWav.orig_name) + " (" + esc(matchedWav.duration) + ")</div>") : "") + "</td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);\">" + esc(item.davinci_track) + "</td>",
         "  <td style=\"font-family:var(--mono);font-size:11px;color:#cbd5e1;max-width:390px;\">" + esc(item.suno_prompt) + "</td>",
         "  <td>",
@@ -931,6 +950,22 @@
     }).join("\n");
 
     pane.innerHTML = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.38);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎧 Імпортована Майстер-Бібліотека Suno Pro (10 реальних WAV-треків у 03_AUDIO/suno_stems/ • 37 хв 17 с)</div>",
+      "      <div class=\"panel-desc\">Наскрізне звукове ДНК усього серіалу + 100% готовий саундтрек під Smart Bins Епізоду 01. Прослухайте будь-який трек прямо тут перед укладанням у DaVinci Resolve.</div>",
+      "    </div>",
+      "    <span class=\"chip chip-emerald\">48 kHz WAV + C2PA Verified</span>",
+      "  </div>",
+      "  <div class=\"studio-table-wrap\">",
+      "    <table class=\"studio-table\">",
+      "      <thead><tr><th>№</th><th>Оригінал Suno → Smart Bin (.wav)</th><th>Модуль та Акустика</th><th>Прослухати трек</th><th>Драматургічне призначення</th><th>Шлях</th></tr></thead>",
+      "      <tbody>" + poolRowsHtml + "</tbody>",
+      "    </table>",
+      "  </div>",
+      "</div>",
+
       "<div class=\"panel-card\">",
       "  <div class=\"panel-head\">",
       "    <div>",
@@ -962,6 +997,25 @@
       "  </div>",
       "</div>"
     ].join("\n");
+
+    var audios = pane.querySelectorAll("audio");
+    for (var a = 0; a < audios.length; a++) {
+      audios[a].addEventListener("play", function (ev) {
+        for (var b = 0; b < audios.length; b++) {
+          if (audios[b] !== ev.target) audios[b].pause();
+        }
+      });
+    }
+
+    pane.querySelectorAll("[data-copy-pool-path]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var idx = parseInt(btn.getAttribute("data-copy-pool-path"), 10);
+        var tr = masterPool[idx];
+        if (tr) {
+          copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/" + tr.smart_bin, tr.smart_bin);
+        }
+      });
+    });
 
     pane.querySelectorAll("[data-copy-mod]").forEach(function (btn) {
       btn.addEventListener("click", function () {

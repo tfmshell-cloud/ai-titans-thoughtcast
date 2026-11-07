@@ -313,6 +313,44 @@
     }
   }
 
+  function renderSunoMasterPool() {
+    var tbody = document.getElementById("hubSunoPoolBody");
+    var pool = window.SUNO_MASTER_POOL || [];
+    if (!tbody) return;
+
+    tbody.innerHTML = pool.map(function (t, idx) {
+      return [
+        "<tr>",
+        "  <td><span class=\"pill pill-emerald\">#" + esc(t.num) + "</span></td>",
+        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.smart_bin) + "</div></td>",
+        "  <td><span class=\"pill pill-purple\">" + esc(t.module) + "</span><div style=\"font-size:10.8px;color:var(--text-muted);margin-top:3px;\">" + esc(t.specs) + "</div></td>",
+        "  <td style=\"min-width:225px;\"><audio controls preload=\"none\" style=\"height:30px;width:220px;\" src=\"assets/audio_previews/" + esc(t.preview) + "\"></audio></td>",
+        "  <td style=\"font-size:11.5px;color:var(--text-secondary);max-width:265px;\">" + esc(t.usage) + "</td>",
+        "  <td><button class=\"btn-copy-sm\" data-hub-wav-copy=\"" + idx + "\">📋 WAV</button></td>",
+        "</tr>"
+      ].join("\n");
+    }).join("\n");
+
+    var audios = tbody.querySelectorAll("audio");
+    for (var i = 0; i < audios.length; i++) {
+      audios[i].addEventListener("play", function (ev) {
+        for (var j = 0; j < audios.length; j++) {
+          if (audios[j] !== ev.target) audios[j].pause();
+        }
+      });
+    }
+
+    tbody.querySelectorAll("[data-hub-wav-copy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var idx = parseInt(btn.getAttribute("data-hub-wav-copy"), 10);
+        var tr = pool[idx];
+        if (tr) {
+          copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/" + tr.smart_bin, tr.smart_bin);
+        }
+      });
+    });
+  }
+
   function switchHubTab(tabId) {
     var tabs = ["heroes", "architecture", "quotes", "standards", "registry"];
     if (tabs.indexOf(tabId) === -1) tabId = "heroes";
@@ -366,6 +404,16 @@
       });
     }
 
+    ["sidebarOpenAudioBtn", "sidebarOpenSunoCatalogBtn"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("click", function () {
+          switchHubTab("standards");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    });
+
     // Refresh progress bars automatically when returning from a hero tab!
     window.addEventListener("storage", function () {
       renderHeroesGrid();
@@ -378,7 +426,7 @@
 
     var cTime = document.getElementById("cTime");
     if (cTime) {
-      cTime.textContent = "Season 1 • 10 Episodes • 1,000 Prompts • 1,000 Quotes";
+      cTime.textContent = "Season 1 • 10 Episodes • 10 WAV Stems Imported • 1,000 Prompts • 1,000 Quotes";
     }
   }
 
@@ -386,6 +434,7 @@
     renderHeroesGrid();
     renderSeasonRegistry();
     renderGlobalQuotes();
+    renderSunoMasterPool();
     bindStaticActions();
   }
 

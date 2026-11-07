@@ -30,10 +30,9 @@ ENV/
 CacheClip/
 .gallery/
 
-# Heavy Audio Stems & SFX
-03_AUDIO/voiceover/*.wav
-03_AUDIO/suno_stems/*.wav
-03_AUDIO/sfx/*.wav
+# Heavy Audio Stems & SFX (mirrored to Google Drive, excluded from Git)
+03_AUDIO/**/*.wav
+03_AUDIO/*.wav
 
 # Local Backups
 09_BACKUPS/*.tar.gz

@@ -23,6 +23,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
   <div id="episodeApp"></div>
   <script src="../data/season1_index.js"></script>
+  <script src="../data/suno_master_pool.js"></script>
   <script src="../data/episodes/ep{ep}.js"></script>
   <script src="../assets/episode_app.js"></script>
 </body>
