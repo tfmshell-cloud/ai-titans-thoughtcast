@@ -161,6 +161,9 @@
       var epMedia = mediaPool[h.ep] || {};
       var dosCount = (epMedia.dossiers || []).length || 1;
       var archCount = (epMedia.archives || []).length || 1;
+      var flowCount = (epMedia.flow_queue || []).length || 1;
+      var totalMp4Count = dosCount + archCount + flowCount;
+      var firstArch = (epMedia.archives || [])[0];
 
       var audioStripHtml = act1Track ? [
         "  <div style=\"background:rgba(16,185,129,0.07);border:1px solid rgba(52,211,153,0.28);border-radius:8px;padding:7px 10px;margin:8px 0;\" onclick=\"event.stopPropagation();\">",
@@ -200,22 +203,21 @@
 
         "  <div class=\"hero-metrics-strip\">",
         "    <span>📝 <strong>" + esc(h.script_words) + "</strong> слів</span>",
-        "    <span>🎥 <strong>100</strong> промптів</span>",
+        "    <span>🎬 <strong>" + totalMp4Count + "</strong> готових MP4</span>",
         "    <span>🗂️ <strong>" + dosCount + "</strong> 4K досьє + <strong>" + archCount + "</strong> архів</span>",
         "    <span>🎵 <strong>" + prog.heroWavCount + "/4</strong> актів WAV</span>",
         "  </div>",
 
         "  <div class=\"hero-prog-row\">",
-        "    <div class=\"hero-prog-label\"><span>Готовність випуску (" + prog.sopDone + "/" + prog.sopTotal + " SOP + 4 WAV)</span><strong>" + prog.pct + "%</strong></div>",
+        "    <div class=\"hero-prog-label\"><span>Готовність випуску (" + prog.sopDone + "/" + prog.sopTotal + " SOP + 4 WAV + " + totalMp4Count + " MP4)</span><strong>" + prog.pct + "%</strong></div>",
         "    <div class=\"hero-prog-bar\"><div class=\"hero-prog-fill\" style=\"width:" + prog.pct + "%\"></div></div>",
         "  </div>",
 
         "  <div class=\"hero-deep-links\" onclick=\"event.stopPropagation();\">",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#sop\" target=\"_blank\" rel=\"noopener\">🧭 Алгоритм</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(251,191,36,0.65);background:rgba(251,191,36,0.13);color:var(--amber);\">🎬 Відео-Монітор & Футажі (" + totalMp4Count + " MP4)</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#audio\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(52,211,153,0.45);color:var(--emerald);\">🎵 4 WAV + Suno</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#script\" target=\"_blank\" rel=\"noopener\">🎬 Сценарій</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#prompts\" target=\"_blank\" rel=\"noopener\">🎥 100 Промптів</a>",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#audio\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(52,211,153,0.45);color:var(--emerald);\">🎵 4 WAV + Suno</a>",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(251,191,36,0.45);color:var(--amber);\">🗂️ Досьє & Архіви</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#davinci\" target=\"_blank\" rel=\"noopener\">🎚️ DaVinci 19</a>",
         "  </div>",
 

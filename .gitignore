@@ -15,13 +15,10 @@ venv/
 ENV/
 *.env
 
-# Large raw footage & heavy media binaries (tracked via external storage / LFS or local backups)
+# Large raw footage & heavy media binaries (4K lossless PNGs >2.5MBx14 & external MOVs in Google Drive; MP4 archives & Flow pre-vis synced to GitHub)
 05_RAW_FOOTAGE/veo_clips/*.mp4
 05_RAW_FOOTAGE/veo_clips/*.mov
-05_RAW_FOOTAGE/flow_renders/*.mp4
 05_RAW_FOOTAGE/flow_renders/*.mov
-05_RAW_FOOTAGE/archives/*
-!05_RAW_FOOTAGE/archives/.gitkeep
 05_RAW_FOOTAGE/dossiers_press/*.png
 05_RAW_FOOTAGE/speaker_portraits/*.jpg
 05_RAW_FOOTAGE/speaker_portraits/*.png

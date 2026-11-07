@@ -1003,3 +1003,326 @@ a { color: inherit; text-decoration: none; }
   .bio-row { grid-template-columns: 1fr; gap: 0.3rem; }
   .prompts-grid, .quotes-grid { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   Tab 7 Split Layout: Right-Side Sticky Video Monitor & Animated Reel + Popup
+   ========================================================================== */
+.media-split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 415px;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+@media (max-width: 1150px) {
+  .media-split-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.media-main-col {
+  min-width: 0;
+}
+
+.media-dock-right {
+  position: sticky;
+  top: 108px;
+  background: linear-gradient(165deg, #151926 0%, #0f121b 100%);
+  border: 1px solid rgba(56, 189, 248, 0.42);
+  border-radius: 13px;
+  padding: 0.95rem;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.55);
+}
+
+.dock-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.dock-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dock-monitor-box {
+  background: #06080d;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+
+.dock-monitor-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #05070b;
+  object-fit: contain;
+}
+
+.dock-monitor-meta {
+  padding: 0.65rem 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+  background: rgba(19, 22, 31, 0.92);
+}
+
+.dock-monitor-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 4px 0 3px;
+  line-height: 1.35;
+}
+
+.dock-monitor-sub {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.dock-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.55rem;
+}
+
+.dock-filter-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.dock-pill {
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface-elevated);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.dock-pill:hover {
+  color: var(--text-primary);
+}
+
+.dock-pill.active {
+  background: var(--cyan-subtle);
+  color: var(--cyan);
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.dock-anim-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  background: rgba(52, 211, 153, 0.07);
+  border: 1px solid rgba(52, 211, 153, 0.24);
+  font-size: 11px;
+  color: var(--emerald);
+  margin-bottom: 0.6rem;
+}
+
+.media-reel-scroll {
+  max-height: 465px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-right: 4px;
+}
+
+.media-reel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.media-reel-scroll::-webkit-scrollbar-track {
+  background: #0d1017;
+  border-radius: 999px;
+}
+.media-reel-scroll::-webkit-scrollbar-thumb {
+  background: #2b3348;
+  border-radius: 999px;
+}
+.media-reel-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+.reel-item-card {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 0.65rem;
+  padding: 0.5rem;
+  border-radius: 9px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  align-items: center;
+}
+
+.reel-item-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: var(--surface-hover);
+  transform: translateX(-2px);
+}
+
+.reel-item-card.active {
+  border-color: var(--emerald);
+  background: rgba(52, 211, 153, 0.09);
+  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.3);
+}
+
+.reel-thumb-wrap {
+  position: relative;
+  width: 132px;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #05070c;
+  border: 1px solid var(--border-subtle);
+}
+
+.reel-thumb-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.reel-tc-tag {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  padding: 1px 5px;
+  font-size: 9.5px;
+  font-family: var(--mono);
+  font-weight: 700;
+  color: #fff;
+  background: rgba(8, 10, 15, 0.86);
+  border-radius: 4px;
+}
+
+.reel-item-title {
+  font-size: 11.8px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin: 3px 0;
+}
+
+.reel-item-file {
+  font-family: var(--mono);
+  font-size: 9.8px;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.inline-table-video {
+  width: 215px;
+  aspect-ratio: 16 / 9;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: #05070c;
+  display: block;
+}
+
+/* Floating Cinema Lightbox Modal (Спливаюче вікно з прокруткою) */
+.cinema-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  background: rgba(6, 8, 13, 0.86);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.cinema-modal-backdrop.open {
+  display: flex;
+  animation: fadeIn 0.18s ease;
+}
+
+.cinema-modal-window {
+  width: 100%;
+  max-width: 1220px;
+  max-height: 92vh;
+  background: #121621;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  border-radius: 14px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cinema-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.15rem;
+  background: #0d1018;
+  border-bottom: 1px solid var(--border);
+}
+
+.cinema-modal-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+@media (max-width: 960px) {
+  .cinema-modal-body {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+}
+
+.cinema-stage-col {
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+}
+
+.cinema-stage-video {
+  width: 100%;
+  max-height: 58vh;
+  aspect-ratio: 16 / 9;
+  background: #04060a;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.cinema-playlist-col {
+  border-left: 1px solid var(--border);
+  background: #0e111a;
+  padding: 0.85rem;
+  overflow-y: auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
