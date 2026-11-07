@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Thoughtcast: AI Titans — Production Hub</title>
+  <style>
+    :root {
+      --bg: #0d0f14;
+      --surface: #141720;
+      --surface-elevated: #1a1e2a;
+      --surface-hover: #1f2535;
+      --border: #232836;
+      --border-subtle: #1c202c;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #586069;
+      --cyan: #38bdf8;
+      --cyan-subtle: rgba(56, 189, 248, 0.12);
+      --emerald: #34d399;
+      --emerald-subtle: rgba(52, 211, 153, 0.12);
+      --amber: #fbbf24;
+      --amber-subtle: rgba(251, 191, 36, 0.12);
+      --purple: #a78bfa;
+      --purple-subtle: rgba(167, 139, 250, 0.12);
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font);
+      font-size: 13px;
+      line-height: 1.45;
+      padding: 1.25rem;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app-shell { max-width: 1260px; margin: 0 auto; }
+
+    /* Top Navigation */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand-wrap { display: flex; align-items: center; gap: 0.65rem; }
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #0b0d13;
+    }
+
+    .title-group h1 { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+    .title-group p { font-size: 11.5px; color: var(--text-secondary); }
+
+    .stats-inline { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+    
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--emerald-subtle);
+      color: var(--emerald);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+    }
+
+    .dot-live { width: 5px; height: 5px; border-radius: 50%; background: var(--emerald); }
+
+    .metric-pill {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11.5px;
+      color: var(--text-secondary);
+    }
+    .metric-pill strong { color: var(--text-primary); font-weight: 600; }
+
+    /* Navigation Tabs */
+    .tab-bar {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: var(--surface-elevated);
+    }
+
+    .tab-btn.active {
+      color: var(--cyan);
+      background: var(--cyan-subtle);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    /* Pipeline Strip */
+    .pipeline-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+    }
+
+    .section-title { font-size: 12px; font-weight: 600; color: var(--text-secondary); }
+
+    .pipeline-steps {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.45rem;
+    }
+    @media (max-width: 860px) {
+      .pipeline-steps { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+    }
+
+    .step-item {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 0.45rem 0.55rem;
+      font-size: 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .step-item.done {
+      border-color: rgba(52, 211, 153, 0.3);
+      background: rgba(52, 211, 153, 0.04);
+    }
+    .step-item.active {
+      border-color: rgba(251, 191, 36, 0.4);
+      background: rgba(251, 191, 36, 0.05);
+    }
+
+    .step-num { font-size: 10px; color: var(--text-muted); }
+    .step-name { font-weight: 500; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .step-state { font-size: 10.5px; margin-top: 1px; }
+    .step-item.done .step-state { color: var(--emerald); }
+    .step-item.active .step-state { color: var(--amber); }
+    .step-item.queued .step-state { color: var(--text-muted); }
+
+    /* Layout Grids */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 1rem;
+    }
+    @media (max-width: 960px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.9rem;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .search-input {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 11.5px;
+      color: var(--text-primary);
+      outline: none;
+      width: 190px;
+    }
+
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th {
+      text-align: left;
+      padding: 6px 8px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 11px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface-elevated);
+    }
+    td {
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: middle;
+    }
+    tr:hover td { background: rgba(255, 255, 255, 0.015); }
+
+    .ep-idx { font-family: var(--mono); color: var(--text-muted); font-size: 11px; width: 30px; }
+    .person-name { font-weight: 500; color: #fff; }
+    .topic-cell { color: var(--text-secondary); font-size: 11.5px; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      font-weight: 500;
+    }
+    .badge-writing { background: var(--amber-subtle); color: var(--amber); border: 1px solid rgba(251, 191, 36, 0.3); }
+    .badge-research { background: var(--cyan-subtle); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
+    .badge-queue { background: rgba(139, 148, 158, 0.1); color: var(--text-secondary); border: 1px solid var(--border-subtle); }
+
+    .folder-list { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.4rem; }
+    .folder-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 5px 8px;
+      font-size: 11.5px;
+      color: var(--text-secondary);
+    }
+    .folder-name { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; }
+    .folder-tag { font-size: 10px; color: var(--text-muted); }
+
+    /* Audio Studio Section */
+    .audio-studio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 860px) {
+      .audio-studio-grid { grid-template-columns: 1fr; }
+    }
+
+    .audio-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 0.85rem;
+    }
+
+    .audio-card-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      font-size: 11.5px;
+    }
+    .spec-key { color: var(--text-muted); }
+    .spec-val { color: var(--text-primary); font-family: var(--mono); font-size: 11px; }
+
+    .code-preview {
+      background: #090b0e;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: #9cdcfe;
+      overflow-x: auto;
+      line-height: 1.4;
+      margin-top: 0.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 4px 9px;
+      font-size: 11.5px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface-elevated);
+      color: var(--text-primary);
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      border-color: var(--cyan);
+      background: rgba(56, 189, 248, 0.08);
+      color: #fff;
+    }
+    .btn-primary {
+      background: var(--cyan-subtle);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: var(--cyan);
+    }
+
+    .footer-bar {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.8rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-shell">
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-icon">AI</div>
+        <div class="title-group">
+          <h1>Cinematic Thoughtcast &bull; AI Titans</h1>
+          <p>Панель моніторингу виробництва, аудіо-пайплайну та репозиторію</p>
+        </div>
+      </div>
+
+      <div class="stats-inline">
+        <span class="badge-status"><span class="dot-live"></span> Сезон 1</span>
+        <div class="metric-pill">Формат аудіо: <strong>WAV 48 kHz / 24-bit</strong></div>
+        <div class="metric-pill">Темп: <strong>120 слів/хв (WPM)</strong></div>
+        <div class="metric-pill">YouTube: <strong>Multi-Language (UK/EN)</strong></div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchView('overview', this)">Загальний огляд</button>
+      <button class="tab-btn" onclick="switchView('audio', this)">🎙️ Аудіо-інженерія & YouTube Multi-Track</button>
+      <button class="tab-btn" onclick="switchView('structure', this)">Структура тек</button>
+    </div>
+
+    <!-- Section 1: Overview View -->
+    <div id="view-overview">
+      <!-- Pipeline Strip -->
+      <div class="pipeline-container">
+        <div class="section-head">
+          <span class="section-title">Виробничий цикл</span>
+          <button class="btn btn-primary" onclick="simulateRefresh()">Оновити стан</button>
+        </div>
+        <div class="pipeline-steps">
+          <div class="step-item done"><span class="step-num">01 / Репо</span><span class="step-name">Інфраструктура</span><span class="step-state">✓ Готово</span></div>
+          <div class="step-item done"><span class="step-num">02 / Дерево</span><span class="step-name">Структура тек</span><span class="step-state">✓ Створено</span></div>
+          <div class="step-item active"><span class="step-num">03 / Сценарій</span><span class="step-name">Ep 01: Altman</span><span class="step-state">● Розробка</span></div>
+          <div class="step-item queued"><span class="step-num">04 / Аудіо</span><span class="step-name">120 WPM (UK/EN)</span><span class="step-state">Черга</span></div>
+          <div class="step-item queued"><span class="step-num">05 / Відео</span><span class="step-name">Veo & Flow</span><span class="step-state">Черга</span></div>
+          <div class="step-item queued"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">Черга</span></div>
+          <div class="step-item queued"><span class="step-num">07 / Архів</span><span class="step-name">Бекапи</span><span class="step-state">Черга</span></div>
+        </div>
+      </div>
+
+      <!-- Main Grid -->
+      <div class="dashboard-grid">
+        <section class="card">
+          <div class="filter-bar">
+            <span class="section-title">Реєстр епізодів (AI Titans)</span>
+            <input type="text" id="searchInput" class="search-input" placeholder="Фільтр персоналій..." oninput="filterTitans()">
+          </div>
+
+          <div class="table-wrap">
+            <table id="titansTable">
+              <thead>
+                <tr>
+                  <th style="width: 32px;">№</th>
+                  <th>Персоналія</th>
+                  <th>Тематичний фокус</th>
+                  <th style="width: 90px;">Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="ep-idx">01</td><td><span class="person-name">Sam Altman</span></td><td class="topic-cell">Compute, OpenAI, AGI Scaling</td><td><span class="badge badge-writing">Сценарій</span></td></tr>
+                <tr><td class="ep-idx">02</td><td><span class="person-name">Jensen Huang</span></td><td class="topic-cell">CUDA Dynasty, Blackwell GPUs</td><td><span class="badge badge-research">Дослідження</span></td></tr>
+                <tr><td class="ep-idx">03</td><td><span class="person-name">Demis Hassabis</span></td><td class="topic-cell">DeepMind, AlphaFold</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">04</td><td><span class="person-name">Geoffrey Hinton</span></td><td class="topic-cell">Backprop, Existential Risk</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">05</td><td><span class="person-name">Yann LeCun</span></td><td class="topic-cell">JEPA, World Models, Open Science</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">06</td><td><span class="person-name">Ilya Sutskever</span></td><td class="topic-cell">Safe Superintelligence (SSI)</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">07</td><td><span class="person-name">Dario Amodei</span></td><td class="topic-cell">Anthropic, Constitutional AI</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">08</td><td><span class="person-name">Fei-Fei Li</span></td><td class="topic-cell">Spatial Intelligence, World Labs</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">09</td><td><span class="person-name">Yoshua Bengio</span></td><td class="topic-cell">System 2 Reasoning, AI Governance</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr><td class="ep-idx">10</td><td><span class="person-name">Andrew Ng</span></td><td class="topic-cell">Democratization, Agentic Workflows</td><td><span class="badge badge-queue">Черга</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Fast Catalog -->
+        <aside class="card">
+          <div class="section-head">
+            <span class="section-title">Каталог проєкту</span>
+            <button class="btn" style="padding: 2px 7px; font-size: 11px;" onclick="copyPath()">Копіювати шлях</button>
+          </div>
+
+          <div class="folder-list">
+            <div class="folder-row"><span class="folder-name">📁 01_RESEARCH</span><span class="folder-tag">10 папок</span></div>
+            <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">ep_01</span></div>
+            <div class="folder-row"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag">UK & EN stems</span></div>
+            <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">prompts</span></div>
+            <div class="folder-row"><span class="folder-name">🎞️ 05_RAW_FOOTAGE</span><span class="folder-tag">veo / flow</span></div>
+            <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag">timelines</span></div>
+            <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD</span><span class="folder-tag">active</span></div>
+            <div class="folder-row"><span class="folder-name">⚙️ 08_AUTOMATION</span><span class="folder-tag">scripts</span></div>
+            <div class="folder-row"><span class="folder-name">💾 09_BACKUPS</span><span class="folder-tag">snapshots</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Section 2: Audio Engineering & Multi-Track Pipeline View -->
+    <div id="view-audio" style="display: none;">
+      <div class="card" style="margin-bottom: 1rem;">
+        <div class="section-head">
+          <div>
+            <span class="section-title">🎙️ YouTube Multi-Language Audio Tracks (UK / EN) & 120 WPM Architecture</span>
+            <p style="font-size: 11.5px; color: var(--text-secondary); margin-top: 2px;">
+              Єдине відео на каналі з автоматичним вибором мови плеєром: Українська (Master) + Англійська (Clone Dub)
+            </p>
+          </div>
+          <button class="btn btn-primary" onclick="copySSML()">Копіювати SSML шаблон</button>
+        </div>
+
+        <div class="audio-studio-grid">
+          <!-- Card A: Methods of Control -->
+          <div class="audio-card">
+            <div class="audio-card-title">⚙️ 3 методи контролю темпу та дихання</div>
+            
+            <div style="margin-bottom: 0.6rem;">
+              <strong style="color: var(--cyan); font-size: 11.5px;">1. SSML розмітка (Google Cloud TTS / ElevenLabs)</strong>
+              <p style="font-size: 11px; color: var(--text-secondary);">
+                Точний контроль мілісекунд пауз (<code style="color: var(--amber);">&lt;break time="1.4s"/&gt;</code>) та уповільнення темпу до 120 WPM (<code style="color: var(--cyan);">&lt;prosody rate="85%"&gt;</code>).
+              </p>
+            </div>
+
+            <div style="margin-bottom: 0.6rem;">
+              <strong style="color: var(--purple); font-size: 11.5px;">2. Audio Native Prompting (ElevenLabs)</strong>
+              <p style="font-size: 11px; color: var(--text-secondary);">
+                Вбудовування драматургічних тегів у текст: <code style="color: #fff;">[sighs]</code>, <code style="color: #fff;">[deep breath]</code>, трикрапки <code style="color: #fff;">...</code> (спад тону) та тире <code style="color: #fff;">—</code>.
+              </p>
+            </div>
+
+            <div>
+              <strong style="color: var(--emerald); font-size: 11.5px;">3. Режисерський Speech-to-Speech (STS)</strong>
+              <p style="font-size: 11px; color: var(--text-secondary);">
+                Запис репліки власним голосом під секундомір DaVinci з ідеальним диханням &rarr; заміна тембру на кінематографічний дикторський бас в ElevenLabs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card B: SSML Code Template -->
+          <div class="audio-card">
+            <div class="audio-card-title">📜 SSML зразок (Ep 01: Sam Altman)</div>
+            <pre class="code-preview" id="ssmlCode">&lt;speak&gt;
+  &lt;!-- Цільовий темп: 118-120 слів на хвилину --&gt;
+  &lt;prosody rate="85%" pitch="-2st"&gt;
+    У вісім років світ більшості людей обмежений правилами школи.
+  &lt;/prosody&gt;
+
+  &lt;break time="1.4s" /&gt;
+
+  &lt;prosody rate="80%"&gt;
+    У 1993 році хлопчик розпаковує свій перший комп'ютер 
+    &lt;emphasis level="strong"&gt;Macintosh LC II&lt;/emphasis&gt;.
+  &lt;/prosody&gt;
+
+  &lt;break time="900ms" /&gt;
+&lt;/speak&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Comparative Tool Matrix -->
+        <div style="margin-top: 1rem;">
+          <span class="section-title" style="display: block; margin-bottom: 0.5rem;">📊 Технологічна матриця синтезу голосу</span>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Параметр</th>
+                  <th>ElevenLabs (Projects / STS)</th>
+                  <th>Google Cloud TTS (Chirp / Studio)</th>
+                  <th>Google NotebookLM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Українська мова</strong></td>
+                  <td style="color: var(--emerald);">Найвища якість, природні наголоси</td>
+                  <td>Висока (Neural2), чітка</td>
+                  <td style="color: var(--text-muted);">Не підтримується (тільки EN)</td>
+                </tr>
+                <tr>
+                  <td><strong>Англійська мова</strong></td>
+                  <td style="color: var(--emerald);">Голлівудський закадр</td>
+                  <td>Документальна чіткість</td>
+                  <td>Розмовний подкаст</td>
+                </tr>
+                <tr>
+                  <td><strong>Фіксація темпу (120 wpm)</strong></td>
+                  <td>Повзунок Speed або Speech-to-Speech</td>
+                  <td style="color: var(--cyan); font-family: var(--mono);">&lt;prosody rate="..."&gt;</td>
+                  <td style="color: var(--text-muted);">Неможливо зафіксувати</td>
+                </tr>
+                <tr>
+                  <td><strong>Дихання та паузи</strong></td>
+                  <td>Теги [breath], трикрапки, ручні спліти</td>
+                  <td style="color: var(--cyan); font-family: var(--mono);">&lt;break time="Xs"/&gt;</td>
+                  <td style="color: var(--text-muted);">Автоматично, випадково</td>
+                </tr>
+                <tr>
+                  <td><strong>Експорт стемами</strong></td>
+                  <td style="color: var(--emerald);">WAV 24-bit / 48 kHz</td>
+                  <td>WAV / MP3</td>
+                  <td style="color: var(--text-muted);">Лише монолітний файл</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Directory Structure View -->
+    <div id="view-structure" style="display: none;">
+      <div class="card">
+        <div class="section-head">
+          <span class="section-title">Повна архітектура репозиторію</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Гілка main &bull; 30 відстежуваних файлів</span>
+        </div>
+        <div class="folder-list" style="margin-top: 0.5rem;">
+          <div class="folder-row">
+            <span class="folder-name">📁 01_RESEARCH/{sam_altman, jensen_huang, demis_hassabis, ...}</span>
+            <span class="folder-tag">10 дослідницьких тек</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span>
+            <span class="folder-tag">voiceover_ssml_template.xml</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 03_AUDIO/{voiceover, suno_stems, sfx}</span>
+            <span class="folder-tag">AUDIO_ENGINEERING_GUIDE.md</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 04_VIDEO_PROMPTS</span>
+            <span class="folder-tag">Промпти для Veo & Flow</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 05_RAW_FOOTAGE/{flow_renders, veo_clips, archives}</span>
+            <span class="folder-tag">Згенеровані кадри</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 06_DAVINCI_PROJECTS</span>
+            <span class="folder-tag">Таймлайни DaVinci Studio</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 07_DASHBOARD</span>
+            <span class="folder-tag">index.html (Mission Control)</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 08_AUTOMATION/scripts</span>
+            <span class="folder-tag">Скрипти синхронізації</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 09_BACKUPS</span>
+            <span class="folder-tag">Архівні копії</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bar -->
+    <div class="footer-bar">
+      <div>Синхронізовано з локальним сховищем &bull; macOS</div>
+      <div id="cTime" style="font-family: var(--mono);"></div>
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const d = new Date();
+      document.getElementById('cTime').textContent = d.toLocaleDateString('uk-UA') + ' ' + d.toLocaleTimeString('uk-UA');
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    function switchView(viewName, el) {
+      document.getElementById('view-overview').style.display = viewName === 'overview' ? 'block' : 'none';
+      document.getElementById('view-audio').style.display = viewName === 'audio' ? 'block' : 'none';
+      document.getElementById('view-structure').style.display = viewName === 'structure' ? 'block' : 'none';
+      
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      if (el) el.classList.add('active');
+    }
+
+    function filterTitans() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('#titansTable tbody tr');
+      rows.forEach(r => {
+        const text = r.textContent.toLowerCase();
+        r.style.display = text.includes(q) ? '' : 'none';
+      });
+    }
+
+    function simulateRefresh() {
+      const btn = event.target;
+      const orig = btn.textContent;
+      btn.textContent = 'Оновлено ✓';
+      setTimeout(() => { btn.textContent = orig; }, 1200);
+    }
+
+    function copyPath() {
+      const fullPath = '/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast';
+      navigator.clipboard.writeText(fullPath).then(() => {
+        alert('Шлях скопійовано:\n' + fullPath);
+      }).catch(() => {
+        prompt('Шлях:', fullPath);
+      });
+    }
+
+    function copySSML() {
+      const ssml = document.getElementById('ssmlCode').innerText;
+      navigator.clipboard.writeText(ssml).then(() => {
+        alert('SSML шаблон скопійовано в буфер обміну!');
+      }).catch(() => {
+        prompt('SSML код:', ssml);
+      });
+    }
+  </script>
+</body>
+</html>
