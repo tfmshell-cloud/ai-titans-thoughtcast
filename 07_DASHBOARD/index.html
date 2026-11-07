@@ -2514,13 +2514,13 @@
       renderModalQuotesList();
     }
 
-    function copyAllCurrentTitanQuotes() {
+        function copyAllCurrentTitanQuotes() {
       if (!currentTitan || !currentTitan.quotes_100) return;
-      const text = currentTitan.quotes_100.map(q => `#${q.num} [${q.cat}] ${q.text}`).join('
-
-');
+      var text = currentTitan.quotes_100.map(function(q) {
+        return '#' + q.num + ' [' + q.cat + '] ' + q.text;
+      }).join('\n\n');
       copyText(text);
-      alert(`Всі 100 цитат персонажа ${currentTitan.name} успішно скопійовано у буфер обміну!`);
+      showToast('✓ Всі 100 цитат персонажа ' + currentTitan.name + ' скопійовано!');
     }
 
     function renderModalQuotesList() {
