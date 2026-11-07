@@ -1,49 +1,43 @@
-# МАЙСТЕР-БІБЛІОТЕКА SUNO PRO (92 BPM) — 16 ІМПОРТОВАНИХ WAV-ТРЕКІВ ТА РОЗПОДІЛ ПО 10 ЕПІЗОДАХ
+# МАЙСТЕР-БІБЛІОТЕКА SUNO PRO (92 BPM) — 16 WAV-МАЙСТРІВ ТА 40 СЛОТІВ SMART BINS (УСІ 10 ЕПІЗОДІВ ЗАКРИТО)
+
 **Проєкт:** Cinematic Thoughtcast // «Архітектори Розуму (AI Titans)»  
-**Загальний обсяг імпортованих майстрів:** `16 WAV` (`710.8 МБ`, сумарна тривалість **`61 хв 31 с`**, стандарт **`48,000 Hz / 16-bit Stereo`**)  
-**Локальні директорії WAV-майстрів:**
-- Оригінальний пул зі збереженими C2PA-підписами Suno: `03_AUDIO/suno_stems/00_MASTER_POOL_ORIGINAL/`
-- Індивідуальні папки під DaVinci Resolve Smart Bins для всіх 10 героїв:
-  - `03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/` .. `03_AUDIO/suno_stems/EP10_NG_SMART_BINS/`
+**Статус етапу Suno Pro:** ✅ **100% ЗАКРИТО** (`16` унікальних WAV-майстрів = `40` готових канонічних WAV-файлів по `4` акти в кожній із 10 папок Smart Bins, без зайвого дублювання місця на диску через macOS hardlinks).  
+**Параметри аудіо:** `48,000 Hz / 16-bit Stereo`, сумарна тривалість майстрів **`61 хв 31 с`** (`710.8 МБ` WAV + оптимізовані HE-AAC прев'ю `21.4 МБ` для миттєвого відтворення на GitHub Pages).
 
 ---
 
-## 1. Статус комплектації по модулях сезону (без дублювання між серіями)
+## 1. Повна комплектація 10 Епізодів (4 Акти у кожному Smart Bin під доріжку `A2` DaVinci Resolve)
 
-1. **Модуль A (`Introspection` — Акт 1): ЗАКРИТО 10 із 10 епізодів (100% без жодного повтору!).**  
-   Кожен із 10 Титанів отримав власний ексклюзивний `48 kHz WAV`-трек, підібраний за живим прослуховуванням під його характер, біографію та палітру кадру.
-2. **Модуль B (`Tension & Crisis` — Акти 2–3): закрито 2 епізоди (`EP01`, `EP02`), очікуємо наступну партію треків для `EP03`–`EP10`.**  
-   > **Порада для генерації Модуля B у Suno Pro:** додавай у кінець промпта `no heavy electric guitars, subtle minimalist thriller pulse`, щоб уникнути агресивних рок-гітар у частотах голосу диктора.
-3. **Модуль C (`Transcendence` — Фінал Акту 4): закрито 4 епізоди без повторів (`EP01`, `EP03`, `EP04`, `EP10`), залишилось 6 фіналів (`EP02`, `EP05`, `EP06`, `EP07`, `EP08`, `EP09`).**
-
----
-
-## 2. Повна карта 16 WAV-треків (Посекундне прослуховування + Прив'язка до 10 Героїв)
-
-### А. Індивідуальні теми Акту 1 (`Introspection` — 10 Героїв = 10 унікальних треків)
-
-| № | Герой та Епізод | Оригінальний файл Suno | Папка та ім'я Smart Bin | Час | Живий саунд-аудит (таймкоди та характер звучання) |
-|---|---|---|---|---|---|
-| **01** | **EP01 • Сем Альтман** | `Dusty Analog Reverie.wav` | `EP01_ALTMAN_SMART_BINS/EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav` | `3:58` | **10/10:** `0:00` вініл + Rhodes; `0:06` м'який trip-hop; `0:22` чиста гітара з ділеєм (*Tycho/Bonobo*); `1:49` дзвіночки. Ідеальна середина під баритон. |
-| **02** | **EP02 • Дженсен Хуанг** | `Dusty Vinyl Dreams.wav` | `EP02_HUANG_SMART_BINS/EP02_MUS_01_ACT1_92BPM_Rust_Porcelain.wav` | `4:20` | **10/10:** `0:05` глибокий саб-біт; `0:27`, `0:49` тягучі блюзові бенди чистої гітари (*David Gilmour*); `0:39`, `2:09` електропіано. Нічний *Denny's* і сталевий гарт. |
-| **03** | **EP03 • Деміс Гассабіс** | `Warm Analog Pulse-2.wav` | `EP03_HASSABIS_SMART_BINS/EP03_MUS_01_ACT1_92BPM_Wooden_Knights.wav` | `4:14` | **10/10:** `0:15` інтелектуальний арпеджіатор; `0:21` оксамитовий бас; **`3:53–4:14` тихий камерний ендшпіль самотнього рояля**. |
-| **04** | **EP04 • Джеффрі Хінтон** | `Dusty Vinyl Dreams-5.wav` | `EP04_HINTON_SMART_BINS/EP04_MUS_01_ACT1_92BPM_Cedar_Shavings.wav` | `4:00` | **10/10:** `0:12` плачучий слайд гітари; `1:10`, `2:53–3:23` пронизливі камерні краплі рояля. Столярна майстерня та 40 років самотності вченого. |
-| **05** | **EP05 • Ян Лекун** | `Dusty Vinyl Dreams-3.wav` | `EP05_LECUN_SMART_BINS/EP05_MUS_01_ACT1_92BPM_Soldering_Wind.wav` | `3:59` | **10/10:** `0:03` округлий аналоговий бас і гітарне арпеджіо у французькій естетиці *Air — Moon Safari*; `0:48` світлий Rhodes. Париж і океанський вітер. |
-| **06** | **EP06 • Ілля Суцкевер** | `Dusty Vinyl Dreams-4.wav` | `EP06_SUTSKEVER_SMART_BINS/EP06_MUS_01_ACT1_92BPM_Jerusalem_Stone.wav` | `4:03` | **10/10:** `0:27`, `1:59–2:49` гіпнотичне математичне остінато високого піаніно-челести поверх саб-басу; `3:33–4:02` монастирська тиша. |
-| **07** | **EP07 • Даріо Амодей** *(+ EP01 Акт 2)* | `Deep Water Pressure.wav` | `EP07_AMODEI_SMART_BINS/EP07_MUS_01_ACT1_92BPM_Princeton_Retina.wav` | `3:49` | **10/10:** стиль *Trent Reznor*: `0:06` серцебиттєвий саб-кік; `1:33` скляні оптичні гармоніки; `2:32–2:58` невагома пауза піаніно. Лазерна біофізика та радар безпеки. |
-| **08** | **EP08 • Фей-Фей Лі** | `Warm Analog Pulse.wav` | `EP08_LI_SMART_BINS/EP08_MUS_01_ACT1_92BPM_Dry_Cleaning.wav` | `3:58` | **9.5/10:** найщемливіша лірика пулу: `0:15` слайд-гітара, `0:20`, `1:18` ніжна висока партія рояля. Іммігрантська юність і пара пральні. |
-| **09** | **EP09 • Йошуа Бенжіо** | `Dusty Vinyl Dreams-2.wav` | `EP09_BENGIO_SMART_BINS/EP09_MUS_01_ACT1_92BPM_Montreal_Roots.wav` | `3:58` | **10/10:** `0:39`, `1:09` нічні монреальські джазові каскади фетрового піаніно й теплий Rhodes під осіннім дощем. |
-| **10** | **EP10 • Ендрю Ин** | `Dusty Vinyl Dreams-6.wav` | `EP10_NG_SMART_BINS/EP10_MUS_01_ACT1_92BPM_Raffles_Code.wav` | `3:55` | **10/10:** найсвітліша, найтепліша мелодія рояля (`0:58–2:20`) і золотий світанковий вступ (`0:00–0:19`). Натхнення вчителя мільйонів. |
+| Епізод | Папка Smart Bin у `03_AUDIO/suno_stems/` | Акт 1 (`Introspection` — 100% унікальні!) | Акт 2 (`Drone / Suspense`) | Акт 3 (`Crisis / Climax`) | Акт 4 (`Finale / Catharsis`) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **EP01 • Сем Альтман** | `EP01_ALTMAN_SMART_BINS` | `Dusty Analog Reverie.wav` | `Deep Water Pressure.wav` | `Clockwork Dread-2.wav` | `Celestial Ascent-3.wav` |
+| **EP02 • Дженсен Хуанг** | `EP02_HUANG_SMART_BINS` | `Dusty Vinyl Dreams.wav` | `Deep Water Pressure.wav` | `Clockwork Dread.wav` | `Celestial Ascent.wav` |
+| **EP03 • Деміс Гассабіс** | `EP03_HASSABIS_SMART_BINS` | `Warm Analog Pulse-2.wav` | `Deep Water Pressure.wav` | `Clockwork Dread-2.wav` | `Monumental Silence.wav` |
+| **EP04 • Джеффрі Хінтон** | `EP04_HINTON_SMART_BINS` | `Dusty Vinyl Dreams-5.wav` | `Deep Water Pressure.wav` | `Clockwork Dread-2.wav` | `Celestial Ascent-2.wav` |
+| **EP05 • Ян Лекун** | `EP05_LECUN_SMART_BINS` | `Dusty Vinyl Dreams-3.wav` | `Deep Water Pressure.wav` | `Clockwork Dread.wav` | `Celestial Ascent-3.wav` |
+| **EP06 • Ілля Суцкевер** | `EP06_SUTSKEVER_SMART_BINS` | `Dusty Vinyl Dreams-4.wav` | `Deep Water Pressure.wav` | `Clockwork Dread-2.wav` | `Monumental Silence.wav` |
+| **EP07 • Даріо Амодей** | `EP07_AMODEI_SMART_BINS` | `Deep Water Pressure.wav` | `Warm Analog Pulse-2.wav` | `Clockwork Dread-2.wav` | `Celestial Ascent-2.wav` |
+| **EP08 • Фей-Фей Лі** | `EP08_LI_SMART_BINS` | `Warm Analog Pulse.wav` | `Deep Water Pressure.wav` | `Clockwork Dread.wav` | `Celestial Ascent.wav` |
+| **EP09 • Йошуа Бенжіо** | `EP09_BENGIO_SMART_BINS` | `Dusty Vinyl Dreams-2.wav` | `Deep Water Pressure.wav` | `Clockwork Dread-2.wav` | `Monumental Silence.wav` |
+| **EP10 • Ендрю Ин** | `EP10_NG_SMART_BINS` | `Dusty Vinyl Dreams-6.wav` | `Deep Water Pressure.wav` | `Clockwork Dread.wav` | `Celestial Ascent.wav` |
 
 ---
 
-### Б. Імпортовані теми Напруги (Модуль B) та Фінального Катарсису (Модуль C)
+## 2. Посекундний саунд-аудит усіх 16 WAV-майстрів
 
-| № | Герой та Акт | Оригінальний файл Suno | Папка та ім'я Smart Bin | Час | Живий саунд-аудит (таймкоди монтажу) |
-|---|---|---|---|---|---|
-| **11** | **EP01 • Акт 3 (Криза)** | `Clockwork Dread-2.wav` | `EP01_ALTMAN_SMART_BINS/EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav` | `3:33` | **7.5/10 (Нарізка):** під диктора брати `0:00–0:45` та `2:32–2:46`; активний дроп `1:47–2:30` — на монтаж заголовків без голосу. |
-| **12** | **EP02 • Акт 3 (CUDA)** | `Clockwork Dread.wav` | `EP02_HUANG_SMART_BINS/EP02_MUS_09_ACT3_92BPM_CUDA_Bet.wav` | `3:33` | **7/10 (Нарізка):** під голос брати `0:00–0:38` і годинник `2:15–2:34`; важкий гітарний дроп `1:33–2:14` лише на перебивки без слів. |
-| **13** | **EP01 • Фінал Акту 4** | `Celestial Ascent-3.wav` | `EP01_ALTMAN_SMART_BINS/EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav` | `3:35` | **9.5/10:** шляхетна оркестрова хода + кришталева пауза рояля `2:03–2:26` і м'яке згасання `3:08–3:34`. |
-| **14** | **EP03 • Фінал Нобеля** | `Monumental Silence.wav` | `EP03_HASSABIS_SMART_BINS/EP03_MUS_15_ACT4_92BPM_Universal_Harmony.wav` | `3:33` | **9/10:** величний оркестровий гімн рівня *Interstellar* (`0:42–3:10`) під тріумф AlphaFold і Нобелівську премію. |
-| **15** | **EP04 • Фінал Акту 4** | `Celestial Ascent-2.wav` | `EP04_HINTON_SMART_BINS/EP04_MUS_15_ACT4_92BPM_Oak_Tree_Finale.wav` | `3:40` | **9/10:** драматичне соло скрипки `0:23–0:41` і прозора фортепіанна яма `1:50–2:06`. |
-| **16** | **EP10 • Фінал Сезону** | `Celestial Ascent.wav` | `EP10_NG_SMART_BINS/EP10_MUS_15_ACT4_92BPM_Builder_Finale.wav` | `3:35` | **8.5/10:** світлий Vangelis-оптимізм із сольною скрипкою `0:22` та енергійним рухом з `1:05`. |
+1. **`Dusty Analog Reverie.wav` (`3:58`)** — *EP01 Акт 1*: `0:00` вініл + Rhodes; `0:06` trip-hop біт; `0:22` чиста delay-гітара (*Tycho/Bonobo*); `1:49` дзвіночки.
+2. **`Dusty Vinyl Dreams.wav` (`4:20`)** — *EP02 Акт 1*: `0:27`, `0:49` нічні блюзові бенди гітари (*David Gilmour*); `0:39`, `2:09` електропіано.
+3. **`Warm Analog Pulse-2.wav` (`4:14`)** — *EP03 Акт 1 + EP07 Акт 2*: `0:15` інтелектуальний арпеджіатор; `3:53–4:14` сольний фортепіанний ендшпіль.
+4. **`Dusty Vinyl Dreams-5.wav` (`4:00`)** — *EP04 Акт 1*: `0:12` плачучий слайд гітари; `1:10`, `2:53–3:23` камерні краплі рояля.
+5. **`Dusty Vinyl Dreams-3.wav` (`3:59`)** — *EP05 Акт 1*: французький *Air — Moon Safari* аналоговий бас + чисте арпеджіо гітари (`0:03`).
+6. **`Dusty Vinyl Dreams-4.wav` (`4:03`)** — *EP06 Акт 1*: `0:27`, `1:59–2:49` математичне остинато челести/піаніно; `3:33–4:02` монастирська кода.
+7. **`Deep Water Pressure.wav` (`3:49`)** — *EP07 Акт 1 + Акт 2 Саспенс-Дрон*: *Trent Reznor* біофізичний пульс (`0:06`), скляні гармоніки (`1:33`), невагома яма (`2:32–2:58`).
+8. **`Warm Analog Pulse.wav` (`3:58`)** — *EP08 Акт 1*: щемлива слайд-гітара (`0:15`) та висока лірична партія піаніно (`0:20`, `1:18`).
+9. **`Dusty Vinyl Dreams-2.wav` (`3:58`)** — *EP09 Акт 1*: осінній монреальський джаз-Rhodes і каскади фетрового піаніно (`0:39`, `1:09`).
+10. **`Dusty Vinyl Dreams-6.wav` (`3:55`)** — *EP10 Акт 1*: золотий ранковий Rhodes і світлий фортепіанний рефрен (`0:58–2:20`).
+11. **`Clockwork Dread-2.wav` (`3:33`)** — *Акт 3 (Годинникова криза)*: під голос диктора брати `0:00–0:45` та `2:32–2:46`; дроп `1:47–2:30` — під нарізку заголовків/досьє.
+12. **`Clockwork Dread.wav` (`3:33`)** — *Акт 3 (Індустріальний штурм)*: під диктора класти `0:00–0:38` і годинник `2:15–2:34`; гітарний дроп `1:33–2:14` лише на перебивки.
+13. **`Celestial Ascent-3.wav` (`3:35`)** — *Акт 4 (EP01, EP05)*: оркестрова хвиля з кришталевою паузою рояля (`2:03–2:26`) і м'яким згасанням (`3:08–3:34`).
+14. **`Monumental Silence.wav` (`3:33`)** — *Акт 4 (EP03, EP06, EP09)*: монументальний симфонічний гімн рівня *Interstellar* (`0:42–3:10`).
+15. **`Celestial Ascent-2.wav` (`3:40`)** — *Акт 4 (EP04, EP07)*: соло високої скрипки (`0:23–0:41`) і фортепіанна сповідь (`1:50–2:06`).
+16. **`Celestial Ascent.wav` (`3:35`)** — *Акт 4 (EP10, EP02, EP08)*: урочиста мідь *Vangelis* (`0:30–2:15`) і широкий синтезаторний фінал.
