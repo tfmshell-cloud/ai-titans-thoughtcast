@@ -1,0 +1,99 @@
+# ЕПІЗОД 09. ЙОШУА БЕНЖІО: ВАРТОВИЙ МОНРЕАЛЯ ТА АРХІТЕКТУРА УВАГИ
+**Серіал:** «Архітектори Розуму» // Cinematic Thoughtcast  
+**Загальний хронометраж:** 21 хвилина 00 секунд (розрахунковий темп начитки: 114 слів/хв)  
+**Музичний метроном:** 92 BPM (Suno Pro: Bohemian Montreal, Beams of Attention, The Guardian's Oath)  
+**Тональність диктора:** Філософська, тепла, голос морального авторитету науки, який обрав свободу замість золота  
+**Візуальний ключ:** Засніжений Монреаль, промені механізму уваги (Attention), перехід від Системи 1 до Системи 2  
+
+---
+
+## АКТ 1. ТЕАТР СВОБОДИ, БРАТИ БЕНЖІО ТА ВТЕЧА ВІД КОНФОРМІЗМУ (0:00 – 5:15)
+**Музичний супровід:** Suno Pro — «Theme 1: Bohemian Montreal» (92 BPM, м'який акустичний джаз-тріп-хоп, теплий контрабас, вінтажне родес-піаніно, хрускіт снігу на вулицях вечірнього Монреаля).
+
+### [0:00 - 0:25]
+- **SFX:** Дзвінок велосипеда на засніженій вулиці. Рипіння снігу під колесами. Теплий гул театральної сцени вдалечині.
+- **VIDEO PROMPT 01:** `Cinematic winter twilight in Montreal: a modest professor with a backpack riding a bicycle through falling snow past Gothic churches and university halls, warm golden streetlight reflections on ice, 35mm film grain, 4k 24fps.`
+- **ДИКТОР:** Скільки коштує право людини говорити правду? У сучасному світі високих технологій ця ціна має точне цифрове вираження: сотні мільйонів доларів в акціях та опціонах, якими корпорації купують мовчання та лояльність найвидатніших учених планети. Із трійці «хрещених батьків» сучасного штучного інтелекту лише один категорично відмовився поставити свій підпис під корпоративним контрактом. Він залишився їздити на роботу на звичайному велосипеді крізь сніги Квебеку, щоб зберегти для людства останній вільний бастіон науки. Його ім'я — Йошуа Бенжіо.
+
+### [0:25 - 1:45]
+- **VIDEO PROMPT 02:** `1970 Paris bohemian apartment: Moroccan carpets, theatrical masks and scripts on wooden tables, two young brothers Yoshua and Samy arguing passionately over a chessboard and science fiction books by Isaac Asimov, warm vintage Kodak look, 4k.`
+- **ДИКТОР:** Його коріння сягає стародавньої громади марокканських євреїв. Він народився в Парижі у 1964 році в родині, яка жила мистецтвом і бунтом проти буржуазних умовностей. Його батько Карло був фармацевтом, який покинув аптеку, щоб писати п'єси і керувати сефардською театральною трупою; мати Селія була художницею та громадською активісткою. У їхньому домі гроші ніколи не вважалися мірилом успіху — мірилом була глибина твоєї думки і те, чи захищаєш ти слабких. Коли Йошуа було дванадцять, родина переїхала до Монреаля.
+
+### [1:45 - 3:30]
+- **SFX:** Вхід біту 92 BPM. Звук друку на матричному принтері 1986 року.
+- **VIDEO PROMPT 03:** `McGill University laboratory in 1988: young Yoshua Bengio surrounded by stacks of paper printouts of Hidden Markov Models and early neural networks, glowing green terminal screen in dark room, 4k.`
+- **ДИКТОР:** В Університеті Макгілла наприкінці вісімдесятих молодий Бенжіо прочитав перші статті Джеффрі Хінтона — і захворів ідеєю нейромереж назавжди. Після захисту дисертації він їде до США: спочатку в MIT, а потім у легендарну лабораторію Bell Labs до Яна Лекуна. Саме там, у Нью-Джерсі, троє молодих бунтарів — Хінтон, Лекун і Бенжіо — укладають свій негласний союз. Але коли настає час обирати подальшу долю, Бенжіо робить крок, який дивує всіх американських колег: він пакує речі і повертається додому, в тихий франкомовний Університет Монреаля.
+
+### [3:30 - 5:15]
+- **VIDEO PROMPT 04:** `A quiet snow-covered courtyard of Université de Montréal in 1998: a lone warm window where Bengio sits with three students drawing probability distributions on a chalkboard, atmosphere of monastic scientific purity, 4k.`
+- **ДИКТОР:** Протягом двадцяти років «зими штучного інтелекту» його маленька лабораторія в Монреалі виживала майже без грошей. Бенжіо створив у своїй лабораторії закон, який порушував усі жорстокі правила академічної конкуренції: жодної внутрішньої боротьби між учнями, жодних таємниць — усі діляться ідеями з усіма, як одна родина.
+
+---
+
+## АКТ 2. ГЕОМЕТРІЯ СЛОВА ТА ВИНАХІД УВАГИ (5:15 – 11:15)
+**Музичний супровід:** Перехід у «Theme 2: Beams of Attention» (92 BPM, глибокий гіпнотичний бас, прецизійні кришталеві арпеджіо синтезатора, які переплітаються у просторі).
+
+### [5:15 - 7:15]
+- **SFX:** Низький суб-басовий резонанс. Звук розгортання тривимірної зоряної карти.
+- **VIDEO PROMPT 05:** `Breathtaking mathematical visualization of Word Embeddings (2000): millions of isolated printed words lifting off book pages and flying into a dark 3D cosmos, clustering into glowing constellations of meaning where similar concepts orbit each other, Octane render, 8k.`
+- **ДИКТОР:** У 2000 році Йошуа Бенжіо публікує роботу, яку сьогодні мало хто згадує в новинах, але без якої не існувало б жодного ChatGPT чи Claude — **«Нейромережева імовірнісна модель мови»**. Він перетворив кожне слово на точку в багатовимірному геометричному просторі — *векторне представлення* (Word Embedding). Слово перестало бути набором літер — слово стало координатою чистого смислу.
+
+### [7:15 - 9:30]
+- **VIDEO PROMPT 06:** `Visual metaphor of the Attention Mechanism (2014): instead of squeezing an entire long book through a tiny narrow funnel, hundreds of golden laser beams of "Attention" shoot directly from the translator's pen back to specific key words across the entire page simultaneously, 8k 24fps.`
+- **ДИКТОР:** А в 2014 році в Монреалі стається відкриття, яке перевернуло весь світ. Разом зі своїм молодим аспірантом Дмитром Богдановим та Кюнхьоном Чо він створює математичний механізм **Уваги — Attention**. Коли через три роки інженери Google взяли винайдений у Монреалі механізм уваги і поклали його в основу архітектури *Transformer*, народилася сучасна епоха генеративного ШІ. Тоді ж учень Бенжіо — Ян Гудфеллоу — створив **GAN**.
+
+### [9:30 - 11:15]
+- **SFX:** Різкий телефонний дзвінок. Звук відмови: спокійне закриття важкої папки з контрактом.
+- **VIDEO PROMPT 07:** `High-rise boardroom overlooking Silicon Valley: corporate executives sliding a blank check across a mahogany table towards Yoshua Bengio, who smiles gently, pushes the check back, and walks out into the snowy streets of Montreal, 4k.`
+- **ДИКТОР:** Корпорації прилетіли до Бенжіо з чеком на будь-яку суму. І почули відповідь:  
+  *«Дякую, але я не продаюся. Якби я взяв ваші мільярди, я б більше не належав людству — я б належав вашим акціонерам. Хтось із нас повинен залишитися вільним, щоб мати право сказати правду, коли ваша гонитва за прибутком зайде надто далеко».*  
+  Він засновує інститут **Mila** — найбільший незалежний академічний центр із понад тисячею дослідників.
+
+---
+
+## АКТ 3. БУНТ СУМЛІННЯ ТА ПЕРЕХІД ДО СИСТЕМИ 2 (11:15 – 16:45)
+**Музичний супровід:** Драматичний злам у «Theme 2», вступають глибокі тривожні віолончелі та низький пульс «Theme 3: The Guardian's Oath» (92 BPM).
+
+### [11:15 - 13:15]
+- **SFX:** Глибокий, тривожний гул набат. Шелест сторінок міжнародного трибуналу.
+- **VIDEO PROMPT 08:** `Yoshua Bengio sitting alone at night in his Montreal study, looking at a photograph of his young grandson on his desk, while on his computer screen exponentially rising graphs of autonomous AI agent capabilities glow in red, deep emotional weight, 4k.`
+- **ДИКТОР:** Навесні 2023 року після виходу GPT-4 Йошуа Бенжіо втрачає сон. Він дивиться в очі своєму маленькому онукові і раптом усвідомлює з жахом: світ ризикує взагалі не належати людям. Він очолює написання першого **Міжнародного наукового звіту про безпеку передового ШІ**.
+
+### [13:15 - 15:15]
+- **VIDEO PROMPT 09:** `Scientific visualization of System 1 vs System 2: a chaotic fast river of intuitive sparks (System 1 LLM) being channeled into a crystalline architectural cathedral of deliberate logical reasoning, causal graphs and self-verification (System 2 / GFlowNets), Octane render, 8k.`
+- **ДИКТОР:** Чат-боти — це **Система 1** (інтуїтивний потік асоціацій без сумнівів). Бенжіо розробляє в Mila архітектуру **Системи 2** та потокові мережі **GFlowNets**.
+
+### [15:15 - 16:45]
+- **VIDEO PROMPT 10:** `A glowing crystal scale balancing "Capability" and "Humility": a Scientist AI model evaluating ten thousand possible hypotheses simultaneously, gently dimming its glow when uncertain rather than acting recklessly, 8k.`
+- **ДИКТОР:** Він пропонує будувати **«ШІ-Вченого» (Scientist AI)** — систему чистого розуму з вбудованим математичним смиренням, яка зупиняється там, де є бодай 1% ризику заподіяти шкоду людині.
+
+---
+
+## АКТ 4. МОНРЕАЛЬСЬКА ДЕКЛАРАЦІЯ ТА КОДЕКС ВІЛЬНОЇ ЛЮДИНИ (16:45 – 21:00)
+**Музичний супровід:** Фінальне розкриття «Theme 3: The Guardian's Oath» (92 BPM, урочистий неокласичний ембієнт, чисте фортепіано, тепла віолончель).
+
+### [16:45 - 18:15]
+- **VIDEO PROMPT 11:** `Grand amphitheater at Université de Montréal: citizens, philosophers, doctors and young programmers signing the Montreal Declaration for Responsible AI together, warm golden light pouring through tall windows, 4k 24fps.`
+- **ДИКТОР:** Ще у 2018 році Бенжіо зібрав у Монреалі громадян і вчених, щоб написати **Монреальську декларацію відповідального розвитку ШІ**: жоден алгоритм не має права приймати рішення про позбавлення людини життя!
+
+### [18:15 - 19:50]
+- **VIDEO PROMPT 12:** `Macro shot of an old compass resting on an open handwritten notebook of attention equations beside a frosted window looking out at Montreal snow, warm desk lamp glow, 4k.`
+- **ДИКТОР:** Три заповіді особистості Йошуа Бенжіо:
+  1. **Бережіть свою незалежність — не продавайте право на власний голос.** Гроші та посади часто є золотими кайданами. Залишайтеся в такій позиції, де ніхто не може купити вашу правду.
+  2. **Керуйте своєю Увагою (Attention).** Як нейромережа стає розумною, відсікаючи шум, так і ваше життя визначається тим, на чому ви фокусуєтеся.
+  3. **Розвивайте в собі Систему 2 та інтелектуальне смирення.** Запитуйте себе: «А що, якщо я помиляюся? Якою буде ціна моєї помилки?».
+
+### [19:50 - 21:00]
+- **VIDEO PROMPT 13:** `Slow majestic camera ascent from snowy Mount Royal in Montreal at night into the aurora borealis sky, where green and golden curtains of light form protective geometric shields over the sleeping Earth, IMAX 8k 24fps.`
+- **SFX:** Останній тихий передзвін велосипедного дзвінка вдалечині.
+- **ДИКТОР:** Наука без гуманізму — це лише холодне креслення машини в порожнечі. І поки світ мчить у невідоме, ми маємо шанс втриматися доти, доки серед нас є вартові, які не проміняли компас совісті на всі скарби світу.
+
+---
+
+## ТЕХНІЧНИЙ ПАСПОРТ ВИРОБНИЦТВА (SUNO PRO & DAVINCI RESOLVE)
+
+| Модуль | Промпт / Параметри налаштування |
+| :--- | :--- |
+| **Suno Pro: Акт 1** | `Instrumental warm French-Canadian jazz trip-hop, 92 bpm, upright acoustic bass, vintage Rhodes electric piano, subtle footsteps in snow foley, bohemian intellectual Montreal atmosphere.` |
+| **Suno Pro: Акт 2** | `Instrumental luminous ambient downtempo, 92 bpm, interwoven crystalline arpeggio beams of sound, deep warm sub-bass groove, mathematical elegance and clarity.` |
+| **Suno Pro: Акт 3–4** | `Instrumental solemn neo-classical trip-hop, 92 bpm, deep emotional cello and warm pipe organ pads over steady 92 bpm heartbeat, sense of moral courage, humility and northern aurora scale, IMAX mix.` |

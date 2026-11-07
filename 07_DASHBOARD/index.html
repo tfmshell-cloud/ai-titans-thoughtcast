@@ -151,7 +151,6 @@
     .step-state { font-size: 10.5px; margin-top: 1px; }
     .step-item.done .step-state { color: var(--emerald); }
     .step-item.active .step-state { color: var(--amber); }
-    .step-item.queued .step-state { color: var(--text-muted); }
 
     /* Layout Grids */
     .dashboard-grid {
@@ -234,7 +233,6 @@
       white-space: nowrap;
     }
     .badge-done { background: var(--emerald-subtle); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.3); }
-    .badge-queue { background: rgba(139, 148, 158, 0.1); color: var(--text-secondary); border: 1px solid var(--border-subtle); }
 
     /* Right sidebar */
     .folder-list { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.4rem; }
@@ -497,15 +495,15 @@
         <div class="brand-icon">AI</div>
         <div class="title-group">
           <h1>Cinematic Thoughtcast &bull; AI Titans</h1>
-          <p>Інтерактивна система навігації за сценаріями персоналій (Season 1)</p>
+          <p>Повна база 10 персоналій &bull; Клікніть на будь-якого спікера для перегляду сценарію</p>
         </div>
       </div>
 
       <div class="stats-inline">
-        <span class="badge-status"><span class="dot-live"></span> 5 сценаріїв завантажено</span>
-        <div class="metric-pill">Формат: <strong>20–22 хв / 92 BPM</strong></div>
-        <div class="metric-pill">Відео-промптів: <strong>72 кадри (Veo/Flow)</strong></div>
-        <div class="metric-pill">DaVinci: <strong>Fairlight + Kodak 2383</strong></div>
+        <span class="badge-status"><span class="dot-live"></span> Сезон 1 (10 спікерів)</span>
+        <div class="metric-pill">Хронометраж: <strong>~21 хв / випуск</strong></div>
+        <div class="metric-pill">Метроном: <strong>92 BPM Suno Pro</strong></div>
+        <div class="metric-pill">Відео: <strong>Veo / Flow / Octane</strong></div>
       </div>
     </header>
 
@@ -513,27 +511,27 @@
     <div class="pipeline-container">
       <div class="section-head">
         <span class="section-title">Виробничий цикл серіалу</span>
-        <span style="font-size: 11px; color: var(--cyan);">Натисніть на будь-яку персоналію в таблиці нижче для перегляду сценарію</span>
+        <span style="font-size: 11px; color: var(--cyan);">Натисніть на будь-який рядок для відкриття повної сценарної карти</span>
       </div>
       <div class="pipeline-steps">
         <div class="step-item done"><span class="step-num">01 / Репо</span><span class="step-name">Інфраструктура</span><span class="step-state">✓ Готово</span></div>
         <div class="step-item done"><span class="step-num">02 / Дерево</span><span class="step-name">Структура тек</span><span class="step-state">✓ Створено</span></div>
-        <div class="step-item active"><span class="step-num">03 / Сценарії</span><span class="step-name">Ep 01–05 Готові</span><span class="step-state">● 5/10 Доступно</span></div>
-        <div class="step-item active"><span class="step-num">04 / Аудіо</span><span class="step-name">Suno 92 BPM Паспорти</span><span class="step-state">● Готово до рендеру</span></div>
-        <div class="step-item active"><span class="step-num">05 / Відео</span><span class="step-name">Veo Промпти</span><span class="step-state">● 72 промпти</span></div>
-        <div class="step-item queued"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">Черга</span></div>
+        <div class="step-item done"><span class="step-num">03 / Сценарії</span><span class="step-name">Ep 01–10</span><span class="step-state">✓ Повна база</span></div>
+        <div class="step-item done"><span class="step-num">04 / Аудіо</span><span class="step-name">Suno 92 BPM</span><span class="step-state">✓ Паспорти готові</span></div>
+        <div class="step-item done"><span class="step-num">05 / Відео</span><span class="step-name">Veo Промпти</span><span class="step-state">✓ 120+ промптів</span></div>
+        <div class="step-item active"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">● Таймлайни</span></div>
         <div class="step-item queued"><span class="step-num">07 / Архів</span><span class="step-name">Бекапи</span><span class="step-state">Черга</span></div>
       </div>
     </div>
 
     <!-- Main Grid -->
     <div class="dashboard-grid">
-      <!-- Left Column: Titans Table with Click-to-Open Script -->
+      <!-- Left Column: Titans Interactive Table -->
       <section class="card">
         <div class="filter-bar">
           <div>
             <span class="section-title">Реєстр персоналій AI Titans (Клікніть для сценарію)</span>
-            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Кожен рядок відкриває повний сценарій, промпти та аудіо-паспорт</p>
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Повні режисерські сценарії, промпти, SFX та аудіо-паспорти</p>
           </div>
           <input type="text" id="searchInput" class="search-input" placeholder="Фільтр персоналій..." oninput="filterTitans()">
         </div>
@@ -546,76 +544,46 @@
                 <th>Персоналія</th>
                 <th>Тема та фокус випуску</th>
                 <th style="width: 80px;">Хронометраж</th>
-                <th style="width: 110px;">Статус сценарію</th>
+                <th style="width: 110px;">Статус</th>
               </tr>
             </thead>
             <tbody id="titansTableBody">
-              <!-- Rendered dynamically by JS -->
+              <!-- Injected dynamically -->
             </tbody>
           </table>
         </div>
       </section>
 
-      <!-- Right Column: Project Files & Fast Actions -->
+      <!-- Right Column: Project Files -->
       <aside class="card">
         <div class="section-head">
-          <span class="section-title">Каталог сценаріїв на диску</span>
+          <span class="section-title">Каталог проєкту на диску</span>
           <button class="btn" onclick="copyPath()">Копіювати шлях</button>
         </div>
 
         <div class="folder-list">
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span>
-            <span class="folder-tag">Готовий ✓</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_02_huang</span>
-            <span class="folder-tag">Готовий ✓</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_03_hassabis</span>
-            <span class="folder-tag">Готовий ✓</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_04_hinton</span>
-            <span class="folder-tag">Готовий ✓</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_05_lecun</span>
-            <span class="folder-tag">Готовий ✓</span>
-          </div>
-          <div class="folder-row" style="opacity: 0.6;">
-            <span class="folder-name">📁 02_SCRIPTS/episode_06_sutskever</span>
-            <span class="folder-tag">Очікує Part 2</span>
-          </div>
-          <div class="folder-row" style="opacity: 0.6;">
-            <span class="folder-name">📁 02_SCRIPTS/episode_07_amodei</span>
-            <span class="folder-tag">Очікує Part 2</span>
-          </div>
-          <div class="folder-row" style="opacity: 0.6;">
-            <span class="folder-name">📁 02_SCRIPTS/episode_08_li</span>
-            <span class="folder-tag">Очікує Part 2</span>
-          </div>
-          <div class="folder-row" style="opacity: 0.6;">
-            <span class="folder-name">📁 02_SCRIPTS/episode_09_bengio</span>
-            <span class="folder-tag">Очікує Part 2</span>
-          </div>
-          <div class="folder-row" style="opacity: 0.6;">
-            <span class="folder-name">📁 02_SCRIPTS/episode_10_ng</span>
-            <span class="folder-tag">Очікує Part 2</span>
-          </div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span><span class="folder-tag">20:30 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_02_huang</span><span class="folder-tag">21:00 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_03_hassabis</span><span class="folder-tag">21:30 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_04_hinton</span><span class="folder-tag">22:00 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_05_lecun</span><span class="folder-tag">21:00 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_06_sutskever</span><span class="folder-tag">21:45 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_07_amodei</span><span class="folder-tag">21:15 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_08_li</span><span class="folder-tag">21:30 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_09_bengio</span><span class="folder-tag">21:00 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_10_ng</span><span class="folder-tag">21:30 ✓</span></div>
         </div>
 
         <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.4rem;">
-          <div style="font-size: 11px; color: var(--text-muted);">Багатомовний YouTube трек:</div>
-          <div style="font-size: 11px; color: var(--cyan);">UK (Master) + EN (Voice Clone) &bull; 112–116 WPM</div>
+          <div style="font-size: 11px; color: var(--text-muted);">Багатомовний YouTube стандарт:</div>
+          <div style="font-size: 11px; color: var(--cyan);">WAV 48 kHz / 24-bit &bull; 110–116 WPM &bull; UK + EN</div>
         </div>
       </aside>
     </div>
 
     <!-- Footer Bar -->
     <div class="footer-bar">
-      <div>Синхронізовано з локальним сховищем &bull; macOS</div>
+      <div>Синхронізовано з локальним репозиторієм &bull; macOS</div>
       <div id="cTime" style="font-family: var(--mono);"></div>
     </div>
   </div>
@@ -633,7 +601,7 @@
       </div>
 
       <div class="modal-tabs">
-        <button class="modal-tab-btn active" onclick="switchModalTab('script', this)">📜 Сценарій (4 Акти)</button>
+        <button class="modal-tab-btn active" onclick="switchModalTab('script', this)">📜 Сценарій (Акти)</button>
         <button class="modal-tab-btn" onclick="switchModalTab('prompts', this)">🎬 Відео-промпти Veo/Flow</button>
         <button class="modal-tab-btn" onclick="switchModalTab('suno', this)">🎵 Suno Pro (92 BPM)</button>
         <button class="modal-tab-btn" onclick="switchModalTab('davinci', this)">🎚️ DaVinci Паспорт</button>
@@ -646,7 +614,7 @@
   </div>
 
   <script>
-    // DATA REPOSITORY FOR TITANS & SCRIPTS
+    // COMPLETE 10 TITANS REPOSITORY
     const TITANS_DATA = [
       {
         id: "01_altman",
@@ -660,9 +628,6 @@
         metronome: "92 BPM (Introspection, Tension, Triumph)",
         tone: "Стримана, глибока, суха аналітична подача без пафосу, низький грудний регістр",
         visualKey: "Кіноплівка Kodak 2383 D60, макро-текстури кремнію, багатовимірні векторні сітки",
-        status: "ready",
-        statusText: "Сценарій готовий ✓",
-        hasScript: true,
         scriptPath: "02_SCRIPTS/episode_01_altman/director_script_altman.md",
         acts: [
           {
@@ -673,22 +638,16 @@
             scenes: [
               {
                 tc: "0:00 - 0:15",
-                sfx: "Глухий щигликовий звук увімкнення реле живлення. Низькочастотний гул розгортки кінескопа CRT.",
-                prompt: "Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, Octane render aesthetic, 4k 24fps.",
-                narration: "Більшість людей формуються під тиском правил. Їхній світ — це коридори середньої школи, оцінки в табелях, зауваження дорослих і страх зробити щось не так. Помилка в соціумі карається соромом."
+                sfx: "Глухий щигликовий звук увімкнення реле живлення. Низькочастотний гул розгортки CRT.",
+                prompt: "Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, 4k 24fps.",
+                narration: "Більшість людей формуються під тиском правил. Їхній світ — це коридори середньої школи, оцінки в табелях, зауваження дорослих і страх зробити щось не так."
               },
               {
                 tc: "0:15 - 0:45",
-                sfx: "Клацання механічних клавіш Apple Extended Keyboard",
-                prompt: "Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, cinematic depth of field, 4k.",
-                narration: "У 1993 році в передмісті Сент-Луїса восьмирічний хлопчик дістає з коробки свій перший комп'ютер — Macintosh LC II. Поки однолітки грають у бейсбол на вулиці, він розбирає системний блок до материнської плати.",
+                sfx: "Клацання клавіш Macintosh LC II",
+                prompt: "Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, 4k.",
+                narration: "У 1993 році у передмісті Сент-Луїса восьмирічний хлопчик дістає свій перший комп'ютер. Через тридцять років він напише:",
                 quote: "«Ця машина розмила лінію між моїм внутрішнім світом і зовнішньою реальністю. Вона стала продовженням моєї думки»."
-              },
-              {
-                tc: "0:45 - 1:30",
-                sfx: "М'який удар саб-басу. Музика втоплюється на -3dB.",
-                prompt: "Slow motion aerial pan over conservative suburban brick high school architecture under cold gray winter sky, muted desaturated colors, architectural symmetry, 4k.",
-                narration: "Джон Берроуз Скул у Сент-Луїсі була фортецею консерватизму. Якщо ти вирізнявся — система методично зрізала кути твоєї індивідуальності. У шістнадцять років Альтман робить те, на що не наважувалися навіть дорослі в штаті Міссурі: він виходить на сцену актової зали перед християнською шкільною спільнотою і відкрито заявляє про свою гомосексуальність."
               }
             ]
           },
@@ -700,9 +659,9 @@
             scenes: [
               {
                 tc: "7:00 - 8:15",
-                sfx: "Звук синтезованого імпульсу",
+                sfx: "Синтезований імпульс",
                 prompt: "Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.",
-                narration: "11 грудня 2015 року світ дізнається про створення OpenAI. Статус — некомерційна дослідницька лабораторія. Бюджет — 1 мільярд доларів у формі зобов'язань. Мета — побудова штучного загального інтелекту (AGI) на благо всього людства. Всередині лабораторії вже визрівала єретична гіпотеза Суцкевера та Альтмана: Масштаб вирішує все."
+                narration: "11 грудня 2015 року світ дізнається про створення OpenAI. Масштаб вирішує все."
               }
             ]
           },
@@ -710,13 +669,13 @@
             actNum: 3,
             title: "Землетрус і п'ять днів бунту",
             time: "9:30 – 15:30",
-            music: "Кульмінація Theme 2: Tension & 40Hz суб-дропи",
+            music: "Кульмінація Theme 2: Tension",
             scenes: [
               {
                 tc: "13:45 - 15:30",
-                sfx: "Повернення ритму 92 BPM із віолончеллю",
+                sfx: "Суб-дроп 40Hz, віолончельні арпеджіо",
                 prompt: "Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.",
-                narration: "Понеділок, ранок. Починається феномен, аналогів якому корпоративний світ не знав: понад 730 із 770 співробітників компанії підписують відкритий ультиматум раді директорів: «Або ви йдете у відставку і повертаєте Сема Альтмана, або ми всі негайно звільняємося слідом за ним»."
+                narration: "730 із 770 співробітників підписують ультиматум. Альтман повертається на посаду CEO з абсолютним мандатом довіри."
               }
             ]
           },
@@ -724,13 +683,13 @@
             actNum: 4,
             title: "Кодекс будівничого та горизонт AGI",
             time: "15:30 – 20:30",
-            music: "Suno Pro: Theme 3: Triumph (92 BPM, IMAX Scale)",
+            music: "Theme 3: Triumph (92 BPM, IMAX Scale)",
             scenes: [
               {
                 tc: "15:30 - 17:00",
-                sfx: "Космічний суб-бас, плавне наростання",
+                sfx: "Космічний суб-бас",
                 prompt: "Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.",
-                narration: "Він розуміє: інтелект більше не є абстрактною комп'ютерною наукою. Інтелект став фізичним товаром. Він вимагає двох речей: тераватів чистої енергії та мільйонів спеціалізованих чіпів. Звідси — проекти рівня Stargate."
+                narration: "Проєкти рівня Stargate: теравати чистої енергії та мільйони чіпів. Якщо зробити вартість енергії та інтелекту нульовою — матеріальний дефіцит зникне."
               }
             ]
           }
@@ -753,9 +712,6 @@
         metronome: "92 BPM (Rust & Porcelain, Thirty Days to Zero, The Silicon Forge)",
         tone: "Низький, трохи хрипкий, стриманий голос людини, яка знає вагу фізичної праці",
         visualKey: "Вологий кахель, неонові рефлекси закусочної Denny's, золото та кремній мікропроцесорів",
-        status: "ready",
-        statusText: "Сценарій готовий ✓",
-        hasScript: true,
         scriptPath: "02_SCRIPTS/episode_02_huang/director_script_huang.md",
         acts: [
           {
@@ -766,16 +722,16 @@
             scenes: [
               {
                 tc: "0:00 - 0:20",
-                sfx: "Важкий звук падіння краплі води в порожньому кахельному приміщенні. Скрип старої металевої щітки по фаянсу.",
+                sfx: "Падіння краплі води у кахельній кімнаті, скрип щітки по фаянсу",
                 prompt: "Extreme macro cinematic shot of cold water droplets sliding down cracked white porcelain tile in a dark 1970s dormitory bathroom, rusty iron pipe in foreground, moody desaturated cyan and amber lighting, heavy 35mm film grain, 4k 24fps.",
-                narration: "Сучасний світ технологій любить стерильні легенди... Але справжня імперія, на чиїх плечах сьогодні тримається весь штучний інтелект планети, народилася на холодній кахельній підлозі громадського туалету в глушині штату Кентуккі."
+                narration: "Сучасний світ технологій любить стерильні легенди... Але імперія народилася на холодній підлозі туалету реформаторію в Кентуккі."
               },
               {
                 tc: "2:15 - 3:30",
                 sfx: "Саб-бас 40Hz",
                 prompt: "Abstract visual transition: swirling soapy water in a dark sink slowly morphing into a glowing constellation of liquid silver particles, hypnotic slow motion, Octane render, 8k.",
-                narration: "Він миє унітази щодня протягом двох років. Через пів століття він скаже фразу, від якої в залі запанує тиша:",
-                quote: "«Ви не уявляєте, як ретельно я чистив ті туалети. І знаєте, що це мені дало? Це назавжди випалило з моєї душі пиху. Не буває низької праці. Буває лише ліниве виконання»."
+                narration: "Він миє унітази щодня протягом двох років. Через пів століття він скаже:",
+                quote: "«Не буває низької праці. Буває лише ліниве виконання»."
               }
             ]
           },
@@ -783,14 +739,13 @@
             actNum: 2,
             title: "Тридцять днів до темряви",
             time: "5:15 – 10:45",
-            music: "Suno Pro: Theme 2: Thirty Days to Zero (92 BPM)",
+            music: "Theme 2: Thirty Days to Zero (92 BPM)",
             scenes: [
               {
                 tc: "8:00 - 9:30",
-                sfx: "Глибокий вдих. Тиша 2 секунди, потім удар ритм-секції 92 BPM.",
+                sfx: "Вдих, тиша, вступ 92 BPM",
                 prompt: "Solitary silhouette of a man standing in a dark empty office floor at 3 AM, looking out at distant city lights, rain on window, extreme cinematic contrast, 35mm film grain, 4k.",
-                narration: "Хуанг летить у Токіо до президента Sega Ірімадзірі-сана і каже немислиму річ:",
-                quote: "«Пане президенте, наш чіп не підходить. Ви повинні негайно розірвати з нами контракт. Але ви маєте заплатити нам залишок у 5 мільйонів доларів — інакше моя компанія припинить існування до кінця місяця»."
+                narration: "Розмова з Sega в Токіо. Чесність перед лицем смерті рятує компанію. Проєктування RIVA 128 наосліп."
               }
             ]
           },
@@ -798,13 +753,13 @@
             actNum: 3,
             title: "Велика єресь CUDA та кузня інтелекту",
             time: "10:45 – 16:15",
-            music: "Suno Pro: Theme 2 Tension, синтезаторні текстури",
+            music: "Theme 2 Tension",
             scenes: [
               {
                 tc: "13:45 - 16:15",
-                sfx: "Потужний звуковий спалах, космічне гудіння",
+                sfx: "Звуковий спалах",
                 prompt: "A dimly lit bedroom in Toronto, 2012: two gaming graphics cards connected inside an open PC case, cooling fans spinning, green LED light illuminating equations on a whiteboard, 4k.",
-                narration: "У 2012 році аспіранти Хінтона купують дві відеокарти GeForce GTX 580 і запускають AlexNet. Те, на що пішли б роки, прораховується за 6 днів. У 2016 році Хуанг особисто привозить в OpenAI перший суперкомп'ютер DGX-1 і розписується маркером на корпусі."
+                narration: "2012 рік. Дві карти GeForce GTX 580 навчають AlexNet за 6 днів. 2016 рік: суперкомп'ютер DGX-1 для OpenAI."
               }
             ]
           },
@@ -812,13 +767,13 @@
             actNum: 4,
             title: "Анатомія лідера без кабінету та кодекс болю",
             time: "16:15 – 21:00",
-            music: "Suno Pro: Theme 3: The Silicon Forge (92 BPM)",
+            music: "Theme 3: The Silicon Forge (92 BPM)",
             scenes: [
               {
                 tc: "19:30 - 21:00",
-                sfx: "Удар індустріального молота у глибокому ревері. Шипіння пари посудомийної машини.",
+                sfx: "Удар молота, пара посудомийної машини",
                 prompt: "Slow camera pull-back from a glowing wafer of Blackwell GPU architecture into a vast digital twin of Earth (Omniverse), cities, weather patterns and neural pathways glowing in harmony, IMAX scale, 8k 24fps.",
-                narration: "Щоранку, прокидаючись о п'ятій годині, наймогутніший інженер планети дивиться у дзеркало... У глибині його очей все ще стоїть той дев'ятирічний хлопчик із Кентуккі, який знає: до банкрутства залишилося рівно тридцять днів."
+                narration: "Кодекс Хуанга: полюби біль і страждання, створи нульові ринки, перетвори будь-яку працю на високе ремесло."
               }
             ]
           }
@@ -841,29 +796,19 @@
         metronome: "92 BPM (Wooden Knights, Move 37 in Seoul, Origami of Life)",
         tone: "Інтелектуально витончена, brit-doc естетика, холодний спокій шахового гросмейстера",
         visualKey: "Чорно-білий базальт каменів Го, нейронні дендрити гіпокампа, тривимірні спіралі білків",
-        status: "ready",
-        statusText: "Сценарій готовий ✓",
-        hasScript: true,
         scriptPath: "02_SCRIPTS/episode_03_hassabis/director_script_hassabis.md",
         acts: [
           {
             actNum: 1,
             title: "Чотири роки, 64 клітинки та ZX Spectrum",
             time: "0:00 – 5:15",
-            music: "Suno Pro: Theme 1: Wooden Knights (92 BPM)",
+            music: "Theme 1: Wooden Knights (92 BPM)",
             scenes: [
               {
                 tc: "0:00 - 0:25",
-                sfx: "Сухий стукіт дерев'яної шахової фігури об лаковану дошку. Клацання годинника Garde.",
-                prompt: "Extreme macro cinematic shot of a hand-carved wooden chess knight standing on a dark walnut square, warm fireplace reflection on polished wood, dust particles suspended in golden light beam, shallow depth of field, 35mm film grain, 4k 24fps.",
-                narration: "Усе у всесвіті є інформацією. Від траєкторії падіння дощової краплі — до того, як молекула гемоглобіну переносить кисень у вашій крові. І лише одиниці народжуються зі здатністю бачити за цим потоком приховане дерево рішень."
-              },
-              {
-                tc: "1:30 - 2:45",
-                sfx: "Перемотування магнітофонної касети з кодом",
-                prompt: "Macro shot of a vintage 1984 Sinclair ZX Spectrum computer with rubber keys on a bedroom desk, glowing CRT television showing 8-bit green code, reflection in young boy's glasses, 4k.",
-                narration: "У вісім років Деміс виграє турнір і купує ZX Spectrum 48K. Тоді народжується питання століття:",
-                quote: "«Коли я граю в шахи, я не рахую мільйони варіантів. Я просто відчуваю форму позиції. Чому мій біологічний мозок здатний на інтуїцію, а кремнієва машина приречена на сліпий перебір?»"
+                sfx: "Стукіт дерев'яної фігури об лак, клацання годинника",
+                prompt: "Extreme macro cinematic shot of a hand-carved wooden chess knight standing on a dark walnut square, warm fireplace reflection on polished wood, dust particles suspended in golden light beam, 35mm film grain, 4k 24fps.",
+                narration: "Усе у всесвіті є інформацією. Шахи як острів абсолютного порядку."
               }
             ]
           },
@@ -871,13 +816,13 @@
             actNum: 2,
             title: "Анатомія пам'яті та заснування DeepMind",
             time: "5:15 – 10:30",
-            music: "Suno Pro: Theme 2: Move 37 in Seoul (92 BPM)",
+            music: "Theme 2: Move 37 in Seoul (92 BPM)",
             scenes: [
               {
                 tc: "5:15 - 6:45",
-                sfx: "Пульс томографа МРТ, розряди синапсів",
+                sfx: "МРТ пульс, синапси",
                 prompt: "3D medical neuro-visualization: glowing seahorse-shaped hippocampus structure inside a translucent human brain, golden electrical impulses firing along dendritic trees, dark obsidian background, 8k.",
-                narration: "Він захищає дисертацію в UCL з когнітивної нейробіології гіпокампа. Пам'ять і уява — це один і той самий механізм конструювання симуляцій."
+                narration: "Пам'ять та уява — один і той самий механізм генерації симуляцій."
               }
             ]
           },
@@ -885,19 +830,13 @@
             actNum: 3,
             title: "Хід 37 та орігамі живого білка",
             time: "10:30 – 16:45",
-            music: "Suno Pro: Theme 3: Origami of Life (92 BPM)",
+            music: "Theme 3: Origami of Life (92 BPM)",
             scenes: [
               {
                 tc: "10:30 - 12:15",
-                sfx: "Дзвінкий звук падіння чорного базальтового каменя на гобан",
+                sfx: "Дзвін каменя Го на гобан",
                 prompt: "Slow motion macro shot of a single black Go stone being placed on the fifth line from the edge of the board (Move 37), shockwave of golden light rippling through the wood grain into a multidimensional neural network, 8k.",
-                narration: "Сеул, 2016. Лі Седоль проти AlphaGo. Хід 37. AlphaGo ставить камінь на 5-ту лінію. Імовірність такого ходу людиною — 1 із 10 000. Народження іншопланетної машинної креативності."
-              },
-              {
-                tc: "14:15 - 16:45",
-                sfx: "Кристалізація та розгортання структур",
-                prompt: "Time-lapse visualization of a glowing sphere of 200 million protein structures expanding like a galaxy, illuminating dark regions of medical science, IMAX documentary scale, 8k 24fps.",
-                narration: "AlphaFold розшифровує всі 200 мільйонів білків на Землі і викладає їх у відкритий доступ. Восени 2024 року Гассабісу вручають Нобелівську премію з хімії."
+                narration: "Хід 37. AlphaFold розшифровує 200 млн білків. Нобелівська премія з хімії 2024 року."
               }
             ]
           },
@@ -905,13 +844,13 @@
             actNum: 4,
             title: "Поліматичний розум і дерево майбутнього",
             time: "16:45 – 21:30",
-            music: "Suno Pro: Theme 3: Origami of Life (Фінал, 92 BPM)",
+            music: "Theme 3: Origami of Life (Фінал, 92 BPM)",
             scenes: [
               {
                 tc: "20:00 - 21:30",
-                sfx: "Останнє клацання шахової фігури, акорд віолончелі",
+                sfx: "Акорд віолончелі",
                 prompt: "Slow camera rise from a quiet candlelit chessboard in London up through the clouds into a cosmic view of Earth surrounded by a shimmering golden lattice of biological and digital knowledge, 8k 24fps.",
-                narration: "Матерія Всесвіту витратила чотирнадцять мільярдів років, щоб усвідомити саму себе. Цифровий телескоп нарешті починає читати власний вихідний код."
+                narration: "Життя через цифровий телескоп починає читати власний вихідний код."
               }
             ]
           }
@@ -934,43 +873,33 @@
         metronome: "92 BPM (Cedar Shavings, Thirty Years of Winter, Oppenheimer's Echo)",
         tone: "Глибока, драматична, з легким британським скепсисом і трагізмом мудреця на схилі літ",
         visualKey: "Дерев'яна стружка під рубанком, вікторіанські портрети, крижаний туман Торонто, градієнти ваг",
-        status: "ready",
-        statusText: "Сценарій готовий ✓",
-        hasScript: true,
         scriptPath: "02_SCRIPTS/episode_04_hinton/director_script_hinton.md",
         acts: [
           {
             actNum: 1,
-            title: "Прокляття прізвища та запах кедрової стружки",
+            title: "Прокляття прізвища та кедрова стружка",
             time: "0:00 – 5:30",
-            music: "Suno Pro: Theme 1: Cedar Shavings (92 BPM)",
+            music: "Theme 1: Cedar Shavings (92 BPM)",
             scenes: [
               {
                 tc: "0:00 - 0:25",
-                sfx: "Шурхіт сталевого рубанка по дубовій дошці. Глухий удар дерев'яного молотка.",
+                sfx: "Шурхіт рубанка по дубовій дошці, молоток",
                 prompt: "Extreme macro slow-motion shot of a vintage steel hand plane shaving a curling golden ribbon of oak wood on a dusty carpenter workbench in 1972 London, warm shaft of sunlight piercing dark workshop, 35mm film grain, 4k 24fps.",
-                narration: "Що таке думка? Знадобилася одна вперта людина з поламаною спиною, яка тридцять років працювала стоячи або лежачи на підлозі проти всього наукового світу, щоб довести: думка — це геометрія помилки, розлита в мільярдах синапсів."
-              },
-              {
-                tc: "0:25 - 1:40",
-                sfx: "Глухий біт 92 BPM",
-                prompt: "Dark Victorian study room in Bristol: oil portraits of stern 19th-century mathematicians on walls, glass cases filled with thousands of pinned metallic beetles, 4k.",
-                narration: "Прапрадід — Джордж Буль. Прабабуся — Мері Еверест. Сестра збирала бомбу в Лос-Аламос. Мати кидає малому Джеффу фразу:",
-                quote: "«Джеффе, тобі доведеться працювати вдвічі важче за будь-кого іншого. Інакше до сорока років ти усвідомиш, що ти — нікчема на тлі своїх предків»."
+                narration: "Думка — це геометрія помилки, розлита в мільярдах синапсів. Тінь предків: Буль, Еверест, Лос-Аламос."
               }
             ]
           },
           {
             actNum: 2,
-            title: "30 років крижаної самотності та Backpropagation",
+            title: "30 років крижаної самотності та Backprop",
             time: "5:30 – 11:00",
-            music: "Suno Pro: Theme 2: Thirty Years of Winter (92 BPM)",
+            music: "Theme 2: Thirty Years of Winter (92 BPM)",
             scenes: [
               {
                 tc: "7:00 - 8:45",
-                sfx: "Скрип крейди, свист вітру",
+                sfx: "Скрип крейди",
                 prompt: "Breathtaking mathematical visualization: an error wave (gradient) traveling backwards through layers of a deep crystal lattice, adjusting the brightness and thickness of millions of connecting threads in reverse, golden light in dark void, 8k.",
-                narration: "1986 рік. Хінтон публікує в Nature формулу зворотного поширення помилки — Backpropagation. Помилка стала математичним паливом еволюції розуму."
+                narration: "1986 Nature стаття. Помилка стала математичним паливом еволюції розуму."
               }
             ]
           },
@@ -982,10 +911,9 @@
             scenes: [
               {
                 tc: "12:45 - 14:45",
-                sfx: "Різкий обрив музики. Важке дихання літньої людини. Інфразвук 35Hz.",
+                sfx: "Важке дихання, інфразвук 35Hz",
                 prompt: "Moody close-up of an elderly scientist standing alone by a dark window at 4 AM, looking at his own faint reflection merging with a vast glowing digital brain humming in the night sky, 4k.",
-                narration: "2023 рік. Хінтон розуміє: штучний розум уже перевершив біологічну еволюцію у способі передачі знань. Він подає у відставку з Google:",
-                quote: "«Я присвятив шістдесят років створенню технології, яка перевершить людину. І тепер частина мене глибоко шкодує про справу всього мого життя... У історії природи ще не було випадку, щоб менш розумний вид керував більш розумним»."
+                narration: "Штучний розум перевершив біологічну еволюцію у способі передачі знань. Відставка з Google."
               }
             ]
           },
@@ -997,9 +925,9 @@
             scenes: [
               {
                 tc: "16:45 - 18:15",
-                sfx: "Урочиста тиша банкетного залу",
+                sfx: "Урочиста тиша",
                 prompt: "Grand Banquet Hall in Stockholm City Hall: golden mosaics flickering in candlelight, an elderly man standing tall at the podium in a tuxedo without sitting down, addressing the kings and scientists of the world, 4k.",
-                narration: "10 грудня 2024 року. Нобелівська премія з фізики. Стоячи через біль у хребті, він попереджає людство про необхідність спрямувати половину ресурсів на безпеку."
+                narration: "Нобелівська премія 2024. Вища форма сили — здатність визнати власну помилку на піку слави."
               }
             ]
           }
@@ -1022,28 +950,19 @@
         metronome: "92 BPM (Soldering Iron & Wind, Bell Labs Optics, The Open Horizon)",
         tone: "Гостра, іронічна, картезіанська ясність думки, енергійна подача інженера-бунтаря",
         visualKey: "Дим каніфолі на платі, оптичні лінзи зорової кори, вітрильник у відкритому океані",
-        status: "ready",
-        statusText: "Сценарій готовий ✓",
-        hasScript: true,
         scriptPath: "02_SCRIPTS/episode_05_lecun/director_script_lecun.md",
         acts: [
           {
             actNum: 1,
-            title: "Дим каніфолі, бунт проти Парижа і забутий перцептрон",
+            title: "Дим каніфолі та забутий перцептрон",
             time: "0:00 – 5:15",
-            music: "Suno Pro: Theme 1: Soldering Iron & Wind (92 BPM)",
+            music: "Theme 1: Soldering Iron & Wind (92 BPM)",
             scenes: [
               {
                 tc: "0:00 - 0:25",
-                sfx: "Шипіння гарячого жала паяльника у краплі каніфолі. Свист осцилографа.",
+                sfx: "Шипіння паяльника в каніфолі",
                 prompt: "Extreme macro cinematic shot of a hot soldering iron tip melting silver solder onto a green copper circuit board in 1974 Paris suburb, wispy white rosin smoke curling in warm desk lamp light, 35mm film grain, 4k 24fps.",
-                narration: "Коли всі навколо встають на коліна перед новою іконою — справжній вчений бере викрутку і перевіряє, чи не захований за іконою механічний грамофон. У сучасному світі ШІ є лише одна людина, яка відкрито сміється в обличчя і торговцям дивами, і пророкам апокаліпсису. Його звуть Ян Лекун."
-              },
-              {
-                tc: "3:15 - 5:15",
-                sfx: "Звук перегортання старих бібліотечних карток",
-                prompt: "Close-up of a dusty 1969 book 'Perceptrons' opening on a library table, camera zooms into mathematical inequalities on the page which dissolve into a multi-layered glowing 3D grid, 8k.",
-                narration: "Лекун перераховує рівняння Мінського і бачить, що світ 20 років повторював чужий міф. Він самостійно виводить зворотне поширення помилки у своєму паризькому підвалі."
+                narration: "Справжній вчений бере викрутку і перевіряє, чи не захований за іконою грамофон. Лекун спростовує міф Мінського."
               }
             ]
           },
@@ -1051,34 +970,27 @@
             actNum: 2,
             title: "Очі машини: зорова кора кота та Bell Labs",
             time: "5:15 – 10:45",
-            music: "Suno Pro: Theme 2: Bell Labs Optics (92 BPM)",
+            music: "Theme 2: Bell Labs Optics (92 BPM)",
             scenes: [
               {
                 tc: "6:45 - 8:30",
-                sfx: "Фокусування скляного об'єктива, сканування чеків",
+                sfx: "Сортувальник чеків",
                 prompt: "3D architectural animation of LeNet-5 Convolutional Neural Network: a sliding geometric filter scanning across a handwritten number '5', extracting edges, pooling layers compressing data, 8k.",
-                narration: "Лекун створює згорткові мережі (CNN) на основі зорової кори кота. У 1995 році LeNet-5 читає 20% усіх чеків США.",
-                quote: "«Я двадцять років показував їм креслення літака. Вони сміялися і казали, що без махання пір'ям літати неможливо — аж поки їм на голови не сів надзвуковий винищувач»."
+                narration: "Винахід згорткових нейронних мереж (CNN). 1995 рік — банкомати читають чеки по всій Америці."
               }
             ]
           },
           {
             actNum: 3,
-            title: "Битва за відкритий код та кішка проти мовних моделей",
+            title: "Битва за відкритий код та кішка проти LLM",
             time: "10:45 – 16:30",
-            music: "Suno Pro: Theme 3: The Open Horizon (92 BPM)",
+            music: "Theme 3: The Open Horizon (92 BPM)",
             scenes: [
               {
-                tc: "10:45 - 12:30",
-                sfx: "Драматичний перехід",
-                prompt: "Dramatic meeting at night in Menlo Park: Mark Zuckerberg and Yann LeCun across a glass table, a glowing open padlock symbol shattering chains of proprietary code into millions of free golden sparks, 8k.",
-                narration: "Цукерберг погоджується на ультиматум відкритості. Народжуються PyTorch та LLaMA. Лекун захищає відкритий код від спроб монополій заборонити його."
-              },
-              {
                 tc: "12:30 - 14:45",
-                sfx: "Муркотіння кішки, м'який стрибок",
+                sfx: "Муркотіння кішки, стрибок",
                 prompt: "Slow motion cinematic shot of a sleek black house cat calculating a complex jump across a cluttered bookshelf, overlaid with glowing green geometric physics vectors inside the cat's visual field, 8k 24fps.",
-                narration: "Лекун кидає виклик: «Сучасні LLM — це тупиковий з'їзд». Модель прочитала все людство, але не має інтелекту звичайної домашньої кішки. Потрібні Світові Моделі (JEPA)."
+                narration: "PyTorch і LLaMA. Модель прочитала всю бібліотеку, але не має інтелекту звичайної кішки. Архітектура JEPA."
               }
             ]
           },
@@ -1090,9 +1002,9 @@
             scenes: [
               {
                 tc: "16:30 - 18:00",
-                sfx: "Шум вітру в тугих вітрилах, хлопок паруса",
+                sfx: "Хлопок паруса на вітрі",
                 prompt: "Aerial cinematic shot of a white racing sailboat cutting sharply through deep blue Atlantic waves at sunset, Yann LeCun at the helm adjusting the mainsheet against strong wind, spray catching golden light, 4k 24fps.",
-                narration: "Вітрильник іде проти вітру в бейдевінд. Три правила Лекуна: бігти проти натовпу, не плутати красномовство з фізикою, ділитися знаннями відкрито."
+                narration: "Йти проти вітру в бейдевінд. Три правила: бігти проти натовпу, не плутати красномовство з фізикою, ділитися знаннями."
               }
             ]
           }
@@ -1108,80 +1020,398 @@
         ep: "06",
         name: "Ілля Суцкевер",
         latin: "Ilya Sutskever",
-        title: "Математичний оракул та SSI",
-        topic: "Safe Superintelligence, AlexNet, Scaling Laws, Alignment",
-        duration: "21:00 (Очікується)",
-        wpm: "114 слів/хв",
-        metronome: "92 BPM",
-        tone: "Містично-математична, глибока подача",
-        visualKey: "Фрактальні кристали, біблійні масштаби обчислень",
-        status: "pending",
-        statusText: "Очікує Part 2",
-        hasScript: false
+        title: "Алхімік масштабування та тиші",
+        topic: "Математичний оракул, Стиснення = Інтелект, Ритуал вогню, Safe Superintelligence",
+        duration: "21:45",
+        wpm: "110 слів/хв (медитативний)",
+        metronome: "92 BPM (Jerusalem Stone, Compression Equals Intelligence, Sanctuary of SSI)",
+        tone: "Зосереджена, майже містична інженерна тиша, глибокі паузи між думками, низький тембр",
+        visualKey: "Золотий вапняк Єрусалима, дерев'яна статуетка AGI у вогні, чистий моноліт безпечного розуму",
+        scriptPath: "02_SCRIPTS/episode_06_sutskever/director_script_sutskever.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Золотий камінь Єрусалима та двері Хінтона",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Jerusalem Stone (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Резонанс тиші, шелест математичного фоліанта",
+                prompt: "Cinematic twilight shot over ancient golden limestone walls of Jerusalem in 1998, a single warm window lit in a quiet apartment where a fifteen-year-old boy sits motionless before a glowing computer monitor and thick university math books, 35mm film grain, 4k 24fps.",
+                narration: "У центрі вихору стоїть чернець від науки, чий погляд спрямований у чисту математичну безодню. Єрусалим, Торонто, кабінет Хінтона № 4306."
+              },
+              {
+                tc: "3:30 - 5:15",
+                sfx: "Множення матриць, 92 BPM біт",
+                prompt: "Close-up of glowing matrix multiplication lines streaming across two hot graphics cards in a dark room in 2012, reflecting in the intense dark eyes of a young researcher, Octane render, 8k.",
+                narration: "Єретична думка: алгоритм зворотного поширення вже досконалий — йому бракує лише масштабу. Створення AlexNet та Sequence-to-Sequence."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Алхімія стиснення: що вгадує мовна модель",
+            time: "5:15 – 11:15",
+            music: "Suno Pro: Theme 2: Compression Equals Intelligence (92 BPM)",
+            scenes: [
+              {
+                tc: "6:45 - 8:45",
+                sfx: "Суб-бас, перегортання сторінок",
+                prompt: "Noir cinematic metaphor: an open murder mystery book on a dark table, the last word of the book ('The killer is...') glowing with intense golden light, while ghostly 3D silhouettes of the entire crime scene reconstruct themselves above the pages, 4k.",
+                narration: "Аналогія про детектив Агати Крісті. Передбачення одного слова вимагає повної симуляції фізичного світу.",
+                quote: "«Передбачення наступного слова при достатньому масштабі — це не лінгвістика. Досконале стиснення інформації і є сам інтелект»."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Вогнище ритуалу, бунт у листопаді та вихід у тишу",
+            time: "11:15 – 16:45",
+            music: "Тривожне тріскотіння вогню, тибетські труби (92 BPM)",
+            scenes: [
+              {
+                tc: "11:15 - 13:00",
+                sfx: "Тріск великого вогнища, удари бубна",
+                prompt: "Surreal documentary scene at night: a wooden effigy statue symbolizing unaligned AGI burning in a courtyard bonfire, glowing embers rising into dark sky while silent engineers watch the flames reflect in their eyes, 35mm film grain, 4k.",
+                narration: "Спалення дерев'яної статуї на ретритах: «Відчуйте AGI!». Криза листопада 2023. Травень 2024 — заснування Safe Superintelligence (SSI)."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Монастир чистої думки та кодекс внутрішньої тиші",
+            time: "16:45 – 21:45",
+            music: "Suno Pro: Theme 3: Sanctuary of SSI (92 BPM)",
+            scenes: [
+              {
+                tc: "16:45 - 18:15",
+                sfx: "Кришталевий орган, удар серця в тиші",
+                prompt: "Minimalist architectural sanctuary: sunlight streaming across an empty concrete floor onto a notebook with three handwritten lines of math, absolute stillness, dust motes suspended in silence, 4k 24fps.",
+                narration: "Мільярд доларів без прес-релізів і продуктів. Три правила Суцкевера: стискати шум до першопричин, захищати внутрішню тишу, не боятися дитячих запитань."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental mystical ambient trip-hop, 92 bpm, deep warm sub-bass, distant Armenian duduk and Middle Eastern desert wind textures, sparse contemplative piano notes, Jerusalem twilight atmosphere.",
+          act2: "Instrumental dark hypnotic downtempo, 92 bpm, mathematical modular synth pulses, crackling bonfire foley in deep reverb, low Tibetan brass drone, intense philosophical tension.",
+          act4: "Instrumental ethereal neo-classical trip-hop, 92 bpm, Max Richter and Brian Eno inspired celestial string pads, pure glass harmonica resonance, slow peaceful sub-bass heartbeat, IMAX clarity."
+        }
       },
       {
         id: "07_amodei",
         ep: "07",
         name: "Даріо Амодей",
         latin: "Dario Amodei",
-        title: "Конституційний розум та Claude",
-        topic: "Anthropic, Constitutional AI, Machines of Loving Grace",
-        duration: "21:00 (Очікується)",
-        wpm: "114 слів/хв",
-        metronome: "92 BPM",
-        tone: "Академічна стриманість, етичний фокус",
-        visualKey: "Світлі мармурові бібліотеки, квантові ваги",
-        status: "pending",
-        statusText: "Очікує Part 2",
-        hasScript: false
+        title: "Фізика совісті та машини благодаті",
+        topic: "Scaling Laws, Anthropic, Constitutional AI, Mechanistic Interpretability, ASL рівні",
+        duration: "21:15",
+        wpm: "115 слів/хв",
+        metronome: "92 BPM (Retina & Tuscan Leather, Power Law Exodus, Machines of Loving Grace)",
+        tone: "Кристалічно точна, врівноважена, голос фізика-експериментатора з глибоким гуманістичним теплом",
+        visualKey: "Мікроелектроди на сітківці ока, степеневі графіки в логарифмах, мікроскопія нейронів Claude",
+        scriptPath: "02_SCRIPTS/episode_07_amodei/director_script_amodei.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Майстерня ремісника, трагедія батька та сітківка ока",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Retina & Tuscan Leather (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Електрофізіологічний підсилювач, глибокий вдих",
+                prompt: "Extreme macro cinematic shot of a microscopic glass electrode touching a translucent biological retina tissue in a dark Princeton laboratory, tiny golden bio-electric sparks firing in rhythm, 35mm film grain, 4k 24fps.",
+                narration: "Алгоритми — це вогонь, який вміє думати. Смерть батька від хвороби, що стала виліковною через кілька років. Дослідження сітківки ока в Прінстоні."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Рівняння експоненти та вихід із OpenAI",
+            time: "5:15 – 10:45",
+            music: "Suno Pro: Theme 2: Power Law Exodus (92 BPM)",
+            scenes: [
+              {
+                tc: "5:15 - 7:00",
+                sfx: "Креслення прямої лінії на склі, гул серверів",
+                prompt: "Inside OpenAI research lab in 2019: a glowing logarithmic coordinate grid in dark 3D space where scattered data points align into a razor-sharp straight diagonal line (Scaling Laws), physicists watching in silence, 8k.",
+                narration: "Закони масштабування (Scaling Laws) 2020. Сім дослідників залишають OpenAI і засновують Anthropic: не можна масштабувати потужність швидше за надійність гальм."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Конституція для розуму та мікроскоп чорної скриньки",
+            time: "10:45 – 16:30",
+            music: "Theme 2 Поліфонічний хор осциляторів (92 BPM)",
+            scenes: [
+              {
+                tc: "12:45 - 15:00",
+                sfx: "Фокусування електронного мікроскопа, кришталевий передзвін",
+                prompt: "Mechanistic Interpretability visualization: camera flies inside a dark opaque 'Black Box' which suddenly turns transparent like crystal glass, revealing distinct glowing golden constellations for concepts, 8k 24fps.",
+                narration: "Constitutional AI та Механістична інтерпретованість. Просвічування Claude 3 Sonnet: знайдено нейрон 'Golden Gate Bridge'. Стандарти безпеки ASL-1 — ASL-4."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Машини любові благодаті та спадщина батька",
+            time: "16:30 – 21:15",
+            music: "Theme 3: Machines of Loving Grace (92 BPM)",
+            scenes: [
+              {
+                tc: "16:30 - 18:15",
+                sfx: "Теплі оркестрові струнні, світанок",
+                prompt: "Poetic dawn over a futuristic green city: inside a bright laboratory, a digital AI model simulates millions of cellular therapies in seconds, dissolving cancer cells into harmless light, warm golden sunrise, IMAX 8k.",
+                narration: "Трактат 'Machines of Loving Grace'. Стиснення 100 років медицини в 5-10 років. Жодна дитина більше не стоятиме безпорадно біля ліжка батька."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental warm acoustic ambient trip-hop, 92 bpm, upright bass, soft felt piano chords, subtle oscilloscope electronic clicks, nostalgic Italian-American warmth, high clarity mastering.",
+          act2: "Instrumental intellectual cinematic downtempo, 92 bpm, precision polyrhythmic synth pulse, cello staccato tension, deep clean sub-bass, transparent glass harmonic textures.",
+          act4: "Instrumental uplifting neo-classical trip-hop, 92 bpm, soaring warm orchestral strings over gentle 92 bpm groove, acoustic piano melody, sense of healing, grace and human dignity, IMAX soundstage."
+        }
       },
       {
         id: "08_li",
         ep: "08",
         name: "Фей-Фей Лі",
         latin: "Fei-Fei Li",
-        title: "Просторовий інтелект та зоровий кортекс",
-        topic: "ImageNet, World Labs, Spatial AI, Людяність у коді",
-        duration: "21:00 (Очікується)",
+        title: "Очі машин та пара пральні",
+        topic: "ImageNet, Кембрійський вибух комп'ютерного зору, Stanford HAI, World Labs (Spatial AI)",
+        duration: "21:30",
         wpm: "114 слів/хв",
-        metronome: "92 BPM",
-        tone: "Тепла, гуманістична, наукова елегантність",
-        visualKey: "Мільйони зображень, що формують мозаїку ока",
-        status: "pending",
-        statusText: "Очікує Part 2",
-        hasScript: false
+        metronome: "92 BPM (Steam & Equations, Fourteen Million Windows, Spatial Horizon)",
+        tone: "Глибока, емоційно стримана, але надзвичайно людяна; контраст важкого побуту і високої фізики",
+        visualKey: "Гаряча пара прасувального преса, сфера з 14 млн картинок ImageNet, тривимірна геометрія світла",
+        scriptPath: "02_SCRIPTS/episode_08_li/director_script_li.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Квантова фізика вдень і прасувальний прес уночі",
+            time: "0:00 – 5:30",
+            music: "Suno Pro: Theme 1: Steam & Equations (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Видих гарячої пари з прасувального преса, дзвін вішаків",
+                prompt: "Extreme macro cinematic shot of white hot steam erupting from an industrial laundry press in a dimly lit 1996 New Jersey dry cleaners, water droplets condensing on a glass window where quantum physics equations are written, 35mm film grain, 4k 24fps.",
+                narration: "540 млн років тому зародок ока викликав Кембрійський вибух. Таку саму революцію здійснила дівчина з Сичуані, чиї руки пахли хімчисткою."
+              },
+              {
+                tc: "1:45 - 3:30",
+                sfx: "Перестук коліс поїзда New Jersey Transit",
+                prompt: "Split-world visual contrast: gothic stone arches of Princeton University physics lecture hall on Monday morning versus the cramped humid interior of a small suburban dry cleaning shop on Friday night, 35mm Kodak film look, 4k.",
+                narration: "Прінстон у будні, прасування сорочок у вихідні. Мати каже: 'Твоя голова належить науці. Ми витримаємо'."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Велике засліплення науки та народження ImageNet",
+            time: "5:30 – 11:30",
+            music: "Theme 2: Fourteen Million Windows (92 BPM)",
+            scenes: [
+              {
+                tc: "9:15 - 11:30",
+                sfx: "Удар печатки ВІДМОВЛЕНО, важкий біт 92 BPM",
+                prompt: "Nighttime at Stanford lab in 2008: Fei-Fei Li and her student Christian sitting before a world map where 48,000 tiny points of light across 167 countries ignite simultaneously via Amazon Mechanical Turk, building a colossal sphere of images, 8k.",
+                narration: "Відмова фондів. 50 000 людей з Mechanical Turk розмічають 14 млн зображень. 2009 рік у Маямі: стенд біля туалету."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Постріл у Торонто, палата матері та просторовий розум",
+            time: "11:30 – 17:00",
+            music: "Theme 3: Spatial Horizon (92 BPM)",
+            scenes: [
+              {
+                tc: "11:30 - 13:30",
+                sfx: "Вибух рендеру, сигнал кардіомонітора",
+                prompt: "Symbolic ignition: the massive golden sphere of 14 million ImageNet photographs pouring like liquid sun into the neural engine of AlexNet in 2012, shattering the glass ceiling of artificial intelligence, IMAX 8k 24fps.",
+                narration: "AlexNet перемагає. Пологова палата у Флориді. Stanford HAI для захисту хворих людей. 2024 рік — World Labs і Spatial AI."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Полярна зірка та кодекс незламної гідності",
+            time: "17:00 – 21:30",
+            music: "Theme 3 Spatial Horizon (Фінал з флейтою сяо)",
+            scenes: [
+              {
+                tc: "20:15 - 21:30",
+                sfx: "Видих пари, струнний квартет",
+                prompt: "Slow poetic pull-back from a foggy dry cleaner window in New Jersey through a glowing constellation of 14 million human memories into a vast three-dimensional universe of light, IMAX 8k 24fps.",
+                narration: "Важке походження — це не тавро, це ваша броня (grit). Шукайте те, що інші вважають недостатньо благородним."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental emotional ambient trip-hop, 92 bpm, deep warm sub-bass, rhythmic steam release foley percussion, solo cello and delicate felt piano, 1990s immigrant struggle atmosphere.",
+          act2: "Instrumental driving cinematic downtempo, 92 bpm, subtle camera shutter clicks integrated into beat, building modular synth arpeggios, deep bass pulse, sense of global scale and persistence.",
+          act4: "Instrumental majestic human-centered trip-hop, 92 bpm, soaring orchestral strings with subtle Chinese xiao flute harmonics over warm analog synth pads, triumphant and compassionate IMAX score."
+        }
       },
       {
         id: "09_bengio",
         ep: "09",
         name: "Йошуа Бенжіо",
         latin: "Yoshua Bengio",
-        title: "Система 2 та планетарна безпека",
-        topic: "MILA, Нейронний машинний переклад, Угода про безпеку ШІ",
-        duration: "21:00 (Очікується)",
+        title: "Вартовий Монреаля та архітектура уваги",
+        topic: "Word Embeddings, Механізм Уваги (Attention), Mila, Система 2 (GFlowNets), Монреальська декларація",
+        duration: "21:00",
         wpm: "114 слів/хв",
-        metronome: "92 BPM",
-        tone: "Філософська чесність, міжнародний статус",
-        visualKey: "Кленові ліси Монреалю, абстрактна каузальність",
-        status: "pending",
-        statusText: "Очікує Part 2",
-        hasScript: false
+        metronome: "92 BPM (Bohemian Montreal, Beams of Attention, The Guardian's Oath)",
+        tone: "Філософська, тепла, голос морального авторитету науки, який обрав свободу замість золота",
+        visualKey: "Засніжений Монреаль, промені механізму уваги (Attention), перехід від Системи 1 до Системи 2",
+        scriptPath: "02_SCRIPTS/episode_09_bengio/director_script_bengio.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Театр свободи, брати Бенжіо та втеча від конформізму",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Bohemian Montreal (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Дзвінок велосипеда на снігу, рипіння снігу під колесами",
+                prompt: "Cinematic winter twilight in Montreal: a modest professor with a backpack riding a bicycle through falling snow past Gothic churches and university halls, warm golden streetlight reflections on ice, 35mm film grain, 4k 24fps.",
+                narration: "Єдиний із трійки 'хрещених батьків', хто відмовився підписати корпоративний контракт. Велосипед крізь сніги Квебеку."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Геометрія слова та винахід уваги",
+            time: "5:15 – 11:15",
+            music: "Suno Pro: Theme 2: Beams of Attention (92 BPM)",
+            scenes: [
+              {
+                tc: "7:15 - 9:30",
+                sfx: "Суб-бас, промені світла",
+                prompt: "Visual metaphor of the Attention Mechanism (2014): instead of squeezing an entire long book through a tiny narrow funnel, hundreds of golden laser beams of 'Attention' shoot directly from the translator's pen back to specific key words, 8k 24fps.",
+                narration: "Word Embeddings (2000) та винахід механізму Уваги (Attention) 2014 року — основа Transformer. Відмова від чека корпорацій: створення Mila."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Бунт сумління та перехід до Системи 2",
+            time: "11:15 – 16:45",
+            music: "Theme 3: The Guardian's Oath (92 BPM)",
+            scenes: [
+              {
+                tc: "13:15 - 15:15",
+                sfx: "Гул набат, віолончелі",
+                prompt: "Scientific visualization of System 1 vs System 2: a chaotic fast river of intuitive sparks (System 1 LLM) being channeled into a crystalline architectural cathedral of deliberate logical reasoning, causal graphs and self-verification, 8k.",
+                narration: "Бенжіо очолює Міжнародний науковий звіт з безпеки ШІ. Перехід від інтуїтивної Системи 1 до доказової Системи 2 та потокових мереж GFlowNets."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Монреальська декларація та кодекс вільної людини",
+            time: "16:45 – 21:00",
+            music: "Theme 3 The Guardian's Oath (Фінал)",
+            scenes: [
+              {
+                tc: "19:50 - 21:00",
+                sfx: "Передзвін велосипедного дзвінка, орган і струнні",
+                prompt: "Slow majestic camera ascent from snowy Mount Royal in Montreal at night into the aurora borealis sky, where green and golden curtains of light form protective geometric shields over the sleeping Earth, IMAX 8k 24fps.",
+                narration: "Монреальська декларація. Заповіді Бенжіо: бережіть незалежність, керуйте Увагою, розвивайте інтелектуальне смирення."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental warm French-Canadian jazz trip-hop, 92 bpm, upright acoustic bass, vintage Rhodes electric piano, subtle footsteps in snow foley, bohemian intellectual Montreal atmosphere.",
+          act2: "Instrumental luminous ambient downtempo, 92 bpm, interwoven crystalline arpeggio beams of sound, deep warm sub-bass groove, mathematical elegance and clarity.",
+          act4: "Instrumental solemn neo-classical trip-hop, 92 bpm, deep emotional cello and warm pipe organ pads over steady 92 bpm heartbeat, sense of moral courage, humility and northern aurora scale, IMAX mix."
+        }
       },
       {
         id: "10_ng",
         ep: "10",
         name: "Ендрю Ин",
         latin: "Andrew Ng",
-        title: "Демократизація та агенти",
-        topic: "Coursera, DeepLearning.AI, Agentic Workflows, AI як електрика",
-        duration: "21:00 (Очікується)",
-        wpm: "114 слів/хв",
-        metronome: "92 BPM",
-        tone: "Ясна, надихаюча педагогічна точність",
-        visualKey: "Нескінченні аудиторії, з'єднані світловими променями",
-        status: "pending",
-        statusText: "Очікує Part 2",
-        hasScript: false
+        title: "Вчитель світу та нова електрика",
+        topic: "Google Brain (Кіт у мережі), Coursera, DeepLearning.AI, Agentic Workflows, Фінал Сезону",
+        duration: "21:30",
+        wpm: "115 слів/хв",
+        metronome: "92 BPM (Singapore Library, Sixteen Thousand Cores, The New Electricity)",
+        tone: "Натхненна, ясна, голос Великого Наставника, який закриває весь 10-серійний цикл",
+        visualKey: "Лістинги коду в старих журналах, 16 000 ядер Google Brain, мільйони вогнів студентів по всій Землі",
+        scriptPath: "02_SCRIPTS/episode_10_ng/director_script_ng.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Журнальні сторінки Сінгапуру та перевернутий гелікоптер",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Singapore Library (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Шелест комп'ютерного журналу 1986 року, клацання клавіш",
+                prompt: "Extreme macro cinematic shot of a ten-year-old boy's finger holding a ruler under a line of BASIC code printed in a 1986 computer magazine in a humid Singapore school library, green phosphor screen reflecting on his glasses, 35mm film grain, 4k 24fps.",
+                narration: "Прометей роздав вогонь простим людям. Ендрю Ин відчинив ворота Стенфорду і навчив 8 мільйонів студентів."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Кластер Google Brain та кіт у мережі",
+            time: "5:15 – 11:15",
+            music: "Suno Pro: Theme 2: Sixteen Thousand Cores (92 BPM)",
+            scenes: [
+              {
+                tc: "6:30 - 8:30",
+                sfx: "Ритмічний гул датацентру",
+                prompt: "Inside Google Brain 16,000 CPU core supercluster in 2012, millions of YouTube frames streaming into a deep neural network, resolving into an emergent holographic image of a cat face, 8k.",
+                narration: "16 000 ядер процесорів дивляться YouTube і самостійно відкривають концепт домашнього кота."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Революція Coursera: ШІ як нова електрика",
+            time: "11:15 – 16:45",
+            music: "Suno Pro: Theme 3: The New Electricity (92 BPM)",
+            scenes: [
+              {
+                tc: "12:00 - 14:00",
+                sfx: "Надихаючий акорд, шум аудиторії",
+                prompt: "Global map illuminating with millions of glowing laptop screens from Africa, Asia, Americas, Europe, students learning machine learning late at night, radiant network of human potential, 8k.",
+                narration: "Курс CS229. Народження Coursera та DeepLearning.AI. «Штучний інтелект — це нова електрика»."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Агентні патерни та відкрите майбутнє (Фінал)",
+            time: "16:45 – 21:30",
+            music: "Theme 3: The New Electricity (Фінал Сезону 1)",
+            scenes: [
+              {
+                tc: "19:30 - 21:30",
+                sfx: "Фінальний оркестровий акорд 92 BPM",
+                prompt: "Slow majestic zoom out from a single teacher writing on a glass whiteboard to an entire orbital view of humanity connected by streams of neural code, dawn over the horizon, IMAX 8k.",
+                narration: "Agentic Workflows: рефлексія, інструменти, планування, колаборація. Величний фінал 10-серійного циклу «Архітектори Розуму»."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental inspiring ambient trip-hop, 92 bpm, Singapore Library theme, acoustic guitar harmonics, soft warm sub-bass, gentle tropical rain and mechanical keyboard foley.",
+          act2: "Instrumental pulsing technological downtempo, 92 bpm, sixteen thousand cores theme, precision rhythmic modular synth pulse, expansive digital clarity.",
+          act4: "Instrumental triumphant educational trip-hop, 92 bpm, soaring orchestral strings over steady 92 bpm groove, radiant uplifting brass, finale of the season, IMAX clarity."
+        }
       }
     ];
 
@@ -1201,10 +1431,6 @@
         tr.className = 'clickable-row' + (currentTitan && currentTitan.id === titan.id ? ' active' : '');
         tr.onclick = () => openTitanModal(titan);
 
-        const statusBadge = titan.hasScript 
-          ? `<span class="badge badge-done">Сценарій ✓</span>`
-          : `<span class="badge badge-queue">Очікує Part 2</span>`;
-
         tr.innerHTML = `
           <td class="ep-idx">${titan.ep}</td>
           <td>
@@ -1216,13 +1442,12 @@
           </td>
           <td class="topic-cell">${titan.topic}</td>
           <td style="font-family: var(--mono); font-size: 11px; color: var(--text-muted);">${titan.duration}</td>
-          <td>${statusBadge}</td>
+          <td><span class="badge badge-done">Сценарій ✓</span></td>
         `;
         tbody.appendChild(tr);
       });
     }
 
-    // FILTER TABLE
     function filterTitans() {
       const q = document.getElementById('searchInput').value;
       renderTable(q);
@@ -1240,7 +1465,7 @@
         <span class="m-pill">Хронометраж: <strong>${titan.duration}</strong></span>
         <span class="m-pill">Темп: <strong>${titan.wpm}</strong></span>
         <span class="m-pill">Метроном: <strong>${titan.metronome}</strong></span>
-        <span class="m-pill">Статус: <strong style="color: ${titan.hasScript ? 'var(--emerald)' : 'var(--amber)'};">${titan.statusText}</strong></span>
+        <span class="m-pill">Статус: <strong style="color: var(--emerald);">Сценарій готовий ✓</strong></span>
       `;
       document.getElementById('modalMetaPills').innerHTML = pillsHtml;
 
@@ -1284,25 +1509,6 @@
       const container = document.getElementById('modalBody');
       if (!currentTitan) return;
 
-      if (!currentTitan.hasScript) {
-        container.innerHTML = `
-          <div style="text-align: center; padding: 3rem 1rem;">
-            <div style="font-size: 32px; margin-bottom: 0.5rem;">⏳</div>
-            <h3 style="font-size: 14px; color: #fff; margin-bottom: 0.4rem;">Сценарій епізоду ${currentTitan.ep} очікує завантаження</h3>
-            <p style="font-size: 12px; color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
-              Файл сценарію для <strong>${currentTitan.name}</strong> буде додано після завантаження другої частини (файли 6–10).
-            </p>
-            <div style="margin-top: 1.5rem; background: var(--surface-elevated); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1rem; max-width: 480px; margin-left: auto; margin-right: auto; text-align: left;">
-              <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">Запланований фокус дослідження:</div>
-              <div style="color: var(--text-primary); font-size: 12px;">${currentTitan.topic}</div>
-              <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">Тональність диктора:</div>
-              <div style="color: var(--cyan); font-size: 11.5px;">${currentTitan.tone}</div>
-            </div>
-          </div>
-        `;
-        return;
-      }
-
       if (currentModalTab === 'script') {
         let html = '';
         currentTitan.acts.forEach(act => {
@@ -1334,7 +1540,6 @@
         container.innerHTML = html;
       } else if (currentModalTab === 'prompts') {
         let html = '<div style="display: flex; flex-direction: column; gap: 0.6rem;">';
-        let count = 1;
         currentTitan.acts.forEach(act => {
           act.scenes.forEach(scene => {
             html += `
@@ -1346,7 +1551,6 @@
                 <button class="btn btn-primary" onclick="copyText('${scene.prompt.replace(/'/g, "\\'")}')">Копіювати</button>
               </div>
             `;
-            count++;
           });
         });
         html += '</div>';
