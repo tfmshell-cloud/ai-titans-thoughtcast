@@ -1,0 +1,41 @@
+# .gitignore for Cinematic Thoughtcast: AI Titans
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.env
+
+# Large raw footage & heavy media binaries (tracked via external storage / LFS or local backups)
+05_RAW_FOOTAGE/veo_clips/*.mp4
+05_RAW_FOOTAGE/veo_clips/*.mov
+05_RAW_FOOTAGE/flow_renders/*.mp4
+05_RAW_FOOTAGE/flow_renders/*.mov
+05_RAW_FOOTAGE/archives/*
+!05_RAW_FOOTAGE/archives/.gitkeep
+
+# DaVinci Resolve cache & projects autosaves
+*.gallery
+*.dtl
+.davinci/
+CacheClip/
+.gallery/
+
+# Heavy Audio Stems & SFX
+03_AUDIO/voiceover/*.wav
+03_AUDIO/suno_stems/*.wav
+03_AUDIO/sfx/*.wav
+
+# Local Backups
+09_BACKUPS/*.tar.gz
+09_BACKUPS/*.zip
+09_BACKUPS/*.bak
