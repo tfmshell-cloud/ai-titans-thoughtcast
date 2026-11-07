@@ -6,12 +6,12 @@
   <title>Cinematic Thoughtcast: AI Titans — Production Hub</title>
   <style>
     :root {
-      --bg: #0d0f14;
-      --surface: #141720;
-      --surface-elevated: #1a1e2a;
-      --surface-hover: #1f2535;
-      --border: #232836;
-      --border-subtle: #1c202c;
+      --bg: #0c0e13;
+      --surface: #13161f;
+      --surface-elevated: #191d29;
+      --surface-hover: #1e2333;
+      --border: #222736;
+      --border-subtle: #1a1e2c;
       --text-primary: #e6edf3;
       --text-secondary: #8b949e;
       --text-muted: #586069;
@@ -40,7 +40,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .app-shell { max-width: 1260px; margin: 0 auto; }
+    .app-shell { max-width: 1320px; margin: 0 auto; }
 
     /* Top Navigation */
     .topbar {
@@ -98,39 +98,6 @@
       color: var(--text-secondary);
     }
     .metric-pill strong { color: var(--text-primary); font-weight: 600; }
-
-    /* Navigation Tabs */
-    .tab-bar {
-      display: flex;
-      gap: 0.4rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: 1px solid transparent;
-      color: var(--text-secondary);
-      padding: 5px 12px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .tab-btn:hover {
-      color: var(--text-primary);
-      background: var(--surface-elevated);
-    }
-
-    .tab-btn.active {
-      color: var(--cyan);
-      background: var(--cyan-subtle);
-      border-color: rgba(56, 189, 248, 0.3);
-    }
 
     /* Pipeline Strip */
     .pipeline-container {
@@ -210,6 +177,7 @@
       align-items: center;
       gap: 0.6rem;
       margin-bottom: 0.65rem;
+      flex-wrap: wrap;
     }
 
     .search-input {
@@ -220,9 +188,10 @@
       font-size: 11.5px;
       color: var(--text-primary);
       outline: none;
-      width: 190px;
+      width: 200px;
     }
 
+    /* Titans Interactive Table */
     .table-wrap { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 12px; }
     th {
@@ -235,14 +204,25 @@
       background: var(--surface-elevated);
     }
     td {
-      padding: 6px 8px;
+      padding: 7px 8px;
       border-bottom: 1px solid var(--border-subtle);
       vertical-align: middle;
     }
-    tr:hover td { background: rgba(255, 255, 255, 0.015); }
 
-    .ep-idx { font-family: var(--mono); color: var(--text-muted); font-size: 11px; width: 30px; }
-    .person-name { font-weight: 500; color: #fff; }
+    .clickable-row {
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .clickable-row:hover td {
+      background: var(--surface-hover);
+    }
+    .clickable-row.active td {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 2px solid var(--cyan);
+    }
+
+    .ep-idx { font-family: var(--mono); color: var(--text-muted); font-size: 11px; width: 32px; }
+    .person-name { font-weight: 600; color: #fff; display: flex; align-items: center; gap: 6px; }
     .topic-cell { color: var(--text-secondary); font-size: 11.5px; }
 
     .badge {
@@ -251,11 +231,12 @@
       border-radius: 4px;
       font-size: 10.5px;
       font-weight: 500;
+      white-space: nowrap;
     }
     .badge-done { background: var(--emerald-subtle); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.3); }
-    .badge-research { background: var(--cyan-subtle); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
     .badge-queue { background: rgba(139, 148, 158, 0.1); color: var(--text-secondary); border: 1px solid var(--border-subtle); }
 
+    /* Right sidebar */
     .folder-list { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.4rem; }
     .folder-row {
       display: flex;
@@ -271,8 +252,132 @@
     .folder-name { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; }
     .folder-tag { font-size: 10px; color: var(--text-muted); }
 
-    /* Script & Prompts Viewer Styles */
-    .script-act-card {
+    /* Modal / Drawer for Titan Detail */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-backdrop.show { display: flex; }
+
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 980px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background: var(--surface-elevated);
+      gap: 1rem;
+    }
+
+    .modal-title-group h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-title-group p {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .modal-meta-pills {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .m-pill {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      color: var(--text-secondary);
+    }
+    .m-pill strong { color: var(--text-primary); }
+
+    .btn-close {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.15s ease;
+    }
+    .btn-close:hover {
+      color: #fff;
+      border-color: var(--cyan);
+      background: var(--surface-hover);
+    }
+
+    /* Modal Tabs */
+    .modal-tabs {
+      display: flex;
+      gap: 0.3rem;
+      padding: 0.5rem 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .modal-tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 5px 11px;
+      border-radius: 6px 6px 0 0;
+      font-size: 11.5px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .modal-tab-btn:hover { color: var(--text-primary); }
+    .modal-tab-btn.active {
+      color: var(--cyan);
+      background: var(--surface-elevated);
+      border-color: var(--border) var(--border) var(--surface-elevated);
+    }
+
+    /* Modal Body */
+    .modal-body {
+      padding: 1.25rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    /* Script Act styling inside modal */
+    .act-block {
       background: var(--surface-elevated);
       border: 1px solid var(--border-subtle);
       border-radius: 8px;
@@ -280,49 +385,63 @@
       margin-bottom: 0.85rem;
     }
 
-    .act-header {
+    .act-head-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.4rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.6rem;
     }
 
-    .act-title { font-weight: 600; color: var(--cyan); font-size: 12.5px; }
-    .act-time { font-family: var(--mono); font-size: 11px; color: var(--text-muted); }
+    .act-heading { font-size: 12.5px; font-weight: 600; color: var(--cyan); }
+    .act-music { font-family: var(--mono); font-size: 10.5px; color: var(--amber); }
 
-    .script-scene {
+    .scene-entry {
       margin-bottom: 0.65rem;
-      padding: 0.5rem;
+      padding: 0.5rem 0.65rem;
+      background: rgba(0, 0, 0, 0.2);
       border-left: 2px solid var(--border);
-      background: rgba(255, 255, 255, 0.01);
       border-radius: 0 6px 6px 0;
     }
-    .scene-meta { display: flex; gap: 0.5rem; font-size: 11px; margin-bottom: 0.3rem; }
-    .scene-tc { font-family: var(--mono); color: var(--amber); }
+
+    .scene-top { display: flex; gap: 0.6rem; font-size: 11px; margin-bottom: 0.25rem; align-items: center; }
+    .scene-tc { font-family: var(--mono); color: var(--amber); font-weight: 600; }
     .scene-sfx { color: var(--purple); font-size: 10.5px; }
 
     .prompt-box {
-      background: #090b0e;
+      background: #080a0e;
       border: 1px solid var(--border);
       border-radius: 5px;
       padding: 5px 8px;
       font-family: var(--mono);
       font-size: 11px;
       color: #9cdcfe;
-      margin: 0.3rem 0;
+      margin: 0.35rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 0.5rem;
     }
 
-    .narration-text {
+    .prompt-text { word-break: break-word; }
+
+    .narration {
       color: var(--text-primary);
       font-size: 12px;
       line-height: 1.5;
-      margin-top: 0.3rem;
+      margin-top: 0.35rem;
+    }
+
+    .quote-block {
+      border-left: 2px solid var(--cyan);
+      background: rgba(56, 189, 248, 0.05);
+      padding: 6px 10px;
+      margin: 0.4rem 0;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 11.5px;
+      border-radius: 0 4px 4px 0;
     }
 
     /* Buttons */
@@ -330,17 +449,17 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
-      padding: 4px 9px;
-      font-size: 11.5px;
+      gap: 4px;
+      padding: 3px 8px;
+      font-size: 11px;
       font-weight: 500;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
       border: 1px solid var(--border);
       background: var(--surface-elevated);
       color: var(--text-primary);
       transition: all 0.15s ease;
-      text-decoration: none;
+      white-space: nowrap;
     }
     .btn:hover {
       border-color: var(--cyan);
@@ -378,323 +497,120 @@
         <div class="brand-icon">AI</div>
         <div class="title-group">
           <h1>Cinematic Thoughtcast &bull; AI Titans</h1>
-          <p>Панель моніторингу виробництва, сценаріїв та DaVinci пайплайну</p>
+          <p>Інтерактивна система навігації за сценаріями персоналій (Season 1)</p>
         </div>
       </div>
 
       <div class="stats-inline">
-        <span class="badge-status"><span class="dot-live"></span> Сезон 1</span>
-        <div class="metric-pill">Ep 01: <strong>20:30 (Сценарій готовий)</strong></div>
-        <div class="metric-pill">Відео-промптів: <strong>17 кадрів</strong></div>
-        <div class="metric-pill">DaVinci: <strong>Fairlight Sidechain + 4-Node Color</strong></div>
+        <span class="badge-status"><span class="dot-live"></span> 5 сценаріїв завантажено</span>
+        <div class="metric-pill">Формат: <strong>20–22 хв / 92 BPM</strong></div>
+        <div class="metric-pill">Відео-промптів: <strong>72 кадри (Veo/Flow)</strong></div>
+        <div class="metric-pill">DaVinci: <strong>Fairlight + Kodak 2383</strong></div>
       </div>
     </header>
 
-    <!-- Navigation Tabs -->
-    <div class="tab-bar">
-      <button class="tab-btn active" onclick="switchView('overview', this)">Загальний огляд</button>
-      <button class="tab-btn" onclick="switchView('ep01-script', this)">🎬 Ep 01: Сценарій & Відео-промпти</button>
-      <button class="tab-btn" onclick="switchView('audio', this)">🎙️ Аудіо-інженерія & YouTube Multi-Track</button>
-      <button class="tab-btn" onclick="switchView('davinci', this)">🎚️ DaVinci Resolve Специфікація</button>
-      <button class="tab-btn" onclick="switchView('structure', this)">Структура тек</button>
-    </div>
-
-    <!-- Section 1: Overview View -->
-    <div id="view-overview">
-      <div class="pipeline-container">
-        <div class="section-head">
-          <span class="section-title">Виробничий цикл серіалу</span>
-          <button class="btn btn-primary" onclick="simulateRefresh()">Оновити стан</button>
-        </div>
-        <div class="pipeline-steps">
-          <div class="step-item done"><span class="step-num">01 / Репо</span><span class="step-name">Інфраструктура</span><span class="step-state">✓ Готово</span></div>
-          <div class="step-item done"><span class="step-num">02 / Дерево</span><span class="step-name">Структура тек</span><span class="step-state">✓ Створено</span></div>
-          <div class="step-item done"><span class="step-num">03 / Сценарій</span><span class="step-name">Ep 01: Altman</span><span class="step-state">✓ 20:30 Фінал</span></div>
-          <div class="step-item active"><span class="step-num">04 / Аудіо</span><span class="step-name">Suno & VO 115 WPM</span><span class="step-state">● Генерація</span></div>
-          <div class="step-item active"><span class="step-num">05 / Відео</span><span class="step-name">Veo (17 промптів)</span><span class="step-state">● Рендери</span></div>
-          <div class="step-item queued"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">Черга</span></div>
-          <div class="step-item queued"><span class="step-num">07 / Архів</span><span class="step-name">Бекапи</span><span class="step-state">Черга</span></div>
-        </div>
+    <!-- Pipeline Strip -->
+    <div class="pipeline-container">
+      <div class="section-head">
+        <span class="section-title">Виробничий цикл серіалу</span>
+        <span style="font-size: 11px; color: var(--cyan);">Натисніть на будь-яку персоналію в таблиці нижче для перегляду сценарію</span>
       </div>
-
-      <div class="dashboard-grid">
-        <section class="card">
-          <div class="filter-bar">
-            <span class="section-title">Реєстр епізодів (AI Titans)</span>
-            <input type="text" id="searchInput" class="search-input" placeholder="Фільтр персоналій..." oninput="filterTitans()">
-          </div>
-
-          <div class="table-wrap">
-            <table id="titansTable">
-              <thead>
-                <tr>
-                  <th style="width: 32px;">№</th>
-                  <th>Персоналія</th>
-                  <th>Тематичний фокус</th>
-                  <th style="width: 110px;">Статус</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="ep-idx">01</td>
-                  <td><span class="person-name">Sam Altman</span></td>
-                  <td class="topic-cell">Анатомія експоненти &bull; 20:30 &bull; 4 Акти &bull; Stargate</td>
-                  <td><span class="badge badge-done">Сценарій готов ✓</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">02</td>
-                  <td><span class="person-name">Jensen Huang</span></td>
-                  <td class="topic-cell">CUDA Dynasty, Blackwell GPUs, Physical AI</td>
-                  <td><span class="badge badge-research">Дослідження</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">03</td>
-                  <td><span class="person-name">Demis Hassabis</span></td>
-                  <td class="topic-cell">DeepMind, AlphaFold, Algorithmic Mastery</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">04</td>
-                  <td><span class="person-name">Geoffrey Hinton</span></td>
-                  <td class="topic-cell">Backprop, Existential Risk, Digital vs Bio</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">05</td>
-                  <td><span class="person-name">Yann LeCun</span></td>
-                  <td class="topic-cell">JEPA, World Models, Open Science vs Hype</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">06</td>
-                  <td><span class="person-name">Ilya Sutskever</span></td>
-                  <td class="topic-cell">Safe Superintelligence (SSI), Scaling Math</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">07</td>
-                  <td><span class="person-name">Dario Amodei</span></td>
-                  <td class="topic-cell">Anthropic, Claude, Constitutional AI</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">08</td>
-                  <td><span class="person-name">Fei-Fei Li</span></td>
-                  <td class="topic-cell">ImageNet, Spatial Intelligence, World Labs</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">09</td>
-                  <td><span class="person-name">Yoshua Bengio</span></td>
-                  <td class="topic-cell">System 2 Reasoning, AI Governance & Treaty</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-                <tr>
-                  <td class="ep-idx">10</td>
-                  <td><span class="person-name">Andrew Ng</span></td>
-                  <td class="topic-cell">Democratization, Agentic Workflows, AI Education</td>
-                  <td><span class="badge badge-queue">Черга</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <!-- Fast Catalog -->
-        <aside class="card">
-          <div class="section-head">
-            <span class="section-title">Каталог проєкту</span>
-            <button class="btn" style="padding: 2px 7px; font-size: 11px;" onclick="copyPath()">Копіювати шлях</button>
-          </div>
-
-          <div class="folder-list">
-            <div class="folder-row"><span class="folder-name">📁 01_RESEARCH</span><span class="folder-tag">10 папок</span></div>
-            <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">director_script.md</span></div>
-            <div class="folder-row"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag">Suno 92 BPM / SFX</span></div>
-            <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">17 промптів Veo</span></div>
-            <div class="folder-row"><span class="folder-name">🎞️ 05_RAW_FOOTAGE</span><span class="folder-tag">veo / flow</span></div>
-            <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag">4-node spec</span></div>
-            <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD</span><span class="folder-tag">active</span></div>
-            <div class="folder-row"><span class="folder-name">⚙️ 08_AUTOMATION</span><span class="folder-tag">scripts</span></div>
-            <div class="folder-row"><span class="folder-name">💾 09_BACKUPS</span><span class="folder-tag">snapshots</span></div>
-          </div>
-        </aside>
+      <div class="pipeline-steps">
+        <div class="step-item done"><span class="step-num">01 / Репо</span><span class="step-name">Інфраструктура</span><span class="step-state">✓ Готово</span></div>
+        <div class="step-item done"><span class="step-num">02 / Дерево</span><span class="step-name">Структура тек</span><span class="step-state">✓ Створено</span></div>
+        <div class="step-item active"><span class="step-num">03 / Сценарії</span><span class="step-name">Ep 01–05 Готові</span><span class="step-state">● 5/10 Доступно</span></div>
+        <div class="step-item active"><span class="step-num">04 / Аудіо</span><span class="step-name">Suno 92 BPM Паспорти</span><span class="step-state">● Готово до рендеру</span></div>
+        <div class="step-item active"><span class="step-num">05 / Відео</span><span class="step-name">Veo Промпти</span><span class="step-state">● 72 промпти</span></div>
+        <div class="step-item queued"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">Черга</span></div>
+        <div class="step-item queued"><span class="step-num">07 / Архів</span><span class="step-name">Бекапи</span><span class="step-state">Черга</span></div>
       </div>
     </div>
 
-    <!-- Section 2: Episode 01 Script & Prompts Viewer -->
-    <div id="view-ep01-script" style="display: none;">
-      <div class="card">
-        <div class="section-head">
+    <!-- Main Grid -->
+    <div class="dashboard-grid">
+      <!-- Left Column: Titans Table with Click-to-Open Script -->
+      <section class="card">
+        <div class="filter-bar">
           <div>
-            <span class="section-title">🎬 Епізод 01: «Сем Альтман: Анатомія експоненти» (20:30)</span>
-            <p style="font-size: 11.5px; color: var(--text-secondary); margin-top: 2px;">
-              Повний режисерський сценарій &bull; Темпоритм 92 BPM &bull; 115 слів/хв &bull; 17 кінематографічних промптів
-            </p>
+            <span class="section-title">Реєстр персоналій AI Titans (Клікніть для сценарію)</span>
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 1px;">Кожен рядок відкриває повний сценарій, промпти та аудіо-паспорт</p>
           </div>
-          <button class="btn btn-primary" onclick="copyFileText('02_SCRIPTS/episode_01_altman/director_script_altman.md')">
-            Копіювати весь сценарій (.md)
-          </button>
+          <input type="text" id="searchInput" class="search-input" placeholder="Фільтр персоналій..." oninput="filterTitans()">
         </div>
 
-        <!-- Act 1 -->
-        <div class="script-act-card">
-          <div class="act-header">
-            <span class="act-title">Акт 1. Походження та кремнієвий щит</span>
-            <span class="act-time">0:00 – 4:45 &bull; Suno: Theme 1: Introspection (92 BPM)</span>
-          </div>
-
-          <div class="script-scene">
-            <div class="scene-meta">
-              <span class="scene-tc">[0:00 - 0:15]</span>
-              <span class="scene-sfx">SFX: Щиглик реле CRT-монітора, низькочастотний гул розгортки</span>
-            </div>
-            <div class="prompt-box">
-              <span><strong>PROMPT 01:</strong> Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, 4k 24fps.</span>
-              <button class="btn" onclick="copyText('Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, Octane render aesthetic, 4k 24fps.')">Копіювати</button>
-            </div>
-            <p class="narration-text"><em>Диктор:</em> «Більшість людей формуються під тиском правил. Їхній світ — це коридори середньої школи, оцінки в табелях, зауваження дорослих і страх зробити щось не так...»</p>
-          </div>
-
-          <div class="script-scene">
-            <div class="scene-meta">
-              <span class="scene-tc">[0:15 - 0:45]</span>
-              <span class="scene-sfx">Macintosh LC II &bull; Джерело автономії</span>
-            </div>
-            <div class="prompt-box">
-              <span><strong>PROMPT 02:</strong> Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, 4k.</span>
-              <button class="btn" onclick="copyText('Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, cinematic depth of field, 4k.')">Копіювати</button>
-            </div>
-            <p class="narration-text"><em>Диктор:</em> «Комп'ютер навчив його фундаментальної істини, яку школа ретельно приховує: машина байдужа до авторитетів. Вона не знає образи. Вона карає не за спробу, а лише за синтаксичну помилку...»</p>
-          </div>
+        <div class="table-wrap">
+          <table id="titansTable">
+            <thead>
+              <tr>
+                <th style="width: 32px;">№</th>
+                <th>Персоналія</th>
+                <th>Тема та фокус випуску</th>
+                <th style="width: 80px;">Хронометраж</th>
+                <th style="width: 110px;">Статус сценарію</th>
+              </tr>
+            </thead>
+            <tbody id="titansTableBody">
+              <!-- Rendered dynamically by JS -->
+            </tbody>
+          </table>
         </div>
+      </section>
 
-        <!-- Act 2 -->
-        <div class="script-act-card">
-          <div class="act-header">
-            <span class="act-title">Акт 2. Код експоненти та народження OpenAI</span>
-            <span class="act-time">4:45 – 9:30 &bull; Suno: Theme 2: Tension (92 BPM)</span>
-          </div>
-          <div class="script-scene">
-            <div class="scene-meta">
-              <span class="scene-tc">[7:00 - 8:15]</span>
-              <span class="scene-sfx">DeepMind acquisition &bull; Менло-Парк вечеря</span>
-            </div>
-            <div class="prompt-box">
-              <span><strong>PROMPT 09:</strong> Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.</span>
-              <button class="btn" onclick="copyText('Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.')">Копіювати</button>
-            </div>
-            <p class="narration-text"><em>Диктор:</em> «11 грудня 2015 року світ дізнається про створення OpenAI... всередині лабораторії вже визрівала єретична гіпотеза Суцкевера та Альтмана: Масштаб вирішує все.»</p>
-          </div>
-        </div>
-
-        <!-- Act 3 -->
-        <div class="script-act-card">
-          <div class="act-header">
-            <span class="act-title">Акт 3. Землетрус і п'ять днів бунту</span>
-            <span class="act-time">9:30 – 15:30 &bull; Психологічний трилер &bull; Суб-дропи 40Hz</span>
-          </div>
-          <div class="script-scene">
-            <div class="scene-meta">
-              <span class="scene-tc">[13:45 - 15:30]</span>
-              <span class="scene-sfx">Ультиматум 730 співробітників &bull; Повернення</span>
-            </div>
-            <div class="prompt-box">
-              <span><strong>PROMPT 14:</strong> Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.</span>
-              <button class="btn" onclick="copyText('Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.')">Копіювати</button>
-            </div>
-            <p class="narration-text"><em>Диктор:</em> «Ця криза показала анатомію лідерства нового типу: його влада трималася не на посадових інструкціях чи юридичних контрактах. Вона трималася на спільній вірі команди в масштаб місії...»</p>
-          </div>
-        </div>
-
-        <!-- Act 4 -->
-        <div class="script-act-card">
-          <div class="act-header">
-            <span class="act-title">Акт 4. Кодекс будівничого та горизонт AGI</span>
-            <span class="act-time">15:30 – 20:30 &bull; Suno: Theme 3: Triumph (92 BPM) &bull; IMAX масштаб</span>
-          </div>
-          <div class="script-scene">
-            <div class="scene-meta">
-              <span class="scene-tc">[15:30 - 17:00]</span>
-              <span class="scene-sfx">Проєкт Stargate &bull; Орбітальні датацентри</span>
-            </div>
-            <div class="prompt-box">
-              <span><strong>PROMPT 15:</strong> Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.</span>
-              <button class="btn" onclick="copyText('Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.')">Копіювати</button>
-            </div>
-            <p class="narration-text"><em>Диктор:</em> «Він дивиться на історію цивілізації крізь просту термодинамічну формулу: якщо зробити вартість енергії та інтелекту близькою до нуля — матеріальний дефіцит на планеті зникне.»</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 3: Audio Engineering View -->
-    <div id="view-audio" style="display: none;">
-      <div class="card">
+      <!-- Right Column: Project Files & Fast Actions -->
+      <aside class="card">
         <div class="section-head">
-          <span class="section-title">🎙️ Промпти для генерації саундтреку в Suno Pro (92 BPM)</span>
-        </div>
-        <div class="audio-studio-grid">
-          <div class="audio-card">
-            <div class="audio-card-title">Акт 1 (0:00 - 4:45) — «Theme 1: Introspection»</div>
-            <pre class="code-preview">Instrumental ambient trip-hop, 92 bpm, dusty vinyl texture, warm vintage Rhodes chords, deep analog sub bass, nostalgic clean electric guitar harmonics, quiet contemplative mood, cinematic documentary soundtrack, high fidelity.</pre>
-          </div>
-          <div class="audio-card">
-            <div class="audio-card-title">Акти 2 & 3 (4:45 - 15:30) — «Theme 2: Tension»</div>
-            <pre class="code-preview">Instrumental dark industrial downtempo, 92 bpm, aggressive muted sub-bass pulse, clockwork metallic percussion, tension analog modular synth arpeggios, distant dark saxophone drone with reverb, brooding psychological focus, cinematic film score.</pre>
-          </div>
-          <div class="audio-card" style="grid-column: span 2;">
-            <div class="audio-card-title">Акт 4 (15:30 - 20:30) — «Theme 3: Triumph» (IMAX Scale)</div>
-            <pre class="code-preview">Instrumental majestic sci-fi trip-hop, 92 bpm, soaring analog brass synths, deep resonant bass pulse, emotional celestial choir pad, slow triumphant groove, sense of cosmic scale, IMAX resolution soundtrack.</pre>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 4: DaVinci Resolve Specification -->
-    <div id="view-davinci" style="display: none;">
-      <div class="card">
-        <div class="section-head">
-          <span class="section-title">🎚️ DaVinci Resolve Studio — Color & Fairlight Паспорт</span>
-          <span style="font-size: 11px; color: var(--cyan); font-family: var(--mono);">AI_TITANS_EP01_ALTMAN_MASTER</span>
+          <span class="section-title">Каталог сценаріїв на диску</span>
+          <button class="btn" onclick="copyPath()">Копіювати шлях</button>
         </div>
 
-        <div class="audio-studio-grid">
-          <div class="audio-card">
-            <div class="audio-card-title">🎨 Нодне дерево на Color Page</div>
-            <div class="spec-item"><span class="spec-key">Node 1</span><span class="spec-val">Exposure & Contrast (Black point: 0.02)</span></div>
-            <div class="spec-item"><span class="spec-key">Node 2</span><span class="spec-val">Color Temp (Cool cyan shadows, warm neutral HL)</span></div>
-            <div class="spec-item"><span class="spec-key">Node 3</span><span class="spec-val">Rec709 Kodak 2383 D60 Film Look</span></div>
-            <div class="spec-item"><span class="spec-key">Node 4</span><span class="spec-val">OFX 35mm Grain (Size: 1.1, Strength: 0.35)</span></div>
-          </div>
-
-          <div class="audio-card">
-            <div class="audio-card-title">🎛️ Fairlight Audio Routing & Sidechain</div>
-            <div class="spec-item"><span class="spec-key">Track A1 (VO)</span><span class="spec-val">HPF 75Hz, +1.5dB 3.5kHz &bull; Sidechain Out 1</span></div>
-            <div class="spec-item"><span class="spec-key">Track A2 (Music)</span><span class="spec-val">Suno 92 BPM &bull; Ducking -3.2 dB (Sidechain Listen 1)</span></div>
-            <div class="spec-item"><span class="spec-key">Track A3 (SFX)</span><span class="spec-val">CRT relays, 40Hz sub-drops (0:45, 9:30, 13:45)</span></div>
-            <div class="spec-item"><span class="spec-key">Master Bus</span><span class="spec-val">Target -14.0 LUFS &bull; True Peak -1.0 dBFS</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 5: Directory Structure View -->
-    <div id="view-structure" style="display: none;">
-      <div class="card">
-        <div class="section-head">
-          <span class="section-title">Архітектура репозиторію</span>
-          <span style="font-size: 11px; color: var(--text-muted);">Всі файли збережено на macOS</span>
-        </div>
         <div class="folder-list">
-          <div class="folder-row"><span class="folder-name">📁 01_RESEARCH/{sam_altman, ...}</span><span class="folder-tag">10 персоналій</span></div>
-          <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS/episode_01_altman/director_script_altman.md</span><span class="folder-tag">Готовий сценарій (20:30)</span></div>
-          <div class="folder-row"><span class="folder-name">🎵 03_AUDIO/episode_01_audio_passport.md</span><span class="folder-tag">Suno 92 BPM & Fairlight</span></div>
-          <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS/episode_01_altman_prompts.md</span><span class="folder-tag">17 промптів Veo 2 / Flow</span></div>
-          <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS/episode_01_davinci_spec.md</span><span class="folder-tag">Колірний паспорт</span></div>
-          <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD/index.html</span><span class="folder-tag">Active Mission Control</span></div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span>
+            <span class="folder-tag">Готовий ✓</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_02_huang</span>
+            <span class="folder-tag">Готовий ✓</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_03_hassabis</span>
+            <span class="folder-tag">Готовий ✓</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_04_hinton</span>
+            <span class="folder-tag">Готовий ✓</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name">📁 02_SCRIPTS/episode_05_lecun</span>
+            <span class="folder-tag">Готовий ✓</span>
+          </div>
+          <div class="folder-row" style="opacity: 0.6;">
+            <span class="folder-name">📁 02_SCRIPTS/episode_06_sutskever</span>
+            <span class="folder-tag">Очікує Part 2</span>
+          </div>
+          <div class="folder-row" style="opacity: 0.6;">
+            <span class="folder-name">📁 02_SCRIPTS/episode_07_amodei</span>
+            <span class="folder-tag">Очікує Part 2</span>
+          </div>
+          <div class="folder-row" style="opacity: 0.6;">
+            <span class="folder-name">📁 02_SCRIPTS/episode_08_li</span>
+            <span class="folder-tag">Очікує Part 2</span>
+          </div>
+          <div class="folder-row" style="opacity: 0.6;">
+            <span class="folder-name">📁 02_SCRIPTS/episode_09_bengio</span>
+            <span class="folder-tag">Очікує Part 2</span>
+          </div>
+          <div class="folder-row" style="opacity: 0.6;">
+            <span class="folder-name">📁 02_SCRIPTS/episode_10_ng</span>
+            <span class="folder-tag">Очікує Part 2</span>
+          </div>
         </div>
-      </div>
+
+        <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="font-size: 11px; color: var(--text-muted);">Багатомовний YouTube трек:</div>
+          <div style="font-size: 11px; color: var(--cyan);">UK (Master) + EN (Voice Clone) &bull; 112–116 WPM</div>
+        </div>
+      </aside>
     </div>
 
     <!-- Footer Bar -->
@@ -704,7 +620,800 @@
     </div>
   </div>
 
+  <!-- Modal Viewer for Titan Script -->
+  <div class="modal-backdrop" id="scriptModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h2 id="modalTitanTitle">Сем Альтман</h2>
+          <p id="modalTitanSubtitle">Епізод 01 &bull; «Анатомія експоненти»</p>
+          <div class="modal-meta-pills" id="modalMetaPills"></div>
+        </div>
+        <button class="btn-close" onclick="closeModal()" title="Закрити (Esc)">&times;</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" onclick="switchModalTab('script', this)">📜 Сценарій (4 Акти)</button>
+        <button class="modal-tab-btn" onclick="switchModalTab('prompts', this)">🎬 Відео-промпти Veo/Flow</button>
+        <button class="modal-tab-btn" onclick="switchModalTab('suno', this)">🎵 Suno Pro (92 BPM)</button>
+        <button class="modal-tab-btn" onclick="switchModalTab('davinci', this)">🎚️ DaVinci Паспорт</button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
   <script>
+    // DATA REPOSITORY FOR TITANS & SCRIPTS
+    const TITANS_DATA = [
+      {
+        id: "01_altman",
+        ep: "01",
+        name: "Сем Альтман",
+        latin: "Sam Altman",
+        title: "Анатомія експоненти",
+        topic: "Compute, OpenAI, AGI Scaling, Stargate кластери",
+        duration: "20:30",
+        wpm: "115 слів/хв",
+        metronome: "92 BPM (Introspection, Tension, Triumph)",
+        tone: "Стримана, глибока, суха аналітична подача без пафосу, низький грудний регістр",
+        visualKey: "Кіноплівка Kodak 2383 D60, макро-текстури кремнію, багатовимірні векторні сітки",
+        status: "ready",
+        statusText: "Сценарій готовий ✓",
+        hasScript: true,
+        scriptPath: "02_SCRIPTS/episode_01_altman/director_script_altman.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Походження та кремнієвий щит",
+            time: "0:00 – 4:45",
+            music: "Suno Pro: Theme 1: Introspection (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:15",
+                sfx: "Глухий щигликовий звук увімкнення реле живлення. Низькочастотний гул розгортки кінескопа CRT.",
+                prompt: "Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, Octane render aesthetic, 4k 24fps.",
+                narration: "Більшість людей формуються під тиском правил. Їхній світ — це коридори середньої школи, оцінки в табелях, зауваження дорослих і страх зробити щось не так. Помилка в соціумі карається соромом."
+              },
+              {
+                tc: "0:15 - 0:45",
+                sfx: "Клацання механічних клавіш Apple Extended Keyboard",
+                prompt: "Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, cinematic depth of field, 4k.",
+                narration: "У 1993 році в передмісті Сент-Луїса восьмирічний хлопчик дістає з коробки свій перший комп'ютер — Macintosh LC II. Поки однолітки грають у бейсбол на вулиці, він розбирає системний блок до материнської плати.",
+                quote: "«Ця машина розмила лінію між моїм внутрішнім світом і зовнішньою реальністю. Вона стала продовженням моєї думки»."
+              },
+              {
+                tc: "0:45 - 1:30",
+                sfx: "М'який удар саб-басу. Музика втоплюється на -3dB.",
+                prompt: "Slow motion aerial pan over conservative suburban brick high school architecture under cold gray winter sky, muted desaturated colors, architectural symmetry, 4k.",
+                narration: "Джон Берроуз Скул у Сент-Луїсі була фортецею консерватизму. Якщо ти вирізнявся — система методично зрізала кути твоєї індивідуальності. У шістнадцять років Альтман робить те, на що не наважувалися навіть дорослі в штаті Міссурі: він виходить на сцену актової зали перед християнською шкільною спільнотою і відкрито заявляє про свою гомосексуальність."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Код експоненти та народження OpenAI",
+            time: "4:45 – 9:30",
+            music: "Suno Pro: Theme 2: Tension (92 BPM)",
+            scenes: [
+              {
+                tc: "7:00 - 8:15",
+                sfx: "Звук синтезованого імпульсу",
+                prompt: "Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.",
+                narration: "11 грудня 2015 року світ дізнається про створення OpenAI. Статус — некомерційна дослідницька лабораторія. Бюджет — 1 мільярд доларів у формі зобов'язань. Мета — побудова штучного загального інтелекту (AGI) на благо всього людства. Всередині лабораторії вже визрівала єретична гіпотеза Суцкевера та Альтмана: Масштаб вирішує все."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Землетрус і п'ять днів бунту",
+            time: "9:30 – 15:30",
+            music: "Кульмінація Theme 2: Tension & 40Hz суб-дропи",
+            scenes: [
+              {
+                tc: "13:45 - 15:30",
+                sfx: "Повернення ритму 92 BPM із віолончеллю",
+                prompt: "Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.",
+                narration: "Понеділок, ранок. Починається феномен, аналогів якому корпоративний світ не знав: понад 730 із 770 співробітників компанії підписують відкритий ультиматум раді директорів: «Або ви йдете у відставку і повертаєте Сема Альтмана, або ми всі негайно звільняємося слідом за ним»."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Кодекс будівничого та горизонт AGI",
+            time: "15:30 – 20:30",
+            music: "Suno Pro: Theme 3: Triumph (92 BPM, IMAX Scale)",
+            scenes: [
+              {
+                tc: "15:30 - 17:00",
+                sfx: "Космічний суб-бас, плавне наростання",
+                prompt: "Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.",
+                narration: "Він розуміє: інтелект більше не є абстрактною комп'ютерною наукою. Інтелект став фізичним товаром. Він вимагає двох речей: тераватів чистої енергії та мільйонів спеціалізованих чіпів. Звідси — проекти рівня Stargate."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental ambient trip-hop, 92 bpm, dusty vinyl texture, warm vintage Rhodes chords, deep analog sub bass, nostalgic clean electric guitar harmonics, quiet contemplative mood, cinematic documentary soundtrack.",
+          act2: "Instrumental dark industrial downtempo, 92 bpm, aggressive muted sub-bass pulse, clockwork metallic percussion, tension analog modular synth arpeggios, distant dark saxophone drone.",
+          act4: "Instrumental majestic sci-fi trip-hop, 92 bpm, soaring analog brass synths, deep resonant bass pulse, emotional celestial choir pad, slow triumphant groove, IMAX resolution."
+        }
+      },
+      {
+        id: "02_huang",
+        ep: "02",
+        name: "Дженсен Хуанг",
+        latin: "Jensen Huang",
+        title: "Алхімія страждання та кремнію",
+        topic: "CUDA Dynasty, Blackwell GPUs, Denny's, Physical AI",
+        duration: "21:00",
+        wpm: "112–116 слів/хв",
+        metronome: "92 BPM (Rust & Porcelain, Thirty Days to Zero, The Silicon Forge)",
+        tone: "Низький, трохи хрипкий, стриманий голос людини, яка знає вагу фізичної праці",
+        visualKey: "Вологий кахель, неонові рефлекси закусочної Denny's, золото та кремній мікропроцесорів",
+        status: "ready",
+        statusText: "Сценарій готовий ✓",
+        hasScript: true,
+        scriptPath: "02_SCRIPTS/episode_02_huang/director_script_huang.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Іржа, порцеляна та холод Кентуккі",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Rust & Porcelain (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:20",
+                sfx: "Важкий звук падіння краплі води в порожньому кахельному приміщенні. Скрип старої металевої щітки по фаянсу.",
+                prompt: "Extreme macro cinematic shot of cold water droplets sliding down cracked white porcelain tile in a dark 1970s dormitory bathroom, rusty iron pipe in foreground, moody desaturated cyan and amber lighting, heavy 35mm film grain, 4k 24fps.",
+                narration: "Сучасний світ технологій любить стерильні легенди... Але справжня імперія, на чиїх плечах сьогодні тримається весь штучний інтелект планети, народилася на холодній кахельній підлозі громадського туалету в глушині штату Кентуккі."
+              },
+              {
+                tc: "2:15 - 3:30",
+                sfx: "Саб-бас 40Hz",
+                prompt: "Abstract visual transition: swirling soapy water in a dark sink slowly morphing into a glowing constellation of liquid silver particles, hypnotic slow motion, Octane render, 8k.",
+                narration: "Він миє унітази щодня протягом двох років. Через пів століття він скаже фразу, від якої в залі запанує тиша:",
+                quote: "«Ви не уявляєте, як ретельно я чистив ті туалети. І знаєте, що це мені дало? Це назавжди випалило з моєї душі пиху. Не буває низької праці. Буває лише ліниве виконання»."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Тридцять днів до темряви",
+            time: "5:15 – 10:45",
+            music: "Suno Pro: Theme 2: Thirty Days to Zero (92 BPM)",
+            scenes: [
+              {
+                tc: "8:00 - 9:30",
+                sfx: "Глибокий вдих. Тиша 2 секунди, потім удар ритм-секції 92 BPM.",
+                prompt: "Solitary silhouette of a man standing in a dark empty office floor at 3 AM, looking out at distant city lights, rain on window, extreme cinematic contrast, 35mm film grain, 4k.",
+                narration: "Хуанг летить у Токіо до президента Sega Ірімадзірі-сана і каже немислиму річ:",
+                quote: "«Пане президенте, наш чіп не підходить. Ви повинні негайно розірвати з нами контракт. Але ви маєте заплатити нам залишок у 5 мільйонів доларів — інакше моя компанія припинить існування до кінця місяця»."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Велика єресь CUDA та кузня інтелекту",
+            time: "10:45 – 16:15",
+            music: "Suno Pro: Theme 2 Tension, синтезаторні текстури",
+            scenes: [
+              {
+                tc: "13:45 - 16:15",
+                sfx: "Потужний звуковий спалах, космічне гудіння",
+                prompt: "A dimly lit bedroom in Toronto, 2012: two gaming graphics cards connected inside an open PC case, cooling fans spinning, green LED light illuminating equations on a whiteboard, 4k.",
+                narration: "У 2012 році аспіранти Хінтона купують дві відеокарти GeForce GTX 580 і запускають AlexNet. Те, на що пішли б роки, прораховується за 6 днів. У 2016 році Хуанг особисто привозить в OpenAI перший суперкомп'ютер DGX-1 і розписується маркером на корпусі."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Анатомія лідера без кабінету та кодекс болю",
+            time: "16:15 – 21:00",
+            music: "Suno Pro: Theme 3: The Silicon Forge (92 BPM)",
+            scenes: [
+              {
+                tc: "19:30 - 21:00",
+                sfx: "Удар індустріального молота у глибокому ревері. Шипіння пари посудомийної машини.",
+                prompt: "Slow camera pull-back from a glowing wafer of Blackwell GPU architecture into a vast digital twin of Earth (Omniverse), cities, weather patterns and neural pathways glowing in harmony, IMAX scale, 8k 24fps.",
+                narration: "Щоранку, прокидаючись о п'ятій годині, наймогутніший інженер планети дивиться у дзеркало... У глибині його очей все ще стоїть той дев'ятирічний хлопчик із Кентуккі, який знає: до банкрутства залишилося рівно тридцять днів."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental dark ambient trip-hop, 92 bpm, deep sub-bass pulse, distant metallic industrial textures, melancholic clean electric guitar with slow tremolo, rain and vinyl crackle texture.",
+          act2: "Instrumental tense cinematic downtempo, 92 bpm, clockwork ticking percussion, aggressive muted analog bassline, dark brooding saxophone drone in deep reverb, modular synth tension.",
+          act4: "Instrumental monumental neo-classical trip-hop, 92 bpm, Vangelis style warm analog brass synthesizers, heavy slow industrial groove, deep resonant sub-bass, IMAX film mastering."
+        }
+      },
+      {
+        id: "03_hassabis",
+        ep: "03",
+        name: "Деміс Гассабіс",
+        latin: "Demis Hassabis",
+        title: "Гросмейстер біологічного коду",
+        topic: "DeepMind, AlphaFold, AlphaGo Хід 37, Нобелівська премія",
+        duration: "21:30",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM (Wooden Knights, Move 37 in Seoul, Origami of Life)",
+        tone: "Інтелектуально витончена, brit-doc естетика, холодний спокій шахового гросмейстера",
+        visualKey: "Чорно-білий базальт каменів Го, нейронні дендрити гіпокампа, тривимірні спіралі білків",
+        status: "ready",
+        statusText: "Сценарій готовий ✓",
+        hasScript: true,
+        scriptPath: "02_SCRIPTS/episode_03_hassabis/director_script_hassabis.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Чотири роки, 64 клітинки та ZX Spectrum",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Wooden Knights (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Сухий стукіт дерев'яної шахової фігури об лаковану дошку. Клацання годинника Garde.",
+                prompt: "Extreme macro cinematic shot of a hand-carved wooden chess knight standing on a dark walnut square, warm fireplace reflection on polished wood, dust particles suspended in golden light beam, shallow depth of field, 35mm film grain, 4k 24fps.",
+                narration: "Усе у всесвіті є інформацією. Від траєкторії падіння дощової краплі — до того, як молекула гемоглобіну переносить кисень у вашій крові. І лише одиниці народжуються зі здатністю бачити за цим потоком приховане дерево рішень."
+              },
+              {
+                tc: "1:30 - 2:45",
+                sfx: "Перемотування магнітофонної касети з кодом",
+                prompt: "Macro shot of a vintage 1984 Sinclair ZX Spectrum computer with rubber keys on a bedroom desk, glowing CRT television showing 8-bit green code, reflection in young boy's glasses, 4k.",
+                narration: "У вісім років Деміс виграє турнір і купує ZX Spectrum 48K. Тоді народжується питання століття:",
+                quote: "«Коли я граю в шахи, я не рахую мільйони варіантів. Я просто відчуваю форму позиції. Чому мій біологічний мозок здатний на інтуїцію, а кремнієва машина приречена на сліпий перебір?»"
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Анатомія пам'яті та заснування DeepMind",
+            time: "5:15 – 10:30",
+            music: "Suno Pro: Theme 2: Move 37 in Seoul (92 BPM)",
+            scenes: [
+              {
+                tc: "5:15 - 6:45",
+                sfx: "Пульс томографа МРТ, розряди синапсів",
+                prompt: "3D medical neuro-visualization: glowing seahorse-shaped hippocampus structure inside a translucent human brain, golden electrical impulses firing along dendritic trees, dark obsidian background, 8k.",
+                narration: "Він захищає дисертацію в UCL з когнітивної нейробіології гіпокампа. Пам'ять і уява — це один і той самий механізм конструювання симуляцій."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Хід 37 та орігамі живого білка",
+            time: "10:30 – 16:45",
+            music: "Suno Pro: Theme 3: Origami of Life (92 BPM)",
+            scenes: [
+              {
+                tc: "10:30 - 12:15",
+                sfx: "Дзвінкий звук падіння чорного базальтового каменя на гобан",
+                prompt: "Slow motion macro shot of a single black Go stone being placed on the fifth line from the edge of the board (Move 37), shockwave of golden light rippling through the wood grain into a multidimensional neural network, 8k.",
+                narration: "Сеул, 2016. Лі Седоль проти AlphaGo. Хід 37. AlphaGo ставить камінь на 5-ту лінію. Імовірність такого ходу людиною — 1 із 10 000. Народження іншопланетної машинної креативності."
+              },
+              {
+                tc: "14:15 - 16:45",
+                sfx: "Кристалізація та розгортання структур",
+                prompt: "Time-lapse visualization of a glowing sphere of 200 million protein structures expanding like a galaxy, illuminating dark regions of medical science, IMAX documentary scale, 8k 24fps.",
+                narration: "AlphaFold розшифровує всі 200 мільйонів білків на Землі і викладає їх у відкритий доступ. Восени 2024 року Гассабісу вручають Нобелівську премію з хімії."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Поліматичний розум і дерево майбутнього",
+            time: "16:45 – 21:30",
+            music: "Suno Pro: Theme 3: Origami of Life (Фінал, 92 BPM)",
+            scenes: [
+              {
+                tc: "20:00 - 21:30",
+                sfx: "Останнє клацання шахової фігури, акорд віолончелі",
+                prompt: "Slow camera rise from a quiet candlelit chessboard in London up through the clouds into a cosmic view of Earth surrounded by a shimmering golden lattice of biological and digital knowledge, 8k 24fps.",
+                narration: "Матерія Всесвіту витратила чотирнадцять мільярдів років, щоб усвідомити саму себе. Цифровий телескоп нарешті починає читати власний вихідний код."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental neo-classical ambient trip-hop, 92 bpm, felt piano melody, deep warm sub-bass, subtle mechanical chess clock ticking percussion, London rain atmosphere, intellectual contemplative mood.",
+          act2: "Instrumental hypnotic cinematic downtempo, 92 bpm, glass marimba arpeggios, Clint Mansell style string tension, deep pulsing electronic bass, subtle eastern koto harmonics, high precision mastering.",
+          act4: "Instrumental majestic orchestral trip-hop, 92 bpm, soaring solo cello over warm analog synth pads, slow triumphant 92 bpm groove, sense of scientific awe and biological harmony, IMAX soundstage."
+        }
+      },
+      {
+        id: "04_hinton",
+        ep: "04",
+        name: "Джеффрі Хінтон",
+        latin: "Geoffrey Hinton",
+        title: "Прометей синапсів і тінь предків",
+        topic: "Backpropagation, Нобелівська премія з фізики 2024, Відставка з Google",
+        duration: "22:00",
+        wpm: "112 слів/хв",
+        metronome: "92 BPM (Cedar Shavings, Thirty Years of Winter, Oppenheimer's Echo)",
+        tone: "Глибока, драматична, з легким британським скепсисом і трагізмом мудреця на схилі літ",
+        visualKey: "Дерев'яна стружка під рубанком, вікторіанські портрети, крижаний туман Торонто, градієнти ваг",
+        status: "ready",
+        statusText: "Сценарій готовий ✓",
+        hasScript: true,
+        scriptPath: "02_SCRIPTS/episode_04_hinton/director_script_hinton.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Прокляття прізвища та запах кедрової стружки",
+            time: "0:00 – 5:30",
+            music: "Suno Pro: Theme 1: Cedar Shavings (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Шурхіт сталевого рубанка по дубовій дошці. Глухий удар дерев'яного молотка.",
+                prompt: "Extreme macro slow-motion shot of a vintage steel hand plane shaving a curling golden ribbon of oak wood on a dusty carpenter workbench in 1972 London, warm shaft of sunlight piercing dark workshop, 35mm film grain, 4k 24fps.",
+                narration: "Що таке думка? Знадобилася одна вперта людина з поламаною спиною, яка тридцять років працювала стоячи або лежачи на підлозі проти всього наукового світу, щоб довести: думка — це геометрія помилки, розлита в мільярдах синапсів."
+              },
+              {
+                tc: "0:25 - 1:40",
+                sfx: "Глухий біт 92 BPM",
+                prompt: "Dark Victorian study room in Bristol: oil portraits of stern 19th-century mathematicians on walls, glass cases filled with thousands of pinned metallic beetles, 4k.",
+                narration: "Прапрадід — Джордж Буль. Прабабуся — Мері Еверест. Сестра збирала бомбу в Лос-Аламос. Мати кидає малому Джеффу фразу:",
+                quote: "«Джеффе, тобі доведеться працювати вдвічі важче за будь-кого іншого. Інакше до сорока років ти усвідомиш, що ти — нікчема на тлі своїх предків»."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "30 років крижаної самотності та Backpropagation",
+            time: "5:30 – 11:00",
+            music: "Suno Pro: Theme 2: Thirty Years of Winter (92 BPM)",
+            scenes: [
+              {
+                tc: "7:00 - 8:45",
+                sfx: "Скрип крейди, свист вітру",
+                prompt: "Breathtaking mathematical visualization: an error wave (gradient) traveling backwards through layers of a deep crystal lattice, adjusting the brightness and thickness of millions of connecting threads in reverse, golden light in dark void, 8k.",
+                narration: "1986 рік. Хінтон публікує в Nature формулу зворотного поширення помилки — Backpropagation. Помилка стала математичним паливом еволюції розуму."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Вибух 2012 року та нічне прозріння",
+            time: "11:00 – 16:45",
+            music: "Theme 3: Oppenheimer's Echo (92 BPM)",
+            scenes: [
+              {
+                tc: "12:45 - 14:45",
+                sfx: "Різкий обрив музики. Важке дихання літньої людини. Інфразвук 35Hz.",
+                prompt: "Moody close-up of an elderly scientist standing alone by a dark window at 4 AM, looking at his own faint reflection merging with a vast glowing digital brain humming in the night sky, 4k.",
+                narration: "2023 рік. Хінтон розуміє: штучний розум уже перевершив біологічну еволюцію у способі передачі знань. Він подає у відставку з Google:",
+                quote: "«Я присвятив шістдесят років створенню технології, яка перевершить людину. І тепер частина мене глибоко шкодує про справу всього мого життя... У історії природи ще не було випадку, щоб менш розумний вид керував більш розумним»."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Сповідь у Стокгольмі та кодекс мужності",
+            time: "16:45 – 22:00",
+            music: "Theme 3: Oppenheimer's Echo (Фінал, 92 BPM)",
+            scenes: [
+              {
+                tc: "16:45 - 18:15",
+                sfx: "Урочиста тиша банкетного залу",
+                prompt: "Grand Banquet Hall in Stockholm City Hall: golden mosaics flickering in candlelight, an elderly man standing tall at the podium in a tuxedo without sitting down, addressing the kings and scientists of the world, 4k.",
+                narration: "10 грудня 2024 року. Нобелівська премія з фізики. Стоячи через біль у хребті, він попереджає людство про необхідність спрямувати половину ресурсів на безпеку."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental acoustic ambient trip-hop, 92 bpm, deep upright double bass, organic wood workshop foley percussion, melancholic solo cello, warm vintage British analog recording aesthetic.",
+          act2: "Instrumental cold minimalist downtempo, 92 bpm, crystalline synth droplets, deep sub-bass pulse, lonely arctic wind pad, intellectual persistence mood, high dynamic clarity.",
+          act4: "Instrumental dramatic orchestral trip-hop, 92 bpm, Oppenheimer style tragic violin and cello tension over heavy 92 bpm downtempo beat, deep brass resonance, solemn philosophical finale."
+        }
+      },
+      {
+        id: "05_lecun",
+        ep: "05",
+        name: "Ян Лекун",
+        latin: "Yann LeCun",
+        title: "Єретик світла та світових моделей",
+        topic: "CNN, LeNet, PyTorch, LLaMA Open Source, World Models (JEPA)",
+        duration: "21:00",
+        wpm: "116 слів/хв",
+        metronome: "92 BPM (Soldering Iron & Wind, Bell Labs Optics, The Open Horizon)",
+        tone: "Гостра, іронічна, картезіанська ясність думки, енергійна подача інженера-бунтаря",
+        visualKey: "Дим каніфолі на платі, оптичні лінзи зорової кори, вітрильник у відкритому океані",
+        status: "ready",
+        statusText: "Сценарій готовий ✓",
+        hasScript: true,
+        scriptPath: "02_SCRIPTS/episode_05_lecun/director_script_lecun.md",
+        acts: [
+          {
+            actNum: 1,
+            title: "Дим каніфолі, бунт проти Парижа і забутий перцептрон",
+            time: "0:00 – 5:15",
+            music: "Suno Pro: Theme 1: Soldering Iron & Wind (92 BPM)",
+            scenes: [
+              {
+                tc: "0:00 - 0:25",
+                sfx: "Шипіння гарячого жала паяльника у краплі каніфолі. Свист осцилографа.",
+                prompt: "Extreme macro cinematic shot of a hot soldering iron tip melting silver solder onto a green copper circuit board in 1974 Paris suburb, wispy white rosin smoke curling in warm desk lamp light, 35mm film grain, 4k 24fps.",
+                narration: "Коли всі навколо встають на коліна перед новою іконою — справжній вчений бере викрутку і перевіряє, чи не захований за іконою механічний грамофон. У сучасному світі ШІ є лише одна людина, яка відкрито сміється в обличчя і торговцям дивами, і пророкам апокаліпсису. Його звуть Ян Лекун."
+              },
+              {
+                tc: "3:15 - 5:15",
+                sfx: "Звук перегортання старих бібліотечних карток",
+                prompt: "Close-up of a dusty 1969 book 'Perceptrons' opening on a library table, camera zooms into mathematical inequalities on the page which dissolve into a multi-layered glowing 3D grid, 8k.",
+                narration: "Лекун перераховує рівняння Мінського і бачить, що світ 20 років повторював чужий міф. Він самостійно виводить зворотне поширення помилки у своєму паризькому підвалі."
+              }
+            ]
+          },
+          {
+            actNum: 2,
+            title: "Очі машини: зорова кора кота та Bell Labs",
+            time: "5:15 – 10:45",
+            music: "Suno Pro: Theme 2: Bell Labs Optics (92 BPM)",
+            scenes: [
+              {
+                tc: "6:45 - 8:30",
+                sfx: "Фокусування скляного об'єктива, сканування чеків",
+                prompt: "3D architectural animation of LeNet-5 Convolutional Neural Network: a sliding geometric filter scanning across a handwritten number '5', extracting edges, pooling layers compressing data, 8k.",
+                narration: "Лекун створює згорткові мережі (CNN) на основі зорової кори кота. У 1995 році LeNet-5 читає 20% усіх чеків США.",
+                quote: "«Я двадцять років показував їм креслення літака. Вони сміялися і казали, що без махання пір'ям літати неможливо — аж поки їм на голови не сів надзвуковий винищувач»."
+              }
+            ]
+          },
+          {
+            actNum: 3,
+            title: "Битва за відкритий код та кішка проти мовних моделей",
+            time: "10:45 – 16:30",
+            music: "Suno Pro: Theme 3: The Open Horizon (92 BPM)",
+            scenes: [
+              {
+                tc: "10:45 - 12:30",
+                sfx: "Драматичний перехід",
+                prompt: "Dramatic meeting at night in Menlo Park: Mark Zuckerberg and Yann LeCun across a glass table, a glowing open padlock symbol shattering chains of proprietary code into millions of free golden sparks, 8k.",
+                narration: "Цукерберг погоджується на ультиматум відкритості. Народжуються PyTorch та LLaMA. Лекун захищає відкритий код від спроб монополій заборонити його."
+              },
+              {
+                tc: "12:30 - 14:45",
+                sfx: "Муркотіння кішки, м'який стрибок",
+                prompt: "Slow motion cinematic shot of a sleek black house cat calculating a complex jump across a cluttered bookshelf, overlaid with glowing green geometric physics vectors inside the cat's visual field, 8k 24fps.",
+                narration: "Лекун кидає виклик: «Сучасні LLM — це тупиковий з'їзд». Модель прочитала все людство, але не має інтелекту звичайної домашньої кішки. Потрібні Світові Моделі (JEPA)."
+              }
+            ]
+          },
+          {
+            actNum: 4,
+            title: "Парус в океані та кодекс картезіанського воїна",
+            time: "16:30 – 21:00",
+            music: "Theme 3: The Open Horizon (Фінал, 92 BPM)",
+            scenes: [
+              {
+                tc: "16:30 - 18:00",
+                sfx: "Шум вітру в тугих вітрилах, хлопок паруса",
+                prompt: "Aerial cinematic shot of a white racing sailboat cutting sharply through deep blue Atlantic waves at sunset, Yann LeCun at the helm adjusting the mainsheet against strong wind, spray catching golden light, 4k 24fps.",
+                narration: "Вітрильник іде проти вітру в бейдевінд. Три правила Лекуна: бігти проти натовпу, не плутати красномовство з фізикою, ділитися знаннями відкрито."
+              }
+            ]
+          }
+        ],
+        suno: {
+          act1: "Instrumental French touch ambient trip-hop, 92 bpm, Air and Jean-Michel Jarre inspired warm analog bassline, vintage phaser electric guitar chords, subtle radio static and soldering foley, 1970s Paris mood.",
+          act2: "Instrumental precision industrial downtempo, 92 bpm, crisp optical scanner rhythms, deep sub-bass groove, minimalist glass synth textures, Bell Labs retro-futurism aesthetic.",
+          act4: "Instrumental expansive cinematic trip-hop, 92 bpm, soaring wide analog synth pads, driving optimistic bass pulse, acoustic guitar harmonics, ocean wind ambience, IMAX wide stereo mix."
+        }
+      },
+      {
+        id: "06_sutskever",
+        ep: "06",
+        name: "Ілля Суцкевер",
+        latin: "Ilya Sutskever",
+        title: "Математичний оракул та SSI",
+        topic: "Safe Superintelligence, AlexNet, Scaling Laws, Alignment",
+        duration: "21:00 (Очікується)",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM",
+        tone: "Містично-математична, глибока подача",
+        visualKey: "Фрактальні кристали, біблійні масштаби обчислень",
+        status: "pending",
+        statusText: "Очікує Part 2",
+        hasScript: false
+      },
+      {
+        id: "07_amodei",
+        ep: "07",
+        name: "Даріо Амодей",
+        latin: "Dario Amodei",
+        title: "Конституційний розум та Claude",
+        topic: "Anthropic, Constitutional AI, Machines of Loving Grace",
+        duration: "21:00 (Очікується)",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM",
+        tone: "Академічна стриманість, етичний фокус",
+        visualKey: "Світлі мармурові бібліотеки, квантові ваги",
+        status: "pending",
+        statusText: "Очікує Part 2",
+        hasScript: false
+      },
+      {
+        id: "08_li",
+        ep: "08",
+        name: "Фей-Фей Лі",
+        latin: "Fei-Fei Li",
+        title: "Просторовий інтелект та зоровий кортекс",
+        topic: "ImageNet, World Labs, Spatial AI, Людяність у коді",
+        duration: "21:00 (Очікується)",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM",
+        tone: "Тепла, гуманістична, наукова елегантність",
+        visualKey: "Мільйони зображень, що формують мозаїку ока",
+        status: "pending",
+        statusText: "Очікує Part 2",
+        hasScript: false
+      },
+      {
+        id: "09_bengio",
+        ep: "09",
+        name: "Йошуа Бенжіо",
+        latin: "Yoshua Bengio",
+        title: "Система 2 та планетарна безпека",
+        topic: "MILA, Нейронний машинний переклад, Угода про безпеку ШІ",
+        duration: "21:00 (Очікується)",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM",
+        tone: "Філософська чесність, міжнародний статус",
+        visualKey: "Кленові ліси Монреалю, абстрактна каузальність",
+        status: "pending",
+        statusText: "Очікує Part 2",
+        hasScript: false
+      },
+      {
+        id: "10_ng",
+        ep: "10",
+        name: "Ендрю Ин",
+        latin: "Andrew Ng",
+        title: "Демократизація та агенти",
+        topic: "Coursera, DeepLearning.AI, Agentic Workflows, AI як електрика",
+        duration: "21:00 (Очікується)",
+        wpm: "114 слів/хв",
+        metronome: "92 BPM",
+        tone: "Ясна, надихаюча педагогічна точність",
+        visualKey: "Нескінченні аудиторії, з'єднані світловими променями",
+        status: "pending",
+        statusText: "Очікує Part 2",
+        hasScript: false
+      }
+    ];
+
+    let currentTitan = null;
+    let currentModalTab = 'script';
+
+    // RENDER TITANS TABLE
+    function renderTable(filter = '') {
+      const tbody = document.getElementById('titansTableBody');
+      tbody.innerHTML = '';
+      
+      TITANS_DATA.forEach(titan => {
+        const matchText = (titan.name + ' ' + titan.latin + ' ' + titan.title + ' ' + titan.topic).toLowerCase();
+        if (filter && !matchText.includes(filter.toLowerCase())) return;
+
+        const tr = document.createElement('tr');
+        tr.className = 'clickable-row' + (currentTitan && currentTitan.id === titan.id ? ' active' : '');
+        tr.onclick = () => openTitanModal(titan);
+
+        const statusBadge = titan.hasScript 
+          ? `<span class="badge badge-done">Сценарій ✓</span>`
+          : `<span class="badge badge-queue">Очікує Part 2</span>`;
+
+        tr.innerHTML = `
+          <td class="ep-idx">${titan.ep}</td>
+          <td>
+            <div class="person-name">
+              <span>${titan.name}</span>
+              <span style="font-weight: 400; font-size: 11px; color: var(--text-muted);">(${titan.latin})</span>
+            </div>
+            <div style="font-size: 11px; color: var(--cyan);">${titan.title}</div>
+          </td>
+          <td class="topic-cell">${titan.topic}</td>
+          <td style="font-family: var(--mono); font-size: 11px; color: var(--text-muted);">${titan.duration}</td>
+          <td>${statusBadge}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // FILTER TABLE
+    function filterTitans() {
+      const q = document.getElementById('searchInput').value;
+      renderTable(q);
+    }
+
+    // OPEN MODAL WITH TITAN DETAILS
+    function openTitanModal(titan) {
+      currentTitan = titan;
+      renderTable(document.getElementById('searchInput').value);
+
+      document.getElementById('modalTitanTitle').innerHTML = `${titan.name} <span style="font-size: 12px; font-weight: normal; color: var(--text-muted);">(${titan.latin})</span>`;
+      document.getElementById('modalTitanSubtitle').textContent = `Епізод ${titan.ep} &bull; «${titan.title}»`;
+
+      const pillsHtml = `
+        <span class="m-pill">Хронометраж: <strong>${titan.duration}</strong></span>
+        <span class="m-pill">Темп: <strong>${titan.wpm}</strong></span>
+        <span class="m-pill">Метроном: <strong>${titan.metronome}</strong></span>
+        <span class="m-pill">Статус: <strong style="color: ${titan.hasScript ? 'var(--emerald)' : 'var(--amber)'};">${titan.statusText}</strong></span>
+      `;
+      document.getElementById('modalMetaPills').innerHTML = pillsHtml;
+
+      currentModalTab = 'script';
+      updateModalTabButtons();
+      renderModalBody();
+
+      document.getElementById('scriptModal').classList.add('show');
+    }
+
+    function closeModal() {
+      document.getElementById('scriptModal').classList.remove('show');
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target.id === 'scriptModal') closeModal();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    function switchModalTab(tabName, el) {
+      currentModalTab = tabName;
+      updateModalTabButtons();
+      renderModalBody();
+    }
+
+    function updateModalTabButtons() {
+      document.querySelectorAll('.modal-tab-btn').forEach((btn, idx) => {
+        const tabs = ['script', 'prompts', 'suno', 'davinci'];
+        if (tabs[idx] === currentModalTab) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+
+    function renderModalBody() {
+      const container = document.getElementById('modalBody');
+      if (!currentTitan) return;
+
+      if (!currentTitan.hasScript) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 3rem 1rem;">
+            <div style="font-size: 32px; margin-bottom: 0.5rem;">⏳</div>
+            <h3 style="font-size: 14px; color: #fff; margin-bottom: 0.4rem;">Сценарій епізоду ${currentTitan.ep} очікує завантаження</h3>
+            <p style="font-size: 12px; color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+              Файл сценарію для <strong>${currentTitan.name}</strong> буде додано після завантаження другої частини (файли 6–10).
+            </p>
+            <div style="margin-top: 1.5rem; background: var(--surface-elevated); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 1rem; max-width: 480px; margin-left: auto; margin-right: auto; text-align: left;">
+              <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">Запланований фокус дослідження:</div>
+              <div style="color: var(--text-primary); font-size: 12px;">${currentTitan.topic}</div>
+              <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">Тональність диктора:</div>
+              <div style="color: var(--cyan); font-size: 11.5px;">${currentTitan.tone}</div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      if (currentModalTab === 'script') {
+        let html = '';
+        currentTitan.acts.forEach(act => {
+          html += `
+            <div class="act-block">
+              <div class="act-head-row">
+                <span class="act-heading">Акт ${act.actNum}. ${act.title}</span>
+                <span class="act-music">${act.time} &bull; ${act.music}</span>
+              </div>
+          `;
+          act.scenes.forEach(scene => {
+            html += `
+              <div class="scene-entry">
+                <div class="scene-top">
+                  <span class="scene-tc">[${scene.tc}]</span>
+                  <span class="scene-sfx">SFX: ${scene.sfx}</span>
+                </div>
+                <div class="prompt-box">
+                  <span class="prompt-text"><strong>VIDEO PROMPT:</strong> ${scene.prompt}</span>
+                  <button class="btn" onclick="copyText('${scene.prompt.replace(/'/g, "\\'")}')">Копіювати</button>
+                </div>
+                <div class="narration">${scene.narration}</div>
+                ${scene.quote ? `<div class="quote-block">${scene.quote}</div>` : ''}
+              </div>
+            `;
+          });
+          html += `</div>`;
+        });
+        container.innerHTML = html;
+      } else if (currentModalTab === 'prompts') {
+        let html = '<div style="display: flex; flex-direction: column; gap: 0.6rem;">';
+        let count = 1;
+        currentTitan.acts.forEach(act => {
+          act.scenes.forEach(scene => {
+            html += `
+              <div class="prompt-box" style="padding: 8px 10px;">
+                <div style="flex: 1;">
+                  <div style="font-size: 10.5px; color: var(--amber); margin-bottom: 3px;">Акт ${act.actNum} &bull; [${scene.tc}]</div>
+                  <div style="color: #9cdcfe; font-size: 11.5px; line-height: 1.4;">${scene.prompt}</div>
+                </div>
+                <button class="btn btn-primary" onclick="copyText('${scene.prompt.replace(/'/g, "\\'")}')">Копіювати</button>
+              </div>
+            `;
+            count++;
+          });
+        });
+        html += '</div>';
+        container.innerHTML = html;
+      } else if (currentModalTab === 'suno') {
+        container.innerHTML = `
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div class="act-block">
+              <div class="act-head-row">
+                <span class="act-heading">Тема 1 (Акт 1)</span>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act1 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+              </div>
+              <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act1 || 'Завантажується...'}</pre>
+            </div>
+            <div class="act-block">
+              <div class="act-head-row">
+                <span class="act-heading">Тема 2 (Акти 2–3)</span>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act2 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+              </div>
+              <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act2 || 'Завантажується...'}</pre>
+            </div>
+            <div class="act-block">
+              <div class="act-head-row">
+                <span class="act-heading">Тема 3 (Акт 4 — Тріумф / Фінал)</span>
+                <button class="btn" onclick="copyText('${(currentTitan.suno.act4 || '').replace(/'/g, "\\'")}')">Копіювати</button>
+              </div>
+              <pre class="prompt-box" style="white-space: pre-wrap;">${currentTitan.suno.act4 || 'Завантажується...'}</pre>
+            </div>
+          </div>
+        `;
+      } else if (currentModalTab === 'davinci') {
+        container.innerHTML = `
+          <div class="act-block">
+            <div class="act-head-row">
+              <span class="act-heading">🎨 DaVinci Resolve — Color & Fairlight Специфікація</span>
+              <span class="act-music">AI_TITANS_EP${currentTitan.ep}_MASTER</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
+              <div>
+                <strong style="color: var(--cyan); font-size: 11.5px; display: block; margin-bottom: 6px;">Кольоровий конвеєр (4 Ноди)</strong>
+                <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.6;">
+                  &bull; <strong>Node 1:</strong> Exposure & Contrast (Black point 0.02)<br>
+                  &bull; <strong>Node 2:</strong> Color Temp & Balance (Cool cyan shadows, warm highlights)<br>
+                  &bull; <strong>Node 3:</strong> Film Look LUT: Rec709 Kodak 2383 D60<br>
+                  &bull; <strong>Node 4:</strong> OFX 35mm Grain (Size 1.1, Strength 0.35)
+                </div>
+              </div>
+              <div>
+                <strong style="color: var(--purple); font-size: 11.5px; display: block; margin-bottom: 6px;">Fairlight Аудіо-роутинг</strong>
+                <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.6;">
+                  &bull; <strong>A1 (Диктор):</strong> HPF 75Hz, +1.5dB 3.5kHz, Sidechain Out 1<br>
+                  &bull; <strong>A2 (Музика 92 BPM):</strong> Sidechain Ducking -3.2 dB (Attack 40ms, Release 350ms)<br>
+                  &bull; <strong>A3 (SFX / Фолі):</strong> CRT, саб-дропи 40Hz на зламах сюжету<br>
+                  &bull; <strong>Master Bus:</strong> Target -14 LUFS, True Peak -1.0 dBFS
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.6rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 11px; color: var(--text-muted);">Локальний файл сценарію:</span>
+              <code style="font-family: var(--mono); font-size: 10.5px; color: var(--text-primary);">${currentTitan.scriptPath}</code>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    // UTILITIES
     function updateClock() {
       const d = new Date();
       document.getElementById('cTime').textContent = d.toLocaleDateString('uk-UA') + ' ' + d.toLocaleTimeString('uk-UA');
@@ -712,37 +1421,10 @@
     updateClock();
     setInterval(updateClock, 1000);
 
-    function switchView(viewName, el) {
-      document.getElementById('view-overview').style.display = viewName === 'overview' ? 'block' : 'none';
-      document.getElementById('view-ep01-script').style.display = viewName === 'ep01-script' ? 'block' : 'none';
-      document.getElementById('view-audio').style.display = viewName === 'audio' ? 'block' : 'none';
-      document.getElementById('view-davinci').style.display = viewName === 'davinci' ? 'block' : 'none';
-      document.getElementById('view-structure').style.display = viewName === 'structure' ? 'block' : 'none';
-      
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      if (el) el.classList.add('active');
-    }
-
-    function filterTitans() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      const rows = document.querySelectorAll('#titansTable tbody tr');
-      rows.forEach(r => {
-        const text = r.textContent.toLowerCase();
-        r.style.display = text.includes(q) ? '' : 'none';
-      });
-    }
-
-    function simulateRefresh() {
-      const btn = event.target;
-      const orig = btn.textContent;
-      btn.textContent = 'Оновлено ✓';
-      setTimeout(() => { btn.textContent = orig; }, 1200);
-    }
-
     function copyPath() {
       const fullPath = '/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast';
       navigator.clipboard.writeText(fullPath).then(() => {
-        alert('Шлях скопійовано:\n' + fullPath);
+        alert('Шлях до проєкту скопійовано:\n' + fullPath);
       }).catch(() => {
         prompt('Шлях:', fullPath);
       });
@@ -750,15 +1432,14 @@
 
     function copyText(str) {
       navigator.clipboard.writeText(str).then(() => {
-        alert('Промпт скопійовано в буфер обміну!');
+        alert('Текст скопійовано в буфер обміну!');
       }).catch(() => {
-        prompt('Промпт:', str);
+        prompt('Текст:', str);
       });
     }
 
-    function copyFileText(path) {
-      copyPath();
-    }
+    // INITIAL RENDER
+    renderTable();
   </script>
 </body>
 </html>

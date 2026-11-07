@@ -1,0 +1,18 @@
+# Video Generation Prompts — Episode 03: «Деміс Гассабіс: Гросмейстер біологічного коду»
+**Цільові моделі:** Google Veo 2 / Google Flow / Runway Gen-3 / Midjourney v6  
+**Стиль:** Чорно-білий базальт каменів Го, нейронні дендрити гіпокампа, тривимірні спіралі білків, 35mm film grain, 4k/8k 24fps.
+
+- **PROMPT 01 [0:00 - 0:25]:** `Extreme macro cinematic shot of a hand-carved wooden chess knight standing on a dark walnut square, warm fireplace reflection on polished wood, dust particles suspended in golden light beam, shallow depth of field, 35mm film grain, 4k 24fps.`
+- **PROMPT 02 [0:25 - 1:30]:** `Moody 1980 North London bohemian living room: acoustic guitars, oil paintings leaning against walls, a four-year-old boy sitting on a carpet staring intensely at a chessboard between two adults, cinematic soft lighting, 4k.`
+- **PROMPT 03 [1:30 - 2:45]:** `Macro shot of a vintage 1984 Sinclair ZX Spectrum computer with rubber keys on a bedroom desk, glowing CRT television showing 8-bit green code, reflection in young boy's glasses, nostalgic British sci-fi atmosphere, 4k.`
+- **PROMPT 04 [2:45 - 4:00]:** `Tense chess tournament hall in 1989: dozens of clocks ticking in unison, a twelve-year-old boy rubbing his temples after a six-hour match, cold fluorescent lighting, psychological exhaustion, 35mm film aesthetic, 4k.`
+- **PROMPT 05 [4:00 - 5:15]:** `Visual transition: wooden chess pieces dissolving into millions of isometric pixel sprites of a bustling digital amusement park, vibrant 1990s computer graphics morphing into modern neural networks, 8k.`
+- **PROMPT 06 [5:15 - 6:45]:** `3D medical neuro-visualization: glowing seahorse-shaped hippocampus structure inside a translucent human brain, golden electrical impulses firing along dendritic trees, dark obsidian background, Octane render, 8k.`
+- **PROMPT 07 [6:45 - 8:15]:** `Foggy London street at night, Russell Square architecture, warm light in a high attic window where three silhouettes stand before a glass board covered in reinforcement learning equations, 35mm film grain, 4k.`
+- **PROMPT 08 [8:15 - 10:30]:** `Extreme close-up of a traditional Japanese wooden Goban board, polished black slate and white clamshell Go stones forming a complex geometric constellation, dramatic top-down spotlight, intense stillness, 8k 24fps.`
+- **PROMPT 09 [10:30 - 12:15]:** `Slow motion macro shot of a single black Go stone being placed on the fifth line from the edge of the board (Move 37), shockwave of golden light rippling through the wood grain into a multidimensional neural network, 8k.`
+- **PROMPT 10 [12:15 - 14:15]:** `Breathtaking scientific visualization of a complex biological protein folding in real-time: long ribbon of amino acids twisting, coiling into alpha-helices and beta-sheets with atomic precision, bioluminescent cyan and gold, Octane render, 8k.`
+- **PROMPT 11 [14:15 - 16:45]:** `Time-lapse visualization of a glowing sphere of 200 million protein structures expanding like a galaxy, illuminating dark regions of medical science, IMAX documentary scale, 8k 24fps.`
+- **PROMPT 12 [16:45 - 18:15]:** `Inside a magnetic tokamak fusion reactor: glowing violet plasma torus held in suspension by invisible AI-controlled magnetic fields, extreme physics precision, cinematic hard sci-fi, 8k.`
+- **PROMPT 13 [18:15 - 20:00]:** `Macro composition: a transparent crystal chess king standing next to a 3D hologram of a DNA double helix and a glowing neural network node, warm golden light uniting all three symbols, 4k.`
+- **PROMPT 14 [20:00 - 21:30]:** `Slow camera rise from a quiet candlelit chessboard in London up through the clouds into a cosmic view of Earth surrounded by a shimmering golden lattice of biological and digital knowledge, 8k 24fps.`

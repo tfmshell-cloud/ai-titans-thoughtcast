@@ -1,0 +1,17 @@
+# Video Generation Prompts — Episode 05: «Ян Лекун: Єретик світла та світових моделей»
+**Цільові моделі:** Google Veo 2 / Google Flow / Runway Gen-3 / Midjourney v6  
+**Стиль:** Дим каніфолі, оптичні лінзи зорової кори, вітрильник у відкритому океані, 35mm film grain, 4k/8k 24fps.
+
+- **PROMPT 01 [0:00 - 0:25]:** `Extreme macro cinematic shot of a hot soldering iron tip melting silver solder onto a green copper circuit board in 1974 Paris suburb, wispy white rosin smoke curling in warm desk lamp light, 35mm film grain, 4k 24fps.`
+- **PROMPT 02 [0:25 - 1:40]:** `1972 French suburban garage: wind tunnel model airplanes hanging from ceiling, aerodynamic blueprints on table, a twelve-year-old boy with his engineer father adjusting a brass wing flap, warm Kodak film look, 4k.`
+- **PROMPT 03 [1:40 - 3:15]:** `Grand marble hall of a prestigious Parisian academy filled with aloof professors in suits, contrasted with a gritty underground electronics lab where young Yann LeCun is etching circuit boards in acid bath, 4k.`
+- **PROMPT 04 [3:15 - 5:15]:** `Close-up of a dusty 1969 book "Perceptrons" opening on a library table, camera zooms into mathematical inequalities on the page which dissolve into a multi-layered glowing 3D grid, Octane render, 8k.`
+- **PROMPT 05 [5:15 - 6:45]:** `Scientific macro visualization: light rays passing through the lens of a cat's eye onto the retina, activating hierarchical geometric receptive fields in the visual cortex (edges, corners, shapes), cyan and gold bioluminescence, 8k.`
+- **PROMPT 06 [6:45 - 8:30]:** `3D architectural animation of LeNet-5 Convolutional Neural Network: a sliding geometric filter scanning across a handwritten number "5", extracting edges, pooling layers compressing data into pure mathematical essence, Octane render, 8k.`
+- **PROMPT 07 [8:30 - 10:45]:** `Empty conference room in 2002: Yann LeCun standing beside a poster of convolutional networks in a dimly lit hallway while crowds of scientists walk past towards a grand hall labeled "Support Vector Machines", 35mm film grain, 4k.`
+- **PROMPT 08 [10:45 - 12:30]:** `Dramatic meeting at night in Menlo Park: Mark Zuckerberg and Yann LeCun across a glass table, a glowing open padlock symbol shattering chains of proprietary code into millions of free golden sparks spreading across the globe, 8k.`
+- **PROMPT 09 [12:30 - 14:45]:** `Slow motion cinematic shot of a sleek black house cat calculating a complex jump across a cluttered bookshelf, overlaid with glowing green geometric physics vectors (gravity, momentum, trajectory) inside the cat's visual field, 8k 24fps.`
+- **PROMPT 10 [14:45 - 16:30]:** `Comparison visualization: a narrow dark pipe of text symbols (1D token stream) versus a massive 3D holographic sphere of sensory physics data flowing into a four-year-old child's eyes (World Model JEPA), Octane render, 8k.`
+- **PROMPT 11 [16:30 - 18:00]:** `Aerial cinematic shot of a white racing sailboat cutting sharply through deep blue Atlantic waves at sunset, Yann LeCun at the helm adjusting the mainsheet against strong wind, spray catching golden light, 4k 24fps.`
+- **PROMPT 12 [18:00 - 19:45]:** `Macro shot of a brass marine sextant and a modern open-source silicon chip resting on a wooden chart table, warm sunlight reflecting off lenses, symbol of rational navigation, 4k.`
+- **PROMPT 13 [19:45 - 21:00]:** `Slow majestic camera pull-back from a lone sailboat slicing through dark blue ocean swells into a vast horizon where clouds and light rays form geometric receptive fields across the sky, IMAX 8k.`
