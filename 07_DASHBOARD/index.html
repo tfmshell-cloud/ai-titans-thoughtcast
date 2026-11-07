@@ -992,26 +992,60 @@
       <!-- Right Column: Project Files -->
       <aside class="card">
         <div class="section-head">
-          <span class="section-title">Каталог проєкту на диску</span>
-          <button class="btn" onclick="copyPath()">Копіювати шлях</button>
+          <span class="section-title">Каталог проєкту</span>
+          <button class="btn" style="padding: 2px 7px; font-size: 11px;" onclick="copyPath()">Копіювати шлях</button>
         </div>
 
+        <!-- 9 Core Production Directories (Original Master View) -->
         <div class="folder-list">
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span><span class="folder-tag">20:30 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_02_huang</span><span class="folder-tag">21:00 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_03_hassabis</span><span class="folder-tag">21:30 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_04_hinton</span><span class="folder-tag">22:00 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_05_lecun</span><span class="folder-tag">21:00 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_06_sutskever</span><span class="folder-tag">21:45 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_07_amodei</span><span class="folder-tag">21:15 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_08_li</span><span class="folder-tag">21:30 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_09_bengio</span><span class="folder-tag">21:00 ✓</span></div>
-          <div class="folder-row"><span class="folder-name">📁 02_SCRIPTS/episode_10_ng</span><span class="folder-tag">21:30 ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📁 01_RESEARCH</span><span class="folder-tag">10 персоналій</span></div>
+          <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">10 епізодів ✓</span></div>
+          <div class="folder-row"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag">UK & EN stems / SFX</span></div>
+          <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">120+ промптів Veo</span></div>
+          <div class="folder-row"><span class="folder-name">🎞️ 05_RAW_FOOTAGE</span><span class="folder-tag">veo / flow</span></div>
+          <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag">4-node spec</span></div>
+          <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD</span><span class="folder-tag">active</span></div>
+          <div class="folder-row"><span class="folder-name">⚙️ 08_AUTOMATION</span><span class="folder-tag">scripts</span></div>
+          <div class="folder-row"><span class="folder-name">💾 09_BACKUPS</span><span class="folder-tag">snapshots</span></div>
         </div>
 
+        <!-- Key Audio, Scripts & Automation Files -->
         <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.4rem;">
+          <div style="font-size: 10.5px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px;">
+            Ключові скрипти та аудіо-файли
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">🎵 03_AUDIO/AUDIO_ENGINEERING_GUIDE.md</span>
+            <span class="folder-tag" style="color: var(--cyan);">Інструкція</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">🎵 03_AUDIO/AUDIO_PASSPORTS_EP01_EP05.md</span>
+            <span class="folder-tag" style="color: var(--cyan);">Suno 92 BPM</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">📝 02_SCRIPTS/episode_01_altman/voiceover_ssml_template.xml</span>
+            <span class="folder-tag" style="color: var(--emerald);">SSML 115 WPM</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">🎚️ 06_DAVINCI_PROJECTS/episode_01_davinci_spec.md</span>
+            <span class="folder-tag" style="color: var(--purple);">Kodak 2383 Grade</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">⚙️ 08_AUTOMATION/scripts/sync_github.sh</span>
+            <span class="folder-tag">GitHub Sync</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size: 10.5px;">⚙️ 08_AUTOMATION/scripts/backup_gdrive.sh</span>
+            <span class="folder-tag">GDrive Backup</span>
+          </div>
+        </div>
+
+        <!-- Technical Audio Specs -->
+        <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 0.35rem;">
           <div style="font-size: 11px; color: var(--text-muted);">Багатомовний YouTube стандарт:</div>
           <div style="font-size: 11px; color: var(--cyan);">WAV 48 kHz / 24-bit &bull; 110–116 WPM &bull; UK + EN</div>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 3px;">Метроном саундтреку:</div>
+          <div style="font-size: 11px; color: var(--emerald);">Suno Pro 92 BPM &bull; Fairlight Ducking -3.2 dB</div>
         </div>
       </aside>
     </div>
