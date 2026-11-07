@@ -875,18 +875,42 @@
     var masterPool = window.SUNO_MASTER_POOL || [];
     var importedMap = {};
     masterPool.forEach(function (t) {
-      importedMap[t.smart_bin] = t;
+      importedMap[t.smart_bin] = { track: t, bin_dir: t.bin_dir, smart_bin: t.smart_bin };
+      (t.extra_bins || []).forEach(function (eb) {
+        importedMap[eb.smart_bin] = { track: t, bin_dir: eb.bin_dir, smart_bin: eb.smart_bin };
+      });
     });
 
-    var poolRowsHtml = masterPool.map(function (t, idx) {
+    // Sort so tracks assigned to THIS episode appear right at the top!
+    var sortedPool = masterPool.slice().sort(function (a, b) {
+      var aMatch = a.hero_ep === epData.ep || (a.extra_bins || []).some(function (eb) { return eb.smart_bin.indexOf("EP" + epData.ep + "_") === 0; });
+      var bMatch = b.hero_ep === epData.ep || (b.extra_bins || []).some(function (eb) { return eb.smart_bin.indexOf("EP" + epData.ep + "_") === 0; });
+      if (aMatch && !bMatch) return -1;
+      if (!aMatch && bMatch) return 1;
+      return parseInt(a.num, 10) - parseInt(b.num, 10);
+    });
+
+    var poolRowsHtml = sortedPool.map(function (t, idx) {
+      var isThisEp = t.hero_ep === epData.ep || (t.extra_bins || []).some(function (eb) { return eb.smart_bin.indexOf("EP" + epData.ep + "_") === 0; });
+      var rowStyle = isThisEp ? " style=\"background:rgba(52,211,153,0.07);\"" : "";
+      var displayBin = t.smart_bin;
+      var displayDir = t.bin_dir;
+      if (t.hero_ep !== epData.ep && t.extra_bins) {
+        t.extra_bins.forEach(function (eb) {
+          if (eb.smart_bin.indexOf("EP" + epData.ep + "_") === 0) {
+            displayBin = eb.smart_bin;
+            displayDir = eb.bin_dir;
+          }
+        });
+      }
       return [
-        "<tr>",
-        "  <td><span class=\"chip chip-emerald\">#" + esc(t.num) + "</span></td>",
-        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.smart_bin) + "</div></td>",
+        "<tr" + rowStyle + ">",
+        "  <td><span class=\"chip " + (isThisEp ? "chip-emerald" : "chip-cyan") + "\">#" + esc(t.num) + "</span>" + (isThisEp ? "<div style=\"margin-top:4px;\"><span class=\"chip chip-emerald\">🎯 Цей епізод</span></div>" : "") + "</td>",
+        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.8px;color:var(--amber);margin-top:2px;\">" + esc(t.hero_label || "") + "</div><div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(displayDir) + "/" + esc(displayBin) + "</div></td>",
         "  <td><span class=\"chip chip-purple\">" + esc(t.module) + "</span><div style=\"font-size:11px;color:var(--text-muted);margin-top:3px;\">" + esc(t.specs) + "</div></td>",
         "  <td style=\"min-width:235px;\"><audio controls preload=\"none\" style=\"height:32px;width:230px;\" src=\"../assets/audio_previews/" + esc(t.preview) + "\"></audio></td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);max-width:290px;\">" + esc(t.usage) + "</td>",
-        "  <td><button class=\"btn\" style=\"padding:3px 7px;font-size:11px;\" data-copy-pool-path=\"" + idx + "\">Шлях WAV</button></td>",
+        "  <td><button class=\"btn\" style=\"padding:3px 7px;font-size:11px;\" data-copy-pool-dir=\"" + esc(displayDir) + "\" data-copy-pool-bin=\"" + esc(displayBin) + "\">Шлях WAV</button></td>",
         "</tr>"
       ].join("\n");
     }).join("\n");
@@ -917,13 +941,14 @@
     }).join("\n");
 
     var sunoRows = (epData.suno_registry || []).map(function (item, idx) {
-      var matchedWav = importedMap[item.filename];
+      var matchedEntry = importedMap[item.filename];
+      var matchedWav = matchedEntry ? matchedEntry.track : null;
       var done = !!state.checked["suno_" + idx] || !!matchedWav;
       return [
         "<tr>",
         "  <td><input type=\"checkbox\" class=\"sop-checkbox\" data-suno-check=\"" + idx + "\"" + (done ? " checked" : "") + "></td>",
         "  <td><span class=\"chip chip-cyan\">" + esc(item.category) + " • " + esc(item.act) + "</span>" + (matchedWav ? "<div style=\"margin-top:4px;\"><span class=\"chip chip-emerald\">✅ WAV у 03_AUDIO</span></div>" : "") + "</td>",
-        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span>" + (matchedWav ? ("<div style=\"font-size:10.5px;color:var(--emerald);margin-top:3px;\">Джерело: " + esc(matchedWav.orig_name) + " (" + esc(matchedWav.duration) + ")</div>") : "") + "</td>",
+        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span>" + (matchedWav ? ("<div style=\"font-size:10.5px;color:var(--emerald);margin-top:3px;\">Імпортовано: " + esc(matchedWav.orig_name) + " (" + esc(matchedWav.duration) + ") → " + esc(matchedEntry.bin_dir) + "</div>") : "") + "</td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);\">" + esc(item.davinci_track) + "</td>",
         "  <td style=\"font-family:var(--mono);font-size:11px;color:#cbd5e1;max-width:390px;\">" + esc(item.suno_prompt) + "</td>",
         "  <td>",
@@ -953,8 +978,8 @@
       "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.38);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🎧 Імпортована Майстер-Бібліотека Suno Pro (10 реальних WAV-треків у 03_AUDIO/suno_stems/ • 37 хв 17 с)</div>",
-      "      <div class=\"panel-desc\">Наскрізне звукове ДНК усього серіалу + 100% готовий саундтрек під Smart Bins Епізоду 01. Прослухайте будь-який трек прямо тут перед укладанням у DaVinci Resolve.</div>",
+      "      <div class=\"panel-title\">🎧 Імпортована Майстер-Бібліотека Suno Pro (16 WAV-треків у 10 папках Smart Bins • 61 хв 31 с)</div>",
+      "      <div class=\"panel-desc\">Індивідуальні треки цього героя автоматично підняті нагору таблиці (🎯 Цей епізод). Усі 10 епізодів уже отримали власні унікальні теми Акту 1 без повторів.</div>",
       "    </div>",
       "    <span class=\"chip chip-emerald\">48 kHz WAV + C2PA Verified</span>",
       "  </div>",
@@ -1007,13 +1032,11 @@
       });
     }
 
-    pane.querySelectorAll("[data-copy-pool-path]").forEach(function (btn) {
+    pane.querySelectorAll("[data-copy-pool-bin]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var idx = parseInt(btn.getAttribute("data-copy-pool-path"), 10);
-        var tr = masterPool[idx];
-        if (tr) {
-          copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/" + tr.smart_bin, tr.smart_bin);
-        }
+        var bDir = btn.getAttribute("data-copy-pool-dir");
+        var bName = btn.getAttribute("data-copy-pool-bin");
+        copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/" + bDir + "/" + bName, bName);
       });
     });
 

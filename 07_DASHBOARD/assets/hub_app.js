@@ -322,7 +322,7 @@
       return [
         "<tr>",
         "  <td><span class=\"pill pill-emerald\">#" + esc(t.num) + "</span></td>",
-        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.smart_bin) + "</div></td>",
+        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.6px;color:var(--amber);margin-top:2px;\">" + esc(t.hero_label || "") + "</div><div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.bin_dir) + "/" + esc(t.smart_bin) + "</div></td>",
         "  <td><span class=\"pill pill-purple\">" + esc(t.module) + "</span><div style=\"font-size:10.8px;color:var(--text-muted);margin-top:3px;\">" + esc(t.specs) + "</div></td>",
         "  <td style=\"min-width:225px;\"><audio controls preload=\"none\" style=\"height:30px;width:220px;\" src=\"assets/audio_previews/" + esc(t.preview) + "\"></audio></td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);max-width:265px;\">" + esc(t.usage) + "</td>",
@@ -345,7 +345,7 @@
         var idx = parseInt(btn.getAttribute("data-hub-wav-copy"), 10);
         var tr = pool[idx];
         if (tr) {
-          copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/" + tr.smart_bin, tr.smart_bin);
+          copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/" + tr.bin_dir + "/" + tr.smart_bin, tr.smart_bin);
         }
       });
     });
@@ -426,7 +426,7 @@
 
     var cTime = document.getElementById("cTime");
     if (cTime) {
-      cTime.textContent = "Season 1 • 10 Episodes • 10 WAV Stems Imported • 1,000 Prompts • 1,000 Quotes";
+      cTime.textContent = "Season 1 • 10 Episodes • 16 WAV Stems (10 Smart Bin Folders) • 1,000 Prompts • 1,000 Quotes";
     }
   }
 
