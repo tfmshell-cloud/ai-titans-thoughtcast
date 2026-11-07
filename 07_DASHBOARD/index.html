@@ -106,6 +106,7 @@
       margin-bottom: 1rem;
       border-bottom: 1px solid var(--border);
       padding-bottom: 0.5rem;
+      flex-wrap: wrap;
     }
 
     .tab-btn {
@@ -200,6 +201,7 @@
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 0.9rem;
+      margin-bottom: 1rem;
     }
 
     .filter-bar {
@@ -250,7 +252,7 @@
       font-size: 10.5px;
       font-weight: 500;
     }
-    .badge-writing { background: var(--amber-subtle); color: var(--amber); border: 1px solid rgba(251, 191, 36, 0.3); }
+    .badge-done { background: var(--emerald-subtle); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.3); }
     .badge-research { background: var(--cyan-subtle); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
     .badge-queue { background: rgba(139, 148, 158, 0.1); color: var(--text-secondary); border: 1px solid var(--border-subtle); }
 
@@ -269,55 +271,58 @@
     .folder-name { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; }
     .folder-tag { font-size: 10px; color: var(--text-muted); }
 
-    /* Audio Studio Section */
-    .audio-studio-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    @media (max-width: 860px) {
-      .audio-studio-grid { grid-template-columns: 1fr; }
-    }
-
-    .audio-card {
+    /* Script & Prompts Viewer Styles */
+    .script-act-card {
       background: var(--surface-elevated);
       border: 1px solid var(--border-subtle);
       border-radius: 8px;
       padding: 0.85rem;
+      margin-bottom: 0.85rem;
     }
 
-    .audio-card-title {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 0.5rem;
-    }
-
-    .spec-item {
+    .act-header {
       display: flex;
       justify-content: space-between;
-      padding: 4px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      font-size: 11.5px;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
-    .spec-key { color: var(--text-muted); }
-    .spec-val { color: var(--text-primary); font-family: var(--mono); font-size: 11px; }
 
-    .code-preview {
+    .act-title { font-weight: 600; color: var(--cyan); font-size: 12.5px; }
+    .act-time { font-family: var(--mono); font-size: 11px; color: var(--text-muted); }
+
+    .script-scene {
+      margin-bottom: 0.65rem;
+      padding: 0.5rem;
+      border-left: 2px solid var(--border);
+      background: rgba(255, 255, 255, 0.01);
+      border-radius: 0 6px 6px 0;
+    }
+    .scene-meta { display: flex; gap: 0.5rem; font-size: 11px; margin-bottom: 0.3rem; }
+    .scene-tc { font-family: var(--mono); color: var(--amber); }
+    .scene-sfx { color: var(--purple); font-size: 10.5px; }
+
+    .prompt-box {
       background: #090b0e;
       border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 8px 10px;
+      border-radius: 5px;
+      padding: 5px 8px;
       font-family: var(--mono);
       font-size: 11px;
       color: #9cdcfe;
-      overflow-x: auto;
-      line-height: 1.4;
-      margin-top: 0.5rem;
+      margin: 0.3rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .narration-text {
+      color: var(--text-primary);
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 0.3rem;
     }
 
     /* Buttons */
@@ -373,45 +378,45 @@
         <div class="brand-icon">AI</div>
         <div class="title-group">
           <h1>Cinematic Thoughtcast &bull; AI Titans</h1>
-          <p>Панель моніторингу виробництва, аудіо-пайплайну та репозиторію</p>
+          <p>Панель моніторингу виробництва, сценаріїв та DaVinci пайплайну</p>
         </div>
       </div>
 
       <div class="stats-inline">
         <span class="badge-status"><span class="dot-live"></span> Сезон 1</span>
-        <div class="metric-pill">Формат аудіо: <strong>WAV 48 kHz / 24-bit</strong></div>
-        <div class="metric-pill">Темп: <strong>120 слів/хв (WPM)</strong></div>
-        <div class="metric-pill">YouTube: <strong>Multi-Language (UK/EN)</strong></div>
+        <div class="metric-pill">Ep 01: <strong>20:30 (Сценарій готовий)</strong></div>
+        <div class="metric-pill">Відео-промптів: <strong>17 кадрів</strong></div>
+        <div class="metric-pill">DaVinci: <strong>Fairlight Sidechain + 4-Node Color</strong></div>
       </div>
     </header>
 
     <!-- Navigation Tabs -->
     <div class="tab-bar">
       <button class="tab-btn active" onclick="switchView('overview', this)">Загальний огляд</button>
+      <button class="tab-btn" onclick="switchView('ep01-script', this)">🎬 Ep 01: Сценарій & Відео-промпти</button>
       <button class="tab-btn" onclick="switchView('audio', this)">🎙️ Аудіо-інженерія & YouTube Multi-Track</button>
+      <button class="tab-btn" onclick="switchView('davinci', this)">🎚️ DaVinci Resolve Специфікація</button>
       <button class="tab-btn" onclick="switchView('structure', this)">Структура тек</button>
     </div>
 
     <!-- Section 1: Overview View -->
     <div id="view-overview">
-      <!-- Pipeline Strip -->
       <div class="pipeline-container">
         <div class="section-head">
-          <span class="section-title">Виробничий цикл</span>
+          <span class="section-title">Виробничий цикл серіалу</span>
           <button class="btn btn-primary" onclick="simulateRefresh()">Оновити стан</button>
         </div>
         <div class="pipeline-steps">
           <div class="step-item done"><span class="step-num">01 / Репо</span><span class="step-name">Інфраструктура</span><span class="step-state">✓ Готово</span></div>
           <div class="step-item done"><span class="step-num">02 / Дерево</span><span class="step-name">Структура тек</span><span class="step-state">✓ Створено</span></div>
-          <div class="step-item active"><span class="step-num">03 / Сценарій</span><span class="step-name">Ep 01: Altman</span><span class="step-state">● Розробка</span></div>
-          <div class="step-item queued"><span class="step-num">04 / Аудіо</span><span class="step-name">120 WPM (UK/EN)</span><span class="step-state">Черга</span></div>
-          <div class="step-item queued"><span class="step-num">05 / Відео</span><span class="step-name">Veo & Flow</span><span class="step-state">Черга</span></div>
+          <div class="step-item done"><span class="step-num">03 / Сценарій</span><span class="step-name">Ep 01: Altman</span><span class="step-state">✓ 20:30 Фінал</span></div>
+          <div class="step-item active"><span class="step-num">04 / Аудіо</span><span class="step-name">Suno & VO 115 WPM</span><span class="step-state">● Генерація</span></div>
+          <div class="step-item active"><span class="step-num">05 / Відео</span><span class="step-name">Veo (17 промптів)</span><span class="step-state">● Рендери</span></div>
           <div class="step-item queued"><span class="step-num">06 / Монтаж</span><span class="step-name">DaVinci Resolve</span><span class="step-state">Черга</span></div>
           <div class="step-item queued"><span class="step-num">07 / Архів</span><span class="step-name">Бекапи</span><span class="step-state">Черга</span></div>
         </div>
       </div>
 
-      <!-- Main Grid -->
       <div class="dashboard-grid">
         <section class="card">
           <div class="filter-bar">
@@ -426,20 +431,70 @@
                   <th style="width: 32px;">№</th>
                   <th>Персоналія</th>
                   <th>Тематичний фокус</th>
-                  <th style="width: 90px;">Статус</th>
+                  <th style="width: 110px;">Статус</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td class="ep-idx">01</td><td><span class="person-name">Sam Altman</span></td><td class="topic-cell">Compute, OpenAI, AGI Scaling</td><td><span class="badge badge-writing">Сценарій</span></td></tr>
-                <tr><td class="ep-idx">02</td><td><span class="person-name">Jensen Huang</span></td><td class="topic-cell">CUDA Dynasty, Blackwell GPUs</td><td><span class="badge badge-research">Дослідження</span></td></tr>
-                <tr><td class="ep-idx">03</td><td><span class="person-name">Demis Hassabis</span></td><td class="topic-cell">DeepMind, AlphaFold</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">04</td><td><span class="person-name">Geoffrey Hinton</span></td><td class="topic-cell">Backprop, Existential Risk</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">05</td><td><span class="person-name">Yann LeCun</span></td><td class="topic-cell">JEPA, World Models, Open Science</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">06</td><td><span class="person-name">Ilya Sutskever</span></td><td class="topic-cell">Safe Superintelligence (SSI)</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">07</td><td><span class="person-name">Dario Amodei</span></td><td class="topic-cell">Anthropic, Constitutional AI</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">08</td><td><span class="person-name">Fei-Fei Li</span></td><td class="topic-cell">Spatial Intelligence, World Labs</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">09</td><td><span class="person-name">Yoshua Bengio</span></td><td class="topic-cell">System 2 Reasoning, AI Governance</td><td><span class="badge badge-queue">Черга</span></td></tr>
-                <tr><td class="ep-idx">10</td><td><span class="person-name">Andrew Ng</span></td><td class="topic-cell">Democratization, Agentic Workflows</td><td><span class="badge badge-queue">Черга</span></td></tr>
+                <tr>
+                  <td class="ep-idx">01</td>
+                  <td><span class="person-name">Sam Altman</span></td>
+                  <td class="topic-cell">Анатомія експоненти &bull; 20:30 &bull; 4 Акти &bull; Stargate</td>
+                  <td><span class="badge badge-done">Сценарій готов ✓</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">02</td>
+                  <td><span class="person-name">Jensen Huang</span></td>
+                  <td class="topic-cell">CUDA Dynasty, Blackwell GPUs, Physical AI</td>
+                  <td><span class="badge badge-research">Дослідження</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">03</td>
+                  <td><span class="person-name">Demis Hassabis</span></td>
+                  <td class="topic-cell">DeepMind, AlphaFold, Algorithmic Mastery</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">04</td>
+                  <td><span class="person-name">Geoffrey Hinton</span></td>
+                  <td class="topic-cell">Backprop, Existential Risk, Digital vs Bio</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">05</td>
+                  <td><span class="person-name">Yann LeCun</span></td>
+                  <td class="topic-cell">JEPA, World Models, Open Science vs Hype</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">06</td>
+                  <td><span class="person-name">Ilya Sutskever</span></td>
+                  <td class="topic-cell">Safe Superintelligence (SSI), Scaling Math</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">07</td>
+                  <td><span class="person-name">Dario Amodei</span></td>
+                  <td class="topic-cell">Anthropic, Claude, Constitutional AI</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">08</td>
+                  <td><span class="person-name">Fei-Fei Li</span></td>
+                  <td class="topic-cell">ImageNet, Spatial Intelligence, World Labs</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">09</td>
+                  <td><span class="person-name">Yoshua Bengio</span></td>
+                  <td class="topic-cell">System 2 Reasoning, AI Governance & Treaty</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
+                <tr>
+                  <td class="ep-idx">10</td>
+                  <td><span class="person-name">Andrew Ng</span></td>
+                  <td class="topic-cell">Democratization, Agentic Workflows, AI Education</td>
+                  <td><span class="badge badge-queue">Черга</span></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -454,11 +509,11 @@
 
           <div class="folder-list">
             <div class="folder-row"><span class="folder-name">📁 01_RESEARCH</span><span class="folder-tag">10 папок</span></div>
-            <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">ep_01</span></div>
-            <div class="folder-row"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag">UK & EN stems</span></div>
-            <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">prompts</span></div>
+            <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">director_script.md</span></div>
+            <div class="folder-row"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag">Suno 92 BPM / SFX</span></div>
+            <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">17 промптів Veo</span></div>
             <div class="folder-row"><span class="folder-name">🎞️ 05_RAW_FOOTAGE</span><span class="folder-tag">veo / flow</span></div>
-            <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag">timelines</span></div>
+            <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag">4-node spec</span></div>
             <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD</span><span class="folder-tag">active</span></div>
             <div class="folder-row"><span class="folder-name">⚙️ 08_AUTOMATION</span><span class="folder-tag">scripts</span></div>
             <div class="folder-row"><span class="folder-name">💾 09_BACKUPS</span><span class="folder-tag">snapshots</span></div>
@@ -467,162 +522,177 @@
       </div>
     </div>
 
-    <!-- Section 2: Audio Engineering & Multi-Track Pipeline View -->
-    <div id="view-audio" style="display: none;">
-      <div class="card" style="margin-bottom: 1rem;">
+    <!-- Section 2: Episode 01 Script & Prompts Viewer -->
+    <div id="view-ep01-script" style="display: none;">
+      <div class="card">
         <div class="section-head">
           <div>
-            <span class="section-title">🎙️ YouTube Multi-Language Audio Tracks (UK / EN) & 120 WPM Architecture</span>
+            <span class="section-title">🎬 Епізод 01: «Сем Альтман: Анатомія експоненти» (20:30)</span>
             <p style="font-size: 11.5px; color: var(--text-secondary); margin-top: 2px;">
-              Єдине відео на каналі з автоматичним вибором мови плеєром: Українська (Master) + Англійська (Clone Dub)
+              Повний режисерський сценарій &bull; Темпоритм 92 BPM &bull; 115 слів/хв &bull; 17 кінематографічних промптів
             </p>
           </div>
-          <button class="btn btn-primary" onclick="copySSML()">Копіювати SSML шаблон</button>
+          <button class="btn btn-primary" onclick="copyFileText('02_SCRIPTS/episode_01_altman/director_script_altman.md')">
+            Копіювати весь сценарій (.md)
+          </button>
         </div>
 
-        <div class="audio-studio-grid">
-          <!-- Card A: Methods of Control -->
-          <div class="audio-card">
-            <div class="audio-card-title">⚙️ 3 методи контролю темпу та дихання</div>
-            
-            <div style="margin-bottom: 0.6rem;">
-              <strong style="color: var(--cyan); font-size: 11.5px;">1. SSML розмітка (Google Cloud TTS / ElevenLabs)</strong>
-              <p style="font-size: 11px; color: var(--text-secondary);">
-                Точний контроль мілісекунд пауз (<code style="color: var(--amber);">&lt;break time="1.4s"/&gt;</code>) та уповільнення темпу до 120 WPM (<code style="color: var(--cyan);">&lt;prosody rate="85%"&gt;</code>).
-              </p>
-            </div>
-
-            <div style="margin-bottom: 0.6rem;">
-              <strong style="color: var(--purple); font-size: 11.5px;">2. Audio Native Prompting (ElevenLabs)</strong>
-              <p style="font-size: 11px; color: var(--text-secondary);">
-                Вбудовування драматургічних тегів у текст: <code style="color: #fff;">[sighs]</code>, <code style="color: #fff;">[deep breath]</code>, трикрапки <code style="color: #fff;">...</code> (спад тону) та тире <code style="color: #fff;">—</code>.
-              </p>
-            </div>
-
-            <div>
-              <strong style="color: var(--emerald); font-size: 11.5px;">3. Режисерський Speech-to-Speech (STS)</strong>
-              <p style="font-size: 11px; color: var(--text-secondary);">
-                Запис репліки власним голосом під секундомір DaVinci з ідеальним диханням &rarr; заміна тембру на кінематографічний дикторський бас в ElevenLabs.
-              </p>
-            </div>
+        <!-- Act 1 -->
+        <div class="script-act-card">
+          <div class="act-header">
+            <span class="act-title">Акт 1. Походження та кремнієвий щит</span>
+            <span class="act-time">0:00 – 4:45 &bull; Suno: Theme 1: Introspection (92 BPM)</span>
           </div>
 
-          <!-- Card B: SSML Code Template -->
-          <div class="audio-card">
-            <div class="audio-card-title">📜 SSML зразок (Ep 01: Sam Altman)</div>
-            <pre class="code-preview" id="ssmlCode">&lt;speak&gt;
-  &lt;!-- Цільовий темп: 118-120 слів на хвилину --&gt;
-  &lt;prosody rate="85%" pitch="-2st"&gt;
-    У вісім років світ більшості людей обмежений правилами школи.
-  &lt;/prosody&gt;
+          <div class="script-scene">
+            <div class="scene-meta">
+              <span class="scene-tc">[0:00 - 0:15]</span>
+              <span class="scene-sfx">SFX: Щиглик реле CRT-монітора, низькочастотний гул розгортки</span>
+            </div>
+            <div class="prompt-box">
+              <span><strong>PROMPT 01:</strong> Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, 4k 24fps.</span>
+              <button class="btn" onclick="copyText('Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige chassis, morning dust motes floating in dark moody room, volumetric amber backlight, 35mm film grain, Octane render aesthetic, 4k 24fps.')">Копіювати</button>
+            </div>
+            <p class="narration-text"><em>Диктор:</em> «Більшість людей формуються під тиском правил. Їхній світ — це коридори середньої школи, оцінки в табелях, зауваження дорослих і страх зробити щось не так...»</p>
+          </div>
 
-  &lt;break time="1.4s" /&gt;
-
-  &lt;prosody rate="80%"&gt;
-    У 1993 році хлопчик розпаковує свій перший комп'ютер 
-    &lt;emphasis level="strong"&gt;Macintosh LC II&lt;/emphasis&gt;.
-  &lt;/prosody&gt;
-
-  &lt;break time="900ms" /&gt;
-&lt;/speak&gt;</pre>
+          <div class="script-scene">
+            <div class="scene-meta">
+              <span class="scene-tc">[0:15 - 0:45]</span>
+              <span class="scene-sfx">Macintosh LC II &bull; Джерело автономії</span>
+            </div>
+            <div class="prompt-box">
+              <span><strong>PROMPT 02:</strong> Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, 4k.</span>
+              <button class="btn" onclick="copyText('Close-up macro of small eight-year-old hands pressing mechanical keys of vintage Apple Extended Keyboard, amber screen glow reflecting in dark pupils, quiet focus, cinematic depth of field, 4k.')">Копіювати</button>
+            </div>
+            <p class="narration-text"><em>Диктор:</em> «Комп'ютер навчив його фундаментальної істини, яку школа ретельно приховує: машина байдужа до авторитетів. Вона не знає образи. Вона карає не за спробу, а лише за синтаксичну помилку...»</p>
           </div>
         </div>
 
-        <!-- Comparative Tool Matrix -->
-        <div style="margin-top: 1rem;">
-          <span class="section-title" style="display: block; margin-bottom: 0.5rem;">📊 Технологічна матриця синтезу голосу</span>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Параметр</th>
-                  <th>ElevenLabs (Projects / STS)</th>
-                  <th>Google Cloud TTS (Chirp / Studio)</th>
-                  <th>Google NotebookLM</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Українська мова</strong></td>
-                  <td style="color: var(--emerald);">Найвища якість, природні наголоси</td>
-                  <td>Висока (Neural2), чітка</td>
-                  <td style="color: var(--text-muted);">Не підтримується (тільки EN)</td>
-                </tr>
-                <tr>
-                  <td><strong>Англійська мова</strong></td>
-                  <td style="color: var(--emerald);">Голлівудський закадр</td>
-                  <td>Документальна чіткість</td>
-                  <td>Розмовний подкаст</td>
-                </tr>
-                <tr>
-                  <td><strong>Фіксація темпу (120 wpm)</strong></td>
-                  <td>Повзунок Speed або Speech-to-Speech</td>
-                  <td style="color: var(--cyan); font-family: var(--mono);">&lt;prosody rate="..."&gt;</td>
-                  <td style="color: var(--text-muted);">Неможливо зафіксувати</td>
-                </tr>
-                <tr>
-                  <td><strong>Дихання та паузи</strong></td>
-                  <td>Теги [breath], трикрапки, ручні спліти</td>
-                  <td style="color: var(--cyan); font-family: var(--mono);">&lt;break time="Xs"/&gt;</td>
-                  <td style="color: var(--text-muted);">Автоматично, випадково</td>
-                </tr>
-                <tr>
-                  <td><strong>Експорт стемами</strong></td>
-                  <td style="color: var(--emerald);">WAV 24-bit / 48 kHz</td>
-                  <td>WAV / MP3</td>
-                  <td style="color: var(--text-muted);">Лише монолітний файл</td>
-                </tr>
-              </tbody>
-            </table>
+        <!-- Act 2 -->
+        <div class="script-act-card">
+          <div class="act-header">
+            <span class="act-title">Акт 2. Код експоненти та народження OpenAI</span>
+            <span class="act-time">4:45 – 9:30 &bull; Suno: Theme 2: Tension (92 BPM)</span>
+          </div>
+          <div class="script-scene">
+            <div class="scene-meta">
+              <span class="scene-tc">[7:00 - 8:15]</span>
+              <span class="scene-sfx">DeepMind acquisition &bull; Менло-Парк вечеря</span>
+            </div>
+            <div class="prompt-box">
+              <span><strong>PROMPT 09:</strong> Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.</span>
+              <button class="btn" onclick="copyText('Abstract 3D neural network lattice glowing in deep void, dense interconnected nodes firing synchronized pulses, Octane render, deep obsidian texture, 4k.')">Копіювати</button>
+            </div>
+            <p class="narration-text"><em>Диктор:</em> «11 грудня 2015 року світ дізнається про створення OpenAI... всередині лабораторії вже визрівала єретична гіпотеза Суцкевера та Альтмана: Масштаб вирішує все.»</p>
+          </div>
+        </div>
+
+        <!-- Act 3 -->
+        <div class="script-act-card">
+          <div class="act-header">
+            <span class="act-title">Акт 3. Землетрус і п'ять днів бунту</span>
+            <span class="act-time">9:30 – 15:30 &bull; Психологічний трилер &bull; Суб-дропи 40Hz</span>
+          </div>
+          <div class="script-scene">
+            <div class="scene-meta">
+              <span class="scene-tc">[13:45 - 15:30]</span>
+              <span class="scene-sfx">Ультиматум 730 співробітників &bull; Повернення</span>
+            </div>
+            <div class="prompt-box">
+              <span><strong>PROMPT 14:</strong> Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.</span>
+              <button class="btn" onclick="copyText('Thousands of illuminated digital signatures flowing together like a golden river into a massive singularity, stunning particle physics simulation, Octane render, 8k.')">Копіювати</button>
+            </div>
+            <p class="narration-text"><em>Диктор:</em> «Ця криза показала анатомію лідерства нового типу: його влада трималася не на посадових інструкціях чи юридичних контрактах. Вона трималася на спільній вірі команди в масштаб місії...»</p>
+          </div>
+        </div>
+
+        <!-- Act 4 -->
+        <div class="script-act-card">
+          <div class="act-header">
+            <span class="act-title">Акт 4. Кодекс будівничого та горизонт AGI</span>
+            <span class="act-time">15:30 – 20:30 &bull; Suno: Theme 3: Triumph (92 BPM) &bull; IMAX масштаб</span>
+          </div>
+          <div class="script-scene">
+            <div class="scene-meta">
+              <span class="scene-tc">[15:30 - 17:00]</span>
+              <span class="scene-sfx">Проєкт Stargate &bull; Орбітальні датацентри</span>
+            </div>
+            <div class="prompt-box">
+              <span><strong>PROMPT 15:</strong> Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.</span>
+              <button class="btn" onclick="copyText('Epic scale space construction: vast orbital solar arrays and dark monolithic datacenter structures floating near Earth orbit, realistic physics, hard sci-fi aesthetic, 8k 24fps.')">Копіювати</button>
+            </div>
+            <p class="narration-text"><em>Диктор:</em> «Він дивиться на історію цивілізації крізь просту термодинамічну формулу: якщо зробити вартість енергії та інтелекту близькою до нуля — матеріальний дефіцит на планеті зникне.»</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Section 3: Directory Structure View -->
+    <!-- Section 3: Audio Engineering View -->
+    <div id="view-audio" style="display: none;">
+      <div class="card">
+        <div class="section-head">
+          <span class="section-title">🎙️ Промпти для генерації саундтреку в Suno Pro (92 BPM)</span>
+        </div>
+        <div class="audio-studio-grid">
+          <div class="audio-card">
+            <div class="audio-card-title">Акт 1 (0:00 - 4:45) — «Theme 1: Introspection»</div>
+            <pre class="code-preview">Instrumental ambient trip-hop, 92 bpm, dusty vinyl texture, warm vintage Rhodes chords, deep analog sub bass, nostalgic clean electric guitar harmonics, quiet contemplative mood, cinematic documentary soundtrack, high fidelity.</pre>
+          </div>
+          <div class="audio-card">
+            <div class="audio-card-title">Акти 2 & 3 (4:45 - 15:30) — «Theme 2: Tension»</div>
+            <pre class="code-preview">Instrumental dark industrial downtempo, 92 bpm, aggressive muted sub-bass pulse, clockwork metallic percussion, tension analog modular synth arpeggios, distant dark saxophone drone with reverb, brooding psychological focus, cinematic film score.</pre>
+          </div>
+          <div class="audio-card" style="grid-column: span 2;">
+            <div class="audio-card-title">Акт 4 (15:30 - 20:30) — «Theme 3: Triumph» (IMAX Scale)</div>
+            <pre class="code-preview">Instrumental majestic sci-fi trip-hop, 92 bpm, soaring analog brass synths, deep resonant bass pulse, emotional celestial choir pad, slow triumphant groove, sense of cosmic scale, IMAX resolution soundtrack.</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: DaVinci Resolve Specification -->
+    <div id="view-davinci" style="display: none;">
+      <div class="card">
+        <div class="section-head">
+          <span class="section-title">🎚️ DaVinci Resolve Studio — Color & Fairlight Паспорт</span>
+          <span style="font-size: 11px; color: var(--cyan); font-family: var(--mono);">AI_TITANS_EP01_ALTMAN_MASTER</span>
+        </div>
+
+        <div class="audio-studio-grid">
+          <div class="audio-card">
+            <div class="audio-card-title">🎨 Нодне дерево на Color Page</div>
+            <div class="spec-item"><span class="spec-key">Node 1</span><span class="spec-val">Exposure & Contrast (Black point: 0.02)</span></div>
+            <div class="spec-item"><span class="spec-key">Node 2</span><span class="spec-val">Color Temp (Cool cyan shadows, warm neutral HL)</span></div>
+            <div class="spec-item"><span class="spec-key">Node 3</span><span class="spec-val">Rec709 Kodak 2383 D60 Film Look</span></div>
+            <div class="spec-item"><span class="spec-key">Node 4</span><span class="spec-val">OFX 35mm Grain (Size: 1.1, Strength: 0.35)</span></div>
+          </div>
+
+          <div class="audio-card">
+            <div class="audio-card-title">🎛️ Fairlight Audio Routing & Sidechain</div>
+            <div class="spec-item"><span class="spec-key">Track A1 (VO)</span><span class="spec-val">HPF 75Hz, +1.5dB 3.5kHz &bull; Sidechain Out 1</span></div>
+            <div class="spec-item"><span class="spec-key">Track A2 (Music)</span><span class="spec-val">Suno 92 BPM &bull; Ducking -3.2 dB (Sidechain Listen 1)</span></div>
+            <div class="spec-item"><span class="spec-key">Track A3 (SFX)</span><span class="spec-val">CRT relays, 40Hz sub-drops (0:45, 9:30, 13:45)</span></div>
+            <div class="spec-item"><span class="spec-key">Master Bus</span><span class="spec-val">Target -14.0 LUFS &bull; True Peak -1.0 dBFS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Directory Structure View -->
     <div id="view-structure" style="display: none;">
       <div class="card">
         <div class="section-head">
-          <span class="section-title">Повна архітектура репозиторію</span>
-          <span style="font-size: 11px; color: var(--text-muted);">Гілка main &bull; 30 відстежуваних файлів</span>
+          <span class="section-title">Архітектура репозиторію</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Всі файли збережено на macOS</span>
         </div>
-        <div class="folder-list" style="margin-top: 0.5rem;">
-          <div class="folder-row">
-            <span class="folder-name">📁 01_RESEARCH/{sam_altman, jensen_huang, demis_hassabis, ...}</span>
-            <span class="folder-tag">10 дослідницьких тек</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 02_SCRIPTS/episode_01_altman</span>
-            <span class="folder-tag">voiceover_ssml_template.xml</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 03_AUDIO/{voiceover, suno_stems, sfx}</span>
-            <span class="folder-tag">AUDIO_ENGINEERING_GUIDE.md</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 04_VIDEO_PROMPTS</span>
-            <span class="folder-tag">Промпти для Veo & Flow</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 05_RAW_FOOTAGE/{flow_renders, veo_clips, archives}</span>
-            <span class="folder-tag">Згенеровані кадри</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 06_DAVINCI_PROJECTS</span>
-            <span class="folder-tag">Таймлайни DaVinci Studio</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 07_DASHBOARD</span>
-            <span class="folder-tag">index.html (Mission Control)</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 08_AUTOMATION/scripts</span>
-            <span class="folder-tag">Скрипти синхронізації</span>
-          </div>
-          <div class="folder-row">
-            <span class="folder-name">📁 09_BACKUPS</span>
-            <span class="folder-tag">Архівні копії</span>
-          </div>
+        <div class="folder-list">
+          <div class="folder-row"><span class="folder-name">📁 01_RESEARCH/{sam_altman, ...}</span><span class="folder-tag">10 персоналій</span></div>
+          <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS/episode_01_altman/director_script_altman.md</span><span class="folder-tag">Готовий сценарій (20:30)</span></div>
+          <div class="folder-row"><span class="folder-name">🎵 03_AUDIO/episode_01_audio_passport.md</span><span class="folder-tag">Suno 92 BPM & Fairlight</span></div>
+          <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS/episode_01_altman_prompts.md</span><span class="folder-tag">17 промптів Veo 2 / Flow</span></div>
+          <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS/episode_01_davinci_spec.md</span><span class="folder-tag">Колірний паспорт</span></div>
+          <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD/index.html</span><span class="folder-tag">Active Mission Control</span></div>
         </div>
       </div>
     </div>
@@ -644,7 +714,9 @@
 
     function switchView(viewName, el) {
       document.getElementById('view-overview').style.display = viewName === 'overview' ? 'block' : 'none';
+      document.getElementById('view-ep01-script').style.display = viewName === 'ep01-script' ? 'block' : 'none';
       document.getElementById('view-audio').style.display = viewName === 'audio' ? 'block' : 'none';
+      document.getElementById('view-davinci').style.display = viewName === 'davinci' ? 'block' : 'none';
       document.getElementById('view-structure').style.display = viewName === 'structure' ? 'block' : 'none';
       
       document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -676,13 +748,16 @@
       });
     }
 
-    function copySSML() {
-      const ssml = document.getElementById('ssmlCode').innerText;
-      navigator.clipboard.writeText(ssml).then(() => {
-        alert('SSML шаблон скопійовано в буфер обміну!');
+    function copyText(str) {
+      navigator.clipboard.writeText(str).then(() => {
+        alert('Промпт скопійовано в буфер обміну!');
       }).catch(() => {
-        prompt('SSML код:', ssml);
+        prompt('Промпт:', str);
       });
+    }
+
+    function copyFileText(path) {
+      copyPath();
     }
   </script>
 </body>
