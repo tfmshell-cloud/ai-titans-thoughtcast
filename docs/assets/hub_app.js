@@ -1,0 +1,393 @@
+(function () {
+  "use strict";
+
+  var season = window.SEASON1_INDEX || [];
+  var quotesDb = window.TITANS_1000_QUOTES || [];
+
+  var CONFLICTS = {
+    "01": "Macintosh LC II у 8 років, публічний камінг-аут у консервативній школі, 120 годин корпоративного бунту в OpenAI.",
+    "02": "Миття туалетів у реформаторії Кентуккі, посуд у Denny's, 30 днів до банкрутства після NV1, 10 років віри в CUDA.",
+    "03": "Шаховий майстер у 13 років, гра Theme Park у 17, божественний Хід 37 в AlphaGo та розгадка білків у AlphaFold2.",
+    "04": "Тінь прапрадіда Джорджа Буля, рік праці теслею в Лондоні, 30 років «зими ШІ» на підлозі, вихід із Google та Нобель.",
+    "05": "Паяльник у передмісті Парижа, згорткові мережі для банківських чеків у Bell Labs, критика LLM та захист Open Source.",
+    "06": "Переїзди Горький–Єрусалим–Торонто, двері Хінтона у 17 років, AlexNet, епоха GPT та монастир тиші SSI.",
+    "07": "Біофізика сітківки в Прінстоні, емпіричні закони масштабування, розрив із OpenAI, Constitutional AI та маніфест благодаті.",
+    "08": "Еміграція з Ченду у 16 років без мови, прасувальний прес у хімчистці паралельно з Прінстоном, подвиг ImageNet та World Labs.",
+    "09": "Відмова від мільярдів Кремнієвої долини заради університету Mila, винахід Attention Mechanism та глобальна безпека ООН.",
+    "10": "Передруковування коду з журналів у Сінгапурі, нейрон кота на 16 000 процесорів Google Brain, революція Coursera та Data-Centric AI."
+  };
+
+  var state = {
+    tab: "heroes",
+    quoteHero: "all",
+    quoteQuery: "",
+    quoteLimit: 120
+  };
+
+  function esc(s) {
+    if (s === null || s === undefined) return "";
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  var toastTimer = null;
+  function showToast(msg) {
+    var el = document.getElementById("hubToast");
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add("visible");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      el.classList.remove("visible");
+    }, 2300);
+  }
+
+  function copyText(txt, label) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(function () {
+        showToast("✓ Скопійовано: " + (label || "буфер обміну"));
+      }).catch(function () {
+        fallbackCopy(txt, label);
+      });
+    } else {
+      fallbackCopy(txt, label);
+    }
+  }
+
+  function fallbackCopy(txt, label) {
+    var ta = document.createElement("textarea");
+    ta.value = txt;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+      showToast("✓ Скопійовано: " + (label || "буфер обміну"));
+    } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  function getEpisodeReadiness(epItem) {
+    var checked = {};
+    try {
+      var raw = localStorage.getItem("aititans_progress_v2_" + epItem.ep);
+      if (raw) checked = JSON.parse(raw);
+    } catch (e) {}
+
+    var sopTotal = epItem.sop_tasks_count || 22;
+    var sopDone = 0;
+    Object.keys(checked).forEach(function (k) {
+      if (k.indexOf("ep" + epItem.ep + "_s") === 0 && checked[k]) sopDone += 1;
+    });
+
+    var vidDone = 0;
+    for (var i = 1; i <= 100; i++) {
+      if (checked["vid_" + i]) vidDone += 1;
+    }
+
+    var sunoTotal = epItem.suno_count || 16;
+    var sunoDone = 0;
+    for (var s = 0; s < sunoTotal; s++) {
+      if (checked["suno_" + s]) sunoDone += 1;
+    }
+
+    var voTotal = epItem.vo_count || 10;
+    var voDone = 0;
+    for (var v = 0; v < voTotal; v++) {
+      if (checked["vo_" + v]) voDone += 1;
+    }
+
+    var pct = Math.round(((sopDone / sopTotal) * 70) + ((vidDone / 100) * 15) + ((sunoDone / sunoTotal) * 10) + ((voDone / voTotal) * 5));
+    if (sopDone === sopTotal && sopTotal > 0 && pct < 100 && vidDone === 0 && sunoDone === 0 && voDone === 0) {
+      pct = 100;
+    }
+    return {
+      pct: Math.min(100, pct),
+      sopDone: sopDone,
+      sopTotal: sopTotal,
+      vidDone: vidDone
+    };
+  }
+
+  function renderHeroesGrid() {
+    var container = document.getElementById("heroesGridContainer");
+    if (!container) return;
+
+    var totalWords = 0;
+    var sumPct = 0;
+
+    var cardsHtml = season.map(function (h) {
+      totalWords += (h.script_words || 0);
+      var prog = getEpisodeReadiness(h);
+      sumPct += prog.pct;
+      var conflict = CONFLICTS[h.ep] || h.role;
+
+      return [
+        "<article class=\"hero-card\" data-open-url=\"" + esc(h.page_url) + "\" tabindex=\"0\" role=\"link\" aria-label=\"Відкрити Мастер-Досьє: " + esc(h.name) + "\">",
+        "  <div class=\"hero-card-top\">",
+        "    <div class=\"hero-avatar-wrap\">",
+        "      <img src=\"" + esc(h.avatar) + "\" alt=\"" + esc(h.name) + "\" loading=\"lazy\">",
+        "      <span class=\"ep-num-badge\">EP " + esc(h.ep) + "</span>",
+        "    </div>",
+        "    <div class=\"hero-card-info\">",
+        "      <div class=\"hero-badges-line\">",
+        "        <span class=\"pill pill-purple\">" + esc(h.archetype) + "</span>",
+        "        <span class=\"pill pill-emerald\">" + esc(h.duration) + " • " + esc(h.bpm) + "</span>",
+        "      </div>",
+        "      <h3 class=\"hero-name\">" + esc(h.name) + " <span class=\"hero-latin-inline\">// " + esc(h.latin) + "</span></h3>",
+        "      <div class=\"hero-ep-title\">«" + esc(h.title) + "»</div>",
+        "      <div class=\"hero-role\">" + esc(h.role) + "</div>",
+        "    </div>",
+        "  </div>",
+
+        "  <div class=\"hero-conflict-box\">",
+        "    <strong>Точка опори та конфлікт:</strong> " + esc(conflict),
+        "  </div>",
+
+        "  <blockquote class=\"hero-quote-mini\">" + esc(h.key_quote) + "</blockquote>",
+
+        "  <div class=\"hero-metrics-strip\">",
+        "    <span>📝 <strong>" + esc(h.script_words) + "</strong> слів</span>",
+        "    <span>🎥 <strong>100</strong> промптів</span>",
+        "    <span>💬 <strong>100</strong> цитат</span>",
+        "    <span>🎵 <strong>" + esc(h.suno_count) + "</strong> Suno WAV</span>",
+        "  </div>",
+
+        "  <div class=\"hero-prog-row\">",
+        "    <div class=\"hero-prog-label\"><span>Прогрес алгоритму SOP (" + prog.sopDone + "/" + prog.sopTotal + ")</span><strong>" + prog.pct + "%</strong></div>",
+        "    <div class=\"hero-prog-bar\"><div class=\"hero-prog-fill\" style=\"width:" + prog.pct + "%\"></div></div>",
+        "  </div>",
+
+        "  <div class=\"hero-deep-links\" onclick=\"event.stopPropagation();\">",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#sop\" target=\"_blank\" rel=\"noopener\">🧭 Алгоритм дій</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#bio\" target=\"_blank\" rel=\"noopener\">🧬 Біографія</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#script\" target=\"_blank\" rel=\"noopener\">🎬 Сценарій</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#prompts\" target=\"_blank\" rel=\"noopener\">🎥 100 Промптів</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#quotes\" target=\"_blank\" rel=\"noopener\">💬 100 Цитат</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#davinci\" target=\"_blank\" rel=\"noopener\">🎚️ DaVinci 19</a>",
+        "  </div>",
+
+        "  <a class=\"hero-open-cta\" href=\"" + esc(h.page_url) + "\" target=\"_blank\" rel=\"noopener\" onclick=\"event.stopPropagation();\">",
+        "    <span>🚀 Відкрити персональну студію та Мастер-Досьє героя</span>",
+        "    <span>↗</span>",
+        "  </a>",
+        "</article>"
+      ].join("\n");
+    }).join("\n");
+
+    container.innerHTML = cardsHtml;
+
+    var avgPct = season.length ? Math.round(sumPct / season.length) : 0;
+    var statWords = document.getElementById("statTotalWords");
+    var statAvg = document.getElementById("statSeasonReadiness");
+    if (statWords) statWords.textContent = totalWords.toLocaleString("uk-UA") + " слів";
+    if (statAvg) statAvg.textContent = avgPct + "% SOP";
+
+    container.querySelectorAll(".hero-card").forEach(function (card) {
+      card.addEventListener("click", function () {
+        var url = card.getAttribute("data-open-url");
+        if (url) window.open(url, "_blank", "noopener");
+      });
+      card.addEventListener("keydown", function (ev) {
+        if (ev.key === "Enter" || ev.key === " ") {
+          ev.preventDefault();
+          var url = card.getAttribute("data-open-url");
+          if (url) window.open(url, "_blank", "noopener");
+        }
+      });
+    });
+
+    // Also populate sidebar quick hero links
+    var sideHeroes = document.getElementById("sidebarHeroLinks");
+    if (sideHeroes) {
+      sideHeroes.innerHTML = season.map(function (h) {
+        return [
+          "<a class=\"folder-row folder-row-link\" href=\"" + esc(h.page_url) + "\" target=\"_blank\" rel=\"noopener\">",
+          "  <span class=\"folder-name\" style=\"font-size:11px;\">👤 EP" + esc(h.ep) + " • " + esc(h.name) + "</span>",
+          "  <span class=\"folder-tag\" style=\"color:var(--cyan);\">Студія ↗</span>",
+          "</a>"
+        ].join("\n");
+      }).join("\n");
+    }
+  }
+
+  function renderSeasonRegistry() {
+    var tbody = document.getElementById("seasonRegistryBody");
+    if (!tbody) return;
+    tbody.innerHTML = season.map(function (h) {
+      var prog = getEpisodeReadiness(h);
+      return [
+        "<tr>",
+        "  <td><span class=\"pill pill-cyan\">EP " + esc(h.ep) + "</span></td>",
+        "  <td><strong>" + esc(h.name) + "</strong><div style=\"font-size:11px;color:var(--text-muted);\">" + esc(h.latin) + "</div></td>",
+        "  <td>«" + esc(h.title) + "»</td>",
+        "  <td style=\"max-width:290px;font-size:11.5px;color:var(--text-secondary);\">" + esc(CONFLICTS[h.ep] || "") + "</td>",
+        "  <td><span class=\"pill pill-emerald\">100% Готова база (Сценарій + 100 промптів + 100 цитат)</span></td>",
+        "  <td style=\"font-family:var(--mono);font-size:11.5px;\">" + prog.pct + "% (" + prog.sopDone + "/" + prog.sopTotal + ")</td>",
+        "  <td><a class=\"btn-mini-open\" href=\"" + esc(h.page_url) + "\" target=\"_blank\" rel=\"noopener\">Відкрити ↗</a></td>",
+        "</tr>"
+      ].join("\n");
+    }).join("\n");
+  }
+
+  function renderGlobalQuotes() {
+    var pillsWrap = document.getElementById("globalQuotesHeroPills");
+    var gridWrap = document.getElementById("globalQuotesGrid");
+    var countEl = document.getElementById("globalQuotesCount");
+    var moreBtn = document.getElementById("btnLoadMoreQuotes");
+    if (!pillsWrap || !gridWrap) return;
+
+    var pills = ["<button class=\"q-filter-btn" + (state.quoteHero === "all" ? " active" : "") + "\" data-qhero=\"all\">Усі 10 героїв (1,000)</button>"]
+      .concat(quotesDb.map(function (h) {
+        return "<button class=\"q-filter-btn" + (state.quoteHero === h.ep ? " active" : "") + "\" data-qhero=\"" + esc(h.ep) + "\">EP" + esc(h.ep) + " " + esc(h.name.split(" ").pop()) + " (100)</button>";
+      })).join("");
+    pillsWrap.innerHTML = pills;
+
+    pillsWrap.querySelectorAll("[data-qhero]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        state.quoteHero = b.getAttribute("data-qhero");
+        state.quoteLimit = 120;
+        renderGlobalQuotes();
+      });
+    });
+
+    var q = state.quoteQuery.trim().toLowerCase();
+    var flat = [];
+    quotesDb.forEach(function (hero) {
+      if (state.quoteHero !== "all" && hero.ep !== state.quoteHero) return;
+      (hero.quotes_100 || []).forEach(function (item) {
+        if (q) {
+          var hay = (item.text + " " + item.cat + " " + hero.name + " " + hero.latin).toLowerCase();
+          if (hay.indexOf(q) === -1) return;
+        }
+        flat.push({
+          ep: hero.ep,
+          heroName: hero.name,
+          pageUrl: hero.page_url,
+          num: item.num,
+          cat: item.cat,
+          text: item.text
+        });
+      });
+    });
+
+    if (countEl) {
+      countEl.innerHTML = "Знайдено цитат у базі: <strong>" + flat.length + "</strong> із 1,000";
+    }
+
+    var shown = flat.slice(0, state.quoteLimit);
+    gridWrap.innerHTML = shown.map(function (row, idx) {
+      return [
+        "<div class=\"g-quote-card\">",
+        "  <div class=\"g-quote-top\">",
+        "    <a class=\"pill pill-cyan\" href=\"" + esc(row.pageUrl) + "#quotes\" target=\"_blank\" rel=\"noopener\">EP" + esc(row.ep) + " • " + esc(row.heroName) + " #" + String(row.num).padStart(3, "0") + "</a>",
+        "    <span class=\"pill pill-purple\">" + esc(row.cat) + "</span>",
+        "  </div>",
+        "  <div class=\"g-quote-body\">" + esc(row.text) + "</div>",
+        "  <div style=\"display:flex;justify-content:flex-end;margin-top:auto;padding-top:6px;\">",
+        "    <button class=\"btn-copy-sm\" data-gcopy=\"" + idx + "\">📋 Копіювати</button>",
+        "  </div>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    gridWrap.querySelectorAll("[data-gcopy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-gcopy"), 10);
+        var r = shown[i];
+        if (r) copyText(r.text + " — " + r.heroName, "цитата EP" + r.ep + " #" + r.num);
+      });
+    });
+
+    if (moreBtn) {
+      if (flat.length > state.quoteLimit) {
+        moreBtn.style.display = "inline-flex";
+        moreBtn.textContent = "Показати ще (" + (flat.length - state.quoteLimit) + " цитат залишилось)";
+      } else {
+        moreBtn.style.display = "none";
+      }
+    }
+  }
+
+  function switchHubTab(tabId) {
+    var tabs = ["heroes", "architecture", "quotes", "standards", "registry"];
+    if (tabs.indexOf(tabId) === -1) tabId = "heroes";
+    state.tab = tabId;
+
+    document.querySelectorAll("[data-hub-tab]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-hub-tab") === tabId);
+    });
+    tabs.forEach(function (t) {
+      var el = document.getElementById("hub-pane-" + t);
+      if (el) el.classList.toggle("active", t === tabId);
+    });
+  }
+
+  function bindStaticActions() {
+    document.querySelectorAll("[data-hub-tab]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        switchHubTab(btn.getAttribute("data-hub-tab"));
+      });
+    });
+
+    var qInput = document.getElementById("globalQuotesSearch");
+    if (qInput) {
+      qInput.addEventListener("input", function () {
+        state.quoteQuery = qInput.value;
+        state.quoteLimit = 120;
+        renderGlobalQuotes();
+      });
+    }
+
+    var moreBtn = document.getElementById("btnLoadMoreQuotes");
+    if (moreBtn) {
+      moreBtn.addEventListener("click", function () {
+        state.quoteLimit += 200;
+        renderGlobalQuotes();
+      });
+    }
+
+    document.querySelectorAll("[data-copy-template]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var targetId = btn.getAttribute("data-copy-template");
+        var src = document.getElementById(targetId);
+        if (src) copyText(src.textContent.trim(), btn.getAttribute("data-label") || "шаблон");
+      });
+    });
+
+    var copyRepoBtn = document.getElementById("btnCopyRepoPath");
+    if (copyRepoBtn) {
+      copyRepoBtn.addEventListener("click", function () {
+        copyText("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast", "локальний шлях проєкту");
+      });
+    }
+
+    // Refresh progress bars automatically when returning from a hero tab!
+    window.addEventListener("storage", function () {
+      renderHeroesGrid();
+      renderSeasonRegistry();
+    });
+    window.addEventListener("focus", function () {
+      renderHeroesGrid();
+      renderSeasonRegistry();
+    });
+
+    var cTime = document.getElementById("cTime");
+    if (cTime) {
+      cTime.textContent = "Season 1 • 10 Episodes • 1,000 Prompts • 1,000 Quotes";
+    }
+  }
+
+  function init() {
+    renderHeroesGrid();
+    renderSeasonRegistry();
+    renderGlobalQuotes();
+    bindStaticActions();
+  }
+
+  init();
+})();
