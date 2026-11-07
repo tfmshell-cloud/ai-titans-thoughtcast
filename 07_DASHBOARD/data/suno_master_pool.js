@@ -4,119 +4,119 @@ window.SUNO_MASTER_POOL = [
     "orig_name": "Dusty Analog Reverie.wav",
     "smart_bin": "EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav",
     "preview": "01_dusty_analog_reverie.m4a",
-    "module": "Модуль A: Introspection",
+    "module": "Модуль A: Introspection (10/10)",
     "act": "Акт 1 (00:00–04:45)",
     "track": "A2 (Music 92 BPM)",
     "duration": "3:58",
-    "specs": "48 kHz • Peak -4.3 dB • RMS -17.0 dB • ~92 BPM",
-    "usage": "Універсальне відкриття серії + EP01 Акт 1 (дитинство, Mac LC II, теплий Rhodes і вінілове зерно)."
+    "specs": "Вініл 0:00 • Біт 0:06 • Чиста гітара 0:22 • Дзвіночки 1:49",
+    "usage": "ЕТАЛОН ПІД ГОЛОС (10/10): ідеальна частотна ямка в середині під баритон, делікатний trip-hop у дусі Bonobo/Tycho і м'який фейд-аут з 3:50."
   },
   {
     "num": "02",
     "orig_name": "Warm Analog Pulse-2.wav",
     "smart_bin": "EP01_MUS_03_ACT1_92BPM_StLouis_Conformity.wav",
     "preview": "02_warm_analog_pulse_2.m4a",
-    "module": "Модуль A: Introspection",
+    "module": "Модуль A: Introspection (10/10)",
     "act": "Акт 1 (Розвиток)",
     "track": "A2 (Music 92 BPM)",
     "duration": "4:14",
-    "specs": "48 kHz • Peak -4.8 dB • RMS -17.3 dB • ~91-92 BPM",
-    "usage": "Рівний аналоговий пульс для біографічного становлення (школа Сент-Луїса, Стенфорд, ранні роки героїв)."
+    "specs": "Rhodes 0:00 • Біт+бас 0:21 • Гітара 0:36 • Соло піаніно 3:53–4:14",
+    "usage": "ЕТАЛОН ОПОВІДІ (10/10): оксамитовий грув у стилі Air/Pink Floyd без частотних конфліктів із диктором + розкішна тиха кінцівка піаніно (3:53–4:14)."
   },
   {
     "num": "03",
     "orig_name": "Warm Analog Pulse.wav",
     "smart_bin": "EP01_MUS_04_ACT1_92BPM_Stanford_Loopt_Grind.wav",
     "preview": "03_warm_analog_pulse_1.m4a",
-    "module": "Модуль A: Introspection (Half-time)",
-    "act": "Акт 1 / Містки",
+    "module": "Модуль A: Melancholic (9.5/10)",
+    "act": "Акт 1 / Самотність",
     "track": "A2 (Music)",
     "duration": "3:58",
-    "specs": "48 kHz • Peak -4.8 dB • RMS -16.6 dB • Розріджений грув",
-    "usage": "М'який рефлексивний варіант для спокійних переходів і тривалої рутинної праці (Loopt, пральня, майстерня)."
+    "specs": "Біт 0:06 • Слайд-гітара 0:15 • Високе піаніно 0:20, 1:18 • Спад 3:44",
+    "usage": "Глибока меланхолія (9.5/10): ідеально лягає під голос у сценах ранніх труднощів (Loopt, нічні зміни в Denny's у Хуанга, хімчистка у Фей-Фей Лі)."
   },
   {
     "num": "04",
     "orig_name": "Clockwork Dread.wav",
     "smart_bin": "EP01_MUS_05_ACT2_92BPM_Exponential_Law.wav",
     "preview": "04_clockwork_dread_1.m4a",
-    "module": "Модуль B: Tension & Crisis",
-    "act": "Акт 2 (04:45–10:00)",
-    "track": "A2 (Music 92 BPM)",
+    "module": "Модуль B: Cyberpunk/Industrial (7/10)",
+    "act": "Акт 3 (Хірургічна нарізка!)",
+    "track": "A2 (Тільки інтро/брейк або EQ!)",
     "duration": "3:33",
-    "specs": "48 kHz • Peak -5.0 dB • RMS -15.9 dB • Clockwork Beat",
-    "usage": "Годинникова металева перкусія, модульний синт і саксофонний дрон: наукова ізоляція, ставки Y Combinator / OpenAI."
+    "specs": "VO-зони: 0:00–0:38 та 2:15–2:34 | Важкий дроп (гітари+сакс): 1:33–2:14, 2:36–3:19",
+    "usage": "УВАГА НА МОНТАЖІ: інтро з годинником і хрипким саксофоном (0:00–0:38) та тикаючий брейкдаун (2:15–2:34) — супер під голос; але на 1:33 вривається важкий кіберпанк-рок (брати лише на безсловесні перебивки або різати Low-Pass 1.4 kHz)."
   },
   {
     "num": "05",
     "orig_name": "Clockwork Dread-2.wav",
     "smart_bin": "EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav",
     "preview": "05_clockwork_dread_2.m4a",
-    "module": "Модуль B: Tension Climax",
-    "act": "Акт 3 (10:00–16:00)",
-    "track": "A2 (Music -10dB + Ducking)",
+    "module": "Модуль B: Industrial Synthwave (7.5/10)",
+    "act": "Акт 3 (Хірургічна нарізка!)",
+    "track": "A2 (Інтро/брейк + Ducking)",
     "duration": "3:33",
-    "specs": "48 kHz • Peak -4.1 dB • RMS -14.0 dB • Висока щільність",
-    "usage": "Кульмінаційна битва: 120 годин корпоративного бунту в OpenAI, ставка на CUDA у Хуанга, вибух AlexNet."
+    "specs": "VO-зони: 0:00–0:45 та 2:32–2:46, 3:14–3:32 | Густий синтвейв+сакс: 1:47–2:30",
+    "usage": "Трохи стриманіший за Dread-1: годинниковий пульс 0:09–0:45 та мінімалістичне арпеджіо 2:32–2:46 шикарні під саспенс перевороту; активну фазу 1:47–2:30 ставити на монтаж заголовків без диктора."
   },
   {
     "num": "06",
     "orig_name": "Deep Water Pressure.wav",
     "smart_bin": "EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav",
     "preview": "06_deep_water_pressure.m4a",
-    "module": "Атмосферний Дрон (AMB)",
-    "act": "Акти 2–3 (Криза)",
-    "track": "A3 (Ambience / Drone)",
+    "module": "ГОЛОВНИЙ САСПЕНС АКТУ 2 (10/10!)",
+    "act": "Акти 2–3 (Під голос диктора)",
+    "track": "A2 / A3 (Основна напруга)",
     "duration": "3:49",
-    "specs": "48 kHz • Peak -3.9 dB • RMS -16.7 dB • Sub-Drone",
-    "usage": "Глибоководний тиск для доріжки A3: «запас кисню стартапу» (EP01), 30 днів до банкрутства (EP02), зима ШІ (EP04)."
+    "specs": "Пульс+саб-кік 0:06 • Скляні ноти 1:33 • Теплий брасс 2:08 • Невагома яма 2:32–2:58",
+    "usage": "ГОЛОВНА ЗНАХІДКА ПРОСЛУХОВУВАННЯ (10/10): це стиль Trent Reznor («Соціальна мережа» / «Mr. Robot»)! Тримає колосальний інтелектуальний нерв і на 100% чистий для баритона диктора."
   },
   {
     "num": "07",
     "orig_name": "Monumental Silence.wav",
     "smart_bin": "EP01_AMB_10_ACT3_DRONE_The_Firing_Silence.wav",
     "preview": "07_monumental_silence.m4a",
-    "module": "Модуль C / AMB Bridge",
-    "act": "Злам Акту 3 → Акт 4",
-    "track": "A2 / A3 (92 BPM)",
+    "module": "Модуль C: Hans Zimmer Epic (9/10)",
+    "act": "Акт 4 (Тріумф, НЕ тиша!)",
+    "track": "A2 (Кульмінація фіналу)",
     "duration": "3:33",
-    "specs": "48 kHz • Peak -6.1 dB • RMS -18.7 dB • ~92 BPM",
-    "usage": "Шокова тиша після дзвінка ради директорів (EP01) + ідеальна головна тема для EP06 (Ілля Суцкевер — «Монастир тиші SSI»)."
+    "specs": "Тиша лише 0:00–0:20 та 3:12–3:32 | Потужний оркестр + барабани: 0:42–3:10",
+    "usage": "ВАЖЛИВА КОРЕКЦІЯ ПІСЛЯ ПРОСЛУХОВУВАННЯ: попри назву Silence, з 0:42 це грандіозний оркестровий гімн рівня Interstellar/Time! Ставити на тріумфальне повернення Акту 4 (а для тиші звільнення брати 0:00–0:20 або 3:12–3:32)."
   },
   {
     "num": "08",
     "orig_name": "Celestial Ascent.wav",
     "smart_bin": "EP01_MUS_13_ACT4_92BPM_Stargate_Energy_Scale.wav",
     "preview": "08_celestial_ascent_1.m4a",
-    "module": "Модуль C: Transcendence",
-    "act": "Акт 4 (16:00–18:30)",
-    "track": "A2 (Music 92 BPM)",
+    "module": "Модуль C: Sci-Fi Optimism (8.5/10)",
+    "act": "Акт 4 (Техно-прорив)",
+    "track": "A2 (Music)",
     "duration": "3:35",
-    "specs": "48 kHz • Peak -4.5 dB • RMS -19.0 dB • Vangelis Brass",
-    "usage": "Урочисті аналогові синтезатори: вихід на орбіту майбутнього, проєкт Stargate, термоядерна енергія."
+    "specs": "Vangelis 0:00 • Соло скрипки 0:22 • Енергійний біт 1:05 • Тихе піаніно 3:15–3:34",
+    "usage": "Яскравий, світлий оркестрово-електронний рух уперед: сольна скрипка на 0:22 і драйвовий ритм з 1:05 — чудово під проєкт Stargate, масштабування обчислень та фінал Ендрю Ина."
   },
   {
     "num": "09",
     "orig_name": "Celestial Ascent-2.wav",
     "smart_bin": "EP01_MUS_14_ACT4_92BPM_Builders_Code_Philosophy.wav",
     "preview": "09_celestial_ascent_2.m4a",
-    "module": "Модуль C: Transcendence",
+    "module": "Модуль C: Emotional Strings (9/10)",
     "act": "Акт 4 (Кодекс творця)",
-    "track": "A2 (Music 92 BPM)",
+    "track": "A2 (Music)",
     "duration": "3:40",
-    "specs": "48 kHz • Peak -3.8 dB • RMS -18.2 dB • IMAX Scale",
-    "usage": "Широка космічна панорама для 3 світоглядних законів героя та Нобелівських фіналів (Гассабіс, Хінтон)."
+    "specs": "Драматична скрипка 0:23–0:41 • Стаккато+біт 0:44 • Прозоре піаніно 1:50–2:06",
+    "usage": "Пронизливе струнне соло на 0:23 (мурахи по шкірі!) та ідеально прозора фортепіанна яма на 1:50–2:06 прямо під озвучення «3 філософських законів героя»."
   },
   {
     "num": "10",
     "orig_name": "Celestial Ascent-3.wav",
     "smart_bin": "EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav",
     "preview": "10_celestial_ascent_3.m4a",
-    "module": "Модуль C: Transcendence (Finale)",
+    "module": "Модуль C: Grand Finale (9.5/10)",
     "act": "Фінальний катарсис / Титри",
-    "track": "A2 (Music 92 BPM)",
+    "track": "A2 (Music)",
     "duration": "3:35",
-    "specs": "48 kHz • Peak -6.8 dB • RMS -18.3 dB • М'який фінал",
-    "usage": "Найделікатніший за піками (-6.8 dB) трек: залишає максимум простору для фінальної фрази диктора перед тишею."
+    "specs": "Повільний вступ 0:00–0:42 • Кришталевий рояль 2:03–2:26 • М'який фінал 3:08–3:34",
+    "usage": "НАЙКРАЩИЙ ФІНАЛ СЕРІЇ (9.5/10): найшляхетніша широка оркестрова хода, геніальна фортепіанна пауза 2:03–2:26 перед фінальним злетом і ніжне згасання під останню фразу диктора."
   }
 ];
