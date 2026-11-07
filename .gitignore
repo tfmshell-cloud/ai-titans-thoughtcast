@@ -22,6 +22,9 @@ ENV/
 05_RAW_FOOTAGE/flow_renders/*.mov
 05_RAW_FOOTAGE/archives/*
 !05_RAW_FOOTAGE/archives/.gitkeep
+05_RAW_FOOTAGE/dossiers_press/*.png
+05_RAW_FOOTAGE/speaker_portraits/*.jpg
+05_RAW_FOOTAGE/speaker_portraits/*.png
 
 # DaVinci Resolve cache & projects autosaves
 *.gallery

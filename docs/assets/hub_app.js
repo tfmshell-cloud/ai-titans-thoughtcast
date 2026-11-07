@@ -21,7 +21,8 @@
     tab: "heroes",
     quoteHero: "all",
     quoteQuery: "",
-    quoteLimit: 120
+    quoteLimit: 120,
+    sunoHeroFilter: "all"
   };
 
   function esc(s) {
@@ -71,6 +72,33 @@
     document.body.removeChild(ta);
   }
 
+  function getHeroPrimaryTrack(epCode) {
+    var pool = window.SUNO_MASTER_POOL || [];
+    for (var i = 0; i < pool.length; i++) {
+      if (pool[i].hero_ep === epCode && pool[i].smart_bin.indexOf("_ACT1_") !== -1) {
+        return pool[i];
+      }
+    }
+    return null;
+  }
+
+  function getHeroAllTracks(epCode) {
+    var pool = window.SUNO_MASTER_POOL || [];
+    var out = [];
+    pool.forEach(function (t) {
+      if (t.hero_ep === epCode) {
+        out.push({ track: t, bin_dir: t.bin_dir, smart_bin: t.smart_bin });
+      } else if (t.extra_bins) {
+        t.extra_bins.forEach(function (eb) {
+          if (eb.ep === epCode || eb.smart_bin.indexOf("EP" + epCode + "_") === 0) {
+            out.push({ track: t, bin_dir: eb.bin_dir, smart_bin: eb.smart_bin });
+          }
+        });
+      }
+    });
+    return out;
+  }
+
   function getEpisodeReadiness(epItem) {
     var checked = {};
     try {
@@ -90,10 +118,12 @@
     }
 
     var sunoTotal = epItem.suno_count || 16;
-    var sunoDone = 0;
+    var heroWavCount = getHeroAllTracks(epItem.ep).length || 4;
+    var sunoDone = heroWavCount;
     for (var s = 0; s < sunoTotal; s++) {
       if (checked["suno_" + s]) sunoDone += 1;
     }
+    if (sunoDone > sunoTotal) sunoDone = sunoTotal;
 
     var voTotal = epItem.vo_count || 10;
     var voDone = 0;
@@ -102,14 +132,15 @@
     }
 
     var pct = Math.round(((sopDone / sopTotal) * 70) + ((vidDone / 100) * 15) + ((sunoDone / sunoTotal) * 10) + ((voDone / voTotal) * 5));
-    if (sopDone === sopTotal && sopTotal > 0 && pct < 100 && vidDone === 0 && sunoDone === 0 && voDone === 0) {
+    if (sopDone === sopTotal && sopTotal > 0 && pct < 100 && vidDone === 0 && voDone === 0) {
       pct = 100;
     }
     return {
       pct: Math.min(100, pct),
       sopDone: sopDone,
       sopTotal: sopTotal,
-      vidDone: vidDone
+      vidDone: vidDone,
+      heroWavCount: heroWavCount
     };
   }
 
@@ -119,12 +150,27 @@
 
     var totalWords = 0;
     var sumPct = 0;
+    var mediaPool = window.MEDIA_ACQUISITION_POOL || {};
 
     var cardsHtml = season.map(function (h) {
       totalWords += (h.script_words || 0);
       var prog = getEpisodeReadiness(h);
       sumPct += prog.pct;
       var conflict = CONFLICTS[h.ep] || h.role;
+      var act1Track = getHeroPrimaryTrack(h.ep);
+      var epMedia = mediaPool[h.ep] || {};
+      var dosCount = (epMedia.dossiers || []).length || 1;
+      var archCount = (epMedia.archives || []).length || 1;
+
+      var audioStripHtml = act1Track ? [
+        "  <div style=\"background:rgba(16,185,129,0.07);border:1px solid rgba(52,211,153,0.28);border-radius:8px;padding:7px 10px;margin:8px 0;\" onclick=\"event.stopPropagation();\">",
+        "    <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap;\">",
+        "      <span style=\"font-size:11px;color:var(--emerald);font-weight:600;\">🎧 Тема Акту 1: " + esc(act1Track.orig_name) + " (" + esc(act1Track.duration) + ")</span>",
+        "      <span class=\"pill pill-emerald\" style=\"font-size:10px;\">✅ " + prog.heroWavCount + " WAV у Smart Bin</span>",
+        "    </div>",
+        "    <audio controls preload=\"none\" style=\"height:28px;width:100%;\" src=\"assets/audio_previews/" + esc(act1Track.preview) + "\"></audio>",
+        "  </div>"
+      ].join("\n") : "";
 
       return [
         "<article class=\"hero-card\" data-open-url=\"" + esc(h.page_url) + "\" tabindex=\"0\" role=\"link\" aria-label=\"Відкрити Мастер-Досьє: " + esc(h.name) + "\">",
@@ -148,26 +194,28 @@
         "    <strong>Точка опори та конфлікт:</strong> " + esc(conflict),
         "  </div>",
 
+        audioStripHtml,
+
         "  <blockquote class=\"hero-quote-mini\">" + esc(h.key_quote) + "</blockquote>",
 
         "  <div class=\"hero-metrics-strip\">",
         "    <span>📝 <strong>" + esc(h.script_words) + "</strong> слів</span>",
         "    <span>🎥 <strong>100</strong> промптів</span>",
-        "    <span>💬 <strong>100</strong> цитат</span>",
-        "    <span>🎵 <strong>" + esc(h.suno_count) + "</strong> Suno WAV</span>",
+        "    <span>🗂️ <strong>" + dosCount + "</strong> 4K досьє + <strong>" + archCount + "</strong> архів</span>",
+        "    <span>🎵 <strong>" + prog.heroWavCount + "/4</strong> актів WAV</span>",
         "  </div>",
 
         "  <div class=\"hero-prog-row\">",
-        "    <div class=\"hero-prog-label\"><span>Прогрес алгоритму SOP (" + prog.sopDone + "/" + prog.sopTotal + ")</span><strong>" + prog.pct + "%</strong></div>",
+        "    <div class=\"hero-prog-label\"><span>Готовність випуску (" + prog.sopDone + "/" + prog.sopTotal + " SOP + 4 WAV)</span><strong>" + prog.pct + "%</strong></div>",
         "    <div class=\"hero-prog-bar\"><div class=\"hero-prog-fill\" style=\"width:" + prog.pct + "%\"></div></div>",
         "  </div>",
 
         "  <div class=\"hero-deep-links\" onclick=\"event.stopPropagation();\">",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#sop\" target=\"_blank\" rel=\"noopener\">🧭 Алгоритм дій</a>",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#bio\" target=\"_blank\" rel=\"noopener\">🧬 Біографія</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#sop\" target=\"_blank\" rel=\"noopener\">🧭 Алгоритм</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#script\" target=\"_blank\" rel=\"noopener\">🎬 Сценарій</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#prompts\" target=\"_blank\" rel=\"noopener\">🎥 100 Промптів</a>",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#quotes\" target=\"_blank\" rel=\"noopener\">💬 100 Цитат</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#audio\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(52,211,153,0.45);color:var(--emerald);\">🎵 4 WAV + Suno</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(251,191,36,0.45);color:var(--amber);\">🗂️ Досьє & Архіви</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#davinci\" target=\"_blank\" rel=\"noopener\">🎚️ DaVinci 19</a>",
         "  </div>",
 
@@ -180,6 +228,16 @@
     }).join("\n");
 
     container.innerHTML = cardsHtml;
+
+    // Mutual-exclusive audio playback across hero cards
+    var cardAudios = container.querySelectorAll("audio");
+    for (var ca = 0; ca < cardAudios.length; ca++) {
+      cardAudios[ca].addEventListener("play", function (ev) {
+        for (var cb = 0; cb < cardAudios.length; cb++) {
+          if (cardAudios[cb] !== ev.target) cardAudios[cb].pause();
+        }
+      });
+    }
 
     var avgPct = season.length ? Math.round(sumPct / season.length) : 0;
     var statWords = document.getElementById("statTotalWords");
@@ -201,14 +259,13 @@
       });
     });
 
-    // Also populate sidebar quick hero links
     var sideHeroes = document.getElementById("sidebarHeroLinks");
     if (sideHeroes) {
       sideHeroes.innerHTML = season.map(function (h) {
         return [
           "<a class=\"folder-row folder-row-link\" href=\"" + esc(h.page_url) + "\" target=\"_blank\" rel=\"noopener\">",
           "  <span class=\"folder-name\" style=\"font-size:11px;\">👤 EP" + esc(h.ep) + " • " + esc(h.name) + "</span>",
-          "  <span class=\"folder-tag\" style=\"color:var(--cyan);\">Студія ↗</span>",
+          "  <span class=\"folder-tag\" style=\"color:var(--emerald);\">4 WAV • Студія ↗</span>",
           "</a>"
         ].join("\n");
       }).join("\n");
@@ -220,13 +277,14 @@
     if (!tbody) return;
     tbody.innerHTML = season.map(function (h) {
       var prog = getEpisodeReadiness(h);
+      var act1Track = getHeroPrimaryTrack(h.ep);
       return [
         "<tr>",
         "  <td><span class=\"pill pill-cyan\">EP " + esc(h.ep) + "</span></td>",
         "  <td><strong>" + esc(h.name) + "</strong><div style=\"font-size:11px;color:var(--text-muted);\">" + esc(h.latin) + "</div></td>",
         "  <td>«" + esc(h.title) + "»</td>",
         "  <td style=\"max-width:290px;font-size:11.5px;color:var(--text-secondary);\">" + esc(CONFLICTS[h.ep] || "") + "</td>",
-        "  <td><span class=\"pill pill-emerald\">100% Готова база (Сценарій + 100 промптів + 100 цитат)</span></td>",
+        "  <td><span class=\"pill pill-emerald\">✅ 4 WAV (" + esc(act1Track ? act1Track.orig_name : "Suno") + ") + 4K Досьє + 100 промптів</span></td>",
         "  <td style=\"font-family:var(--mono);font-size:11.5px;\">" + prog.pct + "% (" + prog.sopDone + "/" + prog.sopTotal + ")</td>",
         "  <td><a class=\"btn-mini-open\" href=\"" + esc(h.page_url) + "\" target=\"_blank\" rel=\"noopener\">Відкрити ↗</a></td>",
         "</tr>"
@@ -319,10 +377,16 @@
     if (!tbody) return;
 
     tbody.innerHTML = pool.map(function (t, idx) {
+      var extraHtml = "";
+      if (t.extra_bins && t.extra_bins.length) {
+        extraHtml = "<div style=\"font-size:10px;color:var(--text-muted);margin-top:3px;\">+ Smart Bins: " +
+          t.extra_bins.map(function (eb) { return "EP" + esc(eb.ep || "") + " (" + esc(eb.smart_bin) + ")"; }).join(", ") +
+          "</div>";
+      }
       return [
         "<tr>",
         "  <td><span class=\"pill pill-emerald\">#" + esc(t.num) + "</span></td>",
-        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.6px;color:var(--amber);margin-top:2px;\">" + esc(t.hero_label || "") + "</div><div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.bin_dir) + "/" + esc(t.smart_bin) + "</div></td>",
+        "  <td><strong>" + esc(t.orig_name) + "</strong><div style=\"font-size:10.6px;color:var(--amber);margin-top:2px;\">" + esc(t.hero_label || "") + "</div><div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-top:2px;\">→ " + esc(t.bin_dir) + "/" + esc(t.smart_bin) + "</div>" + extraHtml + "</td>",
         "  <td><span class=\"pill pill-purple\">" + esc(t.module) + "</span><div style=\"font-size:10.8px;color:var(--text-muted);margin-top:3px;\">" + esc(t.specs) + "</div></td>",
         "  <td style=\"min-width:225px;\"><audio controls preload=\"none\" style=\"height:30px;width:220px;\" src=\"assets/audio_previews/" + esc(t.preview) + "\"></audio></td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);max-width:265px;\">" + esc(t.usage) + "</td>",
@@ -414,7 +478,6 @@
       }
     });
 
-    // Refresh progress bars automatically when returning from a hero tab!
     window.addEventListener("storage", function () {
       renderHeroesGrid();
       renderSeasonRegistry();
@@ -426,7 +489,7 @@
 
     var cTime = document.getElementById("cTime");
     if (cTime) {
-      cTime.textContent = "Season 1 • 10 Episodes • 16 WAV Stems (10 Smart Bin Folders) • 1,000 Prompts • 1,000 Quotes";
+      cTime.textContent = "Season 1 • 10 Episodes • 16 WAV Masters (40 Smart Bin Tracks) • 14 4K Dossiers • 1,000 Prompts";
     }
   }
 

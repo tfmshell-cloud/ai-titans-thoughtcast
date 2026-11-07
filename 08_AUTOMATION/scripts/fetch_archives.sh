@@ -1,0 +1,167 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# Cinematic Thoughtcast // AI Titans — Точковий завантажувач архівного B-Roll
+# Автоматично вирізає 5–12 секундні фрагменти у 4K/1080p MP4 без перекодування
+# або з точною підрізкою по ключових кадрах під DaVinci Resolve Studio (24 fps).
+#
+# Приклади запуску:
+#   ./08_AUTOMATION/scripts/fetch_archives.sh --starter   # Швидкий стартовий пул (EP01 + класика ШІ)
+#   ./08_AUTOMATION/scripts/fetch_archives.sh --ep EP01   # Усі куровані архіви конкретного епізоду (EP01..EP10)
+#   ./08_AUTOMATION/scripts/fetch_archives.sh --all       # Повний сезонний пул (усі 10 епізодів)
+#   ./08_AUTOMATION/scripts/fetch_archives.sh --custom "URL" "00:12:10-00:12:18" "EP01_VID_ARCH_99_ACT3_24FPS_Custom"
+# ==============================================================================
+set -euo pipefail
+
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$REPO_DIR"
+
+export PATH="$HOME/Library/Python/3.9/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+ARCHIVE_DIR="05_RAW_FOOTAGE/archives"
+mkdir -p "$ARCHIVE_DIR"
+
+if ! command -v yt-dlp >/dev/null 2>&1; then
+  echo "[!] yt-dlp не знайдено. Встановіть командою: python3 -m pip install --user yt-dlp imageio-ffmpeg"
+  exit 1
+fi
+
+FFMPEG_BIN="$(command -v ffmpeg || true)"
+if [[ -z "$FFMPEG_BIN" ]]; then
+  FFMPEG_BIN="$(python3 -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())' 2>/dev/null || true)"
+fi
+
+if [[ -z "$FFMPEG_BIN" ]]; then
+  echo "[!] ffmpeg не знайдено. Встановіть командою: python3 -m pip install --user imageio-ffmpeg"
+  exit 1
+fi
+
+echo "[*] Каталог архівів: $REPO_DIR/$ARCHIVE_DIR"
+echo "[*] Використовується yt-dlp: $(command -v yt-dlp)"
+echo "[*] Використовується ffmpeg: $FFMPEG_BIN"
+
+# Функція точкового скачування відрізка часу:
+# fetch_clip "URL" "START-END" "FILENAME_NO_EXT"
+fetch_clip() {
+  local url="$1"
+  local section="$2"
+  local output="$3"
+  local target_mp4="${ARCHIVE_DIR}/${output}.mp4"
+
+  if [[ -s "$target_mp4" ]]; then
+    echo " [✓] Вже існує, пропускаємо: $target_mp4"
+    return 0
+  fi
+
+  echo " [→] Завантаження фрагмента: $output ($section)"
+  yt-dlp \
+    --ffmpeg-location "$FFMPEG_BIN" \
+    --no-playlist \
+    --quiet --no-warnings --progress \
+    -f "bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]/best[height<=2160][ext=mp4]/best" \
+    --merge-output-format mp4 \
+    --download-sections "*${section}" \
+    --force-keyframes-at-cuts \
+    -o "${ARCHIVE_DIR}/${output}.%(ext)s" \
+    "$url" || {
+      echo " [!] Попередження: не вдалося завантажити $output з $url (перевірте доступність джерела)."
+      return 0
+    }
+}
+
+run_ep01() {
+  # EP01 — Сем Альтман: Слухання у Сенаті США (16.05.2023 — Public Domain уряду США) + Вінтажний Apple Mac 1992
+  fetch_clip "https://www.youtube.com/watch?v=TO0J2Yw7usM" "00:29:10-00:29:18" "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup"
+  fetch_clip "https://www.youtube.com/watch?v=TO0J2Yw7usM" "00:31:05-00:31:13" "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement"
+  fetch_clip "https://www.youtube.com/watch?v=5Vt0U9rYqkg" "00:00:04-00:00:12" "EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT"
+}
+
+run_ep02() {
+  # EP02 — Дженсен Хуанг: NVIDIA GTC Blackwell Keynote & Silicon Wafer
+  fetch_clip "https://www.youtube.com/watch?v=_waPvOwL9Z8" "00:14:20-00:14:28" "EP02_VID_ARCH_01_ACT3_24FPS_Huang_GTC_Stage_Walk"
+  fetch_clip "https://www.youtube.com/watch?v=_waPvOwL9Z8" "00:46:10-00:46:18" "EP02_VID_ARCH_02_ACT3_24FPS_Huang_Blackwell_Wafer_Reveal"
+}
+
+run_ep03() {
+  # EP03 — Деміс Гассабіс: Нобелівська лекція 2024 + документальний фільм AlphaGo (Move 37 в Сеулі)
+  fetch_clip "https://www.youtube.com/watch?v=YtPaZsasmNA" "00:02:15-00:02:23" "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024"
+  fetch_clip "https://www.youtube.com/watch?v=WXuK6gekU1Y" "00:51:20-00:51:28" "EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction"
+}
+
+run_ep04() {
+  # EP04 — Джеффрі Хінтон: Промова на Нобелівському банкеті з фізики 2024
+  fetch_clip "https://www.youtube.com/watch?v=-f5WQAk3dYo" "00:00:35-00:00:43" "EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024"
+}
+
+run_ep05() {
+  # EP05 — Ян Лекун: Історична демонстрація LeNet-1 у Bell Labs (1989–1993, офіційний архів Лекуна)
+  fetch_clip "https://www.youtube.com/watch?v=FwFduRA_L6Q" "00:00:12-00:00:20" "EP05_VID_ARCH_01_ACT2_24FPS_LeCun_BellLabs_1989_Digits"
+}
+
+run_ep06() {
+  # EP06 — Ілля Суцкевер: Лекція в Інституті Саймонса (Берклі) про генералізацію та стиснення
+  fetch_clip "https://www.youtube.com/watch?v=AKMuA_TVz3A" "00:03:10-00:03:18" "EP06_VID_ARCH_01_ACT2_24FPS_Sutskever_Simons_Lecture"
+}
+
+run_ep07() {
+  # EP07 — Даріо Амодей: Свідчення у Юридичному комітеті Сенату США (25.07.2023 — Public Domain)
+  fetch_clip "https://www.youtube.com/watch?v=yBgvqGrJ3g8" "00:36:15-00:36:23" "EP07_VID_ARCH_01_ACT3_24FPS_Amodei_Senate_Biosecurity_Hearing"
+}
+
+run_ep08() {
+  # EP08 — Фей-Фей Лі: Знакова доповідь про створення ImageNet та комп'ютерний зір
+  fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:06:30-00:06:38" "EP08_VID_ARCH_01_ACT2_24FPS_FeiFeiLi_ImageNet_Stage"
+}
+
+run_ep09() {
+  # EP09 — Йошуа Бенжіо: Свідчення у Сенаті США щодо екзистенційних ризиків ШІ (25.07.2023 — Public Domain)
+  fetch_clip "https://www.youtube.com/watch?v=hm1zexCjELo" "00:27:40-00:27:48" "EP09_VID_ARCH_01_ACT3_24FPS_Bengio_Senate_Testimony"
+}
+
+run_ep10() {
+  # EP10 — Ендрю Ин: Класична лекція Stanford CS229 Machine Learning біля зеленої дошки
+  fetch_clip "https://www.youtube.com/watch?v=jGwO_UgTS7I" "00:01:40-00:01:48" "EP10_VID_ARCH_01_ACT2_24FPS_AndrewNg_Stanford_CS229_Chalkboard"
+}
+
+MODE="${1:---starter}"
+
+case "$MODE" in
+  --starter)
+    run_ep01
+    run_ep04
+    run_ep05
+    ;;
+  --ep)
+    EP_CODE="${2:-EP01}"
+    case "$EP_CODE" in
+      EP01|01) run_ep01 ;;
+      EP02|02) run_ep02 ;;
+      EP03|03) run_ep03 ;;
+      EP04|04) run_ep04 ;;
+      EP05|05) run_ep05 ;;
+      EP06|06) run_ep06 ;;
+      EP07|07) run_ep07 ;;
+      EP08|08) run_ep08 ;;
+      EP09|09) run_ep09 ;;
+      EP10|10) run_ep10 ;;
+      *) echo "Невідомий код епізоду: $EP_CODE (використовуйте EP01..EP10)"; exit 1 ;;
+    esac
+    ;;
+  --all)
+    run_ep01; run_ep02; run_ep03; run_ep04; run_ep05
+    run_ep06; run_ep07; run_ep08; run_ep09; run_ep10
+    ;;
+  --custom)
+    if [[ $# -lt 4 ]]; then
+      echo "Використання: $0 --custom \"URL\" \"00:01:00-00:01:08\" \"EP01_VID_ARCH_Custom\""
+      exit 1
+    fi
+    fetch_clip "$2" "$3" "$4"
+    ;;
+  *)
+    echo "Невідомий режим: $MODE. Доступні: --starter | --ep EP01..EP10 | --all | --custom"
+    exit 1
+    ;;
+esac
+
+echo "[✓] Завантаження архівного пулу в $ARCHIVE_DIR завершено."
+ls -lh "$ARCHIVE_DIR"/*.mp4 2>/dev/null || true

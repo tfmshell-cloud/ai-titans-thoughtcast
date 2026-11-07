@@ -1,0 +1,85 @@
+{
+	Tools = ordered() {
+		ThoughtcastSwissQuoteCard = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "QuoteText",
+					Source = "StyledText",
+					Name = "Quote / Title Text",
+				},
+				InputFont = InstanceInput {
+					SourceOp = "QuoteText",
+					Source = "Font",
+					ControlGroup = 2,
+					Default = "Helvetica Neue",
+				},
+				InputSize = InstanceInput {
+					SourceOp = "QuoteText",
+					Source = "Size",
+					Default = 0.036,
+				},
+				InputTracking = InstanceInput {
+					SourceOp = "QuoteText",
+					Source = "CharacterSpacingClone",
+					Name = "Swiss Tracking (+0.04)",
+					Default = 1.04,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "SoftGlowMerge",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				DarkBackdrop = Background {
+					Inputs = {
+						Width = Input { Value = 3840, },
+						Height = Input { Value = 2160, },
+						TopLeftAlpha = Input { Value = 0.0, },
+					},
+				},
+				QuoteText = TextPlus {
+					Inputs = {
+						Width = Input { Value = 3840, },
+						Height = Input { Value = 2160, },
+						StyledText = Input { Value = "АРХІТЕКТОРИ РОЗУМУ // ЕПІЗОД 01\nСЕМ АЛЬТМАН", },
+						Font = Input { Value = "Helvetica Neue", },
+						Style = Input { Value = "Medium", },
+						Size = Input { Value = 0.036, },
+						CharacterSpacingClone = Input { Value = 1.04, },
+						LineSpacingClone = Input { Value = 1.35, },
+						Red1 = Input { Value = 0.94, },
+						Green1 = Input { Value = 0.95, },
+						Blue1 = Input { Value = 0.97, },
+					},
+				},
+				EntryBlur = Blur {
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						XBlurSize = Input { Value = 0.0, },
+						Input = Input {
+							SourceOp = "QuoteText",
+							Source = "Output",
+						},
+					},
+				},
+				SoftGlowMerge = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "DarkBackdrop",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "EntryBlur",
+							Source = "Output",
+						},
+					},
+				},
+			},
+		}
+	},
+	ActiveTool = "ThoughtcastSwissQuoteCard"
+}

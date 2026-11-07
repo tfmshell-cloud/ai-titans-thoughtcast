@@ -14,6 +14,7 @@ JSC = "/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Help
 files = [
     "07_DASHBOARD/data/season1_index.js",
     "07_DASHBOARD/data/suno_master_pool.js",
+    "07_DASHBOARD/data/media_acquisition_pool.js",
     "07_DASHBOARD/data/titans_1000_quotes.js",
     "07_DASHBOARD/assets/hub_app.js",
     "07_DASHBOARD/assets/episode_app.js",

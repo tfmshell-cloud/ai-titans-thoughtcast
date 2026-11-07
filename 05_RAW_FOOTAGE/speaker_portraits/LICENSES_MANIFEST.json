@@ -1,0 +1,82 @@
+[
+  {
+    "ep": "01",
+    "name": "Sam Altman",
+    "raw_file": "EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep01_altman_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "02",
+    "name": "Jensen Huang",
+    "raw_file": "EP02_PHOTO_01_Jensen_Huang_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep02_huang_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Jensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "03",
+    "name": "Demis Hassabis",
+    "raw_file": "EP03_PHOTO_01_Demis_Hassabis_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep03_hassabis_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "04",
+    "name": "Geoffrey Hinton",
+    "raw_file": "EP04_PHOTO_01_Geoffrey_Hinton_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep04_hinton_real.jpg",
+    "source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Geoffrey_Hinton_in_2026.jpg/3840px-Geoffrey_Hinton_in_2026.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "05",
+    "name": "Yann LeCun",
+    "raw_file": "EP05_PHOTO_01_Yann_LeCun_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep05_lecun_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "06",
+    "name": "Ilya Sutskever",
+    "raw_file": "EP06_PHOTO_01_Ilya_Sutskever_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep06_sutskever_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "07",
+    "name": "Dario Amodei",
+    "raw_file": "EP07_PHOTO_01_Dario_Amodei_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep07_amodei_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "08",
+    "name": "Fei-Fei Li",
+    "raw_file": "EP08_PHOTO_01_Fei-Fei_Li_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep08_li_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "09",
+    "name": "Yoshua Bengio",
+    "raw_file": "EP09_PHOTO_01_Yoshua_Bengio_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep09_bengio_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  },
+  {
+    "ep": "10",
+    "name": "Andrew Ng",
+    "raw_file": "EP10_PHOTO_01_Andrew_Ng_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep10_ng_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
+  }
+]

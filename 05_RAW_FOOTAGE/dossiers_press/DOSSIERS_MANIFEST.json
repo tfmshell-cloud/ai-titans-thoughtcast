@@ -1,0 +1,156 @@
+[
+  {
+    "id": "EP01_DOC_01",
+    "ep": "01",
+    "act": "ACT1",
+    "timecode": "02:35–03:15",
+    "title": "Summer Founders Program — Y Combinator (2005)",
+    "source_label": "ycombinator.com/sfp.html — Summer Founders Program (Batch 01)",
+    "highlight": "Selected Cohort #1 (Summer 2005, 8 Startups): Loopt — Sam Altman (age 19, Stanford CS sophomore) & Nick Sivo. Mobile location sharing architecture.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png",
+    "web_preview": "assets/dossiers_preview/ep01_doc_01_yc2005.jpg"
+  },
+  {
+    "id": "EP01_DOC_02",
+    "ep": "01",
+    "act": "ACT2",
+    "timecode": "06:10–07:05",
+    "title": "Introducing OpenAI",
+    "source_label": "https://openai.com/blog/introducing-openai",
+    "highlight": "Our goal is to advance digital intelligence in the way that is most likely to benefit humanity as a whole, unconstrained by a need to generate financial return.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
+    "web_preview": "assets/dossiers_preview/ep01_doc_02_openai2015.jpg"
+  },
+  {
+    "id": "EP01_DOC_03",
+    "ep": "01",
+    "act": "ACT3",
+    "timecode": "10:50–11:45",
+    "title": "OpenAI announces leadership transition",
+    "source_label": "https://openai.com/index/openai-announces-leadership-transition/",
+    "highlight": "Mr. Altman’s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png",
+    "web_preview": "assets/dossiers_preview/ep01_doc_03_ouster2023.jpg"
+  },
+  {
+    "id": "EP01_DOC_04",
+    "ep": "01",
+    "act": "ACT3",
+    "timecode": "12:50–13:40",
+    "title": "Ilya Sutskever (@ilyasut)",
+    "source_label": "x.com/ilyasut — Verified Statement by Co-Founder & Chief Scientist",
+    "highlight": "“I deeply regret my participation in the board's actions. I never intended to harm OpenAI. I love everything we've built together and I will do everything I can to reunite the company.”",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
+    "web_preview": "assets/dossiers_preview/ep01_doc_04_sutskever_post.jpg"
+  },
+  {
+    "id": "EP01_DOC_05",
+    "ep": "01",
+    "act": "ACT3",
+    "timecode": "13:45–15:00",
+    "title": "To the Board of Directors at OpenAI",
+    "source_label": "Open Letter to the Board of Directors at OpenAI",
+    "highlight": "We are unable to work for or with people that lack competence, judgement and care for our mission and employees. OpenAI is nothing without its people.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
+    "web_preview": "assets/dossiers_preview/ep01_doc_05_open_letter.jpg"
+  },
+  {
+    "id": "EP02_DOC_01",
+    "ep": "02",
+    "act": "ACT3",
+    "timecode": "10:20–11:40",
+    "title": "NVIDIA Corporation: From 30 Days of Cash to the CUDA Bet",
+    "source_label": "NVIDIA Corp. S-1 Risk Factors & G80 Unified CUDA Architecture Directive",
+    "highlight": "“Our company is thirty days from going out of business.” — Followed in 2006 by embedding CUDA compute silicon into every GeForce GPU at $500M annual R&D cost while Wall Street cut share price by 70%.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_01_nvidia_cuda.jpg"
+  },
+  {
+    "id": "EP03_DOC_01",
+    "ep": "03",
+    "act": "ACT3",
+    "timecode": "11:00–12:30",
+    "title": "Mastering the Game of Go & The Anomaly of Move 37",
+    "source_label": "Nature 529, 484–489 (2016) • Match 2 vs. Lee Sedol 9p (March 10, 2016)",
+    "highlight": "Game 2, Move 37 (Fifth-Line Shoulder Hit): Human probability calculated by policy network = 1 in 10,000 (0.01%). Lee Sedol leaves the board for 15 minutes in stunned silence.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP03_DOC_01_ACT3_AlphaGo_Move37_Nature_2016.png",
+    "web_preview": "assets/dossiers_preview/ep03_doc_01_alphago_nature.jpg"
+  },
+  {
+    "id": "EP04_DOC_01",
+    "ep": "04",
+    "act": "ACT2",
+    "timecode": "06:30–07:45",
+    "title": "Learning representations by back-propagating errors",
+    "source_label": "doi:10.1038/323533a0 — Rumelhart, Hinton & Williams (1986)",
+    "highlight": "“We describe a new learning procedure, back-propagation, for networks of neurone-like units. The procedure repeatedly adjusts the weights of the connections in the network so as to minimize a measure of the difference between the actual output vector and the desired output vector.”",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+    "web_preview": "assets/dossiers_preview/ep04_doc_01_hinton_backprop.jpg"
+  },
+  {
+    "id": "EP05_DOC_01",
+    "ep": "05",
+    "act": "ACT2",
+    "timecode": "06:00–07:15",
+    "title": "Gradient-Based Learning Applied to Document Recognition",
+    "source_label": "AT&T Labs – Research, Holmdel, NJ • LeNet-5 Convolutional Architecture",
+    "highlight": "Deployed by NCR across U.S. banks by the late 1990s, LeNet-5 autonomously read handwritten amounts on over 10% to 20% of all checks processed in the United States.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_01_ACT2_LeCun_LeNet5_IEEE_1998.png",
+    "web_preview": "assets/dossiers_preview/ep05_doc_01_lecun_lenet5.jpg"
+  },
+  {
+    "id": "EP06_DOC_01",
+    "ep": "06",
+    "act": "ACT2",
+    "timecode": "05:45–07:00",
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "source_label": "University of Toronto • Krizhevsky, Sutskever & Hinton (2012)",
+    "highlight": "In the ILSVRC-2012 competition, our deep CNN achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry — igniting the modern Deep Learning Big Bang.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+    "web_preview": "assets/dossiers_preview/ep06_doc_01_sutskever_alexnet.jpg"
+  },
+  {
+    "id": "EP07_DOC_01",
+    "ep": "07",
+    "act": "ACT3",
+    "timecode": "10:30–11:50",
+    "title": "Constitutional AI & Responsible Scaling Thresholds",
+    "source_label": "Anthropic Public Benefit Corporation • Responsible Scaling Policy (ASL-1 → ASL-4)",
+    "highlight": "Mandatory Hard Stop Commitment: Frontier training and deployment pause immediately if red-team evaluations cross ASL-3 / ASL-4 CBRN bioweapon uplift or autonomous replication thresholds before verifiable containment exists.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_01_ACT3_Amodei_Constitutional_AI_2022.png",
+    "web_preview": "assets/dossiers_preview/ep07_doc_01_amodei_cai.jpg"
+  },
+  {
+    "id": "EP08_DOC_01",
+    "ep": "08",
+    "act": "ACT2",
+    "timecode": "06:15–07:30",
+    "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+    "source_label": "Princeton & Stanford Vision Lab • Deng, Dong, Socher, Li, Li & Fei-Fei Li",
+    "highlight": "Hypothesis proven against all orthodoxy: algorithms do not learn like a child in a dark room — evolution spent 540 million years since the Cambrian Explosion giving biological minds continuous visual data.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+    "web_preview": "assets/dossiers_preview/ep08_doc_01_feifeili_imagenet.jpg"
+  },
+  {
+    "id": "EP09_DOC_01",
+    "ep": "09",
+    "act": "ACT2",
+    "timecode": "06:40–07:55",
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "source_label": "Bahdanau, Cho & Bengio (ICLR 2015) + U.S. Senate Judiciary Testimony (2023)",
+    "highlight": "This soft-alignment mechanism — quickly christened 'Attention' — became the direct mathematical cornerstone of the 2017 Transformer ('Attention Is All You Need') and every modern LLM.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
+    "web_preview": "assets/dossiers_preview/ep09_doc_01_bengio_attention.jpg"
+  },
+  {
+    "id": "EP10_DOC_01",
+    "ep": "10",
+    "act": "ACT2",
+    "timecode": "06:20–07:40",
+    "title": "Democratizing Deep Learning: From 16,000 Cores to 8 Million Builders",
+    "source_label": "ml-class.org Enrollment Log (104,000 Students) & Google Brain 16,000-Core Cluster",
+    "highlight": "“Just as electricity transformed almost everything 100 years ago, today I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.”",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+    "web_preview": "assets/dossiers_preview/ep10_doc_01_andrewng_coursera.jpg"
+  }
+]

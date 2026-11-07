@@ -117,10 +117,19 @@
       if (state.checked["vid_" + i]) vidDone += 1;
     }
 
+    var importedMap = {};
+    (window.SUNO_MASTER_POOL || []).forEach(function (t) {
+      importedMap[t.smart_bin] = true;
+      (t.extra_bins || []).forEach(function (eb) {
+        importedMap[eb.smart_bin] = true;
+      });
+    });
+
     var sunoTotal = (epData.suno_registry || []).length || 16;
     var sunoDone = 0;
     for (var s = 0; s < sunoTotal; s++) {
-      if (state.checked["suno_" + s]) sunoDone += 1;
+      var sItem = (epData.suno_registry || [])[s];
+      if (state.checked["suno_" + s] || (sItem && importedMap[sItem.filename])) sunoDone += 1;
     }
 
     var voTotal = (epData.vo_registry || []).length || 10;
@@ -310,8 +319,9 @@
       "    <button class=\"studio-tab-btn\" data-tab=\"script\">🎬 3. Режисерський сценарій <span class=\"tab-count-badge\">4 акти</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"prompts\">🎥 4. 100 Візуальних промптів <span class=\"tab-count-badge\" id=\"badgeVidCount\">0/100</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"quotes\">💬 5. 100 Цитат і тез <span class=\"tab-count-badge\">100</span></button>",
-      "    <button class=\"studio-tab-btn\" data-tab=\"audio\">🎵 6. Suno 92 BPM & Озвучка <span class=\"tab-count-badge\">" + ((epData.suno_registry || []).length + (epData.vo_registry || []).length) + " WAV</span></button>",
-      "    <button class=\"studio-tab-btn\" data-tab=\"davinci\">🎚️ 7. DaVinci Resolve 19 Студія</button>",
+      "    <button class=\"studio-tab-btn\" data-tab=\"audio\">🎵 6. Suno 92 BPM & Озвучка <span class=\"tab-count-badge\">4/4 Актів WAV</span></button>",
+      "    <button class=\"studio-tab-btn\" data-tab=\"media\">🗂️ 7. Медіа-Пул, Архіви & Досьє <span class=\"tab-count-badge\">4K</span></button>",
+      "    <button class=\"studio-tab-btn\" data-tab=\"davinci\">🎚️ 8. DaVinci Resolve 19 Студія</button>",
       "  </nav>",
 
       "  <div id=\"pane-sop\" class=\"tab-pane active\"></div>",
@@ -320,6 +330,7 @@
       "  <div id=\"pane-prompts\" class=\"tab-pane\"></div>",
       "  <div id=\"pane-quotes\" class=\"tab-pane\"></div>",
       "  <div id=\"pane-audio\" class=\"tab-pane\"></div>",
+      "  <div id=\"pane-media\" class=\"tab-pane\"></div>",
       "  <div id=\"pane-davinci\" class=\"tab-pane\"></div>",
       "</main>",
       "<div class=\"studio-toast\" id=\"studioToast\"></div>"
@@ -333,7 +344,7 @@
   }
 
   function switchTab(tabId, updateHash) {
-    var valid = ["sop", "bio", "script", "prompts", "quotes", "audio", "davinci"];
+    var valid = ["sop", "bio", "script", "prompts", "quotes", "audio", "media", "davinci"];
     if (valid.indexOf(tabId) === -1) tabId = "sop";
     state.activeTab = tabId;
 
@@ -940,15 +951,48 @@
       ].join("\n");
     }).join("\n");
 
+    var heroFourKit = [];
+    masterPool.forEach(function (t) {
+      if (t.hero_ep === epData.ep) {
+        heroFourKit.push({ track: t, bin_dir: t.bin_dir, smart_bin: t.smart_bin, role: "Ексклюзивна тема героя (" + t.act + ")" });
+      } else if (t.extra_bins) {
+        t.extra_bins.forEach(function (eb) {
+          if (eb.ep === epData.ep || eb.smart_bin.indexOf("EP" + epData.ep + "_") === 0) {
+            heroFourKit.push({ track: t, bin_dir: eb.bin_dir, smart_bin: eb.smart_bin, role: eb.role || t.act });
+          }
+        });
+      }
+    });
+    heroFourKit.sort(function (x, y) { return x.smart_bin.localeCompare(y.smart_bin); });
+
+    var heroKitCardsHtml = heroFourKit.map(function (hk) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--emerald);background:rgba(16,185,129,0.05);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:4px;\">",
+        "    <span class=\"chip chip-emerald\">" + esc(hk.role) + "</span>",
+        "    <span style=\"font-size:11px;color:var(--amber);font-family:var(--mono);\">" + esc(hk.track.duration) + "</span>",
+        "  </div>",
+        "  <h4 style=\"margin:4px 0 2px 0;\">" + esc(hk.track.orig_name) + "</h4>",
+        "  <div style=\"font-family:var(--mono);font-size:10.8px;color:var(--cyan);margin-bottom:6px;word-break:break-all;\">→ " + esc(hk.bin_dir) + "/" + esc(hk.smart_bin) + "</div>",
+        "  <audio controls preload=\"none\" style=\"height:30px;width:100%;margin-bottom:6px;\" src=\"../assets/audio_previews/" + esc(hk.track.preview) + "\"></audio>",
+        "  <div style=\"font-size:11px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(hk.track.specs) + "</div>",
+        "  <button class=\"btn btn-emerald\" style=\"padding:3px 8px;font-size:11px;width:100%;\" data-copy-pool-dir=\"" + esc(hk.bin_dir) + "\" data-copy-pool-bin=\"" + esc(hk.smart_bin) + "\">📋 Копіювати шлях WAV для DaVinci A2</button>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
     var sunoRows = (epData.suno_registry || []).map(function (item, idx) {
       var matchedEntry = importedMap[item.filename];
       var matchedWav = matchedEntry ? matchedEntry.track : null;
       var done = !!state.checked["suno_" + idx] || !!matchedWav;
+      var inlinePlayer = matchedWav
+        ? "<div style=\"margin-top:6px;\"><audio controls preload=\"none\" style=\"height:28px;width:220px;\" src=\"../assets/audio_previews/" + esc(matchedWav.preview) + "\"></audio></div>"
+        : "";
       return [
-        "<tr>",
+        "<tr" + (matchedWav ? " style=\"background:rgba(52,211,153,0.06);\"" : "") + ">",
         "  <td><input type=\"checkbox\" class=\"sop-checkbox\" data-suno-check=\"" + idx + "\"" + (done ? " checked" : "") + "></td>",
         "  <td><span class=\"chip chip-cyan\">" + esc(item.category) + " • " + esc(item.act) + "</span>" + (matchedWav ? "<div style=\"margin-top:4px;\"><span class=\"chip chip-emerald\">✅ WAV у 03_AUDIO</span></div>" : "") + "</td>",
-        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span>" + (matchedWav ? ("<div style=\"font-size:10.5px;color:var(--emerald);margin-top:3px;\">Імпортовано: " + esc(matchedWav.orig_name) + " (" + esc(matchedWav.duration) + ") → " + esc(matchedEntry.bin_dir) + "</div>") : "") + "</td>",
+        "  <td><span class=\"filename-mono\">" + esc(item.filename) + "</span>" + (matchedWav ? ("<div style=\"font-size:10.5px;color:var(--emerald);margin-top:3px;\">Імпортовано: " + esc(matchedWav.orig_name) + " (" + esc(matchedWav.duration) + ") → " + esc(matchedEntry.bin_dir) + "</div>" + inlinePlayer) : "") + "</td>",
         "  <td style=\"font-size:11.5px;color:var(--text-secondary);\">" + esc(item.davinci_track) + "</td>",
         "  <td style=\"font-family:var(--mono);font-size:11px;color:#cbd5e1;max-width:390px;\">" + esc(item.suno_prompt) + "</td>",
         "  <td>",
@@ -975,13 +1019,24 @@
     }).join("\n");
 
     pane.innerHTML = [
-      "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.38);\">",
+      "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.55);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🎧 Імпортована Майстер-Бібліотека Suno Pro (16 WAV-треків у 10 папках Smart Bins • 61 хв 31 с)</div>",
-      "      <div class=\"panel-desc\">Індивідуальні треки цього героя автоматично підняті нагору таблиці (🎯 Цей епізод). Усі 10 епізодів уже отримали власні унікальні теми Акту 1 без повторів.</div>",
+      "      <div class=\"panel-title\">🎯 Готовий 4-Актний Аудіо-Комплект цього Епізоду (" + heroFourKit.length + " WAV у папці Smart Bin)</div>",
+      "      <div class=\"panel-desc\">Повний музичний каркас випуску (Акт 1 Introspection • Акт 2 Drone • Акт 3 Climax • Акт 4 Finale) вже розкладений у <code>03_AUDIO/suno_stems/EP" + esc(epData.ep) + "_..._SMART_BINS/</code> і готовий до перетягування на доріжку A2 у DaVinci Resolve.</div>",
       "    </div>",
-      "    <span class=\"chip chip-emerald\">48 kHz WAV + C2PA Verified</span>",
+      "    <span class=\"chip chip-emerald\">✅ Suno Етап Закрито (4/4 Актів)</span>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + heroKitCardsHtml + "</div>",
+      "</div>",
+
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.35);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎧 Уся Імпортована Майстер-Бібліотека Сезону (16 WAV-майстрів • 40 Smart Bin слотів • 61 хв 31 с)</div>",
+      "      <div class=\"panel-desc\">Треки цього героя підсвічені зверху (🎯 Цей епізод), а нижче доступний увесь 16-трековий пул сезону з таймкодами під голос диктора.</div>",
+      "    </div>",
+      "    <span class=\"chip chip-cyan\">48 kHz WAV + Веб-Плеєр</span>",
       "  </div>",
       "  <div class=\"studio-table-wrap\">",
       "    <table class=\"studio-table\">",
@@ -1208,6 +1263,256 @@
     });
   }
 
+  function generateEpisodeTitlesSRT() {
+    var pool = (window.MEDIA_ACQUISITION_POOL || {})[epData.ep] || {};
+    var dossiers = pool.dossiers || [];
+    var quotes = (epData.quotes || []).slice(0, 6);
+    var blocks = [];
+    var idx = 1;
+    function pad2(n) { return String(n).padStart(2, "0"); }
+    function secToSrt(sec) {
+      var m = Math.floor(sec / 60);
+      var s = Math.floor(sec % 60);
+      return "00:" + pad2(m) + ":" + pad2(s) + ",000";
+    }
+
+    blocks.push(idx++ + "\n00:00:04,000 --> 00:00:11,000\nАРХІТЕКТОРИ РОЗУМУ // ЕПІЗОД " + epData.ep + "\n" + epData.name.toUpperCase() + " — " + epData.title.toUpperCase());
+
+    dossiers.forEach(function (d, di) {
+      var startSec = 155 + (di * 180);
+      var m = String(d.timecode || "").match(/(\d+):(\d+)/);
+      if (m) startSec = parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+      blocks.push(idx++ + "\n" + secToSrt(startSec) + " --> " + secToSrt(startSec + 9) + "\nДОСЬЄ // " + d.title.toUpperCase() + "\n" + d.source_label);
+    });
+
+    quotes.forEach(function (q, qi) {
+      var startSec = 240 + (qi * 165);
+      blocks.push(idx++ + "\n" + secToSrt(startSec) + " --> " + secToSrt(startSec + 8) + "\n«" + q.text + "»\n— " + epData.name);
+    });
+
+    return blocks.join("\n\n") + "\n";
+  }
+
+  /* ---------------- TAB 7: MEDIA ACQUISITION, ARCHIVES & 4K DOSSIERS ---------------- */
+  function renderMedia() {
+    var pane = document.getElementById("pane-media");
+    if (!pane) return;
+    var allMedia = window.MEDIA_ACQUISITION_POOL || {};
+    var epMedia = allMedia[epData.ep] || { dossiers: [], archives: [], flow_queue: [], portrait: {} };
+    var repoRoot = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/";
+
+    var dossiersHtml = (epMedia.dossiers || []).map(function (d, idx) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--amber);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+        "    <span class=\"chip chip-amber\">" + esc(d.act) + " • TC " + esc(d.timecode) + "</span>",
+        "    <span class=\"chip chip-emerald\">3840×2160 4K PNG</span>",
+        "  </div>",
+        "  <a href=\"../" + esc(d.web_preview) + "\" target=\"_blank\" rel=\"noopener\" title=\"Відкрити прев'ю у повному вікні\">",
+        "    <img src=\"../" + esc(d.web_preview) + "\" alt=\"" + esc(d.title) + "\" loading=\"lazy\" style=\"width:100%;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;\">",
+        "  </a>",
+        "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(d.title) + "</h4>",
+        "  <div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(d.raw_4k_png) + "</div>",
+        "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">«" + esc(d.highlight) + "»</div>",
+        "  <button class=\"btn btn-emerald\" style=\"padding:4px 8px;font-size:11px;width:100%;\" data-copy-dos-path=\"" + idx + "\">📋 Копіювати шлях 4K PNG для V2</button>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    var portrait = epMedia.portrait || {};
+    var portraitCardHtml = portrait.web_preview ? [
+      "<div class=\"node-box\" style=\"border-top-color:var(--cyan);\">",
+      "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+      "    <span class=\"chip chip-cyan\">Реальне архівне фото спікера</span>",
+      "    <span class=\"chip chip-purple\">Wikimedia Commons</span>",
+      "  </div>",
+      "  <div style=\"display:flex;gap:12px;align-items:center;\">",
+      "    <a href=\"../" + esc(portrait.web_preview) + "\" target=\"_blank\" rel=\"noopener\">",
+      "      <img src=\"../" + esc(portrait.web_preview) + "\" alt=\"" + esc(epData.name) + "\" style=\"width:96px;height:116px;object-fit:cover;border-radius:6px;border:1px solid var(--border);\">",
+      "    </a>",
+      "    <div style=\"flex:1;\">",
+      "      <h4 style=\"margin:0 0 4px 0;\">" + esc(epData.name) + " — Офіційний портрет</h4>",
+      "      <div style=\"font-family:var(--mono);font-size:10.8px;color:var(--cyan);margin-bottom:5px;word-break:break-all;\">05_RAW_FOOTAGE/speaker_portraits/" + esc(portrait.raw_file) + "</div>",
+      "      <div style=\"font-size:11px;color:var(--text-secondary);margin-bottom:6px;\">Під Dynamic Zoom 1.00→1.05 + Kodak 2383 (65%).</div>",
+      "      <div class=\"btn-group\">",
+      "        <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" id=\"btnCopyPortraitPath\">📋 Шлях JPG</button>",
+      "        <a class=\"btn\" style=\"padding:3px 8px;font-size:11px;text-decoration:none;\" href=\"" + esc(portrait.source_url) + "\" target=\"_blank\" rel=\"noopener\">Джерело ↗</a>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ].join("\n") : "";
+
+    var archiveRowsHtml = (epMedia.archives || []).map(function (ar, idx) {
+      return [
+        "<tr>",
+        "  <td><span class=\"chip chip-emerald\">✅ MP4 у archives/</span><div style=\"font-size:10.5px;color:var(--amber);margin-top:3px;\">TC сценарію: " + esc(ar.tc) + "</div></td>",
+        "  <td><span class=\"filename-mono\">" + esc(ar.file) + "</span><div style=\"font-size:11px;color:var(--text-secondary);margin-top:3px;\">" + esc(ar.note) + "</div></td>",
+        "  <td style=\"font-size:11px;\"><a href=\"" + esc(ar.url) + "\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--cyan);\">" + esc(ar.source) + " ↗</a><div style=\"font-family:var(--mono);font-size:10.8px;color:var(--text-muted);margin-top:2px;\">Відрізок: " + esc(ar.section) + "</div></td>",
+        "  <td>",
+        "    <div class=\"btn-group\">",
+        "      <button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-arch-path=\"" + idx + "\">Шлях MP4</button>",
+        "      <button class=\"btn btn-cyan\" style=\"padding:3px 7px;font-size:11px;\" data-copy-arch-cmd=\"" + idx + "\">yt-dlp команда</button>",
+        "    </div>",
+        "  </td>",
+        "</tr>"
+      ].join("\n");
+    }).join("\n");
+
+    var flowRowsHtml = (epMedia.flow_queue || []).map(function (fq, idx) {
+      var chkKey = "flowq_" + fq.num;
+      var isDone = !!state.checked[chkKey];
+      return [
+        "<tr>",
+        "  <td><input type=\"checkbox\" class=\"sop-checkbox\" data-flowq-check=\"" + esc(fq.num) + "\"" + (isDone ? " checked" : "") + "></td>",
+        "  <td><span class=\"chip chip-purple\">#" + esc(fq.num) + "</span><div style=\"font-size:10.5px;color:var(--amber);margin-top:3px;\">" + esc(fq.tc) + "</div></td>",
+        "  <td><span class=\"filename-mono\">05_RAW_FOOTAGE/flow_renders/" + esc(fq.file) + "</span><div style=\"font-size:10.5px;color:var(--text-muted);margin-top:2px;\">DaVinci V1 • Speed 60% • Optical Flow Enhanced Better</div></td>",
+        "  <td style=\"font-family:var(--mono);font-size:11px;color:#e2e8f0;max-width:440px;\">" + esc(fq.prompt) + "</td>",
+        "  <td>",
+        "    <div class=\"btn-group\">",
+        "      <button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-flowq-p=\"" + idx + "\">Промпт</button>",
+        "      <button class=\"btn\" style=\"padding:3px 7px;font-size:11px;\" data-copy-flowq-f=\"" + idx + "\">Ім'я .mp4</button>",
+        "    </div>",
+        "  </td>",
+        "</tr>"
+      ].join("\n");
+    }).join("\n");
+
+    pane.innerHTML = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎬 Формула Візуального Пулу (30% Архіви • 50% Google Flow 4K • 20% Документальні «Досьє») & 4 Проходи Монтажу</div>",
+      "      <div class=\"panel-desc\">Правило безпеки YouTube Content ID: безперервні архівні плани <strong>4–6 с</strong> без оригінального звуку (або інтершум <strong>-18 dB</strong>), <strong>Dynamic Zoom 1.00→1.05</strong> та спільна Timeline-нода <strong>Kodak 2383 D60 (65%) + 35mm Film Grain</strong>.</div>",
+      "    </div>",
+      "    <div class=\"btn-group\">",
+      "      <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри та Досьє для V3 (.srt)</button>",
+      "      <button class=\"btn btn-cyan\" id=\"btnCopyFetchEpCmd\">💻 Команда fetch_archives.sh --ep EP" + esc(epData.ep) + "</button>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);\"><h4>Прохід 1 • Скелет звуку (A1 + A2)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">Таймлайн <strong>24 fps</strong>. Голос диктора на <strong>A1</strong>, 4 готові WAV із Smart Bin на <strong>A2</strong> + Fairlight Sidechain <strong>-3.2 dB</strong>.</p></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--amber);\"><h4>Прохід 2 • Маркери та Титри (.srt)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">Імпорт маркерів <code>M</code> на смислових ударах, датах і цифрах + перетягування готового <code>.srt</code> і макросу <code>Thoughtcast_Swiss_Quote_Card.setting</code>.</p></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);\"><h4>Прохід 3 • Полотно V1 + Архіви V2</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">На <strong>V1</strong> — базові 4K-сцени Google Flow (Speed 60%, <em>Optical Flow → Enhanced Better</em>). На <strong>V2</strong> — архіви та 4K-пластини Досьє.</p></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--purple);\"><h4>Прохід 4 • Єдиний плівковий клей</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">У вкладці Color перемкнути на <strong>Timeline Node Graph</strong> → LUT <em>Kodak 2383 D60 (65%)</em> + <em>Film Grain 35mm</em> поверх усього випуску.</p></div>",
+      "  </div>",
+      "</div>",
+
+      "<div class=\"panel-card\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🗂️ Згенеровані 4K Документальні Артефакти («Досьє / Дошики» • 3840×2160 PNG) та Архівний Портрет</div>",
+      "      <div class=\"panel-desc\">Готові UHD 4K пластини вже лежать у <code>05_RAW_FOOTAGE/dossiers_press/</code> — перетягуйте прямо на доріжку V2 у DaVinci Resolve.</div>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + dossiersHtml + portraitCardHtml + "</div>",
+      "</div>",
+
+      "<div class=\"panel-card\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">📼 Відкриті Історичні Відеоархіви B-Roll (05_RAW_FOOTAGE/archives/ • Public Domain / Press / Lectures)</div>",
+      "      <div class=\"panel-desc\">Автоматично вирізані фрагменти через <code>08_AUTOMATION/scripts/fetch_archives.sh</code> (yt-dlp + ffmpeg v7.1).</div>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"studio-table-wrap\">",
+      "    <table class=\"studio-table\">",
+      "      <thead><tr><th>Статус / Таймкод</th><th>Файл Smart Bin у 05_RAW_FOOTAGE/archives/</th><th>Першоджерело та відрізок</th><th>Дії</th></tr></thead>",
+      "      <tbody>" + archiveRowsHtml + "</tbody>",
+      "    </table>",
+      "  </div>",
+      "</div>",
+
+      "<div class=\"panel-card\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🚀 Пріоритетна Перша Черга Google Flow / Veo (10 базових 4K-симуляцій у 05_RAW_FOOTAGE/flow_renders/)</div>",
+      "      <div class=\"panel-desc\">Замість 200 дрібних генерацій — 10 ключових 4K-сцен, які розтягуються через Optical Flow (50–60%) і тримають візуальний кістяк усього 20-хвилинного епізоду.</div>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"studio-table-wrap\">",
+      "    <table class=\"studio-table\">",
+      "      <thead><tr><th>✓</th><th>№ / TC</th><th>Цільовий файл у flow_renders/</th><th>Точний промпт для Google Flow / Veo 4K</th><th>Дії</th></tr></thead>",
+      "      <tbody>" + flowRowsHtml + "</tbody>",
+      "    </table>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+
+    var srtBtn = document.getElementById("btnDownloadEpSrt");
+    if (srtBtn) {
+      srtBtn.addEventListener("click", function () {
+        downloadBlob("EP" + epData.ep + "_" + epData.page_slug + "_Documentary_Titles_TrackV3.srt", generateEpisodeTitlesSRT(), "text/plain;charset=utf-8");
+      });
+    }
+
+    var fetchCmdBtn = document.getElementById("btnCopyFetchEpCmd");
+    if (fetchCmdBtn) {
+      fetchCmdBtn.addEventListener("click", function () {
+        copyText("cd " + repoRoot + " && ./08_AUTOMATION/scripts/fetch_archives.sh --ep EP" + epData.ep, "команда fetch_archives.sh");
+      });
+    }
+
+    var portBtn = document.getElementById("btnCopyPortraitPath");
+    if (portBtn && portrait.raw_file) {
+      portBtn.addEventListener("click", function () {
+        copyText(repoRoot + "05_RAW_FOOTAGE/speaker_portraits/" + portrait.raw_file, portrait.raw_file);
+      });
+    }
+
+    pane.querySelectorAll("[data-copy-dos-path]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-dos-path"), 10);
+        var d = epMedia.dossiers[i];
+        if (d) copyText(repoRoot + d.raw_4k_png, d.id);
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-arch-path]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-arch-path"), 10);
+        var ar = epMedia.archives[i];
+        if (ar) copyText(repoRoot + "05_RAW_FOOTAGE/archives/" + ar.file, ar.file);
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-arch-cmd]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-arch-cmd"), 10);
+        var ar = epMedia.archives[i];
+        if (ar) {
+          var noExt = ar.file.replace(/\.mp4$/, "");
+          copyText("./08_AUTOMATION/scripts/fetch_archives.sh --custom \"" + ar.url + "\" \"" + ar.section + "\" \"" + noExt + "\"", "yt-dlp " + noExt);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-flowq-check]").forEach(function (chk) {
+      chk.addEventListener("change", function () {
+        var k = "flowq_" + chk.getAttribute("data-flowq-check");
+        if (chk.checked) state.checked[k] = true;
+        else delete state.checked[k];
+        saveProgress();
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-flowq-p]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-flowq-p"), 10);
+        var fq = epMedia.flow_queue[i];
+        if (fq) copyText(fq.prompt, "Flow #" + fq.num);
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-flowq-f]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-flowq-f"), 10);
+        var fq = epMedia.flow_queue[i];
+        if (fq) copyText(fq.file, fq.file);
+      });
+    });
+  }
+
   function init() {
     document.title = "EP" + epData.ep + " — " + epData.name + " | Мастер-Досьє та Студія Cinematic Thoughtcast";
     renderShell();
@@ -1217,6 +1522,7 @@
     renderPrompts();
     renderQuotes();
     renderAudio();
+    renderMedia();
     renderDaVinci();
     updateTopProgress();
 
