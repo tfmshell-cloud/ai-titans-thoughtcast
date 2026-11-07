@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.9">
+  <resources>
+    <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <asset id="a_mus1" name="EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav" start="0s" duration="238s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="a_amb2" name="EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav" start="0s" duration="229s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="a_mus3" name="EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav" start="0s" duration="213s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="a_mus4" name="EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav" start="0s" duration="215s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="v_arch_mac" name="EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="v_arch_sen1" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="v_arch_sen2" name="EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="img_doc1" name="EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_doc2" name="EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_doc3" name="EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_doc4" name="EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_doc5" name="EP01_DOC_05_ACT3_730_Employees_Open_Letter" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_port" name="EP01_PHOTO_01_Sam_Altman_Archival_Portrait" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+  </resources>
+  <library>
+    <event name="EP01_Sam_Altman_Master_Assembly">
+      <project name="EP01_Sam_Altman_Thoughtcast_24fps_4K">
+        <sequence format="r1" duration="1200s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <gap name="V1_Google_Flow_4K_Canvas_20min" offset="0s" duration="1200s" start="0s">
+              <!-- V2 Connected Archival Video & 4K Dossier Plates -->
+              <asset-clip name="Macintosh_1992_Archive" ref="v_arch_mac" lane="1" offset="12s" duration="6s" start="0s" audioRole="effects" enabled="1"/>
+              <video name="Dossier_01_YC_2005" ref="img_doc1" lane="1" offset="155s" duration="12s" start="0s"/>
+              <video name="Altman_Archival_Portrait" ref="img_port" lane="1" offset="225s" duration="7s" start="0s"/>
+              <video name="Dossier_02_Introducing_OpenAI_2015" ref="img_doc2" lane="1" offset="370s" duration="14s" start="0s"/>
+              <asset-clip name="Altman_Senate_Oath_PublicDomain" ref="v_arch_sen1" lane="1" offset="570s" duration="6s" start="0s" audioRole="effects"/>
+              <asset-clip name="Altman_Senate_Regulation_PublicDomain" ref="v_arch_sen2" lane="1" offset="582s" duration="6s" start="0s" audioRole="effects"/>
+              <video name="Dossier_03_Board_Ouster_Nov17_2023" ref="img_doc3" lane="1" offset="650s" duration="14s" start="0s"/>
+              <video name="Dossier_04_Sutskever_Regret_Post" ref="img_doc4" lane="1" offset="770s" duration="12s" start="0s"/>
+              <video name="Dossier_05_738_Employees_Open_Letter" ref="img_doc5" lane="1" offset="825s" duration="14s" start="0s"/>
+
+              <!-- A2 Connected 4-Act Suno 92 BPM WAV Stems -->
+              <asset-clip name="ACT1_Introspection_Dusty_Analog_Reverie" ref="a_mus1" lane="-1" offset="0s" duration="238s" start="0s" role="music"/>
+              <asset-clip name="ACT2_Suspense_Deep_Water_Pressure" ref="a_amb2" lane="-1" offset="285s" duration="229s" start="0s" role="music"/>
+              <asset-clip name="ACT3_Climax_Clockwork_Dread_2" ref="a_mus3" lane="-1" offset="600s" duration="213s" start="0s" role="music"/>
+              <asset-clip name="ACT4_Finale_Celestial_Ascent_3" ref="a_mus4" lane="-1" offset="960s" duration="215s" start="0s" role="music"/>
+
+              <!-- Narrative Beat Markers (M) -->
+              <marker start="0s" duration="100/2400s" value="ACT I: St. Louis 1993 — Macintosh LC II (ep01_flow_01)"/>
+              <marker start="90s" duration="100/2400s" value="Silicon Laser &amp; Outsider Code (ep01_flow_03)"/>
+              <marker start="155s" duration="100/2400s" value="DOSSIER 01-A: Y Combinator Summer 2005"/>
+              <marker start="210s" duration="100/2400s" value="Exponential Compounding Curve (ep01_flow_04)"/>
+              <marker start="285s" duration="100/2400s" value="ACT II: Rosewood Hotel Dinner 2015"/>
+              <marker start="370s" duration="100/2400s" value="DOSSIER 01-B: Introducing OpenAI (Dec 11, 2015)"/>
+              <marker start="420s" duration="100/2400s" value="Neural Lattice &amp; Microsoft Capped-Profit (ep01_flow_05)"/>
+              <marker start="495s" duration="100/2400s" value="ChatGPT 100M Users Explosion (ep01_flow_06)"/>
+              <marker start="570s" duration="100/2400s" value="ARCHIVE: U.S. Senate Judiciary Hearing (May 16, 2023)"/>
+              <marker start="600s" duration="100/2400s" value="ACT III: Nov 17, 2023 — Google Meet Coup (ep01_flow_07)"/>
+              <marker start="650s" duration="100/2400s" value="DOSSIER 01-C: Board Press Release"/>
+              <marker start="770s" duration="100/2400s" value="DOSSIER 01-D: Ilya Sutskever Regret Statement"/>
+              <marker start="825s" duration="100/2400s" value="DOSSIER 01-E: 738 Signatures Mutiny (ep01_flow_08)"/>
+              <marker start="930s" duration="100/2400s" value="Helion Fusion Torus $375M (ep01_flow_09)"/>
+              <marker start="960s" duration="100/2400s" value="ACT IV: Stargate &amp; Horizon of Singularity (ep01_flow_10)"/>
+            </gap>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

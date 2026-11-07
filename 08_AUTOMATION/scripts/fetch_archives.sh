@@ -57,7 +57,8 @@ fetch_clip() {
     --ffmpeg-location "$FFMPEG_BIN" \
     --no-playlist \
     --quiet --no-warnings --progress \
-    -f "bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]/best[height<=2160][ext=mp4]/best" \
+    -S "vcodec:h264,res:1080,acodec:m4a" \
+    -f "bv*+ba/b" \
     --merge-output-format mp4 \
     --download-sections "*${section}" \
     --force-keyframes-at-cuts \

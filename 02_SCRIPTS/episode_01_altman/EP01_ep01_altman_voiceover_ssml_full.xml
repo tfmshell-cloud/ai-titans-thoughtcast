@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Cinematic Thoughtcast // EP01: Сем Альтман | Standard: 115 WPM, -1.5st, 48kHz/24-bit WAV -->
+<speak version="1.1" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="uk-UA">
+  <prosody rate="84%" pitch="-1.5st">
+
+  </prosody>
+</speak>
