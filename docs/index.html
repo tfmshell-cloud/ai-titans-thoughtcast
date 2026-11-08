@@ -517,12 +517,38 @@
     </header>
 
     <!-- Clear 5-Tab Studio Navigation -->
+        <!-- Executive Next-Actions Roadmap Banner -->
+    <div class="card" style="margin-bottom:1rem;padding:0.9rem 1.15rem;background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(56,189,248,0.08),rgba(251,191,36,0.09));border-color:rgba(56,189,248,0.35);">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;">
+        <div style="display:flex;align-items:center;gap:0.85rem;">
+          <div style="font-size:26px;">🚀</div>
+          <div>
+            <div style="font-size:13.5px;font-weight:700;color:var(--text-primary);display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              Операційний План Виробництва • Сезон 1
+              <span class="pill pill-emerald" style="font-size:10.5px;">Сценарії 100% (10/10)</span>
+              <span class="pill pill-purple" style="font-size:10.5px;">Suno 92 BPM (16 stems у 03_AUDIO)</span>
+              <span class="pill pill-amber" style="font-size:10.5px;" id="hubTopVeoBadge">Veo Анімації (4/14 Готово)</span>
+            </div>
+            <div style="font-size:11.8px;color:var(--text-secondary);margin-top:3px;">
+              Поточний фокус: генерація 10 ключових 6–10с анімацій у <strong>Google Veo 2 / Flow</strong> (ТОП-14) та вивантаження голосу ElevenLabs для чистової збірки монтажних таймлайнів у <strong>DaVinci Resolve 19</strong>.
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <button class="btn btn-emerald" style="padding:0.45rem 0.85rem;font-size:12px;font-weight:600;cursor:pointer;" onclick="document.querySelector('[data-hub-tab='animation']').click();">🎬 Відкрити ТОП-14 Анімацій Veo</button>
+          <a class="btn" style="padding:0.45rem 0.85rem;font-size:12px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep01_altman.html">🎙️ Студія Епізоду 01 (Альтман) →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clear 6-Tab Studio Navigation -->
     <nav class="main-nav-tabs" aria-label="Навігація студією">
       <button class="hub-tab-btn active" data-hub-tab="heroes">🎴 1. 10 Героїв (Активні блоки Мастер-Досьє)</button>
-      <button class="hub-tab-btn" data-hub-tab="architecture">🏛️ 2. Генеральна Архітектура & Дорожня Карта (8 Цехів)</button>
-      <button class="hub-tab-btn" data-hub-tab="quotes">💬 3. База 1,000 Цитат (Пошук по всіх 10 героях)</button>
-      <button class="hub-tab-btn" data-hub-tab="standards">🎵 4. Бібліотека Suno (16 WAV • 10 Героїв) • AI Studio • DaVinci 19</button>
-      <button class="hub-tab-btn" data-hub-tab="registry">📊 5. Виробничий Реєстр Сезону 1</button>
+      <button class="hub-tab-btn" data-hub-tab="animation" style="border-color:rgba(251,191,36,0.45);color:var(--amber);">🎬 2. План Анімацій Veo (ТОП-14) & Матриця Готовності</button>
+      <button class="hub-tab-btn" data-hub-tab="architecture">🏛️ 3. Генеральна Архітектура & Дорожня Карта (8 Цехів)</button>
+      <button class="hub-tab-btn" data-hub-tab="quotes">💬 4. База 1,000 Цитат (Пошук по всіх 10 героях)</button>
+      <button class="hub-tab-btn" data-hub-tab="standards">🎵 5. Бібліотека Suno (16 WAV • 10 Героїв) • AI Studio • DaVinci 19</button>
+      <button class="hub-tab-btn" data-hub-tab="registry">📊 6. Виробничий Реєстр Сезону 1</button>
     </nav>
 
     <!-- Main Workspace + Preserved Right Project Catalog -->
@@ -540,8 +566,12 @@
           </div>
           <div id="heroesGridContainer" class="heroes-grid"></div>
         </section>
+        <!-- PANE: VEO ANIMATION PIPELINE & PRODUCTION READINESS MATRIX -->
+        <section id="hub-pane-animation" class="hub-pane">
+          <div id="animationPaneContainer"></div>
+        </section>
 
-        <!-- PANE 2: GENERAL ARCHITECTURE & ROADMAP (FROM 11-PAGE SPEC) -->
+        <!-- PANE 3: GENERAL ARCHITECTURE & ROADMAP (FROM 11-PAGE SPEC) -->
         <section id="hub-pane-architecture" class="hub-pane">
           <div class="card" style="margin-bottom:1rem;">
             <div class="section-head">
@@ -819,6 +849,7 @@
   <script src="data/season1_index.js?v=20261108_v3"></script>
   <script src="data/suno_master_pool.js?v=20261108_v3"></script>
   <script src="data/media_acquisition_pool.js?v=20261108_v3"></script>
+  <script src="data/veo_animation_pipeline.js?v=20261108_v4"></script>
   <script src="data/titans_1000_quotes.js?v=20261108_v3"></script>
   <script src="assets/hub_app.js?v=20261108_v3"></script>
 </body>

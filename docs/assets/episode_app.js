@@ -265,6 +265,20 @@
     return rows.join("\n");
   }
 
+
+  function getVeoStatusMap() {
+    try {
+      var raw = localStorage.getItem("ai_titans_veo_status");
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    var initMap = {};
+    var pipeline = window.VEO_ANIMATION_PIPELINE || [];
+    pipeline.forEach(function (item) {
+      initMap[item.id] = !!item.default_done;
+    });
+    return initMap;
+  }
+
   function renderShell() {
     var switcherHtml = seasonIndex.map(function (item) {
       var activeCls = item.ep === epData.ep ? " active" : "";
@@ -273,6 +287,77 @@
     }).join("");
 
     var epMediaInit = (window.MEDIA_ACQUISITION_POOL || {})[epData.ep] || {};
+        var epVeos = (window.VEO_ANIMATION_PIPELINE || []).filter(function (v) { return v.ep === epData.ep; });
+    var vStatusMap = getVeoStatusMap();
+    var epVeoDone = epVeos.filter(function (v) { return !!vStatusMap[v.id]; }).length;
+    var epVeoTotal = epVeos.length;
+    var rawPhotosCount = ((window.MEDIA_ACQUISITION_POOL || {})[epData.ep] || {}).flow_gallery ? ((window.MEDIA_ACQUISITION_POOL || {})[epData.ep].flow_gallery || []).length : 12;
+
+    var epThemeTrack = (epMediaInit.audio && epMediaInit.audio.length) ? epMediaInit.audio[0] : null;
+    var soundscapeBar = epThemeTrack ? [
+      "<div style=\"display:flex;align-items:center;justify-content:space-between;gap:8px;background:rgba(16,185,129,0.07);border:1px solid rgba(52,211,153,0.3);border-radius:8px;padding:6px 12px;margin-top:0.75rem;flex-wrap:wrap;\">",
+      "  <div style=\"display:flex;align-items:center;gap:6px;\">",
+      "    <span style=\"font-size:14px;\">🎧</span>",
+      "    <span style=\"font-size:11.5px;color:var(--emerald);font-weight:600;\">Тема епізоду (Suno 92 BPM): <strong>" + esc(epThemeTrack.name) + "</strong> (" + esc(epThemeTrack.duration) + ")</span>",
+      "    <span class=\"chip chip-emerald\" style=\"font-size:10px;\">A2 DaVinci Track</span>",
+      "  </div>",
+      "  <div style=\"display:flex;align-items:center;gap:8px;\">",
+      "    <audio controls preload=\"none\" style=\"height:26px;width:210px;\" src=\"../assets/audio_previews/" + esc(epThemeTrack.preview) + "\"></audio>",
+      "    <button class=\"btn\" style=\"padding:2px 7px;font-size:10.5px;\" data-copy-text=\"/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/" + esc(epThemeTrack.bin_dir) + "/" + esc(epThemeTrack.smart_bin) + "\">Шлях WAV</button>",
+      "  </div>",
+      "</div>"
+    ].join("\n") : "";
+
+    var pipelineBarHtml = [
+      "<div class=\"pipeline-status-bar\" style=\"margin-top:0.85rem;background:rgba(15,23,42,0.85);border:1px solid rgba(56,189,248,0.32);border-radius:10px;padding:0.75rem 1rem;\">",
+      "  <div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:6px;\">",
+      "    <div style=\"font-size:11px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:0.05em;display:flex;align-items:center;gap:6px;\">",
+      "      <span>🏭 7-Стадійний Виробничий Конвеєр Епізоду " + esc(epData.ep) + "</span>",
+      "      <span class=\"chip chip-cyan\">DaVinci Resolve 19 Workflow</span>",
+      "    </div>",
+      "    <div style=\"font-size:11px;color:var(--text-muted);\">115 WPM Диктор • 92 BPM Метроном • 4K Rec.709-A</div>",
+      "  </div>",
+      "  <div style=\"display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:6px;\">",
+      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">1. Сценарій (02_SCRIPTS)</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ 4 Акти (100%)</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">" + esc(epData.script_total_words) + " слів диктора</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">2. Диктор SSML</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ ElevenLabs Ready</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">115 WPM (Speed 0.86)</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">3. Музика Suno 92 BPM</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ 4 Стеми у 03_AUDIO</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">A2 DaVinci Track</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">4. Науковий VFX</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ 4K Симуляція</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">V1 Video Track</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">5. 2K Концепти</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ " + rawPhotosCount + " Кадрів у базі</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">Midjourney / Flow</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:" + (epVeoDone === epVeoTotal ? "rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);" : "rgba(251,191,36,0.12);border:1px solid rgba(251,191,36,0.5);") + "border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--amber);font-weight:700;\">6. Veo Анімація</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">" + epVeoDone + " / " + epVeoTotal + " Готово</div>",
+      "      <div style=\"font-size:9.5px;color:var(--amber);font-weight:600;\">⚡ ТОП-14 Кандидати</div>",
+      "    </div>",
+      "    <div style=\"padding:6px 8px;background:rgba(168,85,247,0.08);border:1px solid rgba(168,85,247,0.3);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--purple);font-weight:700;\">7. DaVinci Resolve</div>",
+      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">📦 Smart Bins Ready</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">Скрипти імпорту</div>",
+      "    </div>",
+      "  </div>",
+      soundscapeBar,
+      "</div>"
+    ].join("\n");
+
     var totalVidClips = ((epMediaInit.archives || []).length + (epMediaInit.flow_queue || []).length + (epMediaInit.dossiers || []).length);
 
     var app = document.getElementById("episodeApp");
@@ -318,6 +403,7 @@
       "        <div class=\"spec-mini-box\"><div class=\"spec-mini-label\">Візуальна палітра</div><div class=\"spec-mini-val\">" + esc(epData.visual_key) + "</div></div>",
       "        <div class=\"spec-mini-box\"><div class=\"spec-mini-label\">Віртуальна камера та лінзи</div><div class=\"spec-mini-val\">" + esc(epData.camera_lens) + "</div></div>",
       "      </div>",
+      pipelineBarHtml,
       "    </div>",
       "  </section>",
 
@@ -1773,6 +1859,86 @@
       "    </div>",
       "  </div>",
       "</div>"
+    ].join("\n") : "";
+
+    
+    var epVeos = (window.VEO_ANIMATION_PIPELINE || []).filter(function (v) { return v.ep === epData.ep; });
+    var vStatusMap = getVeoStatusMap();
+    var epVeoDone = epVeos.filter(function (v) { return !!vStatusMap[v.id]; }).length;
+
+    var veoCardsHtml = epVeos.map(function (item) {
+      var isDone = !!vStatusMap[item.id];
+      var statusBadge = isDone
+        ? '<span class="chip chip-emerald" style="box-shadow:0 0 10px rgba(16,185,129,0.35);">✅ ВІДЕО ГОТОВЕ (4K / 24 FPS)</span>'
+        : '<span class="chip chip-amber" style="box-shadow:0 0 10px rgba(251,191,36,0.35);">⏳ В ЧЕРЗІ НА ГЕНЕРАЦІЮ (Veo 6–10с)</span>';
+
+      var mediaPreview = "";
+      if (isDone && item.video_preview) {
+        mediaPreview = [
+          '<div style="position:relative;margin-bottom:8px;">',
+          '  <video controls loop preload="metadata" playsinline style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid rgba(16,185,129,0.4);display:block;" src="../' + esc(item.video_preview) + '"></video>',
+          '  <div style="position:absolute;top:6px;right:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--emerald);font-weight:700;">VEO / FLOW 4K</div>',
+          '</div>'
+        ].join("\n");
+      } else {
+        mediaPreview = [
+          '<div style="position:relative;margin-bottom:8px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);">',
+          '  <img src="../' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">',
+          '  <div style="position:absolute;top:6px;right:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--amber);font-weight:700;">2K KEYFRAME</div>',
+          '</div>'
+        ].join("\n");
+      }
+
+      return [
+        '<div class="node-box" style="border-top-color:' + (isDone ? 'var(--emerald)' : 'var(--amber)') + ';background:rgba(251,191,36,0.03);display:flex;flex-direction:column;justify-content:space-between;">',
+        '  <div>',
+        '    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap;">',
+        '      <span class="chip ' + esc(item.chip) + '">' + esc(item.code) + '</span>',
+        '      ' + statusBadge,
+        '    </div>',
+        mediaPreview,
+        '    <h4 style="margin:2px 0 6px 0;line-height:1.35;">' + esc(item.title) + '</h4>',
+        '    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;">',
+        '      <span class="chip chip-purple">⏱️ ' + esc(item.tc) + '</span>',
+        '      <span class="chip chip-cyan">' + esc(item.act) + '</span>',
+        '      <span class="chip chip-emerald">' + esc(item.duration) + '</span>',
+        '    </div>',
+        '    <div style="font-size:11.5px;color:var(--text-secondary);background:rgba(56,189,248,0.06);border-left:3px solid var(--cyan);padding:6px 8px;border-radius:0 6px 6px 0;margin-bottom:8px;line-height:1.4;">',
+        '      <strong>🎬 Рух камери:</strong> ' + esc(item.motion_direction),
+        '    </div>',
+        '    <div style="margin-bottom:8px;">',
+        '      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;">',
+        '        <span style="font-size:10px;color:var(--amber);font-weight:700;">ПРОМПТ VEO 2 / FLOW:</span>',
+        '        <button class="btn btn-purple" style="padding:2px 6px;font-size:10px;" data-copy-veo-prompt="' + esc(item.id) + '">📋 Копіювати</button>',
+        '      </div>',
+        '      <pre style="background:rgba(0,0,0,0.4);border:1px solid var(--border);border-radius:6px;padding:6px;font-size:10.5px;color:var(--text-primary);white-space:pre-wrap;word-break:break-word;font-family:var(--mono);max-height:75px;overflow-y:auto;margin:0;">' + esc(item.prompt) + '</pre>',
+        '    </div>',
+        '  </div>',
+        '  <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:4px;">',
+        '    <button class="btn ' + (isDone ? 'btn-emerald' : 'btn-amber') + '" style="width:100%;padding:6px 10px;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;" data-toggle-ep-veo="' + esc(item.id) + '">',
+        '      ' + (isDone ? '✅ Виконано (Повернути в чергу)' : '⏳ Позначити як виконано (відео згенеровано)'),
+        '    </button>',
+        '  </div>',
+        '</div>'
+      ].join("\n");
+    }).join("\n");
+
+    var veoMasterSectionHtml = epVeos.length ? [
+      '<div class="panel-card" style="border-color:rgba(251,191,36,0.55);background:linear-gradient(180deg,rgba(251,191,36,0.06),transparent);margin-bottom:1.2rem;">',
+      '  <div class="panel-head">',
+      '    <div>',
+      '      <div class="panel-title" style="color:var(--amber);display:flex;align-items:center;gap:8px;">',
+      '        🎬 ТОП-КАНДИДАТИ НА АНІМАЦІЮ (Google Veo 2 / Flow • 6–10с)',
+      '        <span class="chip chip-amber">' + epVeos.length + ' Сцен для Епізоду ' + esc(epData.ep) + '</span>',
+      '      </div>',
+      '      <div class="panel-desc">Найважливіші концепт-кадри випуску для першочергової генерації рухомих 6–10с 4K/24fps шотів у Google Veo 2 / Flow. Клікайте кнопку на картці для оновлення статусу виконання — прогрес автоматично синхронізується з Головним Дашбордом.</div>',
+      '    </div>',
+      '    <div style="display:flex;gap:6px;align-items:center;">',
+      '      <span class="chip ' + (epVeoDone === epVeos.length ? 'chip-emerald' : 'chip-amber') + '">' + epVeoDone + ' / ' + epVeos.length + ' виконано</span>',
+      '    </div>',
+      '  </div>',
+      '  <div class="node-tree-grid">' + veoCardsHtml + '</div>',
+      '</div>'
     ].join("\n") : "";
 
     var archiveRowsHtml = (epMedia.archives || []).map(function (ar, idx) {

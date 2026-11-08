@@ -22,7 +22,9 @@
     quoteHero: "all",
     quoteQuery: "",
     quoteLimit: 120,
-    sunoHeroFilter: "all"
+    sunoHeroFilter: "all",
+    veoFilter: "all",
+    veoHero: "all"
   };
 
   function esc(s) {
@@ -166,6 +168,11 @@
       var galCount = (epMedia.flow_gallery || []).length || 0;
       var totalMp4Count = dosCount + archCount + flowCount + sciCount;
       var firstArch = (epMedia.archives || [])[0];
+      var veoList = (window.VEO_ANIMATION_PIPELINE || []).filter(function (v) { return v.ep === h.ep; });
+      var veoStatusMap = getVeoStatusMap();
+      var veoDone = veoList.filter(function (v) { return !!veoStatusMap[v.id]; }).length;
+      var veoBadgeHtml = veoList.length ? ("<span class=\x22pill " + (veoDone === veoList.length ? "pill-emerald" : "pill-amber") + "\x22>⚡ Veo: " + veoDone + "/" + veoList.length + "</span>") : "";
+
 
       var audioStripHtml = act1Track ? [
         "  <div style=\"background:rgba(16,185,129,0.07);border:1px solid rgba(52,211,153,0.28);border-radius:8px;padding:7px 10px;margin:8px 0;\" onclick=\"event.stopPropagation();\">",
@@ -275,6 +282,283 @@
       }).join("\n");
     }
   }
+
+
+  function getVeoStatusMap() {
+    try {
+      var raw = localStorage.getItem("ai_titans_veo_status");
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    var initMap = {};
+    var pipeline = window.VEO_ANIMATION_PIPELINE || [];
+    pipeline.forEach(function (item) {
+      initMap[item.id] = !!item.default_done;
+    });
+    return initMap;
+  }
+
+  function setVeoStatus(id, isDone) {
+    var map = getVeoStatusMap();
+    map[id] = isDone;
+    try {
+      localStorage.setItem("ai_titans_veo_status", JSON.stringify(map));
+    } catch (e) {}
+    renderAnimationPane();
+    renderHeroesGrid();
+  }
+
+  function renderAnimationPane() {
+    var container = document.getElementById("animationPaneContainer");
+    if (!container) return;
+
+    var pipeline = window.VEO_ANIMATION_PIPELINE || [];
+    var statusMap = getVeoStatusMap();
+    var doneCount = 0;
+    pipeline.forEach(function (item) {
+      if (statusMap[item.id]) doneCount += 1;
+    });
+    var totalCount = pipeline.length;
+    var pendingCount = totalCount - doneCount;
+    var pct = Math.round((doneCount / (totalCount || 1)) * 100);
+
+    var bannerBadge = document.getElementById("hubTopVeoBadge");
+    if (bannerBadge) {
+      bannerBadge.textContent = "Veo Анімації (" + doneCount + "/" + totalCount + " Готово)";
+      bannerBadge.className = "pill " + (doneCount === totalCount ? "pill-emerald" : "pill-amber");
+    }
+
+    var filter = state.veoFilter || "all";
+    var heroFilter = state.veoHero || "all";
+
+    var filtered = pipeline.filter(function (item) {
+      var isDone = !!statusMap[item.id];
+      if (filter === "done" && !isDone) return false;
+      if (filter === "pending" && isDone) return false;
+      if (heroFilter !== "all" && item.ep !== heroFilter) return false;
+      return true;
+    });
+
+    var heroOptions = ['<option value="all">Всі герої (10 епізодів)</option>'].concat(
+      season.map(function (h) {
+        return '<option value="' + esc(h.ep) + '"' + (heroFilter === h.ep ? ' selected' : '') + '>EP' + esc(h.ep) + ' • ' + esc(h.name) + '</option>';
+      })
+    ).join("");
+
+    var cardsHtml = filtered.map(function (item) {
+      var isDone = !!statusMap[item.id];
+      var statusBadge = isDone
+        ? '<span class="pill pill-emerald" style="box-shadow:0 0 10px rgba(16,185,129,0.35);font-size:11px;">✅ ВІДЕО ГОТОВЕ (4K / 24 FPS)</span>'
+        : '<span class="pill pill-amber" style="box-shadow:0 0 10px rgba(251,191,36,0.35);font-size:11px;">⏳ В ЧЕРЗІ НА ГЕНЕРАЦІЮ (Veo / Flow 6–10с)</span>';
+
+      var mediaBoxHtml = "";
+      if (isDone && item.video_preview) {
+        mediaBoxHtml = [
+          '<div style="position:relative;margin-bottom:10px;">',
+          '  <video controls loop preload="metadata" playsinline style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid rgba(16,185,129,0.4);display:block;" src="' + esc(item.video_preview) + '"></video>',
+          '  <div style="position:absolute;top:8px;right:8px;background:rgba(15,23,42,0.85);padding:3px 8px;border-radius:5px;font-size:10px;color:var(--emerald);font-weight:700;">VEO / FLOW 4K</div>',
+          '</div>'
+        ].join("\n");
+      } else {
+        mediaBoxHtml = [
+          '<div style="position:relative;margin-bottom:10px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);">',
+          '  <img src="' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">',
+          '  <div style="position:absolute;top:8px;right:8px;background:rgba(15,23,42,0.85);padding:3px 8px;border-radius:5px;font-size:10px;color:var(--amber);font-weight:700;">2K KEYFRAME</div>',
+          '</div>'
+        ].join("\n");
+      }
+
+      return [
+        '<div class="card" style="border-color:' + (isDone ? 'rgba(16,185,129,0.35)' : 'rgba(251,191,36,0.4)') + ';background:var(--surface);display:flex;flex-direction:column;justify-content:space-between;padding:1rem;">',
+        '  <div>',
+        '    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap;">',
+        '      <div style="display:flex;gap:5px;align-items:center;">',
+        '        <span class="pill pill-purple">EP' + esc(item.ep) + ' • ' + esc(item.hero) + '</span>',
+        '        <span class="pill pill-cyan" style="font-family:var(--mono);font-size:10.5px;">' + esc(item.code) + '</span>',
+        '      </div>',
+        '      ' + statusBadge,
+        '    </div>',
+        mediaBoxHtml,
+        '    <h3 style="font-size:14px;line-height:1.35;margin:0 0 6px 0;color:var(--text-primary);">' + esc(item.title) + '</h3>',
+        '    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">',
+        '      <span class="pill pill-purple" style="font-size:10.5px;">⏱️ ' + esc(item.tc) + '</span>',
+        '      <span class="pill pill-cyan" style="font-size:10.5px;">' + esc(item.act) + '</span>',
+        '      <span class="pill pill-emerald" style="font-size:10.5px;">Хронометраж: ' + esc(item.duration) + '</span>',
+        '    </div>',
+        '    <div style="font-size:11.8px;color:var(--text-secondary);background:rgba(56,189,248,0.06);border-left:3px solid var(--cyan);padding:6px 9px;border-radius:0 6px 6px 0;margin-bottom:9px;line-height:1.4;">',
+        '      <strong>🎬 Режисерський рух камери:</strong> ' + esc(item.motion_direction),
+        '    </div>',
+        '    <div style="margin-bottom:10px;">',
+        '      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">',
+        '        <span style="font-size:10.5px;color:var(--amber);font-weight:700;">ПРОМПТ ДЛЯ GOOGLE VEO 2 / FLOW:</span>',
+        '        <button class="btn-copy-sm" data-copy-veo-prompt="' + esc(item.id) + '">📋 Скопіювати промпт</button>',
+        '      </div>',
+        '      <pre style="background:rgba(0,0,0,0.4);border:1px solid var(--border);border-radius:6px;padding:8px;font-size:11px;color:var(--text-primary);white-space:pre-wrap;word-break:break-word;font-family:var(--mono);max-height:85px;overflow-y:auto;margin:0;">' + esc(item.prompt) + '</pre>',
+        '    </div>',
+        '  </div>',
+        '  <div style="border-top:1px solid var(--border);padding-top:10px;margin-top:5px;display:flex;gap:8px;flex-direction:column;">',
+        '    <button class="btn ' + (isDone ? 'btn-emerald' : 'btn-amber') + '" style="width:100%;padding:7px 12px;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;" data-toggle-veo="' + esc(item.id) + '">',
+        '      ' + (isDone ? '✅ Виконано (Клікніть, щоб повернути в чергу)' : '⏳ Позначити як виконано (відео згенеровано)'),
+        '    </button>',
+        '    <div style="display:flex;justify-content:space-between;gap:6px;">',
+        '      <a class="btn" style="flex:1;text-align:center;font-size:11px;padding:5px 8px;background:var(--surface-hover);border:1px solid var(--border);color:var(--cyan);text-decoration:none;" href="' + esc(item.page_url) + '">🎙️ Студія EP' + esc(item.ep) + ' →</a>',
+        '      <button class="btn" style="font-size:11px;padding:5px 8px;background:var(--surface-hover);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;" data-copy-text="' + esc(item.raw_path) + '">Шлях 2K JPG</button>',
+        '    </div>',
+        '  </div>',
+        '</div>'
+      ].join("\n");
+    }).join("\n");
+
+    var mediaPool = window.MEDIA_ACQUISITION_POOL || {};
+    var matrixRowsHtml = season.map(function (h) {
+      var epVeos = pipeline.filter(function (v) { return v.ep === h.ep; });
+      var epVeoDone = epVeos.filter(function (v) { return !!statusMap[v.id]; }).length;
+      var epMedia = mediaPool[h.ep] || {};
+      var galCount = (epMedia.flow_gallery || []).length || 12;
+      var act1Track = getHeroPrimaryTrack(h.ep);
+
+      var veoBadge = epVeos.length === 0
+        ? '<span class="pill pill-purple">Без специфікацій</span>'
+        : (epVeoDone === epVeos.length
+            ? '<span class="pill pill-emerald">✅ ' + epVeoDone + '/' + epVeos.length + ' Готово</span>'
+            : '<span class="pill pill-amber">⏳ ' + epVeoDone + '/' + epVeos.length + ' В роботі</span>');
+
+      var audioPlayHtml = act1Track
+        ? '<div style="display:flex;align-items:center;gap:6px;">' +
+          '  <span style="font-size:10.5px;color:var(--emerald);font-weight:600;white-space:nowrap;">4 WAV</span>' +
+          '  <audio controls preload="none" style="height:24px;width:125px;" src="assets/audio_previews/' + esc(act1Track.preview) + '"></audio>' +
+          '</div>'
+        : '<span class="pill pill-emerald">✅ 4 WAV</span>';
+
+      return [
+        '<tr>',
+        '  <td><a href="' + esc(h.page_url) + '" style="font-weight:700;color:var(--cyan);text-decoration:none;">EP' + esc(h.ep) + ' • ' + esc(h.name) + '</a><div style="font-size:10.5px;color:var(--text-muted);">' + esc(h.archetype) + '</div></td>',
+        '  <td><span class="pill pill-emerald">✅ 100% Готово</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">' + (h.script_words || 2400) + ' слів</div></td>',
+        '  <td><span class="pill pill-emerald">✅ 115 WPM Ready</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Speed 0.86 SSML</div></td>',
+        '  <td>' + audioPlayHtml + '</td>',
+        '  <td><span class="pill pill-emerald">✅ 4K Симуляція</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Готово у базі</div></td>',
+        '  <td><span class="pill pill-emerald">✅ ' + galCount + ' концептів</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Midjourney / Flow</div></td>',
+        '  <td>' + veoBadge + '</td>',
+        '  <td><span class="pill pill-purple">📦 Smart Bins Ready</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">A1-A4 / V1-V4</div></td>',
+        '  <td><a class="btn btn-cyan" style="padding:3px 8px;font-size:11px;text-decoration:none;display:inline-block;white-space:nowrap;" href="' + esc(h.page_url) + '">🎙️ Студія →</a></td>',
+        '</tr>'
+      ].join("\n");
+    }).join("\n");
+
+    container.innerHTML = [
+      '<div class="card" style="margin-bottom:1rem;padding:1.1rem;background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(56,189,248,0.06));border-color:rgba(251,191,36,0.45);">',
+      '  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;">',
+      '    <div>',
+      '      <h2 style="margin:0 0 4px 0;font-size:17px;color:var(--amber);display:flex;align-items:center;gap:8px;">',
+      '        🎬 ТОП-14 Ключових Анімацій Google Veo 2 / Flow (Сезон 1)',
+      '        <span class="pill pill-amber">Інтерактивний Трекер Задач</span>',
+      '      </h2>',
+      '      <div style="font-size:12.3px;color:var(--text-secondary);max-width:820px;line-height:1.4;">',
+      '        14 найважливіших 6–10-секундних сцен, які перетворюють філософські кульмінації епізодів у кінематографічний VFX. Натискайте кнопку на картці, щоб відзначити готовність — прогрес зберігається у вашому браузері та синхронізується з усіма розділами.',
+      '      </div>',
+      '    </div>',
+      '    <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">',
+      '      <span class="pill pill-purple">Всього: <strong>' + totalCount + '</strong></span>',
+      '      <span class="pill pill-emerald" id="hubVeoDoneCount">Виконано: <strong>' + doneCount + '</strong></span>',
+      '      <span class="pill pill-amber" id="hubVeoPendingCount">В черзі: <strong>' + pendingCount + '</strong></span>',
+      '    </div>',
+      '  </div>',
+      '  <div style="margin-top:0.85rem;">',
+      '    <div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--text-secondary);margin-bottom:4px;">',
+      '      <span>Загальний прогрес анімацій сезону:</span>',
+      '      <strong style="color:' + (pct === 100 ? 'var(--emerald)' : 'var(--amber)') + ';">' + doneCount + ' з ' + totalCount + ' (' + pct + '%)</strong>',
+      '    </div>',
+      '    <div class="progress-track"><div class="progress-fill" style="width:' + pct + '%;background:' + (pct === 100 ? 'var(--emerald)' : 'var(--amber)') + ';"></div></div>',
+      '  </div>',
+      '</div>',
+
+      '<div class="card" style="margin-bottom:1rem;padding:0.75rem 1rem;">',
+      '  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;">',
+      '    <div style="display:flex;gap:6px;flex-wrap:wrap;">',
+      '      <button class="btn ' + (filter === 'all' ? 'btn-emerald' : '') + '" data-veo-filter="all" style="padding:4px 10px;font-size:11.5px;cursor:pointer;">Всі кандидати (' + totalCount + ')</button>',
+      '      <button class="btn ' + (filter === 'pending' ? 'btn-amber' : '') + '" data-veo-filter="pending" style="padding:4px 10px;font-size:11.5px;cursor:pointer;">⏳ В черзі на анімацію (' + pendingCount + ')</button>',
+      '      <button class="btn ' + (filter === 'done' ? 'btn-emerald' : '') + '" data-veo-filter="done" style="padding:4px 10px;font-size:11.5px;cursor:pointer;">✅ Готові відео (' + doneCount + ')</button>',
+      '    </div>',
+      '    <div style="display:flex;align-items:center;gap:6px;">',
+      '      <span style="font-size:11.5px;color:var(--text-secondary);">Фільтр героя:</span>',
+      '      <select id="veoHeroSelect" style="background:var(--surface);border:1px solid var(--border);color:var(--text-primary);padding:4px 8px;border-radius:6px;font-size:11.5px;">' + heroOptions + '</select>',
+      '    </div>',
+      '  </div>',
+      '</div>',
+
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:1rem;margin-bottom:1.5rem;">' + cardsHtml + '</div>',
+
+      '<div class="card" style="margin-top:1.5rem;padding:1.1rem;border-color:rgba(56,189,248,0.4);">',
+      '  <div class="panel-head" style="margin-bottom:10px;">',
+      '    <div>',
+      '      <h3 style="margin:0 0 3px 0;font-size:15px;color:var(--cyan);display:flex;align-items:center;gap:8px;">',
+      '        📊 Матриця Виробничої Готовності Сезону 1 (Епізоди 01–10)',
+      '      </h3>',
+      '      <div style="font-size:11.8px;color:var(--text-secondary);">',
+      '        Зведений стан усіх 7 виробничих цехів для кожного з 10 титанів ШІ. Усі сценарії 100% готові (23,756 слів), музичні теми Suno 92 BPM розкладені по смарт-бінах. Аудіо можна прослухати прямо тут.',
+      '      </div>',
+      '    </div>',
+      '    <span class="pill pill-emerald">10 / 10 Епізодів у Виробництві</span>',
+      '  </div>',
+      '  <div style="overflow-x:auto;">',
+      '    <table class="data-table" style="width:100%;font-size:11.5px;">',
+      '      <thead>',
+      '        <tr>',
+      '          <th>Епізод & Герой</th>',
+      '          <th>1. Сценарій (02_SCRIPTS)</th>',
+      '          <th>2. Диктор SSML (115 WPM)</th>',
+      '          <th>3. Саундтрек (Suno 92 BPM)</th>',
+      '          <th>4. Науковий VFX</th>',
+      '          <th>5. 2K Концепти</th>',
+      '          <th>6. Veo Анімація</th>',
+      '          <th>7. DaVinci 19</th>',
+      '          <th>Дія</th>',
+      '        </tr>',
+      '      </thead>',
+      '      <tbody>' + matrixRowsHtml + '</tbody>',
+      '    </table>',
+      '  </div>',
+      '</div>'
+    ].join("\n");
+
+    container.querySelectorAll("[data-toggle-veo]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-toggle-veo");
+        var current = !!statusMap[id];
+        setVeoStatus(id, !current);
+        showToast((!current ? "✅ Виконано: " : "⏳ Повернуто в чергу: ") + id);
+      });
+    });
+
+    container.querySelectorAll("[data-copy-veo-prompt]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-copy-veo-prompt");
+        var target = pipeline.find(function (p) { return p.id === id; });
+        if (target) copyText(target.prompt, "Veo 2 Промпт " + id);
+      });
+    });
+
+    container.querySelectorAll("[data-copy-text]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyText(btn.getAttribute("data-copy-text"), "шлях файлу");
+      });
+    });
+
+    container.querySelectorAll("[data-veo-filter]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.veoFilter = btn.getAttribute("data-veo-filter");
+        renderAnimationPane();
+      });
+    });
+
+    var hSelect = document.getElementById("veoHeroSelect");
+    if (hSelect) {
+      hSelect.addEventListener("change", function () {
+        state.veoHero = hSelect.value;
+        renderAnimationPane();
+      });
+    }
+  }
+
 
   function renderSeasonRegistry() {
     var tbody = document.getElementById("seasonRegistryBody");
@@ -420,7 +704,7 @@
   }
 
   function switchHubTab(tabId) {
-    var tabs = ["heroes", "architecture", "quotes", "standards", "registry"];
+    var tabs = ["heroes", "animation", "architecture", "quotes", "standards", "registry"];
     if (tabs.indexOf(tabId) === -1) tabId = "heroes";
     state.tab = tabId;
 
@@ -431,6 +715,7 @@
       var el = document.getElementById("hub-pane-" + t);
       if (el) el.classList.toggle("active", t === tabId);
     });
+    if (tabId === "animation") renderAnimationPane();
   }
 
   function bindStaticActions() {
@@ -485,10 +770,12 @@
     window.addEventListener("storage", function () {
       renderHeroesGrid();
       renderSeasonRegistry();
+      renderAnimationPane();
     });
     window.addEventListener("focus", function () {
       renderHeroesGrid();
       renderSeasonRegistry();
+      renderAnimationPane();
     });
 
     var cTime = document.getElementById("cTime");
