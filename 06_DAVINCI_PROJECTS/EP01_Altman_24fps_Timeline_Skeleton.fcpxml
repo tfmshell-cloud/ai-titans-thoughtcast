@@ -16,6 +16,13 @@
     <asset id="img_doc4" name="EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
     <asset id="img_doc5" name="EP01_DOC_05_ACT3_730_Employees_Open_Letter" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
     <asset id="img_port" name="EP01_PHOTO_01_Sam_Altman_Archival_Portrait" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="v_flow01" name="ep01_flow_01_mac_chassis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4" start="0s" duration="7s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="v_flow02" name="ep01_flow_02_crt_code" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4" start="0s" duration="10s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="v_flow03" name="ep01_flow_03_silicon_laser" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4" start="0s" duration="10s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="v_flow04" name="ep01_flow_04_exponential_line" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4" start="0s" duration="10s" hasVideo="1" hasAudio="1" format="r1"/>
+    <asset id="img_flow05" name="EP01_FLOW_IMG_05_Neural_Lattice_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_flow06" name="EP01_FLOW_IMG_06_Supercomputer_Servers_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="img_flow07" name="EP01_FLOW_IMG_07_Boardroom_Smartphone_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
   </resources>
   <library>
     <event name="EP01_Sam_Altman_Master_Assembly">
@@ -23,6 +30,15 @@
         <sequence format="r1" duration="1200s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
           <spine>
             <gap name="V1_Google_Flow_4K_Canvas_20min" offset="0s" duration="1200s" start="0s">
+              <!-- V1 / V2 Connected Real Google Flow / Veo Videos (#01-#04) & 2K Keyframes (#05-#07) -->
+              <asset-clip name="Flow_01_Macintosh_LC_II_Chassis" ref="v_flow01" lane="2" offset="0s" duration="6s" start="0s" audioRole="effects"/>
+              <asset-clip name="Flow_02_CRT_Assembly_Child_Eye" ref="v_flow02" lane="2" offset="18s" duration="10s" start="0s" audioRole="effects"/>
+              <asset-clip name="Flow_03_Silicon_Wafer_Cyan_Laser" ref="v_flow03" lane="2" offset="90s" duration="10s" start="0s" audioRole="effects"/>
+              <asset-clip name="Flow_04_Golden_Exponential_Curve" ref="v_flow04" lane="2" offset="210s" duration="10s" start="0s" audioRole="effects"/>
+              <video name="Flow_05_Neural_Lattice_2K_Keyframe" ref="img_flow05" lane="2" offset="420s" duration="12s" start="0s"/>
+              <video name="Flow_06_Supercomputer_Monolith_2K_Keyframe" ref="img_flow06" lane="2" offset="495s" duration="12s" start="0s"/>
+              <video name="Flow_07_Boardroom_Smartphone_Rain_2K_Keyframe" ref="img_flow07" lane="2" offset="645s" duration="12s" start="0s"/>
+
               <!-- V2 Connected Archival Video & 4K Dossier Plates -->
               <asset-clip name="Macintosh_1992_Archive" ref="v_arch_mac" lane="1" offset="12s" duration="6s" start="0s" audioRole="effects" enabled="1"/>
               <video name="Dossier_01_YC_2005" ref="img_doc1" lane="1" offset="155s" duration="12s" start="0s"/>

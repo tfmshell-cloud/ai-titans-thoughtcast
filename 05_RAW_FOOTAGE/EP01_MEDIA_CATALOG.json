@@ -1,0 +1,213 @@
+{
+  "episode": "EP01 — Sam Altman",
+  "updated_at": "2026-11-08",
+  "summary": {
+    "flow_videos_ready": 4,
+    "flow_keyframes_only_ready": 3,
+    "flow_in_development": 3,
+    "extra_broll_stills": 3,
+    "canvas_3d_studies": 8,
+    "archival_broll_mp4": 3,
+    "uhd_4k_dossiers": 5
+  },
+  "directories": {
+    "davinci_v1_smart_bin_videos": "05_RAW_FOOTAGE/flow_renders/",
+    "master_flow_videos_archive": "05_RAW_FOOTAGE/flow_videos/EP01_Altman/",
+    "primary_keyframes_images": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/",
+    "broll_stills_and_studies": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/",
+    "historical_archives_mp4": "05_RAW_FOOTAGE/archives/",
+    "uhd_4k_dossiers_png": "05_RAW_FOOTAGE/dossiers_press/"
+  },
+  "videos_01_to_04": [
+    {
+      "num": "01",
+      "smart_bin": "ep01_flow_01_mac_chassis.mp4",
+      "archive_master": "EP01_FLOW_VID_01_ACT1_Macintosh_LC_II_Chassis_1080p24.mp4",
+      "tc": "0:00–0:15",
+      "title": "Macintosh LC II (1993) у променях бурштинового пилу",
+      "res": "1920x1080",
+      "fps": "24 fps",
+      "duration": "7.93s"
+    },
+    {
+      "num": "02",
+      "smart_bin": "ep01_flow_02_crt_code.mp4",
+      "archive_master": "EP01_FLOW_VID_02_ACT1_CRT_Assembly_Child_Eye_720p24.mp4",
+      "tc": "0:15–0:45",
+      "title": "Зелений фосфорний ЕПТ-екран із кодом Асемблера та оком дитини",
+      "res": "1280x720",
+      "fps": "24 fps",
+      "duration": "10.03s"
+    },
+    {
+      "num": "03",
+      "smart_bin": "ep01_flow_03_silicon_laser.mp4",
+      "archive_master": "EP01_FLOW_VID_03_ACT1_Silicon_Wafer_Cyan_Laser_720p24.mp4",
+      "tc": "1:30–2:30",
+      "title": "Кремнієва пластина під когерентним ціановим лазером",
+      "res": "1280x720",
+      "fps": "24 fps",
+      "duration": "10.03s"
+    },
+    {
+      "num": "04",
+      "smart_bin": "ep01_flow_04_exponential_line.mp4",
+      "archive_master": "EP01_FLOW_VID_04_ACT1_Golden_Exponential_Curve_720p24.mp4",
+      "tc": "3:30–4:45",
+      "title": "Золота експоненціальна лінія масштабування у темряві",
+      "res": "1280x720",
+      "fps": "24 fps",
+      "duration": "10.03s"
+    }
+  ],
+  "primary_keyframes_01_to_07": [
+    {
+      "num": "01",
+      "dst_name": "EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg",
+      "web_name": "ep01_flow_kf_01_mac_chassis.jpg",
+      "title": "Кадр #01 • Macintosh LC II у променях теплого пилу (1993)",
+      "tc": "0:00–0:15",
+      "status": "Відео готове (#01)",
+      "dimensions": "1920x1080"
+    },
+    {
+      "num": "02",
+      "dst_name": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+      "web_name": "ep01_flow_kf_02_crt_code.jpg",
+      "title": "Кадр #02 • Зелений ЕПТ-екран з кодом Асемблера та оком дитини",
+      "tc": "0:15–0:45",
+      "status": "Відео готове (#02)",
+      "dimensions": "1376x768"
+    },
+    {
+      "num": "03",
+      "dst_name": "EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+      "web_name": "ep01_flow_kf_03_silicon_laser.jpg",
+      "title": "Кадр #03 • Мікросхема кремнієвої пластини під ціановим лазером",
+      "tc": "1:30–2:30",
+      "status": "Відео готове (#03)",
+      "dimensions": "1376x768"
+    },
+    {
+      "num": "04",
+      "dst_name": "EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+      "web_name": "ep01_flow_kf_04_exponential_line.jpg",
+      "title": "Кадр #04 • Золота експонента масштабування у темному просторі",
+      "tc": "3:30–4:45",
+      "status": "Відео готове (#04)",
+      "dimensions": "1376x768"
+    },
+    {
+      "num": "05",
+      "dst_name": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+      "web_name": "ep01_flow_kf_05_neural_lattice.jpg",
+      "title": "Кадр #05 (2K) • Проліт камери крізь нейронні вузли в обсидіановій порожнечі",
+      "tc": "7:00–8:15",
+      "status": "Кадр 2K готовий • Очікує відео",
+      "dimensions": "2752x1536"
+    },
+    {
+      "num": "06",
+      "dst_name": "EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+      "web_name": "ep01_flow_kf_06_server_monolith.jpg",
+      "title": "Кадр #06 (2K) • Монолітні стійки суперкомп'ютера у холодному тумані",
+      "tc": "8:15–9:30",
+      "status": "Кадр 2K готовий • Очікує відео",
+      "dimensions": "2752x1536"
+    },
+    {
+      "num": "07",
+      "dst_name": "EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg",
+      "web_name": "ep01_flow_kf_07_boardroom_noir.jpg",
+      "title": "Кадр #07 (2K) • Смартфон на порожньому столі ради директорів під дощем",
+      "tc": "10:45–12:15",
+      "status": "Кадр 2K готовий • Очікує відео",
+      "dimensions": "2752x1536"
+    }
+  ],
+  "broll_and_studies": [
+    {
+      "code": "02B",
+      "dst_name": "EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro.jpg",
+      "web_name": "ep01_flow_broll_02b_child_eye.jpg",
+      "title": "Додатковий кінокадр Акту 1 • Макро дитячого ока з відображенням зеленого коду",
+      "tc": "0:25–0:32",
+      "web_export": true,
+      "dimensions": "1200x896"
+    },
+    {
+      "code": "02C",
+      "dst_name": "EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg",
+      "web_name": "ep01_flow_broll_02c_phosphor_triad.jpg",
+      "title": "Додатковий кінокадр Акту 1 • Мікроскоп зеленого люмінофора P31 за склом ЕПТ",
+      "tc": "0:18–0:24",
+      "web_export": true,
+      "dimensions": "1200x896"
+    },
+    {
+      "code": "02D",
+      "dst_name": "EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
+      "web_name": "ep01_flow_broll_02d_boy_crt_room.jpg",
+      "title": "Додатковий кінокадр Акту 1 • 8-річний хлопчик перед монітором у кімнаті 1993 року",
+      "tc": "0:33–0:45",
+      "web_export": true,
+      "dimensions": "1376x768"
+    },
+    {
+      "code": "STUDY_01A",
+      "dst_name": "EP01_FLOW_STUDY_01A_Mac_ADB_Ports_Canvas_4K.png",
+      "title": "3D-етюд портів ADB / Audio (Canvas 4K v1)",
+      "web_export": false,
+      "dimensions": "3456x1890"
+    },
+    {
+      "code": "STUDY_01B",
+      "dst_name": "EP01_FLOW_STUDY_01B_Mac_Texture_Canvas_4K.png",
+      "title": "3D-етюд текстури корпусу (Canvas 4K v2)",
+      "web_export": false,
+      "dimensions": "3456x1890"
+    },
+    {
+      "code": "STUDY_01C",
+      "dst_name": "EP01_FLOW_STUDY_01C_Mac_Ports_Close_Canvas_4K.png",
+      "title": "3D-етюд задньої панелі (Canvas 4K v3)",
+      "web_export": false,
+      "dimensions": "3456x1890"
+    },
+    {
+      "code": "STUDY_03A",
+      "dst_name": "EP01_FLOW_STUDY_03A_Silicon_Traces_Canvas_4K_v1.png",
+      "title": "3D-етюд мідних доріжок чіпа (Canvas 4K v1)",
+      "web_export": false,
+      "dimensions": "4752x3396"
+    },
+    {
+      "code": "STUDY_03B",
+      "dst_name": "EP01_FLOW_STUDY_03B_Silicon_Traces_Canvas_4K_v2.png",
+      "title": "3D-етюд мідних доріжок чіпа (Canvas 4K v2)",
+      "web_export": false,
+      "dimensions": "4752x3396"
+    },
+    {
+      "code": "STUDY_03C",
+      "dst_name": "EP01_FLOW_STUDY_03C_Silicon_Traces_Canvas_4K_v3.png",
+      "title": "3D-етюд мідних доріжок чіпа (Canvas 4K v3)",
+      "web_export": false,
+      "dimensions": "4752x3396"
+    },
+    {
+      "code": "STUDY_03D",
+      "dst_name": "EP01_FLOW_STUDY_03D_Silicon_Traces_Canvas_8K_v4.png",
+      "title": "3D-етюд мідних доріжок чіпа (Canvas 8K v4)",
+      "web_export": false,
+      "dimensions": "9504x6792"
+    },
+    {
+      "code": "STUDY_04B",
+      "dst_name": "EP01_FLOW_STUDY_04B_Exponential_Line_Duplicate.png",
+      "title": "Дубль концепт-кадру золотої експоненти",
+      "web_export": false,
+      "dimensions": "1376x768"
+    }
+  ]
+}

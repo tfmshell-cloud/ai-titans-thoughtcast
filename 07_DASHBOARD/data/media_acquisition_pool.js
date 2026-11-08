@@ -106,83 +106,229 @@ window.MEDIA_ACQUISITION_POOL = {
     "flow_queue": [
       {
         "num": "01",
+        "status": "video_ready",
         "title": "Macintosh LC II (1993) у променях бурштинового пилу",
         "file": "ep01_flow_01_mac_chassis.mp4",
         "tc": "0:00–0:15",
+        "specs": "1920×1080 • 24 fps • 7.93s • Стерео SFX (гул кулера + HDD)",
         "prompt": "Cinematic macro tracking shot across vintage 1993 Apple Macintosh LC II beige plastic chassis, dust motes floating in dark room, volumetric amber backlight, 35mm film grain, 4k 24fps.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_01_mac_chassis.mp4"
+        "video_preview": "assets/video_previews/flow/ep01_flow_01_mac_chassis.mp4",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_01_mac_chassis.jpg",
+        "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg"
       },
       {
         "num": "02",
-        "title": "Зелений фосфорний ЕПТ-екран із кодом Асемблера",
+        "status": "video_ready",
+        "title": "Зелений фосфорний ЕПТ-екран із кодом Асемблера та оком дитини",
         "file": "ep01_flow_02_crt_code.mp4",
         "tc": "0:15–0:45",
+        "specs": "1280×720 • 24 fps • 10.03s • Стерео Drone + клавіші",
         "prompt": "Extreme macro close-up of green phosphor CRT monitor screen showing scrolling assembly code, glass reflection of a child's eye, shallow depth of field, analog texture, 4k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4"
+        "video_preview": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_02_crt_code.jpg",
+        "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg"
       },
       {
         "num": "03",
+        "status": "video_ready",
         "title": "Кремнієва пластина під когерентним ціановим лазером",
         "file": "ep01_flow_03_silicon_laser.mp4",
         "tc": "1:30–2:30",
+        "specs": "1280×720 • 24 fps • 10.03s • Стерео Sci-Fi Riser & Sub-Impact",
         "prompt": "Fast dynamic macro dolly through dark silicon wafer circuitry, microscopic copper traces illuminating with coherent cyan laser light, Octane render aesthetic, 8k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_03_silicon_laser.mp4"
+        "video_preview": "assets/video_previews/flow/ep01_flow_03_silicon_laser.mp4",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_03_silicon_laser.jpg",
+        "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png"
       },
       {
         "num": "04",
+        "status": "video_ready",
         "title": "Золота експоненціальна лінія масштабування у темряві",
         "file": "ep01_flow_04_exponential_line.mp4",
         "tc": "3:30–4:45",
+        "specs": "1280×720 • 24 fps • 10.03s • Стерео Vangelis Swell",
         "prompt": "Minimalist 3D scientific visualization: a single glowing golden line starting flat in dark void and curving sharply upwards into infinity, volumetric dust, IMAX scale, 4k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_04_exponential_line.mp4"
+        "video_preview": "assets/video_previews/flow/ep01_flow_04_exponential_line.mp4",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_04_exponential_line.jpg",
+        "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png"
       },
       {
         "num": "05",
-        "title": "Обсидіанова нейронна решітка із синхронними імпульсами",
+        "status": "image_ready",
+        "title": "Обсидіанова нейронна решітка (Camera moving through glowing nodes)",
         "file": "ep01_flow_05_neural_lattice.mp4",
         "tc": "7:00–8:15",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Floating camera through a vast dark obsidian void filled with millions of glowing geometric neural nodes firing synchronized pulses, deep shadows, 8k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4"
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg"
       },
       {
         "num": "06",
-        "title": "Монолітний коридор суперкомп'ютерних серверів у холодному тумані",
+        "status": "image_ready",
+        "title": "Монолітні сервери у холодному тумані (Supercomputer servers in cold hall)",
         "file": "ep01_flow_06_server_monolith.mp4",
         "tc": "8:15–9:30",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Endless rows of black monolithic supercomputer server racks in dark cold hall, subtle blue LED pulses, cold vapor rising from floor, anamorphic lens flare, 4k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4"
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_06_server_monolith.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg"
       },
       {
         "num": "07",
-        "title": "Нуар порожньої зали ради директорів (17 листопада 2023)",
+        "status": "image_ready",
+        "title": "Смартфон на столі ради директорів під дощем (Smartphone on dark conference table)",
         "file": "ep01_flow_07_boardroom_noir.mp4",
         "tc": "10:45–12:15",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Moody low-key shot of an empty dark wooden conference table, single smartphone screen lighting up in the shadows, rain on window glass behind, noir thriller look, 4k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_07_boardroom_noir.mp4"
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_07_boardroom_noir.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg"
       },
       {
         "num": "08",
+        "status": "in_dev",
         "title": "730 золотих світлових ниток єдності інженерів OpenAI",
         "file": "ep01_flow_08_golden_signatures.mp4",
         "tc": "13:45–15:30",
+        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
         "prompt": "Particle physics simulation: thousands of glowing golden light threads converging from darkness into a single blinding core of energy, Octane render, 8k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4"
+        "video_preview": "",
+        "keyframe_preview": ""
       },
       {
         "num": "09",
+        "status": "in_dev",
         "title": "Магнітний термоядерний реактор Helion (фіолетово-золота плазма)",
         "file": "ep01_flow_09_fusion_torus.mp4",
         "tc": "15:30–17:00",
+        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
         "prompt": "Cinematic interior view of a magnetic fusion reactor torus, glowing violet and gold plasma contained by magnetic fields, hard sci-fi documentary realism, 4k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4"
+        "video_preview": "",
+        "keyframe_preview": ""
       },
       {
         "num": "10",
+        "status": "in_dev",
         "title": "Орбітальний горизонт нічної Землі в золотій нейромережі",
         "file": "ep01_flow_10_earth_horizon.mp4",
         "tc": "18:30–20:00",
+        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
         "prompt": "Slow majestic orbital camera pull-back from dark Earth night side illuminated by glowing golden neural network grids connecting cities, quiet cosmic awe, IMAX 8k.",
-        "video_preview": "assets/video_previews/flow/ep01_flow_10_earth_horizon.mp4"
+        "video_preview": "",
+        "keyframe_preview": ""
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "KF #05 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "07:00–08:15",
+        "title": "Camera moving through glowing nodes (Нейронна решітка в обсидіані)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #06 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "08:15–09:30",
+        "title": "Supercomputer servers in cold hall (Моноліти в холодному тумані)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_06_server_monolith.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #07 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "10:45–12:15",
+        "title": "Smartphone on dark conference table (Нуар ради директорів під дощем)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_07_boardroom_noir.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #01",
+        "badge": "✅ Відео + Кадр готові",
+        "chip": "chip-emerald",
+        "tc": "00:00–00:15",
+        "title": "Macintosh LC II (1993) у променях теплого пилу",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_01_mac_chassis.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg",
+        "dims": "1920×1080"
+      },
+      {
+        "code": "KF #02",
+        "badge": "✅ Відео + Кадр готові",
+        "chip": "chip-emerald",
+        "tc": "00:15–00:45",
+        "title": "Зелений ЕПТ-монітор з Асемблером та відображенням ока",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_02_crt_code.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "dims": "1376×768"
+      },
+      {
+        "code": "KF #03",
+        "badge": "✅ Відео + Кадр готові",
+        "chip": "chip-emerald",
+        "tc": "01:30–02:30",
+        "title": "Кремнієва пластина під ціановим лазером",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_03_silicon_laser.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "dims": "1376×768"
+      },
+      {
+        "code": "KF #04",
+        "badge": "✅ Відео + Кадр готові",
+        "chip": "chip-emerald",
+        "tc": "03:30–04:45",
+        "title": "Золота експоненціальна крива масштабування",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_04_exponential_line.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "dims": "1376×768"
+      },
+      {
+        "code": "B-ROLL 02B",
+        "badge": "🎞️ Додатковий кінокадр Акту 1",
+        "chip": "chip-purple",
+        "tc": "00:25–00:32",
+        "title": "Макро ока дитини з відображенням зеленого ЕПТ-коду",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02b_child_eye.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro.jpg",
+        "dims": "1200×896"
+      },
+      {
+        "code": "B-ROLL 02C",
+        "badge": "🎞️ Додатковий кінокадр Акту 1",
+        "chip": "chip-purple",
+        "tc": "00:18–00:24",
+        "title": "Мікроскоп тріад зеленого люмінофора P31 за склом ЕПТ",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02c_phosphor_triad.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg",
+        "dims": "1200×896"
+      },
+      {
+        "code": "B-ROLL 02D",
+        "badge": "🎞️ Додатковий кінокадр Акту 1",
+        "chip": "chip-purple",
+        "tc": "00:33–00:45",
+        "title": "8-річний хлопчик перед монітором у кімнаті Сент-Луїса (1993)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02d_boy_crt_room.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
+        "dims": "1376×768"
       }
     ]
   },

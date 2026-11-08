@@ -18,14 +18,15 @@ TEMPLATE = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EP{ep} — {name} | Мастер-Досьє Cinematic Thoughtcast</title>
-  <link rel="stylesheet" href="../assets/episode_app.css">
+  <link rel="stylesheet" href="../assets/episode_app.css?v=20261108_v1">
 </head>
 <body>
   <div id="episodeApp"></div>
-  <script src="../data/season1_index.js"></script>
-  <script src="../data/suno_master_pool.js"></script>
-  <script src="../data/episodes/ep{ep}.js"></script>
-  <script src="../assets/episode_app.js"></script>
+  <script src="../data/season1_index.js?v=20261108_v1"></script>
+  <script src="../data/suno_master_pool.js?v=20261108_v1"></script>
+  <script src="../data/media_acquisition_pool.js?v=20261108_v1"></script>
+  <script src="../data/episodes/ep{ep}.js?v=20261108_v1"></script>
+  <script src="../assets/episode_app.js?v=20261108_v1"></script>
 </body>
 </html>
 """
