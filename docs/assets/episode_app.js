@@ -273,18 +273,19 @@
       ? filePath
       : ("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/" + filePath);
 
+    // Copy to clipboard immediately so the user always has the path
+    copyText(fullPath, label || "шлях файлу");
+
     fetch("http://127.0.0.1:8765/reveal?path=" + encodeURIComponent(fullPath))
       .then(function (res) { return res.json(); })
       .then(function (data) {
         if (data.status === "ok") {
           showToast("📁 Відкрито у Finder: " + (label || fullPath.split("/").pop()));
         } else {
-          copyText(fullPath, "шлях файлу");
           showToast("📋 Шлях скопійовано: " + fullPath.split("/").pop());
         }
       })
       .catch(function () {
-        copyText(fullPath, "шлях файлу");
         showToast("📋 Шлях скопійовано! (Запустіть ./open_in_finder.sh --bridge)");
       });
   }
@@ -2118,8 +2119,9 @@
         ].join("\n");
       } else if (isImgReady && fq.keyframe_preview) {
         previewCol = [
-          "<div style=\"position:relative;cursor:pointer;\" data-play-flow-kf=\"" + esc(fq.num) + "\" title=\"Клікніть для перегляду 2K концепт-кадру в моніторі\">",
-          "  <img src=\"../" + esc(fq.keyframe_preview) + "\" alt=\"" + esc(fq.title) + "\" style=\"width:225px;aspect-ratio:16/9;object-fit:cover;border-radius:7px;border:1px solid rgba(56,189,248,0.45);display:block;\">",
+          "<div style=\"position:relative;cursor:pointer;overflow:hidden;border-radius:7px;border:1px solid rgba(56,189,248,0.45);\" data-reveal-finder=\"" + esc(fq.raw_image_path || fq.keyframe_preview) + "\" title=\"Клікніть, щоб відкрити цей 2K файл у Finder\">",
+          "  <img src=\"../" + esc(fq.keyframe_preview) + "\" alt=\"" + esc(fq.title) + "\" style=\"width:225px;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform 0.2s;\">",
+          "  <span style=\"position:absolute;top:4px;left:4px;background:rgba(12,14,19,0.88);color:var(--amber);padding:1px 6px;border-radius:4px;font-size:9.5px;font-weight:700;\">📁 Відкрити у Finder</span>",
           "  <span style=\"position:absolute;bottom:4px;right:4px;background:rgba(12,14,19,0.92);color:var(--cyan);padding:1px 6px;border-radius:4px;font-size:9.5px;font-family:var(--mono);font-weight:700;\">2K JPG</span>",
           "</div>",
           "<div style=\"display:flex;justify-content:space-between;align-items:center;margin-top:4px;\">",
@@ -2148,15 +2150,15 @@
 
       var actionsHtml = [];
       if (isVidReady) {
-        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;\" data-play-flow-vid=\"" + esc(fq.num) + "\">▶️ У монітор</button>");
-        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;\" data-popup-flow-vid=\"" + esc(fq.num) + "\">🔍 Вікно</button>");
-        actionsHtml.push("<button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-flowq-vpath=\"" + idx + "\">Шлях MP4</button>");
+        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-vid=\"" + esc(fq.num) + "\">▶️ У монітор</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-popup-flow-vid=\"" + esc(fq.num) + "\">🔍 Вікно</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(fq.raw_video_path || ('05_RAW_FOOTAGE/flow_renders/' + fq.file)) + "\" data-copy-flowq-vpath=\"" + idx + "\">📁 Шлях MP4 (Finder)</button>");
       } else if (isImgReady) {
-        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;\" data-play-flow-kf=\"" + esc(fq.num) + "\">🖼️ 2K у монітор</button>");
-        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;\" data-popup-flow-kf=\"" + esc(fq.num) + "\">🔍 2K у вікні</button>");
-        actionsHtml.push("<button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-flowq-ipath=\"" + idx + "\">Шлях JPG</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-kf=\"" + esc(fq.num) + "\">🖼️ 2K у монітор</button>");
+        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-popup-flow-kf=\"" + esc(fq.num) + "\">🔍 2K у вікні</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;font-weight:700;\" data-reveal-finder=\"" + esc(fq.raw_image_path || fq.keyframe_preview) + "\" data-copy-flowq-ipath=\"" + idx + "\">📁 Шлях JPG (Finder)</button>");
       }
-      actionsHtml.push("<button class=\"btn\" style=\"padding:3px 7px;font-size:11px;\" data-copy-flowq-p=\"" + idx + "\">Промпт</button>");
+      actionsHtml.push("<button class=\"btn btn-purple\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-copy-flowq-p=\"" + idx + "\">📋 Промпт</button>");
 
       return [
         "<tr" + (isVidReady ? " style=\"background:rgba(52,211,153,0.04);\"" : (isImgReady ? " style=\"background:rgba(56,189,248,0.03);\"" : "")) + ">",
@@ -2164,7 +2166,7 @@
         "  <td style=\"width:225px;\">" + previewCol + "</td>",
         "  <td>",
         "    <div style=\"font-weight:700;color:var(--text-primary);margin-bottom:3px;\">" + esc(fq.title || fq.file) + "</div>",
-        "    <span class=\"filename-mono\">05_RAW_FOOTAGE/flow_renders/" + esc(fq.file) + "</span>",
+        "    <div class=\"filename-mono\" style=\"cursor:pointer;display:inline-block;margin-bottom:3px;\" data-reveal-finder=\"" + esc(isVidReady ? (fq.raw_video_path || ('05_RAW_FOOTAGE/flow_renders/' + fq.file)) : (fq.raw_image_path || ('05_RAW_FOOTAGE/flow_renders/' + fq.file))) + "\" title=\"Клікніть, щоб відкрити цей файл у Finder\">📁 " + esc(isVidReady ? (fq.raw_video_path || ("05_RAW_FOOTAGE/flow_renders/" + fq.file)) : (fq.raw_image_path || ("05_RAW_FOOTAGE/flow_renders/" + fq.file))) + "</div>",
         statusNote,
         "  </td>",
         "  <td style=\"font-family:var(--mono);font-size:11px;color:#e2e8f0;max-width:360px;\">" + esc(fq.prompt) + "</td>",
@@ -2612,6 +2614,151 @@
         var i = parseInt(btn.getAttribute("data-copy-flowq-p"), 10);
         var fq = epMedia.flow_queue[i];
         if (fq) copyText(fq.prompt, "Flow #" + fq.num);
+      });
+    });
+
+    pane.querySelectorAll("[data-play-flow-kf]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var num = btn.getAttribute("data-play-flow-kf");
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].uid === "flow_img_" + num) { pIdx = i; break; }
+        }
+        if (pIdx !== -1) {
+          selectDockClip(pIdx, true);
+          showToast("🖼️ 2K кадр #" + num + " завантажено в правий монітор");
+        } else {
+          var fq = (epMedia.flow_queue || []).find(function (f) { return f.num === num; });
+          if (fq) revealInFinder(fq.raw_image_path, "2K кадр #" + num);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-popup-flow-kf]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var num = btn.getAttribute("data-popup-flow-kf");
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].uid === "flow_img_" + num) { pIdx = i; break; }
+        }
+        if (pIdx !== -1) {
+          openCinemaModal(pIdx);
+        } else {
+          var fq = (epMedia.flow_queue || []).find(function (f) { return f.num === num; });
+          if (fq) revealInFinder(fq.raw_image_path, "2K кадр #" + num);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-flowq-ipath]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-flowq-ipath"), 10);
+        var fq = epMedia.flow_queue[i];
+        if (fq) {
+          var targetPath = fq.raw_image_path || ("05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/" + fq.file.replace(/\.mp4$/, ".jpg"));
+          revealInFinder(targetPath, "2K JPG #" + fq.num);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-play-flow-vid]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var num = btn.getAttribute("data-play-flow-vid");
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].uid === "flow_vid_" + num) { pIdx = i; break; }
+        }
+        if (pIdx !== -1) {
+          selectDockClip(pIdx, true);
+          showToast("🚀 Відео #" + num + " завантажено в правий монітор");
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-popup-flow-vid]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var num = btn.getAttribute("data-popup-flow-vid");
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].uid === "flow_vid_" + num) { pIdx = i; break; }
+        }
+        if (pIdx !== -1) {
+          openCinemaModal(pIdx);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-flowq-vpath]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = parseInt(btn.getAttribute("data-copy-flowq-vpath"), 10);
+        var fq = epMedia.flow_queue[i];
+        if (fq) {
+          var targetPath = fq.raw_video_path || ("05_RAW_FOOTAGE/flow_renders/" + fq.file);
+          revealInFinder(targetPath, "Відео MP4 #" + fq.num);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-play-gallery-idx]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var idx = parseInt(btn.getAttribute("data-play-gallery-idx"), 10);
+        var g = (epMedia.flow_gallery || [])[idx];
+        if (!g) return;
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].file === g.raw_path.split("/").pop() || playlist[i].title === g.title) {
+            pIdx = i; break;
+          }
+        }
+        if (pIdx !== -1) {
+          selectDockClip(pIdx, true);
+          showToast("🖼️ Кадр «" + g.code + "» завантажено в правий монітор");
+        } else {
+          revealInFinder(g.raw_path, g.title);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-popup-gallery-idx]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var idx = parseInt(btn.getAttribute("data-popup-gallery-idx"), 10);
+        var g = (epMedia.flow_gallery || [])[idx];
+        if (!g) return;
+        var pIdx = -1;
+        for (var i = 0; i < playlist.length; i++) {
+          if (playlist[i].file === g.raw_path.split("/").pop() || playlist[i].title === g.title) {
+            pIdx = i; break;
+          }
+        }
+        if (pIdx !== -1) {
+          openCinemaModal(pIdx);
+        } else {
+          revealInFinder(g.raw_path, g.title);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-gallery-path]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var idx = parseInt(btn.getAttribute("data-copy-gallery-path"), 10);
+        var g = (epMedia.flow_gallery || [])[idx];
+        if (g) {
+          revealInFinder(g.raw_path, g.code);
+        }
+      });
+    });
+
+    pane.querySelectorAll("[data-play-pidx]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var pIdx = parseInt(btn.getAttribute("data-play-pidx"), 10);
+        selectDockClip(pIdx, true);
+      });
+    });
+
+    pane.querySelectorAll("[data-popup-pidx]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var pIdx = parseInt(btn.getAttribute("data-popup-pidx"), 10);
+        openCinemaModal(pIdx);
       });
     });
 
