@@ -1768,7 +1768,7 @@
     }).join("\n");
 
     var stageMediaHtml = clip.type === "image"
-      ? "<img id=\"modalStageImage\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" style=\"object-fit:contain;background:#05070c;\">"
+      ? "<div style=\"position:relative;cursor:pointer;\" data-reveal-finder=\"" + esc(clip.localPath || clip.file) + "\" title=\"Клікніть по фото, щоб відкрити його у Finder\"><img id=\"modalStageImage\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" style=\"object-fit:contain;background:#05070c;\"><span style=\"position:absolute;top:10px;left:10px;background:rgba(12,14,19,0.88);color:var(--cyan);padding:4px 8px;border-radius:4px;font-size:11px;font-weight:700;\">📁 Клікніть, щоб відкрити цей файл у Finder</span></div>"
       : "<video id=\"modalStageVideo\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" controls autoplay loop playsinline></video>";
 
     modal.innerHTML = [
@@ -1796,6 +1796,7 @@
       "          <div style=\"font-size:12.5px;color:var(--text-secondary);line-height:1.5;\" id=\"modalClipDesc\">" + esc(clip.desc) + "</div>",
       "        </div>",
       "        <div class=\"btn-group\">",
+      "          <button class=\"btn btn-cyan\" id=\"btnModalRevealFinder\">📁 Відкрити у Finder</button>",
       "          <button class=\"btn btn-emerald\" id=\"btnModalCopyPath\">📋 Локальний шлях</button>",
       (clip.prompt ? "          <button class=\"btn btn-purple\" id=\"btnModalCopyPrompt\">📋 Промпт Flow/Veo</button>" : ""),
       "          <a class=\"btn btn-cyan\" id=\"btnModalGithub\" href=\"" + esc(clip.githubUrl) + "\" target=\"_blank\" rel=\"noopener\">GitHub ↗</a>",
@@ -1836,6 +1837,13 @@
       openCinemaModal(playlistIndex + 1);
       selectDockClip(state.mediaActiveIndex, false);
     });
+    var fBtn = document.getElementById("btnModalRevealFinder");
+    if (fBtn) {
+      fBtn.addEventListener("click", function () {
+        revealInFinder(clip.localPath || clip.file, clip.title);
+      });
+    }
+
     document.getElementById("btnModalCopyPath").addEventListener("click", function () {
       copyText(clip.localPath, clip.file);
     });
@@ -1939,17 +1947,18 @@
         "    <span class=\"chip chip-amber\">" + esc(d.act) + " • TC " + esc(d.timecode) + "</span>",
         "    <span class=\"chip chip-emerald\">3840×2160 4K PNG + MP4</span>",
         "  </div>",
-        "  <div style=\"position:relative;cursor:pointer;\" data-play-pidx=\"" + pIdx + "\" title=\"Натисніть, щоб запустити відео-анімацію зуму в моніторі\">",
-        "    <img src=\"../" + esc(d.web_preview) + "\" alt=\"" + esc(d.title) + "\" loading=\"lazy\" style=\"width:100%;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;display:block;\">",
-        "    <span style=\"position:absolute;bottom:14px;right:8px;background:rgba(12,14,19,0.88);color:var(--amber);border:1px solid rgba(251,191,36,0.45);padding:2px 8px;border-radius:6px;font-size:10.5px;font-weight:700;\">▶️ Дивитися 24fps Zoom</span>",
+        "  <div style=\"position:relative;cursor:pointer;overflow:hidden;border-radius:6px;border:1px solid var(--border);margin-bottom:8px;\" data-reveal-finder=\"" + esc(d.raw_4k_png) + "\" title=\"Клікніть, щоб відкрити цей 4K файл у Finder\">",
+        "    <img src=\"../" + esc(d.web_preview) + "\" alt=\"" + esc(d.title) + "\" loading=\"lazy\" style=\"width:100%;border-radius:5px;display:block;\">",
+        "    <span style=\"position:absolute;top:6px;left:6px;background:rgba(12,14,19,0.85);color:var(--amber);padding:2px 6px;border-radius:4px;font-size:9.5px;font-weight:700;\">📁 Відкрити у Finder</span>",
+        "    <span style=\"position:absolute;bottom:8px;right:6px;background:rgba(12,14,19,0.88);color:var(--cyan);border:1px solid rgba(56,189,248,0.45);padding:2px 6px;border-radius:4px;font-size:9.5px;font-weight:700;\">4K PNG</span>",
         "  </div>",
         "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(d.title) + "</h4>",
-        "  <div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(d.raw_4k_png) + "</div>",
+        "  <div style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;cursor:pointer;\" data-reveal-finder=\"" + esc(d.raw_4k_png) + "\" title=\"Клікніть, щоб відкрити файл у Finder\">📁 " + esc(d.raw_4k_png) + "</div>",
         "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">«" + esc(d.highlight) + "»</div>",
         "  <div class=\"btn-group\">",
-        "    <button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">▶️ У правий монітор</button>",
-        "    <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;\" data-popup-pidx=\"" + pIdx + "\">🔍 Спливаюче вікно</button>",
-        "    <button class=\"btn btn-emerald\" style=\"padding:4px 8px;font-size:11px;\" data-copy-dos-path=\"" + idx + "\">📋 Шлях 4K PNG</button>",
+        "    <button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">▶️ У монітор</button>",
+        "    <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(d.raw_4k_png) + "\">📁 У Finder</button>",
+        "    <button class=\"btn btn-emerald\" style=\"padding:4px 8px;font-size:11px;\" data-copy-dos-path=\"" + idx + "\">📋 Шлях</button>",
         "  </div>",
         "</div>"
       ].join("\n");
@@ -1996,13 +2005,15 @@
           '<div style="position:relative;margin-bottom:8px;">',
           '  <video controls loop preload="metadata" playsinline style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid rgba(16,185,129,0.4);display:block;" src="../' + esc(item.video_preview) + '"></video>',
           '  <div style="position:absolute;top:6px;right:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--emerald);font-weight:700;">VEO / FLOW 4K</div>',
+          '  <div style="position:absolute;bottom:6px;left:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--cyan);font-weight:600;cursor:pointer;" data-reveal-finder="' + esc(item.video_path || item.raw_path) + '">📁 Відкрити у Finder</div>',
           '</div>'
         ].join("\n");
       } else {
         mediaPreview = [
-          '<div style="position:relative;margin-bottom:8px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);">',
-          '  <img src="../' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">',
+          '<div style="position:relative;margin-bottom:8px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);cursor:pointer;" data-reveal-finder="' + esc(item.raw_path) + '" title="Клікніть по кадру, щоб відкрити його у Finder">',
+          '  <img src="../' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform 0.2s;" onmouseover="this.style.transform=\'scale(1.02)\'" onmouseout="this.style.transform=\'scale(1)\'">',
           '  <div style="position:absolute;top:6px;right:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--amber);font-weight:700;">2K KEYFRAME</div>',
+          '  <div style="position:absolute;bottom:6px;left:6px;background:rgba(15,23,42,0.85);padding:2px 6px;border-radius:4px;font-size:9.5px;color:var(--cyan);font-weight:600;display:flex;align-items:center;gap:4px;">📁 Відкрити у Finder</div>',
           '</div>'
         ].join("\n");
       }
@@ -2171,9 +2182,10 @@
         "  </div>",
         "  <video class=\"inline-table-video\" controls loop preload=\"metadata\" playsinline style=\"width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid rgba(167,139,250,0.35);margin-bottom:8px;display:block;\" src=\"../" + esc(sc.web_preview) + "\"></video>",
         "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(sc.title) + "</h4>",
-        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(sc.raw_path) + "</div>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;cursor:pointer;\" data-reveal-finder=\"" + esc(sc.raw_path) + "\" title=\"Клікніть, щоб відкрити файл у Finder\">📁 " + esc(sc.raw_path) + "</div>",
         "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(sc.desc) + "</div>",
         "  <div class=\"btn-group\">",
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(sc.raw_path) + "\">📁 У Finder</button>",
         "    <button class=\"btn btn-purple\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(sc.raw_path) + "\">📋 Шлях MP4</button>",
         "  </div>",
         "</div>"
@@ -2216,11 +2228,12 @@
         "    <span class=\"chip chip-amber\">" + esc(ph.code) + "</span>",
         "    <span class=\"chip chip-purple\">" + esc(ph.source) + "</span>",
         "  </div>",
-        "  <a href=\"../" + esc(ph.web_preview) + "\" target=\"_blank\" rel=\"noopener\">",
-        "    <img src=\"../" + esc(ph.web_preview) + "\" alt=\"" + esc(ph.title) + "\" style=\"width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;border:1px solid var(--border);margin-bottom:7px;display:block;\">",
-        "  </a>",
+        "  <div style=\"position:relative;cursor:pointer;overflow:hidden;border-radius:6px;border:1px solid var(--border);margin-bottom:7px;\" data-reveal-finder=\"" + esc(ph.raw_file) + "\" title=\"Клікніть по фото, щоб відкрити його у Finder\">",
+        "    <img src=\"../" + esc(ph.web_preview) + "\" alt=\"" + esc(ph.title) + "\" style=\"width:100%;aspect-ratio:16/10;object-fit:cover;display:block;transition:transform 0.2s;\">",
+        "    <span style=\"position:absolute;top:6px;left:6px;background:rgba(12,14,19,0.85);color:var(--amber);padding:2px 6px;border-radius:4px;font-size:9.5px;font-weight:700;\">📁 Відкрити у Finder</span>",
+        "  </div>",
         "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(ph.title) + "</h4>",
-        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(ph.raw_file) + "</div>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;cursor:pointer;\" data-reveal-finder=\"" + esc(ph.raw_file) + "\" title=\"Клікніть, щоб відкрити файл у Finder\">📁 " + esc(ph.raw_file) + "</div>",
         "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(ph.desc) + "</div>",
         "  <div style=\"display:flex;gap:6px;margin-top:6px;\">",
         "    <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;flex:1;cursor:pointer;\" data-reveal-finder=\"" + esc(ph.raw_file) + "\">📁 У Finder</button>",
@@ -2280,12 +2293,13 @@
         "    <span class=\"chip " + esc(g.chip) + "\">" + esc(g.badge) + "</span>",
         "    <span style=\"font-family:var(--mono);font-size:10.5px;color:var(--amber);\">TC " + esc(g.tc) + "</span>",
         "  </div>",
-        "  <div style=\"position:relative;cursor:pointer;\" data-play-gallery-idx=\"" + idx + "\" title=\"Клікніть для перегляду кадру у правому моніторі\">",
-        "    <img src=\"../" + esc(g.web_preview) + "\" alt=\"" + esc(g.title) + "\" loading=\"lazy\" style=\"width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:block;margin-bottom:7px;\">",
-        "    <span style=\"position:absolute;bottom:10px;right:6px;background:rgba(12,14,19,0.92);color:var(--cyan);padding:1px 6px;border-radius:4px;font-size:9.5px;font-family:var(--mono);font-weight:700;\">" + esc(g.dims) + "</span>",
+        "  <div style=\"position:relative;cursor:pointer;overflow:hidden;border-radius:6px;border:1px solid var(--border);margin-bottom:7px;\" data-reveal-finder=\"" + esc(g.raw_path) + "\" title=\"Клікніть по кадру, щоб відкрити його у Finder\">",
+        "    <img src=\"../" + esc(g.web_preview) + "\" alt=\"" + esc(g.title) + "\" loading=\"lazy\" style=\"width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform 0.2s;\">",
+        "    <span style=\"position:absolute;top:6px;left:6px;background:rgba(12,14,19,0.85);color:var(--amber);padding:2px 6px;border-radius:4px;font-size:9.5px;font-weight:700;\">📁 Відкрити у Finder</span>",
+        "    <span style=\"position:absolute;bottom:6px;right:6px;background:rgba(12,14,19,0.92);color:var(--cyan);padding:1px 6px;border-radius:4px;font-size:9.5px;font-family:var(--mono);font-weight:700;\">" + esc(g.dims) + "</span>",
         "  </div>",
         "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(g.code) + " • " + esc(g.title) + "</h4>",
-        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(g.raw_path) + "</div>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;cursor:pointer;\" data-reveal-finder=\"" + esc(g.raw_path) + "\" title=\"Клікніть, щоб відкрити файл у Finder\">📁 " + esc(g.raw_path) + "</div>",
         "  <div class=\"btn-group\">",
         "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-play-gallery-idx=\"" + idx + "\">▶️ У монітор</button>",
         "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-popup-gallery-idx=\"" + idx + "\">🔍 У вікні</button>",
@@ -2470,6 +2484,28 @@
     var heroCinemaBtn = document.getElementById("btnOpenFullCinemaHero");
     if (heroCinemaBtn) heroCinemaBtn.addEventListener("click", function () { openCinemaModal(state.mediaActiveIndex); });
 
+    var dockRevealBtn = document.getElementById("btnDockRevealInFinder");
+    if (dockRevealBtn) {
+      dockRevealBtn.addEventListener("click", function () {
+        var clip = playlist[state.mediaActiveIndex];
+        if (clip) {
+          revealInFinder(clip.localPath || clip.file, clip.title);
+        }
+      });
+    }
+
+    var mainImg = document.getElementById("dockMainImage");
+    if (mainImg) {
+      if (mainImg.style) mainImg.style.cursor = "pointer";
+      mainImg.title = "Клікніть, щоб відкрити цей файл у Finder";
+      mainImg.addEventListener("click", function () {
+        var clip = playlist[state.mediaActiveIndex];
+        if (clip) {
+          revealInFinder(clip.localPath || clip.file, clip.title);
+        }
+      });
+    }
+
     var animChk = document.getElementById("chkReelAutoAnim");
     if (animChk) {
       animChk.addEventListener("change", function () {
@@ -2597,6 +2633,16 @@
 
     var hash = (window.location.hash || "").replace(/^#/, "");
     if (hash) switchTab(hash, false);
+
+    document.addEventListener("click", function (ev) {
+      var btn = ev.target.closest("[data-reveal-finder]");
+      if (btn) {
+        ev.preventDefault();
+        var path = btn.getAttribute("data-reveal-finder");
+        var label = btn.getAttribute("data-reveal-label") || "";
+        revealInFinder(path, label);
+      }
+    });
 
     window.addEventListener("hashchange", function () {
       var h = (window.location.hash || "").replace(/^#/, "");
