@@ -9,36 +9,6 @@ window.MEDIA_ACQUISITION_POOL = {
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg",
       "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
     },
-    "archival_photos": [
-      {
-        "id": "EP01_ARCH_PHOTO_01",
-        "title": "Sam Altman & Masayoshi Son (Tokyo, Feb 2025)",
-        "source": "Prime Minister's Office of Japan (Cabinet Public Relations Office, CC BY 4.0)",
-        "url": "https://commons.wikimedia.org/wiki/File:Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
-        "web_preview": "assets/speaker_photos/ep01_altman_real.jpg"
-      },
-      {
-        "id": "EP01_ARCH_PHOTO_02",
-        "title": "Sam Altman as Loopt CEO (March 16, 2009)",
-        "source": "Wikimedia Commons (File:Sam Altman in 2009.jpg, photo by Phil Glockner, CC BY 2.0)",
-        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_in_2009.jpg",
-        "web_preview": "assets/speaker_photos/ep01_altman_2009.jpg"
-      },
-      {
-        "id": "EP01_ARCH_PHOTO_03",
-        "title": "Sam Altman speaking at TED Conference",
-        "source": "Wikimedia Commons (File:Sam Altman speaking at TED.jpg, photo by Steve Jurvetson, CC BY 2.0)",
-        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
-        "web_preview": "assets/speaker_photos/ep01_altman_ted.jpg"
-      },
-      {
-        "id": "EP01_ARCH_PHOTO_04",
-        "title": "Sam Altman with UK PM Rishi Sunak at 10 Downing Street (May 2023)",
-        "source": "Wikimedia Commons (File:The Prime Minister meets with AI developers.jpg, Crown Copyright / OGL)",
-        "url": "https://commons.wikimedia.org/wiki/File:The_Prime_Minister_meets_with_AI_developers.jpg",
-        "web_preview": "assets/speaker_photos/ep01_altman_downing_st.jpg"
-      }
-    ],
     "dossiers": [
       {
         "id": "EP01_DOC_01",
@@ -624,36 +594,54 @@ window.MEDIA_ACQUISITION_POOL = {
     ],
     "archival_photos": [
       {
+        "id": "EP01_PHOTO_01",
         "code": "PHOTO #01",
-        "title": "24-річний Сем Альтман у 2009 році (Ера Loopt)",
-        "source": "Wikimedia Commons (2009)",
+        "title": "24-річний Сем Альтман у 2009 році (Ера Loopt & YC Batch 1)",
+        "source": "Wikimedia Commons (Phil Glockner, CC BY 2.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_in_2009.jpg",
         "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
         "web_preview": "assets/archival_photos/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
-        "desc": "Автентичний історичний знімок молодого Альтмана в епоху запуску Y Combinator Batch 1 та Loopt."
+        "desc": "Автентичний історичний знімок молодого Альтмана в епоху запуску Y Combinator Batch 1 та першого геолокаційного стартапу Loopt."
       },
       {
+        "id": "EP01_PHOTO_02",
         "code": "PHOTO #02",
-        "title": "Сем Альтман та Ілля Суцкевер у Тель-Авіві (2023)",
-        "source": "Wikimedia Commons (TAU 2023)",
+        "title": "Сем Альтман та Ілля Суцкевер у Тель-Авіві (Червень 2023)",
+        "source": "Tel Aviv University / Wikimedia Commons (TAU 2023)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_and_Ilya_Sutskever_at_TAU.jpg",
         "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
         "web_preview": "assets/archival_photos/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
-        "desc": "Сем Альтман та головний науковець OpenAI Ілля Суцкевер разом на сцені за кілька місяців до листопадового розколу."
+        "desc": "Сем Альтман та головний науковець OpenAI Ілля Суцкевер разом на сцені за 5 місяців до історичного листопадового розколу."
       },
       {
+        "id": "EP01_PHOTO_03",
         "code": "PHOTO #03",
         "title": "Сем Альтман на сцені зі Стівом Джобсом (WWDC 2008)",
-        "source": "Apple Keynote Archive (2008)",
+        "source": "Apple Keynote Archive (WWDC 2008)",
+        "url": "https://archive.org/details/apple-wwdc-2008",
         "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
         "web_preview": "assets/archival_photos/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
         "desc": "Історичний момент: Стів Джобс запрошує молодого засновника Loopt продемонструвати запуск iPhone App Store."
       },
       {
+        "id": "EP01_PHOTO_04",
         "code": "PHOTO #04",
         "title": "Президент Y Combinator Сем Альтман у Стенфорді (2014)",
         "source": "Stanford CS183B Archive (2014)",
+        "url": "https://openarchives.stanford.edu",
         "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
         "web_preview": "assets/archival_photos/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
         "desc": "Альтман читає лекцію про правила експоненційного росту технологічних монополій."
+      },
+      {
+        "id": "EP01_PHOTO_05",
+        "code": "PHOTO #05",
+        "title": "Сем Альтман та Масайоші Сон (Токіо, Лютий 2025 • Stargate)",
+        "source": "Prime Minister's Office of Japan (Cabinet Public Relations Office, CC BY 4.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
+        "web_preview": "assets/speaker_photos/ep01_altman_real.jpg",
+        "desc": "Офіційна зустріч у Токіо з керівництвом Японії та SoftBank щодо створення глобального суперобчислювального проєкту інфраструктури ШІ Stargate."
       }
     ],
     "audio": [

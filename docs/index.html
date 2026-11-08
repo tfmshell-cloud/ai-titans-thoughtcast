@@ -6,21 +6,24 @@
   <title>Cinematic Thoughtcast: Архітектори Розуму (AI Titans) — Головний Командний Дашборд</title>
   <style>
     :root {
-      --bg: #0c0e13;
-      --surface: #13161f;
-      --surface-elevated: #191d29;
-      --surface-hover: #1f2536;
-      --border: #222736;
-      --border-subtle: #1a1e2c;
-      --text-primary: #e6edf3;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
+      /* Scandinavian Nordic Dark Slate / Graphite Studio Theme */
+      --bg: #0b0f17;
+      --bg-gradient: radial-gradient(ellipse 80% 50% at 50% -15%, #182438 0%, #0b0f17 100%), #0b0f17;
+      --surface: #111724;
+      --surface-elevated: #161e2e;
+      --surface-hover: #1c273c;
+      --surface-glass: rgba(17, 23, 36, 0.85);
+      --border: #1e293b;
+      --border-subtle: #172132;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
       --cyan: #38bdf8;
       --cyan-subtle: rgba(56, 189, 248, 0.12);
-      --emerald: #34d399;
-      --emerald-subtle: rgba(52, 211, 153, 0.12);
-      --amber: #fbbf24;
-      --amber-subtle: rgba(251, 191, 36, 0.12);
+      --emerald: #10b981;
+      --emerald-subtle: rgba(16, 185, 129, 0.12);
+      --amber: #f59e0b;
+      --amber-subtle: rgba(245, 158, 11, 0.12);
       --purple: #a78bfa;
       --purple-subtle: rgba(167, 139, 250, 0.12);
       --rose: #fb7185;
@@ -30,11 +33,13 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--bg);
+      background-color: var(--bg);
+      background-image: var(--bg-gradient);
+      background-attachment: fixed;
       color: var(--text-primary);
       font-family: var(--font);
       font-size: 13px;
-      line-height: 1.48;
+      line-height: 1.5;
       padding: 1.15rem;
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
@@ -846,11 +851,11 @@
 
   <div class="hub-toast" id="hubToast"></div>
 
-  <script src="data/season1_index.js?v=20261108_v3"></script>
-  <script src="data/suno_master_pool.js?v=20261108_v3"></script>
-  <script src="data/media_acquisition_pool.js?v=20261108_v3"></script>
+  <script src="data/season1_index.js?v=20261108_v4"></script>
+  <script src="data/suno_master_pool.js?v=20261108_v4"></script>
+  <script src="data/media_acquisition_pool.js?v=20261108_v4"></script>
   <script src="data/veo_animation_pipeline.js?v=20261108_v4"></script>
-  <script src="data/titans_1000_quotes.js?v=20261108_v3"></script>
-  <script src="assets/hub_app.js?v=20261108_v3"></script>
+  <script src="data/titans_1000_quotes.js?v=20261108_v4"></script>
+  <script src="assets/hub_app.js?v=20261108_v4"></script>
 </body>
 </html>

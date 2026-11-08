@@ -303,6 +303,16 @@
     return initMap;
   }
 
+  function setVeoStatus(id, isDone) {
+    var map = getVeoStatusMap();
+    map[id] = isDone;
+    try {
+      localStorage.setItem("ai_titans_veo_status", JSON.stringify(map));
+    } catch (e) {}
+    renderMedia();
+    updateTopProgress();
+  }
+
   function renderShell() {
     var switcherHtml = seasonIndex.map(function (item) {
       var activeCls = item.ep === epData.ep ? " active" : "";
@@ -1527,13 +1537,13 @@
 
   function buildEpisodeVideoPlaylist() {
     var allMedia = window.MEDIA_ACQUISITION_POOL || {};
-    var epMedia = allMedia[epData.ep] || { dossiers: [], archives: [], flow_queue: [], portrait: {}, flow_gallery: [] };
+    var epMedia = allMedia[epData.ep] || { dossiers: [], archives: [], flow_queue: [], portrait: {}, flow_gallery: [], archival_photos: [], scientific_vfx: [] };
     var repoRoot = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/";
     var list = [];
 
     // 1. Real Archival B-Roll MP4s
     (epMedia.archives || []).forEach(function (ar, idx) {
-      var fileName = ar.file || ar.mp4_file || "";
+      var fileName = ar.file || ar.mp4_file || ("archive_" + (idx + 1) + ".mp4");
       var vUrl = ar.video_preview ? ("../" + ar.video_preview) : ("../assets/video_previews/archives/" + fileName);
       var descNote = ar.note || ar.davinci_usage || "";
       var srcSec = ar.section || ar.timecode || "";
@@ -1556,43 +1566,45 @@
       });
     });
 
-    // 2. Real Google Flow / Veo Videos (#01-#04)
+    // 2. Real Google Flow / Veo Videos (#01-#10) & 2K Keyframes
     (epMedia.flow_queue || []).forEach(function (fq, idx) {
       if (fq.status === "video_ready" && fq.video_preview) {
+        var vFile = fq.file || ("flow_" + fq.num + ".mp4");
         list.push({
           uid: "flow_vid_" + fq.num,
           type: "video",
           kind: "flow_video",
           kindLabel: "🚀 Flow 4K/HD Відео (#" + fq.num + ")",
           chipClass: "chip-emerald",
-          title: fq.title || ("Flow Сцена #" + fq.num + " — " + fq.file),
-          file: fq.file,
+          title: fq.title || ("Flow Сцена #" + fq.num + " — " + vFile),
+          file: vFile,
           tc: fq.tc || "00:00",
           track: "DaVinci V1 • Speed 60% • " + (fq.specs || "24 fps 1080p/720p"),
-          desc: "Згенеровано в Google Flow / Veo. " + (fq.specs || "") + ". Промпт: " + fq.prompt,
+          desc: "Згенеровано в Google Flow / Veo. " + (fq.specs || "") + ". Промпт: " + (fq.prompt || ""),
           src: "../" + fq.video_preview,
           poster: fq.keyframe_preview ? ("../" + fq.keyframe_preview) : "",
-          localPath: repoRoot + (fq.raw_video_path || ("05_RAW_FOOTAGE/flow_renders/" + fq.file)),
-          githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/05_RAW_FOOTAGE/flow_renders/" + encodeURIComponent(fq.file),
+          localPath: repoRoot + (fq.raw_video_path || ("05_RAW_FOOTAGE/flow_renders/" + vFile)),
+          githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/05_RAW_FOOTAGE/flow_renders/" + encodeURIComponent(vFile),
           externalUrl: "",
           prompt: fq.prompt || ""
         });
-      } else if (fq.status === "image_ready" && fq.keyframe_preview) {
-        // 3. Ready 2K Keyframes (#05, #06, #07)
+      }
+      if (fq.keyframe_preview || fq.raw_image_path) {
+        var kFile = fq.raw_image_path ? fq.raw_image_path.split("/").pop() : ((fq.file || ("flow_" + fq.num)).replace(/\.mp4$/, ".jpg"));
         list.push({
           uid: "flow_img_" + fq.num,
           type: "image",
           kind: "flow_image",
-          kindLabel: "🖼️ 2K Кадр (#" + fq.num + " • Очікує відео)",
-          chipClass: "chip-cyan",
-          title: fq.title || ("Flow Кадр #" + fq.num),
-          file: (fq.raw_image_path ? fq.raw_image_path.split("/").pop() : (fq.file.replace(/\.mp4$/, ".jpg"))),
+          kindLabel: "🖼️ 2K Кадр (#" + fq.num + (fq.status === "video_ready" ? " • Відео зведено" : " • Очікує відео") + ")",
+          chipClass: fq.status === "video_ready" ? "chip-emerald" : "chip-cyan",
+          title: (fq.title ? (fq.title + " (2K Кадр)") : ("Flow Кадр #" + fq.num)),
+          file: kFile,
           tc: fq.tc || "00:00",
-          track: "Концепт-кадр 2K (2752×1536) • Підготовка відео Flow / Veo",
-          desc: "Концепт-кадр 2K згенеровано у 2752×1536. Наступний крок: генерація відео за цим кадром у Google Flow. Промпт: " + fq.prompt,
-          src: "../" + fq.keyframe_preview,
-          poster: "../" + fq.keyframe_preview,
-          localPath: repoRoot + (fq.raw_image_path || ""),
+          track: "Концепт-кадр 2K • Підготовка відео Flow / Veo",
+          desc: "Концепт-кадр 2K. Промпт: " + (fq.prompt || ""),
+          src: "../" + (fq.keyframe_preview || ("assets/flow_keyframes/" + kFile)),
+          poster: "../" + (fq.keyframe_preview || ("assets/flow_keyframes/" + kFile)),
+          localPath: repoRoot + (fq.raw_image_path || ("05_RAW_FOOTAGE/flow_images/" + kFile)),
           githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + (fq.raw_image_path || ""),
           externalUrl: "",
           prompt: fq.prompt || ""
@@ -1600,46 +1612,48 @@
       }
     });
 
-    // 4. UHD 4K Dossier Zoom Videos (V2)
+    // 3. UHD 4K Dossier Zoom Videos (V2)
     (epMedia.dossiers || []).forEach(function (d, idx) {
-      var vUrl = d.video_preview ? ("../" + d.video_preview) : ("../assets/video_previews/dossiers/" + d.id + ".mp4");
+      var vUrl = d.video_preview ? ("../" + d.video_preview) : ("../assets/video_previews/dossiers/" + (d.id || "doc") + ".mp4");
+      var dFile = (d.id || "DOC") + ".mp4";
       list.push({
         uid: "dos_" + idx,
         type: "video",
         kind: "dossier",
         kindLabel: "🗂️ 4K Досьє (Zoom 1.00→1.06)",
         chipClass: "chip-amber",
-        title: d.title,
-        file: d.id + ".mp4",
+        title: d.title || ("Досьє #" + (idx + 1)),
+        file: dFile,
         tc: d.timecode || "00:00",
         track: "DaVinci V2 • UHD 4K Документальна пластина (Dynamic Zoom)",
-        desc: "«" + d.highlight + "» — Джерело: " + d.source_label,
+        desc: "«" + (d.highlight || "") + "» — Джерело: " + (d.source_label || ""),
         src: vUrl,
         poster: d.web_preview ? ("../" + d.web_preview) : "",
-        localPath: repoRoot + d.raw_4k_png,
-        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/07_DASHBOARD/" + d.web_preview,
+        localPath: repoRoot + (d.raw_4k_png || ""),
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/07_DASHBOARD/" + (d.web_preview || ""),
         externalUrl: "",
         prompt: ""
       });
     });
 
-    // 6. Scientific 3D Animations & VFX (1080p MP4)
+    // 4. Scientific 3D Animations & VFX (1080p MP4)
     (epMedia.scientific_vfx || []).forEach(function (sc, idx) {
+      var scFile = sc.file || (sc.raw_path ? sc.raw_path.split("/").pop() : ("vfx_" + idx + ".mp4"));
       list.push({
         uid: "sci_" + idx,
         type: "video",
         kind: "science",
-        kindLabel: "🔬 Наукова 3D-Анімація (" + sc.code + ")",
+        kindLabel: "🔬 Наукова 3D-Анімація (" + (sc.code || "VFX") + ")",
         chipClass: "chip-purple",
-        title: sc.title,
-        file: sc.file,
+        title: sc.title || ("Науковий VFX #" + (idx + 1)),
+        file: scFile,
         tc: sc.timecode || "00:00",
-        track: "DaVinci V1/V2 • Науковий VFX • " + sc.specs,
-        desc: sc.desc + " (" + sc.role + ")",
-        src: "../" + sc.web_preview,
+        track: "DaVinci V1/V2 • Науковий VFX • " + (sc.specs || "1080p"),
+        desc: (sc.desc || "") + " (" + (sc.role || "") + ")",
+        src: sc.web_preview ? ("../" + sc.web_preview) : "",
         poster: "",
-        localPath: repoRoot + sc.raw_path,
-        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + sc.raw_path,
+        localPath: repoRoot + (sc.raw_path || ""),
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + (sc.raw_path || ""),
         externalUrl: "",
         prompt: ""
       });
@@ -1647,46 +1661,49 @@
 
     // 5. Extra B-Roll & Study Stills
     (epMedia.flow_gallery || []).forEach(function (g, idx) {
-      if (g.code.indexOf("B-ROLL") === 0 || g.code.indexOf("STUDY") === 0) {
-        list.push({
-          uid: "broll_" + idx,
-          type: "image",
-          kind: "broll",
-          kindLabel: (g.code.indexOf("STUDY") === 0 ? "🎨 Концепт-дослідження (" : "🎞️ Кінокадр B-Roll (") + g.code + ")",
-          chipClass: g.code.indexOf("STUDY") === 0 ? "chip-purple" : "chip-amber",
-          title: g.title,
-          file: g.raw_path.split("/").pop(),
-          tc: g.tc || "00:00",
-          track: "Кінокадр / Дослідження • " + g.dims,
-          desc: (g.badge || "") + " — " + g.title + ". Розмір: " + g.dims,
-          src: "../" + g.web_preview,
-          poster: "../" + g.web_preview,
-          localPath: repoRoot + g.raw_path,
-          githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + g.raw_path,
-          externalUrl: "",
-          prompt: ""
-        });
-      }
+      var code = g.code || "";
+      var gFile = g.raw_path ? g.raw_path.split("/").pop() : (code + ".jpg");
+      list.push({
+        uid: "broll_" + idx,
+        type: "image",
+        kind: "broll",
+        kindLabel: (code.indexOf("STUDY") === 0 ? "🎨 Концепт-дослідження (" : "🎞️ Кінокадр B-Roll (") + (code || "B-ROLL") + ")",
+        chipClass: code.indexOf("STUDY") === 0 ? "chip-purple" : "chip-amber",
+        title: g.title || ("Кадр " + code),
+        file: gFile,
+        tc: g.tc || "00:00",
+        track: "Кінокадр / Дослідження • " + (g.dims || "2K"),
+        desc: (g.badge || "") + " — " + (g.title || "") + ". Розмір: " + (g.dims || "2K"),
+        src: g.web_preview ? ("../" + g.web_preview) : "",
+        poster: g.web_preview ? ("../" + g.web_preview) : "",
+        localPath: repoRoot + (g.raw_path || ""),
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + (g.raw_path || ""),
+        externalUrl: "",
+        prompt: ""
+      });
     });
 
-    // 7. Archival Photos & Real Portraits
+    // 6. Archival Photos & Real Portraits
     (epMedia.archival_photos || []).forEach(function (ph, idx) {
+      var phId = ph.id || ph.code || ("PHOTO_" + (idx + 1));
+      var phFile = (ph.raw_file ? ph.raw_file.split("/").pop() : "") || (ph.url ? ph.url.split("/").pop() : "") || (phId + ".jpg");
+      var phSrc = ph.web_preview ? ("../" + ph.web_preview) : (ph.url || "");
       list.push({
         uid: "arch_photo_" + idx,
         type: "image",
         kind: "archival_photo",
-        kindLabel: "📷 Архівне Фото (" + ph.id + ")",
+        kindLabel: "📷 Архівне Фото (" + (ph.code || phId) + ")",
         chipClass: "chip-cyan",
-        title: ph.title,
-        file: ph.url.split("/").pop() || (ph.id + ".jpg"),
+        title: ph.title || ("Архівне фото #" + (idx + 1)),
+        file: phFile,
         tc: "00:00",
         track: "DaVinci V2 • Історичний фотокадр • CC / Public Domain",
-        desc: ph.title + " — Джерело: " + ph.source,
-        src: ph.web_preview ? ("../" + ph.web_preview) : ph.url,
-        poster: ph.web_preview ? ("../" + ph.web_preview) : ph.url,
-        localPath: repoRoot + "05_RAW_FOOTAGE/speaker_photos/" + (ph.id + ".jpg"),
-        githubUrl: ph.url,
-        externalUrl: ph.url,
+        desc: (ph.title || "") + " — Джерело: " + (ph.source || "Архів"),
+        src: phSrc,
+        poster: phSrc,
+        localPath: repoRoot + (ph.raw_file || ("05_RAW_FOOTAGE/speaker_photos/" + phFile)),
+        githubUrl: ph.url || ("https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + (ph.raw_file || "")),
+        externalUrl: ph.url || "",
         prompt: ""
       });
     });
@@ -2116,8 +2133,9 @@
         "  <td>",
         "    <div class=\"btn-group\">",
         "      <button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">▶️ У монітор</button>",
-        "      <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;\" data-popup-pidx=\"" + pIdx + "\">🔍 Спливаюче вікно</button>",
-        "      <button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-arch-path=\"" + idx + "\">Шлях MP4</button>",
+        "      <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;\" data-popup-pidx=\"" + pIdx + "\">🔍 Вікно</button>",
+        "      <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"05_RAW_FOOTAGE/archives/" + esc(ar.file) + "\">📁 У Finder</button>",
+        "      <button class=\"btn btn-emerald\" style=\"padding:3px 7px;font-size:11px;\" data-copy-arch-path=\"" + idx + "\">📋 Шлях</button>",
         "    </div>",
         "  </td>",
         "</tr>"
@@ -2172,13 +2190,15 @@
 
       var actionsHtml = [];
       if (isVidReady) {
-        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-vid=\"" + esc(fq.num) + "\">▶️ У монітор</button>");
+        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-vid=\"" + esc(fq.num) + "\">▶️ Відео</button>");
         actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-popup-flow-vid=\"" + esc(fq.num) + "\">🔍 Вікно</button>");
-        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(fq.raw_video_path || ('05_RAW_FOOTAGE/flow_renders/' + fq.file)) + "\" data-copy-flowq-vpath=\"" + idx + "\">📁 Шлях MP4 (Finder)</button>");
-      } else if (isImgReady) {
-        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-kf=\"" + esc(fq.num) + "\">🖼️ 2K у монітор</button>");
-        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-popup-flow-kf=\"" + esc(fq.num) + "\">🔍 2K у вікні</button>");
-        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;font-weight:700;\" data-reveal-finder=\"" + esc(fq.raw_image_path || fq.keyframe_preview) + "\" data-copy-flowq-ipath=\"" + idx + "\">📁 Шлях JPG (Finder)</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(fq.raw_video_path || ('05_RAW_FOOTAGE/flow_renders/' + fq.file)) + "\" data-copy-flowq-vpath=\"" + idx + "\">📁 MP4 (Finder)</button>");
+      }
+      if (isImgReady || fq.keyframe_preview || fq.raw_image_path) {
+        var kfPath = fq.raw_image_path || ("05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/" + fq.file.replace(/\.mp4$/, ".jpg"));
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-play-flow-kf=\"" + esc(fq.num) + "\">🖼️ 2K Кадр</button>");
+        actionsHtml.push("<button class=\"btn btn-amber\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-popup-flow-kf=\"" + esc(fq.num) + "\">🔍 2K Вікно</button>");
+        actionsHtml.push("<button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;font-weight:700;\" data-reveal-finder=\"" + esc(kfPath) + "\" data-copy-flowq-ipath=\"" + idx + "\">📁 JPG (Finder)</button>");
       }
       actionsHtml.push("<button class=\"btn btn-purple\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-copy-flowq-p=\"" + idx + "\">📋 Промпт</button>");
 
@@ -2359,82 +2379,133 @@
       ].join("\n");
     }).filter(Boolean).join("\n");
 
+    var countKind = function (k) {
+      return playlist.filter(function (it) { return it.kind === k; }).length;
+    };
+    var nFlowVid = countKind("flow_video");
+    var nFlowImg = countKind("flow_image");
+    var nArchCount = countKind("archive");
+    var nDosCount = countKind("dossier");
+    var nSciCount = countKind("science");
+    var nPhotoCount = countKind("archival_photo");
+    var nBrollCount = countKind("broll");
+
+    var filterPillsHtml = [
+      '<button class="dock-pill' + (state.mediaDockFilter === "all" ? " active" : "") + '" data-dock-filter="all">Усі (' + playlist.length + ')</button>'
+    ];
+    if (nFlowVid > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_video" ? " active" : "") + '" data-dock-filter="flow_video">🚀 Flow Відео (' + nFlowVid + ')</button>');
+    if (nFlowImg > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_image" ? " active" : "") + '" data-dock-filter="flow_image">🖼️ 2K Кадри (' + nFlowImg + ')</button>');
+    if (nArchCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "archive" ? " active" : "") + '" data-dock-filter="archive">📼 Архіви (' + nArchCount + ')</button>');
+    if (nDosCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "dossier" ? " active" : "") + '" data-dock-filter="dossier">🗂️ Досьє (' + nDosCount + ')</button>');
+    if (nSciCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "science" ? " active" : "") + '" data-dock-filter="science">🔬 VFX (' + nSciCount + ')</button>');
+    if (nPhotoCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "archival_photo" ? " active" : "") + '" data-dock-filter="archival_photo">📸 Фото (' + nPhotoCount + ')</button>');
+    if (nBrollCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "broll" ? " active" : "") + '" data-dock-filter="broll">🎞️ B-Roll (' + nBrollCount + ')</button>');
+
+    var executiveHeroHtml = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.4);background:linear-gradient(180deg, rgba(17,23,38,0.85), rgba(11,15,23,0.9));\">",
+      "  <div class=\"panel-head\" style=\"border-bottom:none;padding-bottom:0;\">",
+      "    <div>",
+      "      <div class=\"panel-title\" style=\"font-size:16.5px;color:var(--text-primary);display:flex;align-items:center;gap:10px;\">",
+      "        <span>🎬 Візуальний Пул Епізоду " + esc(epData.ep) + " (" + playlist.length + " готових медіа-елементів у виробництві)</span>",
+      "        <span class=\"chip chip-emerald\">✅ 10/10 Flow Відео Готові</span>",
+      "      </div>",
+      "      <div class=\"panel-desc\">Повний виробничий конвеєр епізоду: відео 24fps для таймлайну DaVinci V1/V2, 2K/4K концепт-кадри для Veo 2 / Flow, автентичні історичні архіви B-Roll, 4K досьє-пластини та аудіо-стеми 48kHz. Усі файли синхронізовані на локальному диску, у Finder, GitHub та Google Drive.</div>",
+      "    </div>",
+      "    <div class=\"btn-group\">",
+      "      <button class=\"btn btn-amber\" id=\"btnOpenFullCinemaHero\">🔍 Відкрити Спливаючий Кінозал (" + playlist.length + " медіа)</button>",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/\">📁 05_RAW_FOOTAGE у Finder</button>",
+      "      <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри V3 (.srt)</button>",
+      "    </div>",
+      "  </div>",
+      "  <div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:1rem;\">",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Flow 4K/HD Відео</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + nFlowVid + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові для EP" + esc(epData.ep) + "</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">2K Концепт-Кадри</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + (epMedia.flow_gallery || []).length + " Кадрів</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">2752×1536 під Veo/Flow</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--purple);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Архіви B-Roll</div><div style=\"font-size:20px;font-weight:800;color:var(--purple);margin:2px 0;\">" + nArchCount + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">Історичні плани</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--amber);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">4K Досьє</div><div style=\"font-size:20px;font-weight:800;color:var(--amber);margin:2px 0;\">" + nDosCount + " Пластин</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">3840×2160 + Zoom MP4</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Історичні Фото</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + (epMedia.archival_photos || []).length + " Фото</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">Автентичні архіви</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">DaVinci Аудіо</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + (epMedia.audio || []).length + " Треки</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">48 kHz / 24-bit WAV</div></div>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+
+    var flowSectionHtml = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(167,139,250,0.55);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🚀 Пріоритетна Черга Google Flow / Veo (10 базових сцен) — " + nFlowVid + " Відео Готові • " + (epMedia.flow_queue || []).length + " Сцен</div>",
+      "      <div class=\"panel-desc\">Сцени відтворюються через вбудовані плеєри. Клікніть на <strong>«▶️ Відео»</strong> або <strong>«🖼️ 2K Кадр»</strong> для завантаження у правий монітор, або <strong>«📁 MP4 / JPG (Finder)»</strong> для переходу у Finder.</div>",
+      "    </div>",
+      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/flow_renders/\">📁 flow_renders/ у Finder</button>",
+      "  </div>",
+      "  <div class=\"studio-table-wrap\">",
+      "    <table class=\"studio-table\">",
+      "      <thead><tr><th>✓</th><th>Медіа-прев'ю (Відео / 2K Кадр)</th><th>Цільовий файл у flow_renders/</th><th>Промпт для Google Flow / Veo 4K</th><th>Дії</th></tr></thead>",
+      "      <tbody>" + flowRowsHtml + "</tbody>",
+      "    </table>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+
+    var gallerySectionHtml = (epMedia.flow_gallery || []).length ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🖼️ Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (" + (epMedia.flow_gallery || []).length + " Кадрів • 05_RAW_FOOTAGE/flow_images/)</div>",
+      "      <div class=\"panel-desc\">Усі зображення зберігаються окремо у <code>05_RAW_FOOTAGE/flow_images/</code>. Клікніть на будь-який кадр або кнопку для відкриття у Finder, моніторі або спливаючому вікні.</div>",
+      "    </div>",
+      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/\">📁 Папка кадрів у Finder</button>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + galleryCardsHtml + "</div>",
+      "</div>"
+    ].join("\n") : "";
+
+    var archiveSectionHtml = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">📼 Реальні Історичні Відеоархіви B-Roll (05_RAW_FOOTAGE/archives/)</div>",
+      "      <div class=\"panel-desc\">Натисніть Play прямо у рядку або кнопку <strong>«▶️ У монітор»</strong> / <strong>«🔍 Вікно»</strong> для перегляду зі звуком.</div>",
+      "    </div>",
+      "    <div class=\"btn-group\">",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/archives/\">📁 archives/ у Finder</button>",
+      "      <button class=\"btn btn-purple\" id=\"btnCopyFetchEpCmd\">💻 fetch_archives.sh</button>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"studio-table-wrap\">",
+      "    <table class=\"studio-table\">",
+      "      <thead><tr><th>Живий прев'ю-плеєр</th><th>Назва та файл Smart Bin</th><th>Першоджерело & Синхронізація</th><th>Дії</th></tr></thead>",
+      "      <tbody>" + archiveRowsHtml + "</tbody>",
+      "    </table>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+
+    var dossierSectionHtml = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🗂️ Згенеровані 4K Документальні Артефакти («Досьє» • 3840×2160 PNG + 24fps Zoom MP4)</div>",
+      "      <div class=\"panel-desc\">Клікніть по зображенню досьє, щоб переглянути його анімований кінематографічний наїзд камери (1.00→1.06) у правому моніторі або відкрити файл у Finder.</div>",
+      "    </div>",
+      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/dossiers_press/\">📁 dossiers_press/ у Finder</button>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + dossiersHtml + portraitCardHtml + "</div>",
+      "</div>"
+    ].join("\n");
+
     pane.innerHTML = [
       "<div class=\"media-split-layout\">",
       "  <div class=\"media-main-col\">",
-      "    <div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
-      "      <div class=\"panel-head\">",
-      "        <div>",
-      "          <div class=\"panel-title\">🎬 Візуальний Пул Епізоду (" + playlist.length + " готових медіа-елементів: 4 реал. відео Flow + 3 2K кадри Flow + 3 архіви B-Roll + 5 4K досьє + 3 B-Roll кадри)</div>",
-      "          <div class=\"panel-desc\">Усі відео та зображення структуровано за окремими папками, синхронізовано між <strong>GitHub</strong>, <strong>GitHub Pages</strong> та <strong>Google Drive</strong>. Дивіться медіа в таблицях зліва, у <strong>Правому Відео-Моніторі</strong> або у <strong>Спливаючому Кінозалі</strong>.</div>",
-      "        </div>",
-      "        <div class=\"btn-group\">",
-      "          <button class=\"btn btn-amber\" id=\"btnOpenFullCinemaHero\">🔍 Відкрити Спливаючий Кінозал (" + playlist.length + " медіа)</button>",
-      "          <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри V3 (.srt)</button>",
-      "        </div>",
-      "      </div>",
-      "      <div class=\"node-tree-grid\">",
-      "        <div class=\"node-box\" style=\"border-top-color:var(--emerald);\"><h4>1. Готові Відео Flow (#01–#04)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\"><strong>4 кліпи 24fps</strong> зі стереозвуком (Macintosh, CRT Assembly, Silicon Laser, Exponential Curve) у <code>05_RAW_FOOTAGE/flow_renders/</code>.</p></div>",
-      "        <div class=\"node-box\" style=\"border-top-color:var(--cyan);\"><h4>2. 2K Концепт-Кадри (#05–#07)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\"><strong>3 кадри 2752×1536</strong> (Neural Lattice, Servers Cold Hall, Boardroom Noir) готові до генерації відео у Flow.</p></div>",
-      "        <div class=\"node-box\" style=\"border-top-color:var(--purple);\"><h4>3. Архіви B-Roll (3 MP4)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">Реальні історичні плани (Сенат США 2023, Apple Mac 1992 CRT) у <code>05_RAW_FOOTAGE/archives/</code>.</p></div>",
-      "        <div class=\"node-box\" style=\"border-top-color:var(--amber);\"><h4>4. 4K Досьє (5 пластин)</h4><p style=\"font-size:11.8px;color:var(--text-secondary);\">UHD 3840×2160 PNG + 24fps відеокліпи <code>Dynamic Zoom 1.00→1.06</code> для доріжки DaVinci V2.</p></div>",
-      "      </div>",
-      "    </div>",
-
-      "    <div class=\"panel-card\" style=\"border-color:rgba(167,139,250,0.55);\">",
-      "      <div class=\"panel-head\">",
-      "        <div>",
-      "          <div class=\"panel-title\">🚀 Пріоритетна Черга Google Flow / Veo (10 базових сцен) — Статус: 4 відео готові • 3 кадри 2K готові • 3 у розробці</div>",
-      "          <div class=\"panel-desc\">Сцени <strong>#01–#04</strong> уже відтворюються через вбудовані плеєри. Сцени <strong>#05–#07</strong> мають готові концепт-кадри 2K (клікніть для збільшення).</div>",
-      "        </div>",
-      "      </div>",
-      "      <div class=\"studio-table-wrap\">",
-      "        <table class=\"studio-table\">",
-      "          <thead><tr><th>✓</th><th>Медіа-прев'ю (Відео / 2K Кадр)</th><th>Цільовий файл у flow_renders/</th><th>Промпт для Google Flow / Veo 4K</th><th>Дії</th></tr></thead>",
-      "          <tbody>" + flowRowsHtml + "</tbody>",
-      "        </table>",
-      "      </div>",
-      "    </div>",
-
-      "    <div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);\">",
-      "      <div class=\"panel-head\">",
-      "        <div>",
-      "          <div class=\"panel-title\">🖼️ Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (#05, #06, #07 + Акт 1)</div>",
-      "          <div class=\"panel-desc\">Усі зображення зберігаються окремо у <code>05_RAW_FOOTAGE/flow_images/EP01_Altman/</code>. Клікніть на будь-який кадр для відкриття у моніторі або спливаючому вікні.</div>",
-      "        </div>",
-      "      </div>",
-      "      <div class=\"node-tree-grid\">" + galleryCardsHtml + "</div>",
-      "    </div>",
-
-      "    <div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.45);\">",
-      "      <div class=\"panel-head\">",
-      "        <div>",
-      "          <div class=\"panel-title\">📼 Реальні Історичні Відеоархіви B-Roll (05_RAW_FOOTAGE/archives/)</div>",
-      "          <div class=\"panel-desc\">Натисніть Play прямо у рядку або кнопку <strong>«▶️ У монітор»</strong> / <strong>«🔍 Спливаюче вікно»</strong> для перегляду зі звуком.</div>",
-      "        </div>",
-      "        <button class=\"btn btn-cyan\" id=\"btnCopyFetchEpCmd\">💻 Команда fetch_archives.sh --ep EP" + esc(epData.ep) + "</button>",
-      "      </div>",
-      "      <div class=\"studio-table-wrap\">",
-      "        <table class=\"studio-table\">",
-      "          <thead><tr><th>Живий прев'ю-плеєр</th><th>Назва та файл Smart Bin</th><th>Першоджерело & Синхронізація</th><th>Дії</th></tr></thead>",
-      "          <tbody>" + archiveRowsHtml + "</tbody>",
-      "        </table>",
-      "      </div>",
-      "    </div>",
-
-      "    <div class=\"panel-card\">",
+      executiveHeroHtml,
+      veoMasterSectionHtml,
+      flowSectionHtml,
+      gallerySectionHtml,
+      archiveSectionHtml,
+      dossierSectionHtml,
       photoSectionHtml,
       sciSectionHtml,
       audioSectionHtml,
       nbHtml,
-      "      <div class=\"panel-head\">",
-      "        <div>",
-      "          <div class=\"panel-title\">🗂️ Згенеровані 4K Документальні Артефакти («Досьє» • 3840×2160 PNG + 24fps Zoom MP4)</div>",
-      "          <div class=\"panel-desc\">Клікніть по зображенню досьє, щоб переглянути його анімований кінематографічний наїзд камери (1.00→1.06) у правому моніторі.</div>",
-      "        </div>",
-      "      </div>",
-      "      <div class=\"node-tree-grid\">" + dossiersHtml + portraitCardHtml + "</div>",
-      "    </div>",
       "  </div>",
 
       "  <aside class=\"media-dock-right\" aria-label=\"Правий блок прокрутки та анімації медіа\">",
@@ -2456,19 +2527,14 @@
       "        <div class=\"dock-nav-row\">",
       "          <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" id=\"btnDockPrev\">◀ Попереднє</button>",
       "          <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;" + (activeClip.type === "image" ? "display:none;" : "") + "\" id=\"btnDockToggleSound\">🔊 Увімкнути звук</button>",
-          "          <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" id=\"btnDockRevealInFinder\">📁 Відкрити у Finder</button>",
+      "          <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" id=\"btnDockRevealInFinder\">📁 Відкрити у Finder</button>",
       "          <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" id=\"btnDockNext\">Наступне ▶</button>",
       "        </div>",
       "      </div>",
       "    </div>",
 
       "    <div class=\"dock-filter-row\">",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "all" ? " active" : "") + "\" data-dock-filter=\"all\">Усі (" + playlist.length + ")</button>",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "flow_video" ? " active" : "") + "\" data-dock-filter=\"flow_video\">🚀 Flow Відео (4)</button>",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "flow_image" ? " active" : "") + "\" data-dock-filter=\"flow_image\">🖼️ 2K Кадри (3)</button>",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "archive" ? " active" : "") + "\" data-dock-filter=\"archive\">📼 Архіви (" + nArch + ")</button>",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "dossier" ? " active" : "") + "\" data-dock-filter=\"dossier\">🗂️ Досьє (" + nDos + ")</button>",
-      "      <button class=\"dock-pill" + (state.mediaDockFilter === "broll" ? " active" : "") + "\" data-dock-filter=\"broll\">🎞️ B-Roll (3)</button>",
+      filterPillsHtml.join("\n"),
       "    </div>",
 
       "    <label class=\"dock-anim-toggle\" style=\"cursor:pointer;\">",
@@ -2485,7 +2551,7 @@
 
     // Start playing main dock video smoothly if video
     var mainVid = document.getElementById("dockMainVideo");
-    if (mainVid && activeClip.type === "video") {
+    if (mainVid && activeClip.type === "video" && typeof mainVid.play === "function") {
       var playPromise = mainVid.play();
       if (playPromise && playPromise.catch) playPromise.catch(function () {});
     }
@@ -2721,14 +2787,32 @@
       });
     });
 
+    pane.querySelectorAll("[data-toggle-ep-veo]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-toggle-ep-veo");
+        var current = !!vStatusMap[id];
+        setVeoStatus(id, !current);
+        showToast((!current ? "✅ Виконано: " : "⏳ Повернуто в чергу: ") + id);
+      });
+    });
+
+    pane.querySelectorAll("[data-copy-veo-prompt]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-copy-veo-prompt");
+        var target = (window.VEO_ANIMATION_PIPELINE || []).find(function (p) { return p.id === id; });
+        if (target) copyText(target.prompt, "Veo 2 Промпт " + id);
+      });
+    });
+
     pane.querySelectorAll("[data-play-gallery-idx]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var idx = parseInt(btn.getAttribute("data-play-gallery-idx"), 10);
         var g = (epMedia.flow_gallery || [])[idx];
         if (!g) return;
         var pIdx = -1;
+        var gFileName = g.raw_path ? g.raw_path.split("/").pop() : "";
         for (var i = 0; i < playlist.length; i++) {
-          if (playlist[i].file === g.raw_path.split("/").pop() || playlist[i].title === g.title) {
+          if ((gFileName && playlist[i].file === gFileName) || playlist[i].title === g.title) {
             pIdx = i; break;
           }
         }
@@ -2747,8 +2831,9 @@
         var g = (epMedia.flow_gallery || [])[idx];
         if (!g) return;
         var pIdx = -1;
+        var gFileName = g.raw_path ? g.raw_path.split("/").pop() : "";
         for (var i = 0; i < playlist.length; i++) {
-          if (playlist[i].file === g.raw_path.split("/").pop() || playlist[i].title === g.title) {
+          if ((gFileName && playlist[i].file === gFileName) || playlist[i].title === g.title) {
             pIdx = i; break;
           }
         }
@@ -2789,19 +2874,6 @@
 
   function init() {
     document.title = "EP" + epData.ep + " — " + epData.name + " | Мастер-Досьє та Студія Cinematic Thoughtcast";
-    renderShell();
-    renderSOP();
-    renderBio();
-    renderScript();
-    renderPrompts();
-    renderQuotes();
-    renderAudio();
-    renderMedia();
-    renderDaVinci();
-    updateTopProgress();
-
-    var hash = (window.location.hash || "").replace(/^#/, "");
-    if (hash) switchTab(hash, false);
 
     document.addEventListener("click", function (ev) {
       var btn = ev.target.closest("[data-reveal-finder]");
@@ -2817,6 +2889,31 @@
       var h = (window.location.hash || "").replace(/^#/, "");
       if (h) switchTab(h, false);
     });
+
+    var renderSteps = [
+      ["Shell", renderShell],
+      ["SOP", renderSOP],
+      ["Bio", renderBio],
+      ["Script", renderScript],
+      ["Prompts", renderPrompts],
+      ["Quotes", renderQuotes],
+      ["Audio", renderAudio],
+      ["Media", renderMedia],
+      ["DaVinci", renderDaVinci]
+    ];
+
+    renderSteps.forEach(function (step) {
+      try {
+        step[1]();
+      } catch (err) {
+        console.error("Помилка рендерингу " + step[0] + ":", err);
+      }
+    });
+
+    try { updateTopProgress(); } catch (e) { console.error(e); }
+
+    var hash = (window.location.hash || "").replace(/^#/, "");
+    if (hash) switchTab(hash, false);
   }
 
   init();
