@@ -73,34 +73,89 @@ window.MEDIA_ACQUISITION_POOL = {
     ],
     "archives": [
       {
+        "code": "ARCH #01",
+        "act": "Акт 3 (Сенат 2023)",
+        "timecode": "12:15–12:22",
+        "title": "Присяга та свідчення Сема Альтмана у Сенаті США (Крупний план)",
+        "source": "Subcommittee on Privacy, Technology, & the Law (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+        "mp4_file": "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+        "specs": "1280×720 • 24 fps • 7.00s • H.264 • Чистий крупний план Альтмана біля мікрофона",
+        "davinci_usage": "Підкладинка на трек V2 поверх А2 біту: Сем Альтман зачитує історичну заяву про відповідальність творців AGI.",
+        "verified_speaker": "Sam Altman (Real HD Closeup)",
         "file": "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
-        "title": "Присяга Сема Альтмана у Сенаті США (Крупний план)",
-        "source": "U.S. Senate Judiciary Hearing (16.05.2023 — Public Domain)",
-        "url": "https://www.youtube.com/watch?v=TO0J2Yw7usM",
-        "section": "00:29:10-00:29:18",
-        "tc": "09:30–09:38",
-        "note": "Крупний план присяги та перших слів Сема Альтмана у Конгресі США (без авторських обмежень).",
-        "video_preview": "assets/video_previews/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4"
+        "tc": "12:15–12:22",
+        "note": "Підкладинка на трек V2 поверх А2 біту: Сем Альтман зачитує історичну заяву про відповідальність творців AGI.",
+        "section": "12:15–12:22",
+        "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
       },
       {
+        "code": "ARCH #02",
+        "act": "Акт 3 (Конгрес 2023)",
+        "timecode": "13:30–13:37",
+        "title": "Заява Альтмана у Конгресі про ризики та ліцензування ШІ",
+        "source": "Senate Judiciary Committee (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+        "mp4_file": "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+        "specs": "1280×720 • 24 fps • 7.00s • H.264 • Крупний план Альтмана, прямий погляд у президію",
+        "davinci_usage": "Драматична точка неповернення: Альтман закликає уряд створити глобальний регулятор штучного інтелекту.",
+        "verified_speaker": "Sam Altman (Real HD Closeup)",
         "file": "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
-        "title": "Заява Альтмана у Конгресі про ліцензування ШІ",
-        "source": "U.S. Senate Judiciary Hearing (Public Domain)",
-        "url": "https://www.youtube.com/watch?v=TO0J2Yw7usM",
-        "section": "00:31:05-00:31:13",
-        "tc": "09:42–09:50",
-        "note": "Заява Альтмана про необхідність ліцензування надпотужних моделей ШІ.",
-        "video_preview": "assets/video_previews/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4"
+        "tc": "13:30–13:37",
+        "note": "Драматична точка неповернення: Альтман закликає уряд створити глобальний регулятор штучного інтелекту.",
+        "section": "13:30–13:37",
+        "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
       },
       {
-        "file": "EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4",
-        "title": "Архів Apple Macintosh LC II CRT (1992)",
-        "source": "Apple Vintage Broadcast Archive (1992)",
-        "url": "https://www.youtube.com/watch?v=5Vt0U9rYqkg",
-        "section": "00:00:04-00:00:12",
-        "tc": "00:12–00:20",
-        "note": "Автентичний ЕПТ-монітор та корпус класичного Macintosh початку 1990-х.",
-        "video_preview": "assets/video_previews/archives/EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4"
+        "code": "ARCH #03",
+        "act": "Акт 3 (Сенат 2023)",
+        "timecode": "12:00–12:07",
+        "title": "Удар суддівського молотка та загальний план зали засідань Сенату",
+        "source": "Hart Senate Office Building, Room 216 (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+        "mp4_file": "EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+        "specs": "1280×720 • 24 fps • 7.00s • H.264 • Встановлюючий план зали",
+        "davinci_usage": "Відкриття Акту 3 (Криза та Суд історії): удар молотка сенатора Блюменталя.",
+        "verified_speaker": "Senate Committee Room Master",
+        "file": "EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+        "tc": "12:00–12:07",
+        "note": "Відкриття Акту 3 (Криза та Суд історії): удар молотка сенатора Блюменталя.",
+        "section": "12:00–12:07",
+        "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+      },
+      {
+        "code": "ARCH #04",
+        "act": "Акт 1 (WWDC 2008)",
+        "timecode": "03:45–03:58",
+        "title": "23-річний Сем Альтман зі Стівом Джобсом на WWDC 2008 (Loopt)",
+        "source": "Apple Worldwide Developers Conference (09.06.2008, YouTube KhhId_WG7RA)",
+        "mp4_file": "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+        "specs": "640×480 • 24 fps • 13.08s • H.264 • Альтман на сцені з Apple iPhone App Store",
+        "davinci_usage": "Акт 1: Відкриття першого стартапу Loopt — молодий Альтман поруч зі Стівом Джобсом презентує майбутнє геосоціальних додатків.",
+        "verified_speaker": "Sam Altman & Steve Jobs (2008)",
+        "file": "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+        "tc": "03:45–03:58",
+        "note": "Акт 1: Відкриття першого стартапу Loopt — молодий Альтман поруч зі Стівом Джобсом презентує майбутнє геосоціальних додатків.",
+        "section": "03:45–03:58",
+        "url": "https://www.youtube.com/watch?v=KhhId_WG7RA"
+      },
+      {
+        "code": "ARCH #05",
+        "act": "Акт 2 (Stanford 2014)",
+        "timecode": "06:30–06:48",
+        "title": "Сем Альтман читає лекцію CS183B у Стенфорді як Президент Y Combinator",
+        "source": "Stanford University CS183B (2014, YouTube CBYhVcO4WgI)",
+        "mp4_file": "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+        "specs": "1280×720 • 24 fps • 18.08s • H.264 • Альтман біля дошки викладає формулу експоненти",
+        "davinci_usage": "Акт 2: Зліт Y Combinator та філософія венчурного капіталу: як будувати компанії, що масштабуються у 1000 разів.",
+        "verified_speaker": "Sam Altman (2014 YC President)",
+        "file": "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+        "tc": "06:30–06:48",
+        "note": "Акт 2: Зліт Y Combinator та філософія венчурного капіталу: як будувати компанії, що масштабуються у 1000 разів.",
+        "section": "06:30–06:48",
+        "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
       }
     ],
     "flow_queue": [
@@ -403,6 +458,90 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg",
         "dims": "2752×1536 (2K JPG)"
       }
+    ],
+    "archival_photos": [
+      {
+        "code": "PHOTO #01",
+        "title": "24-річний Сем Альтман у 2009 році (Ера Loopt)",
+        "source": "Wikimedia Commons (2009)",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
+        "desc": "Автентичний історичний знімок молодого Альтмана в епоху запуску Y Combinator Batch 1 та Loopt."
+      },
+      {
+        "code": "PHOTO #02",
+        "title": "Сем Альтман та Ілля Суцкевер у Тель-Авіві (2023)",
+        "source": "Wikimedia Commons (TAU 2023)",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "desc": "Сем Альтман та головний науковець OpenAI Ілля Суцкевер разом на сцені за кілька місяців до листопадового розколу."
+      },
+      {
+        "code": "PHOTO #03",
+        "title": "Сем Альтман на сцені зі Стівом Джобсом (WWDC 2008)",
+        "source": "Apple Keynote Archive (2008)",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
+        "desc": "Історичний момент: Стів Джобс запрошує молодого засновника Loopt продемонструвати запуск iPhone App Store."
+      },
+      {
+        "code": "PHOTO #04",
+        "title": "Президент Y Combinator Сем Альтман у Стенфорді (2014)",
+        "source": "Stanford CS183B Archive (2014)",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
+        "desc": "Альтман читає лекцію про правила експоненційного росту технологічних монополій."
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Саспенс-Дрон серверів",
+        "role": "Акт 2 • Саспенс-Дрон серверів",
+        "smart_bin": "EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav",
+        "bin_dir": "EP01_ALTMAN_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "01",
+        "name": "Dusty Analog Reverie.wav",
+        "act": "Акт 1 (Відкриття)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Відкриття))",
+        "smart_bin": "EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav",
+        "bin_dir": "EP01_ALTMAN_SMART_BINS",
+        "preview": "01_dusty_analog_reverie.m4a",
+        "duration": "3:58",
+        "specs": "Вініл 0:00 • Біт 0:06 • Чиста гітара 0:22 • Дзвіночки 1:49",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 (Кульмінація / Криза)",
+        "role": "Ексклюзивна тема героя (Акт 3 (Кульмінація / Криза))",
+        "smart_bin": "EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav",
+        "bin_dir": "EP01_ALTMAN_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "13",
+        "name": "Celestial Ascent-3.wav",
+        "act": "Акт 4 (Фінал)",
+        "role": "Ексклюзивна тема героя (Акт 4 (Фінал))",
+        "smart_bin": "EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav",
+        "bin_dir": "EP01_ALTMAN_SMART_BINS",
+        "preview": "10_celestial_ascent_3.m4a",
+        "duration": "3:35",
+        "specs": "Вступ 0:00–0:42 • Кришталевий рояль 2:03–2:26 • М'яке згасання 3:08–3:34",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
     ]
   },
   "02": {
@@ -459,6 +598,113 @@ window.MEDIA_ACQUISITION_POOL = {
         "tc": "04:15–05:30",
         "prompt": "Extreme macro photolithography flight over NVIDIA Blackwell silicon wafer, emerald and gold laser pulses racing through 208 billion transistors, dark obsidian aesthetic, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep02_flow_01_blackwell_wafer_matrix.mp4"
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Криза RIVA / Sega",
+        "role": "Акт 2 • Криза RIVA / Sega",
+        "smart_bin": "EP02_AMB_07_ACT2_DRONE_Silicon_Failure.wav",
+        "bin_dir": "EP02_HUANG_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "02",
+        "name": "Dusty Vinyl Dreams.wav",
+        "act": "Акт 1 (Становлення)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Становлення))",
+        "smart_bin": "EP02_MUS_01_ACT1_92BPM_Rust_Porcelain.wav",
+        "bin_dir": "EP02_HUANG_SMART_BINS",
+        "preview": "11_dusty_vinyl_dreams_1.m4a",
+        "duration": "4:20",
+        "specs": "Саб-біт 0:05 • Блюзовий бенд гітари 0:27, 0:49 • Електропіано 0:39, 2:09",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "12",
+        "name": "Clockwork Dread.wav",
+        "act": "Акт 3 (Інженерна ставка)",
+        "role": "Ексклюзивна тема героя (Акт 3 (Інженерна ставка))",
+        "smart_bin": "EP02_MUS_09_ACT3_92BPM_CUDA_Bet.wav",
+        "bin_dir": "EP02_HUANG_SMART_BINS",
+        "preview": "04_clockwork_dread_1.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:38 та 2:15–2:34 | Важкий гітарний дроп: 1:33–2:14",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "16",
+        "name": "Celestial Ascent.wav",
+        "act": "Акт 4 • Ера Blackwell",
+        "role": "Акт 4 • Ера Blackwell",
+        "smart_bin": "EP02_MUS_15_ACT4_92BPM_Blackwell_Finale.wav",
+        "bin_dir": "EP02_HUANG_SMART_BINS",
+        "preview": "08_celestial_ascent_1.m4a",
+        "duration": "3:35",
+        "specs": "Cinematic мідь 0:30 • Епічна висота 0:44–2:15 • Довгий синт-хвіст 3:12–3:34",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "GPU/WAFER #01",
+        "badge": "💎 Кремнієва літографія • TSMC",
+        "chip": "chip-emerald",
+        "tc": "05:00–07:00",
+        "title": "Кремнієва пластина під бірюзовим літографічним лазером (NVIDIA Blackwell Wafer)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_03_silicon_laser.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "dims": "3840×2160 (4K PNG)",
+        "usage": "Акт 2: Ставка Хуанга на паралельні обчислення та виробництво кремнієвих кристалів на заводах Morris Chang (TSMC)."
+      },
+      {
+        "code": "HARDWARE #02",
+        "badge": "⚡ Друкована плата • GPU",
+        "chip": "chip-cyan",
+        "tc": "03:30–05:00",
+        "title": "Макро-дослідження доріжок материнської плати та слотів графічних процесорів",
+        "web_preview": "assets/flow_keyframes/ep06_flow_broll_04b_motherboard_traces.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Інженерне народження GeForce та RIVA 128 у гаражних лабораторіях Кремнієвої долини."
+      },
+      {
+        "code": "BREAKTHROUGH #03",
+        "badge": "🚀 AlexNet GPU 2012",
+        "chip": "chip-purple",
+        "tc": "09:00–10:30",
+        "title": "Дослідник вивчає масив відеокарт GeForce GTX 580 (ImageNet Revolution)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Момент, коли Хуанг зрозумів, що майбутнє NVIDIA — це не просто відеоігри, а нейромережі, навчені на GPU."
+      },
+      {
+        "code": "AI FACTORY #04",
+        "badge": "❄️ Серверна фабрика • DGX SuperPOD",
+        "chip": "chip-amber",
+        "tc": "11:00–13:00",
+        "title": "Суперкомп'ютерні сервери у крижаній залі (DGX SuperPOD / Blackwell Cluster)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_06_server_monolith.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Нова промислова революція за Хуангом — «AI Factories», що перетворюють гігавати енергії на штучний інтелект."
+      },
+      {
+        "code": "SCALING #05",
+        "badge": "📈 Закон Хуанга • 1000x Compute",
+        "chip": "chip-emerald",
+        "tc": "13:30–15:00",
+        "title": "Золота експоненційна лінія обчислювального росту (Huang's Law)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_04_exponential_line.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "dims": "3840×2160 (4K PNG)",
+        "usage": "Акт 4: Фінал тріумфу NVIDIA як найдорожчої компанії планети."
       }
     ]
   },
@@ -746,6 +992,78 @@ window.MEDIA_ACQUISITION_POOL = {
         "web_preview": "assets/flow_keyframes/ep03_flow_broll_01c_piece_stone.jpg",
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg",
         "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "FUSION #04",
+        "badge": "⚛️ Термоядерний синтез • RL Токамак",
+        "chip": "chip-amber",
+        "tc": "12:00–13:30",
+        "title": "Плазма у токамаці під контролем ШІ (DeepMind Swiss Plasma Center)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_09_fusion_torus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Дослідження DeepMind з утримання високотемпературної плазми нейромережами."
+      },
+      {
+        "code": "LATTICE #05",
+        "badge": "🧬 3D Моделі білків • AlphaFold",
+        "chip": "chip-emerald",
+        "tc": "09:30–11:00",
+        "title": "Нейронна решітка вузлів і зв'язків (AlphaFold 2 Attention Architecture)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Нобелівський прорив — розгортання просторових координат 200 мільйонів білків."
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Нейронна матриця",
+        "role": "Акт 2 • Нейронна матриця",
+        "smart_bin": "EP03_AMB_07_ACT2_DRONE_Neural_Matrix.wav",
+        "bin_dir": "EP03_HASSABIS_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "03",
+        "name": "Warm Analog Pulse-2.wav",
+        "act": "Акт 1 (Шаховий старт)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Шаховий старт))",
+        "smart_bin": "EP03_MUS_01_ACT1_92BPM_Wooden_Knights.wav",
+        "bin_dir": "EP03_HASSABIS_SMART_BINS",
+        "preview": "02_warm_analog_pulse_2.m4a",
+        "duration": "4:14",
+        "specs": "Rhodes 0:00 • Арпеджіо 0:15 • Оксамитовий бас 0:21 • Соло піаніно 3:53–4:14",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 • AlphaFold2 прорив",
+        "role": "Акт 3 • AlphaFold2 прорив",
+        "smart_bin": "EP03_MUS_09_ACT3_92BPM_Origami_Life.wav",
+        "bin_dir": "EP03_HASSABIS_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "14",
+        "name": "Monumental Silence.wav",
+        "act": "Акт 4 (Фінал Нобеля / Істини)",
+        "role": "Ексклюзивна тема героя (Акт 4 (Фінал Нобеля / Істини))",
+        "smart_bin": "EP03_MUS_15_ACT4_92BPM_Universal_Harmony.wav",
+        "bin_dir": "EP03_HASSABIS_SMART_BINS",
+        "preview": "07_monumental_silence.m4a",
+        "duration": "3:33",
+        "specs": "Тихий вступ 0:00–0:20 • Симфонічний гімн 0:42–3:10 • Тихий спад 3:12–3:32",
+        "davinci_track": "A2 (Music 92 BPM)"
       }
     ]
   },
@@ -794,6 +1112,102 @@ window.MEDIA_ACQUISITION_POOL = {
         "prompt": "Deep neural synapse network where golden error-correction light waves travel backwards through millions of translucent axons in dark space, 35mm film grain, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep04_flow_01_backprop_synapse_storm.mp4"
       }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Лабораторія Торонто",
+        "role": "Акт 2 • Лабораторія Торонто",
+        "smart_bin": "EP04_AMB_07_ACT2_DRONE_Toronto_Floor.wav",
+        "bin_dir": "EP04_HINTON_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "04",
+        "name": "Dusty Vinyl Dreams-5.wav",
+        "act": "Акт 1 (Самотність вченого)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Самотність вченого))",
+        "smart_bin": "EP04_MUS_01_ACT1_92BPM_Cedar_Shavings.wav",
+        "bin_dir": "EP04_HINTON_SMART_BINS",
+        "preview": "15_dusty_vinyl_dreams_5.m4a",
+        "duration": "4:00",
+        "specs": "Плачуча гітара 0:12 • Кришталеві краплі піаніно 1:10, 2:53–3:23",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 • Луна Оппенгеймера",
+        "role": "Акт 3 • Луна Оппенгеймера",
+        "smart_bin": "EP04_MUS_09_ACT3_92BPM_Oppenheimers_Echo.wav",
+        "bin_dir": "EP04_HINTON_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "15",
+        "name": "Celestial Ascent-2.wav",
+        "act": "Акт 4 (Філософський фінал)",
+        "role": "Ексклюзивна тема героя (Акт 4 (Філософський фінал))",
+        "smart_bin": "EP04_MUS_15_ACT4_92BPM_Oak_Tree_Finale.wav",
+        "bin_dir": "EP04_HINTON_SMART_BINS",
+        "preview": "09_celestial_ascent_2.m4a",
+        "duration": "3:40",
+        "specs": "Пронизлива скрипка 0:23–0:41 • Стаккато 0:44 • Фортепіанна яма 1:50–2:06",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "ORIGIN #01",
+        "badge": "🚪 Двері вчителя • Торонто",
+        "chip": "chip-cyan",
+        "tc": "06:00–07:30",
+        "title": "Студент стукає у двері професора Хінтона (Університет Торонто)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_02_knocking_door.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: До Хінтона приходить молодий Ілля Суцкевер, щоб розпочати роботу над AlexNet."
+      },
+      {
+        "code": "WINTER #02",
+        "badge": "👁️ Зелений фосфор • Зима ШІ",
+        "chip": "chip-amber",
+        "tc": "02:30–04:00",
+        "title": "Відбиття рядків коду в оці вченого перед зеленим CRT-монітором 1980-х",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_02_crt_code.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "dims": "1920×1080 (1080p JPG)",
+        "usage": "Акт 1: Три десятиліття Хінтон на самоті писав алгоритми Backpropagation, коли весь світ вважав нейромережі мертвою гілкою."
+      },
+      {
+        "code": "SYNAPSES #03",
+        "badge": "🧠 Багатошаровий перцептрон",
+        "chip": "chip-purple",
+        "tc": "08:00–09:30",
+        "title": "Світіння синаптичних вузлів глибокої мережі (Deep Learning Core)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Відкриття алгоритму зворотного поширення помилки."
+      },
+      {
+        "code": "IMAGENET #04",
+        "badge": "🔥 AlexNet Тріумф 2012",
+        "chip": "chip-emerald",
+        "tc": "10:00–11:30",
+        "title": "Дослідницька майстерня з графічними картами (Провісник ImageNet)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Тріумф ImageNet 2012, продаж стартапу DNNresearch Google за $44 млн."
+      }
     ]
   },
   "05": {
@@ -840,6 +1254,91 @@ window.MEDIA_ACQUISITION_POOL = {
         "tc": "11:00–12:30",
         "prompt": "Architectural cyan wireframe 3D world model reconstructing physical gravity and motion trajectories in dark space, convolutional scanning planes, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep05_flow_01_jepa_world_model_grid.mp4"
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Ізоляція 1990-х",
+        "role": "Акт 2 • Ізоляція 1990-х",
+        "smart_bin": "EP05_AMB_07_ACT2_DRONE_Isolation_Years.wav",
+        "bin_dir": "EP05_LECUN_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "05",
+        "name": "Dusty Vinyl Dreams-3.wav",
+        "act": "Акт 1 (Париж & Океан)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Париж & Океан))",
+        "smart_bin": "EP05_MUS_01_ACT1_92BPM_Soldering_Wind.wav",
+        "bin_dir": "EP05_LECUN_SMART_BINS",
+        "preview": "13_dusty_vinyl_dreams_3.m4a",
+        "duration": "3:59",
+        "specs": "Круглий бас + арпеджіо гітари 0:03 • Світлий Rhodes 0:48 • Мінімал-грув 3:26",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "12",
+        "name": "Clockwork Dread.wav",
+        "act": "Акт 3 • Битва за Open-Source",
+        "role": "Акт 3 • Битва за Open-Source",
+        "smart_bin": "EP05_MUS_09_ACT3_92BPM_Open_Horizon.wav",
+        "bin_dir": "EP05_LECUN_SMART_BINS",
+        "preview": "04_clockwork_dread_1.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:38 та 2:15–2:34 | Важкий гітарний дроп: 1:33–2:14",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "13",
+        "name": "Celestial Ascent-3.wav",
+        "act": "Акт 4 • Океанське вітрило фіналу",
+        "role": "Акт 4 • Океанське вітрило фіналу",
+        "smart_bin": "EP05_MUS_15_ACT4_92BPM_Sailing_Finale.wav",
+        "bin_dir": "EP05_LECUN_SMART_BINS",
+        "preview": "10_celestial_ascent_3.m4a",
+        "duration": "3:35",
+        "specs": "Вступ 0:00–0:42 • Кришталевий рояль 2:03–2:26 • М'яке згасання 3:08–3:34",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "CONV #01",
+        "badge": "🔍 Субпіксельні тріади • Згортки",
+        "chip": "chip-cyan",
+        "tc": "03:00–04:30",
+        "title": "Макрозйомка фосфорних тріад люмінофору (Фільтри згорткових мереж LeNet-5)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02c_phosphor_triad.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg",
+        "dims": "1920×1080 (1080p JPG)",
+        "usage": "Акт 1: Робота в Bell Labs (1989–1998) над першими згортковими мережами для розпізнавання рукописних чеків."
+      },
+      {
+        "code": "WORLD MODEL #02",
+        "badge": "🌐 Модель світу • JEPA",
+        "chip": "chip-purple",
+        "tc": "08:30–10:00",
+        "title": "Багатовимірна нейронна решітка абстрактних понять (I-JEPA Architecture)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Відмова від авторегресії LLM на користь спільних вбудовувань та архітектури JEPA."
+      },
+      {
+        "code": "OPEN SOURCE #03",
+        "badge": "🌍 Відкритий код • LLaMA Спільнота",
+        "chip": "chip-emerald",
+        "tc": "12:00–14:00",
+        "title": "Земля в нічному сяйві відкритих нейронних мереж (Open Source AI Manifesto)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Фінал — непохитна віра Лекуна у вільний відкритий науковий код для всього людства."
       }
     ]
   },
@@ -1037,6 +1536,89 @@ window.MEDIA_ACQUISITION_POOL = {
         "web_preview": "assets/flow_keyframes/ep06_flow_broll_04b_motherboard_traces.jpg",
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
         "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "COUP #05",
+        "badge": "⚡ Зала засідань • Листопад 2023",
+        "chip": "chip-amber",
+        "tc": "10:30–12:00",
+        "title": "Смартфон вібрує на темному столі ради директорів під дощем (Дзвінок до Альтмана)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_07b_phone_vibrating.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07B_Smartphone_Vibrating_Table_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Трагічна п'ятниця 17 листопада 2023 року — Ілля голосує за звільнення Альтмана заради безпеки людства."
+      },
+      {
+        "code": "PETITION #06",
+        "badge": "✍️ 700 Підписів • Каяття Іллі",
+        "chip": "chip-purple",
+        "tc": "12:30–13:30",
+        "title": "Світлові нитки та розписи співробітників (Ілля підписує лист за повернення Сема)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_08_golden_signatures.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Знаменитий твіт Суцкевера: «Я глибоко шкодую про свою участь у діях ради директорів»."
+      },
+      {
+        "code": "ALPHAGO #07",
+        "badge": "♟️ Хід 37 • Співавтор Nature 2016",
+        "chip": "chip-cyan",
+        "tc": "05:00–06:30",
+        "title": "Камінь Го на дошці Гобан (Nature 2016 Co-Author: Ilya Sutskever)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_kf_07_move37_goban.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Робота Іллі в Google Brain над Sequence-to-Sequence та співавторство епохальної статті AlphaGo."
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Нічний кластер GPT-4",
+        "role": "Акт 2 • Нічний кластер GPT-4",
+        "smart_bin": "EP06_AMB_07_ACT2_DRONE_OpenAI_Floor.wav",
+        "bin_dir": "EP06_SUTSKEVER_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "06",
+        "name": "Dusty Vinyl Dreams-4.wav",
+        "act": "Акт 1 (Геометрія розуму)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Геометрія розуму))",
+        "smart_bin": "EP06_MUS_01_ACT1_92BPM_Jerusalem_Stone.wav",
+        "bin_dir": "EP06_SUTSKEVER_SMART_BINS",
+        "preview": "14_dusty_vinyl_dreams_4.m4a",
+        "duration": "4:03",
+        "specs": "Гіпнотичне остинато челести/піаніно 0:27, 1:59–2:49 • Монастирське аутро 3:33",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 • Листопадовий розкол",
+        "role": "Акт 3 • Листопадовий розкол",
+        "smart_bin": "EP06_MUS_09_ACT3_92BPM_November_Split.wav",
+        "bin_dir": "EP06_SUTSKEVER_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "14",
+        "name": "Monumental Silence.wav",
+        "act": "Акт 4 • Космічна тиша SSI",
+        "role": "Акт 4 • Космічна тиша SSI",
+        "smart_bin": "EP06_MUS_15_ACT4_92BPM_Cosmic_Stillness_Finale.wav",
+        "bin_dir": "EP06_SUTSKEVER_SMART_BINS",
+        "preview": "07_monumental_silence.m4a",
+        "duration": "3:33",
+        "specs": "Тихий вступ 0:00–0:20 • Симфонічний гімн 0:42–3:10 • Тихий спад 3:12–3:32",
+        "davinci_track": "A2 (Music 92 BPM)"
       }
     ]
   },
@@ -1085,6 +1667,102 @@ window.MEDIA_ACQUISITION_POOL = {
         "prompt": "Crystal optical microscope lens scanning inside a translucent neural prism, separating chaotic dark rays into clean ordered golden harmonics, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep07_flow_01_constitutional_prism.mp4"
       }
+    ],
+    "audio": [
+      {
+        "num": "03",
+        "name": "Warm Analog Pulse-2.wav",
+        "act": "Акт 2 • Народження Anthropic",
+        "role": "Акт 2 • Народження Anthropic",
+        "smart_bin": "EP07_AMB_07_ACT2_DRONE_Anthropic_Birth.wav",
+        "bin_dir": "EP07_AMODEI_SMART_BINS",
+        "preview": "02_warm_analog_pulse_2.m4a",
+        "duration": "4:14",
+        "specs": "Rhodes 0:00 • Арпеджіо 0:15 • Оксамитовий бас 0:21 • Соло піаніно 3:53–4:14",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "EP07 Акт 1 + Універсальний Акт 2",
+        "role": "Ексклюзивна тема героя (EP07 Акт 1 + Універсальний Акт 2)",
+        "smart_bin": "EP07_MUS_01_ACT1_92BPM_Princeton_Retina.wav",
+        "bin_dir": "EP07_AMODEI_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 • Червоні лінії ASL-4",
+        "role": "Акт 3 • Червоні лінії ASL-4",
+        "smart_bin": "EP07_MUS_09_ACT3_92BPM_Constitutional_AI.wav",
+        "bin_dir": "EP07_AMODEI_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "15",
+        "name": "Celestial Ascent-2.wav",
+        "act": "Акт 4 • Машини люблячої благодаті",
+        "role": "Акт 4 • Машини люблячої благодаті",
+        "smart_bin": "EP07_MUS_15_ACT4_92BPM_Optimistic_Future_Finale.wav",
+        "bin_dir": "EP07_AMODEI_SMART_BINS",
+        "preview": "09_celestial_ascent_2.m4a",
+        "duration": "3:40",
+        "specs": "Пронизлива скрипка 0:23–0:41 • Стаккато 0:44 • Фортепіанна яма 1:50–2:06",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "EXODUS #01",
+        "badge": "🚪 Розкол OpenAI 2020",
+        "chip": "chip-amber",
+        "tc": "05:30–07:00",
+        "title": "Темний кабінет ради директорів (Даріо та Даніела Амодей залишають OpenAI)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_07_boardroom_noir.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Принципова відмова від комерціалізації без гарантій безпеки та створення Anthropic."
+      },
+      {
+        "code": "DICTIONARY #02",
+        "badge": "🔬 Словник Фіч • Golden Gate Claude",
+        "chip": "chip-purple",
+        "tc": "08:30–10:00",
+        "title": "Оптичні символічні нитки (Нейронна інтерпретованість та декомпозиція фіч Claude)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_08b_optical_filaments.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_08B_Optical_Symbolic_Filaments_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Відкриття структури активацій всередині великих мовних моделей."
+      },
+      {
+        "code": "CONSTITUTION #03",
+        "badge": "⚖️ Конституційний ШІ • ASL Рівні",
+        "chip": "chip-cyan",
+        "tc": "10:30–12:00",
+        "title": "Нейронна решітка безпеки (Constitutional AI Rule Enforcement)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Навчання моделі самокорекції через Декларацію прав людини та правила безпеки."
+      },
+      {
+        "code": "LOVING GRACE #04",
+        "badge": "✨ Машини благодаті • Оптимізм",
+        "chip": "chip-emerald",
+        "tc": "12:30–14:30",
+        "title": "Земля у сяйві розумних машин (Есе Даріо «Machines of Loving Grace»)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Фінал — бачення біологічного відродження людства та перемоги над хворобами завдяки безпечному ШІ."
+      }
     ]
   },
   "08": {
@@ -1132,6 +1810,99 @@ window.MEDIA_ACQUISITION_POOL = {
         "prompt": "Vast spherical dome of millions of glowing photographic tiles transforming into a 3D spatial lidar point-cloud of the living world, warm emerald & gold, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep08_flow_01_spatial_intelligence_dome.mp4"
       }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Збір 14 млн кадрів",
+        "role": "Акт 2 • Збір 14 млн кадрів",
+        "smart_bin": "EP08_AMB_07_ACT2_DRONE_Server_Load.wav",
+        "bin_dir": "EP08_LI_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "08",
+        "name": "Warm Analog Pulse.wav",
+        "act": "Акт 1 (Пральня & Туман)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Пральня & Туман))",
+        "smart_bin": "EP08_MUS_01_ACT1_92BPM_Dry_Cleaning.wav",
+        "bin_dir": "EP08_LI_SMART_BINS",
+        "preview": "03_warm_analog_pulse_1.m4a",
+        "duration": "3:58",
+        "specs": "Щемливий слайд гітари 0:15 • Ніжне високе піаніно 0:20, 1:18 • Спад 3:45",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "12",
+        "name": "Clockwork Dread.wav",
+        "act": "Акт 3 • Трибуна Stanford HAI",
+        "role": "Акт 3 • Трибуна Stanford HAI",
+        "smart_bin": "EP08_MUS_09_ACT3_92BPM_Stanford_HAI.wav",
+        "bin_dir": "EP08_LI_SMART_BINS",
+        "preview": "04_clockwork_dread_1.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:38 та 2:15–2:34 | Важкий гітарний дроп: 1:33–2:14",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "16",
+        "name": "Celestial Ascent.wav",
+        "act": "Акт 4 • Людиноцентричний світ",
+        "role": "Акт 4 • Людиноцентричний світ",
+        "smart_bin": "EP08_MUS_15_ACT4_92BPM_Empathy_Finale.wav",
+        "bin_dir": "EP08_LI_SMART_BINS",
+        "preview": "08_celestial_ascent_1.m4a",
+        "duration": "3:35",
+        "specs": "Cinematic мідь 0:30 • Епічна висота 0:44–2:15 • Довгий синт-хвіст 3:12–3:34",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "notebooklm_overview": {
+      "title": "Як Фей-Фей Лі навчила машини бачити",
+      "lang": "Українська (UA Chirp HD / NotebookLM)",
+      "duration": "25:13",
+      "master_wav": "03_AUDIO/notebooklm/EP08_Fei_Fei_Li_NotebookLM_Audio_Overview_UA.m4a",
+      "preview": "assets/audio_previews/EP08_NotebookLM_Audio_Overview_Sample.m4a",
+      "desc": "Глибокий український аудіо-огляд життєвого шляху Фей-Фей Лі: від бідності в пральні Parsippany до створення ImageNet."
+    },
+    "flow_gallery": [
+      {
+        "code": "IMAGENET 2012 #01",
+        "badge": "🏆 ImageNet Workshop • 2012",
+        "chip": "chip-purple",
+        "tc": "07:30–09:00",
+        "title": "Лабораторія та графічні карти: момент, коли ImageNet довів силу Deep Learning",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Перемога AlexNet на конкурсі Фей-Фей Лі змінила історію комп'ютерного зору."
+      },
+      {
+        "code": "VISION SENSORS #02",
+        "badge": "👁️ Пікселі та сітківка • 14 млн фото",
+        "chip": "chip-cyan",
+        "tc": "04:00–05:30",
+        "title": "Субпіксельна тріада мікроструктури люмінофору (Формування зображення для ШІ)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02c_phosphor_triad.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg",
+        "dims": "1920×1080 (1080p JPG)",
+        "usage": "Акт 2: Збір та анотація 14 мільйонів зображень через Amazon Mechanical Turk."
+      },
+      {
+        "code": "HUMAN CENTERED #03",
+        "badge": "❤️ Stanford HAI • Етика",
+        "chip": "chip-emerald",
+        "tc": "11:30–13:30",
+        "title": "Нічна Земля під покривом людського інтелекту (Human-Centered AI)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Заснування інституту Stanford HAI заради захисту людської гідності."
+      }
     ]
   },
   "09": {
@@ -1178,6 +1949,91 @@ window.MEDIA_ACQUISITION_POOL = {
         "tc": "06:30–08:00",
         "prompt": "Luminous rose-gold attention threads dynamically connecting floating semantic tokens across a dark winter Montreal atmosphere, 35mm documentary look, 4k 24fps.",
         "video_preview": "assets/video_previews/flow/ep09_flow_01_attention_vector_threads.mp4"
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Напруга Attention",
+        "role": "Акт 2 • Напруга Attention",
+        "smart_bin": "EP09_AMB_07_ACT2_DRONE_Turing_Stage.wav",
+        "bin_dir": "EP09_BENGIO_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "09",
+        "name": "Dusty Vinyl Dreams-2.wav",
+        "act": "Акт 1 (Нічний Монреаль)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Нічний Монреаль))",
+        "smart_bin": "EP09_MUS_01_ACT1_92BPM_Montreal_Roots.wav",
+        "bin_dir": "EP09_BENGIO_SMART_BINS",
+        "preview": "12_dusty_vinyl_dreams_2.m4a",
+        "duration": "3:58",
+        "specs": "Каскади джазового піаніно 0:39, 1:09 • М'яка гітара 1:15 • Тиха яма 3:21",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "11",
+        "name": "Clockwork Dread-2.wav",
+        "act": "Акт 3 • Розворот безпеки",
+        "role": "Акт 3 • Розворот безпеки",
+        "smart_bin": "EP09_MUS_09_ACT3_92BPM_Safety_Turn.wav",
+        "bin_dir": "EP09_BENGIO_SMART_BINS",
+        "preview": "05_clockwork_dread_2.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "14",
+        "name": "Monumental Silence.wav",
+        "act": "Акт 4 • Моральний компас",
+        "role": "Акт 4 • Моральний компас",
+        "smart_bin": "EP09_MUS_15_ACT4_92BPM_Humanist_Finale.wav",
+        "bin_dir": "EP09_BENGIO_SMART_BINS",
+        "preview": "07_monumental_silence.m4a",
+        "duration": "3:33",
+        "specs": "Тихий вступ 0:00–0:20 • Симфонічний гімн 0:42–3:10 • Тихий спад 3:12–3:32",
+        "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "ATTENTION #01",
+        "badge": "⚡ Механізм Уваги 2014 • Bahdanau & Bengio",
+        "chip": "chip-purple",
+        "tc": "06:30–08:00",
+        "title": "Золоті нитки уваги, що з'єднують вектори слів (Additive Attention Vector Core)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_08_golden_signatures.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Стаття 2014 року про Attention, яка лягла в основу архітектури Transformer."
+      },
+      {
+        "code": "MILA #02",
+        "badge": "🧠 Глибокі рекурентні мережі • MILA",
+        "chip": "chip-cyan",
+        "tc": "04:00–05:30",
+        "title": "Світіння синапсів глибокої мережі (Нейроінститут Монреаля)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_05_neural_lattice.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Науковий оазис у Монреалі, що зберіг фундаментальні дослідження ШІ."
+      },
+      {
+        "code": "SAFETY TREATY #03",
+        "badge": "🛡️ Міжнародний договір • Блетчлі",
+        "chip": "chip-emerald",
+        "tc": "11:00–13:00",
+        "title": "Земля у планетарній мережі контролю (Global AI Safety Treaty)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3 та 4: Бенжіо на саміті в Блетчлі-Парку попереджає світ про небезпеку втрати контролю над автономним ШІ."
       }
     ]
   },
@@ -1351,6 +2207,89 @@ window.MEDIA_ACQUISITION_POOL = {
         "web_preview": "assets/flow_keyframes/ep10_flow_broll_02b_father_textbook_close.jpg",
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg",
         "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "GOOGLE BRAIN #03",
+        "badge": "🐱 16 000 Ядер • Розпізнавання котів",
+        "chip": "chip-amber",
+        "tc": "06:00–07:30",
+        "title": "Суперкомп'ютерні сервери Google Brain у крижаній залі (16,000 Cores Cat Neuron)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_06_server_monolith.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: 2011 рік — заснування Google Brain разом із Джеффом Діном і відкриття нейрона, що впізнає котів без вчителя."
+      },
+      {
+        "code": "COURSERA #04",
+        "badge": "🎓 Нова Електрика • Мільйони учнів",
+        "chip": "chip-emerald",
+        "tc": "10:30–12:30",
+        "title": "Планета, охоплена сяйвом знань (Coursera & DeepLearning.AI Education Grid)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3 та 4: Навчання понад 8 мільйонів студентів: «ШІ — це нова електрика»."
+      },
+      {
+        "code": "CHILDHOOD #05",
+        "badge": "💻 Сінгапур 1980-ті • Перший код",
+        "chip": "chip-cyan",
+        "tc": "02:00–03:30",
+        "title": "Хлопчик перед вінтажним комп'ютером у темній кімнаті",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02d_boy_crt_room.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
+        "dims": "1920×1080 (1080p JPG)",
+        "usage": "Акт 1: Дитинство в Сінгапурі та Гонконзі, батько вчить писати перші алгоритми сортування."
+      }
+    ],
+    "audio": [
+      {
+        "num": "07",
+        "name": "Deep Water Pressure.wav",
+        "act": "Акт 2 • Гул 16 000 ядер Google",
+        "role": "Акт 2 • Гул 16 000 ядер Google",
+        "smart_bin": "EP10_AMB_07_ACT2_DRONE_Cluster_Hum.wav",
+        "bin_dir": "EP10_NG_SMART_BINS",
+        "preview": "06_deep_water_pressure.m4a",
+        "duration": "3:49",
+        "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+        "davinci_track": "A3 (Ambience / Drone)"
+      },
+      {
+        "num": "10",
+        "name": "Dusty Vinyl Dreams-6.wav",
+        "act": "Акт 1 (Світанок просвіти)",
+        "role": "Ексклюзивна тема героя (Акт 1 (Світанок просвіти))",
+        "smart_bin": "EP10_MUS_01_ACT1_92BPM_Raffles_Code.wav",
+        "bin_dir": "EP10_NG_SMART_BINS",
+        "preview": "16_dusty_vinyl_dreams_6.m4a",
+        "duration": "3:55",
+        "specs": "Теплий вступ 0:00–0:19 • Світлий рефрен піаніно 0:58–2:20 • Колискова кода 3:30",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "12",
+        "name": "Clockwork Dread.wav",
+        "act": "Акт 3 • Масштаб Coursera",
+        "role": "Акт 3 • Масштаб Coursera",
+        "smart_bin": "EP10_MUS_09_ACT3_92BPM_Coursera_Mission.wav",
+        "bin_dir": "EP10_NG_SMART_BINS",
+        "preview": "04_clockwork_dread_1.m4a",
+        "duration": "3:33",
+        "specs": "VO-зони: 0:00–0:38 та 2:15–2:34 | Важкий гітарний дроп: 1:33–2:14",
+        "davinci_track": "A2 (Music 92 BPM)"
+      },
+      {
+        "num": "16",
+        "name": "Celestial Ascent.wav",
+        "act": "Акт 4 (Тріумф Творців)",
+        "role": "Ексклюзивна тема героя (Акт 4 (Тріумф Творців))",
+        "smart_bin": "EP10_MUS_15_ACT4_92BPM_Builder_Finale.wav",
+        "bin_dir": "EP10_NG_SMART_BINS",
+        "preview": "08_celestial_ascent_1.m4a",
+        "duration": "3:35",
+        "specs": "Cinematic мідь 0:30 • Епічна висота 0:44–2:15 • Довгий синт-хвіст 3:12–3:34",
+        "davinci_track": "A2 (Music 92 BPM)"
       }
     ]
   }

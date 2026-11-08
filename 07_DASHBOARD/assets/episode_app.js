@@ -1328,21 +1328,24 @@
 
     // 1. Real Archival B-Roll MP4s
     (epMedia.archives || []).forEach(function (ar, idx) {
-      var vUrl = ar.video_preview ? ("../" + ar.video_preview) : ("../assets/video_previews/archives/" + ar.file);
+      var fileName = ar.file || ar.mp4_file || "";
+      var vUrl = ar.video_preview ? ("../" + ar.video_preview) : ("../assets/video_previews/archives/" + fileName);
+      var descNote = ar.note || ar.davinci_usage || "";
+      var srcSec = ar.section || ar.timecode || "";
       list.push({
         uid: "arch_" + idx,
         type: "video",
         kind: "archive",
         kindLabel: "📼 Реальний Архів MP4",
         chipClass: "chip-emerald",
-        title: ar.title || ar.file,
-        file: ar.file,
-        tc: ar.tc || "00:00",
+        title: ar.title || fileName,
+        file: fileName,
+        tc: ar.tc || ar.timecode || "00:00",
         track: "DaVinci V2 • Архів B-Roll • Dynamic Zoom 1.00→1.05",
-        desc: ar.note + " (" + ar.source + ", відрізок " + ar.section + ")",
+        desc: descNote + (ar.source ? " (" + ar.source + (srcSec ? ", відрізок " + srcSec : "") + ")" : ""),
         src: vUrl,
-        localPath: repoRoot + "05_RAW_FOOTAGE/archives/" + ar.file,
-        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/05_RAW_FOOTAGE/archives/" + encodeURIComponent(ar.file),
+        localPath: repoRoot + "05_RAW_FOOTAGE/archives/" + fileName,
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/05_RAW_FOOTAGE/archives/" + encodeURIComponent(fileName),
         externalUrl: ar.url || "",
         prompt: ""
       });
@@ -1852,6 +1855,83 @@
       ].join("\n");
     }).join("\n");
 
+    var audioCardsHtml = (epMedia.audio || []).map(function (au, idx) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--emerald);background:rgba(16,185,129,0.04);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+        "    <span class=\"chip chip-emerald\">" + esc(au.role) + "</span>",
+        "    <span style=\"font-size:11px;color:var(--amber);font-family:var(--mono);font-weight:700;\">" + esc(au.duration) + "</span>",
+        "  </div>",
+        "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(au.name) + "</h4>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">→ 03_AUDIO/suno_stems/" + esc(au.bin_dir) + "/" + esc(au.smart_bin) + "</div>",
+        "  <audio controls preload=\"none\" style=\"height:32px;width:100%;margin-bottom:6px;\" src=\"../assets/audio_previews/" + esc(au.preview) + "\"></audio>",
+        "  <div style=\"font-size:11px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(au.specs) + "</div>",
+        "  <button class=\"btn btn-emerald\" style=\"padding:3px 8px;font-size:11px;width:100%;\" data-copy-pool-dir=\"" + esc(au.bin_dir) + "\" data-copy-pool-bin=\"" + esc(au.smart_bin) + "\">📋 Копіювати шлях WAV для DaVinci " + esc(au.davinci_track) + "</button>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    var photoCardsHtml = (epMedia.archival_photos || []).map(function (ph, idx) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--amber);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+        "    <span class=\"chip chip-amber\">" + esc(ph.code) + "</span>",
+        "    <span class=\"chip chip-purple\">" + esc(ph.source) + "</span>",
+        "  </div>",
+        "  <a href=\"../" + esc(ph.web_preview) + "\" target=\"_blank\" rel=\"noopener\">",
+        "    <img src=\"../" + esc(ph.web_preview) + "\" alt=\"" + esc(ph.title) + "\" style=\"width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;border:1px solid var(--border);margin-bottom:7px;display:block;\">",
+        "  </a>",
+        "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(ph.title) + "</h4>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(ph.raw_file) + "</div>",
+        "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(ph.desc) + "</div>",
+        "  <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;width:100%;\" data-copy-text=\"" + esc(ph.raw_file) + "\">📋 Шлях файлу JPG</button>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    var nbHtml = epMedia.notebooklm_overview ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(167,139,250,0.55);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎙️ Google NotebookLM — Офіційний Український Audio Overview («" + esc(epMedia.notebooklm_overview.title) + "» • " + esc(epMedia.notebooklm_overview.duration) + ")</div>",
+      "      <div class=\"panel-desc\">" + esc(epMedia.notebooklm_overview.desc) + "</div>",
+      "    </div>",
+      "    <span class=\"chip chip-purple\">NotebookLM UA Deep Dive</span>",
+      "  </div>",
+      "  <div style=\"padding:12px;background:rgba(167,139,250,0.06);border-radius:8px;\">",
+      "    <audio controls preload=\"none\" style=\"height:36px;width:100%;\" src=\"../" + esc(epMedia.notebooklm_overview.preview) + "\"></audio>",
+      "    <div style=\"display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:11.5px;color:var(--text-secondary);flex-wrap:wrap;gap:6px;\">",
+      "      <span>Файл майстра: <code>" + esc(epMedia.notebooklm_overview.master_wav) + "</code></span>",
+      "      <button class=\"btn btn-purple\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(epMedia.notebooklm_overview.master_wav) + "\">📋 Копіювати шлях майстра M4A</button>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ].join("\n") : "";
+
+    var photoSectionHtml = photoCardsHtml ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">📸 Автентичні Історичні Фото Спікера (" + (epMedia.archival_photos || []).length + " фото • Ера YC, WWDC 2008, Stanford)</div>",
+      "      <div class=\"panel-desc\">Реальні історичні знімки з відкритого архіву Wikimedia Commons та Apple Keynote Archive.</div>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + photoCardsHtml + "</div>",
+      "</div>"
+    ].join("\n") : "";
+
+    var audioSectionHtml = audioCardsHtml ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎧 Аудіо-Пул DaVinci Resolve — EP" + esc(epData.ep) + " (" + (epMedia.audio || []).length + " Майстер-Доріжки WAV • 48 kHz / 24-bit)</div>",
+      "      <div class=\"panel-desc\">Повний музичний та ембієнт-каркас випуску. Кожен трек зведено на 92 BPM (такт 2.61 с) для монтажу у DaVinci Resolve на доріжки A2 (Music) та A3 (Ambience).</div>",
+      "    </div>",
+      "    <span class=\"chip chip-emerald\">✅ 4/4 Актів Готові</span>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + audioCardsHtml + "</div>",
+      "</div>"
+    ].join("\n") : "";
     var galleryCardsHtml = (epMedia.flow_gallery || []).map(function (g, idx) {
       return [
         "<div class=\"node-box\" style=\"border-top-color:var(--cyan);\">",
@@ -1963,6 +2043,9 @@
       "    </div>",
 
       "    <div class=\"panel-card\">",
+      photoSectionHtml,
+      audioSectionHtml,
+      nbHtml,
       "      <div class=\"panel-head\">",
       "        <div>",
       "          <div class=\"panel-title\">🗂️ Згенеровані 4K Документальні Артефакти («Досьє» • 3840×2160 PNG + 24fps Zoom MP4)</div>",
@@ -2110,6 +2193,22 @@
         if (d) copyText(repoRoot + d.raw_4k_png, d.id);
       });
     });
+
+    pane.querySelectorAll("[data-copy-text]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var txt = btn.getAttribute("data-copy-text");
+        if (txt) copyText(txt, "шлях файлу");
+      });
+    });
+
+    var pAudios = pane.querySelectorAll("audio");
+    for (var pai = 0; pai < pAudios.length; pai++) {
+      pAudios[pai].addEventListener("play", function (ev) {
+        for (var paj = 0; paj < pAudios.length; paj++) {
+          if (pAudios[paj] !== ev.target) pAudios[paj].pause();
+        }
+      });
+    }
 
     pane.querySelectorAll("[data-copy-arch-path]").forEach(function (btn) {
       btn.addEventListener("click", function () {

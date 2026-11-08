@@ -1,14 +1,162 @@
 {
-  "episode": "EP01",
-  "titan": "Sam Altman",
-  "title": "Анатомія експоненти",
-  "summary": {
-    "total_priority_shots": 10,
-    "videos_ready": 4,
-    "keyframes_ready": 6,
-    "broll_stills_and_studies": 21,
-    "total_assets_ready": 31
+  "ep": "01",
+  "portrait": {
+    "ep": "01",
+    "name": "Sam Altman",
+    "raw_file": "EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
+    "web_preview": "assets/speaker_photos/ep01_altman_real.jpg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg",
+    "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
   },
+  "dossiers": [
+    {
+      "id": "EP01_DOC_01",
+      "ep": "01",
+      "act": "ACT1",
+      "timecode": "02:35–03:15",
+      "title": "Summer Founders Program — Y Combinator (2005)",
+      "source_label": "ycombinator.com/sfp.html — Summer Founders Program (Batch 01)",
+      "highlight": "Selected Cohort #1 (Summer 2005, 8 Startups): Loopt — Sam Altman (age 19, Stanford CS sophomore) & Nick Sivo. Mobile location sharing architecture.",
+      "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png",
+      "web_preview": "assets/dossiers_preview/ep01_doc_01_yc2005.jpg",
+      "video_preview": "assets/video_previews/dossiers/EP01_DOC_01.mp4"
+    },
+    {
+      "id": "EP01_DOC_02",
+      "ep": "01",
+      "act": "ACT2",
+      "timecode": "06:10–07:05",
+      "title": "Introducing OpenAI (Dec 11, 2015)",
+      "source_label": "https://openai.com/blog/introducing-openai",
+      "highlight": "Our goal is to advance digital intelligence in the way that is most likely to benefit humanity as a whole, unconstrained by a need to generate financial return.",
+      "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
+      "web_preview": "assets/dossiers_preview/ep01_doc_02_openai2015.jpg",
+      "video_preview": "assets/video_previews/dossiers/EP01_DOC_02.mp4"
+    },
+    {
+      "id": "EP01_DOC_03",
+      "ep": "01",
+      "act": "ACT3",
+      "timecode": "10:50–11:45",
+      "title": "OpenAI announces leadership transition (Nov 17, 2023)",
+      "source_label": "https://openai.com/index/openai-announces-leadership-transition/",
+      "highlight": "Mr. Altman’s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities.",
+      "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png",
+      "web_preview": "assets/dossiers_preview/ep01_doc_03_ouster2023.jpg",
+      "video_preview": "assets/video_previews/dossiers/EP01_DOC_03.mp4"
+    },
+    {
+      "id": "EP01_DOC_04",
+      "ep": "01",
+      "act": "ACT3",
+      "timecode": "12:50–13:40",
+      "title": "Ilya Sutskever (@ilyasut) — Regret Statement",
+      "source_label": "x.com/ilyasut — Verified Statement by Co-Founder & Chief Scientist",
+      "highlight": "“I deeply regret my participation in the board's actions. I never intended to harm OpenAI. I love everything we've built together and I will do everything I can to reunite the company.”",
+      "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
+      "web_preview": "assets/dossiers_preview/ep01_doc_04_sutskever_post.jpg",
+      "video_preview": "assets/video_previews/dossiers/EP01_DOC_04.mp4"
+    },
+    {
+      "id": "EP01_DOC_05",
+      "ep": "01",
+      "act": "ACT3",
+      "timecode": "13:45–15:00",
+      "title": "Open Letter of 730+ Employees to OpenAI Board",
+      "source_label": "Open Letter to the Board of Directors at OpenAI",
+      "highlight": "We are unable to work for or with people that lack competence, judgement and care for our mission and employees. OpenAI is nothing without its people.",
+      "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
+      "web_preview": "assets/dossiers_preview/ep01_doc_05_open_letter.jpg",
+      "video_preview": "assets/video_previews/dossiers/EP01_DOC_05.mp4"
+    }
+  ],
+  "archives": [
+    {
+      "code": "ARCH #01",
+      "act": "Акт 3 (Сенат 2023)",
+      "timecode": "12:15–12:22",
+      "title": "Присяга та свідчення Сема Альтмана у Сенаті США (Крупний план)",
+      "source": "Subcommittee on Privacy, Technology, & the Law (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+      "mp4_file": "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+      "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+      "specs": "1280×720 • 24 fps • 7.00s • H.264 • Чистий крупний план Альтмана біля мікрофона",
+      "davinci_usage": "Підкладинка на трек V2 поверх А2 біту: Сем Альтман зачитує історичну заяву про відповідальність творців AGI.",
+      "verified_speaker": "Sam Altman (Real HD Closeup)",
+      "file": "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+      "tc": "12:15–12:22",
+      "note": "Підкладинка на трек V2 поверх А2 біту: Сем Альтман зачитує історичну заяву про відповідальність творців AGI.",
+      "section": "12:15–12:22",
+      "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+    },
+    {
+      "code": "ARCH #02",
+      "act": "Акт 3 (Конгрес 2023)",
+      "timecode": "13:30–13:37",
+      "title": "Заява Альтмана у Конгресі про ризики та ліцензування ШІ",
+      "source": "Senate Judiciary Committee (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+      "mp4_file": "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+      "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+      "specs": "1280×720 • 24 fps • 7.00s • H.264 • Крупний план Альтмана, прямий погляд у президію",
+      "davinci_usage": "Драматична точка неповернення: Альтман закликає уряд створити глобальний регулятор штучного інтелекту.",
+      "verified_speaker": "Sam Altman (Real HD Closeup)",
+      "file": "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+      "tc": "13:30–13:37",
+      "note": "Драматична точка неповернення: Альтман закликає уряд створити глобальний регулятор штучного інтелекту.",
+      "section": "13:30–13:37",
+      "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+    },
+    {
+      "code": "ARCH #03",
+      "act": "Акт 3 (Сенат 2023)",
+      "timecode": "12:00–12:07",
+      "title": "Удар суддівського молотка та загальний план зали засідань Сенату",
+      "source": "Hart Senate Office Building, Room 216 (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)",
+      "mp4_file": "EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+      "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+      "specs": "1280×720 • 24 fps • 7.00s • H.264 • Встановлюючий план зали",
+      "davinci_usage": "Відкриття Акту 3 (Криза та Суд історії): удар молотка сенатора Блюменталя.",
+      "verified_speaker": "Senate Committee Room Master",
+      "file": "EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+      "tc": "12:00–12:07",
+      "note": "Відкриття Акту 3 (Криза та Суд історії): удар молотка сенатора Блюменталя.",
+      "section": "12:00–12:07",
+      "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+    },
+    {
+      "code": "ARCH #04",
+      "act": "Акт 1 (WWDC 2008)",
+      "timecode": "03:45–03:58",
+      "title": "23-річний Сем Альтман зі Стівом Джобсом на WWDC 2008 (Loopt)",
+      "source": "Apple Worldwide Developers Conference (09.06.2008, YouTube KhhId_WG7RA)",
+      "mp4_file": "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+      "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+      "specs": "640×480 • 24 fps • 13.08s • H.264 • Альтман на сцені з Apple iPhone App Store",
+      "davinci_usage": "Акт 1: Відкриття першого стартапу Loopt — молодий Альтман поруч зі Стівом Джобсом презентує майбутнє геосоціальних додатків.",
+      "verified_speaker": "Sam Altman & Steve Jobs (2008)",
+      "file": "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+      "tc": "03:45–03:58",
+      "note": "Акт 1: Відкриття першого стартапу Loopt — молодий Альтман поруч зі Стівом Джобсом презентує майбутнє геосоціальних додатків.",
+      "section": "03:45–03:58",
+      "url": "https://www.youtube.com/watch?v=KhhId_WG7RA"
+    },
+    {
+      "code": "ARCH #05",
+      "act": "Акт 2 (Stanford 2014)",
+      "timecode": "06:30–06:48",
+      "title": "Сем Альтман читає лекцію CS183B у Стенфорді як Президент Y Combinator",
+      "source": "Stanford University CS183B (2014, YouTube CBYhVcO4WgI)",
+      "mp4_file": "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+      "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+      "specs": "1280×720 • 24 fps • 18.08s • H.264 • Альтман біля дошки викладає формулу експоненти",
+      "davinci_usage": "Акт 2: Зліт Y Combinator та філософія венчурного капіталу: як будувати компанії, що масштабуються у 1000 разів.",
+      "verified_speaker": "Sam Altman (2014 YC President)",
+      "file": "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+      "tc": "06:30–06:48",
+      "note": "Акт 2: Зліт Y Combinator та філософія венчурного капіталу: як будувати компанії, що масштабуються у 1000 разів.",
+      "section": "06:30–06:48",
+      "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+    }
+  ],
   "flow_queue": [
     {
       "num": "01",
@@ -308,6 +456,90 @@
       "web_preview": "assets/flow_keyframes/ep01_flow_broll_07d_silhouette_window.jpg",
       "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg",
       "dims": "2752×1536 (2K JPG)"
+    }
+  ],
+  "archival_photos": [
+    {
+      "code": "PHOTO #01",
+      "title": "24-річний Сем Альтман у 2009 році (Ера Loopt)",
+      "source": "Wikimedia Commons (2009)",
+      "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
+      "web_preview": "assets/archival_photos/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
+      "desc": "Автентичний історичний знімок молодого Альтмана в епоху запуску Y Combinator Batch 1 та Loopt."
+    },
+    {
+      "code": "PHOTO #02",
+      "title": "Сем Альтман та Ілля Суцкевер у Тель-Авіві (2023)",
+      "source": "Wikimedia Commons (TAU 2023)",
+      "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+      "web_preview": "assets/archival_photos/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+      "desc": "Сем Альтман та головний науковець OpenAI Ілля Суцкевер разом на сцені за кілька місяців до листопадового розколу."
+    },
+    {
+      "code": "PHOTO #03",
+      "title": "Сем Альтман на сцені зі Стівом Джобсом (WWDC 2008)",
+      "source": "Apple Keynote Archive (2008)",
+      "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
+      "web_preview": "assets/archival_photos/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
+      "desc": "Історичний момент: Стів Джобс запрошує молодого засновника Loopt продемонструвати запуск iPhone App Store."
+    },
+    {
+      "code": "PHOTO #04",
+      "title": "Президент Y Combinator Сем Альтман у Стенфорді (2014)",
+      "source": "Stanford CS183B Archive (2014)",
+      "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
+      "web_preview": "assets/archival_photos/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
+      "desc": "Альтман читає лекцію про правила експоненційного росту технологічних монополій."
+    }
+  ],
+  "audio": [
+    {
+      "num": "07",
+      "name": "Deep Water Pressure.wav",
+      "act": "Акт 2 • Саспенс-Дрон серверів",
+      "role": "Акт 2 • Саспенс-Дрон серверів",
+      "smart_bin": "EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav",
+      "bin_dir": "EP01_ALTMAN_SMART_BINS",
+      "preview": "06_deep_water_pressure.m4a",
+      "duration": "3:49",
+      "specs": "Серцебиттєвий саб-кік 0:06 • Скляні гармоніки 1:33 • Невагома яма 2:32–2:58",
+      "davinci_track": "A3 (Ambience / Drone)"
+    },
+    {
+      "num": "01",
+      "name": "Dusty Analog Reverie.wav",
+      "act": "Акт 1 (Відкриття)",
+      "role": "Ексклюзивна тема героя (Акт 1 (Відкриття))",
+      "smart_bin": "EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav",
+      "bin_dir": "EP01_ALTMAN_SMART_BINS",
+      "preview": "01_dusty_analog_reverie.m4a",
+      "duration": "3:58",
+      "specs": "Вініл 0:00 • Біт 0:06 • Чиста гітара 0:22 • Дзвіночки 1:49",
+      "davinci_track": "A2 (Music 92 BPM)"
+    },
+    {
+      "num": "11",
+      "name": "Clockwork Dread-2.wav",
+      "act": "Акт 3 (Кульмінація / Криза)",
+      "role": "Ексклюзивна тема героя (Акт 3 (Кульмінація / Криза))",
+      "smart_bin": "EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav",
+      "bin_dir": "EP01_ALTMAN_SMART_BINS",
+      "preview": "05_clockwork_dread_2.m4a",
+      "duration": "3:33",
+      "specs": "VO-зони: 0:00–0:45 та 2:32–2:46 | Активний синтвейв+сакс: 1:47–2:30",
+      "davinci_track": "A2 (Music 92 BPM)"
+    },
+    {
+      "num": "13",
+      "name": "Celestial Ascent-3.wav",
+      "act": "Акт 4 (Фінал)",
+      "role": "Ексклюзивна тема героя (Акт 4 (Фінал))",
+      "smart_bin": "EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav",
+      "bin_dir": "EP01_ALTMAN_SMART_BINS",
+      "preview": "10_celestial_ascent_3.m4a",
+      "duration": "3:35",
+      "specs": "Вступ 0:00–0:42 • Кришталевий рояль 2:03–2:26 • М'яке згасання 3:08–3:34",
+      "davinci_track": "A2 (Music 92 BPM)"
     }
   ]
 }
