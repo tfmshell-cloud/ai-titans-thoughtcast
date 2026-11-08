@@ -74,6 +74,28 @@
     document.body.removeChild(ta);
   }
 
+  function revealInFinder(filePath, label) {
+    if (!filePath) return;
+    var fullPath = filePath.startsWith("/")
+      ? filePath
+      : ("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/" + filePath);
+
+    fetch("http://127.0.0.1:8765/reveal?path=" + encodeURIComponent(fullPath))
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.status === "ok") {
+          showToast("📁 Відкрито у Finder: " + (label || fullPath.split("/").pop()));
+        } else {
+          copyText(fullPath, "шлях файлу");
+          showToast("📋 Шлях скопійовано: " + fullPath.split("/").pop());
+        }
+      })
+      .catch(function () {
+        copyText(fullPath, "шлях файлу");
+        showToast("📋 Шлях скопійовано! (Запустіть ./open_in_finder.sh --bridge)");
+      });
+  }
+
   function getHeroPrimaryTrack(epCode) {
     var pool = window.SUNO_MASTER_POOL || [];
     for (var i = 0; i < pool.length; i++) {
@@ -360,9 +382,10 @@
         ].join("\n");
       } else {
         mediaBoxHtml = [
-          '<div style="position:relative;margin-bottom:10px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);">',
-          '  <img src="' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">',
+          '<div style="position:relative;margin-bottom:10px;overflow:hidden;border-radius:8px;border:1px solid rgba(251,191,36,0.35);cursor:pointer;" data-reveal-finder="' + esc(item.raw_path) + '" title="Клікніть, щоб відкрити цей 2K кадр у Finder">',
+          '  <img src="' + esc(item.web_preview) + '" alt="' + esc(item.title) + '" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform 0.2s;" onmouseover="this.style.transform=\'scale(1.02)\'" onmouseout="this.style.transform=\'scale(1)\'">',
           '  <div style="position:absolute;top:8px;right:8px;background:rgba(15,23,42,0.85);padding:3px 8px;border-radius:5px;font-size:10px;color:var(--amber);font-weight:700;">2K KEYFRAME</div>',
+          '  <div style="position:absolute;bottom:8px;left:8px;background:rgba(15,23,42,0.85);padding:3px 8px;border-radius:5px;font-size:10.5px;color:var(--cyan);font-weight:600;display:flex;align-items:center;gap:4px;">📁 Відкрити у Finder</div>',
           '</div>'
         ].join("\n");
       }
@@ -399,9 +422,10 @@
         '    <button class="btn ' + (isDone ? 'btn-emerald' : 'btn-amber') + '" style="width:100%;padding:7px 12px;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;" data-toggle-veo="' + esc(item.id) + '">',
         '      ' + (isDone ? '✅ Виконано (Клікніть, щоб повернути в чергу)' : '⏳ Позначити як виконано (відео згенеровано)'),
         '    </button>',
-        '    <div style="display:flex;justify-content:space-between;gap:6px;">',
+        '    <div style="display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap;">',
         '      <a class="btn" style="flex:1;text-align:center;font-size:11px;padding:5px 8px;background:var(--surface-hover);border:1px solid var(--border);color:var(--cyan);text-decoration:none;" href="' + esc(item.page_url) + '">🎙️ Студія EP' + esc(item.ep) + ' →</a>',
-        '      <button class="btn" style="font-size:11px;padding:5px 8px;background:var(--surface-hover);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;" data-copy-text="' + esc(item.raw_path) + '">Шлях 2K JPG</button>',
+        '      <button class="btn btn-cyan" style="font-size:11px;padding:5px 8px;cursor:pointer;white-space:nowrap;" data-reveal-finder="' + esc(isDone && item.video_path ? item.video_path : item.raw_path) + '">📁 У Finder</button>',
+        '      <button class="btn" style="font-size:11px;padding:5px 8px;background:var(--surface-hover);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;" data-copy-text="' + esc(item.raw_path) + '">Шлях 2K</button>',
         '    </div>',
         '  </div>',
         '</div>'
@@ -433,7 +457,7 @@
         '<tr>',
         '  <td><a href="' + esc(h.page_url) + '" style="font-weight:700;color:var(--cyan);text-decoration:none;">EP' + esc(h.ep) + ' • ' + esc(h.name) + '</a><div style="font-size:10.5px;color:var(--text-muted);">' + esc(h.archetype) + '</div></td>',
         '  <td><span class="pill pill-emerald">✅ 100% Готово</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">' + (h.script_words || 2400) + ' слів</div></td>',
-        '  <td><span class="pill pill-emerald">✅ 115 WPM Ready</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Speed 0.86 SSML</div></td>',
+        '  <td><span class="pill pill-amber">⏳ Текст готовий (115 WPM)</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Очікує озвучки ElevenLabs</div></td>',
         '  <td>' + audioPlayHtml + '</td>',
         '  <td><span class="pill pill-emerald">✅ 4K Симуляція</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Готово у базі</div></td>',
         '  <td><span class="pill pill-emerald">✅ ' + galCount + ' концептів</span><div style="font-size:10.2px;color:var(--text-muted);margin-top:2px;">Midjourney / Flow</div></td>',
@@ -764,6 +788,16 @@
           switchHubTab("standards");
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
+      }
+    });
+
+    document.addEventListener("click", function (ev) {
+      var btn = ev.target.closest("[data-reveal-finder]");
+      if (btn) {
+        ev.preventDefault();
+        var path = btn.getAttribute("data-reveal-finder");
+        var label = btn.getAttribute("data-reveal-label") || "";
+        revealInFinder(path, label);
       }
     });
 

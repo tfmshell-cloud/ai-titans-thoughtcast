@@ -266,6 +266,29 @@
   }
 
 
+
+  function revealInFinder(filePath, label) {
+    if (!filePath) return;
+    var fullPath = filePath.startsWith("/")
+      ? filePath
+      : ("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/" + filePath);
+
+    fetch("http://127.0.0.1:8765/reveal?path=" + encodeURIComponent(fullPath))
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.status === "ok") {
+          showToast("📁 Відкрито у Finder: " + (label || fullPath.split("/").pop()));
+        } else {
+          copyText(fullPath, "шлях файлу");
+          showToast("📋 Шлях скопійовано: " + fullPath.split("/").pop());
+        }
+      })
+      .catch(function () {
+        copyText(fullPath, "шлях файлу");
+        showToast("📋 Шлях скопійовано! (Запустіть ./open_in_finder.sh --bridge)");
+      });
+  }
+
   function getVeoStatusMap() {
     try {
       var raw = localStorage.getItem("ai_titans_veo_status");
@@ -323,10 +346,10 @@
       "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ 4 Акти (100%)</div>",
       "      <div style=\"font-size:9.5px;color:var(--text-muted);\">" + esc(epData.script_total_words) + " слів диктора</div>",
       "    </div>",
-      "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
-      "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">2. Диктор SSML</div>",
-      "      <div style=\"font-size:11px;color:var(--text-primary);font-weight:600;\">✅ ElevenLabs Ready</div>",
-      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">115 WPM (Speed 0.86)</div>",
+      "    <div style=\"padding:6px 8px;background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.35);border-radius:6px;\">",
+      "      <div style=\"font-size:10px;color:var(--amber);font-weight:700;\">2. Диктор (ElevenLabs)</div>",
+      "      <div style=\"font-size:11px;color:var(--amber);font-weight:600;\">⏳ Текст готовий (115 WPM)</div>",
+      "      <div style=\"font-size:9.5px;color:var(--text-muted);\">Очікує генерації WAV</div>",
       "    </div>",
       "    <div style=\"padding:6px 8px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.3);border-radius:6px;\">",
       "      <div style=\"font-size:10px;color:var(--emerald);font-weight:700;\">3. Музика Suno 92 BPM</div>",
@@ -509,7 +532,48 @@
       ].join("\n");
     }).join("\n");
 
+    var allVoText = (epData.full_acts || []).map(function (act) {
+      return "=== " + act.title + " ===\n" + (act.scenes || []).map(function (sc) {
+        return "[" + sc.tc + "] " + sc.narration;
+      }).join("\n\n");
+    }).join("\n\n====================\n\n");
+
+    var scriptDir = (epData.script_md_path || "").split("/").slice(0, 2).join("/") || ("02_SCRIPTS/episode_" + epData.ep);
+    var voMasterRelPath = scriptDir + "/EP" + epData.ep + "_VO_UA_ELEVENLABS_MASTER.txt";
+
+    var voMasterBoxHtml = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);background:linear-gradient(180deg,rgba(56,189,248,0.06),transparent);margin-bottom:1rem;\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\" style=\"color:var(--cyan);display:flex;align-items:center;gap:8px;\">",
+      "        🎙️ 2. Закадровий Голос Диктора (ElevenLabs 115 WPM • Українська версія)",
+      "        <span class=\"chip chip-amber\">⏳ Текст 100% Готовий • Очікує Генерації WAV</span>",
+      "      </div>",
+      "      <div class=\"panel-desc\">",
+      "        Текст сценарію відкалібровано під темп 115 слів/хв (швидкість 0.86) для ідеального попадання в такт музики Suno 92 BPM. Самі аудіодоріжки (WAV) ще не згенеровані. Натисніть кнопку нижче, щоб скопіювати весь текст або відкрити файл у Finder для завантаження в ElevenLabs.",
+      "      </div>",
+      "    </div>",
+      "    <div style=\"display:flex;gap:6px;align-items:center;flex-wrap:wrap;\">",
+      "      <button class=\"btn btn-emerald\" id=\"btnCopyFullVoTxt\" style=\"padding:5px 10px;font-size:11.5px;font-weight:700;\">📋 Скопіювати повний текст для ElevenLabs</button>",
+      "      <button class=\"btn btn-cyan\" id=\"btnOpenVoInFinder\" style=\"padding:5px 10px;font-size:11.5px;\">📁 Відкрити TXT у Finder</button>",
+      "    </div>",
+      "  </div>",
+      "  <div style=\"background:rgba(0,0,0,0.35);border:1px solid var(--border);border-radius:8px;padding:9px 12px;font-size:11.5px;color:var(--text-secondary);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;\">",
+      "    <div>",
+      "      <span>Файл майстра: </span><code style=\"color:var(--cyan);\">" + esc(voMasterRelPath) + "</code>",
+      "    </div>",
+      "    <div style=\"display:flex;gap:6px;flex-wrap:wrap;\">",
+      "      <span class=\"chip chip-purple\">Speed: 0.86 (115 WPM)</span>",
+      "      <span class=\"chip chip-purple\">Stability: 55%</span>",
+      "      <span class=\"chip chip-purple\">Clarity: 85%</span>",
+      "      <span class=\"chip chip-cyan\">Доріжка DaVinci: A1</span>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+
     pane.innerHTML = [
+      voMasterBoxHtml,
       "<div class=\"panel-card\">",
       "  <div class=\"panel-head\">",
       "    <div>",
@@ -545,6 +609,20 @@
         renderSOP();
       });
     });
+
+    var copyVoBtn = document.getElementById("btnCopyFullVoTxt");
+    if (copyVoBtn) {
+      copyVoBtn.addEventListener("click", function () {
+        copyText(cleanTextForElevenLabs(allVoText), "повний дикторський текст EP" + epData.ep + " для ElevenLabs");
+      });
+    }
+
+    var openVoBtn = document.getElementById("btnOpenVoInFinder");
+    if (openVoBtn) {
+      openVoBtn.addEventListener("click", function () {
+        revealInFinder(voMasterRelPath, "Майстер-текст диктора EP" + epData.ep);
+      });
+    }
 
     document.getElementById("btnDownloadSetupSop").addEventListener("click", function () {
       downloadBlob("setup_EP" + epData.ep + ".sh", generateSetupScript(), "text/x-shellscript;charset=utf-8");
@@ -1128,7 +1206,28 @@
       ].join("\n");
     }).join("\n");
 
+    var scriptDir = (epData.script_md_path || "").split("/").slice(0, 2).join("/") || ("02_SCRIPTS/episode_" + epData.ep);
+    var voMasterRelPath = scriptDir + "/EP" + epData.ep + "_VO_UA_ELEVENLABS_MASTER.txt";
+
     pane.innerHTML = [
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);background:linear-gradient(180deg,rgba(56,189,248,0.06),transparent);margin-bottom:1rem;\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\" style=\"color:var(--cyan);display:flex;align-items:center;gap:8px;\">",
+      "        🎙️ Майстер-Текст Диктора (ElevenLabs 115 WPM • Готовий до озвучення)",
+      "        <span class=\"chip chip-amber\">⏳ Текст 100% Готовий • Очікує Синтезу WAV</span>",
+      "      </div>",
+      "      <div class=\"panel-desc\">",
+      "        Файл: <code style=\"color:var(--cyan);\">" + esc(voMasterRelPath) + "</code> (" + esc(epData.script_total_words) + " слів • " + esc(epData.duration) + " • Speed 0.86). Скопіюйте текст в один клік для ElevenLabs або відкрийте TXT файл у Finder.",
+      "      </div>",
+      "    </div>",
+      "    <div style=\"display:flex;gap:6px;align-items:center;flex-wrap:wrap;\">",
+      "      <button class=\"btn btn-emerald\" id=\"btnAudioCopyVoTxt\" style=\"padding:5px 10px;font-size:11.5px;font-weight:700;\">📋 Скопіювати текст для ElevenLabs</button>",
+      "      <button class=\"btn btn-cyan\" id=\"btnAudioOpenVoFinder\" style=\"padding:5px 10px;font-size:11.5px;\">📁 Відкрити TXT у Finder</button>",
+      "    </div>",
+      "  </div>",
+      "</div>",
+
       "<div class=\"panel-card\" style=\"border-color:rgba(52,211,153,0.55);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
@@ -1261,6 +1360,25 @@
         if (row) copyText(row.en_file, row.en_file);
       });
     });
+
+    var aCopyVoBtn = document.getElementById("btnAudioCopyVoTxt");
+    if (aCopyVoBtn) {
+      aCopyVoBtn.addEventListener("click", function () {
+        var allVo = (epData.full_acts || []).map(function (act) {
+          return "=== " + act.title + " ===\n" + (act.scenes || []).map(function (sc) {
+            return "[" + sc.tc + "] " + sc.narration;
+          }).join("\n\n");
+        }).join("\n\n====================\n\n");
+        copyText(cleanTextForElevenLabs(allVo), "дикторський текст EP" + epData.ep + " для ElevenLabs");
+      });
+    }
+
+    var aOpenVoFinder = document.getElementById("btnAudioOpenVoFinder");
+    if (aOpenVoFinder) {
+      aOpenVoFinder.addEventListener("click", function () {
+        revealInFinder(voMasterRelPath, "Майстер-текст диктора EP" + epData.ep);
+      });
+    }
   }
 
   /* ---------------- TAB 7: DAVINCI RESOLVE 19 STUDIO ---------------- */
@@ -1914,10 +2032,11 @@
         '      <pre style="background:rgba(0,0,0,0.4);border:1px solid var(--border);border-radius:6px;padding:6px;font-size:10.5px;color:var(--text-primary);white-space:pre-wrap;word-break:break-word;font-family:var(--mono);max-height:75px;overflow-y:auto;margin:0;">' + esc(item.prompt) + '</pre>',
         '    </div>',
         '  </div>',
-        '  <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:4px;">',
+        '  <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:4px;display:flex;flex-direction:column;gap:6px;">',
         '    <button class="btn ' + (isDone ? 'btn-emerald' : 'btn-amber') + '" style="width:100%;padding:6px 10px;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;" data-toggle-ep-veo="' + esc(item.id) + '">',
         '      ' + (isDone ? '✅ Виконано (Повернути в чергу)' : '⏳ Позначити як виконано (відео згенеровано)'),
         '    </button>',
+        '    <button class="btn btn-cyan" style="width:100%;padding:4px 8px;font-size:11px;cursor:pointer;" data-reveal-finder="' + esc(item.raw_path) + '">📁 Відкрити цей 2K-файл у Finder</button>',
         '  </div>',
         '</div>'
       ].join("\n");
@@ -2103,7 +2222,10 @@
         "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(ph.title) + "</h4>",
         "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(ph.raw_file) + "</div>",
         "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(ph.desc) + "</div>",
-        "  <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;width:100%;\" data-copy-text=\"" + esc(ph.raw_file) + "\">📋 Шлях файлу JPG</button>",
+        "  <div style=\"display:flex;gap:6px;margin-top:6px;\">",
+        "    <button class=\"btn btn-cyan\" style=\"padding:4px 8px;font-size:11px;flex:1;cursor:pointer;\" data-reveal-finder=\"" + esc(ph.raw_file) + "\">📁 У Finder</button>",
+        "    <button class=\"btn\" style=\"padding:4px 8px;font-size:11px;cursor:pointer;\" data-copy-text=\"" + esc(ph.raw_file) + "\">📋 Шлях</button>",
+        "  </div>",
         "</div>"
       ].join("\n");
     }).join("\n");
@@ -2167,7 +2289,8 @@
         "  <div class=\"btn-group\">",
         "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-play-gallery-idx=\"" + idx + "\">▶️ У монітор</button>",
         "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-popup-gallery-idx=\"" + idx + "\">🔍 У вікні</button>",
-        "    <button class=\"btn btn-emerald\" style=\"padding:3px 8px;font-size:11px;\" data-copy-gallery-path=\"" + idx + "\">📋 Шлях файлу</button>",
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" data-reveal-finder=\"" + esc(g.raw_path) + "\">📁 У Finder</button>",
+        "    <button class=\"btn btn-emerald\" style=\"padding:3px 8px;font-size:11px;\" data-copy-gallery-path=\"" + idx + "\">📋 Шлях</button>",
         "  </div>",
         "</div>"
       ].join("\n");
@@ -2295,6 +2418,7 @@
       "        <div class=\"dock-nav-row\">",
       "          <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" id=\"btnDockPrev\">◀ Попереднє</button>",
       "          <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;" + (activeClip.type === "image" ? "display:none;" : "") + "\" id=\"btnDockToggleSound\">🔊 Увімкнути звук</button>",
+          "          <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" id=\"btnDockRevealInFinder\">📁 Відкрити у Finder</button>",
       "          <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" id=\"btnDockNext\">Наступне ▶</button>",
       "        </div>",
       "      </div>",

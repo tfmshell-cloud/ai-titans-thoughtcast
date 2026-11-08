@@ -1,0 +1,1 @@
+08_AUTOMATION/scripts/open_in_finder.sh
