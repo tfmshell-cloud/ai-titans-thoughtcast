@@ -2592,14 +2592,25 @@ window.MEDIA_ACQUISITION_POOL = {
     "scientific_vfx": [
       {
         "code": "SCI #01 (1080p)",
-        "title": "Проліт камери крізь сітківку людського ока (Очі машин • ImageNet)",
-        "timecode": "03:00–03:15",
-        "role": "Акт 1 • Як бачать машини",
-        "file": "EP08_SCI_01_Camera_Traversing_Human_Retina.mp4",
-        "web_preview": "assets/video_previews/science/ep07_sci_01_human_retina.mp4",
-        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
-        "specs": "1920×1080 • 24 fps • Зоровий кортекс",
-        "desc": "Анатомія людського зору — біологічний прототип, який Фей-Фей Лі перенесла у комп'ютерний зір завдяки датасету ImageNet."
+        "title": "Астероїд наближається до орбіти Землі (Просторовий Інтелект • World Labs)",
+        "timecode": "11:00–11:15",
+        "role": "Акт 3 • 3D Моделювання Всесвіту",
+        "file": "EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "web_preview": "assets/video_previews/science/ep08_sci_01_asteroid_approaching_earth_orbit_1080p.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "specs": "1920×1080 • 24 fps • 3D Просторовий рендер",
+        "desc": "Орбітальний політ та обчислення просторової траєкторії — візуалізація місії World Labs Фей-Фей Лі щодо генерації повноцінних 3D світів."
+      },
+      {
+        "code": "SCI #02 (1080p)",
+        "title": "Входження астероїда в щільні шари атмосфери (Плазмовий слід)",
+        "timecode": "14:00–14:15",
+        "role": "Акт 4 • Прорив через атмосферу",
+        "file": "EP08_SCI_02_Asteroid_Entering_Earth_Atmosphere_1080p.mp4",
+        "web_preview": "assets/video_previews/science/ep08_sci_02_asteroid_entering_earth_atmosphere_1080p.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_02_Asteroid_Entering_Earth_Atmosphere_1080p.mp4",
+        "specs": "1920×1080 • 24 fps • Аеродинамічна плазма",
+        "desc": "Фізична взаємодія об'єкта з атмосферою під 92 BPM — демонстрація навчання фізики середовища штучним інтелектом."
       }
     ]
   },
@@ -2770,14 +2781,25 @@ window.MEDIA_ACQUISITION_POOL = {
     "scientific_vfx": [
       {
         "code": "SCI #01 (1080p)",
-        "title": "Хімічний осцилятор Бєлоусова-Жаботинського (Самоорганізація)",
-        "timecode": "07:00–07:15",
-        "role": "Акт 2 • Емерджентна увага",
-        "file": "EP09_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-        "web_preview": "assets/video_previews/science/ep05_sci_01_chemical_oscillator.mp4",
-        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-        "specs": "1080×1920 (9:16) • 24 fps • Теорія хаосу",
-        "desc": "Спонтанна поява порядку з хаосу — метафора механізму уваги (Attention) Йошуа Бенжіо."
+        "title": "Дрейф астероїда у глибокому безмовному космосі (Космічний масштаб ризиків)",
+        "timecode": "06:00–06:15",
+        "role": "Акт 2 • Планетарна відповідальність",
+        "file": "EP09_SCI_01_Asteroid_Coasting_Deep_Space_1080p.mp4",
+        "web_preview": "assets/video_previews/science/ep09_sci_01_asteroid_coasting_deep_space_1080p.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP09_SCI_01_Asteroid_Coasting_Deep_Space_1080p.mp4",
+        "specs": "1920×1080 • 24 fps • Гравітаційна кінематика",
+        "desc": "Холодний політ небесного тіла крізь космічну пустку — філософська метафора тендітності цивілізації перед загрозою неконтрольованого AGI (Йошуа Бенжіо)."
+      },
+      {
+        "code": "SCI #02 (1080p)",
+        "title": "Макроструктура рельєфу та кристалів поверхні астероїда",
+        "timecode": "12:30–12:45",
+        "role": "Акт 3 • Скелястий щит законів",
+        "file": "EP09_SCI_02_Asteroid_Surface_Micro_Structure_1080p.mp4",
+        "web_preview": "assets/video_previews/science/ep09_sci_02_asteroid_surface_micro_structure_1080p.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP09_SCI_02_Asteroid_Surface_Micro_Structure_1080p.mp4",
+        "specs": "1920×1080 • 24 fps • Макротекстура рельєфу",
+        "desc": "Деталізоване сканування рельєфу — метафора створення непохитних нормативних рамок регулювання ШІ ООН."
       }
     ]
   },
