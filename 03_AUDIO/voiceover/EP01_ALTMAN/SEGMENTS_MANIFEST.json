@@ -1,0 +1,138 @@
+[
+  {
+    "num": 1,
+    "tc": "[0:00 - 0:15] (29 слів)",
+    "file_txt": "EP01_VO_UA_01_ACT1_00_00_00_15_Intro_Rules.txt",
+    "target_wav": "EP01_VO_UA_01_ACT1_00_00_00_15_Intro_Rules.wav",
+    "words": 29,
+    "sample": "Більшість людей формуються під тиском правил. Їхній світ — ц..."
+  },
+  {
+    "num": 2,
+    "tc": "[0:15 - 0:45] (90 слів)",
+    "file_txt": "EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_1993.txt",
+    "target_wav": "EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_1993.wav",
+    "words": 87,
+    "sample": "У 1993 році в передмісті Сент-Луїса восьмирічний хлопчик діс..."
+  },
+  {
+    "num": 3,
+    "tc": "[0:45 - 1:30] (94 слів)",
+    "file_txt": "EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School.txt",
+    "target_wav": "EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School.wav",
+    "words": 92,
+    "sample": "Джон Берроуз Скул у Сент-Луїсі була фортецею консерватизму. ..."
+  },
+  {
+    "num": 4,
+    "tc": "[1:30 - 2:30] (65 слів)",
+    "file_txt": "EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.txt",
+    "target_wav": "EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav",
+    "words": 64,
+    "sample": "Далі був Стенфорд. Факультет комп'ютерних наук — мрія тисяч ..."
+  },
+  {
+    "num": 5,
+    "tc": "[2:30 - 3:30] (104 слів)",
+    "file_txt": "EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.txt",
+    "target_wav": "EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav",
+    "words": 100,
+    "sample": "Саме тоді Пол Грем оголошує про експеримент — створення перш..."
+  },
+  {
+    "num": 6,
+    "tc": "[3:30 - 4:45] (32 слів)",
+    "file_txt": "EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset.txt",
+    "target_wav": "EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav",
+    "words": 32,
+    "sample": "Він виходить із Loopt із кількома мільйонами доларів капітал..."
+  },
+  {
+    "num": 7,
+    "tc": "[4:45 - 5:45] (89 слів)",
+    "file_txt": "EP01_VO_UA_07_ACT2_04_45_05_45_YC_President_28yo.txt",
+    "target_wav": "EP01_VO_UA_07_ACT2_04_45_05_45_YC_President_28yo.wav",
+    "words": 86,
+    "sample": "У 2014 році трапляється те, чого ніхто не очікував: Пол Грем..."
+  },
+  {
+    "num": 8,
+    "tc": "[5:45 - 7:00] (89 слів)",
+    "file_txt": "EP01_VO_UA_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.txt",
+    "target_wav": "EP01_VO_UA_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav",
+    "words": 87,
+    "sample": "Він бачить сліпу зону венчурного ринку: майже всі мислять лі..."
+  },
+  {
+    "num": 9,
+    "tc": "[7:00 - 8:15] (78 слів)",
+    "file_txt": "EP01_VO_UA_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.txt",
+    "target_wav": "EP01_VO_UA_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav",
+    "words": 76,
+    "sample": "11 грудня 2015 року світ дізнається про створення OpenAI. Ст..."
+  },
+  {
+    "num": 10,
+    "tc": "[8:15 - 9:30] (77 слів)",
+    "file_txt": "EP01_VO_UA_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.txt",
+    "target_wav": "EP01_VO_UA_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav",
+    "words": 74,
+    "sample": "Щоб перевірити гіпотезу масштабування, некомерційних пожертв..."
+  },
+  {
+    "num": 11,
+    "tc": "[9:30 - 10:45] (84 слів)",
+    "file_txt": "EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.txt",
+    "target_wav": "EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav",
+    "words": 81,
+    "sample": "30 листопада 2022 року. OpenAI непомітно викладає у вільний ..."
+  },
+  {
+    "num": 12,
+    "tc": "[10:45 - 12:15] (91 слів)",
+    "file_txt": "EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.txt",
+    "target_wav": "EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav",
+    "words": 88,
+    "sample": "П'ятниця, 17 листопада 2023 року. 12:00 за тихоокеанським ча..."
+  },
+  {
+    "num": 13,
+    "tc": "[12:15 - 13:45] (98 слів)",
+    "file_txt": "EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.txt",
+    "target_wav": "EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav",
+    "words": 94,
+    "sample": "Починаються найдраматичніші сто двадцять годин в історії Кре..."
+  },
+  {
+    "num": 14,
+    "tc": "[13:45 - 15:30] (104 слів)",
+    "file_txt": "EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.txt",
+    "target_wav": "EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav",
+    "words": 100,
+    "sample": "Понеділок, ранок. Починається феномен, аналогів якому корпор..."
+  },
+  {
+    "num": 15,
+    "tc": "[15:30 - 17:00] (90 слів)",
+    "file_txt": "EP01_VO_UA_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.txt",
+    "target_wav": "EP01_VO_UA_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav",
+    "words": 87,
+    "sample": "Пройшовши крізь вогонь публічної кризи, Альтман мислить кате..."
+  },
+  {
+    "num": 16,
+    "tc": "[17:00 - 18:30] (119 слів)",
+    "file_txt": "EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.txt",
+    "target_wav": "EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav",
+    "words": 116,
+    "sample": "Який головний урок ми можемо винести з цієї траєкторії для п..."
+  },
+  {
+    "num": 17,
+    "tc": "[18:30 - 20:00] (57 слів)",
+    "file_txt": "EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.txt",
+    "target_wav": "EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav",
+    "words": 55,
+    "sample": "Світ набагато пластичніший, ніж вам здається з дитинства. Йо..."
+  }
+]
