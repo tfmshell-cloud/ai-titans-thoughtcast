@@ -457,6 +457,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "web_preview": "assets/flow_keyframes/ep01_flow_broll_07d_silhouette_window.jpg",
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg",
         "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "CORE #04",
+        "badge": "⚡ Stargate Cluster • Обчислення",
+        "chip": "chip-cyan",
+        "tc": "08:00–09:30",
+        "title": "Інженери перед сяючим ядром обчислень (Проект Stargate / AI Supercluster)",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_03_server_core.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_03_Developers_Facing_GPU_Server_Core_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Зведення безпрецедентного за масштабом обчислювального кластера OpenAI вартістю $100 млрд."
       }
     ],
     "archival_photos": [
@@ -541,6 +552,19 @@ window.MEDIA_ACQUISITION_POOL = {
         "duration": "3:35",
         "specs": "Вступ 0:00–0:42 • Кришталевий рояль 2:03–2:26 • М'яке згасання 3:08–3:34",
         "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Прорив звукового бар'єру (Конус Прандтля-Глоерта • Експонента)",
+        "timecode": "10:00–10:15",
+        "role": "Акт 3 • Сінгулярність & Швидкість світла",
+        "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "web_preview": "assets/video_previews/science/ep01_sci_01_supersonic_barrier.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "specs": "1080×1920 (9:16) • 24 fps • Повний звук реактивного звукового удару",
+        "desc": "Надзвуковий прорив конуса конденсації як метафора експоненційного подолання бар'єру AGI Сема Альтмана."
       }
     ]
   },
@@ -705,6 +729,74 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
         "dims": "3840×2160 (4K PNG)",
         "usage": "Акт 4: Фінал тріумфу NVIDIA як найдорожчої компанії планети."
+      },
+      {
+        "code": "GAMING #06",
+        "badge": "🎮 GeForce • Ера 3D-графіки",
+        "chip": "chip-emerald",
+        "tc": "02:30–04:00",
+        "title": "Геймер, оцифрований у дисплей (Ray Tracing & RTX Revolution)",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_01_gamer_gpu_screen.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_01_Gamer_Digitized_Into_GPU_Screen_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Ранні роки NVIDIA: як комп'ютерні ігри профінансували створення найпотужніших ШІ-процесорів світу."
+      },
+      {
+        "code": "SILICON #07",
+        "badge": "🖱️ Залізо розпадається на кристали",
+        "chip": "chip-cyan",
+        "tc": "04:30–05:45",
+        "title": "Геймерські девайси розсипаються на мікросхеми та транзистори",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_02_mouse_disintegrating.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_02_Gaming_Hardware_Disintegrating_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Перехід від споживчих відеокарт до архітектури CUDA та тензорних ядер."
+      },
+      {
+        "code": "GTC #08",
+        "badge": "🏛️ Інженери GTC • Blackwell Core",
+        "chip": "chip-purple",
+        "tc": "11:30–13:00",
+        "title": "Інженери перед сяючим ядром обчислень суперкомп'ютера",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_03_server_core.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_03_Developers_Facing_GPU_Server_Core_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Дженсен Хуанг на сцені GTC демонструє чип Blackwell як основу нової промислової ери."
+      },
+      {
+        "code": "ESPORTS #09",
+        "badge": "🏟️ Кіберспортивна арена • NVIDIA Arena",
+        "chip": "chip-amber",
+        "tc": "07:30–08:45",
+        "title": "Кіберспортивна арена у неоновому сяйві (NVIDIA Gaming Tournaments)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_02c_esports_arena.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02C_Esports_Arena_Tower_Zoom_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Тріумф GeForce як стандарту світового кіберспорту."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Нанороботи складають графенову ґратку атом за атомом (TSMC 2nm)",
+        "timecode": "06:30–06:45",
+        "role": "Акт 2 • Атомна літографія кремнію",
+        "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "web_preview": "assets/video_previews/science/ep02_sci_01_nanobots_graphene.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "specs": "1080×1920 (9:16) • 24 fps • Нанотехнологічна 3D-анімація",
+        "desc": "Атомний монтаж наноструктур — інженерна ставка Дженсена Хуанга на субнанометрові транзистори Blackwell."
+      },
+      {
+        "code": "SCI #02 (1080p)",
+        "title": "Квантова левітація та магнітна фіксація потоку надпровідника",
+        "timecode": "12:00–12:15",
+        "role": "Акт 4 • Майбутнє надпровідних квантових чипів",
+        "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "web_preview": "assets/video_previews/science/ep02_sci_02_quantum_levitation.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "specs": "1920×1080 • 24 fps • 48 kHz аудіо",
+        "desc": "Надпровідність та квантове ширяння — фізична межа обчислень наступного покоління за межами закону Мура."
       }
     ]
   },
@@ -1014,6 +1106,127 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Нобелівський прорив — розгортання просторових координат 200 мільйонів білків."
+      },
+      {
+        "code": "MOVE37 #08",
+        "badge": "♟️ Хід 37 • Камінь на Гобан",
+        "chip": "chip-emerald",
+        "tc": "06:30–07:45",
+        "title": "Гравець ставить полірований камінь Го (AlphaGo проти Лі Седоля)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_07b_player_go_stone.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07B_Player_Placing_Go_Stone_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Історичний Хід 37 у Сеулі 2016 року — перший вияв чистої машинної творчості."
+      },
+      {
+        "code": "MCTS #09",
+        "badge": "⚡ Голографічна решітка • MCTS",
+        "chip": "chip-cyan",
+        "tc": "07:00–08:15",
+        "title": "Кібернетичний камінь вдаряє в голографічну решітку імовірностей",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_07c_cybernetic_stone.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07C_Cybernetic_Stone_Hologram_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Поєднання глибоких нейромереж з алгоритмом пошуку по дереву Монте-Карло."
+      },
+      {
+        "code": "DUEL #10",
+        "badge": "👤 Людина проти ШІ • Сеул 2016",
+        "chip": "chip-amber",
+        "tc": "07:30–08:45",
+        "title": "Лі Седоль сидить перед монітором AlphaGo (Драма людського інтелекту)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_07d_human_vs_ai.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07D_Human_LeeSedol_Vs_AlphaGo_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Момент тиші, коли легендарний гросмейстер Го усвідомив незбагненність ходу ШІ."
+      },
+      {
+        "code": "SELFPLAY #11",
+        "badge": "⚔️ AlphaGo Zero • Самонавчання",
+        "chip": "chip-purple",
+        "tc": "08:15–09:30",
+        "title": "Битва чорних і білих каменів на динамічній цифровій матриці",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_07e_go_grid_battle.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07E_Go_Stones_Digital_Grid_Battle_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: AlphaGo Zero навчається з нуля без людських партій за 40 днів, перемагаючи всі попередні версії 100:0."
+      },
+      {
+        "code": "VORTEX #12",
+        "badge": "🌌 10^170 Комбінацій • Нескінченність",
+        "chip": "chip-emerald",
+        "tc": "05:00–06:15",
+        "title": "Космічний вир комбінацій гри Го, що перевершує кількість атомів у Всесвіті",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_07f_cosmic_go_vortex.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07F_Cosmic_Go_Vortex_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Чому Го вважалася неприступною фортецею для комп'ютерів."
+      },
+      {
+        "code": "DQN #13",
+        "badge": "🕹️ Atari Breakout 2013 • Прорив DQN",
+        "chip": "chip-cyan",
+        "tc": "03:45–05:00",
+        "title": "Екран Atari Breakout вибухає пікселями (Deep Q-Network)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_11_atari_breakout.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_11_DQN_Atari_Breakout_Shattering_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: 2013 рік: DeepMind публікує статтю, де один і той самий алгоритм навчився грати в 49 ігор Atari з одних лише пікселів."
+      },
+      {
+        "code": "ALPHASTAR #14",
+        "badge": "🛸 StarCraft II • AlphaStar",
+        "chip": "chip-purple",
+        "tc": "09:30–10:45",
+        "title": "Рій юнітів AlphaStar у надлюдському мікроконтролі (StarCraft II)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_09_alphastar_swarm.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_09_AlphaStar_Swarm_Units_StarCraft_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Перемога AlphaStar над найкращими про-геймерами світу у грі з неповною інформацією."
+      },
+      {
+        "code": "LIDAR #15",
+        "badge": "📡 Тактичний радар • Туман війни",
+        "chip": "chip-emerald",
+        "tc": "10:00–11:00",
+        "title": "Лідарне сканування тактичної карти стратегії під туманом війни",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_10_lidar_tactical.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Прийняття стратегічних рішень в умовах невизначеності."
+      },
+      {
+        "code": "CODER #16",
+        "badge": "⌨️ 17-річний творець Theme Park",
+        "chip": "chip-amber",
+        "tc": "01:30–02:45",
+        "title": "Пальці на механічній клавіатурі (Гассабіс програмує Theme Park у Bullfrog)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_02d_mechanical_keyboard.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02D_Hassabis_Bullfrog_ThemePark_Coder_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: У 17 років Деміс став співавтором легендарної гри Theme Park, заробивши кошти на навчання у Кембриджі."
+      },
+      {
+        "code": "MAP TO LIFE #17",
+        "badge": "🧬 Від карт до білків • AlphaFold 2",
+        "chip": "chip-emerald",
+        "tc": "11:00–12:30",
+        "title": "Стратегічна ігрова карта розгортається у 3D-стрічки білкових молекул",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_08_map_protein.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_08_Map_Morphing_Into_Protein_AlphaFold_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Філософська кульмінація життя Гассабіса: ігри були лише тренувальним полігоном для вирішення біології."
+      },
+      {
+        "code": "ALPHAZERO #18",
+        "badge": "👑 Єдність Шахів і Го • AlphaZero",
+        "chip": "chip-cyan",
+        "tc": "08:45–10:00",
+        "title": "Дерев'яний шаховий король та камінь Го поряд у гармонії (AlphaZero)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_01g_chess_go_unified.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Створення єдиного універсального інтелекту, що освоює будь-яку гру за години без знань людей."
       }
     ],
     "audio": [
@@ -1064,6 +1277,19 @@ window.MEDIA_ACQUISITION_POOL = {
         "duration": "3:33",
         "specs": "Тихий вступ 0:00–0:20 • Симфонічний гімн 0:42–3:10 • Тихий спад 3:12–3:32",
         "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "РНК-полімераза транскрибує нитку ДНК (AlphaFold 2 • Нобель 2024)",
+        "timecode": "09:00–09:15",
+        "role": "Акт 3 • Розгортання коду життя",
+        "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "web_preview": "assets/video_previews/science/ep03_sci_01_dna_transcription.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "specs": "1920×1080 • 24 fps • Макромолекулярна 3D-анімація",
+        "desc": "Молекулярний двигун транскрипції ДНК — відкриття фундаментальної біології завдяки ШІ Деміса Гассабіса."
       }
     ]
   },
@@ -1207,6 +1433,52 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Тріумф ImageNet 2012, продаж стартапу DNNresearch Google за $44 млн."
+      },
+      {
+        "code": "ABYSS #05",
+        "badge": "🕳️ Безодня ризику • Хінтон",
+        "chip": "chip-purple",
+        "tc": "11:00–12:30",
+        "title": "Падіння у цифрову безодню нескінченних ваг (Оппенгеймерівський шок)",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_01_player_abyss.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_01_Player_Falling_Digital_Abyss_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Вихід Хінтона з Google у 2023 році, щоб відкрито попередити світ про екзистенційну загрозу."
+      },
+      {
+        "code": "MIND #06",
+        "badge": "🧠 Руйнування ілюзії людської вищості",
+        "chip": "chip-amber",
+        "tc": "09:30–11:00",
+        "title": "Скульптурне погруддя мислителя тріскається під внутрішнім білим світлом",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_02_mind_shattering.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_02_Grandmaster_Mind_Shattering_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Усвідомлення Хінтона, що штучні цифрові нейромережі перевершують біологічний мозок."
+      },
+      {
+        "code": "SYNAPSE DUEL #07",
+        "badge": "⚡ Аксон проти Лазера",
+        "chip": "chip-cyan",
+        "tc": "05:00–06:30",
+        "title": "Біологічний аксонний імпульс проти лазерного променя когерентного світла",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_03_nerve_laser_a.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_03_Nerve_Impulse_Vs_Laser_Beams_A_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Порівняння 100 трильйонів синапсів мозку та обчислювальної ефективності нейромереж."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Дводілинний дослід та квантовий колапс хвильової функції (Хінтон)",
+        "timecode": "03:00–03:15",
+        "role": "Акт 1 • Статистична фізика & Нейрони",
+        "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "web_preview": "assets/video_previews/science/ep04_sci_01_quantum_doubleslit.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "specs": "1920×1080 • 24 fps • Квантова фізика",
+        "desc": "Квантова інтерференція та колапс хвилі — теоретична основа Нобелівської премії Джеффрі Хінтона з фізики 2024."
       }
     ]
   },
@@ -1339,6 +1611,30 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 4: Фінал — непохитна віра Лекуна у вільний відкритий науковий код для всього людства."
+      },
+      {
+        "code": "ENERGY SYNAPSE #04",
+        "badge": "🌌 Світовий синапс • JEPA",
+        "chip": "chip-cyan",
+        "tc": "07:00–08:30",
+        "title": "Органічний синапс у взаємодії з цифровим лазерним випромінюванням",
+        "web_preview": "assets/flow_keyframes/ep05_flow_img_01_nerve_laser_b.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP05_FLOW_IMG_01_Biological_Synapse_Vs_Digital_Laser_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Енергетичні моделі LeCun як міст між органічним сприйняттям та алгоритмами."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Хімічний осцилятор Бєлоусова-Жаботинського (Енергетичні моделі)",
+        "timecode": "08:00–08:15",
+        "role": "Акт 3 • Самоорганізація відкритих систем",
+        "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "web_preview": "assets/video_previews/science/ep05_sci_01_chemical_oscillator.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "specs": "1080×1920 (9:16) • 24 fps • Хвилі нерівноважної хімії",
+        "desc": "Спіральні нерівноважні хвилі — математичний образ самоорганізації енергетичних моделей Яна Лекуна."
       }
     ]
   },
@@ -1569,6 +1865,50 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Робота Іллі в Google Brain над Sequence-to-Sequence та співавторство епохальної статті AlphaGo."
+      },
+      {
+        "code": "STONE THREADS #08",
+        "badge": "🏛️ Кібернетичний Єрусалим A",
+        "chip": "chip-cyan",
+        "tc": "02:00–03:30",
+        "title": "Кібернетичні нитки пронизують древній єрусалимський вапняк (Коріння Іллі)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_05_cybernetic_threads_a.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_05_Cybernetic_Threads_Jerusalem_Stone_A_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Навчання у Відкритому університеті Ізраїлю в Єрусалимі: філософські витоки генія."
+      },
+      {
+        "code": "STONE THREADS #09",
+        "badge": "🏛️ Кібернетичний Єрусалим B",
+        "chip": "chip-amber",
+        "tc": "03:30–04:45",
+        "title": "Світіння енергетичних жил у древній кам'яній кладці",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_06_cybernetic_threads_b.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_06_Cybernetic_Threads_Jerusalem_Stone_B_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Поєднання тисячолітньої традиції пошуку істини з передовими технологіями."
+      },
+      {
+        "code": "PORTAL #10",
+        "badge": "🌀 Портал Сингулярності • SSI",
+        "chip": "chip-purple",
+        "tc": "13:30–15:00",
+        "title": "Кібернетичний портал Сингулярності (Safe Superintelligence Inc.)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_07_singularity_portal.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_07_Cybernetic_Singularity_Portal_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Заснування нової лабораторії SSI з єдиною метою: безпечний суперінтелект без комерційного тиску."
+      },
+      {
+        "code": "TENTACLES #11",
+        "badge": "⚠️ Алгоритмічні щупальця • Втрата контролю",
+        "chip": "chip-rose",
+        "tc": "09:00–10:30",
+        "title": "Дерев'яний манекен, охоплений чорними алгоритмічними щупальцями коду",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_08_algorithmic_tentacles.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_08_Wooden_Hand_Algorithmic_Tentacles_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Головний страх Іллі: людство створює сутність, яку більше не зможе зупинити."
       }
     ],
     "audio": [
@@ -1619,6 +1959,19 @@ window.MEDIA_ACQUISITION_POOL = {
         "duration": "3:33",
         "specs": "Тихий вступ 0:00–0:20 • Симфонічний гімн 0:42–3:10 • Тихий спад 3:12–3:32",
         "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Викривлення простору-часу метрикою Алькуб'єрре (Сингулярність SSI)",
+        "timecode": "13:00–13:15",
+        "role": "Акт 4 • Космічний горизонт суперінтелекту",
+        "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "web_preview": "assets/video_previews/science/ep06_sci_01_warp_drive.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "specs": "1080×1920 (9:16) • 24 fps • Релятивістська гравітація",
+        "desc": "Гравітаційне стиснення простору перед зорельотом — метафора наближення Safe Superintelligence Іллі Суцкевера."
       }
     ]
   },
@@ -1762,6 +2115,41 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 4: Фінал — бачення біологічного відродження людства та перемоги над хворобами завдяки безпечному ШІ."
+      },
+      {
+        "code": "EQUATIONS #05",
+        "badge": "📐 Людина і формули • Криза",
+        "chip": "chip-amber",
+        "tc": "06:00–07:30",
+        "title": "Людський силует розчиняється в математичних рівняннях (Криза вирівнювання)",
+        "web_preview": "assets/flow_keyframes/ep07_flow_img_01_human_equations.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Чому Даріо Амодей пішов з OpenAI: занепокоєння комерціалізацією без формульного вирівнювання."
+      },
+      {
+        "code": "GOLDEN ALIGN #06",
+        "badge": "✨ Золоті рівняння • Конституція",
+        "chip": "chip-emerald",
+        "tc": "09:30–11:00",
+        "title": "Золоті рівняння Конституційного ШІ охоплюють людську свідомість",
+        "web_preview": "assets/flow_keyframes/ep07_flow_img_02_golden_equations.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_02_Human_Golden_Equations_Alignment_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Створення Claude 3.5 Sonnet з вбудованим етичним компасом."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Проліт камери крізь сітківку людського ока (Біофізика Амодея)",
+        "timecode": "02:30–02:45",
+        "role": "Акт 1 • Принстонська дисертація Даріо",
+        "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "web_preview": "assets/video_previews/science/ep07_sci_01_human_retina.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "specs": "1920×1080 • 24 fps • Анатомічна біофізика",
+        "desc": "Макрозйомка паличок і колбочок сітківки — пряма візуалізація принстонських досліджень Даріо Амодея з біофізики нейронів."
       }
     ]
   },
@@ -1902,6 +2290,30 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 4: Заснування інституту Stanford HAI заради захисту людської гідності."
+      },
+      {
+        "code": "EYE DATA #04",
+        "badge": "👁️ Око і Датасет • ImageNet",
+        "chip": "chip-purple",
+        "tc": "05:00–06:30",
+        "title": "Людське око зливається з потоком 14 мільйонів зображень ImageNet",
+        "web_preview": "assets/flow_keyframes/ep08_flow_img_01_human_eye_data.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Злиття людського сприйняття та масштабного машинного навчання."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Проліт камери крізь сітківку людського ока (Очі машин • ImageNet)",
+        "timecode": "03:00–03:15",
+        "role": "Акт 1 • Як бачать машини",
+        "file": "EP08_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "web_preview": "assets/video_previews/science/ep07_sci_01_human_retina.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "specs": "1920×1080 • 24 fps • Зоровий кортекс",
+        "desc": "Анатомія людського зору — біологічний прототип, який Фей-Фей Лі перенесла у комп'ютерний зір завдяки датасету ImageNet."
       }
     ]
   },
@@ -2034,6 +2446,30 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3 та 4: Бенжіо на саміті в Блетчлі-Парку попереджає світ про небезпеку втрати контролю над автономним ШІ."
+      },
+      {
+        "code": "MATRIX #04",
+        "badge": "🌌 Матричний туман • Бенжіо",
+        "chip": "chip-cyan",
+        "tc": "05:30–07:00",
+        "title": "Силует мислителя у цифровому матричному тумані (Йошуа Бенжіо)",
+        "web_preview": "assets/flow_keyframes/ep09_flow_img_01_silhouette_matrix.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP09_FLOW_IMG_01_Human_Silhouette_In_Digital_Matrix_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Спокійна впевненість ученого серед шуму венчурного ажіотажу."
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Хімічний осцилятор Бєлоусова-Жаботинського (Самоорганізація)",
+        "timecode": "07:00–07:15",
+        "role": "Акт 2 • Емерджентна увага",
+        "file": "EP09_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "web_preview": "assets/video_previews/science/ep05_sci_01_chemical_oscillator.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "specs": "1080×1920 (9:16) • 24 fps • Теорія хаосу",
+        "desc": "Спонтанна поява порядку з хаосу — метафора механізму уваги (Attention) Йошуа Бенжіо."
       }
     ]
   },
@@ -2240,6 +2676,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
         "dims": "1920×1080 (1080p JPG)",
         "usage": "Акт 1: Дитинство в Сінгапурі та Гонконзі, батько вчить писати перші алгоритми сортування."
+      },
+      {
+        "code": "SMART CITY #06",
+        "badge": "🏙️ Розумне місто • AI for Everyone",
+        "chip": "chip-emerald",
+        "tc": "09:00–10:30",
+        "title": "Голографічна карта трансформується у сяюче розумне місто",
+        "web_preview": "assets/flow_keyframes/ep10_flow_img_03_map_city.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP10_FLOW_IMG_03_Holographic_Map_Morphing_City_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Практичне застосування ШІ в охороні здоров'я, транспорті та освіті міст майбутнього."
       }
     ],
     "audio": [
@@ -2290,6 +2737,19 @@ window.MEDIA_ACQUISITION_POOL = {
         "duration": "3:35",
         "specs": "Cinematic мідь 0:30 • Епічна висота 0:44–2:15 • Довгий синт-хвіст 3:12–3:34",
         "davinci_track": "A2 (Music 92 BPM)"
+      }
+    ],
+    "scientific_vfx": [
+      {
+        "code": "SCI #01 (1080p)",
+        "title": "Трансформатор Тесли: електричні розряди (ШІ — Нова Електрика)",
+        "timecode": "05:00–05:15",
+        "role": "Акт 2 • Масштаб електрифікації світу",
+        "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "web_preview": "assets/video_previews/science/ep10_sci_01_tesla_electricity.mp4",
+        "raw_path": "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "specs": "1920×1080 • 24 fps • Високовольтна плазма",
+        "desc": "Сяйво коронних розрядів Тесли — втілення знаменитої тези Ендрю Ина: «Штучний інтелект — це нова електрика людства»."
       }
     ]
   }

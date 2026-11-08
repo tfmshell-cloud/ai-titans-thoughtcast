@@ -159,10 +159,12 @@
       var conflict = CONFLICTS[h.ep] || h.role;
       var act1Track = getHeroPrimaryTrack(h.ep);
       var epMedia = mediaPool[h.ep] || {};
-      var dosCount = (epMedia.dossiers || []).length || 1;
-      var archCount = (epMedia.archives || []).length || 1;
-      var flowCount = (epMedia.flow_queue || []).length || 1;
-      var totalMp4Count = dosCount + archCount + flowCount;
+      var dosCount = (epMedia.dossiers || []).length || 0;
+      var archCount = (epMedia.archives || []).length || 0;
+      var flowCount = (epMedia.flow_queue || []).length || 0;
+      var sciCount = (epMedia.scientific_vfx || []).length || 0;
+      var galCount = (epMedia.flow_gallery || []).length || 0;
+      var totalMp4Count = dosCount + archCount + flowCount + sciCount;
       var firstArch = (epMedia.archives || [])[0];
 
       var audioStripHtml = act1Track ? [
@@ -203,8 +205,8 @@
 
         "  <div class=\"hero-metrics-strip\">",
         "    <span>📝 <strong>" + esc(h.script_words) + "</strong> слів</span>",
-        "    <span>🎬 <strong>" + totalMp4Count + "</strong> готових MP4</span>",
-        "    <span>🗂️ <strong>" + dosCount + "</strong> 4K досьє + <strong>" + archCount + "</strong> архів</span>",
+        "    <span>🎬 <strong>" + totalMp4Count + "</strong> MP4 (Flow+Наука+Архів)</span>",
+        "    <span>🖼️ <strong>" + galCount + "</strong> 2K кадрів & артів</span>",
         "    <span>🎵 <strong>" + prog.heroWavCount + "/4</strong> актів WAV</span>",
         "  </div>",
 

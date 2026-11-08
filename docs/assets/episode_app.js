@@ -1418,6 +1418,28 @@
       });
     });
 
+    // 6. Scientific 3D Animations & VFX (1080p MP4)
+    (epMedia.scientific_vfx || []).forEach(function (sc, idx) {
+      list.push({
+        uid: "sci_" + idx,
+        type: "video",
+        kind: "science",
+        kindLabel: "🔬 Наукова 3D-Анімація (" + sc.code + ")",
+        chipClass: "chip-purple",
+        title: sc.title,
+        file: sc.file,
+        tc: sc.timecode || "00:00",
+        track: "DaVinci V1/V2 • Науковий VFX • " + sc.specs,
+        desc: sc.desc + " (" + sc.role + ")",
+        src: "../" + sc.web_preview,
+        poster: "",
+        localPath: repoRoot + sc.raw_path,
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + sc.raw_path,
+        externalUrl: "",
+        prompt: ""
+      });
+    });
+
     // 5. Extra B-Roll & Study Stills
     (epMedia.flow_gallery || []).forEach(function (g, idx) {
       if (g.code.indexOf("B-ROLL") === 0 || g.code.indexOf("STUDY") === 0) {
@@ -1855,6 +1877,37 @@
       ].join("\n");
     }).join("\n");
 
+    var sciCardsHtml = (epMedia.scientific_vfx || []).map(function (sc, idx) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--purple);background:rgba(167,139,250,0.05);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+        "    <span class=\"chip chip-purple\">" + esc(sc.code) + " • " + esc(sc.role) + "</span>",
+        "    <span style=\"font-size:10.5px;color:var(--amber);font-family:var(--mono);\">TC " + esc(sc.timecode) + "</span>",
+        "  </div>",
+        "  <video class=\"inline-table-video\" controls loop preload=\"metadata\" playsinline style=\"width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid rgba(167,139,250,0.35);margin-bottom:8px;display:block;\" src=\"../" + esc(sc.web_preview) + "\"></video>",
+        "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(sc.title) + "</h4>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;\">" + esc(sc.raw_path) + "</div>",
+        "  <div style=\"font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;\">" + esc(sc.desc) + "</div>",
+        "  <div class=\"btn-group\">",
+        "    <button class=\"btn btn-purple\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(sc.raw_path) + "\">📋 Шлях MP4</button>",
+        "  </div>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    var sciSectionHtml = sciCardsHtml ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(167,139,250,0.55);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🔬 Наукова 3D-Анімація & VFX (Full HD 1080p • Проект «Цікава наука»)</div>",
+      "      <div class=\"panel-desc\">Високобюджетні наукові симуляції (квантова механіка, молекулярна біологія, ДНК, атомні ґратки), що візуалізують фундаментальні відкриття героїв.</div>",
+      "    </div>",
+      "    <span class=\"chip chip-purple\">1080p VFX Master</span>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + sciCardsHtml + "</div>",
+      "</div>"
+    ].join("\n") : "";
+
     var audioCardsHtml = (epMedia.audio || []).map(function (au, idx) {
       return [
         "<div class=\"node-box\" style=\"border-top-color:var(--emerald);background:rgba(16,185,129,0.04);\">",
@@ -2044,6 +2097,7 @@
 
       "    <div class=\"panel-card\">",
       photoSectionHtml,
+      sciSectionHtml,
       audioSectionHtml,
       nbHtml,
       "      <div class=\"panel-head\">",
