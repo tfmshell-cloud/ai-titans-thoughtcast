@@ -1,0 +1,5 @@
+On December 11, 2015, OpenAI was unveiled to the world: a non-profit research laboratory armed with one billion dollars in pledged commitments. Its charter: to build Artificial General Intelligence that benefits all of humanity.
+
+The first three years were wandering in the dark. Researchers trained robotic hands to solve Rubik's cubes and pitted neural nets against Dota 2 champions. Academia dismissed them as a billionaire vanity project without academic rigor.
+
+Yet inside the lab, Sutskever and Altman's heretical hypothesis was taking root: Scale is all you need.

@@ -1,0 +1,7 @@
+To test the scaling laws, non-profit donations were no longer enough. A single training run demanded tens of millions of dollars in electricity and GPUs.
+
+In 2019, Altman made a move that fractured Silicon Valley: he restructured OpenAI into a capped-profit entity, stepped down from Y Combinator, and secured an initial one-billion-dollar alliance with Microsoft.
+
+Purists decried it as a betrayal of open science. Altman's response was blunt:
+
+«We cannot save the world if we cannot afford the compute to verify our own equations.»

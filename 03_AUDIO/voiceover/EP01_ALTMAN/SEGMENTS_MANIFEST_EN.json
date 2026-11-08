@@ -1,0 +1,138 @@
+[
+  {
+    "num": 1,
+    "tc": "[0:00 - 0:15] (30 words)",
+    "file_txt": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.txt",
+    "target_wav": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.wav",
+    "words": 36,
+    "sample": "Most people are shaped by the pressure of rules. Their world..."
+  },
+  {
+    "num": 2,
+    "tc": "[0:15 - 0:45] (88 words)",
+    "file_txt": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.txt",
+    "target_wav": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.wav",
+    "words": 101,
+    "sample": "In 1993, in a quiet suburb of St. Louis, an eight-year-old b..."
+  },
+  {
+    "num": 3,
+    "tc": "[0:45 - 1:30] (92 words)",
+    "file_txt": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.txt",
+    "target_wav": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.wav",
+    "words": 103,
+    "sample": "John Burroughs School in St. Louis was a fortress of Midwest..."
+  },
+  {
+    "num": 4,
+    "tc": "[1:30 - 2:30] (68 words)",
+    "file_txt": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.txt",
+    "target_wav": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav",
+    "words": 71,
+    "sample": "Next came Stanford. The computer science department was the ..."
+  },
+  {
+    "num": 5,
+    "tc": "[2:30 - 3:30] (98 words)",
+    "file_txt": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.txt",
+    "target_wav": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav",
+    "words": 120,
+    "sample": "Just then, Paul Graham launched an audacious experiment: the..."
+  },
+  {
+    "num": 6,
+    "tc": "[3:30 - 4:45] (34 words)",
+    "file_txt": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.txt",
+    "target_wav": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav",
+    "words": 37,
+    "sample": "He walked away from Loopt with several million dollars in ca..."
+  },
+  {
+    "num": 7,
+    "tc": "[4:45 - 5:45] (88 words)",
+    "file_txt": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.txt",
+    "target_wav": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.wav",
+    "words": 94,
+    "sample": "In 2014, the unthinkable happened: Paul Graham named twenty-..."
+  },
+  {
+    "num": 8,
+    "tc": "[5:45 - 7:00] (89 words)",
+    "file_txt": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.txt",
+    "target_wav": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav",
+    "words": 98,
+    "sample": "He identified the blind spot of venture capital: nearly ever..."
+  },
+  {
+    "num": 9,
+    "tc": "[7:00 - 8:15] (80 words)",
+    "file_txt": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.txt",
+    "target_wav": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav",
+    "words": 87,
+    "sample": "On December 11, 2015, OpenAI was unveiled to the world: a no..."
+  },
+  {
+    "num": 10,
+    "tc": "[8:15 - 9:30] (74 words)",
+    "file_txt": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.txt",
+    "target_wav": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav",
+    "words": 84,
+    "sample": "To test the scaling laws, non-profit donations were no longe..."
+  },
+  {
+    "num": 11,
+    "tc": "[9:30 - 10:45] (84 words)",
+    "file_txt": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.txt",
+    "target_wav": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav",
+    "words": 84,
+    "sample": "November 30, 2022. OpenAI quietly deploys a minimalist resea..."
+  },
+  {
+    "num": 12,
+    "tc": "[10:45 - 12:15] (89 words)",
+    "file_txt": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.txt",
+    "target_wav": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav",
+    "words": 92,
+    "sample": "Friday, November 17, 2023. High noon Pacific Time.\n\nAltman j..."
+  },
+  {
+    "num": 13,
+    "tc": "[12:15 - 13:45] (94 words)",
+    "file_txt": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.txt",
+    "target_wav": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav",
+    "words": 95,
+    "sample": "Thus began the most dramatic one hundred and twenty hours in..."
+  },
+  {
+    "num": 14,
+    "tc": "[13:45 - 15:30] (99 words)",
+    "file_txt": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.txt",
+    "target_wav": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav",
+    "words": 112,
+    "sample": "Monday morning brought an unprecedented corporate mutiny: mo..."
+  },
+  {
+    "num": 15,
+    "tc": "[15:30 - 17:00] (89 words)",
+    "file_txt": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.txt",
+    "target_wav": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav",
+    "words": 95,
+    "sample": "Having survived the fire of public rupture, Altman's vision ..."
+  },
+  {
+    "num": 16,
+    "tc": "[17:00 - 18:30] (114 words)",
+    "file_txt": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.txt",
+    "target_wav": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav",
+    "words": 118,
+    "sample": "What core insights can we extract from this trajectory to ar..."
+  },
+  {
+    "num": 17,
+    "tc": "[18:30 - 20:00] (57 words)",
+    "file_txt": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.txt",
+    "target_wav": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav",
+    "words": 72,
+    "sample": "The world is far more malleable than you were taught as a ch..."
+  }
+]

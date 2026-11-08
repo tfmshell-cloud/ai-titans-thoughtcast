@@ -1,0 +1,5 @@
+He identified the blind spot of venture capital: nearly everyone thinks in linear increments. If a company grows twenty percent a year, investors celebrate. But computing power obeys no linear limits. If chip capacity doubles every two years, thirty years later that system is a billion times more powerful.
+
+In July 2015, a private dinner at the Rosewood Sand Hill hotel brought together Sam Altman, Elon Musk, Greg Brockman, and a brilliant young scientist from Toronto named Ilya Sutskever.
+
+Their agenda was existential: Google had just acquired DeepMind. Concentrating superintelligent power inside a single commercial monopoly looked catastrophic.

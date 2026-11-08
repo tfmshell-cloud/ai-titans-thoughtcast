@@ -1,0 +1,3 @@
+Next came Stanford. The computer science department was the promised land for ambitious programmers. Yet for Altman, academic lecture halls felt suffocatingly slow. Syllabi, semesters, exams—that was linear time. And the silicon world outside the campus was already accelerating exponentially.
+
+In 2005, during his sophomore year, he shut the dorm room door behind him. He was nineteen. Together with two classmates, he co-founded Loopt—a mobile social network built on real-time geolocation.

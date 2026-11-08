@@ -1,36 +1,50 @@
 #!/usr/bin/env python3
 """
-AI Titans Thoughtcast — ElevenLabs Voiceover Batch Generator / Auditor for EP01 (Sam Altman)
+AI Titans Thoughtcast — ElevenLabs Voiceover Batch Manager for EP01 (Sam Altman)
+Supports English (EN) and Ukrainian (UA) master narration.
+
 Usage:
-  # Check status of VO files:
-  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --status
+  # Check status:
+  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --status --lang en
+  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --status --lang ua
 
   # Generate all segments via API (requires ELEVENLABS_API_KEY env var):
   export ELEVENLABS_API_KEY="sk_..."
-  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --voice-id <VOICE_ID>
+  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --lang en --voice-id <VOICE_ID>
 
   # Generate single segment:
-  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --seg 1 --voice-id <VOICE_ID>
+  python3 08_AUTOMATION/scripts/generate_elevenlabs_vo_ep01.py --lang en --seg 1 --voice-id <VOICE_ID>
 """
 
 import os, sys, json, argparse, urllib.request, urllib.error
 
 PROJECT_ROOT = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast"
-TEXTS_DIR = os.path.join(PROJECT_ROOT, "03_AUDIO/voiceover/EP01_ALTMAN/source_texts")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "03_AUDIO/voiceover/EP01_ALTMAN")
-MANIFEST_FILE = os.path.join(OUTPUT_DIR, "SEGMENTS_MANIFEST.json")
+VO_BASE_DIR = os.path.join(PROJECT_ROOT, "03_AUDIO/voiceover/EP01_ALTMAN")
 
-def load_manifest():
-    if not os.path.exists(MANIFEST_FILE):
-        print(f"Error: Manifest not found at {MANIFEST_FILE}")
+def get_paths(lang):
+    if lang.lower() == "en":
+        texts_dir = os.path.join(VO_BASE_DIR, "source_texts_en")
+        manifest_file = os.path.join(VO_BASE_DIR, "SEGMENTS_MANIFEST_EN.json")
+        wav_prefix = "EP01_VO_EN_"
+        default_model = "eleven_turbo_v2_5" # or eleven_multilingual_v2
+    else:
+        texts_dir = os.path.join(VO_BASE_DIR, "source_texts")
+        manifest_file = os.path.join(VO_BASE_DIR, "SEGMENTS_MANIFEST.json")
+        wav_prefix = "EP01_VO_UA_"
+        default_model = "eleven_multilingual_v2"
+    return texts_dir, manifest_file, wav_prefix, default_model
+
+def load_manifest(manifest_file):
+    if not os.path.exists(manifest_file):
+        print(f"Error: Manifest not found at {manifest_file}")
         sys.exit(1)
-    with open(MANIFEST_FILE, "r", encoding="utf-8") as f:
+    with open(manifest_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def check_status(manifest):
-    print("=" * 80)
-    print("🎙️ EPISODE 01: ELEVENLABS VOICEOVER STATUS AUDIT (17 SCENES)")
-    print("=" * 80)
+def check_status(manifest, texts_dir, lang):
+    print("=" * 85)
+    print(f"🎙️ EPISODE 01: ELEVENLABS VOICEOVER STATUS [{lang.upper()}] (17 CALIBRATED SCENES)")
+    print("=" * 85)
     ready_count = 0
     missing_count = 0
     total_words = 0
@@ -38,8 +52,8 @@ def check_status(manifest):
     for item in manifest:
         num = item["num"]
         wav_name = item["target_wav"]
-        wav_path = os.path.join(OUTPUT_DIR, wav_name)
-        txt_path = os.path.join(TEXTS_DIR, item["file_txt"])
+        wav_path = os.path.join(VO_BASE_DIR, wav_name)
+        txt_path = os.path.join(texts_dir, item["file_txt"])
         
         words = item.get("words", 0)
         total_words += words
@@ -55,18 +69,18 @@ def check_status(manifest):
 
         print(f"[{num:02d}] {item['tc']:<18} | {words:>3} w | {status_str:<16} | {wav_name}")
 
-    print("-" * 80)
+    print("-" * 85)
     pct = (ready_count / len(manifest)) * 100 if manifest else 0
-    print(f"TOTAL: {ready_count}/{len(manifest)} clips ready ({pct:.1f}%) • Total script words: {total_words}")
-    print(f"Source texts directory: {TEXTS_DIR}")
-    print(f"Destination WAV directory: {OUTPUT_DIR}")
-    print("=" * 80)
+    print(f"TOTAL: {ready_count}/{len(manifest)} clips ready ({pct:.1f}%) • Total words: {total_words}")
+    print(f"Source texts directory: {texts_dir}")
+    print(f"Destination WAV directory: {VO_BASE_DIR}")
+    print("=" * 85)
     return ready_count, missing_count
 
-def generate_segment(item, api_key, voice_id):
+def generate_segment(item, texts_dir, api_key, voice_id, model_id):
     num = item["num"]
-    txt_path = os.path.join(TEXTS_DIR, item["file_txt"])
-    wav_path = os.path.join(OUTPUT_DIR, item["target_wav"])
+    txt_path = os.path.join(texts_dir, item["file_txt"])
+    wav_path = os.path.join(VO_BASE_DIR, item["target_wav"])
 
     if not os.path.exists(txt_path):
         print(f"Error: Text file not found: {txt_path}")
@@ -80,7 +94,7 @@ def generate_segment(item, api_key, voice_id):
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
     payload = {
         "text": text,
-        "model_id": "eleven_multilingual_v2",
+        "model_id": model_id,
         "voice_settings": {
             "stability": 0.58,
             "similarity_boost": 0.82,
@@ -116,21 +130,26 @@ def generate_segment(item, api_key, voice_id):
 
 def main():
     parser = argparse.ArgumentParser(description="ElevenLabs VO Batch Manager")
+    parser.add_argument("--lang", type=str, default="en", choices=["en", "ua"], help="Language: 'en' (default) or 'ua'")
     parser.add_argument("--status", action="store_true", help="Check status of VO WAV files")
-    parser.add_argument("--voice-id", type=str, help="ElevenLabs Voice ID")
+    parser.add_argument("--voice-id", type=str, help="ElevenLabs Voice ID (e.g. 21m00Tcm4TlvDq8ikWAM for Rachel, JBFqnCBsd6RMkjVDRZzb for George)")
+    parser.add_argument("--model-id", type=str, default="eleven_multilingual_v2", help="ElevenLabs Model ID")
     parser.add_argument("--seg", type=int, help="Single segment number (1-17)")
     args = parser.parse_args()
 
-    manifest = load_manifest()
+    texts_dir, manifest_file, wav_prefix, default_model = get_paths(args.lang)
+    manifest = load_manifest(manifest_file)
+    model_id = args.model_id or default_model
 
     if args.status or (not args.voice_id and not args.seg):
-        check_status(manifest)
+        check_status(manifest, texts_dir, args.lang)
         return
 
     api_key = os.environ.get("ELEVENLABS_API_KEY")
     if not api_key:
         print("Error: ELEVENLABS_API_KEY environment variable is not set.")
-        print("Please export ELEVENLABS_API_KEY='your_key' or generate clips via ElevenLabs web app.")
+        print("Please export ELEVENLABS_API_KEY='your_key' or copy texts from:")
+        print(texts_dir)
         sys.exit(1)
 
     if args.seg:
@@ -138,14 +157,14 @@ def main():
         if not target:
             print(f"Segment {args.seg} not found in manifest.")
             sys.exit(1)
-        generate_segment(target, api_key, args.voice_id)
+        generate_segment(target, texts_dir, api_key, args.voice_id, model_id)
     else:
         for item in manifest:
-            wav_path = os.path.join(OUTPUT_DIR, item["target_wav"])
+            wav_path = os.path.join(VO_BASE_DIR, item["target_wav"])
             if os.path.exists(wav_path):
                 print(f"Skipping Take {item['num']:02d} (already exists)")
                 continue
-            success = generate_segment(item, api_key, args.voice_id)
+            success = generate_segment(item, texts_dir, api_key, args.voice_id, model_id)
             if not success:
                 print("Stopping batch on failure.")
                 break
