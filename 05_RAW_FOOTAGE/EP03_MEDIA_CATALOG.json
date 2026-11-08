@@ -1,0 +1,252 @@
+{
+  "episode": "EP03",
+  "titan": "Demis Hassabis",
+  "title": "Гросмейстер біологічного коду",
+  "summary": {
+    "total_priority_shots": 10,
+    "videos_ready": 0,
+    "keyframes_ready": 3,
+    "broll_stills_and_studies": 9,
+    "total_assets_ready": 12
+  },
+  "flow_queue": [
+    {
+      "num": "01",
+      "status": "image_ready",
+      "title": "Падіння дерев'яного короля на шахівницю (Лондон 1980)",
+      "file": "ep03_flow_01_wooden_king.mp4",
+      "tc": "0:00–0:15",
+      "specs": "2752×1536 (2K Master JPG готовий) • 4-річний вундеркінд Деміс",
+      "prompt": "Extreme macro cinematic shot of a wooden king chess piece casting a long sharp shadow across a glowing digital grid in a dark room, cinematic depth of field, 35mm Kodak film grain, 4k 24fps.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_01_wooden_king.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg"
+    },
+    {
+      "num": "02",
+      "status": "in_dev",
+      "title": "3D голографічне згортання білка AlphaFold",
+      "file": "ep03_flow_02_protein_folding.mp4",
+      "tc": "0:15–0:45",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Complex 3D holographic protein molecule folding dynamically from an unstructured glowing chain into a majestic stable ribbon structure, dark obsidian background, cyan and gold biomimetic lighting, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "03",
+      "status": "image_ready",
+      "title": "Різьблений шаховий кінь Стаунтона над турнірною дошкою",
+      "file": "ep03_flow_03_chess_knight.mp4",
+      "tc": "1:15–1:45",
+      "specs": "2752×1536 (2K Master JPG готовий) • Дерево рішень та стратегія",
+      "prompt": "Photorealistic scientific optical visualization of hand-carved Staunton chess knight poised above a worn tournament wooden board with analog chess clock ticking, shot on ARRI Master Anamorphic, 4k.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_03_chess_knight.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg"
+    },
+    {
+      "num": "04",
+      "status": "in_dev",
+      "title": "Вінтажний комп'ютер Sinclair ZX Spectrum (1984)",
+      "file": "ep03_flow_04_zx_spectrum.mp4",
+      "tc": "2:30–3:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Macro shot of a vintage 1984 Sinclair ZX Spectrum computer with rubber keys on a bedroom desk, glowing CRT television showing 8-bit green code, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "05",
+      "status": "in_dev",
+      "title": "Лабіринт пам'яті гіпокампу та нейронауки UCL",
+      "file": "ep03_flow_05_hippocampus_maze.mp4",
+      "tc": "5:00–6:15",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Slow gimbal tracking shot of translucent 3D neural hippocampus pathways illuminating like a golden architectural labyrinth, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "06",
+      "status": "in_dev",
+      "title": "Атарі Breakout: перша іскра навчання з підкріпленням (DQN)",
+      "file": "ep03_flow_06_atari_dqn.mp4",
+      "tc": "7:30–8:45",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Retro phosphor screen of Atari Breakout playing at superhuman speed, pixel paddle calculating trajectories, neural value function overlay, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "07",
+      "status": "image_ready",
+      "title": "AlphaGo: Хід 37 на дошці гобан (Сеул 2016)",
+      "file": "ep03_flow_07_move37_goban.mp4",
+      "tc": "10:30–12:00",
+      "specs": "2752×1536 (2K Master JPG готовий) • Момент нелюдської інтуїції",
+      "prompt": "Wide 2.39:1 anamorphic establishing tableau of single polished black slate Go stone placed decisively on the 37th intersection of akaya wood goban board, deep chiaroscuro shadows, Kodak 2383 D60 film print, 4k 24fps.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_07_move37_goban.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg"
+    },
+    {
+      "num": "08",
+      "status": "in_dev",
+      "title": "Нобелівський тріумф AlphaFold2: розгадка 200 мільйонів білків",
+      "file": "ep03_flow_08_alphafold_triumph.mp4",
+      "tc": "14:30–16:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Millions of crystalline protein structures cascading through space, transforming from scientific obscurity to pristine atomic models, Nobel medal rim lighting, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "09",
+      "status": "in_dev",
+      "title": "Штучний інтелект утримує термоядерну плазму в токамаку",
+      "file": "ep03_flow_09_tokamak_ai.mp4",
+      "tc": "16:45–18:15",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Inside a magnetic tokamak fusion reactor: glowing violet plasma torus held in suspension by invisible AI-controlled magnetic coils, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "10",
+      "status": "in_dev",
+      "title": "Цифровий організм: Isomorphic Labs та біологічний код життя",
+      "file": "ep03_flow_10_biological_code.mp4",
+      "tc": "19:00–21:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Majestic cinematic pull-back from human DNA double helix unzipping into flowing lines of quantum code, cosmic biology grandeur, IMAX 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    }
+  ],
+  "flow_gallery": [
+    {
+      "code": "KF #01 (2K)",
+      "badge": "🖼️ 2K Кадр готовий",
+      "chip": "chip-cyan",
+      "tc": "00:00–00:15",
+      "title": "Wooden King Falling on Chessboard (Шаховий король падає на дошку)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_kf_01_wooden_king.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "KF #03 (2K)",
+      "badge": "🖼️ 2K Кадр готовий",
+      "chip": "chip-cyan",
+      "tc": "01:15–01:45",
+      "title": "Staunton Chess Knight (Різьблений кінь Стаунтона над дошкою)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_kf_03_chess_knight.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "KF #07 (2K)",
+      "badge": "🖼️ 2K Кадр готовий • Хід 37",
+      "chip": "chip-cyan",
+      "tc": "10:30–12:00",
+      "title": "AlphaGo Move 37 Goban Stone (Чорний камінь на 37-му перетині)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_kf_07_move37_goban.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #07B (2K)",
+      "badge": "🎬 B-Roll Кадр",
+      "chip": "chip-amber",
+      "tc": "10:45–11:15",
+      "title": "Go Stone on Board (Макро-ракурс A)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07b_go_stone_a.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07B_Go_Stone_CloseA_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #07C (2K)",
+      "badge": "🎬 B-Roll Кадр",
+      "chip": "chip-amber",
+      "tc": "11:15–11:45",
+      "title": "Go Stone on Board (Макро-ракурс B)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07c_go_stone_b.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07C_Go_Stone_CloseB_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #07D (2K)",
+      "badge": "🎬 B-Roll Кадр",
+      "chip": "chip-amber",
+      "tc": "11:45–12:15",
+      "title": "Fingers Holding Go Stone (Пальці тримають камінь)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07d_fingers_stone.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07D_Fingers_Holding_Go_Stone_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #07E (2K)",
+      "badge": "🎬 B-Roll Кадр",
+      "chip": "chip-amber",
+      "tc": "12:15–12:45",
+      "title": "Go Stone Landing on Grid (Момент удару об гобан)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07e_stone_landing.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07E_Go_Stone_Landing_Grid_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #07F (2K)",
+      "badge": "🎬 B-Roll Кадр • Шок гросмейстера",
+      "chip": "chip-amber",
+      "tc": "12:45–13:30",
+      "title": "Grandmaster Lee Sedol (Лі Седоль тримає руки на скронях)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07f_grandmaster.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07F_Grandmaster_Lee_Sedol_Temples_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "STUDY #07G (2K)",
+      "badge": "🎨 Концепт-дослідження",
+      "chip": "chip-purple",
+      "tc": "13:30–14:15",
+      "title": "Go Board MCTS Policy Heatmap (Теплова карта нейрополітики)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07g_heatmap.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07G_MCTS_Policy_Heatmap_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "STUDY #07H (2K)",
+      "badge": "🎨 Концепт-дослідження",
+      "chip": "chip-purple",
+      "tc": "14:15–15:00",
+      "title": "Go Board in Cosmic Nebula (Гобан у космічній туманності)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_07h_cosmic_nebula.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07H_Go_Board_Cosmic_Nebula_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "STUDY #01B (2K)",
+      "badge": "🎨 Концепт-дослідження",
+      "chip": "chip-purple",
+      "tc": "00:45–01:15",
+      "title": "Chess and Go Boards Floating (Шахівниця і гобан у невагомості)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_01b_floating_boards.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01B_Chess_Go_Boards_Floating_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "STUDY #01C (2K)",
+      "badge": "🎨 Концепт-дослідження",
+      "chip": "chip-purple",
+      "tc": "01:45–02:15",
+      "title": "Chess Piece & Go Stone (Шахова королева і камінь Го)",
+      "web_preview": "assets/flow_keyframes/ep03_flow_broll_01c_piece_stone.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    }
+  ]
+}

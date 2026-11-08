@@ -1,0 +1,148 @@
+{
+  "episode": "EP10",
+  "titan": "Andrew Ng",
+  "title": "Вчитель світу та нова електрика",
+  "summary": {
+    "total_priority_shots": 10,
+    "videos_ready": 0,
+    "keyframes_ready": 1,
+    "broll_stills_and_studies": 1,
+    "total_assets_ready": 2
+  },
+  "flow_queue": [
+    {
+      "num": "01",
+      "status": "in_dev",
+      "title": "Сінгапур і Гонконг (1984): юний Ендрю за комп'ютером",
+      "file": "ep10_flow_01_childhood_singapore.mp4",
+      "tc": "0:00–00:25",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Nostalgic 1980s Singapore apartment room, ceiling fan slowly turning, young Asian boy typing on early home microcomputer, warm humid atmosphere, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "02",
+      "status": "image_ready",
+      "title": "Батько-лікар показує юному Ендрю підручник з експертних систем (1984)",
+      "file": "ep10_flow_02_doctor_father.mp4",
+      "tc": "0:25–01:45",
+      "specs": "2752×1536 (2K Master JPG готовий) • Початок шляху в штучний інтелект",
+      "prompt": "1984 Hong Kong and Singapore montage: a doctor father showing his young son a medical textbook on expert systems, warm desk lamp illumination, nostalgic film texture, 4k.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep10_flow_kf_02_doctor_father.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg"
+    },
+    {
+      "num": "03",
+      "status": "in_dev",
+      "title": "Стенфорд: автономний вертоліт навчається акробатиці через RL",
+      "file": "ep10_flow_03_autonomous_helicopter.mp4",
+      "tc": "2:30–04:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Golden hour flight of a miniature remote-controlled helicopter hovering upside-down on Stanford football field, mathematical telemetry lines, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "04",
+      "status": "in_dev",
+      "title": "Google Brain (2012): нейромережа відкриває концепцію кота",
+      "file": "ep10_flow_04_google_brain_cat.mp4",
+      "tc": "4:30–06:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "16,000 CPU cores processing 10 million YouTube frames, blurry dreamlike composite face of a domestic cat emerging from noise on giant screen, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "05",
+      "status": "in_dev",
+      "title": "Baidu: масштабування акустичних моделей Deep Speech",
+      "file": "ep10_flow_05_baidu_deep_speech.mp4",
+      "tc": "7:00–09:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Sprawling Beijing data center bathed in cool turquoise lighting, acoustic spectrogram soundwaves flowing through server clusters, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "06",
+      "status": "in_dev",
+      "title": "Coursera: Всесвітня аудиторія, 5 мільйонів учнів навчаються ML",
+      "file": "ep10_flow_06_coursera_revolution.mp4",
+      "tc": "10:00–12:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Holographic globe surrounded by millions of connected learners in bedrooms, cafes, and libraries from Nairobi to Tokyo watching machine learning lecture, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "07",
+      "status": "in_dev",
+      "title": "Data-Centric AI: фокус на якості даних замість коду",
+      "file": "ep10_flow_07_data_centric.mp4",
+      "tc": "13:00–15:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Clean pristine stream of purified data samples filtering through an industrial optical sorter, noisy outliers dissolving, mathematical clarity, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "08",
+      "status": "in_dev",
+      "title": "Landing AI: машинний зір на фабриках та в індустрії",
+      "file": "ep10_flow_08_landing_ai_industry.mp4",
+      "tc": "15:30–17:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "High-precision automated factory conveyor, robotic inspection arms scanning circuit boards with micron accuracy under bright strobe lighting, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "09",
+      "status": "in_dev",
+      "title": "AI Fund: посівне поле нових технологічних паростків",
+      "file": "ep10_flow_09_ai_fund_ecosystem.mp4",
+      "tc": "18:00–19:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Architectural glass incubator in Palo Alto with engineers collaborating around transparent digital whiteboards, morning sun streaming in, optimism, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "10",
+      "status": "in_dev",
+      "title": "AI як нова електрика: трансформація людської цивілізації",
+      "file": "ep10_flow_10_ai_new_electricity.mp4",
+      "tc": "20:00–21:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Majestic cinematic aerial tracking across modern megacity power grid at night, electric transmission towers transforming into radiant neural pathways, IMAX 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    }
+  ],
+  "flow_gallery": [
+    {
+      "code": "KF #02 (2K)",
+      "badge": "🖼️ 2K Кадр готовий",
+      "chip": "chip-cyan",
+      "tc": "00:25–01:45",
+      "title": "Doctor Father Medical Textbook (Батько-лікар показує підручник)",
+      "web_preview": "assets/flow_keyframes/ep10_flow_kf_02_doctor_father.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "B-ROLL #02B (2K)",
+      "badge": "🎬 B-Roll Кадр",
+      "chip": "chip-amber",
+      "tc": "01:45–02:30",
+      "title": "Father & Son Medical AI Textbook (Батько та син вивчають схеми)",
+      "web_preview": "assets/flow_keyframes/ep10_flow_broll_02b_father_textbook_close.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    }
+  ]
+}

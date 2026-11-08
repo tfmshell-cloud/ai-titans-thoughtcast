@@ -1385,7 +1385,7 @@
           src: "../" + fq.keyframe_preview,
           poster: "../" + fq.keyframe_preview,
           localPath: repoRoot + (fq.raw_image_path || ""),
-          githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/" + encodeURIComponent(fq.raw_image_path ? fq.raw_image_path.split("/").pop() : ""),
+          githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + (fq.raw_image_path || ""),
           externalUrl: "",
           prompt: fq.prompt || ""
         });
@@ -1415,20 +1415,20 @@
       });
     });
 
-    // 5. Extra B-Roll Stills (02B, 02C, 02D)
+    // 5. Extra B-Roll & Study Stills
     (epMedia.flow_gallery || []).forEach(function (g, idx) {
-      if (g.code.indexOf("B-ROLL") === 0) {
+      if (g.code.indexOf("B-ROLL") === 0 || g.code.indexOf("STUDY") === 0) {
         list.push({
           uid: "broll_" + idx,
           type: "image",
           kind: "broll",
-          kindLabel: "🎞️ Кінокадр B-Roll (" + g.code + ")",
-          chipClass: "chip-purple",
+          kindLabel: (g.code.indexOf("STUDY") === 0 ? "🎨 Концепт-дослідження (" : "🎞️ Кінокадр B-Roll (") + g.code + ")",
+          chipClass: g.code.indexOf("STUDY") === 0 ? "chip-purple" : "chip-amber",
           title: g.title,
           file: g.raw_path.split("/").pop(),
           tc: g.tc || "00:00",
-          track: "Кінокадр B-Roll Акту 1 • " + g.dims,
-          desc: "Додатковий фотореалістичний кінокадр для перебивок та титрів Fusion. Розмір: " + g.dims,
+          track: "Кінокадр / Дослідження • " + g.dims,
+          desc: (g.badge || "") + " — " + g.title + ". Розмір: " + g.dims,
           src: "../" + g.web_preview,
           poster: "../" + g.web_preview,
           localPath: repoRoot + g.raw_path,

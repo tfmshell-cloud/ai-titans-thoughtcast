@@ -1,0 +1,172 @@
+{
+  "episode": "EP06",
+  "titan": "Ilya Sutskever",
+  "title": "Алхімік масштабування та тиші",
+  "summary": {
+    "total_priority_shots": 10,
+    "videos_ready": 0,
+    "keyframes_ready": 3,
+    "broll_stills_and_studies": 1,
+    "total_assets_ready": 4
+  },
+  "flow_queue": [
+    {
+      "num": "01",
+      "status": "image_ready",
+      "title": "Єрусалимський камінь та коріння дитинства Іллі",
+      "file": "ep06_flow_01_jerusalem_limestone.mp4",
+      "tc": "0:00–01:30",
+      "specs": "2752×1536 (2K Master JPG готовий) • Відкритий університет Ізраїлю",
+      "prompt": "Photorealistic scientific optical visualization of warm twilight falling across golden Jerusalem stone walls, ancient mathematical geometry, contemplative quiet, 4k 24fps.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_01_jerusalem_limestone.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg"
+    },
+    {
+      "num": "02",
+      "status": "image_ready",
+      "title": "Студент Ілля стукає у двері Джеффрі Хінтона (Торонто 2003)",
+      "file": "ep06_flow_02_knocking_door.mp4",
+      "tc": "1:30–03:00",
+      "specs": "2752×1536 (2K Master JPG готовий) • Початок ери глибокого навчання",
+      "prompt": "University of Toronto 2003: young student knocking on weathered oak office door of Professor Geoffrey Hinton, dim corridor light, academic atmosphere, destiny moment, 4k.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_02_knocking_door.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg"
+    },
+    {
+      "num": "03",
+      "status": "in_dev",
+      "title": "Рекурентні нейронні мережі генерують текст символ за символом",
+      "file": "ep06_flow_03_rnn_text.mp4",
+      "tc": "3:00–04:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Visual representation of Recurrent Neural Networks predicting Wikipedia text character by character on a dark monitor, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "04",
+      "status": "image_ready",
+      "title": "Прорив AlexNet (2012): два розігнані GPU GeForce GTX 580",
+      "file": "ep06_flow_04_alexnet_gpus.mp4",
+      "tc": "4:30–06:00",
+      "specs": "2752×1536 (2K Master JPG готовий) • Перемога на ImageNet 2012",
+      "prompt": "Close-up of glowing matrix multiplication lines streaming across two hot graphics cards in a dark room in 2012, researcher silhouette watching screens, birth of deep learning, 4k.",
+      "video_preview": "",
+      "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+      "raw_video_path": "",
+      "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg"
+    },
+    {
+      "num": "05",
+      "status": "in_dev",
+      "title": "Sequence to Sequence (2014): векторний міст між мовами",
+      "file": "ep06_flow_05_seq2seq.mp4",
+      "tc": "6:00–08:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "English phrase vectors transforming through a high-dimensional bottleneck into fluent French sentences, mathematical beauty, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "06",
+      "status": "in_dev",
+      "title": "Заснування OpenAI (грудень 2015): обіцянка безпечного AGI",
+      "file": "ep06_flow_06_openai_founding.mp4",
+      "tc": "8:00–10:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Palo Alto Rosewood hotel dinner table, group of pioneers signing white napkin, golden candlelight, high-stakes idealism, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "07",
+      "status": "in_dev",
+      "title": "GPT-2 і GPT-3: масштабування передбачення наступного токена",
+      "file": "ep06_flow_07_scaling_hypothesis.mp4",
+      "tc": "10:30–13:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Visual proof of the Scaling Hypothesis: loss curve smoothly descending across orders of magnitude of compute, infinite straight line on log-log graph, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "08",
+      "status": "in_dev",
+      "title": "Супервирівнювання (Superalignment): приборкання надрозуму",
+      "file": "ep06_flow_08_superalignment.mp4",
+      "tc": "13:00–16:00",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "A colossal pulsing hyper-dimensional mathematical form enveloped by a delicate glowing golden cage of safety constraints, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "09",
+      "status": "in_dev",
+      "title": "Криза листопада 2023: тиша і каяття",
+      "file": "ep06_flow_09_altman_boardroom.mp4",
+      "tc": "16:00–18:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "Ilya sitting alone in empty conference room at twilight, silhouette against dark city, heavy contemplation, tragic resolve, 4k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    },
+    {
+      "num": "10",
+      "status": "in_dev",
+      "title": "Safe Superintelligence Inc (SSI): обсидіановий моноліт у горах",
+      "file": "ep06_flow_10_ssi_monolith.mp4",
+      "tc": "18:30–21:30",
+      "specs": "⏳ Очікує генерації Google Flow / Veo",
+      "prompt": "A solitary black obsidian tower rising amidst misty California coastal redwoods, absolute quiet focus, no commercial products, only straight-shot SSI, 8k.",
+      "video_preview": "",
+      "keyframe_preview": ""
+    }
+  ],
+  "flow_gallery": [
+    {
+      "code": "KF #01 (2K)",
+      "badge": "🖼️ 2K Кадр готовий",
+      "chip": "chip-cyan",
+      "tc": "00:00–01:30",
+      "title": "Jerusalem Limestone Roots (Єрусалимський камінь та коріння дитинства)",
+      "web_preview": "assets/flow_keyframes/ep06_flow_kf_01_jerusalem_limestone.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "KF #02 (2K)",
+      "badge": "🖼️ 2K Кадр готовий",
+      "chip": "chip-cyan",
+      "tc": "01:30–03:00",
+      "title": "Student Knocking on Hinton's Door (Студент стукає у двері Хінтона)",
+      "web_preview": "assets/flow_keyframes/ep06_flow_kf_02_knocking_door.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "KF #04 (2K)",
+      "badge": "🖼️ 2K Кадр готовий • AlexNet 2012",
+      "chip": "chip-cyan",
+      "tc": "04:30–06:00",
+      "title": "Researcher Viewing AlexNet GPUs (Дослідник спостерігає за GPU)",
+      "web_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    },
+    {
+      "code": "STUDY #04B (2K)",
+      "badge": "🎨 Концепт-дослідження",
+      "chip": "chip-purple",
+      "tc": "06:00–06:45",
+      "title": "Motherboard Traces & GPU Buses (Доріжки материнської плати та шини GPU)",
+      "web_preview": "assets/flow_keyframes/ep06_flow_broll_04b_motherboard_traces.jpg",
+      "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+      "dims": "2752×1536 (2K JPG)"
+    }
+  ]
+}

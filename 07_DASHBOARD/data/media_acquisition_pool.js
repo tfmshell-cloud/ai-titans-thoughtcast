@@ -197,36 +197,39 @@ window.MEDIA_ACQUISITION_POOL = {
       },
       {
         "num": "08",
-        "status": "in_dev",
+        "status": "image_ready",
         "title": "730 золотих світлових ниток єдності інженерів OpenAI",
         "file": "ep01_flow_08_golden_signatures.mp4",
         "tc": "13:45–15:30",
-        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Particle physics simulation: thousands of glowing golden light threads converging from darkness into a single blinding core of energy, Octane render, 8k.",
         "video_preview": "",
-        "keyframe_preview": ""
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_08_golden_signatures.jpg",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg"
       },
       {
         "num": "09",
-        "status": "in_dev",
+        "status": "image_ready",
         "title": "Магнітний термоядерний реактор Helion (фіолетово-золота плазма)",
         "file": "ep01_flow_09_fusion_torus.mp4",
         "tc": "15:30–17:00",
-        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Cinematic interior view of a magnetic fusion reactor torus, glowing violet and gold plasma contained by magnetic fields, hard sci-fi documentary realism, 4k.",
         "video_preview": "",
-        "keyframe_preview": ""
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_09_fusion_torus.jpg",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg"
       },
       {
         "num": "10",
-        "status": "in_dev",
+        "status": "image_ready",
         "title": "Орбітальний горизонт нічної Землі в золотій нейромережі",
         "file": "ep01_flow_10_earth_horizon.mp4",
         "tc": "18:30–20:00",
-        "specs": "⏳ У розробці — очікує генерації в Google Flow / Veo",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відео очікує рендеру з кадру",
         "prompt": "Slow majestic orbital camera pull-back from dark Earth night side illuminated by glowing golden neural network grids connecting cities, quiet cosmic awe, IMAX 8k.",
         "video_preview": "",
-        "keyframe_preview": ""
+        "keyframe_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg"
       }
     ],
     "flow_gallery": [
@@ -329,6 +332,76 @@ window.MEDIA_ACQUISITION_POOL = {
         "web_preview": "assets/flow_keyframes/ep01_flow_broll_02d_boy_crt_room.jpg",
         "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
         "dims": "1376×768"
+      },
+      {
+        "code": "KF #08 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "13:45–15:30",
+        "title": "Light threads converging into core (Збіжність золотих ниток в ядро)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_08_golden_signatures.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #09 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "15:30–17:00",
+        "title": "Fusion Torus Plasma (Термоядерний реактор Helion Energy)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_09_fusion_torus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #10 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Чекає відео",
+        "chip": "chip-cyan",
+        "tc": "18:30–20:00",
+        "title": "Earth Horizon Neural Grid (Орбітальний відхід від Землі)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_kf_10_earth_horizon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07B (2K)",
+        "badge": "🎬 B-Roll Кадр • Ніч перевороту",
+        "chip": "chip-amber",
+        "tc": "11:15–11:45",
+        "title": "Smartphone Vibrating on Table (Смартфон вібрує на столі)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_07b_phone_vibrating.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07B_Smartphone_Vibrating_Table_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #02E (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "01:00–02:00",
+        "title": "CRT Computer in Boardroom (Вінтажний монітор у залі засідань)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_02e_crt_boardroom.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #01D (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "00:45–01:15",
+        "title": "Macintosh LC II in Boardroom (Ракурс A)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_01d_mac_boardroom_a.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07D (2K)",
+        "badge": "🎬 B-Roll Кадр • Нічна гроза",
+        "chip": "chip-amber",
+        "tc": "12:15–13:00",
+        "title": "Silhouette Against Window (Силует засновника біля вікна)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_broll_07d_silhouette_window.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
       }
     ]
   },
@@ -438,11 +511,241 @@ window.MEDIA_ACQUISITION_POOL = {
     "flow_queue": [
       {
         "num": "01",
-        "title": "Тривимірне згортання білкової спіралі AlphaFold",
-        "file": "ep03_flow_01_alphafold_protein_cosmos.mp4",
-        "tc": "12:30–14:00",
-        "prompt": "Bioluminescent 3D protein amino-acid ribbon folding gracefully in dark cosmic void, cyan and gold molecular bonds locking into place, IMAX scientific visualization, 4k 24fps.",
-        "video_preview": "assets/video_previews/flow/ep03_flow_01_alphafold_protein_cosmos.mp4"
+        "status": "image_ready",
+        "title": "Падіння дерев'яного короля на шахівницю (Лондон 1980)",
+        "file": "ep03_flow_01_wooden_king.mp4",
+        "tc": "0:00–0:15",
+        "specs": "2752×1536 (2K Master JPG готовий) • 4-річний вундеркінд Деміс",
+        "prompt": "Extreme macro cinematic shot of a wooden king chess piece casting a long sharp shadow across a glowing digital grid in a dark room, cinematic depth of field, 35mm Kodak film grain, 4k 24fps.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_01_wooden_king.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg"
+      },
+      {
+        "num": "02",
+        "status": "in_dev",
+        "title": "3D голографічне згортання білка AlphaFold",
+        "file": "ep03_flow_02_protein_folding.mp4",
+        "tc": "0:15–0:45",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Complex 3D holographic protein molecule folding dynamically from an unstructured glowing chain into a majestic stable ribbon structure, dark obsidian background, cyan and gold biomimetic lighting, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "03",
+        "status": "image_ready",
+        "title": "Різьблений шаховий кінь Стаунтона над турнірною дошкою",
+        "file": "ep03_flow_03_chess_knight.mp4",
+        "tc": "1:15–1:45",
+        "specs": "2752×1536 (2K Master JPG готовий) • Дерево рішень та стратегія",
+        "prompt": "Photorealistic scientific optical visualization of hand-carved Staunton chess knight poised above a worn tournament wooden board with analog chess clock ticking, shot on ARRI Master Anamorphic, 4k.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_03_chess_knight.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg"
+      },
+      {
+        "num": "04",
+        "status": "in_dev",
+        "title": "Вінтажний комп'ютер Sinclair ZX Spectrum (1984)",
+        "file": "ep03_flow_04_zx_spectrum.mp4",
+        "tc": "2:30–3:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Macro shot of a vintage 1984 Sinclair ZX Spectrum computer with rubber keys on a bedroom desk, glowing CRT television showing 8-bit green code, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "05",
+        "status": "in_dev",
+        "title": "Лабіринт пам'яті гіпокампу та нейронауки UCL",
+        "file": "ep03_flow_05_hippocampus_maze.mp4",
+        "tc": "5:00–6:15",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Slow gimbal tracking shot of translucent 3D neural hippocampus pathways illuminating like a golden architectural labyrinth, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "06",
+        "status": "in_dev",
+        "title": "Атарі Breakout: перша іскра навчання з підкріпленням (DQN)",
+        "file": "ep03_flow_06_atari_dqn.mp4",
+        "tc": "7:30–8:45",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Retro phosphor screen of Atari Breakout playing at superhuman speed, pixel paddle calculating trajectories, neural value function overlay, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "07",
+        "status": "image_ready",
+        "title": "AlphaGo: Хід 37 на дошці гобан (Сеул 2016)",
+        "file": "ep03_flow_07_move37_goban.mp4",
+        "tc": "10:30–12:00",
+        "specs": "2752×1536 (2K Master JPG готовий) • Момент нелюдської інтуїції",
+        "prompt": "Wide 2.39:1 anamorphic establishing tableau of single polished black slate Go stone placed decisively on the 37th intersection of akaya wood goban board, deep chiaroscuro shadows, Kodak 2383 D60 film print, 4k 24fps.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep03_flow_kf_07_move37_goban.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg"
+      },
+      {
+        "num": "08",
+        "status": "in_dev",
+        "title": "Нобелівський тріумф AlphaFold2: розгадка 200 мільйонів білків",
+        "file": "ep03_flow_08_alphafold_triumph.mp4",
+        "tc": "14:30–16:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Millions of crystalline protein structures cascading through space, transforming from scientific obscurity to pristine atomic models, Nobel medal rim lighting, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "09",
+        "status": "in_dev",
+        "title": "Штучний інтелект утримує термоядерну плазму в токамаку",
+        "file": "ep03_flow_09_tokamak_ai.mp4",
+        "tc": "16:45–18:15",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Inside a magnetic tokamak fusion reactor: glowing violet plasma torus held in suspension by invisible AI-controlled magnetic coils, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "10",
+        "status": "in_dev",
+        "title": "Цифровий організм: Isomorphic Labs та біологічний код життя",
+        "file": "ep03_flow_10_biological_code.mp4",
+        "tc": "19:00–21:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Majestic cinematic pull-back from human DNA double helix unzipping into flowing lines of quantum code, cosmic biology grandeur, IMAX 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "KF #01 (2K)",
+        "badge": "🖼️ 2K Кадр готовий",
+        "chip": "chip-cyan",
+        "tc": "00:00–00:15",
+        "title": "Wooden King Falling on Chessboard (Шаховий король падає на дошку)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_kf_01_wooden_king.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #03 (2K)",
+        "badge": "🖼️ 2K Кадр готовий",
+        "chip": "chip-cyan",
+        "tc": "01:15–01:45",
+        "title": "Staunton Chess Knight (Різьблений кінь Стаунтона над дошкою)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_kf_03_chess_knight.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #07 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • Хід 37",
+        "chip": "chip-cyan",
+        "tc": "10:30–12:00",
+        "title": "AlphaGo Move 37 Goban Stone (Чорний камінь на 37-му перетині)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_kf_07_move37_goban.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07B (2K)",
+        "badge": "🎬 B-Roll Кадр",
+        "chip": "chip-amber",
+        "tc": "10:45–11:15",
+        "title": "Go Stone on Board (Макро-ракурс A)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07b_go_stone_a.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07B_Go_Stone_CloseA_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07C (2K)",
+        "badge": "🎬 B-Roll Кадр",
+        "chip": "chip-amber",
+        "tc": "11:15–11:45",
+        "title": "Go Stone on Board (Макро-ракурс B)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07c_go_stone_b.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07C_Go_Stone_CloseB_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07D (2K)",
+        "badge": "🎬 B-Roll Кадр",
+        "chip": "chip-amber",
+        "tc": "11:45–12:15",
+        "title": "Fingers Holding Go Stone (Пальці тримають камінь)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07d_fingers_stone.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07D_Fingers_Holding_Go_Stone_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07E (2K)",
+        "badge": "🎬 B-Roll Кадр",
+        "chip": "chip-amber",
+        "tc": "12:15–12:45",
+        "title": "Go Stone Landing on Grid (Момент удару об гобан)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07e_stone_landing.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07E_Go_Stone_Landing_Grid_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #07F (2K)",
+        "badge": "🎬 B-Roll Кадр • Шок гросмейстера",
+        "chip": "chip-amber",
+        "tc": "12:45–13:30",
+        "title": "Grandmaster Lee Sedol (Лі Седоль тримає руки на скронях)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07f_grandmaster.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07F_Grandmaster_Lee_Sedol_Temples_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #07G (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "13:30–14:15",
+        "title": "Go Board MCTS Policy Heatmap (Теплова карта нейрополітики)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07g_heatmap.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07G_MCTS_Policy_Heatmap_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #07H (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "14:15–15:00",
+        "title": "Go Board in Cosmic Nebula (Гобан у космічній туманності)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_07h_cosmic_nebula.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07H_Go_Board_Cosmic_Nebula_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #01B (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "00:45–01:15",
+        "title": "Chess and Go Boards Floating (Шахівниця і гобан у невагомості)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_01b_floating_boards.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01B_Chess_Go_Boards_Floating_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #01C (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "01:45–02:15",
+        "title": "Chess Piece & Go Stone (Шахова королева і камінь Го)",
+        "web_preview": "assets/flow_keyframes/ep03_flow_broll_01c_piece_stone.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
       }
     ]
   },
@@ -579,11 +882,161 @@ window.MEDIA_ACQUISITION_POOL = {
     "flow_queue": [
       {
         "num": "01",
-        "title": "Обсидіановий моноліт Safe Superintelligence (SSI)",
-        "file": "ep06_flow_01_ssi_obsidian_monolith.mp4",
-        "tc": "14:00–15:30",
-        "prompt": "Minimalist towering black obsidian monolith standing in silent dark chamber with single pure violet-white beam of aligned light inside, Kubrick scale, 4k 24fps.",
-        "video_preview": "assets/video_previews/flow/ep06_flow_01_ssi_obsidian_monolith.mp4"
+        "status": "image_ready",
+        "title": "Єрусалимський камінь та коріння дитинства Іллі",
+        "file": "ep06_flow_01_jerusalem_limestone.mp4",
+        "tc": "0:00–01:30",
+        "specs": "2752×1536 (2K Master JPG готовий) • Відкритий університет Ізраїлю",
+        "prompt": "Photorealistic scientific optical visualization of warm twilight falling across golden Jerusalem stone walls, ancient mathematical geometry, contemplative quiet, 4k 24fps.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_01_jerusalem_limestone.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg"
+      },
+      {
+        "num": "02",
+        "status": "image_ready",
+        "title": "Студент Ілля стукає у двері Джеффрі Хінтона (Торонто 2003)",
+        "file": "ep06_flow_02_knocking_door.mp4",
+        "tc": "1:30–03:00",
+        "specs": "2752×1536 (2K Master JPG готовий) • Початок ери глибокого навчання",
+        "prompt": "University of Toronto 2003: young student knocking on weathered oak office door of Professor Geoffrey Hinton, dim corridor light, academic atmosphere, destiny moment, 4k.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_02_knocking_door.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg"
+      },
+      {
+        "num": "03",
+        "status": "in_dev",
+        "title": "Рекурентні нейронні мережі генерують текст символ за символом",
+        "file": "ep06_flow_03_rnn_text.mp4",
+        "tc": "3:00–04:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Visual representation of Recurrent Neural Networks predicting Wikipedia text character by character on a dark monitor, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "04",
+        "status": "image_ready",
+        "title": "Прорив AlexNet (2012): два розігнані GPU GeForce GTX 580",
+        "file": "ep06_flow_04_alexnet_gpus.mp4",
+        "tc": "4:30–06:00",
+        "specs": "2752×1536 (2K Master JPG готовий) • Перемога на ImageNet 2012",
+        "prompt": "Close-up of glowing matrix multiplication lines streaming across two hot graphics cards in a dark room in 2012, researcher silhouette watching screens, birth of deep learning, 4k.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg"
+      },
+      {
+        "num": "05",
+        "status": "in_dev",
+        "title": "Sequence to Sequence (2014): векторний міст між мовами",
+        "file": "ep06_flow_05_seq2seq.mp4",
+        "tc": "6:00–08:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "English phrase vectors transforming through a high-dimensional bottleneck into fluent French sentences, mathematical beauty, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "06",
+        "status": "in_dev",
+        "title": "Заснування OpenAI (грудень 2015): обіцянка безпечного AGI",
+        "file": "ep06_flow_06_openai_founding.mp4",
+        "tc": "8:00–10:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Palo Alto Rosewood hotel dinner table, group of pioneers signing white napkin, golden candlelight, high-stakes idealism, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "07",
+        "status": "in_dev",
+        "title": "GPT-2 і GPT-3: масштабування передбачення наступного токена",
+        "file": "ep06_flow_07_scaling_hypothesis.mp4",
+        "tc": "10:30–13:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Visual proof of the Scaling Hypothesis: loss curve smoothly descending across orders of magnitude of compute, infinite straight line on log-log graph, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "08",
+        "status": "in_dev",
+        "title": "Супервирівнювання (Superalignment): приборкання надрозуму",
+        "file": "ep06_flow_08_superalignment.mp4",
+        "tc": "13:00–16:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "A colossal pulsing hyper-dimensional mathematical form enveloped by a delicate glowing golden cage of safety constraints, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "09",
+        "status": "in_dev",
+        "title": "Криза листопада 2023: тиша і каяття",
+        "file": "ep06_flow_09_altman_boardroom.mp4",
+        "tc": "16:00–18:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Ilya sitting alone in empty conference room at twilight, silhouette against dark city, heavy contemplation, tragic resolve, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "10",
+        "status": "in_dev",
+        "title": "Safe Superintelligence Inc (SSI): обсидіановий моноліт у горах",
+        "file": "ep06_flow_10_ssi_monolith.mp4",
+        "tc": "18:30–21:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "A solitary black obsidian tower rising amidst misty California coastal redwoods, absolute quiet focus, no commercial products, only straight-shot SSI, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "KF #01 (2K)",
+        "badge": "🖼️ 2K Кадр готовий",
+        "chip": "chip-cyan",
+        "tc": "00:00–01:30",
+        "title": "Jerusalem Limestone Roots (Єрусалимський камінь та коріння дитинства)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_01_jerusalem_limestone.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #02 (2K)",
+        "badge": "🖼️ 2K Кадр готовий",
+        "chip": "chip-cyan",
+        "tc": "01:30–03:00",
+        "title": "Student Knocking on Hinton's Door (Студент стукає у двері Хінтона)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_02_knocking_door.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "KF #04 (2K)",
+        "badge": "🖼️ 2K Кадр готовий • AlexNet 2012",
+        "chip": "chip-cyan",
+        "tc": "04:30–06:00",
+        "title": "Researcher Viewing AlexNet GPUs (Дослідник спостерігає за GPU)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_kf_04_researcher_gpus.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "STUDY #04B (2K)",
+        "badge": "🎨 Концепт-дослідження",
+        "chip": "chip-purple",
+        "tc": "06:00–06:45",
+        "title": "Motherboard Traces & GPU Buses (Доріжки материнської плати та шини GPU)",
+        "web_preview": "assets/flow_keyframes/ep06_flow_broll_04b_motherboard_traces.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
       }
     ]
   },
@@ -767,11 +1220,137 @@ window.MEDIA_ACQUISITION_POOL = {
     "flow_queue": [
       {
         "num": "01",
-        "title": "Глобальна планетарна мережа демократизації ШІ (8 млн інженерів)",
-        "file": "ep10_flow_01_global_neural_classroom.mp4",
-        "tc": "13:00–14:30",
-        "prompt": "Millions of warm cyan and gold points of light igniting across continents from a single Stanford chalkboard equation, electricity of the 21st century metaphor, 4k 24fps.",
-        "video_preview": "assets/video_previews/flow/ep10_flow_01_global_neural_classroom.mp4"
+        "status": "in_dev",
+        "title": "Сінгапур і Гонконг (1984): юний Ендрю за комп'ютером",
+        "file": "ep10_flow_01_childhood_singapore.mp4",
+        "tc": "0:00–00:25",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Nostalgic 1980s Singapore apartment room, ceiling fan slowly turning, young Asian boy typing on early home microcomputer, warm humid atmosphere, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "02",
+        "status": "image_ready",
+        "title": "Батько-лікар показує юному Ендрю підручник з експертних систем (1984)",
+        "file": "ep10_flow_02_doctor_father.mp4",
+        "tc": "0:25–01:45",
+        "specs": "2752×1536 (2K Master JPG готовий) • Початок шляху в штучний інтелект",
+        "prompt": "1984 Hong Kong and Singapore montage: a doctor father showing his young son a medical textbook on expert systems, warm desk lamp illumination, nostalgic film texture, 4k.",
+        "video_preview": "",
+        "keyframe_preview": "assets/flow_keyframes/ep10_flow_kf_02_doctor_father.jpg",
+        "raw_video_path": "",
+        "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg"
+      },
+      {
+        "num": "03",
+        "status": "in_dev",
+        "title": "Стенфорд: автономний вертоліт навчається акробатиці через RL",
+        "file": "ep10_flow_03_autonomous_helicopter.mp4",
+        "tc": "2:30–04:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Golden hour flight of a miniature remote-controlled helicopter hovering upside-down on Stanford football field, mathematical telemetry lines, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "04",
+        "status": "in_dev",
+        "title": "Google Brain (2012): нейромережа відкриває концепцію кота",
+        "file": "ep10_flow_04_google_brain_cat.mp4",
+        "tc": "4:30–06:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "16,000 CPU cores processing 10 million YouTube frames, blurry dreamlike composite face of a domestic cat emerging from noise on giant screen, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "05",
+        "status": "in_dev",
+        "title": "Baidu: масштабування акустичних моделей Deep Speech",
+        "file": "ep10_flow_05_baidu_deep_speech.mp4",
+        "tc": "7:00–09:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Sprawling Beijing data center bathed in cool turquoise lighting, acoustic spectrogram soundwaves flowing through server clusters, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "06",
+        "status": "in_dev",
+        "title": "Coursera: Всесвітня аудиторія, 5 мільйонів учнів навчаються ML",
+        "file": "ep10_flow_06_coursera_revolution.mp4",
+        "tc": "10:00–12:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Holographic globe surrounded by millions of connected learners in bedrooms, cafes, and libraries from Nairobi to Tokyo watching machine learning lecture, 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "07",
+        "status": "in_dev",
+        "title": "Data-Centric AI: фокус на якості даних замість коду",
+        "file": "ep10_flow_07_data_centric.mp4",
+        "tc": "13:00–15:00",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Clean pristine stream of purified data samples filtering through an industrial optical sorter, noisy outliers dissolving, mathematical clarity, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "08",
+        "status": "in_dev",
+        "title": "Landing AI: машинний зір на фабриках та в індустрії",
+        "file": "ep10_flow_08_landing_ai_industry.mp4",
+        "tc": "15:30–17:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "High-precision automated factory conveyor, robotic inspection arms scanning circuit boards with micron accuracy under bright strobe lighting, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "09",
+        "status": "in_dev",
+        "title": "AI Fund: посівне поле нових технологічних паростків",
+        "file": "ep10_flow_09_ai_fund_ecosystem.mp4",
+        "tc": "18:00–19:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Architectural glass incubator in Palo Alto with engineers collaborating around transparent digital whiteboards, morning sun streaming in, optimism, 4k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      },
+      {
+        "num": "10",
+        "status": "in_dev",
+        "title": "AI як нова електрика: трансформація людської цивілізації",
+        "file": "ep10_flow_10_ai_new_electricity.mp4",
+        "tc": "20:00–21:30",
+        "specs": "⏳ Очікує генерації Google Flow / Veo",
+        "prompt": "Majestic cinematic aerial tracking across modern megacity power grid at night, electric transmission towers transforming into radiant neural pathways, IMAX 8k.",
+        "video_preview": "",
+        "keyframe_preview": ""
+      }
+    ],
+    "flow_gallery": [
+      {
+        "code": "KF #02 (2K)",
+        "badge": "🖼️ 2K Кадр готовий",
+        "chip": "chip-cyan",
+        "tc": "00:25–01:45",
+        "title": "Doctor Father Medical Textbook (Батько-лікар показує підручник)",
+        "web_preview": "assets/flow_keyframes/ep10_flow_kf_02_doctor_father.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
+      },
+      {
+        "code": "B-ROLL #02B (2K)",
+        "badge": "🎬 B-Roll Кадр",
+        "chip": "chip-amber",
+        "tc": "01:45–02:30",
+        "title": "Father & Son Medical AI Textbook (Батько та син вивчають схеми)",
+        "web_preview": "assets/flow_keyframes/ep10_flow_broll_02b_father_textbook_close.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg",
+        "dims": "2752×1536 (2K JPG)"
       }
     ]
   }
