@@ -1708,6 +1708,28 @@
       });
     });
 
+    // 7. Voiceover Master Takes (A1)
+    (epMedia.voiceover || []).forEach(function (vo, idx) {
+      list.push({
+        uid: "vo_take_" + idx,
+        type: "audio",
+        kind: "voiceover",
+        kindLabel: "🎙️ Диктор A1 (Take " + vo.num + ")",
+        chipClass: "chip-emerald",
+        title: "Take #" + vo.num + ": " + (vo.title || "Сцена"),
+        file: (vo.wav_master ? vo.wav_master.split("/").pop() : "take.wav"),
+        tc: vo.tc || "00:00",
+        track: "DaVinci A1 • Broadcast 48k/24b WAV • 115 WPM",
+        desc: (vo.voice || "Adam") + " (" + vo.duration + ") • " + (vo.words || 0) + " слів",
+        src: "../" + vo.web_preview,
+        poster: "../assets/speaker_photos/ep01_altman_real.jpg",
+        localPath: repoRoot + vo.wav_master,
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + vo.wav_master,
+        externalUrl: "",
+        prompt: ""
+      });
+    });
+
     return list;
   }
 
@@ -1790,7 +1812,9 @@
       var activeCls = idx === playlistIndex ? " active" : "";
       var thumbHtml = item.type === "image"
         ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" style=\"object-fit:cover;\">"
-        : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>";
+        : (item.type === "audio"
+          ? "<div class=\"reel-thumb-video\" style=\"background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;\">🎙️</div>"
+          : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>");
 
       return [
         "<div class=\"reel-item-card" + activeCls + "\" data-modal-pidx=\"" + idx + "\">",
@@ -1809,7 +1833,9 @@
 
     var stageMediaHtml = clip.type === "image"
       ? "<div style=\"position:relative;cursor:pointer;\" data-reveal-finder=\"" + esc(clip.localPath || clip.file) + "\" title=\"Клікніть по фото, щоб відкрити його у Finder\"><img id=\"modalStageImage\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" style=\"object-fit:contain;background:#05070c;\"><span style=\"position:absolute;top:10px;left:10px;background:rgba(12,14,19,0.88);color:var(--cyan);padding:4px 8px;border-radius:4px;font-size:11px;font-weight:700;\">📁 Клікніть, щоб відкрити цей файл у Finder</span></div>"
-      : "<video id=\"modalStageVideo\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" controls autoplay loop playsinline></video>";
+      : (clip.type === "audio"
+        ? "<div style=\"position:relative;background:#05070c;padding:24px;border-radius:8px;text-align:center;\"><img src=\"" + esc(clip.poster || "") + "\" style=\"max-height:220px;border-radius:8px;margin-bottom:16px;box-shadow:0 8px 24px rgba(0,0,0,0.6);\"><div style=\"font-size:16px;font-weight:700;color:var(--emerald);margin-bottom:8px;\">" + esc(clip.title) + "</div><div style=\"font-size:12px;color:var(--cyan);font-family:var(--mono);margin-bottom:16px;\">" + esc(clip.file) + " • " + esc(clip.track) + "</div><audio id=\"modalStageAudio\" src=\"" + esc(clip.src) + "\" controls autoplay style=\"width:100%;max-width:540px;\"></audio></div>"
+        : "<video id=\"modalStageVideo\" class=\"cinema-stage-video\" src=\"" + esc(clip.src) + "\" controls autoplay loop playsinline></video>");
 
     modal.innerHTML = [
       "<div class=\"cinema-modal-window\" role=\"dialog\" aria-modal=\"true\">",
@@ -2265,6 +2291,41 @@
       ].join("\n");
     }).join("\n");
 
+    var voCardsHtml = (epMedia.voiceover || []).map(function (vo, idx) {
+      return [
+        "<div class=\"node-box\" style=\"border-top-color:var(--emerald);background:rgba(16,185,129,0.04);\">",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;\">",
+        "    <span class=\"chip chip-emerald\">Take #" + esc(vo.num) + " • " + esc(vo.tc) + "</span>",
+        "    <span style=\"font-size:11px;color:var(--cyan);font-family:var(--mono);font-weight:700;\">⏱️ " + esc(vo.duration) + "</span>",
+        "  </div>",
+        "  <h4 style=\"margin:2px 0 4px 0;\">" + esc(vo.title) + "</h4>",
+        "  <div style=\"font-size:10.5px;color:var(--text-muted);margin-bottom:6px;\">🎙️ " + esc(vo.voice) + " • " + esc(vo.words) + " words</div>",
+        "  <audio controls preload=\"none\" style=\"height:32px;width:100%;margin-bottom:6px;\" src=\"../" + esc(vo.web_preview) + "\"></audio>",
+        "  <div style=\"font-size:10.8px;color:var(--cyan);font-family:var(--mono);margin-bottom:6px;word-break:break-all;cursor:pointer;\" data-reveal-finder=\"" + esc(vo.wav_master) + "\">📁 " + esc(vo.wav_master) + "</div>",
+        "  <div style=\"display:flex;gap:6px;\">",
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;flex:1;cursor:pointer;\" data-reveal-finder=\"" + esc(vo.wav_master) + "\">📁 У Finder (WAV)</button>",
+        "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;cursor:pointer;\" data-copy-text=\"" + esc(vo.wav_master) + "\">📋 Шлях WAV</button>",
+        "  </div>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    var voSectionHtml = voCardsHtml ? [
+      "<div class=\"panel-card\" style=\"border-color:rgba(16,185,129,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎙️ Офіційні Дикторські Доріжки ElevenLabs (" + (epMedia.voiceover || []).length + " тейків • Adam Radio Announcer • 100% Готові)</div>",
+      "      <div class=\"panel-desc\">Англомовний майстер-наратив для таймлайну DaVinci Resolve: Broadcast 48kHz / 24-bit LPCM WAV на доріжку A1 + швидкі MP3-прев'ю.</div>",
+      "    </div>",
+      "    <div class=\"btn-group\">",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"03_AUDIO/voiceover/EP01_ALTMAN/\">📁 Папка голосу у Finder</button>",
+      "      <span class=\"chip chip-emerald\">✅ 17/17 Готові (100%)</span>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"node-tree-grid\">" + voCardsHtml + "</div>",
+      "</div>"
+    ].join("\n") : "";
+
     var photoCardsHtml = (epMedia.archival_photos || []).map(function (ph, idx) {
       return [
         "<div class=\"node-box\" style=\"border-top-color:var(--amber);\">",
@@ -2359,7 +2420,9 @@
       var activeCls = idx === state.mediaActiveIndex ? " active" : "";
       var thumbHtml = item.type === "image"
         ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" style=\"object-fit:cover;\">"
-        : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>";
+        : (item.type === "audio"
+          ? "<div class=\"reel-thumb-video\" style=\"background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;\">🎙️</div>"
+          : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>");
 
       return [
         "<div class=\"reel-item-card" + activeCls + "\" data-pidx=\"" + idx + "\">",
@@ -2382,6 +2445,7 @@
     var countKind = function (k) {
       return playlist.filter(function (it) { return it.kind === k; }).length;
     };
+    var nVoCount = countKind("voiceover");
     var nFlowVid = countKind("flow_video");
     var nFlowImg = countKind("flow_image");
     var nArchCount = countKind("archive");
@@ -2393,6 +2457,7 @@
     var filterPillsHtml = [
       '<button class="dock-pill' + (state.mediaDockFilter === "all" ? " active" : "") + '" data-dock-filter="all">Усі (' + playlist.length + ')</button>'
     ];
+    if (nVoCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "voiceover" ? " active" : "") + '" data-dock-filter="voiceover">🎙️ Голос (' + nVoCount + ')</button>');
     if (nFlowVid > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_video" ? " active" : "") + '" data-dock-filter="flow_video">🚀 Flow Відео (' + nFlowVid + ')</button>');
     if (nFlowImg > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_image" ? " active" : "") + '" data-dock-filter="flow_image">🖼️ 2K Кадри (' + nFlowImg + ')</button>');
     if (nArchCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "archive" ? " active" : "") + '" data-dock-filter="archive">📼 Архіви (' + nArchCount + ')</button>');
@@ -2406,24 +2471,26 @@
       "  <div class=\"panel-head\" style=\"border-bottom:none;padding-bottom:0;\">",
       "    <div>",
       "      <div class=\"panel-title\" style=\"font-size:16.5px;color:var(--text-primary);display:flex;align-items:center;gap:10px;\">",
-      "        <span>🎬 Візуальний Пул Епізоду " + esc(epData.ep) + " (" + playlist.length + " готових медіа-елементів у виробництві)</span>",
-      "        <span class=\"chip chip-emerald\">✅ 10/10 Flow Відео Готові</span>",
+      "        <span>🎬 Візуальний & Аудіо Пул Епізоду " + esc(epData.ep) + " (" + playlist.length + " готових медіа-елементів)</span>",
+      "        <span class=\"chip chip-emerald\">✅ 17/17 Тейків Голосу A1</span>",
+      "        <span class=\"chip chip-cyan\">✅ 10/10 Flow Відео</span>",
       "      </div>",
-      "      <div class=\"panel-desc\">Повний виробничий конвеєр епізоду: відео 24fps для таймлайну DaVinci V1/V2, 2K/4K концепт-кадри для Veo 2 / Flow, автентичні історичні архіви B-Roll, 4K досьє-пластини та аудіо-стеми 48kHz. Усі файли синхронізовані на локальному диску, у Finder, GitHub та Google Drive.</div>",
+      "      <div class=\"panel-desc\">Повний виробничий конвеєр епізоду: офіційні дикторські доріжки A1 (ElevenLabs Adam • 48kHz WAV), відео 24fps для DaVinci V1/V2, 2K концепт-кадри для Veo 2 / Flow, автентичні архіви B-Roll, 4K досьє та аудіо-стеми 48kHz. Усі файли синхронізовані на локальному диску, у Finder, GitHub та Google Drive.</div>",
       "    </div>",
       "    <div class=\"btn-group\">",
       "      <button class=\"btn btn-amber\" id=\"btnOpenFullCinemaHero\">🔍 Відкрити Спливаючий Кінозал (" + playlist.length + " медіа)</button>",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"03_AUDIO/voiceover/EP01_ALTMAN/\">🎙️ Папка Голосу у Finder</button>",
       "      <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/\">📁 05_RAW_FOOTAGE у Finder</button>",
       "      <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри V3 (.srt)</button>",
       "    </div>",
       "  </div>",
       "  <div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:1rem;\">",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Flow 4K/HD Відео</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + nFlowVid + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові для EP" + esc(epData.ep) + "</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">2K Концепт-Кадри</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + (epMedia.flow_gallery || []).length + " Кадрів</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">2752×1536 під Veo/Flow</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Диктор A1 (ElevenLabs)</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + nVoCount + " Тейків</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові (48k WAV)</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Flow 4K/HD Відео</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + nFlowVid + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові для EP" + esc(epData.ep) + "</div></div>",
       "    <div class=\"node-box\" style=\"border-top-color:var(--purple);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Архіви B-Roll</div><div style=\"font-size:20px;font-weight:800;color:var(--purple);margin:2px 0;\">" + nArchCount + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">Історичні плани</div></div>",
       "    <div class=\"node-box\" style=\"border-top-color:var(--amber);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">4K Досьє</div><div style=\"font-size:20px;font-weight:800;color:var(--amber);margin:2px 0;\">" + nDosCount + " Пластин</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">3840×2160 + Zoom MP4</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Історичні Фото</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + (epMedia.archival_photos || []).length + " Фото</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">Автентичні архіви</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">DaVinci Аудіо</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + (epMedia.audio || []).length + " Треки</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">48 kHz / 24-bit WAV</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">2K Кадри & Фото</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + ((epMedia.flow_gallery || []).length + (epMedia.archival_photos || []).length) + " Кадрів</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">2752×1536 під Veo/Flow</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">DaVinci Музика</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + (epMedia.audio || []).length + " Треки</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">48 kHz / 24-bit WAV</div></div>",
       "  </div>",
       "</div>"
     ].join("\n");
@@ -2497,6 +2564,7 @@
       "<div class=\"media-split-layout\">",
       "  <div class=\"media-main-col\">",
       executiveHeroHtml,
+      voSectionHtml,
       veoMasterSectionHtml,
       flowSectionHtml,
       gallerySectionHtml,

@@ -5,7 +5,12 @@
     "file_txt": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.txt",
     "target_wav": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.wav",
     "words": 36,
-    "sample": "Most people are shaped by the pressure of rules. Their world..."
+    "sample": "Most people are shaped by the pressure of rules. Their world...",
+    "status": "ready",
+    "duration_sec": 13.871,
+    "mp3_file": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.mp3",
+    "wav_file": "EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.mp3"
   },
   {
     "num": 2,
@@ -13,7 +18,12 @@
     "file_txt": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.txt",
     "target_wav": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.wav",
     "words": 101,
-    "sample": "In 1993, in a quiet suburb of St. Louis, an eight-year-old b..."
+    "sample": "In 1993, in a quiet suburb of St. Louis, an eight-year-old b...",
+    "status": "ready",
+    "duration_sec": 40.045708,
+    "mp3_file": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.mp3",
+    "wav_file": "EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.mp3"
   },
   {
     "num": 3,
@@ -21,7 +31,12 @@
     "file_txt": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.txt",
     "target_wav": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.wav",
     "words": 103,
-    "sample": "John Burroughs School in St. Louis was a fortress of Midwest..."
+    "sample": "John Burroughs School in St. Louis was a fortress of Midwest...",
+    "status": "ready",
+    "duration_sec": 39.314271,
+    "mp3_file": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.mp3",
+    "wav_file": "EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.mp3"
   },
   {
     "num": 4,
@@ -29,7 +44,12 @@
     "file_txt": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.txt",
     "target_wav": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav",
     "words": 71,
-    "sample": "Next came Stanford. The computer science department was the ..."
+    "sample": "Next came Stanford. The computer science department was the ...",
+    "status": "ready",
+    "duration_sec": 33.306104,
+    "mp3_file": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.mp3",
+    "wav_file": "EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.mp3"
   },
   {
     "num": 5,
@@ -37,7 +57,12 @@
     "file_txt": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.txt",
     "target_wav": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav",
     "words": 120,
-    "sample": "Just then, Paul Graham launched an audacious experiment: the..."
+    "sample": "Just then, Paul Graham launched an audacious experiment: the...",
+    "status": "ready",
+    "duration_sec": 50.364063,
+    "mp3_file": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.mp3",
+    "wav_file": "EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.mp3"
   },
   {
     "num": 6,
@@ -45,7 +70,12 @@
     "file_txt": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.txt",
     "target_wav": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav",
     "words": 37,
-    "sample": "He walked away from Loopt with several million dollars in ca..."
+    "sample": "He walked away from Loopt with several million dollars in ca...",
+    "status": "ready",
+    "duration_sec": 15.386104,
+    "mp3_file": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.mp3",
+    "wav_file": "EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.mp3"
   },
   {
     "num": 7,
@@ -53,7 +83,12 @@
     "file_txt": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.txt",
     "target_wav": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.wav",
     "words": 94,
-    "sample": "In 2014, the unthinkable happened: Paul Graham named twenty-..."
+    "sample": "In 2014, the unthinkable happened: Paul Graham named twenty-...",
+    "status": "ready",
+    "duration_sec": 43.964062,
+    "mp3_file": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.mp3",
+    "wav_file": "EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.mp3"
   },
   {
     "num": 8,
@@ -61,7 +96,12 @@
     "file_txt": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.txt",
     "target_wav": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav",
     "words": 98,
-    "sample": "He identified the blind spot of venture capital: nearly ever..."
+    "sample": "He identified the blind spot of venture capital: nearly ever...",
+    "status": "ready",
+    "duration_sec": 42.762437,
+    "mp3_file": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.mp3",
+    "wav_file": "EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.mp3"
   },
   {
     "num": 9,
@@ -69,7 +109,12 @@
     "file_txt": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.txt",
     "target_wav": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav",
     "words": 87,
-    "sample": "On December 11, 2015, OpenAI was unveiled to the world: a no..."
+    "sample": "On December 11, 2015, OpenAI was unveiled to the world: a no...",
+    "status": "ready",
+    "duration_sec": 38.269375,
+    "mp3_file": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.mp3",
+    "wav_file": "EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.mp3"
   },
   {
     "num": 10,
@@ -77,7 +122,12 @@
     "file_txt": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.txt",
     "target_wav": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav",
     "words": 84,
-    "sample": "To test the scaling laws, non-profit donations were no longe..."
+    "sample": "To test the scaling laws, non-profit donations were no longe...",
+    "status": "ready",
+    "duration_sec": 36.205708,
+    "mp3_file": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.mp3",
+    "wav_file": "EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.mp3"
   },
   {
     "num": 11,
@@ -85,7 +135,12 @@
     "file_txt": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.txt",
     "target_wav": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav",
     "words": 84,
-    "sample": "November 30, 2022. OpenAI quietly deploys a minimalist resea..."
+    "sample": "November 30, 2022. OpenAI quietly deploys a minimalist resea...",
+    "status": "ready",
+    "duration_sec": 42.266104,
+    "mp3_file": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.mp3",
+    "wav_file": "EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.mp3"
   },
   {
     "num": 12,
@@ -93,7 +148,12 @@
     "file_txt": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.txt",
     "target_wav": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav",
     "words": 92,
-    "sample": "Friday, November 17, 2023. High noon Pacific Time.\n\nAltman j..."
+    "sample": "Friday, November 17, 2023. High noon Pacific Time.\n\nAltman j...",
+    "status": "ready",
+    "duration_sec": 41.717542,
+    "mp3_file": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.mp3",
+    "wav_file": "EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.mp3"
   },
   {
     "num": 13,
@@ -101,7 +161,12 @@
     "file_txt": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.txt",
     "target_wav": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav",
     "words": 95,
-    "sample": "Thus began the most dramatic one hundred and twenty hours in..."
+    "sample": "Thus began the most dramatic one hundred and twenty hours in...",
+    "status": "ready",
+    "duration_sec": 42.031,
+    "mp3_file": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.mp3",
+    "wav_file": "EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.mp3"
   },
   {
     "num": 14,
@@ -109,7 +174,12 @@
     "file_txt": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.txt",
     "target_wav": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav",
     "words": 112,
-    "sample": "Monday morning brought an unprecedented corporate mutiny: mo..."
+    "sample": "Monday morning brought an unprecedented corporate mutiny: mo...",
+    "status": "ready",
+    "duration_sec": 45.322437,
+    "mp3_file": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.mp3",
+    "wav_file": "EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.mp3"
   },
   {
     "num": 15,
@@ -117,7 +187,12 @@
     "file_txt": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.txt",
     "target_wav": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav",
     "words": 95,
-    "sample": "Having survived the fire of public rupture, Altman's vision ..."
+    "sample": "Having survived the fire of public rupture, Altman's vision ...",
+    "status": "ready",
+    "duration_sec": 43.389375,
+    "mp3_file": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.mp3",
+    "wav_file": "EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.mp3"
   },
   {
     "num": 16,
@@ -125,7 +200,12 @@
     "file_txt": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.txt",
     "target_wav": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav",
     "words": 118,
-    "sample": "What core insights can we extract from this trajectory to ar..."
+    "sample": "What core insights can we extract from this trajectory to ar...",
+    "status": "ready",
+    "duration_sec": 49.789375,
+    "mp3_file": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.mp3",
+    "wav_file": "EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.mp3"
   },
   {
     "num": 17,
@@ -133,6 +213,11 @@
     "file_txt": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.txt",
     "target_wav": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav",
     "words": 72,
-    "sample": "The world is far more malleable than you were taught as a ch..."
+    "sample": "The world is far more malleable than you were taught as a ch...",
+    "status": "ready",
+    "duration_sec": 25.077542,
+    "mp3_file": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.mp3",
+    "wav_file": "EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav",
+    "web_preview": "assets/audio_previews/vo/EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.mp3"
   }
 ]
