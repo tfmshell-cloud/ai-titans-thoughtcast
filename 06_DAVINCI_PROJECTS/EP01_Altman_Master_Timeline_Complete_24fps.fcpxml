@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fcpxml version="1.9">
+  <resources>
+    <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)" />
+    <asset id="a_vo01" name="EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_01_ACT1_00_00_00_15_Intro_Rules.wav" start="0s" duration="13.871s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo02" name="EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_02_ACT1_00_15_00_45_Macintosh_1993.wav" start="0s" duration="40.046s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo03" name="EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_03_ACT1_00_45_01_30_John_Burroughs_School.wav" start="0s" duration="39.314s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo04" name="EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav" start="0s" duration="33.306s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo05" name="EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav" start="0s" duration="50.364s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo06" name="EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav" start="0s" duration="15.386s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo07" name="EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_07_ACT2_04_45_05_45_YC_President_28yo.wav" start="0s" duration="43.964s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo08" name="EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav" start="0s" duration="42.762s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo09" name="EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav" start="0s" duration="38.269s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo10" name="EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav" start="0s" duration="36.206s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo11" name="EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav" start="0s" duration="42.266s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo12" name="EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav" start="0s" duration="41.718s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo13" name="EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav" start="0s" duration="42.031s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo14" name="EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav" start="0s" duration="45.322s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo15" name="EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav" start="0s" duration="43.389s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo16" name="EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav" start="0s" duration="49.789s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_vo17" name="EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN/EP01_VO_EN_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav" start="0s" duration="25.078s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000" />
+    <asset id="a_mus1" name="EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav" start="0s" duration="285.0s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" />
+    <asset id="a_amb2" name="EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav" start="0s" duration="285.0s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" />
+    <asset id="a_mus3" name="EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav" start="0s" duration="360.0s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" />
+    <asset id="a_mus4" name="EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav" start="0s" duration="270.0s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" />
+    <asset id="v_fl01" name="ep01_flow_01_mac_chassis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl02" name="ep01_flow_02_crt_code" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl03" name="ep01_flow_03_silicon_laser" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl04" name="ep01_flow_04_exponential_line" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl05" name="ep01_flow_05_neural_lattice" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl06" name="ep01_flow_06_server_monolith" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl07" name="ep01_flow_07_boardroom_noir" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_07_boardroom_noir.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl08" name="ep01_flow_08_golden_signatures" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl09" name="ep01_flow_09_fusion_torus" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_fl10" name="ep01_flow_10_earth_horizon" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_10_earth_horizon.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_ar03" name="EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_ar04" name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_ar05" name="EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_ar01" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="v_ar02" name="EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4" start="0s" duration="8s" hasVideo="1" hasAudio="1" format="r1" />
+    <asset id="img_d01" name="EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png" start="0s" duration="10.0s" hasVideo="1" format="r1" />
+    <asset id="img_d02" name="EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png" start="0s" duration="12.0s" hasVideo="1" format="r1" />
+    <asset id="img_d03" name="EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png" start="0s" duration="12.0s" hasVideo="1" format="r1" />
+    <asset id="img_d04" name="EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png" start="0s" duration="10.0s" hasVideo="1" format="r1" />
+    <asset id="img_d05" name="EP01_DOC_05_ACT3_730_Employees_Open_Letter" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png" start="0s" duration="12.0s" hasVideo="1" format="r1" />
+    <asset id="img_port" name="EP01_PHOTO_01_Sam_Altman_Archival_Portrait" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg" start="0s" duration="8s" hasVideo="1" format="r1" />
+  </resources>
+  <library>
+    <event name="AI_Titans_EP01_Event">
+      <project name="EP01_Altman_Master_Timeline_Complete_24fps">
+        <sequence format="r1" duration="1200s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <gap name="Master_Spine_Gap_20min" offset="0s" duration="1200s" start="0s">
+              <asset-clip name="ep01_flow_01_mac_chassis" ref="v_fl01" lane="1" offset="0.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_02_crt_code" ref="v_fl02" lane="1" offset="18.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_03_silicon_laser" ref="v_fl03" lane="1" offset="100.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_04_exponential_line" ref="v_fl04" lane="1" offset="215.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_05_neural_lattice" ref="v_fl05" lane="1" offset="285.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_06_server_monolith" ref="v_fl06" lane="1" offset="420.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_07_boardroom_noir" ref="v_fl07" lane="1" offset="645.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_08_golden_signatures" ref="v_fl08" lane="1" offset="825.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_09_fusion_torus" ref="v_fl09" lane="1" offset="930.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="ep01_flow_10_earth_horizon" ref="v_fl10" lane="1" offset="1110.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT" ref="v_ar03" lane="2" offset="28.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" ref="v_ar04" lane="2" offset="115.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture" ref="v_ar05" lane="2" offset="330.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" ref="v_ar01" lane="2" offset="570.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <asset-clip name="EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement" ref="v_ar02" lane="2" offset="582.0s" duration="8.0s" start="0s" audioRole="effects" />
+              <video name="EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program" ref="img_d01" lane="2" offset="160.0s" duration="10.0s" start="0s" />
+              <video name="EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015" ref="img_d02" lane="2" offset="390.0s" duration="12.0s" start="0s" />
+              <video name="EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023" ref="img_d03" lane="2" offset="690.0s" duration="12.0s" start="0s" />
+              <video name="EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023" ref="img_d04" lane="2" offset="780.0s" duration="10.0s" start="0s" />
+              <video name="EP01_DOC_05_ACT3_730_Employees_Open_Letter" ref="img_d05" lane="2" offset="872.0s" duration="12.0s" start="0s" />
+              <video name="Altman_Archival_Portrait" ref="img_port" lane="2" offset="235.0s" duration="8.0s" start="0s" />
+              <asset-clip name="VO_Take_01" ref="a_vo01" lane="-1" offset="0.0s" duration="13.871s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_02" ref="a_vo02" lane="-1" offset="15.0s" duration="40.046s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_03" ref="a_vo03" lane="-1" offset="58.0s" duration="39.314s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_04" ref="a_vo04" lane="-1" offset="100.0s" duration="33.306s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_05" ref="a_vo05" lane="-1" offset="150.0s" duration="50.364s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_06" ref="a_vo06" lane="-1" offset="215.0s" duration="15.386s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_07" ref="a_vo07" lane="-1" offset="285.0s" duration="43.964s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_08" ref="a_vo08" lane="-1" offset="345.0s" duration="42.762s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_09" ref="a_vo09" lane="-1" offset="420.0s" duration="38.269s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_10" ref="a_vo10" lane="-1" offset="495.0s" duration="36.206s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_11" ref="a_vo11" lane="-1" offset="570.0s" duration="42.266s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_12" ref="a_vo12" lane="-1" offset="645.0s" duration="41.718s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_13" ref="a_vo13" lane="-1" offset="735.0s" duration="42.031s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_14" ref="a_vo14" lane="-1" offset="825.0s" duration="45.322s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_15" ref="a_vo15" lane="-1" offset="930.0s" duration="43.389s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_16" ref="a_vo16" lane="-1" offset="1020.0s" duration="49.789s" start="0s" role="dialogue" />
+              <asset-clip name="VO_Take_17" ref="a_vo17" lane="-1" offset="1110.0s" duration="25.078s" start="0s" role="dialogue" />
+              <asset-clip name="EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro" ref="a_mus1" lane="-2" offset="0.0s" duration="285.0s" start="0s" role="music" />
+              <asset-clip name="EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension" ref="a_amb2" lane="-2" offset="285.0s" duration="285.0s" start="0s" role="music" />
+              <asset-clip name="EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion" ref="a_mus3" lane="-2" offset="570.0s" duration="360.0s" start="0s" role="music" />
+              <asset-clip name="EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale" ref="a_mus4" lane="-2" offset="930.0s" duration="270.0s" start="0s" role="music" />
+              <marker start="0.0s" duration="100/2400s" value="ACT I: St. Louis 1993 — Macintosh LC II (Rule of Non-Conformity)" />
+              <marker start="58.0s" duration="100/2400s" value="ACT I: John Burroughs School — The Safe Space Speech" />
+              <marker start="100.0s" duration="100/2400s" value="ACT I: Stanford CS &amp; Loopt Genesis" />
+              <marker start="150.0s" duration="100/2400s" value="ACT I: Y Combinator S05 Batch &amp; Paul Graham" />
+              <marker start="215.0s" duration="100/2400s" value="ACT I: The Exponential Compound Interest Rule" />
+              <marker start="285.0s" duration="100/2400s" value="ACT II: YC President at 28 — The Architect of Tech" />
+              <marker start="345.0s" duration="100/2400s" value="ACT II: Rosewood Hotel Secret Dinner — Google vs Humanity" />
+              <marker start="420.0s" duration="100/2400s" value="ACT II: Dec 11, 2015 — OpenAI Non-Profit Founding" />
+              <marker start="495.0s" duration="100/2400s" value="ACT II: The Microsoft $1B Deal &amp; Capped-Profit" />
+              <marker start="570.0s" duration="100/2400s" value="ACT III: Nov 30, 2022 — ChatGPT Explosion &amp; Senate Testimony" />
+              <marker start="645.0s" duration="100/2400s" value="ACT III: Friday Board Coup — 12:00 Google Meet Ouster" />
+              <marker start="735.0s" duration="100/2400s" value="ACT III: 120 Hours of Chaos &amp; Guest Badge" />
+              <marker start="825.0s" duration="100/2400s" value="ACT III: 730 Signatures — Triumphant Reinstatement" />
+              <marker start="930.0s" duration="100/2400s" value="ACT IV: Project Stargate &amp; Helion Fusion Energy" />
+              <marker start="1020.0s" duration="100/2400s" value="ACT IV: The Three Rules of Exponential Life" />
+              <marker start="1110.0s" duration="100/2400s" value="ACT IV: Outro — The Future is Created Now" />
+            </gap>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
