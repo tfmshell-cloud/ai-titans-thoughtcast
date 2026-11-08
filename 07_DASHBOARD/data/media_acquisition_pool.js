@@ -642,6 +642,76 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_file": "05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
         "web_preview": "assets/speaker_photos/ep01_altman_real.jpg",
         "desc": "Офіційна зустріч у Токіо з керівництвом Японії та SoftBank щодо створення глобального суперобчислювального проєкту інфраструктури ШІ Stargate."
+      },
+      {
+        "id": "EP01_PHOTO_06",
+        "code": "PHOTO #06",
+        "title": "Школа John Burroughs School у Ладю, Сент-Луїс (1997–2003)",
+        "source": "John Burroughs School Archive / Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:JohnBurroughsSchool_photo.jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg",
+        "desc": "Кампус елітної школи в Міссурі, де 16-річний Сем здійснив публічний камінг-аут і переконав адміністрацію встановити таблички Safe Space."
+      },
+      {
+        "id": "EP01_PHOTO_07",
+        "code": "PHOTO #07",
+        "title": "Перший комп'ютер Сема — Apple Macintosh LC II (1993, 8 років)",
+        "source": "Apple Computer Historical Hardware / Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Macintosh_LC_II.jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg",
+        "desc": "Точка відліку сингулярності Альтмана: «Ця машина розмила кордон між моїм внутрішнім світом і всесвітом. Вона стала продовженням моєї думки»."
+      },
+      {
+        "id": "EP01_PHOTO_08",
+        "code": "PHOTO #08",
+        "title": "Сем Альтман у футболці Loopt (YC Summer 2005 Batch)",
+        "source": "Wikimedia Commons / Y Combinator S05 Archive",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_altman_wearing_a_Loopt-Shirt.webp",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg",
+        "desc": "19-річний студент Стенфорда, що покинув навчання заради створення першого мобільного геолокаційного додатку в першому наборі YC."
+      },
+      {
+        "id": "EP01_PHOTO_09",
+        "code": "PHOTO #09",
+        "title": "Сем Альтман на TechCrunch Disrupt NY (Травень 2014, Президент YC)",
+        "source": "TechCrunch / Flickr (CC BY 2.0, 5184×3456 5K Master)",
+        "url": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_NY_2014_-_Day_1_-_001_(13928729690).jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_08_Altman_TechCrunch_Disrupt_2014_YC_President.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_08_Altman_TechCrunch_Disrupt_2014_YC_President.jpg",
+        "desc": "28-річний Альтман після призначення наступником Пола Грема: керівництво наймогутнішим венчурним інкубатором світу та курс CS183B у Стенфорді."
+      },
+      {
+        "id": "EP01_PHOTO_10",
+        "code": "PHOTO #10",
+        "title": "Сем Альтман на TechCrunch Disrupt SF (Жовтень 2019, CEO OpenAI)",
+        "source": "TechCrunch Disrupt SF / Wikimedia Commons (CC BY 2.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_(cropped).jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_09_Altman_TechCrunch_Disrupt_2019_OpenAI_CEO.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_09_Altman_TechCrunch_Disrupt_2019_OpenAI_CEO.jpg",
+        "desc": "Перехід від венчурного інвестування до повноцінного управління OpenAI та укладення $1 млрд альянсу з Microsoft."
+      },
+      {
+        "id": "EP01_PHOTO_11",
+        "code": "PHOTO #11",
+        "title": "Сем Альтман на Всесвітній конференції TED (Ванкувер, Квітень 2023)",
+        "source": "TED Conferences / Wikimedia Commons (CC BY-NC 2.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_10_Altman_TED_Vancouver_2023_GPT4.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_10_Altman_TED_Vancouver_2023_GPT4.jpg",
+        "desc": "Діалог із Крісом Андерсоном про нелінійний зліт штучного загального інтелекту та небезпеку неконтрольованого масштабування."
+      },
+      {
+        "id": "EP01_PHOTO_12",
+        "code": "PHOTO #12",
+        "title": "Сем Альтман напередодні релізу ChatGPT (Листопад 2022 • 5K Портрет)",
+        "source": "Wikimedia Commons / Editorial Photography (CC BY-SA 4.0, 3327×5000 5K)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_November_2022.jpg",
+        "raw_file": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_11_Altman_November_2022_ChatGPT_Genesis.jpg",
+        "web_preview": "assets/archival_photos/EP01_IMG_ARCH_11_Altman_November_2022_ChatGPT_Genesis.jpg",
+        "desc": "Історичний портрет Сема Альтмана за лічені дні до 30 листопада 2022 року, коли публікація ChatGPT назавжди змінила світову технологічну парадигму."
       }
     ],
     "audio": [
