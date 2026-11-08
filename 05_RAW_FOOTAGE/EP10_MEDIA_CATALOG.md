@@ -1,7 +1,7 @@
 # EP10 — Ендрю Ин | Реєстр Медіаконтенту Google Flow & 2K Keyframes
 
 > **Тема епізоду:** «Вчитель світу та нова електрика» (21:30 хв)
-> **Пріоритетна черга:** 10 базових сцен. **Галерея концепт-кадрів та B-roll:** 2 асетів.
+> **Пріоритетна черга:** 10 базових сцен. **Галерея концепт-кадрів та B-roll:** 9 асетів.
 
 ## 1. Пріоритетна Черга Google Flow / Veo (10 базових сцен)
 
@@ -18,9 +18,16 @@
 | **09** | ⏳ У розробці | `18:00–19:30` | **AI Fund: посівне поле нових технологічних паростків** | `ep10_flow_09_ai_fund_ecosystem.mp4` | ⏳ Очікує генерації Google Flow / Veo |
 | **10** | ⏳ У розробці | `20:00–21:30` | **AI як нова електрика: трансформація людської цивілізації** | `ep10_flow_10_ai_new_electricity.mp4` | ⏳ Очікує генерації Google Flow / Veo |
 
-## 2. Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (2 асетів)
+## 2. Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (9 асетів)
 
 | Код | Бейдж | Таймкод | Назва асету | Локальний шлях | Роздільна здатність |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **KF #02 (2K)** | 🖼️ 2K Кадр готовий | `00:25–01:45` | Doctor Father Medical Textbook (Батько-лікар показує підручник) | `05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg` | 2752×1536 (2K JPG) |
 | **B-ROLL #02B (2K)** | 🎬 B-Roll Кадр | `01:45–02:30` | Father & Son Medical AI Textbook (Батько та син вивчають схеми) | `05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg` | 2752×1536 (2K JPG) |
+| **GOOGLE BRAIN #03** | 🐱 16 000 Ядер • Розпізнавання котів | `06:00–07:30` | Суперкомп'ютерні сервери Google Brain у крижаній залі (16,000 Cores Cat Neuron) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg` | 2752×1536 (2K JPG) |
+| **COURSERA #04** | 🎓 Нова Електрика • Мільйони учнів | `10:30–12:30` | Планета, охоплена сяйвом знань (Coursera & DeepLearning.AI Education Grid) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg` | 2752×1536 (2K JPG) |
+| **CHILDHOOD #05** | 💻 Сінгапур 1980-ті • Перший код | `02:00–03:30` | Хлопчик перед вінтажним комп'ютером у темній кімнаті | `05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg` | 1920×1080 (1080p JPG) |
+| **SMART CITY #06** | 🏙️ Розумне місто • AI for Everyone | `09:00–10:30` | Голографічна карта трансформується у сяюче розумне місто | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP10_FLOW_IMG_03_Holographic_Map_Morphing_City_2K.jpg` | 2752×1536 (2K JPG) |
+| **SINGAPORE #04** | 🏙️ Код Сінгапуру • Раффлз | `02:00–03:30` | Хмарочос пронизує вертикальний дощ двійкового коду над затокою | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_04_Skyscraper_Piercing_Binary_Rain_2K.jpg` | 2752×1536 (2K JPG) |
+| **GRID #05** | ⚡ Нова Електрика • Світова Інфраструктура | `17:30–19:00` | Будівлі мегаполіса перетворюються на кремнієві інтегральні плати | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_05_Metropolis_Transforming_Into_Silicon_2K.jpg` | 2752×1536 (2K JPG) |
+| **PLANET #06** | 🌍 Coursera • Знання для 8 Мільярдів | `13:00–14:30` | Золоті імпульси знань поширюються тектонічними контурами Землі | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_06_Energy_Pulses_Flowing_Through_Earth_2K.jpg` | 2752×1536 (2K JPG) |
