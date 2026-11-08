@@ -468,6 +468,50 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_03_Developers_Facing_GPU_Server_Core_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Зведення безпрецедентного за масштабом обчислювального кластера OpenAI вартістю $100 млрд."
+      },
+      {
+        "code": "WAR #05",
+        "badge": "⚔️ 120 Годин Війни • Рада",
+        "chip": "chip-rose",
+        "tc": "11:00–12:30",
+        "title": "Розпад корпоративної постаті на цифрові потоки (Листопад 2023)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_img_05_businessman_dissolving.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_05_Businessman_Dissolving_Into_Data_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Раптове звільнення Сема Альтмана радою директорів та розчинення офіційної посади у віртуальній хвилі бунту співробітників."
+      },
+      {
+        "code": "CAPITAL #06",
+        "badge": "💰 Венчурна Алхімія • Оцінка $100 млрд",
+        "chip": "chip-amber",
+        "tc": "07:30–09:00",
+        "title": "Золоті монети плавляться у синаптичний мозок (Капітал як паливо AGI)",
+        "web_preview": "assets/flow_keyframes/ep01_flow_img_06_gold_coins_brain.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_06_Gold_Coins_Melting_Forming_Brain_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Перетворення мільярдних венчурних інвестицій Кремнієвої долини на чисту обчислювальну потужність штучного інтелекту."
+      },
+      {
+        "code": "FUSION #07",
+        "badge": "☀️ Helion Energy • Термояд",
+        "chip": "chip-amber",
+        "tc": "16:00–17:30",
+        "title": "Інженер перед штучною термоядерною зіркою реактора Helion Energy",
+        "web_preview": "assets/flow_keyframes/ep01_flow_img_07_fusion_star.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_07_Human_Watching_Miniature_Fusion_Star_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Ставка Альтмана на необмежену термоядерну енергію для живлення гігаватних центрів обробки даних Stargate."
+      },
+      {
+        "code": "DYSON #08",
+        "badge": "🌌 Сфера Дайсона • Скейлінг",
+        "chip": "chip-purple",
+        "tc": "18:00–19:30",
+        "title": "Серверні мегаструктури рою Дайсона, що оточують зірку",
+        "web_preview": "assets/flow_keyframes/ep01_flow_img_08_dyson_servers_star.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_08_Dyson_Swarm_Servers_Encasing_Star_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Філософська екстраполяція законів масштабування: цивілізація II типу за Кардашевим, де кожна зірка живить дата-центри."
       }
     ],
     "archival_photos": [
@@ -773,6 +817,39 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02C_Esports_Arena_Tower_Zoom_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Тріумф GeForce як стандарту світового кіберспорту."
+      },
+      {
+        "code": "ALCHEMY #05",
+        "badge": "✨ Алхімія Кремнію • Фабрикація",
+        "chip": "chip-amber",
+        "tc": "05:00–06:30",
+        "title": "Рука майстра, що розсіює золотий транзисторний пил",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_05_golden_dust_hand.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Метафора алхімії Дженсена Хуанга: народження найскладніших мікрочіпів людства з кремнієвого піску та потужної інженерної волі."
+      },
+      {
+        "code": "THERMAL #06",
+        "badge": "🌋 Термодинаміка Blackwell • 120 кВт",
+        "chip": "chip-rose",
+        "tc": "17:00–18:30",
+        "title": "Потік розжареної магми в охолоджувальні канали суперкомп'ютера",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_06_magma_supercomputer.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Екстремальна теплова щільність архітектури NVIDIA Blackwell та революційне рідинне охолодження серверних стійок NVL72."
+      },
+      {
+        "code": "SUPERPOD #07",
+        "badge": "⚡ DGX SuperPOD • Мільйон GPU",
+        "chip": "chip-cyan",
+        "tc": "19:00–20:30",
+        "title": "Кремнієві щити суперкомп'ютерів довкола палаючого ядра",
+        "web_preview": "assets/flow_keyframes/ep02_flow_img_07_gpu_star_plates.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_07_Star_Encased_By_GPU_Server_Plates_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Фінал тріумфу NVIDIA: фабрики штучного інтелекту, що споживають гігавати енергії для навчання мультимодальних моделей світу."
       }
     ],
     "scientific_vfx": [
@@ -1227,6 +1304,50 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Створення єдиного універсального інтелекту, що освоює будь-яку гру за години без знань людей."
+      },
+      {
+        "code": "GENOME #12",
+        "badge": "🧬 AlphaFold2 • Розшифровка 200 млн білків",
+        "chip": "chip-purple",
+        "tc": "13:00–14:30",
+        "title": "Подвійна спіраль ДНК розгортається у каскад двійкового коду",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_12_dna_binary_code.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_12_DNA_Unspooling_Into_Binary_Code_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Тріумф DeepMind та Нобелівська премія 2024 року: зчитування та передбачення просторової структури білкового всесвіту за секунди."
+      },
+      {
+        "code": "RESONANCE #13",
+        "badge": "🔮 Резонанс Істини • Простір Гри Го",
+        "chip": "chip-amber",
+        "tc": "09:30–11:00",
+        "title": "Сяюча золота сфера, що вібрує гармонійними хвилями у вакуумі",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_13_golden_sphere_space.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_13_Golden_Sphere_Vibrating_Resonance_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Інтуїція AlphaGo: пошук оптимального рішення серед 10^170 варіантів як резонанс гармонійної форми у нескінченному космосі."
+      },
+      {
+        "code": "COSMOS #14",
+        "badge": "🌌 Універсальний Розум • Нобелівський Фінал",
+        "chip": "chip-cyan",
+        "tc": "18:30–20:00",
+        "title": "Галактики у глибокому космосі, з'єднані сяючими нейронними аксонами",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_14_galaxies_golden_axons.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Філософська місія Гассабіса: створення загального штучного інтелекту для розгадки фундаментальних таємниць Всесвіту."
+      },
+      {
+        "code": "TOKAMAK #15",
+        "badge": "⚛️ Плазма Токамака • DeepMind Physics",
+        "chip": "chip-purple",
+        "tc": "16:00–17:15",
+        "title": "Керування нестабільною термоядерною плазмою нейромережами DeepMind",
+        "web_preview": "assets/flow_keyframes/ep03_flow_img_15_tokamak_plasma.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_15_Tokamak_Plasma_Magnetic_Confinement_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Дослідження DeepMind у Швейцарському центрі плазми: нейромережі контролюють магнітні котушки реактора 10 000 разів на секунду."
       }
     ],
     "audio": [
@@ -1466,6 +1587,39 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_03_Nerve_Impulse_Vs_Laser_Beams_A_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Порівняння 100 трильйонів синапсів мозку та обчислювальної ефективності нейромереж."
+      },
+      {
+        "code": "BACKPROP #04",
+        "badge": "🧠 Прорив Backprop 1986 • Прометей",
+        "chip": "chip-cyan",
+        "tc": "06:30–08:00",
+        "title": "Скульптура голови розтріскується, вивільняючи світло штучної свідомості",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_04_head_cracking_light.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Джеффрі Хінтон доводить працездатність алгоритму зворотного поширення помилки крізь 30 років забуття та скепсису індустрії."
+      },
+      {
+        "code": "MIRROR #05",
+        "badge": "🪞 Дзеркало Оппенгеймера • Сумнів",
+        "chip": "chip-rose",
+        "tc": "12:00–13:30",
+        "title": "Вчений торкається дзеркала реальності, що розлітається на скалки",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_05_man_fracturing_mirror.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_05_Man_Touching_Fracturing_Mirror_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Драматичний розворот Хінтона у травні 2023 року: звільнення з Google заради того, щоб відкрито попередити світ про ризик втрати контролю."
+      },
+      {
+        "code": "ALEXNET #06",
+        "badge": "⚡ Революція AlexNet 2012 • Торонто",
+        "chip": "chip-purple",
+        "tc": "10:00–11:30",
+        "title": "Політ камери крізь шари нейронної гіперпросторової геометрії",
+        "web_preview": "assets/flow_keyframes/ep04_flow_img_06_camera_flying_hyperplane.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_06_Camera_Flying_Through_Glowing_Hyperplane_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Лабораторія Хінтона у Торонто запускає AlexNet на відеокартах Nvidia, знижуючи помилку розпізнавання ImageNet удвічі."
       }
     ],
     "scientific_vfx": [
@@ -1622,6 +1776,28 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP05_FLOW_IMG_01_Biological_Synapse_Vs_Digital_Laser_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Енергетичні моделі LeCun як міст між органічним сприйняттям та алгоритмами."
+      },
+      {
+        "code": "NAVIGATOR #02",
+        "badge": "⛵ Океанський Вітрильник • Французький Бунт",
+        "chip": "chip-cyan",
+        "tc": "17:30–19:00",
+        "title": "Кібернетичний штурман веде вітрильник розуму крізь нічний шторм",
+        "web_preview": "assets/flow_keyframes/ep05_flow_img_02_cybernetic_ship_navigator.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_02_Cybernetic_Torso_Conducting_Ship_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Філософія Яна Лекуна: любов до вітрильного спорту в Атлантиці як здатність тримати курс проти течії хайпу до відкритих моделей."
+      },
+      {
+        "code": "JEPA #03",
+        "badge": "🌿 Архітектура V-JEPA • Світові Моделі",
+        "chip": "chip-emerald",
+        "tc": "13:30–15:00",
+        "title": "Блакитний лазер сканує живі клітини листка (Моделювання фізичного світу)",
+        "web_preview": "assets/flow_keyframes/ep05_flow_img_03_cyan_laser_leaf.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_03_Cyan_Laser_Pulsing_Through_Leaf_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Концепція JEPA: навчання моделей розумінню реальності без передбачення кожного пікселя, подібно до того, як бачать тварини й діти."
       }
     ],
     "scientific_vfx": [
@@ -1909,6 +2085,50 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_08_Wooden_Hand_Algorithmic_Tentacles_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Головний страх Іллі: людство створює сутність, яку більше не зможе зупинити."
+      },
+      {
+        "code": "MONK #09",
+        "badge": "🧘 Монастирська Тиша • 100 Днів Самітності",
+        "chip": "chip-purple",
+        "tc": "13:30–15:00",
+        "title": "Самотня людська постать, невагомо підвішена у темному обсидіановому вакуумі",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_09_human_figure_void.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_09_Human_Figure_Suspended_In_Void_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Період мовчання Іллі Суцкевера після листопадових подій 2023 року: глибока медитація над майбутнім штучного інтелекту."
+      },
+      {
+        "code": "HORIZON #10",
+        "badge": "🕳️ Горизонт Подій AGI • Точка Неповернення",
+        "chip": "chip-rose",
+        "tc": "16:00–17:30",
+        "title": "Астронавт стоїть перед колосальним акреційним диском чорної діри",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_10_astronaut_black_hole.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_10_Astronaut_Facing_Black_Hole_Horizon_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Метафора Сінгулярності Суцкевера: AGI — це горизонт подій, за яким стара фізика людського суспільства перестає діяти."
+      },
+      {
+        "code": "COMPRESSION #11",
+        "badge": "💎 Стиснення є Інтелект • 1 Трлн Ваг",
+        "chip": "chip-cyan",
+        "tc": "08:30–10:00",
+        "title": "Кристал, у гранях якого зберігаються мініатюрні міста людської цивілізації",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_11_crystal_civilization.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_11_Crystal_Containing_Civilization_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Головна математична теза Іллі Суцкевера: здатність нейромережі стискати гігабайти тексту — це і є справжній інтелект."
+      },
+      {
+        "code": "SUPERMENT #12",
+        "badge": "🛡️ Безпечний Суперінтелект • SSI Заснування",
+        "chip": "chip-emerald",
+        "tc": "18:00–19:30",
+        "title": "Колосальна доброзичлива кібернетична сутність дбайливо споглядає людину",
+        "web_preview": "assets/flow_keyframes/ep06_flow_img_12_cybernetic_entity_human.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_12_Cybernetic_Entity_Examining_Human_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Місія компанії Safe Superintelligence (SSI): створення суперінтелекту, який ставитиметься до людей так, як мудрі батьки до немовлят."
       }
     ],
     "audio": [
@@ -2137,6 +2357,39 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_02_Human_Golden_Equations_Alignment_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Створення Claude 3.5 Sonnet з вбудованим етичним компасом."
+      },
+      {
+        "code": "THERAPY #03",
+        "badge": "🧬 Машини Благодаті • Біофізика Anthropic",
+        "chip": "chip-emerald",
+        "tc": "15:00–16:30",
+        "title": "Мікроскопічні золоті наноботи відновлюють оболонку людської клітини",
+        "web_preview": "assets/flow_keyframes/ep07_flow_img_03_nanobots_repairing_cell.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_03_Nanobots_Repairing_Human_Cell_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Бачення Даріо Амодея в есеї «Machines of Loving Grace»: використання ШІ для подолання раку та вірусів за лічені роки."
+      },
+      {
+        "code": "CONTAINMENT #04",
+        "badge": "🪞 Стримування ASL-4 • Червоні Лінії",
+        "chip": "chip-rose",
+        "tc": "11:30–13:00",
+        "title": "Людські долоні утримують левітуючу краплю рідкого дзеркала (Безпека)",
+        "web_preview": "assets/flow_keyframes/ep07_flow_img_04_hands_levitating_liquid.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_04_Hands_Cupping_Levitating_Liquid_Mirror_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Рівні безпеки ASL-3 та ASL-4: крихкий баланс стримування небезпечних біологічних знань всередині моделей Claude."
+      },
+      {
+        "code": "TOUCH #05",
+        "badge": "✨ Конституційний ШІ • Доторк Творця",
+        "chip": "chip-cyan",
+        "tc": "17:30–19:00",
+        "title": "Доторк пальця людини до пульсуючого кристалічного ядра Claude",
+        "web_preview": "assets/flow_keyframes/ep07_flow_img_05_finger_touching_ai_core.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_05_Finger_Touching_Glowing_AI_Core_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Фінал Даріо Амодея: союз людської етики та машинного інтелекту через формальні принципи Декларації прав людини."
       }
     ],
     "scientific_vfx": [
@@ -2301,6 +2554,39 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Злиття людського сприйняття та масштабного машинного навчання."
+      },
+      {
+        "code": "SPATIAL #02",
+        "badge": "🌐 Просторові Світи • World Labs Genesis",
+        "chip": "chip-purple",
+        "tc": "17:00–18:30",
+        "title": "Силуети людей трансформуються у тривимірну полігональну сітку простору",
+        "web_preview": "assets/flow_keyframes/ep08_flow_img_02_silhouettes_wireframe.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_02_Silhouettes_Morphing_Into_3D_Wireframe_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Нова компанія Фей-Фей Лі World Labs: перехід від плоских зображень 2D до генеративного розуміння просторового 3D-світу."
+      },
+      {
+        "code": "AESTHETIC #03",
+        "badge": "🎨 Семантичний Зір • Stanford HAI",
+        "chip": "chip-amber",
+        "tc": "12:00–13:30",
+        "title": "Художник тримає сяючий пензель, малюючи реальність із темряви",
+        "web_preview": "assets/flow_keyframes/ep08_flow_img_03_painter_glowing_brush.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_03_Painter_Holding_Glowing_Brush_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Гуманістичний поворот Фей-Фей Лі: комп'ютерний зір як інструмент творчості, емпатії та людського самовираження."
+      },
+      {
+        "code": "ROBOTICS #04",
+        "badge": "🤖 Втілений ШІ • Фізичні Маніпулятори",
+        "chip": "chip-cyan",
+        "tc": "18:30–20:00",
+        "title": "Високоточні роботизовані маніпулятори тчуть золотий гобелен знань",
+        "web_preview": "assets/flow_keyframes/ep08_flow_img_04_robotic_arms_tapestry.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_04_Robotic_Arms_Weaving_Golden_Tapestry_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Навчання роботів просторовим діям на основі мільярдів годин спостереження за реальним світом."
       }
     ],
     "scientific_vfx": [
@@ -2457,6 +2743,28 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP09_FLOW_IMG_01_Human_Silhouette_In_Digital_Matrix_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 2: Спокійна впевненість ученого серед шуму венчурного ажіотажу."
+      },
+      {
+        "code": "TREATY #02",
+        "badge": "📜 Монреальська Декларація • Етичний Компас",
+        "chip": "chip-emerald",
+        "tc": "14:00–15:30",
+        "title": "Золота координатна сітка законів заспокоює бурхливий океан ризику",
+        "web_preview": "assets/flow_keyframes/ep09_flow_img_02_golden_grid_ocean.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP09_FLOW_IMG_02_Golden_Grid_Stabilizing_Stormy_Ocean_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Йошуа Бенжіо ініціює Монреальську декларацію 2018 року та звернення до ООН: необхідність глобальних правил безпеки ШІ."
+      },
+      {
+        "code": "ATTENTION #03",
+        "badge": "⚡ Механізм Уваги (Attention) • 2014",
+        "chip": "chip-cyan",
+        "tc": "09:00–10:30",
+        "title": "Два силуети з'єднують літаючі символи крізь семантичний простір",
+        "web_preview": "assets/flow_keyframes/ep09_flow_img_03_two_silhouettes_symbols.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP09_FLOW_IMG_03_Two_Silhouettes_Connecting_Symbols_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 2: Винахід механізму Attention у лабораторії Mila в Монреалі (Bahdanau, Cho, Bengio 2014) — фундамент майбутніх трансформерів."
       }
     ],
     "scientific_vfx": [
@@ -2687,6 +2995,39 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP10_FLOW_IMG_03_Holographic_Map_Morphing_City_2K.jpg",
         "dims": "2752×1536 (2K JPG)",
         "usage": "Акт 3: Практичне застосування ШІ в охороні здоров'я, транспорті та освіті міст майбутнього."
+      },
+      {
+        "code": "SINGAPORE #04",
+        "badge": "🏙️ Код Сінгапуру • Раффлз",
+        "chip": "chip-cyan",
+        "tc": "02:00–03:30",
+        "title": "Хмарочос пронизує вертикальний дощ двійкового коду над затокою",
+        "web_preview": "assets/flow_keyframes/ep10_flow_img_04_skyscraper_binary_rain.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_04_Skyscraper_Piercing_Binary_Rain_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 1: Юність Ендрю Ина в Сінгапурі: перші рядки коду на касетному комп'ютері серед тропічних дощів та хмарочосів Raffles Place."
+      },
+      {
+        "code": "GRID #05",
+        "badge": "⚡ Нова Електрика • Світова Інфраструктура",
+        "chip": "chip-amber",
+        "tc": "17:30–19:00",
+        "title": "Будівлі мегаполіса перетворюються на кремнієві інтегральні плати",
+        "web_preview": "assets/flow_keyframes/ep10_flow_img_05_metropolis_silicon.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_05_Metropolis_Transforming_Into_Silicon_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 4: Знаменитий маніфест Ендрю Ина: «ШІ — це нова електрика», що докорінно трансформує міста, транспорт, лікарні та школи."
+      },
+      {
+        "code": "PLANET #06",
+        "badge": "🌍 Coursera • Знання для 8 Мільярдів",
+        "chip": "chip-emerald",
+        "tc": "13:00–14:30",
+        "title": "Золоті імпульси знань поширюються тектонічними контурами Землі",
+        "web_preview": "assets/flow_keyframes/ep10_flow_img_06_energy_pulses_earth.jpg",
+        "raw_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_06_Energy_Pulses_Flowing_Through_Earth_2K.jpg",
+        "dims": "2752×1536 (2K JPG)",
+        "usage": "Акт 3: Створення платформи Coursera: 100 000 студентів на першому онлайн-курсі машинного навчання та доступ до знань для кожного куточка планети."
       }
     ],
     "audio": [
