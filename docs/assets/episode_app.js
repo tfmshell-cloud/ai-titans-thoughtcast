@@ -1669,6 +1669,28 @@
       }
     });
 
+    // 7. Archival Photos & Real Portraits
+    (epMedia.archival_photos || []).forEach(function (ph, idx) {
+      list.push({
+        uid: "arch_photo_" + idx,
+        type: "image",
+        kind: "archival_photo",
+        kindLabel: "📷 Архівне Фото (" + ph.id + ")",
+        chipClass: "chip-cyan",
+        title: ph.title,
+        file: ph.url.split("/").pop() || (ph.id + ".jpg"),
+        tc: "00:00",
+        track: "DaVinci V2 • Історичний фотокадр • CC / Public Domain",
+        desc: ph.title + " — Джерело: " + ph.source,
+        src: ph.web_preview ? ("../" + ph.web_preview) : ph.url,
+        poster: ph.web_preview ? ("../" + ph.web_preview) : ph.url,
+        localPath: repoRoot + "05_RAW_FOOTAGE/speaker_photos/" + (ph.id + ".jpg"),
+        githubUrl: ph.url,
+        externalUrl: ph.url,
+        prompt: ""
+      });
+    });
+
     return list;
   }
 

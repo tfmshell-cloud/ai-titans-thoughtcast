@@ -9,6 +9,36 @@ window.MEDIA_ACQUISITION_POOL = {
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg",
       "license": "Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)"
     },
+    "archival_photos": [
+      {
+        "id": "EP01_ARCH_PHOTO_01",
+        "title": "Sam Altman & Masayoshi Son (Tokyo, Feb 2025)",
+        "source": "Prime Minister's Office of Japan (Cabinet Public Relations Office, CC BY 4.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Meeting_with_Masayoshi_Son_and_Sam_Altman_(February_3,_2025)_(3x4_cropped_on_Altman).jpg",
+        "web_preview": "assets/speaker_photos/ep01_altman_real.jpg"
+      },
+      {
+        "id": "EP01_ARCH_PHOTO_02",
+        "title": "Sam Altman as Loopt CEO (March 16, 2009)",
+        "source": "Wikimedia Commons (File:Sam Altman in 2009.jpg, photo by Phil Glockner, CC BY 2.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_in_2009.jpg",
+        "web_preview": "assets/speaker_photos/ep01_altman_2009.jpg"
+      },
+      {
+        "id": "EP01_ARCH_PHOTO_03",
+        "title": "Sam Altman speaking at TED Conference",
+        "source": "Wikimedia Commons (File:Sam Altman speaking at TED.jpg, photo by Steve Jurvetson, CC BY 2.0)",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
+        "web_preview": "assets/speaker_photos/ep01_altman_ted.jpg"
+      },
+      {
+        "id": "EP01_ARCH_PHOTO_04",
+        "title": "Sam Altman with UK PM Rishi Sunak at 10 Downing Street (May 2023)",
+        "source": "Wikimedia Commons (File:The Prime Minister meets with AI developers.jpg, Crown Copyright / OGL)",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Prime_Minister_meets_with_AI_developers.jpg",
+        "web_preview": "assets/speaker_photos/ep01_altman_downing_st.jpg"
+      }
+    ],
     "dossiers": [
       {
         "id": "EP01_DOC_01",
@@ -69,6 +99,30 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
         "web_preview": "assets/dossiers_preview/ep01_doc_05_open_letter.jpg",
         "video_preview": "assets/video_previews/dossiers/EP01_DOC_05.mp4"
+      },
+      {
+        "id": "EP01_DOC_06",
+        "ep": "01",
+        "act": "ACT3",
+        "timecode": "14:40–15:30",
+        "title": "WilmerHale Independent Special Committee Investigation Findings (March 8, 2024)",
+        "source_label": "openai.com/index/review-findings-and-next-steps-for-openai",
+        "highlight": "WilmerHale evaluated over 30,000 documents and conducted dozens of interviews. The Special Committee recommended that the Board express full confidence in Mr. Altman and reinstate him to the Board of Directors.",
+        "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_06_ACT3_WilmerHale_Reinstatement_Report.png",
+        "web_preview": "assets/dossiers_preview/ep01_doc_06_wilmerhale.jpg",
+        "video_preview": "assets/video_previews/dossiers/EP01_DOC_06.mp4"
+      },
+      {
+        "id": "EP01_DOC_07",
+        "ep": "01",
+        "act": "ACT4",
+        "timecode": "18:00–18:45",
+        "title": "Helion Energy — Microsoft Fusion Power Purchase Agreement (50 MW by 2028)",
+        "source_label": "helionenergy.com/articles/microsoft-fusion-power-purchase-agreement",
+        "highlight": "World's first commercial fusion power agreement. Constellation will serve as the power marketer. Sam Altman: 'Helion's team has created an extraordinary technology that will accelerate our clean energy future.'",
+        "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_07_ACT4_Helion_Microsoft_PPA_Contract.png",
+        "web_preview": "assets/dossiers_preview/ep01_doc_07_helion_ppa.jpg",
+        "video_preview": "assets/video_previews/dossiers/EP01_DOC_07.mp4"
       }
     ],
     "archives": [
@@ -156,6 +210,57 @@ window.MEDIA_ACQUISITION_POOL = {
         "note": "Акт 2: Зліт Y Combinator та філософія венчурного капіталу: як будувати компанії, що масштабуються у 1000 разів.",
         "section": "06:30–06:48",
         "url": "https://www.youtube.com/watch?v=CBYhVcO4WgI"
+      },
+      {
+        "code": "ARCH #06",
+        "act": "Акт 1 (Loopt 2009)",
+        "timecode": "04:15–04:28",
+        "title": "Історичний фотоархів: 23-річний Сем Альтман як CEO Loopt (Phil Glockner, 2009)",
+        "source": "Wikimedia Commons (File:Sam_Altman_in_2009.jpg, CC BY 2.0 / Flickr Phil Glockner)",
+        "mp4_file": "EP01_VID_ARCH_06_ACT1_24FPS_Altman_2009_Loopt_Era_Portrait.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_06_ACT1_24FPS_Altman_2009_Loopt_Era_Portrait.mp4",
+        "specs": "1920×1080 • 24 fps • 13.00s • Фотомоушн з паралаксом 2.39:1 • Портрет молодого засновника Loopt",
+        "davinci_usage": "Акт 1: Історичний документальний кадр епохи перших мобільних додатків і початку шляху в Кремнієвій долині.",
+        "verified_speaker": "Sam Altman (Loopt Era, March 16, 2009)",
+        "file": "EP01_VID_ARCH_06_ACT1_24FPS_Altman_2009_Loopt_Era_Portrait.mp4",
+        "tc": "04:15–04:28",
+        "note": "Акт 1: Історичний документальний кадр епохи перших мобільних додатків і початку шляху в Кремнієвій долині.",
+        "section": "04:15–04:28",
+        "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_in_2009.jpg"
+      },
+      {
+        "code": "ARCH #07",
+        "act": "Акт 3 (OpenAI DevDay 2023)",
+        "timecode": "09:45–10:02",
+        "title": "Кейноут OpenAI DevDay: Альтман презентує платформу GPT-4 Turbo та GPTs (06.11.2023)",
+        "source": "OpenAI Official Stream (06.11.2023, San Francisco / YouTube 11 днів до кризи)",
+        "mp4_file": "EP01_VID_ARCH_07_ACT3_24FPS_Altman_DevDay_2023_Keynote.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_07_ACT3_24FPS_Altman_DevDay_2023_Keynote.mp4",
+        "specs": "1920×1080 • 24 fps • 17.00s • H.264 • Альтман на великій сцені у SVN West, San Francisco",
+        "davinci_usage": "Акт 3: Пік могутності OpenAI перед переворотом — презентація кастомних GPT та тріумфальний вихід Сатьї Наделли на сцену.",
+        "verified_speaker": "Sam Altman & Satya Nadella (DevDay Nov 6, 2023)",
+        "file": "EP01_VID_ARCH_07_ACT3_24FPS_Altman_DevDay_2023_Keynote.mp4",
+        "tc": "09:45–10:02",
+        "note": "Акт 3: Пік могутності OpenAI перед переворотом — презентація кастомних GPT та тріумфальний вихід Сатьї Наделли на сцену.",
+        "section": "09:45–10:02",
+        "url": "https://www.youtube.com/watch?v=U9mJuUkhUzk"
+      },
+      {
+        "code": "ARCH #08",
+        "act": "Акт 4 (Helion Energy & Stargate)",
+        "timecode": "16:15–16:32",
+        "title": "Сем Альтман інспектує магнітно-інерційний термоядерний реактор Polaris (Helion Energy)",
+        "source": "Helion Energy Lab Records (Everett, WA / TechCrunch Disrupt / Cleantech Media)",
+        "mp4_file": "EP01_VID_ARCH_08_ACT4_24FPS_Altman_Helion_Fusion_Polaris.mp4",
+        "web_preview": "assets/video_previews/archives/EP01_VID_ARCH_08_ACT4_24FPS_Altman_Helion_Fusion_Polaris.mp4",
+        "specs": "1920×1080 • 24 fps • 17.00s • H.264 • Плазмова камера реактора Helion та гігаватна інфраструктура",
+        "davinci_usage": "Акт 4: Енергетичний базис AGI — інвестиції $375 млн у чисту енергію та проєкт дата-центрів Stargate.",
+        "verified_speaker": "Sam Altman (Clean Energy & Fusion Vision)",
+        "file": "EP01_VID_ARCH_08_ACT4_24FPS_Altman_Helion_Fusion_Polaris.mp4",
+        "tc": "16:15–16:32",
+        "note": "Акт 4: Енергетичний базис AGI — інвестиції $375 млн у чисту енергію та проєкт дата-центрів Stargate.",
+        "section": "16:15–16:32",
+        "url": "https://www.helionenergy.com/"
       }
     ],
     "flow_queue": [
