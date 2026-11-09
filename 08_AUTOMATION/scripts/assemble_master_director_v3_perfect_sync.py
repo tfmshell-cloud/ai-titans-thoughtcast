@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
 """
 🏆 AI TITANS: EPISODE 01 — SAM ALTMAN
-THE MASTERCLASS DIRECTOR'S CUT V3 (PERFECT SYNCHRONIZATION)
-Dedicated Chronological Quote Beats, -30.0 dB Velvet Music Bed, Zero Black Gaps
-Timeline: EP01_MASTER_DIRECTORS_CUT_V3_QUOTES_SYNC
+THE MASTERCLASS DIRECTOR'S CUT V3 — DIRECTORIAL REFINEMENT
+1. Opening Frame: Restored the iconic abstract thinker meditating in golden formulas on black void (EP01_V1_CREATIVE_01_Equations_Void_8s).
+2. Macintosh LC II (Scene 02):
+   - 18.0s - 23.0s: 360-degree rotation animation morphing from concept to living child (ElevenLabs Seamless Stylis).
+   - 23.0s - 28.0s: Boy with screwdriver disassembling the motherboard on carpet (ElevenLabs Authentic Histo), exactly where narrator says "він розбирає системний блок до материнської плати".
+   - 28.0s - 36.0s: Floppy insertion & Circuit flythrough into quote.
+   - 36.0s - 48.0s: Dedicated Quote Beat (4K Ukrainian Typography, 2.0s in-breath + spoken quote + 1.8s out-breath).
+3. Exhausted Coder Relocation: Moved tired coder late at monitor (EP01_CLIP_STILL_Boy_Watching_Code_5s) to Scene 05 (Loopt 7-year exhaustion & scurvy grind).
+4. Audio Mastery:
+   - Track A1: Ukrainian Voiceover (0.0 dB)
+   - Track A2: Velvet Ambient Score (-30.0 dB across all items, zero ear fatigue)
+   - Track A3: Steve Jobs WWDC 2008 Live Speech (-3.0 dB, lip-synced to frame 0)
 """
 
 import sys, os, time, shutil
@@ -17,7 +26,7 @@ def tc_to_frames(s):
 
 def run():
     print("==================================================================")
-    print("🎬 MASTERCLASS DIRECTOR'S CUT V3: IMPORTING & ASSEMBLING TIMELINE")
+    print("🎬 MASTERCLASS DIRECTOR'S CUT V3: DIRECTORIAL REFINEMENT")
     print("==================================================================")
 
     resolve = bmd.scriptapp('Resolve')
@@ -33,17 +42,6 @@ def run():
     mp = proj.GetMediaPool()
     root = mp.GetRootFolder()
 
-    # 1. Import all rendered exact-duration 4K clips
-    rendered_dir = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k"
-    bins = {b.GetName(): b for b in root.GetSubFolderList()}
-    v_bin = bins.get('02_EP01_ALTMAN_MEDIA') or root
-
-    all_rendered = [os.path.join(rendered_dir, f) for f in os.listdir(rendered_dir) if f.endswith('.mp4')]
-    if all_rendered:
-        mp.SetCurrentFolder(v_bin)
-        res_imp = mp.ImportMedia(all_rendered)
-        print(f"✓ Imported {len(res_imp) if res_imp else 0} exact-duration clips into {v_bin.GetName()}")
-
     # Recursive clip finder
     def get_all_clips(folder):
         clips = {}
@@ -57,13 +55,10 @@ def run():
     print(f"✓ Indexed {len(all_clips)} clips across Media Pool")
 
     def find_clip(name_pattern):
-        # Exact match first
         if name_pattern in all_clips:
             return all_clips[name_pattern]
-        # Exact match with .mp4
         if f"{name_pattern}.mp4" in all_clips:
             return all_clips[f"{name_pattern}.mp4"]
-        # Partial match
         for k, v in all_clips.items():
             if name_pattern in k:
                 return v
@@ -125,24 +120,26 @@ def run():
         return None
 
     # =========================================================================
-    # MASTER TIMELINE PLAN WITH DEDICATED QUOTE BEATS (17 SCENES)
+    # REFINED MASTER SCENE ARCHITECTURE (17 SCENES)
     # =========================================================================
     SCENE_PLANS = [
         # SCENE 01: Pressure of Rules (18.03s)
+        # OPENING: Iconic abstract thinker meditating in golden formulas & black void
         {
             "id": 1,
-            "title": "Pressure Of Rules",
+            "title": "Pressure Of Rules (Genesis of Conditioned Mind)",
             "audio": [
-                ("EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav", 0.0, 14.03, "Narration")
+                ("EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav", 0.0, 14.03, "Narration: Більшість людей формуються під тиском правил")
             ],
             "scene_pause_s": 4.0,
             "visuals": [
-                ("ElevenLabs_video_seedance-2-5_Intense_macro_r", 5.0, "ElevenLabs: Anime eye morphing into human eye"),
-                ("EP01_V2_ARCH_05_Burroughs_Campus", 6.0, "Burroughs High School facade"),
-                ("EP01_CLIP_V1_05_Eye_Code", 7.03, "Extreme close-up eye reflecting green code")
+                ("EP01_V1_CREATIVE_01_Equations_Void_8s", 8.0, "HERO OPENING: Abstract human kneeling/meditating in golden mathematical equations on black void"),
+                ("EP01_V2_ARCH_05_Burroughs_Campus", 5.0, "Burroughs High School strict brick corridors (Conditioning)"),
+                ("EP01_CLIP_V1_05_Eye_Code", 5.03, "Extreme close-up eye reflecting green code (Social judgment & fear)")
             ]
         },
         # SCENE 02: Macintosh LC II & Extension of Thought Quote (51.69s)
+        # 18.0s: 360 rotation animation into living child -> disassembling motherboard -> quote beat
         {
             "id": 2,
             "title": "Macintosh LC II & Extension of Thought Quote",
@@ -153,18 +150,22 @@ def run():
             ],
             "scene_pause_s": 4.0,
             "visuals": [
-                ("EP01_CLIP_STILL_Boy_Watching_Code_5s", 5.0, "Boy gazing at glowing screen"),
-                ("ElevenLabs_video_seedance-2-5_Authentic_histo", 5.0, "ElevenLabs: Boy with screwdriver disassembling motherboard"),
-                ("EP01_CLIP_STILL_Child_Floppy_Disk_4s", 4.0, "Child inserting floppy disk"),
-                ("Camera_moving_through_computer_m_clip", 4.0, "Flythrough computer circuitry"),
-                # QUOTE BEAT CARD (12.0s)
+                # 18.0s - 23.0s: 360-degree animation rotating from concept into real child
+                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59", 5.0, "360° turn animation morphing into living child sitting with computer"),
+                # 23.0s - 28.0s: Boy with screwdriver disassembling motherboard (Lip-sync to VO: 'розбирає системний блок')
+                ("ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51", 5.0, "HERO SHOT: 8yo boy with screwdriver taking apart motherboard on carpet"),
+                # 28.0s - 32.0s: Floppy disk insert
+                ("EP01_CLIP_STILL_Child_Floppy_Disk_4s", 4.0, "Child inserting 3.5 floppy disk into Macintosh drive"),
+                # 32.0s - 36.0s: Computer circuitry flythrough (Narration: 'Через тридцять років він напише:')
+                ("Camera_moving_through_computer_m_clip", 4.0, "Flythrough computer circuitry & microchips"),
+                # 36.0s - 48.0s: DEDICATED QUOTE BEAT (12.0s)
                 ("EP01_UA_CLIP_CARD_01_Extension_Of_Thought_12s", 12.0, "4K Ukrainian Quote Card: «Ця машина розмила лінію між моїм внутрішнім світом...»"),
-                # Part C
-                ("EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992", 6.0, "1992 Apple Macintosh LC commercial"),
+                # 48.0s - 65.69s: Part C Narration (17.69s)
+                ("EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992", 6.0, "Authentic 1992 Apple Macintosh LC commercial"),
                 ("ep01_flow_01_mac_chassis", 5.0, "Macintosh LC II chassis macro"),
-                ("Boy_viewing_glowing_terminal_code", 6.69, "Boy viewing glowing terminal code"),
-                # Scene Pause
-                ("EP01_CLIP_STILL_CRT_PixelArt_4s", 4.0, "CRT monitor displaying pixel interface")
+                ("Boy_viewing_glowing_terminal_code", 6.69, "Boy viewing glowing terminal code (Indifference to authority)"),
+                # 65.69s - 69.69s: Scene Pause
+                ("EP01_CLIP_STILL_CRT_PixelArt_4s", 4.0, "CRT monitor displaying pixel interface (Dramatic Scene Pause)")
             ]
         },
         # SCENE 03: John Burroughs School (50.14s)
@@ -199,7 +200,7 @@ def run():
                 ("EP01_CLIP_STILL_Altman_2009_Loopt_6s", 5.93, "Archival Photo: Altman 2005-2009 Loopt era (Dramatic Scene Pause)")
             ]
         },
-        # SCENE 05: YC Batch 1, Scurvy Grit with Quote Beat (61.39s)
+        # SCENE 05: YC Batch 1, Scurvy Grit with Relocated Tired Coder (61.39s)
         {
             "id": 5,
             "title": "YC Batch 1, Loopt & Psychological Friction Quote",
@@ -209,10 +210,12 @@ def run():
             ],
             "scene_pause_s": 4.0,
             "visuals": [
-                ("Aerial_view_of_city_center", 10.0, "3D wireframe GPS HUD transforming into real nocturnal city"),
-                ("Digital_HUD_tracking_vehicles", 8.0, "Digital GPS tracking vehicles on map interface"),
+                ("Aerial_view_of_city_center", 8.0, "3D wireframe GPS HUD transforming into real nocturnal city"),
+                ("Digital_HUD_tracking_vehicles", 6.0, "Digital GPS tracking vehicles on map interface"),
                 ("EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs", 13.0, "Steve Jobs invites Altman to Apple WWDC 2008 stage"),
-                ("EP01_CLIP_STILL_Jobs_Altman_WWDC_5s", 5.0, "Archival Photo: Steve Jobs & Sam Altman on stage"),
+                ("EP01_CLIP_STILL_Jobs_Altman_WWDC_5s", 4.0, "Archival Photo: Steve Jobs & Sam Altman on stage"),
+                # RELOCATED TIRED CODER: Placed here during 7-year exhaustion & scurvy grind!
+                ("EP01_CLIP_STILL_Boy_Watching_Code_5s", 5.0, "Exhausted young founder working late at night in front of glowing monitor"),
                 ("EP01_CLIP_V1_15_FounderGrit", 3.25, "Founder grit, sleeping on startup office floor"),
                 # QUOTE BEAT CARD (18.14s)
                 ("EP01_UA_CLIP_CARD_02_Psychological_Friction_18s", 18.14, "4K Ukrainian Quote Card: «Більшість людей здаються не тому, що їхня ідея хибна...»"),
@@ -411,7 +414,7 @@ def run():
             "scene_pause_s": 5.0,
             "visuals": [
                 ("ElevenLabs_video_seedance-2-5_Slow,_powerful", 8.0, "ElevenLabs: Slow powerful Altman vision portrait"),
-                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59", 8.0, "ElevenLabs: Dynamic fluid intelligence cognitive waves"),
+                ("ElevenLabs_video_seedance-2-5_Intense_macro_r", 8.0, "ElevenLabs: Intense eye focusing on the future"),
                 # 4K UKRAINIAN CARD: THREE RULES
                 ("EP01_UA_CLIP_CARD_07_Three_Rules_12s", 12.0, "4K Ukrainian Master Card: 1. Ірраціональна віра 2. Проблеми як код 3. Експонента"),
                 ("Laser_forms_text_words", 8.0, "Laser writing code words in darkness (Rule 2)"),
