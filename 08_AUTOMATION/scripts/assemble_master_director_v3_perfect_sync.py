@@ -123,24 +123,26 @@ def run():
     # REFINED MASTER SCENE ARCHITECTURE (17 SCENES)
     # =========================================================================
     SCENE_PLANS = [
-        # SCENE 01: Pressure of Rules (18.03s)
+        # SCENE 01: Pressure of Rules (16.04s)
         # OPENING: Iconic abstract thinker meditating in golden formulas & black void
+        # REFINED: Boy portrait (4.0s) & Eye (4.04s) shortened to end at halfway through silence (16.04s)
         {
             "id": 1,
             "title": "Pressure Of Rules (Genesis of Conditioned Mind)",
             "audio": [
-                ("EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav", 0.0, 14.03, "Narration: Більшість людей формуються під тиском правил")
+                ("EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav", 0.0, 14.04, "Narration: Більшість людей формуються під тиском правил")
             ],
-            "scene_pause_s": 4.0,
+            "scene_pause_s": 2.0,  # Half-pause: cut to Macintosh at halfway through silence (16.04s)
             "visuals": [
                 ("EP01_V1_CREATIVE_01_Equations_Void_8s", 8.0, "HERO OPENING: Abstract human kneeling/meditating in golden mathematical equations on black void"),
-                # REPLACED 2nd SHOT: Burroughs school exterior replaced with soulful 8yo Sam Altman portrait
-                ("EP01_CLIP_STILL_Young_Altman_Portrait_5s", 5.0, "Young 8yo Sam Altman soulful portrait looking into camera (Pressure of societal rules & expectation)"),
-                ("EP01_CLIP_V1_05_Eye_Code", 5.03, "Extreme close-up eye reflecting green code (Social judgment & fear)")
+                # SHIFTED/SHORTENED: Soulful 8yo Sam Altman portrait (4.0s)
+                ("EP01_CLIP_STILL_Young_Altman_Portrait_5s", 4.0, "Young 8yo Sam Altman soulful portrait looking into camera (Pressure of societal rules & expectation)"),
+                # SHORTENED: Eye code (4.04s) ends at 16.04s (halfway through VO silence)
+                ("EP01_CLIP_V1_05_Eye_Code", 4.04, "Extreme close-up eye reflecting green code (Social judgment & fear)")
             ]
         },
-        # SCENE 02: Macintosh LC II & Extension of Thought Quote (51.69s)
-        # REORDERED FLOW: Rainbow Apple Logo -> Floppy Insert -> 360 Turn European Boy -> Screwdriver Disassembly -> Quote Beat -> Part C
+        # SCENE 02: Macintosh LC II & Extension of Thought Quote (52.48s)
+        # RESTRUCTURED: Rainbow Mac Logo (pulled to eyes) -> Microchips Dive (from 52s) -> Floppy Insert -> 360 Turn European Boy -> Screwdriver Disassembly -> Quote Beat -> Part C
         {
             "id": 2,
             "title": "Macintosh LC II & Extension of Thought Quote",
@@ -149,23 +151,24 @@ def run():
                 ("EP01_VO_UA_02_PART_B_Extension_Of_Thought_QUOTE.wav", 2.0, 8.20, "Spoken Quote (+2.0s In-breath Pause)"),
                 ("EP01_VO_UA_02_PART_C_Authority_Indifference.wav", 1.8, 17.69, "Narration Part C (+1.8s Out-breath Pause)")
             ],
-            "scene_pause_s": 4.0,
+            "scene_pause_s": 4.79,
             "visuals": [
-                # 18.0s - 22.0s: HERO SHOT 1: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight
-                ("EP01_CLIP_STILL_Mac_Rainbow_Logo_4s", 4.0, "HERO SHOT: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight"),
-                # 22.0s - 26.0s: HERO SHOT 2: Child inserting 3.5 floppy disk into Macintosh drive
-                ("EP01_CLIP_STILL_Child_Floppy_Disk_4s", 4.0, "Child inserting 3.5 floppy disk into Macintosh drive"),
-                # 26.0s - 31.0s: HERO SHOT 3: 360° turn animation morphing into living European child sitting with computer
-                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37", 5.0, "360° turn animation morphing into living European child sitting with computer"),
-                # 31.0s - 36.0s: HERO SHOT 4: Boy with screwdriver disassembling motherboard (Lip-sync to VO: 'розбирає системний блок')
-                ("ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51", 5.0, "HERO SHOT: 8yo European boy with screwdriver taking apart motherboard on carpet"),
-                # 36.0s - 48.0s: DEDICATED QUOTE BEAT (12.0s)
+                # 16.04s - 19.54s: HERO SHOT 1: Pulled to eyes: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight
+                ("EP01_CLIP_STILL_Mac_Rainbow_Logo_4s", 3.5, "HERO SHOT: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight"),
+                # 19.54s - 24.04s: RELOCATED FROM 52s: Camera plunges through Macintosh slit into glowing microchips and circuits
+                ("Camera_moving_through_computer_m_clip", 4.5, "Camera plunges through Macintosh chassis slit into glowing green microchips & circuitry"),
+                # 24.04s - 27.54s: HERO SHOT 3: Child inserting 3.5 floppy disk into Macintosh drive
+                ("EP01_CLIP_STILL_Child_Floppy_Disk_4s", 3.5, "Child inserting 3.5 floppy disk into Macintosh drive"),
+                # 27.54s - 31.79s: HERO SHOT 4: 360° turn animation morphing into living European child sitting with computer
+                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37", 4.25, "360° turn animation morphing into living European child sitting with computer"),
+                # 31.79s - 36.04s: HERO SHOT 5: Boy with screwdriver disassembling motherboard (Lip-sync to VO: 'розбирає системний блок')
+                ("ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51", 4.25, "HERO SHOT: 8yo European boy with screwdriver taking apart motherboard on carpet"),
+                # 36.04s - 48.04s: DEDICATED QUOTE BEAT (12.0s)
                 ("EP01_UA_CLIP_CARD_01_Extension_Of_Thought_12s", 12.0, "4K Ukrainian Quote Card: «Ця машина розмила лінію між моїм внутрішнім світом...»"),
-                # 48.0s - 65.69s: Part C Narration (17.69s)
-                ("EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992", 6.0, "Authentic 1992 Apple Macintosh LC commercial"),
-                ("Camera_moving_through_computer_m_clip", 5.0, "Flythrough computer circuitry & microchips"),
-                ("Boy_viewing_glowing_terminal_code", 6.69, "Boy viewing glowing terminal code (Indifference to authority)"),
-                # 65.69s - 69.69s: Scene Pause
+                # 48.04s - 68.52s: Part C Narration & Scene Pause
+                ("EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992", 4.8, "Authentic 1992 Apple Macintosh LC commercial"),
+                ("ep01_flow_01_mac_chassis", 5.0, "Macintosh LC II chassis macro in noir lighting"),
+                ("Boy_viewing_glowing_terminal_code", 6.68, "Boy viewing glowing terminal code (Indifference to authority)"),
                 ("EP01_CLIP_STILL_CRT_PixelArt_4s", 4.0, "CRT monitor displaying pixel interface (Dramatic Scene Pause)")
             ]
         },
