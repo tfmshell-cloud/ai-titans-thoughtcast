@@ -2,6 +2,7 @@
 """
 Native Master Timeline Assembly for AI Titans EP01 (Sam Altman)
 Direct programmatic construction using DaVinci Resolve Studio 19 Python API.
+Accurately accounts for Timeline Start Frame (e.g. 86400 / 01:00:00:00).
 Lays out:
   - Video Track V1: 10 Google Flow / Veo 4K clips (generative science)
   - Video Track V2: 5 Authentic Historical Archives (WWDC 2008, Stanford, Senate)
@@ -9,13 +10,12 @@ Lays out:
   - Audio Track A1: 17 Voiceover takes (Broadcast 48k/24b WAV • 115 WPM)
   - Audio Track A2: 4-Act Suno 92 BPM orchestral music & drone stems
   - Audio Track A3: Ambience & SFX bus
-  - Narrative Beat Markers: 17 colored chapter markers
+  - Narrative Beat Markers: 17 colored chapter markers aligned with start_frame
 """
 
 import os
 import sys
 import json
-import wave
 
 # Ensure Resolve Scripting API environment
 RESOLVE_SCRIPT_API = "/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting"
@@ -32,7 +32,6 @@ import DaVinciResolveScript as bmd
 REPO_ROOT = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast"
 VO_DIR = os.path.join(REPO_ROOT, "03_AUDIO/voiceover/EP01_ALTMAN")
 
-# Frame rate: 24.0 fps
 FPS = 24.0
 
 VO_TIMINGS = [
@@ -52,7 +51,7 @@ VO_TIMINGS = [
     {"num": 14, "sec": 825.0,  "marker": "ACT III: 730 Signatures — Triumphant Reinstatement", "color": "Yellow"},
     {"num": 15, "sec": 930.0,  "marker": "ACT IV: Project Stargate & Helion Fusion Energy", "color": "Cyan"},
     {"num": 16, "sec": 1020.0, "marker": "ACT IV: The Three Rules of Exponential Life", "color": "Mint"},
-    {"num": 17, "sec": 1110.0, "marker": "ACT IV: Outro — The Future is Created Now", "color": "Gold" if "Gold" in ["Cyan"] else "Yellow"}
+    {"num": 17, "sec": 1110.0, "marker": "ACT IV: Outro — The Future is Created Now", "color": "Yellow"}
 ]
 
 def main():
@@ -86,18 +85,23 @@ def main():
         print("❌ Media pool folders missing. Run assemble_davinci_ep01.py first.")
         sys.exit(1)
 
-    # 1. Create Pristine Master Timeline
     master_tl_name = "EP01_Altman_Master_Cinematic_Timeline"
+    
+    # Clean up older test timelines
+    timelines_to_delete = []
+    for i in range(1, proj.GetTimelineCount() + 1):
+        t = proj.GetTimelineByIndex(i)
+        if t and t.GetName() in [master_tl_name, "TEST_TIMELINE", "EP01_Voiceover_Assembly_Track_A1", "EP01_Altman_Master_Assembly_24fps"]:
+            timelines_to_delete.append(t)
+    
+    if timelines_to_delete:
+        print(f"🧹 Cleaning up {len(timelines_to_delete)} temporary/previous timelines...")
+        mp.DeleteTimelines(timelines_to_delete)
+
+    # 1. Create Pristine Master Timeline
     print(f"🎬 Creating Master Timeline: '{master_tl_name}'...")
     if tl_folder:
         mp.SetCurrentFolder(tl_folder)
-
-    # Delete existing if present to recreate cleanly
-    for i in range(1, proj.GetTimelineCount() + 1):
-        t = proj.GetTimelineByIndex(i)
-        if t and t.GetName() == master_tl_name:
-            mp.DeleteTimelines([t])
-            break
 
     tl = mp.CreateEmptyTimeline(master_tl_name)
     if not tl:
@@ -105,30 +109,29 @@ def main():
         sys.exit(1)
 
     proj.SetCurrentTimeline(tl)
+    start_frame = tl.GetStartFrame()
+    print(f"✓ Timeline initialized with Start Frame = {start_frame} ({tl.GetStartTimecode()})")
 
     # 2. Configure Tracks
-    # Ensure 3 Video Tracks
     while tl.GetTrackCount("video") < 3:
         tl.AddTrack("video")
     tl.SetTrackName("video", 1, "FLOW_4K_V1")
     tl.SetTrackName("video", 2, "ARCHIVES_BROLL_V2")
     tl.SetTrackName("video", 3, "DOSSIERS_TITLES_V3")
 
-    # Ensure 3 Audio Tracks (A1 mono, A2 stereo, A3 stereo)
     while tl.GetTrackCount("audio") < 3:
         tl.AddTrack("audio", "stereo")
     tl.SetTrackName("audio", 1, "VOICEOVER_A1")
     tl.SetTrackName("audio", 2, "MUSIC_92BPM_A2")
     tl.SetTrackName("audio", 3, "AMBIENCE_FX_A3")
 
-    print("✓ Tracks initialized:")
+    print("✓ Tracks configured:")
     print("   V1: FLOW_4K_V1 | V2: ARCHIVES_BROLL_V2 | V3: DOSSIERS_TITLES_V3")
     print("   A1: VOICEOVER_A1 | A2: MUSIC_92BPM_A2 | A3: AMBIENCE_FX_A3")
 
     # 3. Assemble Track A1: 17 Voiceover Takes
     print("\n🎙️ Assembling Audio Track A1 (17 Voiceover Takes)...")
     vo_clips_map = {c.GetName(): c for c in vo_folder.GetClipList()}
-    
     vo_append_batch = []
     for vt in VO_TIMINGS:
         num = vt["num"]
@@ -136,14 +139,14 @@ def main():
         matched = [c for name, c in vo_clips_map.items() if name.startswith(prefix)]
         if matched:
             clip = matched[0]
-            rec_frame = round(vt["sec"] * FPS)
+            rec_frame = start_frame + round(vt["sec"] * FPS)
             vo_append_batch.append({
                 "mediaPoolItem": clip,
                 "mediaType": 2,          # Audio only
                 "trackIndex": 1,         # Audio Track A1
                 "recordFrame": rec_frame
             })
-            print(f"   Take #{num:02d} @ {vt['sec']:6.1f}s (Frame {rec_frame:6d}): {clip.GetName()}")
+            print(f"   Take #{num:02d} @ {vt['sec']:6.1f}s (Frame {rec_frame}): {clip.GetName()}")
 
     appended_vo = mp.AppendToTimeline(vo_append_batch)
     print(f"✓ Appended {len(appended_vo)} Voiceover takes to Track A1.")
@@ -151,7 +154,6 @@ def main():
     # 4. Assemble Track A2: 4-Act Suno 92 BPM Music
     print("\n🎵 Assembling Audio Track A2 (4-Act Suno 92 BPM Music)...")
     mus_clips_map = {c.GetName(): c for c in mus_folder.GetClipList()}
-    
     music_cues = [
         {"pattern": "MUS_01_ACT1", "sec": 0.0,    "name": "Act 1: Introspection (92 BPM)"},
         {"pattern": "AMB_07_ACT2", "sec": 285.0,  "name": "Act 2: Tension Drone (92 BPM)"},
@@ -163,14 +165,14 @@ def main():
         matched = [c for name, c in mus_clips_map.items() if mc["pattern"] in name]
         if matched:
             clip = matched[0]
-            rec_frame = round(mc["sec"] * FPS)
+            rec_frame = start_frame + round(mc["sec"] * FPS)
             mus_append_batch.append({
                 "mediaPoolItem": clip,
                 "mediaType": 2,          # Audio only
                 "trackIndex": 2,         # Audio Track A2
                 "recordFrame": rec_frame
             })
-            print(f"   {mc['name']} @ {mc['sec']:6.1f}s (Frame {rec_frame:6d}): {clip.GetName()}")
+            print(f"   {mc['name']} @ {mc['sec']:6.1f}s (Frame {rec_frame}): {clip.GetName()}")
 
     appended_mus = mp.AppendToTimeline(mus_append_batch)
     print(f"✓ Appended {len(appended_mus)} Music stems to Track A2.")
@@ -196,14 +198,14 @@ def main():
         matched = [c for name, c in flow_clips_map.items() if name.startswith(prefix)]
         if matched:
             clip = matched[0]
-            rec_frame = round(fc["sec"] * FPS)
+            rec_frame = start_frame + round(fc["sec"] * FPS)
             flow_append_batch.append({
                 "mediaPoolItem": clip,
                 "mediaType": 1,          # Video only
                 "trackIndex": 1,         # Video Track V1
                 "recordFrame": rec_frame
             })
-            print(f"   Flow #{fc['num']:02d} @ {fc['sec']:6.1f}s (Frame {rec_frame:6d}): {clip.GetName()}")
+            print(f"   Flow #{fc['num']:02d} @ {fc['sec']:6.1f}s (Frame {rec_frame}): {clip.GetName()}")
 
     appended_flow = mp.AppendToTimeline(flow_append_batch)
     print(f"✓ Appended {len(appended_flow)} Flow clips to Track V1.")
@@ -223,14 +225,14 @@ def main():
         matched = [c for name, c in arch_clips_map.items() if ac["pattern"] in name]
         if matched:
             clip = matched[0]
-            rec_frame = round(ac["sec"] * FPS)
+            rec_frame = start_frame + round(ac["sec"] * FPS)
             arch_append_batch.append({
                 "mediaPoolItem": clip,
                 "mediaType": 1,          # Video only
                 "trackIndex": 2,         # Video Track V2
                 "recordFrame": rec_frame
             })
-            print(f"   {ac['name']} @ {ac['sec']:6.1f}s (Frame {rec_frame:6d}): {clip.GetName()}")
+            print(f"   {ac['name']} @ {ac['sec']:6.1f}s (Frame {rec_frame}): {clip.GetName()}")
 
     appended_arch = mp.AppendToTimeline(arch_append_batch)
     print(f"✓ Appended {len(appended_arch)} Archives to Track V2.")
@@ -250,41 +252,46 @@ def main():
         matched = [c for name, c in doc_clips_map.items() if dc["pattern"] in name]
         if matched:
             clip = matched[0]
-            rec_frame = round(dc["sec"] * FPS)
+            rec_frame = start_frame + round(dc["sec"] * FPS)
             doc_append_batch.append({
                 "mediaPoolItem": clip,
                 "mediaType": 1,          # Video only
                 "trackIndex": 3,         # Video Track V3
                 "recordFrame": rec_frame
             })
-            print(f"   {dc['name']} @ {dc['sec']:6.1f}s (Frame {rec_frame:6d}): {clip.GetName()}")
+            print(f"   {dc['name']} @ {dc['sec']:6.1f}s (Frame {rec_frame}): {clip.GetName()}")
 
     appended_doc = mp.AppendToTimeline(doc_append_batch)
     print(f"✓ Appended {len(appended_doc)} Dossiers to Track V3.")
 
     # 8. Add Chapter / Beat Markers (M)
     print("\n🔖 Setting Narrative Beat Markers on Timeline...")
+    valid_colors = ['Blue', 'Cyan', 'Green', 'Yellow', 'Red', 'Pink', 'Purple', 'Fuchsia', 'Rose', 'Lavender', 'Sky', 'Mint', 'Lemon', 'Sand', 'Cocoa', 'Cream']
     for vt in VO_TIMINGS:
-        frame_id = round(vt["sec"] * FPS)
+        frame_id = start_frame + round(vt["sec"] * FPS)
         marker_color = vt.get("color", "Cyan")
-        # Verify color validity
-        valid_colors = ['Blue', 'Cyan', 'Green', 'Yellow', 'Red', 'Pink', 'Purple', 'Fuchsia', 'Rose', 'Lavender', 'Sky', 'Mint', 'Lemon', 'Sand', 'Cocoa', 'Cream']
         if marker_color not in valid_colors:
             marker_color = "Cyan"
         tl.AddMarker(frame_id, marker_color, f"Take #{vt['num']:02d}", vt["marker"], 24)
 
     print(f"✓ Added {len(VO_TIMINGS)} beat markers.")
 
-    # 9. Save Project
+    # 9. Set Playhead to Start and Open Edit Page
+    tl.SetCurrentTimecode(tl.GetStartTimecode())
+    resolve.OpenPage("edit")
+
+    # 10. Save Project
     pm.SaveProject()
     print("💾 DaVinci Resolve Project successfully saved!")
 
-    # Final Summary Report
+    # Verification Report
     print("\n" + "="*65)
     print("🎉 MASTER TIMELINE ASSEMBLY COMPLETE IN DAVINCI RESOLVE STUDIO 19")
     print("="*65)
     print(f"Timeline Name : {tl.GetName()}")
-    print(f"Total Duration: {tl.GetEndFrame() / FPS:.1f}s (~{tl.GetEndFrame() / FPS / 60:.2f} min)")
+    print(f"Start Frame   : {tl.GetStartFrame()} ({tl.GetStartTimecode()})")
+    print(f"End Frame     : {tl.GetEndFrame()} ({tl.GetCurrentTimecode()})")
+    print(f"Total Duration: {(tl.GetEndFrame() - tl.GetStartFrame()) / FPS:.1f}s (~{(tl.GetEndFrame() - tl.GetStartFrame()) / FPS / 60:.2f} min)")
     print(f"Track V1      : {len(tl.GetItemListInTrack('video', 1))} Flow 4K Clips")
     print(f"Track V2      : {len(tl.GetItemListInTrack('video', 2))} Historical Archives")
     print(f"Track V3      : {len(tl.GetItemListInTrack('video', 3))} 4K Dossier Plates")
