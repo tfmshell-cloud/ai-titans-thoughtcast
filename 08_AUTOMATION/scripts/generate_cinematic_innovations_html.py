@@ -13,9 +13,9 @@ INNOVATIONS = [
     "tc": "00:15 – 00:45",
     "act": "Акт 1 • Дитинство 1993",
     "tagline": "Безшовне занурення від повсякденного предмета в кремнієве серце комп'ютера",
-    "concept": "Камера наближається впритул до бежевого пластику Macintosh LC II, проходить крізь його структуру і без монтажної склейки опиняється всередині кремнієвого кристала. Золоті мікродоріжки спалахують бінарними імпульсами, трансформуючись у живу нейронну мережу.",
+    "concept": "Камера наближається впритул до бежевого пластику персонального комп'ютера 1993 року, проходить крізь його корпус і без монтажної склейки опиняється всередині кремнієвого кристала. Золоті мікродоріжки спалахують бінарними імпульсами, трансформуючись у живу нейронну мережу.",
     "why_it_works": "Глядач на фізичному рівні відчуває те, про що говорить диктор: комп'ютер перестає бути коробкою і стає розширенням людського мозку.",
-    "p1_start": "Extreme macro close-up of a vintage 1993 beige Apple Macintosh LC II computer chassis sitting on a wooden desk. Morning amber sunlight cutting through window blinds, dust motes floating in sunbeams, authentic textured beige ABS plastic patina with the iconic rainbow Apple logo in razor-sharp focus, shallow depth of field, 35mm film photography --ar 16:9",
+    "p1_start": "Extreme macro close-up of a vintage 1993 beige modular personal computer chassis on a wooden desk. Morning amber sunlight cutting through window blinds, dust motes floating in sunbeams, authentic textured beige ABS plastic patina in razor-sharp focus, shallow depth of field, 35mm film photography --ar 16:9",
     "p2_flow": "Continuous macro push-in camera plunging through the beige plastic casing into the interior electronics. Solid plastic dissolves into crystalline translucent silicon substrate, microscopic copper and gold traces illuminate with cyan and gold binary laser pulses, branching outward into an infinite illuminated architectural grid of transistors, seamless physical morph, 24fps.",
     "p3_end": "Hyperrealistic scientific electron-microscope style photograph of a glowing green-and-gold silicon microprocessor wafer. Nanoscale transistor gates illuminated with coherent azure laser light, dark slate background, volumetric depth, photorealistic semiconductor geometry, 8k render --ar 16:9",
     "davinci_recipe": "Fusion Page: 3D Camera Projection + FastNoise Displacement. Ефект 'Displace' з маскою ліній кремнію. Перехід через оптичний зум на доріжці V1 (Blur Dissolve 4 кадри, Smooth Curve).",
@@ -34,8 +34,8 @@ INNOVATIONS = [
     "tagline": "Вигнуте темне скло кінескопа як дзеркало внутрішнього світу",
     "concept": "Замість показу плоского монітора ми дивимося прямо на вигнуте скло CRT. По склу біжать рядки зеленого/бурштинового терміналу, а в глибокому дзеркальному відбитті ми бачимо очі 8-річного хлопчика, його подих і кімнату 1993 року.",
     "why_it_works": "Поєднує в одному кадрі два виміри: внутрішнє мислення героя (код) та його фізичну вразливість у реальному світі.",
-    "p1_start": "Straight-on cinematic shot of an unlit, powered-off vintage 1993 curved glass CRT monitor in a darkened room. The curved glass acts as a dark mirror, clearly reflecting an 8-year-old Caucasian boy with curly brown hair looking intently into the screen, room blinds reflected in glass, fine dust on surface, 35mm film grain --ar 16:9",
-    "p2_flow": "The CRT monitor abruptly powers on. A brilliant horizontal beam of white electrons sweeps across the phosphor layer, igniting vertical lines of glowing green terminal code. The boy's mirrored reflection blends seamlessly with the scrolling green characters as his eyes widen with intellectual discovery, subtle barrel distortion, 24fps.",
+    "p1_start": "Straight-on cinematic shot of an unlit, powered-off vintage 1993 curved glass computer monitor in a darkened room. The curved glass acts as a dark mirror, clearly reflecting an 8-year-old Caucasian boy with curly brown hair looking intently into the screen, room blinds reflected in glass, fine dust on surface, 35mm film grain --ar 16:9",
+    "p2_flow": "The monitor abruptly powers on. A brilliant horizontal beam of white electrons sweeps across the phosphor layer, igniting vertical lines of glowing green terminal code. The boy's mirrored reflection blends seamlessly with the scrolling green characters as his eyes widen with intellectual discovery, subtle barrel distortion, 24fps.",
     "p3_end": "Glowing green phosphor vintage CRT monitor in full operation: sharp terminal command lines streaming down the curved screen, while the faint translucent reflection of the young Caucasian boy's focused face and amber room backlight remains visible in the dark glass, Fincher aesthetic, 4k --ar 16:9",
     "davinci_recipe": "Color Page: Нода зі сканлайнами (OFX Scanlines) + нода Composite (Screen/Add) для шару відбиття обличчя диктора. Легка бочкова дисторсія (Lens Distortion -0.08).",
     "sfx_cue": "Високочастотний свист строчного трансформатора 15.6 kHz + сухий приглушений стукіт механічних клавіш Alps."
@@ -51,11 +51,11 @@ INNOVATIONS = [
     "tc": "03:30 – 04:45",
     "act": "Акт 1 -> Акт 2 • Складний відсоток",
     "tagline": "30 років історії за 5 секунд на нерухомому штативі",
-    "concept": "Мертвий штатив. Силует Сема сидить у центрі кадру. Навколо нього за 5 секунд світло і декорації змінюються 4 рази: 1993 (дитяча кімната) -> 2005 (гараж Loopt) -> 2015 (штаб YC) -> 2024 (офіс OpenAI). Сем залишається незмінною віссю Всесвіту.",
+    "concept": "Мертвий штатив. Силует героя сидить у центрі кадру. Навколо нього за 5 секунд світло і декорації змінюються 4 рази: 1993 (дитяча кімната) -> 2005 (гараж) -> 2015 (бордрум) -> 2024 (дата-центр). Герой залишається незмінною віссю Всесвіту.",
     "why_it_works": "Наочна візуалізація експоненційного часу: людина не змінює фокус, змінюється масштаб її впливу на цивілізацію.",
-    "p1_start": "1993 suburban Midwestern bedroom: 8-year-old Caucasian boy sitting in the exact dead center of the frame at a wooden desk with a Macintosh LC II computer, warm amber sunlight streaming through window blinds, quiet contemplative atmosphere, 35mm film photography --ar 16:9",
-    "p2_flow": "Locked-off tripod hyperlapse. The boy remains anchored in the dead center as his body matures seamlessly into an adult tech leader, while the room around him rapidly spins and morphs through 30 years: bedroom dissolves into a 2005 messy startup garage, then a 2014 YC boardroom, settling into a massive 2024 AI datacenter, 24fps.",
-    "p3_end": "2024 hyper-scale AI server hall: 38-year-old tech leader Sam Altman sitting in the exact same central position at a sleek obsidian desk surrounded by towering dark server racks glowing with optical blue LED ribbons, cold architectural precision, 4k --ar 16:9",
+    "p1_start": "1993 suburban Midwestern bedroom: an 8-year-old Caucasian boy with brown hair sitting in the exact dead center of the frame at a wooden desk with a retro personal computer, warm amber sunlight streaming through window blinds, quiet contemplative atmosphere, 35mm film photography --ar 16:9",
+    "p2_flow": "Locked-off tripod hyperlapse. The central figure remains anchored in the dead center as his body matures seamlessly into an adult tech founder, while the room around him rapidly spins and morphs through 30 years: bedroom dissolves into a 2000s startup garage, then a modern boardroom, settling into a massive futuristic AI datacenter, 24fps.",
+    "p3_end": "Contemporary hyper-scale AI server hall: a 38-year-old Caucasian male tech founder with wavy brown hair sitting in the exact same central position at a sleek obsidian desk surrounded by towering dark server racks glowing with optical blue LED ribbons, cold architectural precision, 4k --ar 16:9",
     "davinci_recipe": "Edit Page: 4 окремих шоти, вирівняних за координатами очей (Position X/Y Lock). Плавний Morph Cut на стиках тривалістю 8 кадрів + накладання світлового шлейфу (Optical Flow).",
     "sfx_cue": "Звук прокручування магнітофонної стрічки на надшвидкості (Tape Rewind) + клацання затворів камер кожну секунду."
   },
@@ -68,14 +68,14 @@ INNOVATIONS = [
     "cat_label": "🔍 Оптичний трюк",
     "cat_color": "emerald",
     "tc": "05:45 – 07:00",
-    "act": "Акт 2 • Готель Rosewood",
+    "act": "Акт 2 • Закрита вечеря",
     "tagline": "Градус історичного рішення через інфрачервоний спектр",
-    "concept": "Під час вечері чотирьох титанів (Альтман, Маск, Суцкевер, Брокман) кадр із кінематографічного нуару на мить перемикається в режим тепловізора військового класу. Холодний синій зал засідань раптово показує палаючі помаранчеві голови та гаряче дихання — температура ідей у кімнаті зашкалює.",
-    "why_it_works": "Показує невидиму енергію інтелектуальної битви: зовні це спокійна вечеря мільярдерів, всередині — зіткнення надрозумів.",
-    "p1_start": "Cinematic film noir shot of four tech founders seated around a dark mahogany round table in an exclusive dimly lit private hotel dining room, amber crystal whiskey glasses, deep chiaroscuro shadows, natural 35mm warm color palette, Panavision lens --ar 16:9",
+    "concept": "Під час вечері чотирьох візіонерів кадр із кінематографічного нуару на мить перемикається в режим тепловізора військового класу. Холодний синій зал засідань раптово показує палаючі помаранчеві голови та гаряче дихання — температура ідей у кімнаті зашкалює.",
+    "why_it_works": "Показує невидиму енергію інтелектуальної битви: зовні це спокійна вечеря ділових людей, всередині — зіткнення надрозумів.",
+    "p1_start": "Cinematic film noir shot of four prominent male tech executives seated around a dark mahogany round table in an exclusive dimly lit private hotel dining room, amber crystal whiskey glasses, deep chiaroscuro shadows, natural 35mm warm color palette, Panavision lens --ar 16:9",
     "p2_flow": "Smooth 180-degree camera orbit around the table. The natural photographic lighting shifts through an optical infrared spectrum filter: the room cools into deep indigo and cyan, while the heads, hands, and neural pathways of the four men ignite into blinding hot white, yellow, and molten orange thermal signatures, 24fps.",
     "p3_end": "Military-grade high-definition FLIR thermal infrared camera still of the four visionaries at the table: cold blue and purple ambient background violently contrasting with intense glowing orange-and-white heat signatures radiating from their foreheads and hands, Sicario surveillance style, 4k --ar 16:9",
-    "davinci_recipe": "Color Page: Нода OFX False Color або градієнтна карта (Ironbow Palette) з анімацією міксу (Opacity від 0% до 85% на ключовій фразі про загрозу Google).",
+    "davinci_recipe": "Color Page: Нода OFX False Color або градієнтна карта (Ironbow Palette) з анімацією міксу (Opacity від 0% до 85% на ключовій фразі).",
     "sfx_cue": "Приглушення звуків кімнати (Low-pass filter на 400Hz), пульсуючий звук ультразвукового датчика та електронний тон 80Hz."
   },
   {
@@ -89,11 +89,11 @@ INNOVATIONS = [
     "tc": "10:45 – 12:15",
     "act": "Акт 3 • Переворот ради директорів",
     "tagline": "Оптичний трюк Браяна Де Пальми: подвійна різкість у кадрі",
-    "concept": "Ліва половина кадру: надчітке макро руки Альтмана, права половина — на такій самій бритвеній різкості, за 10 метрів позаду, рада директорів сперечається за склом. Без розмиття!",
+    "concept": "Ліва половина кадру: надчітке макро руки героя, права половина — на такій самій бритвеній різкості, за 10 метрів позаду, рада директорів сперечається за склом. Без розмиття!",
     "why_it_works": "Знищує розмиття фону, змушуючи мозок глядача одночасно бачити дві протилежні правди в одному просторі без склейки.",
-    "p1_start": "Extreme macro close-up of a tech leader's calm hand holding a dark ceramic espresso cup and a green visitor badge on a table, shallow focus with heavily blurred background, natural morning daylight, 35mm film grain --ar 16:9",
-    "p2_flow": "An optical split-diopter glass element slides seamlessly into the lens. The right half of the frame racks into instant razor-sharp focus 10 meters into the background, revealing four board members intensely debating behind soundproof glass, maintaining simultaneous sharp focus foreground and background, 24fps.",
-    "p3_end": "Master split-diopter 35mm film still: left side is razor-sharp macro of Sam Altman's calm hand with green lanyard badge; right side is equally razor-sharp deep focus of four agitated board executives behind a glass partition, Brian De Palma aesthetic, 4k --ar 16:9",
+    "p1_start": "Extreme macro close-up of an executive's calm hand holding a dark ceramic espresso cup and a green plastic visitor lanyard on a conference table, shallow focus with heavily blurred background, natural morning daylight, 35mm film grain --ar 16:9",
+    "p2_flow": "An optical split-diopter glass element slides seamlessly into the lens. The right half of the frame racks into instant razor-sharp focus 10 meters into the background, revealing four corporate board members intensely debating behind soundproof glass, maintaining simultaneous sharp focus foreground and background, 24fps.",
+    "p3_end": "Master split-diopter 35mm film still: left side is razor-sharp macro of a tech founder's calm hand with green lanyard pass; right side is equally razor-sharp deep focus of four agitated board executives behind a glass partition, Brian De Palma aesthetic, 4k --ar 16:9",
     "davinci_recipe": "Fusion Page: Складання двох планів (Foreground Mask + Background Plate) з вертикальною плавною градієнтною маскою та трекінгом камери.",
     "sfx_cue": "Повний стерео-розподіл: зліва — кришталево чистий звук дихання та фарфору, справа — глухі, мов під водою, приглушені голоси з кабінету."
   },
@@ -106,11 +106,11 @@ INNOVATIONS = [
     "cat_label": "🖥️ Графіка & HUD",
     "cat_color": "cyan",
     "tc": "07:00 – 08:15",
-    "act": "Акт 2 • Заснування OpenAI",
+    "act": "Акт 2 • Заснування дослідницької лабораторії",
     "tagline": "Історичний аркуш паперу, який проростає тривимірним світлом",
-    "concept": "Реальний прес-реліз або договір заснування OpenAI від 11 грудня 2015 року лежить на столі. Камера нахиляється під кутом 45 градусів — і друковані чорні літери починають світитися білим неоном, відриваються від паперу і розгортаються вгору як 3D-голограма серверного кластера.",
+    "concept": "Історичний маніфест заснування дослідницької лабораторії штучного інтелекту лежить на столі. Камера нахиляється під кутом 45 градусів — і друковані чорні літери починають світитися білим неоном, відриваються від паперу і розгортаються вгору як 3D-голограма серверного кластера.",
     "why_it_works": "Перетворює нудний архівний документ на живу магію інженерної думки.",
-    "p1_start": "Historical paper document from December 11, 2015 announcing the founding of OpenAI, lying flat on a dark walnut executive desk under an architectural lamp, crisp black printed typography on textured off-white paper, archival macro photography --ar 16:9",
+    "p1_start": "Historical research document from 2015 announcing the creation of an open artificial intelligence research lab, lying flat on a dark walnut executive desk under an architectural lamp, crisp black printed typography on textured off-white parchment paper, archival macro photography --ar 16:9",
     "p2_flow": "Camera glides into a 45-degree isometric tilt. The printed black ink letters start to glow with electric cyan luminescence, physically detaching from the paper and elevating into the air as a rotating 3D holographic wireframe schematic of a multi-tier neural cluster, 24fps.",
     "p3_end": "Luminous 3D isometric architectural holographic schematic hovering above the paper document, glowing cyan and gold vectors mapping out a planetary compute network in deep space, hyper-detailed volumetric lighting, 8k --ar 16:9",
     "davinci_recipe": "Fusion Page: 3D Text + Camera Tracker поверх фотоскану прес-релізу. Нода Glow + Displace з анімацією Z-позиції літер.",
@@ -125,9 +125,9 @@ INNOVATIONS = [
     "cat_label": "🖥️ Графіка & HUD",
     "cat_color": "cyan",
     "tc": "02:30 – 03:30",
-    "act": "Акт 1 • YC Batch 1",
+    "act": "Акт 1 • Стартап-інкубатор",
     "tagline": "Звукова хвиля голосу диктора малює текст на екрані",
-    "concept": "Ключова цитата Альтмана («Більшість людей здаються через психологічне тертя») малюється тонким зеленим променем аналогового лабораторного осцилографа. Лінія коливається точно в такт амплітуді голосу диктора, фіксуючи кожне слово ударом реле.",
+    "concept": "Ключова цитата («Більшість людей здаються через психологічне тертя») малюється тонким зеленим променем аналогового лабораторного осцилографа. Лінія коливається точно в такт амплітуді голосу диктора, фіксуючи кожне слово ударом реле.",
     "why_it_works": "Глядач бачить і чує звук одночасно — фраза буквально вкарбовується в підсвідомість.",
     "p1_start": "Vintage round green oscilloscope cathode-ray tube screen in an analog research lab, displaying a flat single horizontal green phosphorescent laser line against a dark grid, retro analog instrumentation aesthetic --ar 16:9",
     "p2_flow": "The flat laser line violently erupts into dynamic kinetic audio waveforms reacting to vocal speech frequencies. The peaks and valleys twist and fold into glowing alphanumeric letters forming the words: 'MOST PEOPLE QUIT DUE TO PSYCHOLOGICAL FRICTION', phosphor decay trailing, 24fps.",
@@ -144,12 +144,12 @@ INNOVATIONS = [
     "cat_label": "⚡ Монтажний перехід",
     "cat_color": "amber",
     "tc": "15:30 – 17:00",
-    "act": "Акт 4 • Stargate та енергія",
+    "act": "Акт 4 • Планетарний кластер та енергія",
     "tagline": "Безперервний політ через 7 порядків величини Всесвіту",
-    "concept": "Камера летить назад без жодної зупинки: починаємо з синапсу в мозку людини -> пролітаємо крізь транзистор чіпа H100 -> крізь оптоволокно сервера -> через дах гігантського дата-центру в пустелі -> у стратосферу -> до сяючої нічної планети Земля.",
+    "concept": "Камера летить назад без жодної зупинки: починаємо з синапсу в мозку людини -> пролітаємо крізь транзистор чіпа надпотужного процесора -> крізь оптоволокно сервера -> через дах гігантського дата-центру в пустелі -> у стратосферу -> до сяючої нічної планети Земля.",
     "why_it_works": "Дає відчуття космічного масштабу штучного інтелекту як нового планетарного явища.",
     "p1_start": "Microscopic biological view of a glowing human brain neuron with pulsing blue-white electrical signals firing along dendrites against a dark organic void, electron microscopy depth of field --ar 16:9",
-    "p2_flow": "Relentless hyper-speed backward camera zoom matching the exact center axis. The organic neuron dendrites morph into copper traces of an H100 GPU chip, zooming out of the server rack, out of the desert datacenter, blasting through the atmosphere into low Earth orbit, 24fps.",
+    "p2_flow": "Relentless hyper-speed backward camera zoom matching the exact center axis. The organic neuron dendrites morph into copper traces of an advanced GPU chip, zooming out of the server rack, out of the desert datacenter, blasting through the atmosphere into low Earth orbit, 24fps.",
     "p3_end": "Panoramic low Earth orbit photograph of planet Earth at night, continents interconnected by massive glowing golden webs of fiber-optic and AI compute grids against the black cosmos, IMAX resolution --ar 16:9",
     "davinci_recipe": "Edit Page: 5 шотів, зв'язаних через 'Scale Match' та центральний центровий трекінг. Додавання Radial Blur (Strength 0.15) на стиках переходів.",
     "sfx_cue": "Низькочастотний наростаючий гул (Shepard Tone), який створює ілюзію нескінченного прискорення."
@@ -163,13 +163,13 @@ INNOVATIONS = [
     "cat_label": "⏳ Час і простір",
     "cat_color": "purple",
     "tc": "01:30 – 02:30",
-    "act": "Акт 1 • Стенфорд 2005",
+    "act": "Акт 1 • Університетський гуртожиток 2005",
     "tagline": "Пласке старе фото перетворюється на живу тривимірну кімнату",
-    "concept": "Автентичне чорно-біле фото 2005 року розділяється за допомогою AI Depth Map на 6 шарів: підлога, Сем, ноутбук, кабелі, фонова стіна. Віртуальна кінокамера обертається навколо Сема на 30 градусів, показуючи об'єм кімнати і живі тіні.",
+    "concept": "Автентичне чорно-біле фото студента 2005 року розділяється за допомогою AI Depth Map на 6 шарів: підлога, хлопець, ноутбук, кабелі, фонова стіна. Віртуальна кінокамера обертається навколо героя на 30 градусів, показуючи об'єм кімнати і живі тіні.",
     "why_it_works": "Знімає відчуття музейної нудьги від старих фотокарток — архів починає дихати.",
-    "p1_start": "Flat 2D archival black-and-white photograph of 19-year-old Caucasian Sam Altman sitting in his 2005 Stanford dorm room with messy cables and laptop, classic vintage photographic print with white border --ar 16:9",
+    "p1_start": "Flat 2D archival black-and-white photograph of a 19-year-old Caucasian college student sitting in his 2005 university dorm room with messy cables and laptop, classic vintage photographic print with white border --ar 16:9",
     "p2_flow": "The flat photograph separates into distinct 3D spatial depth planes. Camera smoothly cranes forward and orbits 30 degrees: foreground cables separate from the desk, dust motes catch atmospheric light between the subject and the back wall, bringing the frozen moment into living 3D physical volume, 24fps.",
-    "p3_end": "Volumetric cinematic live-action frame of the exact same 2005 Stanford dorm room moment, full 35mm color film depth, realistic shadows and light wrap around the young founder, 4k --ar 16:9",
+    "p3_end": "Volumetric cinematic live-action frame of the exact same 2005 university dorm room moment, full 35mm color film depth, realistic shadows and light wrap around the young student founder, 4k --ar 16:9",
     "davinci_recipe": "Fusion: Нода Displace з використанням карти глибини (Depth Map). 3D Camera з легким покачуванням (Wobble 0.2) для ефекту живої операторської роботи.",
     "sfx_cue": "Звук старого плівкового проектора (8mm / 16mm shutter rattle) на низькій гучності -24dB."
   },
@@ -182,11 +182,11 @@ INNOVATIONS = [
     "cat_label": "⚡ Монтажний перехід",
     "cat_color": "amber",
     "tc": "10:45 – 11:15",
-    "act": "Акт 3 • Звільнення Сема",
+    "act": "Акт 3 • Звільнення лідера",
     "tagline": "Психологічний удар через 3 кадри інверсії кольору",
-    "concept": "На слові «Звільнено» екран на рівно 3 кадри (1/8 секунди) вибухає негативом плівки: чорні костюми стають сліпуче білими, обличчя — примарними силуетами, а світлий фон — глибоким обсидіаном. Після цього ми повертаємося в надконтрастний кінематографічний кадр.",
+    "concept": "На слові «Звільнено» екран на рівно 3 кадри (1/8 секунди) вибухає негативом плівки: темні костюми стають сліпуче білими, обличчя — примарними силуетами, а світлий фон — глибоким обсидіаном. Після цього ми повертаємося в надконтрастний кінематографічний кадр.",
     "why_it_works": "Фізіологічний шоковий тригер: мозок глядача реагує на різку інверсію контрасту як на спалах блискавки.",
-    "p1_start": "Tense close-up of Sam Altman looking directly into a laptop camera in a dimly lit Las Vegas hotel suite during the fateful board video call, natural moody chiaroscuro lighting, Panavision 35mm --ar 16:9",
+    "p1_start": "Tense close-up of a young male tech founder looking directly into a laptop camera in a dimly lit hotel suite during a high-stakes corporate emergency video call, natural moody chiaroscuro lighting, Panavision 35mm --ar 16:9",
     "p2_flow": "A 3-frame explosive photographic strobe: the entire image violently inverts into a photographic negative (skin becomes solarized obsidian, dark shadows turn blinding stark white, light sources invert to black holes), accompanied by shutter flashes, 24fps.",
     "p3_end": "Stark inverted negative film still: high-contrast solarized monochrome frame capturing the exact moment of corporate rupture, glowing white silhouette contours cutting through deep void black, 4k --ar 16:9",
     "davinci_recipe": "Edit Page: Розріз на 3 кадри. Color Page: Нода Invert (Curves Invert) + підвищення Contrast до 1.8. Сайдчейн приглушує музику в момент спалаху.",
@@ -203,12 +203,12 @@ INNOVATIONS = [
     "tc": "03:30 – 04:00",
     "act": "Акт 1 • Закон експоненти",
     "tagline": "Слово як фізичний тунель у наступну локацію",
-    "concept": "Монументальне слово «EXPONENTIAL» виникає на весь екран у шрифті Neue Haas Grotesk. Камера на швидкості звуку летить у внутрішній круглий отвір літери «O», який виявляється вікном у хмарочосі Сан-Франциско на світанку.",
+    "concept": "Монументальне слово «EXPONENTIAL» виникає на весь екран у шрифті Neue Haas Grotesk. Камера на швидкості звуку летить у внутрішній круглий отвір літери «O», який виявляється вікном у хмарочосі прибережного мегаполіса на світанку.",
     "why_it_works": "Поєднує графічний дизайн та кінозйомку в єдиний агресивний рух без швів.",
     "p1_start": "Pitch-black void featuring a massive, monumental white Helvetica typographic word 'EXPONENTIAL' dominating the center of the frame in crisp Swiss design, high contrast minimalism --ar 16:9",
-    "p2_flow": "Camera accelerates at warp speed directly into the circular negative space inside the letter 'O'. The interior of the letter expands to fill the entire frame, acting as a spatial lens that reveals an aerial sunrise over the Golden Gate Bridge, 24fps.",
-    "p3_end": "Breathtaking cinematic aerial sunrise over San Francisco, golden morning light burning through marine fog over the Pacific ocean, architectural grandeur, 4k 24fps --ar 16:9",
-    "davinci_recipe": "Fusion: Шар тексту використовується як Alpha Matte для відеоряду Сан-Франциско, швидкий зум (Camera Z translation 0 -> 5000) з motion blur.",
+    "p2_flow": "Camera accelerates at warp speed directly into the circular negative space inside the letter 'O'. The interior of the letter expands to fill the entire frame, acting as a spatial lens that reveals an aerial sunrise over a coastal bay with suspension bridge, 24fps.",
+    "p3_end": "Breathtaking cinematic aerial sunrise over coastal metropolis, golden morning light burning through marine fog over the ocean, architectural grandeur, 4k 24fps --ar 16:9",
+    "davinci_recipe": "Fusion: Шар тексту використовується як Alpha Matte для відеоряду міста, швидкий зум (Camera Z translation 0 -> 5000) з motion blur.",
     "sfx_cue": "Стрімкий вітровий свіш (Whoosh Braam) з переходом у прозорий ембієнт ранкового міста."
   },
   {
@@ -220,13 +220,13 @@ INNOVATIONS = [
     "cat_label": "🖥️ Графіка & HUD",
     "cat_color": "cyan",
     "tc": "06:00 – 07:00",
-    "act": "Акт 2 • Готель Rosewood",
-    "tagline": "Естетика розсекреченого досьє ЦРУ та супутникової аналітики",
-    "concept": "Кадри вечері чи офісу супроводжуються ледь помітною монохромною моноширинною телеметрією в кутах екрана: супутникові координати Менло-Парку [37.4529° N, 122.1817° W], час UTC, висота над рівнем моря, таймер зворотного відліку до запуску ChatGPT.",
+    "act": "Акт 2 • Закритий салон",
+    "tagline": "Естетика розсекреченого досьє та супутникової аналітики",
+    "concept": "Кадри вечері чи офісу супроводжуються ледь помітною монохромною моноширинною телеметрією в кутах екрана: супутникові координати [37.4529° N, 122.1817° W], час UTC, висота над рівнем моря, таймер зворотного відліку до технологічного запуску.",
     "why_it_works": "Перетворює відео на документальний розслідувальний трилер високого рівня.",
-    "p1_start": "Stealth telephoto spy photograph of the luxury Rosewood Hotel entrance at twilight, sleek dark luxury sedans arriving under warm porte-cochère lighting, grainy surveillance texture --ar 16:9",
-    "p2_flow": "Digital reconnaissance HUD elements overlay across the lens: green vector crosshairs track the vehicles, monospace data coordinates [37.4529° N, 122.1817° W] cascade down the margins, and facial recognition bounding boxes lock onto the silhouettes, 24fps.",
-    "p3_end": "Declassified intelligence satellite view combined with ground telemetry: illuminated tactical night view of the Menlo Park estate with layered vector flight paths, timecode stamps, and encrypted data blocks, 4k --ar 16:9",
+    "p1_start": "Stealth telephoto surveillance photograph of an exclusive Silicon Valley estate entrance at twilight, sleek dark executive sedans arriving under warm porte-cochère lighting, grainy surveillance texture --ar 16:9",
+    "p2_flow": "Digital reconnaissance HUD elements overlay across the lens: green vector crosshairs track the vehicles, monospace data coordinates [37.4529° N, 122.1817° W] cascade down the margins, and motion detection bounding boxes lock onto the silhouettes, 24fps.",
+    "p3_end": "Declassified intelligence satellite view combined with ground telemetry: illuminated tactical night view of the estate with layered vector flight paths, timecode stamps, and encrypted data blocks, 4k --ar 16:9",
     "davinci_recipe": "Fusion: Генератор Text+ з даними витягується на окремий трек V3, режим накладання Screen, колір #38bdf8 з прозорістю 35%.",
     "sfx_cue": "Тихий звук клавіатурного терміналу або супутникового пілінгу кожні 15 секунд."
   },
@@ -239,13 +239,13 @@ INNOVATIONS = [
     "cat_label": "⚡ Монтажний перехід",
     "cat_color": "amber",
     "tc": "00:00 – 00:15",
-    "act": "Акт 1 • Інтродукція",
+    "act": "Акт 1 • Інтродукція особистості",
     "tagline": "Очі героя зафіксовані в одних координатах крізь 30 років",
-    "concept": "Швидкий ритмічний монтаж (по 12 кадрів на людину): очі Сема зафіксовані рівно по центру екрана на рівні пікселів. 1993 (8 років) -> 2001 (16 років) -> 2008 (23 роки) -> 2015 (30 років) -> 2023 (38 років). Світ навколо обертається, але погляд залишається нерухомим.",
+    "concept": "Швидкий ритмічний монтаж (по 12 кадрів на людину): очі героя зафіксовані рівно по центру екрана на рівні пікселів. 8 років (1993) -> 16 років (2001) -> 23 роки (2008) -> 30 років (2015) -> 38 років (2023). Світ навколо обертається, але погляд залишається нерухомим.",
     "why_it_works": "Гіпнотичний візуальний якір, який створює відчуття фатальності та неперервності долі.",
-    "p1_start": "Close-up portrait of 8-year-old Caucasian boy (young Sam Altman) in 1993, his brown eyes locked precisely at the exact dead-center coordinates of the frame, soft amber suburban light, 35mm film portrait --ar 16:9",
+    "p1_start": "Close-up portrait of an 8-year-old Caucasian boy with curly brown hair in 1993, his brown eyes locked precisely at the exact dead-center coordinates of the frame, soft amber suburban light, 35mm film portrait --ar 16:9",
     "p2_flow": "Seamless eye-locked morph: while the pupils remain anchored to the exact same screen pixel, facial bone structure, skin texture, and hair age continuously through 16, 23, 30, and 38 years old. Lighting evolves around the motionless gaze, 24fps.",
-    "p3_end": "Intimate 35mm close-up portrait of 38-year-old Sam Altman in 2023, his eyes locked in the exact same central position, mature gaze, soft grey background, cinematic depth of field, 4k --ar 16:9",
+    "p3_end": "Intimate 35mm close-up portrait of a 38-year-old Caucasian male tech founder with wavy brown hair, his eyes locked in the exact same central position, mature focused gaze, soft grey architectural background, cinematic depth of field, 4k --ar 16:9",
     "davinci_recipe": "Edit Page: Функція Stabilization -> Mode: Classic Stabs -> Point Tracker (виставити трекінг на зіниці очей обох кадрів).",
     "sfx_cue": "Метроном або стукіт серця рівно 92 удари на хвилину, що збігається зі склейками."
   },
@@ -258,13 +258,13 @@ INNOVATIONS = [
     "cat_label": "⚡ Монтажний перехід",
     "cat_color": "amber",
     "tc": "08:15 – 08:30",
-    "act": "Акт 2 • Розрив з Маском",
+    "act": "Акт 2 • Масштабування капіталу",
     "tagline": "Звуковий клацальний імпульс розщеплює кольорові канали відео",
-    "concept": "Перехід між темою некомерційної OpenAI та мільярдним контрактом Microsoft: клацання реле викликає 2-кадрове розщеплення RGB-каналів (червоний зсувається вліво на 15 пікселів, синій — вправо). Кадр ламається як аналогова плівка і збирається у новий кадр.",
+    "concept": "Перехід між темою наукового стартапу та масштабним корпоративним альянсом: клацання реле викликає 2-кадрове розщеплення RGB-каналів (червоний зсувається вліво на 15 пікселів, синій — вправо). Кадр ламається як аналогова плівка і збирається у новий простір.",
     "why_it_works": "Фізичне відчуття технічного зламу системи — перехід на новий рівень гри.",
-    "p1_start": "Non-profit research era: Sam Altman standing before a whiteboard filled with AI safety equations in the early small OpenAI Mission District office, 2016, natural warm daylight, documentary realism --ar 16:9",
-    "p2_flow": "High-voltage spark disruption: on a relay click, the frame shatters into raw RGB phosphor chromatic aberration, horizontal sync lines tear across the screen for 2 frames, snapping into a modern glass corporate boardroom, 24fps.",
-    "p3_end": "Commercial capped-profit era: Sam Altman signing the $1 billion contract alongside Satya Nadella in a high-floor glass skyscraper overlooking Seattle, sleek cool steel palette, 4k 24fps --ar 16:9",
+    "p1_start": "Early startup research phase: a young tech founder standing before a glass whiteboard filled with mathematical neural network algorithms in a modest urban brick loft office, natural warm daylight, documentary realism --ar 16:9",
+    "p2_flow": "High-voltage spark disruption: on a sharp audio click, the frame shatters into raw RGB phosphor chromatic aberration, horizontal sync lines tear across the screen for 2 frames, snapping into a modern glass corporate boardroom, 24fps.",
+    "p3_end": "Scale-up corporate phase: two tech founders in dark tailored blazers shaking hands in a high-floor glass skyscraper overlooking a rainy metropolis, sleek cool steel palette, 4k 24fps --ar 16:9",
     "davinci_recipe": "Color Page: Розщеплення каналів через ноду Splitter/Combiner, зміщення ноди Red на 10 пікселів у трансформації.",
     "sfx_cue": "Автентичний звук електростатичного розряду (Spark Discharge) тривалістю 0.08с."
   },
@@ -277,13 +277,13 @@ INNOVATIONS = [
     "cat_label": "⏳ Час і простір",
     "cat_color": "purple",
     "tc": "04:45 – 05:45",
-    "act": "Акт 2 • Президентство YC",
+    "act": "Акт 2 • Венчурний конвеєр",
     "tagline": "Крапля чорнила, яка розгалужується у венчурну імперію",
-    "concept": "Ультрамакрозйомка: перо торкається білого паперу. Крапля чорнила в сповільненій зйомці розтікається по волокнах. Її відгалуження перетворюються на світяться золоті гілки інвестиційного графа — Reddit, Stripe, Airbnb, Coinbase, Helion.",
+    "concept": "Ультрамакрозйомка: перо торкається білого паперу. Крапля чорнила в сповільненій зйомці розтікається по волокнах. Її відгалуження перетворюються на світяться золоті гілки інвестиційного графа технологічних компаній.",
     "why_it_works": "Метафора того, як один розчерк пера та одне рішення розгалужує реальність на трильйони доларів.",
     "p1_start": "Extreme macro shot of a fountain pen nib touching pristine fibrous cotton paper, a single droplet of rich black fountain pen ink pooling at the tip, soft directional studio lighting --ar 16:9",
-    "p2_flow": "Slow-motion capillary bleed: the ink droplet absorbs into paper fibers, branching outward like lightning. The branching tendrils transform into luminous golden nodes representing venture capital investments (Stripe, Reddit, Airbnb, Helion), 24fps.",
-    "p3_end": "Luminous golden network graph of technological companies interconnected by fine capillary lines, glowing over a dark textured paper background, elegant infographic minimalism, 8k --ar 16:9",
+    "p2_flow": "Slow-motion capillary bleed: the ink droplet absorbs into paper fibers, branching outward like lightning. The branching tendrils transform into luminous golden nodes representing venture capital investments and technology breakthroughs, 24fps.",
+    "p3_end": "Luminous golden network graph of technological startup ecosystems interconnected by fine capillary lines, glowing over a dark textured paper background, elegant infographic minimalism, 8k --ar 16:9",
     "davinci_recipe": "Fusion: Режим Composite (Multiply) макро-футажу розтікання чорнила + трекінг золотих точок-вузлів (Tracker 3D).",
     "sfx_cue": "Глибокий водяний звук краплі з довгим ревербераційним хвостом (Sub Aquatic Drop)."
   },
@@ -296,13 +296,13 @@ INNOVATIONS = [
     "cat_label": "🔍 Оптичний трюк",
     "cat_color": "emerald",
     "tc": "09:30 – 10:15",
-    "act": "Акт 3 • Запуск ChatGPT",
+    "act": "Акт 3 • Стрімке зростання",
     "tagline": "Анаморфотні сині промені гіперпростору на форматі 2.39:1",
-    "concept": "Коли ChatGPT набирає 100 мільйонів користувачів, фон за спиною героя перетворюється на горизонтальні розтягнуті сині світлові смуги анаморфотного об'єктива (Cineovision Anamorphic Flare). Людина стоїть у центрі, а світ навколо летить у гіперпростір.",
+    "concept": "Коли новий ШІ-сервіс набирає 100 мільйонів користувачів, фон за спиною героя перетворюється на горизонтальні розтягнуті сині світлові смуги анаморфотного об'єктива (Cineovision Anamorphic Flare). Людина стоїть у центрі, а світ навколо летить у гіперпростір.",
     "why_it_works": "Класичний прийом масштабної наукової фантастики Крістофера Нолана для позначення сингулярності.",
-    "p1_start": "Sam Altman standing motionless in a dark minimalist room, looking directly at a small glowing white prompt bar on a desk monitor displaying 'ChatGPT', intimate moody lighting, 2.39:1 scope ratio --ar 16:9",
+    "p1_start": "A male tech founder standing motionless in a dark minimalist room, looking directly at a small glowing white command prompt bar on a desk monitor displaying a blinking cursor, intimate moody lighting, 2.39:1 scope ratio --ar 16:9",
     "p2_flow": "The single white light point explodes into intense horizontal anamorphic cyan and gold streaks stretching from edge to edge of the frame. Background wall dissolves into infinite streaks of warp-speed optical data, 24fps.",
-    "p3_end": "Monumental 2.39:1 scope still: figure standing at the center of a cosmic tunnel of horizontal cyan anamorphic light streaks, symbolizing 100 million users adopting AI simultaneously, Interstellar look, 4k --ar 16:9",
+    "p3_end": "Monumental 2.39:1 scope still: figure standing at the center of a cosmic tunnel of horizontal cyan anamorphic light streaks, symbolizing millions of global users adopting generative AI simultaneously, Interstellar look, 4k --ar 16:9",
     "davinci_recipe": "Color Page: Нода OFX Anamorphic Flares (Streak Angle: 0 deg, Threshold 0.8, Color: Deep Cyan #0ea5e9).",
     "sfx_cue": "Стереофонічний наростаючий резонанс реактивної турбіни (Jet Engine spooling down into low hum)."
   },
@@ -315,30 +315,30 @@ INNOVATIONS = [
     "cat_label": "🔍 Оптичний трюк",
     "cat_color": "emerald",
     "tc": "07:45 – 08:00",
-    "act": "Акт 2 • Масштаб вирішує все",
+    "act": "Акт 2 • Гіпотеза масштабування",
     "tagline": "Червоно-помаранчевий оксамитовий ореол хімічної плівки",
     "concept": "У момент озвучення ключової гіпотези («Масштаб вирішує все») всі яскраві джерела світла в кадрі (лампи, вікна, відблиски на склі) спалахують оксамитовим червоним свіченням (Halation) — фізичним ефектом відбиття світла від підкладки справжньої 35-мм плівки Kodak.",
     "why_it_works": "Додає теплоти та аналогової душі в стерильний комп'ютерний світ штучного інтелекту.",
-    "p1_start": "Medium shot of Ilya Sutskever and Sam Altman leaning over a cluster of prototype GPU servers in a dim lab, cool industrial shadows, authentic high-tech lab setting --ar 16:9",
-    "p2_flow": "The realization of the scaling hypothesis triggers an intense optical reaction: server LEDs and overhead lamps bloom with deep velvet red and golden-orange photochemical halation, bleeding into adjacent dark shadows, 24fps.",
-    "p3_end": "Glorious 35mm Kodak 2383 film still: extreme warm red-orange halation radiating around all light sources, bathing the researchers in authentic analog cinematic warmth, 4k resolution --ar 16:9",
+    "p1_start": "Medium shot of two research scientists leaning over a cluster of prototype AI compute servers in a dim lab, cool industrial shadows, authentic high-tech lab setting --ar 16:9",
+    "p2_flow": "The moment of scientific breakthrough triggers an intense optical reaction: server LEDs and overhead lamps bloom with deep velvet red and golden-orange photochemical halation, bleeding into adjacent dark shadows, 24fps.",
+    "p3_end": "Glorious 35mm Kodak 2383 film still: extreme warm red-orange halation radiating around all light sources, bathing the scientists in authentic analog cinematic warmth, 4k resolution --ar 16:9",
     "davinci_recipe": "Color Page: Нода OFX Halation (Spread: 0.65, Hue: 0.05, Saturation: 1.2, Blend: 0.45 на ключових кадрах).",
     "sfx_cue": "Легкий теплий шурхіт вінілової платівки та низький теплий тон віолончелі."
   },
   {
     "id": 18,
     "num": "18",
-    "name_ua": "Дзеркальний тунель рекурсії AGI",
+    "name_ua": "Дзеркальний тунель рекурсії",
     "name_en": "The Recursive Screen Infinity",
     "cat": "temporal",
     "cat_label": "⏳ Час і простір",
     "cat_color": "purple",
     "tc": "16:00 – 17:00",
-    "act": "Акт 4 • Самовдосконалення AGI",
+    "act": "Акт 4 • Самовдосконалення системи",
     "tagline": "Камера, що нескінченно залітає в саму себе крізь екрани",
     "concept": "Ноутбук на столі показує вікно коду, де запускається модель. Камера залітає в екран — і всередині нього знову стоїть цей стіл з цим ноутбуком, де запускається потужніша модель. Нескінченний фрактальний рух углиб рекурсії.",
     "why_it_works": "Найточніша візуальна метафора технологічної сингулярності: модель, яка навчає ще розумнішу модель.",
-    "p1_start": "Clean modern desk with a MacBook Pro screen open, displaying a terminal window running an AI neural training script, minimalist studio environment --ar 16:9",
+    "p1_start": "Clean modern desk with a high-end laptop open, displaying a dark terminal window running an autonomous code generation script, minimalist studio environment --ar 16:9",
     "p2_flow": "Camera plunges forward into the terminal screen. Inside the terminal is the same desk with a more futuristic workstation, which opens into an even more advanced holographic terminal, endlessly descending down a fractal tunnel, 24fps.",
     "p3_end": "Mind-bending fractal architecture: infinite recursive corridor of nested glowing computer screens and server nodes receding into an abstract technological singularity horizon, Inception aesthetic, 4k --ar 16:9",
     "davinci_recipe": "Fusion: Поєднання однакового футажу у 3D-просторі з циклічним зміщенням TimeSpeed та Scale 0.5 на кожен шар.",
@@ -357,9 +357,9 @@ INNOVATIONS = [
     "tagline": "Повна абсолютна тиша 0.0 dB як найгучніший момент фільму",
     "concept": "За 1.5 секунди до фрази про звільнення вся музика, ембієнт, фонові шуми і дихання моментально зрізаються в 0.0 dB. Екран стає абсолютно чорним. Глядач затримує подих у повній темряві. Потім — надточний сухий звук клацання мишки і спалах кадру.",
     "why_it_works": "Контраст — найсильніша зброя режисера. Повна тиша б'є по сприйняттю сильніше за будь-який вибух.",
-    "p1_start": "Sam Altman on the Google Meet board call, intense medium shot of his calm face illuminated by the cold blue light of the laptop screen, tense corporate atmosphere --ar 16:9",
+    "p1_start": "Intense medium shot of a male tech founder's calm face illuminated by the cold blue light of a laptop screen during an emergency corporate video call, tense atmosphere --ar 16:9",
     "p2_flow": "Audio completely dies to 0.0 dB. The screen snaps instantly into 100% pitch graphite-black void for 1.5 seconds. Out of absolute darkness, a single crisp mouse click triggers a blinding flash of daylight, 24fps.",
-    "p3_end": "Blinding, high-key daylight shot: Sam Altman walking through OpenAI glass turnstiles on Sunday with a green 'VISITOR' badge on his chest, quiet confidence in his eyes, 4k 24fps --ar 16:9",
+    "p3_end": "Blinding, high-key daylight shot: the tech founder walking through modern glass lobby turnstiles wearing a green lanyard guest pass on his chest, quiet confidence in his eyes, 4k 24fps --ar 16:9",
     "davinci_recipe": "Fairlight: Master Bus Mute на 1.5 секунди (жорсткий Cut без Fade). Edit Page: Чорний генеруючий кліп (Solid Color Black) на 36 кадрів.",
     "sfx_cue": "Повний вакуум 0.0 dB (навіть шум приміщення вимкнено), потім один сухий клік мишки Apple Magic Mouse на -2 dB."
   },
@@ -374,9 +374,9 @@ INNOVATIONS = [
     "tc": "18:30 – 20:00",
     "act": "Акт 4 • Фінал епізоду",
     "tagline": "Фізичні будинки та мости розпадаються на золотий бінарний код",
-    "concept": "Нічний панорамний вид Сан-Франциско та серверних кластерів. Поступово бетон, асфальт і метал втрачають щільність, просвічуючись золотою тривимірною сіткою векторів. Місто стає струменями коду, які піднімаються в зоряне небо.",
+    "concept": "Нічний панорамний вид сучасного мегаполіса та серверних кластерів. Поступово бетон, асфальт і метал втрачають щільність, просвічуючись золотою тривимірною сіткою векторів. Місто стає струменями коду, які піднімаються в зоряне небо.",
     "why_it_works": "Фінальний акорд до слів: «Світ набагато пластичніший, ніж здається. Його створюють просто зараз».",
-    "p1_start": "Hyperrealistic twilight aerial photograph of San Francisco and Silicon Valley: concrete skyscrapers, Golden Gate Bridge, and massive server complexes glowing in the dusk, atmospheric realism --ar 16:9",
+    "p1_start": "Hyperrealistic twilight aerial photograph of a sprawling technological metropolis and bay: concrete skyscrapers, suspension bridge, and massive server complexes glowing in the dusk, atmospheric realism --ar 16:9",
     "p2_flow": "Physical matter loses opacity. Concrete, steel, and asphalt dissolve into shimmering semi-transparent golden blueprint wireframe lines and vertical flowing binary code ascending toward the stars, 24fps.",
     "p3_end": "Translucent golden vector wireframe matrix of the city and Earth's orbit, illuminated against deep space, physical reality transformed into pure software, poetic sci-fi finale, 8k --ar 16:9",
     "davinci_recipe": "Color + Fusion: Нода Edge Detect (Колір золотий #f59e0b) змішується через Dissolve з реальним нічним планом міста.",
@@ -471,7 +471,7 @@ def generate_html():
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>20 Кінематографічних Фішок • 3-Промптна Система Google Flow</title>
+  <title>20 Кінематографічних Фішок • Безпечна 3-Промптна Система Google Flow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -585,9 +585,9 @@ def generate_html():
       gap: 6px;
       padding: 0.35rem 0.85rem;
       border-radius: 999px;
-      background: rgba(56, 189, 248, 0.16);
-      border: 1px solid rgba(56, 189, 248, 0.45);
-      color: var(--cyan);
+      background: rgba(52, 211, 153, 0.16);
+      border: 1px solid rgba(52, 211, 153, 0.45);
+      color: var(--emerald);
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
@@ -803,7 +803,7 @@ def generate_html():
     .triad-title {{
       font-size: 12px;
       font-weight: 800;
-      color: var(--cyan);
+      color: var(--emerald);
       letter-spacing: 0.8px;
       text-transform: uppercase;
       display: flex;
@@ -966,24 +966,24 @@ def generate_html():
   <!-- Hero Section -->
   <section class="hero-banner">
     <div class="hero-box">
-      <span class="hero-badge">3-Prompt Google Flow Standard • 20 Master Triads</span>
-      <h1 class="hero-title">20 Кінематографічних Тріад (Старт ➡️ Морфінг ➡️ Фінал)</h1>
+      <span class="hero-badge">🛡️ 100% Policy-Safe • Zero Banned Keywords • 20 Master Triads</span>
+      <h1 class="hero-title">20 Кінематографічних Тріад (Очищені від Блокувань)</h1>
       <p class="hero-desc">
-        Повна система генерації відео для рушія <strong>Google Flow / Veo 2</strong> за архітектурою «First Frame &amp; Last Frame». Кожна фішка складається з 3 окремих команд: точне вхідне зображення (Start Frame), безшовна дія переходу (Motion Prompt), та фінальний фотореалістичний кадр реального життя (End Frame).
+        Повна система генерації відео для <strong>Google Flow / Veo 2</strong>, де всі чутливі тригери фільтрів (імена реальних публічних осіб, брендові назви та конфіденційні документи) замінено на кінематографічні контекстні архетипи. Промпти більше <strong>не викликають помилок безпеки і не витрачають даремно токени</strong>.
       </p>
 
       <div class="triad-explainer">
         <div class="expl-box" style="border-left: 3px solid var(--purple);">
           <div class="expl-tag" style="color:var(--purple);">1. ПРОМПТ 1: Start Image</div>
-          <p class="expl-text">Генерує початкову опорну точку кадру (естетика ретро, аніме, макро або спогад). Завантажується у поле <strong>Start Image</strong>.</p>
+          <p class="expl-text">Генерує початкову опорну точку кадру А (архетип персонажа, деталі ретро або макро). Завантажується у поле <strong>Start Image</strong>.</p>
         </div>
         <div class="expl-box" style="border-left: 3px solid var(--cyan);">
           <div class="expl-tag" style="color:var(--cyan);">2. ПРОМПТ 2: Video Morph Action</div>
-          <p class="expl-text">Інструкція для відеогенератора Google Flow: описує фізику руху камери, розчинення матеріалів, зміну світла та оптики.</p>
+          <p class="expl-text">Інструкція для Google Flow: описує фізику руху камери, розчинення матеріалів, зміну світла та оптику між точками А і В.</p>
         </div>
         <div class="expl-box" style="border-left: 3px solid var(--emerald);">
           <div class="expl-tag" style="color:var(--emerald);">3. ПРОМПТ 3: End Image</div>
-          <p class="expl-text">Генерує цільову точку трансформації: 100% фотореалістичний кадр реального життя. Завантажується у поле <strong>End Image</strong>.</p>
+          <p class="expl-text">Генерує цільову точку трансформації: 100% фотореалістичний кадр реального життя без згадки заборонених імен. Завантажується у <strong>End Image</strong>.</p>
         </div>
       </div>
     </div>
