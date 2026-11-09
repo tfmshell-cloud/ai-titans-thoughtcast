@@ -94,7 +94,7 @@
 ### 🎯 Тріада для генерації:
 1. **ПРОМПТ 1: Start Image (Кадр А):**
    ```text
-   Macro vintage shot of a 1984 British Sinclair ZX Spectrum 48K microcomputer with distinctive rubber keyboard on a wooden school desk, beside a portable cassette recorder with spinning tape reels, warm desk lamp, nostalgic British tech grain --ar 16:9
+   Macro vintage shot of a 1984 vintage 1984 British 8-bit personal microcomputer with iconic rubber keyboard on a wooden school desk, beside a portable cassette recorder with spinning tape reels, warm desk lamp, nostalgic British tech grain --ar 16:9
    ```
 2. **ПРОМПТ 2: Video Morph Action (Рух у Google Flow):**
    ```text
@@ -150,7 +150,7 @@
    ```
 2. **ПРОМПТ 2: Video Morph Action (Рух у Google Flow):**
    ```text
-   Camera tracks over mountains of floppy disks and CRT monitors. The camera glides directly into the curvature of the Amiga monitor, where scrolling lines of C-code dissolve seamlessly into vibrant colorful 2D isometric pixel-art sprites of a theme park roller-coaster, 24fps.
+   Camera tracks over mountains of floppy disks and CRT monitors. The camera glides directly into the curvature of the vintage color CRT monitor, where scrolling lines of C-code dissolve seamlessly into vibrant colorful 2D isometric pixel-art sprites of a theme park roller-coaster, 24fps.
    ```
 3. **ПРОМПТ 3: End Image (Кадр В - Фінал):**
    ```text
@@ -718,7 +718,7 @@
 ### 🎯 Тріада для генерації:
 1. **ПРОМПТ 1: Start Image (Кадр А):**
    ```text
-   Extreme macro cinematic photograph of an official solid gold Nobel Prize medal resting on deep royal blue velvet, intricate classical engraved profiles in razor-sharp focus, warm dramatic directional studio lighting, 35mm film grain --ar 16:9
+   Extreme macro cinematic photograph of a prestigious international solid gold scientific prize medal resting on deep royal blue velvet, intricate classical engraved profiles in razor-sharp focus, warm dramatic directional studio lighting, 35mm film grain --ar 16:9
    ```
 2. **ПРОМПТ 2: Video Morph Action (Рух у Google Flow):**
    ```text

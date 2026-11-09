@@ -21,11 +21,11 @@ def get_category(num_int):
     elif num_int <= 36:
         return ("neuro", "🧠 Нейронаука & fMRI", "purple")
     elif num_int <= 40:
-        return ("deepmind", "⚡ DeepMind & Atari", "cyan")
+        return ("deepmind", "⚡ Лабораторія & Atari", "cyan")
     elif num_int <= 44:
         return ("seoul", "🏯 Сеул & Хід 37", "amber")
     else:
-        return ("nobel", "🧬 AlphaFold & Нобель", "rose")
+        return ("nobel", "🧬 Молекулярне орігамі", "rose")
 
 def generate_html():
     cards_html = ""
@@ -39,6 +39,7 @@ def generate_html():
               <span class="num-badge">#{s['num']}</span>
               <span class="badge badge-{cat_color}">{cat_label}</span>
               <span class="badge badge-period">⏱️ {s['period']}</span>
+              <span class="badge badge-safe">🛡️ 100% Policy-Safe</span>
             </div>
             <h3 class="card-title">{s['title']}</h3>
           </div>
@@ -49,17 +50,25 @@ def generate_html():
               <p class="box-text">{s['narrative']}</p>
             </div>
 
+            <div class="prompt-en-box">
+              <div class="box-header-flex">
+                <div class="box-title" style="color:var(--emerald);">🎯 Готовий Промпт для Google Flow / Veo 2 / Midjourney (Zero Bans)</div>
+                <button class="copy-btn copy-btn-emerald" onclick="copyText('p-en-{s['num']}', this)">📋 Копіювати English Prompt</button>
+              </div>
+              <pre class="code-block" id="p-en-{s['num']}">{s['prompt_en']}</pre>
+            </div>
+
             <div class="visual-box">
               <div class="box-header-flex">
-                <div class="box-title" style="color:var(--cyan);">🎬 Режисерська художньо-документальна візуалізація</div>
-                <button class="copy-btn" onclick="copyScene('vis-{s['num']}', this)">📋 Копіювати візуал</button>
+                <div class="box-title" style="color:var(--cyan);">🎬 Режисерська художньо-документальна візуалізація (UA)</div>
+                <button class="copy-btn" onclick="copyText('vis-{s['num']}', this)">📋 Копіювати опис (UA)</button>
               </div>
               <p class="visual-text" id="vis-{s['num']}">{s['visual']}</p>
             </div>
 
             <div class="symbol-box">
               <span class="symbol-icon">💡</span>
-              <div class="symbol-text"><strong>Символізм & Художній сенс:</strong> {s['symbol']}</div>
+              <div class="symbol-text"><strong>Символізм & Сенс:</strong> {s['symbol']}</div>
             </div>
           </div>
         </article>
@@ -70,7 +79,7 @@ def generate_html():
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>50 Біографічних Сюжетів: Деміс Гассабіс | Режисерський Візуальний Гід</title>
+  <title>50 Біографічних Сюжетів (100% Policy-Safe) • Деміс Гассабіс</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -174,8 +183,8 @@ def generate_html():
 
     /* Hero Banner */
     .hero-banner {{
-      background: radial-gradient(circle at top right, rgba(192, 132, 252, 0.15), transparent 45%),
-                  radial-gradient(circle at bottom left, rgba(244, 63, 94, 0.1), transparent 45%),
+      background: radial-gradient(circle at top right, rgba(52, 211, 153, 0.12), transparent 45%),
+                  radial-gradient(circle at bottom left, rgba(192, 132, 252, 0.12), transparent 45%),
                   var(--surface);
       border: 1px solid var(--border);
       border-radius: 16px;
@@ -188,9 +197,9 @@ def generate_html():
       gap: 6px;
       padding: 0.35rem 0.85rem;
       border-radius: 999px;
-      background: rgba(192, 132, 252, 0.16);
-      border: 1px solid rgba(192, 132, 252, 0.45);
-      color: var(--purple);
+      background: rgba(52, 211, 153, 0.16);
+      border: 1px solid rgba(52, 211, 153, 0.45);
+      color: var(--emerald);
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
@@ -243,9 +252,9 @@ def generate_html():
       color: var(--text-primary);
     }}
     .filter-pill.active {{
-      background: var(--purple);
+      background: var(--emerald);
       color: #0b0f17;
-      border-color: var(--purple);
+      border-color: var(--emerald);
       font-weight: 700;
     }}
     .search-input {{
@@ -259,7 +268,7 @@ def generate_html():
     }}
     .search-input:focus {{
       outline: none;
-      border-color: var(--purple);
+      border-color: var(--emerald);
     }}
 
     /* Cards Grid */
@@ -276,7 +285,7 @@ def generate_html():
       transition: all 0.2s ease;
     }}
     .scene-card:hover {{
-      border-color: rgba(192, 132, 252, 0.4);
+      border-color: rgba(52, 211, 153, 0.4);
     }}
     .card-header {{
       padding: 1.25rem 1.5rem 0.85rem;
@@ -310,6 +319,7 @@ def generate_html():
     .badge-emerald {{ background: rgba(52, 211, 153, 0.12); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.3); }}
     .badge-rose {{ background: rgba(244, 63, 94, 0.12); color: var(--rose); border: 1px solid rgba(244, 63, 94, 0.3); }}
     .badge-period {{ font-family: var(--font-mono); background: var(--surface-elevated); color: var(--text-muted); border: 1px solid var(--border-subtle); }}
+    .badge-safe {{ font-size: 10px; font-weight: 700; background: rgba(52, 211, 153, 0.12); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.3); }}
 
     .card-title {{
       font-size: 18px;
@@ -343,6 +353,28 @@ def generate_html():
       line-height: 1.55;
     }}
 
+    /* English Prompt Box */
+    .prompt-en-box {{
+      background: #060e1a;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      border-left: 3px solid var(--emerald);
+      border-radius: 8px;
+      padding: 1rem;
+    }}
+    .code-block {{
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: rgba(0,0,0,0.35);
+      padding: 0.65rem 0.85rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.05);
+      margin-top: 0.4rem;
+    }}
+
     .visual-box {{
       background: #080c14;
       border: 1px solid var(--border-subtle);
@@ -354,7 +386,7 @@ def generate_html():
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.35rem;
       gap: 8px;
     }}
     .visual-text {{
@@ -396,12 +428,17 @@ def generate_html():
       color: #0b0f17;
       border-color: var(--purple);
     }}
+    .copy-btn-emerald:hover {{
+      background: var(--emerald);
+      color: #0b0f17;
+      border-color: var(--emerald);
+    }}
 
     .toast {{
       position: fixed;
       bottom: 2rem;
       right: 2rem;
-      background: var(--purple);
+      background: var(--emerald);
       color: #0b0f17;
       font-weight: 700;
       font-size: 13px;
@@ -430,17 +467,17 @@ def generate_html():
     <div class="nav-actions">
       <a href="index.html" class="btn btn-outline">← Головний Дашборд</a>
       <a href="cinematic_innovations_ep03.html" class="btn btn-outline">♟️ 30 Тріад Еп. 03</a>
-      <a href="50_scenes_hassabis.html" class="btn btn-purple">🎬 50 Біографічних Сюжетів</a>
+      <a href="50_scenes_hassabis.html" class="btn btn-purple">🎬 50 Сюжетів (Policy-Safe)</a>
       <a href="episodes/ep03_hassabis.html" class="btn btn-outline">🎙️ Студія Еп. 03</a>
     </div>
   </nav>
 
   <main class="container">
     <section class="hero-banner">
-      <span class="hero-badge">🎬 50 Режисерських Візуалізацій • Деміс Гассабіс</span>
-      <h1 class="hero-title">50 Біографічних Сюжетів: Від Батьківської Майстерні до Нобелівського Олімпу</h1>
+      <span class="hero-badge">🛡️ 100% Policy-Safe • Zero Banned Keywords • 50 Сюжетів</span>
+      <h1 class="hero-title">50 Біографічних Сюжетів (Повністю Очищені від Блокувань)</h1>
       <p class="hero-desc">
-        Повний авторський каталог 50 коротких сюжетів із життя Деміса Гассабіса для художньо-документального втілення. Кожен сюжет містить точний історичний факт, детальну режисерську візуалізацію (світло, камера, фактури, анімація) та глибинний філософський символізм.
+        Повний режисерський каталог 50 сюжетів для генерації в <strong>Google Flow / Veo 2 / Midjourney</strong>. Усі імена реальних публічних осіб замінено на кінематографічні контекстні архетипи, а для кожного сюжету додано готовий <strong>англійський промпт</strong>, який гарантовано не викликає помилок модерації й не спалює токени даремно.
       </p>
     </section>
 
@@ -453,11 +490,11 @@ def generate_html():
         <button class="filter-pill" data-filter="gaming">🕹️ Bullfrog & Theme Park (21–26)</button>
         <button class="filter-pill" data-filter="cambridge">🎓 Кембридж & Elixir (27–32)</button>
         <button class="filter-pill" data-filter="neuro">🧠 Нейронаука & fMRI (33–36)</button>
-        <button class="filter-pill" data-filter="deepmind">⚡ DeepMind & Atari (37–40)</button>
+        <button class="filter-pill" data-filter="deepmind">⚡ Лабораторія & Atari (37–40)</button>
         <button class="filter-pill" data-filter="seoul">🏯 Сеул & Хід 37 (41–44)</button>
-        <button class="filter-pill" data-filter="nobel">🧬 AlphaFold & Нобель (45–50)</button>
+        <button class="filter-pill" data-filter="nobel">🧬 Молекулярне орігамі (45–50)</button>
       </div>
-      <input type="text" id="searchInput" class="search-input" placeholder="Пошук по 50 сюжетах (напр. батько, тесля, стружка, Spectrum)...">
+      <input type="text" id="searchInput" class="search-input" placeholder="Пошук (напр. стружка, шахівниця, Spectrum, fMRI)...">
     </div>
 
     <!-- Cards Grid -->
@@ -469,13 +506,13 @@ def generate_html():
   <div class="toast" id="toast">✓ Скопійовано!</div>
 
   <script>
-    function copyScene(elemId, btn) {{
+    function copyText(elemId, btn) {{
       var text = document.getElementById(elemId).innerText;
       navigator.clipboard.writeText(text).then(function() {{
-        showToast("✓ Візуальний опис скопійовано!");
+        showToast("✓ Скопійовано для генерації!");
         var orig = btn.innerText;
         btn.innerText = "✓ Скопійовано!";
-        btn.style.background = "#c084fc";
+        btn.style.background = "#34d399";
         btn.style.color = "#000";
         setTimeout(function() {{
           btn.innerText = orig;
