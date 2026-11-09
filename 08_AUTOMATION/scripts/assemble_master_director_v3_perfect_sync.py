@@ -172,7 +172,8 @@ def run():
                 ("EP01_CLIP_STILL_CRT_PixelArt_4s", 4.0, "CRT monitor displaying pixel interface (Dramatic Scene Pause)")
             ]
         },
-        # SCENE 03: John Burroughs School (50.14s)
+        # SCENE 03: John Burroughs School & Engineering Autonomy (50.13s)
+        # MONOLITHIC CHRONOLOGICAL SYNC: 1:12 - 1:40 (73.67s -> 99.67s) + FUSION FX + MGFX OVERLAYS
         {
             "id": 3,
             "title": "John Burroughs School & Engineering Autonomy",
@@ -181,11 +182,20 @@ def run():
             ],
             "scene_pause_s": 4.5,
             "visuals": [
-                ("EP01_CLIP_STILL_Burroughs_Campus_6s", 6.14, "Archival Photo: John Burroughs School campus"),
-                ("EP01_V1_NEW_02_Burroughs_Boardroom", 11.0, "School assembly auditorium"),
-                ("EP01_V2_ARCH_01_Altman_Portrait", 12.0, "Young Altman reflection in window glass"),
-                ("EP01_CLIP_STILL_Loopt_Shirt_10s", 10.0, "Archival Photo: Young Altman in founder t-shirt"),
-                ("EP01_V2_ARCH_05_Burroughs_Campus", 11.0, "Burroughs campus at dusk (Dramatic Scene Pause)")
+                # 67.54s - 73.67s: John Burroughs School campus exterior
+                ("EP01_CLIP_STILL_Burroughs_Campus_6s", 6.13, "Archival Photo: John Burroughs School campus"),
+                # 73.67s - 80.67s: Light point explodes into horizontal streaks (Singularity / Coming out)
+                ("Light_point_explodes_into_streaks_c712a46e_1080p", 7.00, "Light point exploding into streaks — Singularity / Public coming out"),
+                # 80.67s - 85.17s: Glowing plasma fusion torus (Defiance of authority / Inner power)
+                ("ep01_flow_09_fusion_torus", 4.50, "Fusion plasma reactor core — Inner energy & power"),
+                # 85.17s - 90.17s: ElevenLabs resolute young Altman portrait
+                ("ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53", 5.00, "ElevenLabs: Slow, powerful resolute young Altman portrait"),
+                # 90.17s - 99.67s: Archival young Altman reflection in glass (Axiom of autonomy)
+                ("EP01_V2_ARCH_01_Altman_Portrait", 9.50, "Archival: Young Altman reflection in glass — Axiom of autonomy"),
+                # 99.67s (01:39.67 / ~1:40) - 106.67s: The requested next photo at 1:40!
+                ("EP01_CLIP_STILL_Loopt_Shirt_10s", 7.00, "Archival Photo: Young Altman in Loopt founder t-shirt (1:40 Anchor)"),
+                # 106.67s - 117.67s: Burroughs campus at dusk (Dramatic Scene Pause)
+                ("EP01_V2_ARCH_05_Burroughs_Campus", 11.00, "Burroughs campus at dusk (Dramatic Scene Pause)")
             ]
         },
         # SCENE 04: Stanford & Loopt Genesis (38.93s)
@@ -482,6 +492,54 @@ def run():
                 jobs_rec_f = current_visual_rec_f
             print(f"  🎥 [{t_s:05.1f}s - {t_s + dur_actual_s:05.1f}s] V1: {v_clip} ({dur_actual_s:.1f}s) — {v_label}")
             current_visual_rec_f += actual_dur_f
+
+    # --- 2.5 Place 4K Motion Graphics on Track V2 & Apply Fusion/Transitions in Scene 03 ---
+    print("\n--- 2.5 Placing 4K Motion Graphics on Track V2 & Applying Fusion/Transitions ---")
+    # 1. Overlay 1: Turning point (John Burroughs School 2001)
+    mgfx1_rec_f = start_frame + tc_to_frames(73.67)
+    it_mgfx1 = place_item("EP01_MGFX_01_Burroughs_Turning_Point_10s", "video", 2, mgfx1_rec_f, 10.0)
+    if it_mgfx1:
+        print(f"  🎨 Track V2 Motion Graphic: EP01_MGFX_01_Burroughs_Turning_Point_10s @ 73.67s (10.0s)")
+
+    # 2. Overlay 2: Autonomy Axiom Quote
+    mgfx2_rec_f = start_frame + tc_to_frames(86.00)
+    it_mgfx2 = place_item("EP01_MGFX_02_Autonomy_Axiom_Quote_12s", "video", 2, mgfx2_rec_f, 12.0)
+    if it_mgfx2:
+        print(f"  🎨 Track V2 Motion Graphic: EP01_MGFX_02_Autonomy_Axiom_Quote_12s @ 86.00s (12.0s)")
+
+    # 3. Apply Fades / Dissolves & Fusion FX to Scene 03 items on V1
+    v1_items = tl.GetItemListInTrack("video", 1) or []
+    for item in v1_items:
+        iname = item.GetName()
+        if "Light_point_explodes_into_streaks_c712a46e" in iname:
+            item.SetFades({'FadeIn': 12.0, 'FadeOut': 8.0})
+            try:
+                comp = item.GetFusionCompByIndex(1) or item.AddFusionComp()
+                if comp:
+                    tools = comp.GetToolList()
+                    media_in = None
+                    media_out = None
+                    for k, t in tools.items():
+                        n = t.GetAttrs('TOOLS_Name')
+                        if 'MediaIn' in n: media_in = t
+                        elif 'MediaOut' in n: media_out = t
+                    glow = comp.FindTool('Glow1') or comp.AddTool('Glow')
+                    if glow and media_in and media_out:
+                        glow.ConnectInput('Input', media_in)
+                        media_out.ConnectInput('Input', glow)
+                        glow.SetInput('Glow', 0.65)
+                        glow.SetInput('GlowSize', 18.0)
+                        print("  ✨ Fusion FX: Wired Glow1 on Light_point_explodes_into_streaks!")
+            except Exception as e:
+                print("  Note on Fusion FX:", e)
+        elif "fusion_torus" in iname:
+            item.SetFades({'FadeIn': 8.0, 'FadeOut': 8.0})
+        elif "ElevenLabs_video_seedance-2-5_Slow" in iname:
+            item.SetFades({'FadeIn': 10.0, 'FadeOut': 8.0})
+        elif "EP01_V2_ARCH_01_Altman_Portrait" in iname:
+            item.SetFades({'FadeIn': 8.0, 'FadeOut': 10.0})
+        elif "EP01_CLIP_STILL_Loopt_Shirt_10s" in iname:
+            item.SetFades({'FadeIn': 10.0, 'FadeOut': 0.0})
 
     # --- 3. Place Polyphonic Cinematic Score on Track A2 at -30.0 dB ---
     print("\n--- 3. Placing Cinematic Score Beds on Track A2 (Broadcasting Standard: -30.0 dB) ---")

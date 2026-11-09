@@ -19,6 +19,7 @@ ENV/
 05_RAW_FOOTAGE/veo_clips/*.mp4
 05_RAW_FOOTAGE/veo_clips/*.mov
 05_RAW_FOOTAGE/flow_renders/*.mov
+05_RAW_FOOTAGE/rendered_cinematic_stills_4k/*.mov
 05_RAW_FOOTAGE/dossiers_press/*.png
 05_RAW_FOOTAGE/speaker_portraits/*.jpg
 05_RAW_FOOTAGE/speaker_portraits/*.png
