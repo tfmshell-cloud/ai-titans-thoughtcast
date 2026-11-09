@@ -134,12 +134,13 @@ def run():
             "scene_pause_s": 4.0,
             "visuals": [
                 ("EP01_V1_CREATIVE_01_Equations_Void_8s", 8.0, "HERO OPENING: Abstract human kneeling/meditating in golden mathematical equations on black void"),
-                ("EP01_V2_ARCH_05_Burroughs_Campus", 5.0, "Burroughs High School strict brick corridors (Conditioning)"),
+                # REPLACED 2nd SHOT: Burroughs school exterior replaced with soulful 8yo Sam Altman portrait
+                ("EP01_CLIP_STILL_Young_Altman_Portrait_5s", 5.0, "Young 8yo Sam Altman soulful portrait looking into camera (Pressure of societal rules & expectation)"),
                 ("EP01_CLIP_V1_05_Eye_Code", 5.03, "Extreme close-up eye reflecting green code (Social judgment & fear)")
             ]
         },
         # SCENE 02: Macintosh LC II & Extension of Thought Quote (51.69s)
-        # 18.0s: 360 rotation animation into living child -> disassembling motherboard -> quote beat
+        # REORDERED FLOW: Rainbow Apple Logo -> Floppy Insert -> 360 Turn European Boy -> Screwdriver Disassembly -> Quote Beat -> Part C
         {
             "id": 2,
             "title": "Macintosh LC II & Extension of Thought Quote",
@@ -150,19 +151,19 @@ def run():
             ],
             "scene_pause_s": 4.0,
             "visuals": [
-                # 18.0s - 23.0s: 360-degree animation rotating from concept into real child
-                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59", 5.0, "360° turn animation morphing into living child sitting with computer"),
-                # 23.0s - 28.0s: Boy with screwdriver disassembling motherboard (Lip-sync to VO: 'розбирає системний блок')
-                ("ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51", 5.0, "HERO SHOT: 8yo boy with screwdriver taking apart motherboard on carpet"),
-                # 28.0s - 32.0s: Floppy disk insert
+                # 18.0s - 22.0s: HERO SHOT 1: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight
+                ("EP01_CLIP_STILL_Mac_Rainbow_Logo_4s", 4.0, "HERO SHOT: Macintosh chassis corner with classic rainbow Apple logo in warm sunlight"),
+                # 22.0s - 26.0s: HERO SHOT 2: Child inserting 3.5 floppy disk into Macintosh drive
                 ("EP01_CLIP_STILL_Child_Floppy_Disk_4s", 4.0, "Child inserting 3.5 floppy disk into Macintosh drive"),
-                # 32.0s - 36.0s: Computer circuitry flythrough (Narration: 'Через тридцять років він напише:')
-                ("Camera_moving_through_computer_m_clip", 4.0, "Flythrough computer circuitry & microchips"),
+                # 26.0s - 31.0s: HERO SHOT 3: 360° turn animation morphing into living European child sitting with computer
+                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37", 5.0, "360° turn animation morphing into living European child sitting with computer"),
+                # 31.0s - 36.0s: HERO SHOT 4: Boy with screwdriver disassembling motherboard (Lip-sync to VO: 'розбирає системний блок')
+                ("ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51", 5.0, "HERO SHOT: 8yo European boy with screwdriver taking apart motherboard on carpet"),
                 # 36.0s - 48.0s: DEDICATED QUOTE BEAT (12.0s)
                 ("EP01_UA_CLIP_CARD_01_Extension_Of_Thought_12s", 12.0, "4K Ukrainian Quote Card: «Ця машина розмила лінію між моїм внутрішнім світом...»"),
                 # 48.0s - 65.69s: Part C Narration (17.69s)
                 ("EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992", 6.0, "Authentic 1992 Apple Macintosh LC commercial"),
-                ("ep01_flow_01_mac_chassis", 5.0, "Macintosh LC II chassis macro"),
+                ("Camera_moving_through_computer_m_clip", 5.0, "Flythrough computer circuitry & microchips"),
                 ("Boy_viewing_glowing_terminal_code", 6.69, "Boy viewing glowing terminal code (Indifference to authority)"),
                 # 65.69s - 69.69s: Scene Pause
                 ("EP01_CLIP_STILL_CRT_PixelArt_4s", 4.0, "CRT monitor displaying pixel interface (Dramatic Scene Pause)")
@@ -380,7 +381,8 @@ def run():
                 ("EP01_UA_CLIP_CARD_06_730_Employees_11s", 10.70, "4K Ukrainian Quote Card: «Або ви йдете у відставку і повертаєте Сема Альтмана...»"),
                 # Part C Visuals
                 ("EP01_CLIP_STILL_Employees_Solidarity_9s", 9.0, "OpenAI employees gathered in solidarity"),
-                ("ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37", 9.0, "ElevenLabs: Golden network lattice uniting"),
+                ("Tech_employees_gathered_in_office", 5.0, "OpenAI office teams standing in solidarity"),
+                ("ep01_flow_05_neural_lattice", 4.0, "Neural lattice network connecting global power"),
                 ("EP01_CLIP_STILL_730_Letter_Doc_9s", 9.0, "Document: Open letter signed by 730 employees"),
                 ("EP01_V1_B3_04_Golden_Grid_Stabilizing", 9.94, "Golden grid stabilizing power"),
                 # Scene Pause
