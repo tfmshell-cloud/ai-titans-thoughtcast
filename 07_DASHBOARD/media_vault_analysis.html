@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Titans: Голлівудський Медіа-Волт & Секундний Аналіз Футажів</title>
+  <style>
+    :root {
+      --bg: #07090e;
+      --surface: #0f141f;
+      --surface-elevated: #161e2e;
+      --border: #1e293b;
+      --border-accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --gold: #fbbf24;
+      --emerald: #10b981;
+      --rose: #f43f5e;
+      --cyan: #38bdf8;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+      --mono: ui-monospace, Menlo, Monaco, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      padding: 2rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 1500px; margin: 0 auto; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #131b2e 0%, #0a0e17 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .badge-gold { background: rgba(251, 191, 36, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .badge-emerald { background: rgba(16, 185, 129, 0.15); color: var(--emerald); border: 1px solid var(--emerald); }
+    .badge-rose { background: rgba(244, 63, 94, 0.15); color: var(--rose); border: 1px solid var(--rose); }
+    .badge-cyan { background: rgba(56, 189, 248, 0.15); color: var(--cyan); border: 1px solid var(--cyan); }
+
+    h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+    p.lead { color: var(--text-muted); font-size: 1.05rem; max-width: 900px; margin-bottom: 1.5rem; }
+
+    .quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid var(--border);
+    }
+    .btn-primary { background: var(--cyan); color: #000; border-color: var(--cyan); }
+    .btn-primary:hover { background: #7dd3fc; }
+    .btn-secondary { background: var(--surface-elevated); color: var(--text); }
+    .btn-secondary:hover { background: #222f46; border-color: var(--cyan); }
+
+    /* Grid Sections */
+    section { margin-bottom: 3.5rem; }
+    h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+    p.section-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .stat-val { font-size: 1.8rem; font-weight: 800; color: var(--cyan); font-family: var(--mono); }
+    .stat-lbl { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
+
+    /* Video Cards Grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s ease;
+    }
+    .video-card:hover { border-color: var(--cyan); }
+    .video-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .video-title { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+    .video-file { font-family: var(--mono); font-size: 0.75rem; color: var(--cyan); margin-top: 0.25rem; }
+    .video-body { padding: 1.25rem; flex-grow: 1; display: flex; flex-direction: column; gap: 1rem; }
+    
+    .critique-box {
+      background: rgba(244, 63, 94, 0.08);
+      border-left: 3px solid var(--rose);
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.85rem;
+    }
+    .critique-title { font-weight: 700; color: var(--rose); margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.4rem; }
+
+    .golden-box {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 3px solid var(--emerald);
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.85rem;
+    }
+    .golden-title { font-weight: 700; color: var(--emerald); margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.4rem; }
+    .golden-timecode { font-family: var(--mono); font-size: 0.9rem; color: #fff; font-weight: 800; }
+
+    .video-footer {
+      padding: 1rem 1.25rem;
+      background: var(--surface-elevated);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .meta-tag { font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted); }
+
+    /* Image Gallery */
+    .image-accordion { margin-bottom: 2rem; }
+    .theme-header {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+      display: flex;
+      justify-content: space-between;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .img-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .img-card:hover { transform: translateY(-3px); border-color: var(--cyan); }
+    .img-card img { width: 100%; height: 130px; object-fit: cover; display: block; }
+    .img-meta { padding: 0.65rem 0.85rem; font-size: 0.75rem; font-family: var(--mono); color: var(--text-muted); }
+    .img-name { color: var(--text); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <div class="badge badge-gold">🏆 OSCAR-GRADE PRODUCTION ARCHITECTURE</div>
+    <h1>AI TITANS (СЕМ АЛЬТМАН): ГОЛЛІВУДСЬКИЙ МЕДІА-ВОЛТ</h1>
+    <p class="lead">
+      Повний професійний каталог і посекундний аналіз 25 нових AI-відеокліпів та 50 концепт-зображень.
+      Кожен кадр перевірено на артефакти, визначено точні хронометражі золотих фрагментів (In/Out) та синхронізовано з 16-хвилинним мастер-таймлайном DaVinci Resolve.
+    </p>
+
+    <div class="stat-strip">
+      <div class="stat-card">
+        <div class="stat-val">16:00.00</div>
+        <div class="stat-lbl">Мастер-Таймлайн (23,040 Кадрів)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">0 DUPS</div>
+        <div class="stat-lbl">Дублікатів Відео (100% Унікальність)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">0 CLASH</div>
+        <div class="stat-lbl">Колізій V2/V3 (Ніколи 3 шари)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">17 TAKES</div>
+        <div class="stat-lbl">100% Український Дубляж (+2.0 dB)</div>
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <a href="http://127.0.0.1:8765/open_folder?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations" class="btn btn-primary" target="_blank">
+        📁 Відкрити 25 Відео у Finder
+      </a>
+      <a href="http://127.0.0.1:8765/open_folder?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images" class="btn btn-secondary" target="_blank">
+        🖼️ Відкрити 50 Зображень у Finder
+      </a>
+      <a href="https://github.com/tfmshell-cloud/ai-titans-thoughtcast" class="btn btn-secondary" target="_blank">
+        🐙 GitHub Репозиторій
+      </a>
+      <a href="index.html" class="btn btn-secondary">
+        📊 Головний Дашборд
+      </a>
+    </div>
+  </header>
+
+  <!-- SECTION 1: 25 VIDEOS IN-DEPTH CRITIQUE -->
+  <section>
+    <h2>🎬 СЕКУНДНИЙ РОЗБІР 25 AI-ВІДЕОКЛІПІВ: БРАК, АРТЕФАКТИ ТА ЗОЛОТІ СУБХОХОДЖЕННЯ</h2>
+    <p class="section-sub">
+      Ретельний покадровий аудит. Більшість згенерованих відео не можна ставити цілком через аніме-вставки, раптові телепортації або цифрові спотворення. Ними сформовано точні таймкоди для монтажу.
+    </p>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIPS</div>
+            <div class="video-title">Еволюція засновника: від спальні 90-х до дата-центру</div>
+            <div class="video-file">Boy_aging_into_tech_leader_cd380219_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Різкі неприродні телепортації на 2.5s (гараж) та 3.8s (офіс). Людина зникає і з'являється у новому просторі без мотивованого переходу. Повністю ставити не можна.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:02.2 (Тейк А) та 00:05.8 - 00:09.9 (Тейк Б)</div>
+            <div style="margin-top: 0.25rem;">Тейк А: 2.2с теплого світла дитячої кімнати з CRT-монітором. Тейк Б: 4.1с монументального сидіння за скляним столом у нескінченному масиві серверів Stargate.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 / АКТ 4</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Boy_aging_into_tech_leader_cd380219_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Смарагдове сяйво першого термінала (Macintosh 1993)</div>
+            <div class="video-file">Boy_viewing_glowing_terminal_code_a3fe5f00_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Жодних дефектів. Плавний кінематографічний наплив, фотореалістична шкіра та очі, що відбивають смарагдово-блакитні рядки UNIX-коду.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">Бездоганна 10-секундна атмосфера початку кодингу Сема Альтмана. Підходить під слова диктора про перше знайомство з Mac.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:15 - 00:45)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Boy_viewing_glowing_terminal_code_a3fe5f00_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Гіперпростір літер та математичних матриць</div>
+            <div class="video-file">Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Висока швидкість руху — може викликати сенсорне перевантаження, якщо ставити довше 6 секунд.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.0 - 00:07.5 (5.5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Швидкісний політ крізь токени та символи. Ідеально під розповідь про те, як мова перетворюється на обчислювальний простір.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (12:00 - 13:00)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Макро-проліт над архітектурою материнської плати</div>
+            <div class="video-file">Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Кінець кліпу трохи сповільнюється у блюр.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:07.0 (7.0 секунд)</div>
+            <div style="margin-top: 0.25rem;">Золотаві мідні доріжки, чіпи та конденсатори. Ілюструє інженерний перехід YC до хардверних стартапів.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 2 (04:15 - 04:40)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Орбіта навколо чорно-білої фотографії на столі</div>
+            <div class="video-file">Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Глибока документальна ностальгія, м'яке аналогове світло лампи.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:01.0 - 00:08.5 (7.5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Погляд у минуле: школа Джона Берроуза, спогади про формування характеру за столом.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:45 - 01:15)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Пірнання в глибину скляного термінала / Квантовий перехід</div>
+            <div class="video-file">Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Початок має невеликий мікроривок рендерингу (перші 12 кадрів).</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00.8 - 00:08.5 (7.7 секунд)</div>
+            <div style="margin-top: 0.25rem;">Камера пробиває скло фосфорного монітора і входить у нескінченний світ нейронних потоків. Ударний монтажний стик.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (13:10 - 13:20)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Супутниковий HUD-трекінг автомобілів у нічному місті (Loopt)</div>
+            <div class="video-file">Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Досконала тактікал-візуалізація геолокації.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">Точне візуальне втілення першого стартапу Альтмана Loopt (геолокаційний трекер друзів у реальному часі).</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (01:45 - 02:15)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">EMMY / OSCAR GRADE</div>
+            <div class="video-title">Хлопчик із викруткою розбирає материнку Apple на килимі</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1280x720 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Жодних дефектів! Абсолютний фестивальний шедевр: зерно плівки Kodak, пилинки, природні рухи дитячих рук.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:05.0 (Всі 5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Ключовий архетипічний кадр дитинства Сема Альтмана. «Він не просто грав у ігри, він хотів знати, як влаштований кремній».</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:15 - 00:35)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-rose">CRITICAL CUT (USE 2.5s-5.0s ONLY)</div>
+            <div class="video-title">Студент із рюкзаком іде крізь кампус Стенфорда</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1280x720 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Початок 00:00 - 00:02.2 — це 2D аніме з неприродним махом рюкзака (те, що помітив користувач). СТРОГО ВИРІЗАТИ!</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.5 - 00:05.0 (2.5 секунди / 61 кадр)</div>
+            <div style="margin-top: 0.25rem;">Після переходу: 100% фотореалістичний юнак у худі з військовим рюкзаком іде нічними іспанськими арками Стенфорда. Драматично і сильно.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (01:30 - 02:00)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Екстремальне макро очей, що відбивають безмежність коду</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1280x720 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Гіпнотичний фокус на райдужці ока.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:05.0 (Всі 5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Погляд у майбутнє. Ідеально монтується перед або після текстової картки-цитати.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 / АКТ 4</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Анімація в реальний світ: хлопчик із викруткою (Take 1)</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1284x716 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>00:00 - 00:02.5 — аніме-стилістика Ghibli. Якщо документальний фільм строгий, аніме-частину варто опустити.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.8 - 00:05.0 (2.2 секунди)</div>
+            <div style="margin-top: 0.25rem;">Чистий лайв-екшн фотореалізм: малюк зосереджено крутить гвинти на платі.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:20 - 00:30)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Анімація в реальний світ: хлопчик із викруткою (Take 2)</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1280x720 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Аналогічно: перша половина малювана, друга фотореалістична.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.8 - 00:05.0 (2.2 секунди)</div>
+            <div style="margin-top: 0.25rem;">Альтернативний живий план дитини над відкритою платою в сонячних променях.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:25 - 00:35)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP (USE 2.8s-5.0s)</div>
+            <div class="video-title">Виступ підлітка біля мікрофона (Школа Джона Берроуза)</div>
+            <div class="video-file">ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.06s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1280x720 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>00:00 - 00:02.3 — малюваний аніме-кадр у соборі з вітражем. Не відповідає кіно-есе.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.8 - 00:05.0 (2.2 секунди)</div>
+            <div style="margin-top: 0.25rem;">Живий юнак-старшокласник говорить у мікрофон на трибуні актової зали. Ідеально під історичний момент камінг-ауту Сема у консервативній школі.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 (00:55 - 01:15)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">TWO HIGH-VALUE SUBCLIPS</div>
+            <div class="video-title">Змова ради директорів OpenAI у переговорній (Листопад 2023)</div>
+            <div class="video-file">Four_men_sitting_at_table_3911bdbc_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Перехід на 3.2s у тепловізор є раптовим. Потрібно або розбивати на два кліпи, або брати нуарну першу частину.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:03.2 (Драма) або 00:03.5 - 00:09.9 (Тепловізор)</div>
+            <div style="margin-top: 0.25rem;">Тейк 1: 3.2с напруженого кінематографічного шепоту чотирьох директорів (Фінчер-стайл). Тейк 2: Стеження крізь тепловізор FLIR за контурами тіл.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 3 (09:10 - 09:30)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">3D-візуалізація біологічного розвитку клітини</div>
+            <div class="video-file">Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1080x1920 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Стерильна наукова естетика.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:01.0 - 00:08.0 (7.0 секунд)</div>
+            <div style="margin-top: 0.25rem;">Ілюструє інвестиції Альтмана у Retro Biosciences ($180M) та біологічне перепрограмування віку.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 2 (05:15 - 05:40)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Таймлапс мітозу: поділ клітини за законом експоненти</div>
+            <div class="video-file">Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1080x1920 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">1 → 2 → 4 → 8... Візуальний закон складного відсотка та експоненціального масштабування.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 1 / АКТ 2</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Лазерні промені випалюють текстові токени у повітрі</div>
+            <div class="video-file">Laser_forms_text_words_89a267cd_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Гіперсучасна візуалізація генерації слів LLM.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">Ідеальна кінематографічна метафора релізу ChatGPT: слова матеріалізуються з чистого лазерного світла.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 3 (08:00 - 08:30)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Квантовий вибух світності: розліт спектральних ліній (Take 1)</div>
+            <div class="video-file">Light_point_explodes_into_streaks_0827d703_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Дуже яскравий фінальний спалах — потребує м'якого cross-dissolve у DaVinci.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:08.5 (8.5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Тріумфальне повернення Альтмана в OpenAI: енергія солідарності 738 співробітників вибухає світлом.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 3 (11:45 - 12:00)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">100% MASTER SHOT</div>
+            <div class="video-title">Квантовий спалах блакитно-білого спектра (Take 2)</div>
+            <div class="video-file">Light_point_explodes_into_streaks_c712a46e_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:01.0 - 00:08.5 (7.5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Ілюстрація енергії Stargate та запалювання термоядерної плазми Helion Energy.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (12:20 - 12:40)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_c712a46e_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">REQUIRES CROP / SCALE</div>
+            <div class="video-title">Людина в арктичній парці на тлі засніженого горизонту</div>
+            <div class="video-file">Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">5.97s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1080x1920 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Вертикальний формат 9:16 (1080x1920). Потрібно центрувати у 16:9 з масштабуванням 1.78x.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:01.0 - 00:05.5 (4.5 секунди)</div>
+            <div style="margin-top: 0.25rem;">Метафора стійкості перед льодовиковим штормом та випробуваннями Долини.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (14:30 - 15:00)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">EMMY / OSCAR GRADE</div>
+            <div class="video-title">Клацання миші запускає лавину обчислень (30 листопада 2022)</div>
+            <div class="video-file">Mouse_click_triggers_flash_42a0e76f_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Винятковий таймінг і динаміка.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:07.5 (7.5 секунд)</div>
+            <div style="margin-top: 0.25rem;">Той самий клік, що випустив ChatGPT на свободу: палець тисне на клавішу миші, від контакту розлітається спалах.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 3 (08:00 - 08:15)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">EMMY / OSCAR GRADE</div>
+            <div class="video-title">Біологічний нейрон трансмутує у кремнієвий кристал GPU</div>
+            <div class="video-file">Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Музейний рівень медичної та кремнієвої CGI-графіки.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">Серце філософії OpenAI: біологія людського мозку перетікає у кремнієві ядра NVIDIA Blackwell.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 2 (06:40 - 07:10)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-cyan">APPROVED SUBCLIP</div>
+            <div class="video-title">Імпульсний фотоспалах та інверсія портрета в негатив</div>
+            <div class="video-file">Photographic_strobe_inverting_image_81594c7e_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Часте стробування може втомлювати очі, брати коротким відрізком.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:02.0 - 00:06.0 (4.0 секунди)</div>
+            <div style="margin-top: 0.25rem;">Документальний арт-перехід між технічними главами.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (12:50 - 13:10)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-emerald">EMMY / OSCAR GRADE</div>
+            <div class="video-title">Фізична матерія розчиняється у цифрових бітах і матрицях</div>
+            <div class="video-file">Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Без дефектів. Величний масштаб дезінтеграції речовини.</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:00 - 00:09.9 (Повний кліп)</div>
+            <div style="margin-top: 0.25rem;">Пряма візуалізація цитати Картки 14: «ШІ перестав бути абстрактним кодом. Це гігавати енергії, надпровідні річки та кремній».</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 4 (12:00 - 12:30)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-header">
+          <div>
+            <div class="badge badge-rose">CRITICAL CUT (USE 3.5s-9.9s ONLY)</div>
+            <div class="video-title">Дослідник біля скла → Збій → Бізнес-зустріч у хмарочосі</div>
+            <div class="video-file">Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--mono); font-weight: 700; color: var(--gold);">9.96s</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">1920x1080 @ 24fps</div>
+          </div>
+        </div>
+
+        <div class="video-body">
+          <div class="critique-box">
+            <div class="critique-title">⚠️ ЧОМУ НЕ СТАВИТИ ПОВНІСТЮ (ШІ-АРТЕФАКТИ):</div>
+            <div>Глючний цифровий зріз-телепортація на 00:02.2 - 00:03.2 (те, про що писав користувач). ВИРІЗАТИ ЦЕЙ ЗБІЙ!</div>
+          </div>
+
+          <div class="golden-box">
+            <div class="golden-title">✨ ЗОЛОТИЙ ФРАГМЕНТ ДЛЯ МОНТАЖУ (IN - OUT):</div>
+            <div class="golden-timecode">00:03.5 - 00:09.9 (6.4 секунди / 155 кадрів)</div>
+            <div style="margin-top: 0.25rem;">Чудовий, статусний план: бізнесмен іде по офісу з панорамним склінням над дощовим містом і тисне руку колезі. Чистий Голлівуд.</div>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <span class="meta-tag">🎯 ПРИЗНАЧЕННЯ: <b>АКТ 3 (09:40 - 10:10)</b></span>
+          <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" target="_blank">
+            🔍 Показати у Finder
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: 50 IMAGES THEMATIC CATALOG -->
+  <section>
+    <h2>🖼️ КАТАЛОГ 50 КОНЦЕПТ-ЗОБРАЖЕНЬ (GEMINI / GOOGLE FLOW) ЗА АКТАМИ ТАЙМЛАЙНУ</h2>
+    <p class="section-sub">
+      Розбивка за драматургічними актами: дитинство 90-х, школи та кампус Стенфорда, кремнієва революція та суперкластери майбутнього.
+    </p>
+
+    <div class="image-accordion">
+      <div class="theme-header">
+        <span>ACT 1: GENESIS & MACINTOSH (00:00 - 04:00)</span>
+        <span>24 ЗОБРАЖЕНЬ</span>
+      </div>
+      <div class="image-grid">
+    
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/Child_inserting_floppy_disk_92a52bea_2K.jpg" alt="Child_inserting_floppy_disk_92a52bea_2K.jpg" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="Child_inserting_floppy_disk_92a52bea_2K.jpg">Child_inserting_floppy_disk_92a52bea_2K.jpg</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/Child_inserting_floppy_disk_92a52bea_2K.jpg" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/Boy_watching_glowing_code_77d7ee3b_2K.jpg" alt="Boy_watching_glowing_code_77d7ee3b_2K.jpg" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="Boy_watching_glowing_code_77d7ee3b_2K.jpg">Boy_watching_glowing_code_77d7ee3b_2K.jpg</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/Boy_watching_glowing_code_77d7ee3b_2K.jpg" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_io.png" alt="_io.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_io.png">_io.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_io.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/vfre.png" alt="vfre.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="vfre.png">vfre.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/vfre.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/2026-11-09_14.45.29.jpg" alt="2026-11-09_14.45.29.jpg" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="2026-11-09_14.45.29.jpg">2026-11-09_14.45.29.jpg</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/2026-11-09_14.45.29.jpg" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_df.png" alt="_df.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_df.png">_df.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_df.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/mymyy.png" alt="mymyy.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="mymyy.png">mymyy.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/mymyy.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/edsfrdtf.png" alt="edsfrdtf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="edsfrdtf.png">edsfrdtf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/edsfrdtf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/mk.png" alt="mk.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="mk.png">mk.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/mk.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/vcx.png" alt="vcx.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="vcx.png">vcx.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/vcx.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/xzcs.png" alt="xzcs.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="xzcs.png">xzcs.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/xzcs.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/hmufj.png" alt="hmufj.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="hmufj.png">hmufj.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/hmufj.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/rvdst.png" alt="rvdst.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="rvdst.png">rvdst.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/rvdst.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/csr.png" alt="csr.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="csr.png">csr.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/csr.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/lknjb.png" alt="lknjb.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="lknjb.png">lknjb.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/lknjb.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/mmjghnfgbdf.png" alt="mmjghnfgbdf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="mmjghnfgbdf.png">mmjghnfgbdf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/mmjghnfgbdf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/sax.png" alt="sax.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="sax.png">sax.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/sax.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/xdry.png" alt="xdry.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="xdry.png">xdry.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/xdry.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/bvcb.png" alt="bvcb.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="bvcb.png">bvcb.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/bvcb.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/kut.png" alt="kut.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="kut.png">kut.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/kut.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/sdgfhtyj.png" alt="sdgfhtyj.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="sdgfhtyj.png">sdgfhtyj.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/sdgfhtyj.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_nkbh.png" alt="_nkbh.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_nkbh.png">_nkbh.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_nkbh.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_v.png" alt="_v.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_v.png">_v.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_v.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/tredf.png" alt="tredf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="tredf.png">tredf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/tredf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="image-accordion">
+      <div class="theme-header">
+        <span>ACT 2: EXPONENTIAL SCALING & YC (04:00 - 08:00)</span>
+        <span>11 ЗОБРАЖЕНЬ</span>
+      </div>
+      <div class="image-grid">
+    
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/;ll;.png" alt=";ll;.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title=";ll;.png">;ll;.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/;ll;.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/byr.png" alt="byr.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="byr.png">byr.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/byr.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/utyfgv.png" alt="utyfgv.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="utyfgv.png">utyfgv.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/utyfgv.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/dv.png" alt="dv.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="dv.png">dv.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/dv.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/dxf_g.png" alt="dxf_g.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="dxf_g.png">dxf_g.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/dxf_g.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/cdwrf.png" alt="cdwrf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="cdwrf.png">cdwrf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/cdwrf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg" alt="Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg">Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/p;.png" alt="p;.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="p;.png">p;.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/p;.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/bhnuyvtf.png" alt="bhnuyvtf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="bhnuyvtf.png">bhnuyvtf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/bhnuyvtf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/ghnfbyd.png" alt="ghnfbyd.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="ghnfbyd.png">ghnfbyd.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/ghnfbyd.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/jlgyf.png" alt="jlgyf.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="jlgyf.png">jlgyf.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/jlgyf.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="image-accordion">
+      <div class="theme-header">
+        <span>ACT 3: THE BOARDROOM COUP & REBELLION (08:00 - 12:00)</span>
+        <span>10 ЗОБРАЖЕНЬ</span>
+      </div>
+      <div class="image-grid">
+    
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_fgxfhcg.png" alt="_fgxfhcg.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_fgxfhcg.png">_fgxfhcg.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_fgxfhcg.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/by.png" alt="by.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="by.png">by.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/by.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/cfz.png" alt="cfz.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="cfz.png">cfz.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/cfz.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/image.png" alt="image.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="image.png">image.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/image.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/rvt.png" alt="rvt.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="rvt.png">rvt.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/rvt.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/xas.png" alt="xas.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="xas.png">xas.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/xas.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/xasdwrc.png" alt="xasdwrc.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="xasdwrc.png">xasdwrc.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/xasdwrc.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/scesxcsr.png" alt="scesxcsr.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="scesxcsr.png">scesxcsr.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/scesxcsr.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/vscds.png" alt="vscds.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="vscds.png">vscds.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/vscds.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/ybr.png" alt="ybr.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="ybr.png">ybr.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/ybr.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="image-accordion">
+      <div class="theme-header">
+        <span>ACT 4: THE PHYSICALITY OF COMPUTE & HORIZON (12:00 - 16:00)</span>
+        <span>5 ЗОБРАЖЕНЬ</span>
+      </div>
+      <div class="image-grid">
+    
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/_yfht.png" alt="_yfht.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="_yfht.png">_yfht.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/_yfht.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/b_cgbxtd.png" alt="b_cgbxtd.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="b_cgbxtd.png">b_cgbxtd.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/b_cgbxtd.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/kjh.png" alt="kjh.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="kjh.png">kjh.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/kjh.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/nlbv.png" alt="nlbv.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="nlbv.png">nlbv.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/nlbv.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="img-card">
+          <img src="../04_ASSETS/user_ai_images/xdgcfh.png" alt="xdgcfh.png" loading="lazy">
+          <div class="img-meta">
+            <div class="img-name" title="xdgcfh.png">xdgcfh.png</div>
+            <div style="margin-top: 0.35rem; display: flex; justify-content: space-between;">
+              <span>HD/2K</span>
+              <a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/04_ASSETS/user_ai_images/xdgcfh.png" style="color: var(--cyan); text-decoration: underline;" target="_blank">Finder</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- SECTION 3: TIMELINE ARCHITECTURE -->
+  <section style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2rem;">
+    <h2>📐 АРХІТЕКТУРА 16-ХВИЛИННОГО МАСТЕР-ТАЙМЛАЙНУ (23 040 КАДРІВ)</h2>
+    <p class="section-sub">
+      Повний перелік 7 активних професійних треків у DaVinci Resolve Studio:
+    </p>
+    <div style="font-family: var(--mono); font-size: 0.85rem; line-height: 1.8; color: var(--text-secondary);">
+      <div>🟢 <b>Track V1 (MASTER_FLOW_CANVAS):</b> 94 унікальні кліпи, 100% gapless без чорних кадрів (5760f + 5760f + 5760f + 5760f = 23,040f).</div>
+      <div>🔵 <b>Track V2 (HISTORICAL_ARCHIVES):</b> 19 архівних моментів (Jobs WWDC, CS183B, Senate, TED). Жодного перекриття з V3!</div>
+      <div>🟡 <b>Track V3 (THOUGHT_CARDS_PRESS):</b> 17 карток думок + 6 розсекречених досьє з м'якими 12-кадровими дізолвами.</div>
+      <div>🎙️ <b>Track A1 (UKRAINIAN_VOICEOVER):</b> 17 майстер-тейків Макса Цукренка (00:00 - 16:00) на рівні +2.0 dB.</div>
+      <div>🎵 <b>Track A2 (CINEMATIC_SCORE):</b> 4-актний безперервний ембієнт-пульс (-21.0 dB) з 5-секундним оксамитовим затуханням.</div>
+      <div>🏛️ <b>Track A3 (AUTHENTIC_LIVE_AUDIO):</b> 3 живі історичні промови (Стів Джобс 2008, лекція CS183B, заява в Сенаті США).</div>
+      <div>⌨️ <b>Track A4 (MECHANICAL_KEYBOARD_SFX):</b> 16 звукових спалахів друкарської клавіатури (-18.0 dB), синхронізованих із картками.</div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
