@@ -957,9 +957,11 @@ def generate_html():
       </div>
     </a>
     <div class="nav-actions">
-      <a href="index.html" class="btn btn-outline">⬅️ Головна Студія</a>
-      <a href="episodes/ep01_altman.html" class="btn btn-outline">🎙️ Студія Епізоду 01 (Альтман)</a>
-      <a href="#innov-01" class="btn btn-cyan">🚀 До першої фішки</a>
+      <a href="index.html" class="btn btn-outline">⬅️ Головний Дашборд</a>
+      <a href="cinematic_innovations.html" class="btn btn-cyan" style="font-weight:700;">🎬 Тріади Еп. 01 (Альтман)</a>
+      <a href="cinematic_innovations_ep02.html" class="btn btn-outline" style="border-color:var(--emerald);color:var(--emerald);font-weight:700;">🔥 Тріади Еп. 02 (Хуанг)</a>
+      <a href="episodes/ep01_altman.html" class="btn btn-outline">🎙️ Студія Еп. 01 (Альтман)</a>
+      <a href="episodes/ep02_huang.html" class="btn btn-outline">🎙️ Студія Еп. 02 (Хуанг)</a>
     </div>
   </header>
 
