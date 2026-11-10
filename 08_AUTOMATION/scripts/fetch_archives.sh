@@ -218,8 +218,23 @@ run_ep08() {
 }
 
 run_ep09() {
-  # EP09 — Йошуа Бенжіо: Свідчення у Сенаті США щодо екзистенційних ризиків ШІ (25.07.2023 — Public Domain)
+  # EP09 — Йошуа Бенжіо: Вартовий Монреаля та архітектура уваги (16 верифікованих кліпів)
   fetch_clip "https://www.youtube.com/watch?v=hm1zexCjELo" "00:27:40-00:27:48" "EP09_VID_ARCH_01_ACT3_24FPS_Bengio_Senate_Testimony"
+  fetch_clip "https://www.youtube.com/watch?v=wdExmzSfw4g" "01:22:55-01:23:37" "EP09_VID_ARCH_02_ACT1_24FPS_Bengio_Parents_Freedom_Sixties_RobotBrains"
+  fetch_clip "https://www.youtube.com/watch?v=llGG62fNN64" "00:04:15-00:04:58" "EP09_VID_ARCH_03_ACT1_24FPS_Bengio_Reading_Hinton_McGill_HLF"
+  fetch_clip "https://www.youtube.com/watch?v=uawLjkSI7Mo" "00:13:58-00:14:38" "EP09_VID_ARCH_04_ACT1_24FPS_Bengio_Academic_Independence_TEDxMontreal"
+  fetch_clip "https://www.youtube.com/watch?v=uawLjkSI7Mo" "00:12:25-00:13:12" "EP09_VID_ARCH_05_ACT1_24FPS_Bengio_AI_Winter_Abandoned_Nets_TEDxMontreal"
+  fetch_clip "https://www.youtube.com/watch?v=llGG62fNN64" "00:05:00-00:05:45" "EP09_VID_ARCH_06_ACT2_24FPS_Bengio_Distributed_Word_Vectors_HLF"
+  fetch_clip "https://www.youtube.com/watch?v=llGG62fNN64" "00:17:38-00:18:18" "EP09_VID_ARCH_07_ACT2_24FPS_Bengio_Neural_NLP_Ten_Years_Unnoticed_HLF"
+  fetch_clip "https://www.youtube.com/watch?v=GibjI5FoZsE" "00:25:42-00:26:28" "EP09_VID_ARCH_08_ACT2_24FPS_Bengio_Attention_Translating_Book_REWORK"
+  fetch_clip "https://www.youtube.com/watch?v=llGG62fNN64" "00:25:05-00:25:52" "EP09_VID_ARCH_09_ACT2_24FPS_Bengio_Soft_Attention_GoogleTranslate_HLF"
+  fetch_clip "https://www.youtube.com/watch?v=qe9QSCF-d88" "00:02:56-00:03:38" "EP09_VID_ARCH_10_ACT2_24FPS_Bengio_Mila_Medicine_Climate_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=UX8OubxsY8w" "01:12:58-01:13:45" "EP09_VID_ARCH_11_ACT3_24FPS_Bengio_Turing_Pioneers_System2_AAAI2020"
+  fetch_clip "https://www.youtube.com/watch?v=647kOjU3TlE" "00:28:38-00:29:22" "EP09_VID_ARCH_12_ACT3_24FPS_Bengio_GFlowNets_Molecules_MSR"
+  fetch_clip "https://www.youtube.com/watch?v=zQ1POHiR8m8" "00:00:35-00:01:16" "EP09_VID_ARCH_13_ACT3_24FPS_Bengio_Grandson_DiaryOfACEO"
+  fetch_clip "https://www.youtube.com/watch?v=qe9QSCF-d88" "00:10:25-00:11:08" "EP09_VID_ARCH_14_ACT3_24FPS_Bengio_ScientistAI_Humility_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=A7mPKpk7NGk" "00:09:37-00:10:22" "EP09_VID_ARCH_15_ACT4_24FPS_Bengio_UN_Safety_Report_CanadaSenate"
+  fetch_clip "https://www.youtube.com/watch?v=qe9QSCF-d88" "00:12:08-00:12:52" "EP09_VID_ARCH_16_ACT4_24FPS_Bengio_Introvert_Love_Future_TED2024"
 }
 
 run_ep10() {

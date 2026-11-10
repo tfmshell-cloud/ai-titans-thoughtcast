@@ -922,7 +922,18 @@ ASSET_AFFINITY_MAP = {
         "09": ["spatial_intelligence", "world_labs_mission", "ep08_doc_06", "ep08_flow_img_02", "world_labs_3d_lidar"],
         "10": ["spatial_north_star", "young_immigrants_voice", "humanitarian_award", "ep08_flow_img_03", "ep08_doc_06"],
     },
-    "09": {"05": ["attention_vector"]},
+    "09": {
+        "01": ["parents_freedom", "paris_latin_quarter", "paris_theatre_carlo", "isaac_asimov", "paris_mcgill_bell_labs"],
+        "02": ["reading_hinton_mcgill", "mcgill_arts_phd", "bell_labs_holmdel", "udem_roger_gaudry", "academic_independence", "ep09_doc_02"],
+        "03": ["ai_winter_abandoned", "montreal_winter_skyline", "ai_winter_family_lab", "ep09_doc_03"],
+        "04": ["distributed_word_vectors", "neural_nlp_ten_years", "word_embeddings_board", "word_embeddings_cosmos", "ep09_doc_03", "ep09_flow_img_01"],
+        "05": ["attention_vector", "attention_translating_book", "soft_attention_googletranslate", "attention_mechanism", "attention_2014", "ep09_doc_01", "ep09_flow_img_03"],
+        "06": ["not_for_sale_mila", "academic_independence", "bengio_open_science", "ep09_doc_04"],
+        "07": ["mila_medicine_climate", "saint_laurent_mila", "bengio_iclr_stage", "ep09_doc_04"],
+        "08": ["grandson_diaryofaceo", "un_safety_report", "senate_testimony", "us_capitol_senate", "bletchley_summit", "un_security_council", "ep09_doc_05", "ep09_flow_img_02"],
+        "09": ["scientistai_humility", "gflownets_molecules", "turing_pioneers_system2", "gflownet_molecules", "grandson_scientist_ai", "ep09_doc_05", "asteroid_coasting"],
+        "10": ["introvert_love_future", "winter_bicycle_quebec", "canada_aurora_finale", "bicycle_moral_bastion", "conscience_compass", "ep09_doc_06", "asteroid_surface"],
+    },
     "10": {"01": ["medical_textbook"], "05": ["global_neural_classroom"]},
 }
 
@@ -1055,6 +1066,7 @@ def main():
         "06": "EP06_ILYA_SUTSKEVER",
         "07": "EP07_DARIO_AMODEI",
         "08": "EP08_FEI_FEI_LI",
+        "09": "EP09_YOSHUA_BENGIO",
     }
     for ep, name_ua, name_en, *_ in EP_META:
         s = vault[ep]["summary"]

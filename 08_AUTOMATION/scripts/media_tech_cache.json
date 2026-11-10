@@ -10648,5 +10648,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_01_paris_latin_quarter_1978_roots.jpg": {
+    "mtime": 1794339281.82,
+    "md5": "25c0fcac",
+    "w": 1600,
+    "h": 1065,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1065",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_02_paris_theatre_father_carlo_stage.jpg": {
+    "mtime": 1794339281.86,
+    "md5": "324eafa8",
+    "w": 1600,
+    "h": 1200,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1200",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_03_isaac_asimov_foundation_youth.jpg": {
+    "mtime": 1794339281.89,
+    "md5": "355933d6",
+    "w": 827,
+    "h": 1200,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 827×1200",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_04_mcgill_university_arts_phd_1991.jpg": {
+    "mtime": 1794339281.91,
+    "md5": "f216a60a",
+    "w": 1600,
+    "h": 1067,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1067",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_05_att_bell_labs_holmdel_lecun_pact.jpg": {
+    "mtime": 1794339281.93,
+    "md5": "a5611b73",
+    "w": 1600,
+    "h": 1064,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1064",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_06_universite_de_montreal_roger_gaudry_1993.jpg": {
+    "mtime": 1794339281.96,
+    "md5": "5e6dde68",
+    "w": 1280,
+    "h": 720,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×720",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_07_montreal_mount_royal_winter_skyline.jpg": {
+    "mtime": 1794339281.97,
+    "md5": "31a7b58f",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_08_word_embeddings_math_blackboard_2000.jpg": {
+    "mtime": 1794339281.98,
+    "md5": "b4c23676",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_09_attention_mechanism_encoder_cross_2014.jpg": {
+    "mtime": 1794339281.99,
+    "md5": "4a665c2e",
+    "w": 1280,
+    "h": 1032,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×1032",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_10_montreal_boulevard_saint_laurent_mila.jpg": {
+    "mtime": 1794339282.01,
+    "md5": "a75af3f8",
+    "w": 1280,
+    "h": 819,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×819",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_11_yoshua_bengio_open_science_portrait.jpg": {
+    "mtime": 1794339282.02,
+    "md5": "22b7895e",
+    "w": 1280,
+    "h": 720,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×720",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_12_gflownet_molecular_drug_discovery.jpg": {
+    "mtime": 1794339282.03,
+    "md5": "43c8a6fc",
+    "w": 1280,
+    "h": 734,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×734",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_13_yoshua_bengio_iclr_keynote_stage.jpg": {
+    "mtime": 1794339282.04,
+    "md5": "328a527a",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_14_us_capitol_senate_judiciary_2023.jpg": {
+    "mtime": 1794339282.05,
+    "md5": "cd475e3a",
+    "w": 1280,
+    "h": 642,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×642",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_15_bletchley_park_ai_safety_summit_2023.jpg": {
+    "mtime": 1794339282.06,
+    "md5": "b48ecd79",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_16_un_security_council_global_governance.jpg": {
+    "mtime": 1794339282.07,
+    "md5": "da5452e0",
+    "w": 1280,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_17_quebec_winter_bicycle_conscience.jpg": {
+    "mtime": 1794339282.08,
+    "md5": "577681c7",
+    "w": 1280,
+    "h": 1024,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×1024",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_bengio/ep09_img_arch_18_canada_aurora_borealis_moral_shield.jpg": {
+    "mtime": 1794339282.1,
+    "md5": "34dfc34e",
+    "w": 1280,
+    "h": 852,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×852",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_02_ACT1_24FPS_Bengio_Parents_Freedom_Sixties_RobotBrains.mp4": {
+    "mtime": 1794339448.56,
+    "md5": "0f8769d2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 42.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "42s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_03_ACT1_24FPS_Bengio_Reading_Hinton_McGill_HLF.mp4": {
+    "mtime": 1794339487.6,
+    "md5": "c02753a5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 43.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "43s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_04_ACT1_24FPS_Bengio_Academic_Independence_TEDxMontreal.mp4": {
+    "mtime": 1794339520.34,
+    "md5": "5aded2c3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 40.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "40s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_05_ACT1_24FPS_Bengio_AI_Winter_Abandoned_Nets_TEDxMontreal.mp4": {
+    "mtime": 1794339553.08,
+    "md5": "9d77103c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 47.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "47s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_06_ACT2_24FPS_Bengio_Distributed_Word_Vectors_HLF.mp4": {
+    "mtime": 1794339579.39,
+    "md5": "3d06623f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_07_ACT2_24FPS_Bengio_Neural_NLP_Ten_Years_Unnoticed_HLF.mp4": {
+    "mtime": 1794339603.41,
+    "md5": "32b337d5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 40.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "40s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_08_ACT2_24FPS_Bengio_Attention_Translating_Book_REWORK.mp4": {
+    "mtime": 1794339657.5,
+    "md5": "2c803a91",
+    "w": 1920,
+    "h": 1080,
+    "dur": 46.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "46s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_09_ACT2_24FPS_Bengio_Soft_Attention_GoogleTranslate_HLF.mp4": {
+    "mtime": 1794339689.34,
+    "md5": "c2a923a8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 47.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "47s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_10_ACT2_24FPS_Bengio_Mila_Medicine_Climate_TED2024.mp4": {
+    "mtime": 1794340006.07,
+    "md5": "68baf780",
+    "w": 1920,
+    "h": 1080,
+    "dur": 42.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "42s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_11_ACT3_24FPS_Bengio_Turing_Pioneers_System2_AAAI2020.mp4": {
+    "mtime": 1794339775.95,
+    "md5": "aca8cea8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 47.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "47s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_12_ACT3_24FPS_Bengio_GFlowNets_Molecules_MSR.mp4": {
+    "mtime": 1794339811.98,
+    "md5": "92dda679",
+    "w": 1920,
+    "h": 1080,
+    "dur": 44.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "44s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_13_ACT3_24FPS_Bengio_Grandson_DiaryOfACEO.mp4": {
+    "mtime": 1794339859.3,
+    "md5": "015267df",
+    "w": 1920,
+    "h": 1080,
+    "dur": 41.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "41s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_14_ACT3_24FPS_Bengio_ScientistAI_Humility_TED2024.mp4": {
+    "mtime": 1794340037.79,
+    "md5": "22a13fc3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 43.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "43s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_15_ACT4_24FPS_Bengio_UN_Safety_Report_CanadaSenate.mp4": {
+    "mtime": 1794339918.67,
+    "md5": "eb576d00",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_16_ACT4_24FPS_Bengio_Introvert_Love_Future_TED2024.mp4": {
+    "mtime": 1794340064.68,
+    "md5": "ba1ed05c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 44.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "44s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_attention_mechanism_6s.mp4": {
+    "mtime": 1794339380.35,
+    "md5": "11090042",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bell_labs_holmdel_6s.mp4": {
+    "mtime": 1794339377.76,
+    "md5": "ff2906c2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bengio_iclr_stage_6s.mp4": {
+    "mtime": 1794339382.84,
+    "md5": "056450fe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bengio_open_science_6s.mp4": {
+    "mtime": 1794339381.65,
+    "md5": "50542c73",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bletchley_summit_6s.mp4": {
+    "mtime": 1794339384.18,
+    "md5": "fa222e4a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_canada_aurora_finale_6s.mp4": {
+    "mtime": 1794339386.21,
+    "md5": "afed98ce",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_gflownet_molecules_6s.mp4": {
+    "mtime": 1794339382.18,
+    "md5": "44fbb1d4",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_isaac_asimov_books_6s.mp4": {
+    "mtime": 1794339376.32,
+    "md5": "2fe1e179",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_mcgill_arts_phd_6s.mp4": {
+    "mtime": 1794339377.04,
+    "md5": "336202dd",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_montreal_winter_skyline_6s.mp4": {
+    "mtime": 1794339379.13,
+    "md5": "1c1f9189",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_paris_latin_quarter_6s.mp4": {
+    "mtime": 1794339375.04,
+    "md5": "650b0405",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_paris_theatre_carlo_6s.mp4": {
+    "mtime": 1794339375.69,
+    "md5": "91623277",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_saint_laurent_mila_6s.mp4": {
+    "mtime": 1794339381.06,
+    "md5": "3d9fd779",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_udem_roger_gaudry_6s.mp4": {
+    "mtime": 1794339378.44,
+    "md5": "2e12161c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_un_security_council_6s.mp4": {
+    "mtime": 1794339384.9,
+    "md5": "49347d27",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_us_capitol_senate_6s.mp4": {
+    "mtime": 1794339383.5,
+    "md5": "dd9e333c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_winter_bicycle_quebec_6s.mp4": {
+    "mtime": 1794339385.56,
+    "md5": "ee945f43",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_word_embeddings_board_6s.mp4": {
+    "mtime": 1794339379.81,
+    "md5": "04ac20fb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_01_bicycle_moral_bastion_10s.mp4": {
+    "mtime": 1794339364.88,
+    "md5": "576907d7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_02_paris_theatre_asimov_10s.mp4": {
+    "mtime": 1794339366.14,
+    "md5": "82065cb0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_03_ai_winter_family_lab_10s.mp4": {
+    "mtime": 1794339367.4,
+    "md5": "99d8fa00",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_04_word_embeddings_cosmos_10s.mp4": {
+    "mtime": 1794339368.67,
+    "md5": "c16ae813",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_05_attention_2014_goodfellow_10s.mp4": {
+    "mtime": 1794339369.92,
+    "md5": "76643ad3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_06_not_for_sale_mila_10s.mp4": {
+    "mtime": 1794339371.2,
+    "md5": "380656aa",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_07_grandson_scientist_ai_12s.mp4": {
+    "mtime": 1794339372.67,
+    "md5": "b7a40b62",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_ua_clip_card_08_conscience_compass_finale_12s.mp4": {
+    "mtime": 1794339374.13,
+    "md5": "df5af9bb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_02_ACT1_paris_mcgill_bell_labs_montreal_1993.mp4": {
+    "mtime": 1794339354.25,
+    "md5": "bc8e4dcb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_02_ACT1_paris_mcgill_bell_labs_montreal_1993.png": {
+    "mtime": 1794339352.86,
+    "md5": "223e4fae",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_03_ACT2_word_embeddings_2000_ai_winter_open_lab.mp4": {
+    "mtime": 1794339356.71,
+    "md5": "ab9d9bd2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_03_ACT2_word_embeddings_2000_ai_winter_open_lab.png": {
+    "mtime": 1794339355.38,
+    "md5": "2728c865",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_04_ACT2_attention_2014_gan_mila_refusing_billions.mp4": {
+    "mtime": 1794339359.13,
+    "md5": "de2b05df",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_04_ACT2_attention_2014_gan_mila_refusing_billions.png": {
+    "mtime": 1794339357.79,
+    "md5": "a17eafc8",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_05_ACT3_un_ai_safety_report_system2_gflownets.mp4": {
+    "mtime": 1794339361.54,
+    "md5": "b6c3bc7c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_05_ACT3_un_ai_safety_report_system2_gflownets.png": {
+    "mtime": 1794339360.19,
+    "md5": "56c39cf7",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_06_ACT4_montreal_declaration_conscience_compass.mp4": {
+    "mtime": 1794339363.95,
+    "md5": "e8010dae",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_06_ACT4_montreal_declaration_conscience_compass.png": {
+    "mtime": 1794339362.62,
+    "md5": "83ed9ade",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_01_bicycle_moral_bastion_10s.png": {
+    "mtime": 1794339364.05,
+    "md5": "a9978189",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_02_paris_theatre_asimov_10s.png": {
+    "mtime": 1794339365.32,
+    "md5": "31aff743",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_03_ai_winter_family_lab_10s.png": {
+    "mtime": 1794339366.58,
+    "md5": "883b8b85",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_04_word_embeddings_cosmos_10s.png": {
+    "mtime": 1794339367.84,
+    "md5": "d5146acb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_05_attention_2014_goodfellow_10s.png": {
+    "mtime": 1794339369.1,
+    "md5": "3a3e8121",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_06_not_for_sale_mila_10s.png": {
+    "mtime": 1794339370.36,
+    "md5": "64098d39",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_07_grandson_scientist_ai_12s.png": {
+    "mtime": 1794339371.63,
+    "md5": "045fa11e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep09_ua_clip_card_08_conscience_compass_finale_12s.png": {
+    "mtime": 1794339373.11,
+    "md5": "454d774f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

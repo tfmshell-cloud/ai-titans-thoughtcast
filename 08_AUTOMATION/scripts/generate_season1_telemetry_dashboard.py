@@ -35,8 +35,8 @@ EP_META = [
      "Повне досьє + 14 першоджерельних транскриптів & 4 статті (Lex #452 5 год, Dwarkesh 2024/2026, Сенат США 2023, Alignment Salon, Building Anthropic, CBS News, РБ ООН, «Machines of Loving Grace», arXiv Scaling Laws / CAI & Transformer Circuits) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("08", "fei_fei_li", "episode_08_li", ["ep08", "feifei", "fei_fei", "fei-fei"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 12 першоджерельних транскриптів & 4 статті (TED 2015/2024, Stanford HAI/SIEPR, Hinton & Li UofT, Tim Ferriss, Hoover, No Priors, Latent Space World Labs, arXiv ImageNet & Stanford Vision Lab) + 26-хв NotebookLM + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 цитат-карток + 26 4K кліпів."),
-    ("09", "yoshua_bengio", "episode_09_bengio", ["ep09", "bengio"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті 2023 + 2 наукові VFX + Flow Attention Threads. Очікує генерацію Veo."),
+    ("09", "yoshua_bengio", "episode_09_bengio", ["ep09", "bengio"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 16 першоджерельних транскриптів & 4 статті (HLF Turing Lecture, TED 2024, TEDxMontreal, NeurIPS 2019 System 2, MSR GFlowNets, Сенат США & Канади, AAAI 2020, Diary of a CEO, arXiv Attention/GFlowNets/Scientist AI, Монреальська декларація) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 цитат-карток + 26 4K кліпів."),
     ("10", "andrew_ng", "episode_10_ng", ["ep10", "andrew_ng", "_ng_"], "🟠 Препродакшн & Стартовий інжест", 40, "stage-preprod",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Stanford CS229 + VFX катушка Тесли + Flow-дослідження (медичний підручник, голографічна карта, бін у Resolve).")
 ]
@@ -203,10 +203,13 @@ def count_project_stats():
             ]
         elif ep == "09":
             bio_sources = [
-                "ACM A.M. Turing Award 2018 Citation (Neural Language Models & Attention)",
-                "US Senate Judiciary Hearing (25.07.2023) & International AI Safety Report",
-                "Mila — Quebec Artificial Intelligence Institute Archives (Université de Montréal)",
-                "ICLR 2015 Neural Machine Translation (Bahdanau, Cho, Bengio)"
+                "7th Heidelberg Laureate Forum Turing Lecture (`llGG62fNN64` — Word Vectors, Attention & Control)",
+                "TED Official Archive (`qe9QSCF-d88` — Catastrophic AI Risks, Grandson Clarence & Scientist AI)",
+                "TEDxMontreal (`uawLjkSI7Mo` — AI Winter & Academic Independence) & RE•WORK (`GibjI5FoZsE`)",
+                "AAAI 2020 Turing Panel (`UX8OubxsY8w`), NeurIPS 2019 System 2 (`T3sxeTgT4qc`) & MSR GFlowNets (`647kOjU3TlE`)",
+                "U.S. Senate Judiciary (`hm1zexCjELo`), Canadian Senate (`A7mPKpk7NGk`) & Diary of a CEO (`zQ1POHiR8m8`)",
+                "arXiv `1409.0473` Attention / `2106.04399` GFlowNets / `2502.15657` Scientist AI & Montreal Declaration",
+                "Wikimedia Commons Archival Collection (18 відкритих фото: Париж → Макгілл → Bell Labs → УдМ → ООН)"
             ]
         elif ep == "10":
             bio_sources = [
@@ -753,7 +756,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP08)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP09)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>
