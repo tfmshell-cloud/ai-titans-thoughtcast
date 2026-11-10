@@ -138,8 +138,23 @@ run_ep04() {
 }
 
 run_ep05() {
-  # EP05 — Ян Лекун: Історична демонстрація LeNet-1 у Bell Labs (1989–1993, офіційний архів Лекуна)
+  # EP05 — Ян Лекун: Історична демонстрація LeNet-1 (Bell Labs 1989) + повний 4-актний архів (16 HD кліпів)
   fetch_clip "https://www.youtube.com/watch?v=FwFduRA_L6Q" "00:00:12-00:00:20" "EP05_VID_ARCH_01_ACT2_24FPS_LeCun_BellLabs_1989_Digits"
+  fetch_clip "https://www.youtube.com/watch?v=72Xj8k5WQX4" "00:02:55-00:03:20" "EP05_VID_ARCH_02_ACT1_24FPS_LeCun_Chomsky_Piaget_Debate_ETH"
+  fetch_clip "https://www.youtube.com/watch?v=VsnQf7exv5I" "00:14:38-00:15:02" "EP05_VID_ARCH_03_ACT1_24FPS_Hinton_LeCun_Minsky_Perceptrons_Turing"
+  fetch_clip "https://www.youtube.com/watch?v=H0oEr40YhrQ" "00:00:25-00:00:58" "EP05_VID_ARCH_04_ACT2_24FPS_LeCun_1989_ConvNet_Restored"
+  fetch_clip "https://www.youtube.com/watch?v=VsnQf7exv5I" "00:46:26-00:46:48" "EP05_VID_ARCH_05_ACT2_24FPS_LeCun_Young_Bell_Labs_Holmdel_Photo"
+  fetch_clip "https://www.youtube.com/watch?v=VsnQf7exv5I" "00:44:32-00:45:00" "EP05_VID_ARCH_06_ACT2_24FPS_LeCun_Hubel_Wiesel_Visual_Cortex"
+  fetch_clip "https://www.youtube.com/watch?v=VsnQf7exv5I" "00:43:28-00:43:54" "EP05_VID_ARCH_07_ACT2_24FPS_LeCun_20_Percent_US_Checks_Turing"
+  fetch_clip "https://www.youtube.com/watch?v=psl1wY2V-L0" "00:04:16-00:04:44" "EP05_VID_ARCH_08_ACT2_24FPS_LeCun_Neural_Net_Winter_SVM_Sequel"
+  fetch_clip "https://www.youtube.com/watch?v=SGSOCuByo24" "00:28:10-00:28:36" "EP05_VID_ARCH_09_ACT2_24FPS_LeCun_Bell_Labs_DSP_Compiler_Lex36"
+  fetch_clip "https://www.youtube.com/watch?v=SGzMElJ11Cc" "01:51:10-01:51:38" "EP05_VID_ARCH_10_ACT3_24FPS_LeCun_FAIR_PyTorch_Open_Source_Lex258"
+  fetch_clip "https://www.youtube.com/watch?v=SGzMElJ11Cc" "02:02:48-02:03:14" "EP05_VID_ARCH_11_ACT3_24FPS_LeCun_Gutenberg_Printing_Press_Lex258"
+  fetch_clip "https://www.youtube.com/watch?v=SGzMElJ11Cc" "00:21:30-00:21:58" "EP05_VID_ARCH_12_ACT3_24FPS_LeCun_House_Cat_Common_Sense_Lex258"
+  fetch_clip "https://www.youtube.com/watch?v=4__gg83s_Do" "00:00:00-00:00:26" "EP05_VID_ARCH_13_ACT3_24FPS_LeCun_No_AGI_By_Scaling_LLMs"
+  fetch_clip "https://www.youtube.com/watch?v=72Xj8k5WQX4" "00:25:14-00:25:48" "EP05_VID_ARCH_14_ACT4_24FPS_LeCun_JEPA_Architecture_ETH_Zurich"
+  fetch_clip "https://www.youtube.com/watch?v=72Xj8k5WQX4" "00:06:24-00:06:52" "EP05_VID_ARCH_15_ACT4_24FPS_LeCun_Baby_3D_Intuitive_Physics_ETH"
+  fetch_clip "https://www.youtube.com/watch?v=pJyoqapCRZE" "00:04:46-00:05:14" "EP05_VID_ARCH_16_ACT4_24FPS_LeCun_Davos_2026_Embodied_AI"
 }
 
 run_ep06() {

@@ -27,8 +27,8 @@ EP_META = [
      "Повне досьє + 10 першоджерельних транскриптів (Nobel Lecture 2024, Lex #475, The Thinking Game, AlphaGo Movie, Stanford GSB, WSJ $650M, CBS 60 Min, Royal Society) + 50 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia Commons + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 10 транскриптів & 3 статті (Nobel Lecture 2024, CBS 60 Minutes, BBC News 2023, ACM Turing 2018, U of T, NobelPrize.org, Diary Of A CEO) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
-    ("05", "yann_lecun", "episode_05_lecun", ["ep05", "lecun"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Bell Labs 1989 + VFX осцилятор + Flow JEPA рендер. Очікує розширення B-Roll."),
+    ("05", "yann_lecun", "episode_05_lecun", ["ep05", "lecun"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 10 транскриптів & 3 статті (Lex #416/#258/#36, ETH Zurich World Models, ACM Turing 2018, Nokia Bell Labs, Davos 2026, arXiv JEPA) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("06", "ilya_sutskever", "episode_06_sutskever", ["ep06", "sutskever"], "🟠 Препродакшн & Стартовий інжест", 42, "stage-preprod",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + лекція Simons Institute + VFX Alcubierre + 13 зображень/Flow-досліджень (Єрусалим, GPU AlexNet, SSI моноліт) + бін у Resolve."),
     ("07", "dario_amodei", "episode_07_amodei", ["ep07", "amodei"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
@@ -157,10 +157,13 @@ def count_project_stats():
             ]
         elif ep == "05":
             bio_sources = [
-                "ACM A.M. Turing Award 2018 Lecture",
-                "AT&T Bell Labs Archive (LeNet-5 Convolutional Networks, 1989–1993)",
-                "Meta AI (FAIR) Open Source & PyTorch Documentation",
-                "A Path Towards Autonomous Machine Intelligence (JEPA Paper, 2022)"
+                "Lex Fridman #416, #258 & #36 Full Transcripts (`5t1vTLU7s40`, `SGzMElJ11Cc`, `SGSOCuByo24`)",
+                "ETH Zurich Keynote: World Models & JEPA (`72Xj8k5WQX4` + arXiv I-JEPA/V-JEPA)",
+                "ACM A.M. Turing Award 2018 Lecture & Sequel (`VsnQf7exv5I`, `psl1wY2V-L0` — Minsky & 20% US Checks)",
+                "AT&T Bell Labs Holmdel Archives (`FwFduRA_L6Q` & `H0oEr40YhrQ` 1989 Restored ConvNet)",
+                "Nokia Bell Labs Keynote (`zaoL0LUctK4`) & AI House Davos 2026 Embodied AI (`pJyoqapCRZE`)",
+                "Unsupervised Learning (`ngBraLDqzdI`), Big Technology (`4__gg83s_Do`) & NYU `yann.lecun.com`",
+                "Wikimedia Commons Archival Collection (18 відкритих фото: Париж 1977 → AMI Labs / Брюссель 2026)"
             ]
         elif ep == "06":
             bio_sources = [
@@ -735,7 +738,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP04)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP05)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

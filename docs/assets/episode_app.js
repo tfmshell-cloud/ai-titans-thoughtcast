@@ -2859,7 +2859,9 @@
         ? "Хронологічний фотоархів 1976–2025: Північний Лондон, Шахи, ZX Spectrum, Кембридж, UCL, DeepMind King's Cross, AlphaGo, AlphaFold 2 & Стокгольм Нобель 2024"
         : (epData.ep === "04"
           ? "Хронологічний фотоархів 1847–2024: Джордж Буль, Еверест, Кембридж, Столярство, Единбург, CMU, Торонто, Тахо $44M, Тюрінг 2018 & Стокгольм Нобель 2024"
-          : (epData.ep === "01" ? "Ера St. Louis, John Burroughs, Loopt, YC, WWDC 2008, Stanford & OpenAI" : "Автентичні знімки спікера та історичні артефакти епохи")));
+          : (epData.ep === "05"
+            ? "Хронологічний фотоархів 1977–2026: Париж, Tektronix 475A, MOS 6502, ESIEE, Сорбонна, Мінський, Bell Labs Holmdel, NYU Курант, Meta FAIR, Гутенберг, Бейдевінд & AMI Labs"
+            : (epData.ep === "01" ? "Ера St. Louis, John Burroughs, Loopt, YC, WWDC 2008, Stanford & OpenAI" : "Автентичні знімки спікера та історичні артефакти епохи"))));
     var photoSectionHtml = photoCardsHtml ? [
       "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
       "  <div class=\"panel-head\">",

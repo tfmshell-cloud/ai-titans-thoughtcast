@@ -7568,5 +7568,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_01_Paris_1977_Opera_Youth_Era.jpg": {
+    "mtime": 1794322301.77,
+    "md5": "e43cf399",
+    "w": 1920,
+    "h": 1300,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_02_Tektronix_475A_Oscilloscope_1977.jpg": {
+    "mtime": 1794322301.8,
+    "md5": "9bf3567d",
+    "w": 1920,
+    "h": 1013,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_03_MOS_6502_Microprocessor_Die.jpg": {
+    "mtime": 1794322301.82,
+    "md5": "3958e186",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_04_ESIEE_Paris_Engineering_School.jpg": {
+    "mtime": 1794322301.83,
+    "md5": "77727396",
+    "w": 1920,
+    "h": 1440,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_05_Sorbonne_Paris_PhD_Campus.jpg": {
+    "mtime": 1794322301.86,
+    "md5": "354e6f76",
+    "w": 1920,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_06_Marvin_Minsky_Perceptrons_Rival.jpg": {
+    "mtime": 1794322301.89,
+    "md5": "22975f05",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_07_Bell_Labs_Holmdel_Aerial_1987.jpg": {
+    "mtime": 1794322301.9,
+    "md5": "f628b960",
+    "w": 1920,
+    "h": 1920,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_08_Bell_Labs_Holmdel_Mirror_Building.jpg": {
+    "mtime": 1794322301.93,
+    "md5": "de79e2ab",
+    "w": 1920,
+    "h": 1277,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_09_Courant_Institute_NYU_Weaver_Hall.jpg": {
+    "mtime": 1794322301.96,
+    "md5": "bc42142c",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_10_Yann_LeCun_Minnesota_CNN_Lecture.jpg": {
+    "mtime": 1794322301.96,
+    "md5": "852c4387",
+    "w": 1920,
+    "h": 1440,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_11_Meta_Menlo_Park_HQ_One_Hacker_Way.jpg": {
+    "mtime": 1794322301.99,
+    "md5": "f2971515",
+    "w": 1920,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_12_Yann_LeCun_Data_Science_Keynote.jpg": {
+    "mtime": 1794322302.01,
+    "md5": "df2aaec6",
+    "w": 1920,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_13_Yann_LeCun_Turing_2018_Portrait.jpg": {
+    "mtime": 1794322302.04,
+    "md5": "4320478a",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_14_Gutenberg_Printing_Press_Mainz.jpg": {
+    "mtime": 1794322302.04,
+    "md5": "25a31540",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_15_Cat_Physics_Animal_Locomotion.jpg": {
+    "mtime": 1794322302.05,
+    "md5": "f4bfa591",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_16_Yann_LeCun_IP_Paris_2025_Portrait.jpg": {
+    "mtime": 1794322302.05,
+    "md5": "114937d6",
+    "w": 1920,
+    "h": 1281,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_17_Yann_LeCun_Brussels_EU_Summit_2026.jpg": {
+    "mtime": 1794322302.08,
+    "md5": "eb11bcbb",
+    "w": 1920,
+    "h": 1270,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_18_Sailing_Close_Hauled_Badewind.jpg": {
+    "mtime": 1794322302.1,
+    "md5": "1cd016d8",
+    "w": 1920,
+    "h": 1440,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_02_ACT1_24FPS_LeCun_Chomsky_Piaget_Debate_ETH.mp4": {
+    "mtime": 1794322337.16,
+    "md5": "54a05040",
+    "w": 1920,
+    "h": 1080,
+    "dur": 25.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "25s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_03_ACT1_24FPS_Hinton_LeCun_Minsky_Perceptrons_Turing.mp4": {
+    "mtime": 1794322368.79,
+    "md5": "69eb9550",
+    "w": 1920,
+    "h": 1080,
+    "dur": 24.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "24s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_04_ACT2_24FPS_LeCun_1989_ConvNet_Restored.mp4": {
+    "mtime": 1794322389.57,
+    "md5": "905e5fb1",
+    "w": 1920,
+    "h": 1080,
+    "dur": 33.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "33s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_05_ACT2_24FPS_LeCun_Young_Bell_Labs_Holmdel_Photo.mp4": {
+    "mtime": 1794322442.42,
+    "md5": "bc40d4e5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 22.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "22s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_06_ACT2_24FPS_LeCun_Hubel_Wiesel_Visual_Cortex.mp4": {
+    "mtime": 1794322478.63,
+    "md5": "f2fc2af3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_07_ACT2_24FPS_LeCun_20_Percent_US_Checks_Turing.mp4": {
+    "mtime": 1794322540.05,
+    "md5": "bbe6885c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_08_ACT2_24FPS_LeCun_Neural_Net_Winter_SVM_Sequel.mp4": {
+    "mtime": 1794322577.81,
+    "md5": "3a6d4f79",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_09_ACT2_24FPS_LeCun_Bell_Labs_DSP_Compiler_Lex36.mp4": {
+    "mtime": 1794322646.11,
+    "md5": "2bce5166",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_10_ACT3_24FPS_LeCun_FAIR_PyTorch_Open_Source_Lex258.mp4": {
+    "mtime": 1794322682.23,
+    "md5": "52a1ca99",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_11_ACT3_24FPS_LeCun_Gutenberg_Printing_Press_Lex258.mp4": {
+    "mtime": 1794322718.01,
+    "md5": "57ee066c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_12_ACT3_24FPS_LeCun_House_Cat_Common_Sense_Lex258.mp4": {
+    "mtime": 1794322754.74,
+    "md5": "e042ddd0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_13_ACT3_24FPS_LeCun_No_AGI_By_Scaling_LLMs.mp4": {
+    "mtime": 1794322792.36,
+    "md5": "3ec0bb28",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_14_ACT4_24FPS_LeCun_JEPA_Architecture_ETH_Zurich.mp4": {
+    "mtime": 1794322840.17,
+    "md5": "35f429fe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_15_ACT4_24FPS_LeCun_Baby_3D_Intuitive_Physics_ETH.mp4": {
+    "mtime": 1794322897.7,
+    "md5": "bb37a8e3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_16_ACT4_24FPS_LeCun_Davos_2026_Embodied_AI.mp4": {
+    "mtime": 1794322963.77,
+    "md5": "54035499",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Bell_Labs_1987_Aerial_6s.mp4": {
+    "mtime": 1794322408.65,
+    "md5": "b509f105",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Bell_Labs_Holmdel_6s.mp4": {
+    "mtime": 1794322409.42,
+    "md5": "cea5c5c0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Cat_Animal_Locomotion_6s.mp4": {
+    "mtime": 1794322413.7,
+    "md5": "6654ddfe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Courant_NYU_6s.mp4": {
+    "mtime": 1794322409.98,
+    "md5": "2ef250e7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_ESIEE_Paris_6s.mp4": {
+    "mtime": 1794322406.51,
+    "md5": "8b6bfd61",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Gutenberg_Press_Mainz_6s.mp4": {
+    "mtime": 1794322413.15,
+    "md5": "39fed36e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_LeCun_Data_Science_6s.mp4": {
+    "mtime": 1794322412.04,
+    "md5": "fcaa980f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_LeCun_EU_2026_6s.mp4": {
+    "mtime": 1794322415.04,
+    "md5": "5135d68f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_LeCun_IP_Paris_2025_6s.mp4": {
+    "mtime": 1794322414.38,
+    "md5": "5d33fefc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_LeCun_Minnesota_CNN_6s.mp4": {
+    "mtime": 1794322410.54,
+    "md5": "bc2890aa",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_LeCun_Turing_2018_6s.mp4": {
+    "mtime": 1794322412.6,
+    "md5": "da390c63",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_MOS_6502_Die_6s.mp4": {
+    "mtime": 1794322405.71,
+    "md5": "44be5776",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Marvin_Minsky_6s.mp4": {
+    "mtime": 1794322407.95,
+    "md5": "80798f64",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Meta_Menlo_Park_6s.mp4": {
+    "mtime": 1794322411.3,
+    "md5": "8cdcbb45",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Paris_1977_Opera_6s.mp4": {
+    "mtime": 1794322404.32,
+    "md5": "9b666936",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Sailing_Badewind_6s.mp4": {
+    "mtime": 1794322415.78,
+    "md5": "92be17c1",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Sorbonne_Paris_6s.mp4": {
+    "mtime": 1794322407.41,
+    "md5": "58850bdc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_CLIP_STILL_Tektronix_475A_1977_6s.mp4": {
+    "mtime": 1794322405.04,
+    "md5": "f31ab5bb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_01_Soldering_Eye_10s.mp4": {
+    "mtime": 1794322396.77,
+    "md5": "b24b49e0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_02_Piaget_Constructivism_10s.mp4": {
+    "mtime": 1794322397.69,
+    "md5": "55151641",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_03_Minsky_Pencil_10s.mp4": {
+    "mtime": 1794322398.62,
+    "md5": "e8f28814",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_04_LeNet_Checks_10s.mp4": {
+    "mtime": 1794322399.55,
+    "md5": "388cfd1d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_05_Supersonic_Exile_10s.mp4": {
+    "mtime": 1794322400.49,
+    "md5": "37dcf6c9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_06_Gutenberg_OpenAI_10s.mp4": {
+    "mtime": 1794322401.42,
+    "md5": "3604b81d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_07_Cat_VS_LLM_12s.mp4": {
+    "mtime": 1794322402.55,
+    "md5": "6e8bb2ec",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP05_UA_CLIP_CARD_08_Close_Hauled_Finale_12s.mp4": {
+    "mtime": 1794322403.68,
+    "md5": "822a6958",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_02_ACT1_Paris_Electronics_ESIEE_Piaget_1974.png": {
+    "mtime": 1794322380.81,
+    "md5": "39cfd82e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_02_Paris_ESIEE_10s.mp4": {
+    "mtime": 1794322382.23,
+    "md5": "8619b06e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_03_ACT2_Sorbonne_Backprop_Minsky_1987.png": {
+    "mtime": 1794322383.57,
+    "md5": "fb418400",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_03_Sorbonne_BellLabs_10s.mp4": {
+    "mtime": 1794322386.3,
+    "md5": "6aec6174",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_04_ACT2_AT_T_Checks_DjVu_SVM_Wilderness.png": {
+    "mtime": 1794322387.91,
+    "md5": "841cc4f4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_04_Checks_DjVu_10s.mp4": {
+    "mtime": 1794322390.52,
+    "md5": "f93c15b8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_05_ACT3_Meta_FAIR_PyTorch_LLaMA_Gutenberg.png": {
+    "mtime": 1794322391.97,
+    "md5": "5d5ff152",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_05_FAIR_OpenSource_10s.mp4": {
+    "mtime": 1794322393.37,
+    "md5": "2988b8d7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_06_ACT4_Turing_2018_JEPA_World_Models_AMI_2026.png": {
+    "mtime": 1794322394.51,
+    "md5": "718d67a0",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_06_JEPA_AMI_10s.mp4": {
+    "mtime": 1794322395.84,
+    "md5": "a252a740",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_01_Soldering_And_Human_Eye.png": {
+    "mtime": 1794322395.94,
+    "md5": "c6af8cc5",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_02_Piaget_Constructivism_Choice.png": {
+    "mtime": 1794322396.87,
+    "md5": "e9797146",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_03_Minsky_Pencil_Proof.png": {
+    "mtime": 1794322397.79,
+    "md5": "b60486fd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_04_LeNet_Hubel_Wiesel_Checks.png": {
+    "mtime": 1794322398.73,
+    "md5": "2a4734ef",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_05_Supersonic_Jet_15_Years.png": {
+    "mtime": 1794322399.65,
+    "md5": "f4f4864d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_06_Gutenberg_Press_Open_AI.png": {
+    "mtime": 1794322400.59,
+    "md5": "2c64f515",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_07_House_Cat_VS_LLMs.png": {
+    "mtime": 1794322401.52,
+    "md5": "bf6d9e2a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP05_UA_CARD_08_Sailing_Close_Hauled_Finale.png": {
+    "mtime": 1794322402.65,
+    "md5": "f2f66215",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }
