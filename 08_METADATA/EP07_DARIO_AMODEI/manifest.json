@@ -1,0 +1,202 @@
+{
+  "episode_id": "EP07",
+  "hero": "Dario Amodei",
+  "hero_ua": "Даріо Амодей",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/dario_amodei/",
+  "summary": {
+    "research_docs_count": 23,
+    "transcripts_count": 15,
+    "articles_count": 4,
+    "research_words": 325604,
+    "videos_total": 65,
+    "videos_native": 49,
+    "images_total": 48,
+    "images_native": 38,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 07 — ДАРІО АМОДЕЙ",
+      "rel_path": "01_RESEARCH/dario_amodei/MASTER_DOSSIER_EP07.md",
+      "url": "",
+      "words": 13353
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP07: ДАРІО АМОДЕЙ",
+      "rel_path": "01_RESEARCH/dario_amodei/GLOBAL_MEDIA_ARCHIVES_REGISTRY_DARIO_AMODEI.md",
+      "url": "https://www.youtube.com/watch?v=ugvHCXCOmm4",
+      "words": 970
+    },
+    {
+      "title": "Dario Amodei — Core Architectural & Philosophical Theses (EP07)",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_Core_Theses.md",
+      "url": "",
+      "words": 354
+    },
+    {
+      "title": "Lex Fridman Podcast #452: Dario Amodei — Anthropic Team, Claude, AGI & Biosecurity",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_01_LexFridman_452_Dario_Amodei.md",
+      "url": "https://www.youtube.com/watch?v=ugvHCXCOmm4",
+      "words": 72295
+    },
+    {
+      "title": "Dwarkesh Patel: Dario Amodei — The Hidden Pattern Behind Every AI Breakthrough",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_02_Dwarkesh_Hidden_Pattern_2024.md",
+      "url": "https://www.youtube.com/watch?v=Nlkk3glap_U",
+      "words": 28674
+    },
+    {
+      "title": "Dwarkesh Patel: Dario Amodei — We Are Near the End of the Exponential",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_03_Dwarkesh_End_Of_Exponential_2026.md",
+      "url": "https://www.youtube.com/watch?v=n1E9IZfvGMA",
+      "words": 32840
+    },
+    {
+      "title": "US Senate Judiciary Subcommittee Hearing: Dario Amodei Testimony on AI Oversight & Biosecurity (25.07.2023)",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_04_US_Senate_Judiciary_Hearing_2023.md",
+      "url": "https://www.youtube.com/watch?v=yBgvqGrJ3g8",
+      "words": 23815
+    },
+    {
+      "title": "CBS News / Interview: Dario Amodei on Frontier AI & Anthropic",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_05_CBS_News_AI_Risks_Clip.md",
+      "url": "https://www.youtube.com/watch?v=AtIGees_Yqg",
+      "words": 1073
+    },
+    {
+      "title": "Anthropic Official: How Difficult Is AI Alignment? (Research Salon with Dario Amodei)",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_06_Anthropic_Alignment_Research_Salon.md",
+      "url": "https://www.youtube.com/watch?v=IPmt8b-qLgk",
+      "words": 6654
+    },
+    {
+      "title": "Anthropic Official: Building Anthropic — Conversation with Co-Founders Dario Amodei et al.",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_07_Building_Anthropic_Cofounders.md",
+      "url": "https://www.youtube.com/watch?v=om2lIWXLLN4",
+      "words": 13283
+    },
+    {
+      "title": "CBS News: Full Interview with Anthropic CEO Dario Amodei",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_08_CBS_News_Dario_Amodei_Interview.md",
+      "url": "https://www.youtube.com/watch?v=MPTNHrq_4LU",
+      "words": 5751
+    },
+    {
+      "title": "C-SPAN / UN Security Council: Dario Amodei Warns World Leaders on AI Existential Risks",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_09_UN_Security_Council_AI_Risks.md",
+      "url": "https://www.youtube.com/watch?v=u-u8gOgNA9o",
+      "words": 959
+    },
+    {
+      "title": "Dwarkesh Patel: AI Lab Leaders Debate Recursive Self-Improvement (Dario Amodei)",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_10_Dwarkesh_RSI_Debate_Amodei.md",
+      "url": "https://www.youtube.com/watch?v=PrSf7IOYu-I",
+      "words": 24854
+    },
+    {
+      "title": "US Senate Judiciary Subcommittee Full Archive: Dario Amodei Testimony",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_11_US_Senate_Subcommittee_Complete_Hearing.md",
+      "url": "https://www.youtube.com/watch?v=hm1zexCjELo",
+      "words": 23669
+    },
+    {
+      "title": "Dario Amodei on why he left OpenAI | Lex Fridman Podcast Clips | 583 | Lex Clips",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_12_Amodei_Why_Left_OpenAI_Clip.md",
+      "url": "https://www.youtube.com/watch?v=FzkCLR378fE",
+      "words": 2170
+    },
+    {
+      "title": "Post-training of LLMs: RLHF and Constitutional AI | Lex Fridman Podcast | 596 | Lex Clips",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_13_Amodei_RLHF_Constitutional_AI_Clip.md",
+      "url": "https://www.youtube.com/watch?v=xNXC9UZsgiA",
+      "words": 2093
+    },
+    {
+      "title": "Avoiding Bankruptcy Before AGI – Dario Amodei | 288 | Dwarkesh Clips",
+      "rel_path": "01_RESEARCH/dario_amodei/transcripts/EP07_TR_14_Amodei_Avoiding_Bankruptcy_PBC_Clip.md",
+      "url": "https://www.youtube.com/watch?v=y8ZEJe2Ss9k",
+      "words": 1096
+    },
+    {
+      "title": "EP07_ART_01: Dario Amodei — «Machines of Loving Grace» & Core Essays",
+      "rel_path": "01_RESEARCH/dario_amodei/articles/EP07_ART_01_Machines_Of_Loving_Grace_Essay_2024.md",
+      "url": "https://www.darioamodei.com/essay/machines-of-loving-grace",
+      "words": 46979
+    },
+    {
+      "title": "EP07_ART_02: Wikipedia Encyclopedic Chronicles — Dario Amodei & Anthropic",
+      "rel_path": "01_RESEARCH/dario_amodei/articles/EP07_ART_02_Dario_Amodei_Wikipedia_Chronicle.md",
+      "url": "",
+      "words": 5629
+    },
+    {
+      "title": "EP07_ART_03: Landmark Scientific Papers — Scaling Laws, Constitutional AI & Mechanistic Interpretability",
+      "rel_path": "01_RESEARCH/dario_amodei/articles/EP07_ART_03_Scaling_Laws_and_Constitutional_AI_arXiv.md",
+      "url": "https://arxiv.org/abs/2001.08361",
+      "words": 8625
+    },
+    {
+      "title": "EP07_ART_04: Princeton Biophysics Foundation, Anthropic PBC & Responsible Scaling Policy",
+      "rel_path": "01_RESEARCH/dario_amodei/articles/EP07_ART_04_Responsible_Scaling_Policy_Anthropic.md",
+      "url": "https://doi.org/10.1101/061481",
+      "words": 8122
+    },
+    {
+      "title": "Епізод 07 — Даріо Амодей: Фізика совісті та машини благодаті",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 07 — Даріо Амодей: Фізика совісті та машини благодаті.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 07 — ДАРІО АМОДЕЙ",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Даріо_Амодея.md",
+      "url": "",
+      "words": 2346
+    }
+  ],
+  "archival_clips": [
+    "EP07_VID_ARCH_01_ACT3_24FPS_Amodei_Senate_Biosecurity_Hearing.mp4",
+    "EP07_VID_ARCH_02_ACT1_24FPS_Amodei_Biophysics_Physics_Path_Lex452.mp4",
+    "EP07_VID_ARCH_03_ACT1_24FPS_Amodei_Baidu_DeepSpeech_Scaling_Lex452.mp4",
+    "EP07_VID_ARCH_04_ACT2_24FPS_Amodei_Ilya_Models_Want_Learn_LexClip.mp4",
+    "EP07_VID_ARCH_05_ACT2_24FPS_Amodei_Scaling_Power_Laws_Dwarkesh2024.mp4",
+    "EP07_VID_ARCH_06_ACT2_24FPS_Amodei_Scaling_Smoothness_GPT3_Dwarkesh2024.mp4",
+    "EP07_VID_ARCH_07_ACT2_24FPS_Amodei_Why_Left_OpenAI_Vision_LexClip.mp4",
+    "EP07_VID_ARCH_08_ACT2_24FPS_Amodei_Race_To_The_Top_Anthropic_LexClip.mp4",
+    "EP07_VID_ARCH_09_ACT2_24FPS_Amodei_Cofounders_GPT2_Safety_BuildingAnthropic.mp4",
+    "EP07_VID_ARCH_10_ACT3_24FPS_Amodei_Constitutional_AI_Origin_BuildingAnthropic.mp4",
+    "EP07_VID_ARCH_11_ACT3_24FPS_Amodei_Constitutional_AI_Principles_Lex452.mp4",
+    "EP07_VID_ARCH_12_ACT3_24FPS_Amodei_ChrisOlah_Mech_Interp_Lex452.mp4",
+    "EP07_VID_ARCH_13_ACT4_24FPS_Amodei_ASL_Levels_Cofounders_BuildingAnthropic.mp4",
+    "EP07_VID_ARCH_14_ACT4_24FPS_Amodei_Senate_Testimony_Human_Level_Risks.mp4",
+    "EP07_VID_ARCH_15_ACT4_24FPS_Amodei_Catastrophic_CBRN_Risks_Lex452.mp4",
+    "EP07_VID_ARCH_16_ACT4_24FPS_Amodei_Cancer_DNA_Microscopes_Biology_Lex452.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_01_san_francisco_victorian_childhood_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_02_tuscan_leather_working_tools.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_03_stanford_university_physics_quad.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_04_princeton_carl_icahn_biophysics_lab.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_05_princeton_jadwin_hall_physics.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_06_retinal_ganglion_neurons_microscopy.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_07_baidu_headquarters_shangdi.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_08_googleplex_building43_brain_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_09_openai_pioneer_building_sf.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_10_google_tpu_v3_scaling_laws_pod.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_11_claude_shannon_information_theory.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_12_anthropic_howard_street_sf_hq.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_13_white_house_ai_ceo_summit_2023.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_14_downing_street_pm_ai_developers_2023.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_15_dario_amodei_techcrunch_disrupt_2023_portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_16_dario_amodei_tokyo_ai_diplomacy_2025.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_17_bsl4_containment_asl_protocol.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_18_cancer_dna_fluorescence_loving_grace.jpg"
+  ]
+}

@@ -9108,5 +9108,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_01_san_francisco_victorian_childhood_era.jpg": {
+    "mtime": 1794336242.6,
+    "md5": "8f0c3722",
+    "w": 3840,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_02_tuscan_leather_working_tools.jpg": {
+    "mtime": 1794336245.69,
+    "md5": "f82cbef8",
+    "w": 3840,
+    "h": 2549,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_03_stanford_university_physics_quad.jpg": {
+    "mtime": 1794336247.12,
+    "md5": "c57af476",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_04_princeton_carl_icahn_biophysics_lab.jpg": {
+    "mtime": 1794336248.71,
+    "md5": "a4c0299f",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_05_princeton_jadwin_hall_physics.jpg": {
+    "mtime": 1794336249.92,
+    "md5": "be0685ee",
+    "w": 3840,
+    "h": 2967,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_06_retinal_ganglion_neurons_microscopy.jpg": {
+    "mtime": 1794336250.45,
+    "md5": "f16d469e",
+    "w": 1004,
+    "h": 1002,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1004×1002",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_07_baidu_headquarters_shangdi.jpg": {
+    "mtime": 1794336253.97,
+    "md5": "dbd6bee0",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_08_googleplex_building43_brain_era.jpg": {
+    "mtime": 1794336256.24,
+    "md5": "40264e30",
+    "w": 3264,
+    "h": 2448,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_09_openai_pioneer_building_sf.jpg": {
+    "mtime": 1794336257.08,
+    "md5": "47df95c5",
+    "w": 3840,
+    "h": 1929,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_10_google_tpu_v3_scaling_laws_pod.jpg": {
+    "mtime": 1794336257.64,
+    "md5": "fe07e273",
+    "w": 1960,
+    "h": 1398,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_11_claude_shannon_information_theory.jpg": {
+    "mtime": 1794336258.35,
+    "md5": "23559bff",
+    "w": 1942,
+    "h": 2427,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_12_anthropic_howard_street_sf_hq.jpg": {
+    "mtime": 1794336259.28,
+    "md5": "56cbb72c",
+    "w": 2865,
+    "h": 2952,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_13_white_house_ai_ceo_summit_2023.jpg": {
+    "mtime": 1794336259.94,
+    "md5": "517e9624",
+    "w": 3000,
+    "h": 2000,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_14_downing_street_pm_ai_developers_2023.jpg": {
+    "mtime": 1794336265.31,
+    "md5": "a0d4bdd9",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_15_dario_amodei_techcrunch_disrupt_2023_portrait.jpg": {
+    "mtime": 1794336265.97,
+    "md5": "3ece2413",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_16_dario_amodei_tokyo_ai_diplomacy_2025.jpg": {
+    "mtime": 1794336266.53,
+    "md5": "b75c795e",
+    "w": 2600,
+    "h": 1734,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_17_bsl4_containment_asl_protocol.jpg": {
+    "mtime": 1794336267.56,
+    "md5": "e59b73c6",
+    "w": 3264,
+    "h": 2448,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_amodei/ep07_img_arch_18_cancer_dna_fluorescence_loving_grace.jpg": {
+    "mtime": 1794336268.96,
+    "md5": "f51787f0",
+    "w": 3840,
+    "h": 2880,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_02_ACT1_24FPS_Amodei_Biophysics_Physics_Path_Lex452.mp4": {
+    "mtime": 1794336544.73,
+    "md5": "64fa1371",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_03_ACT1_24FPS_Amodei_Baidu_DeepSpeech_Scaling_Lex452.mp4": {
+    "mtime": 1794336588.3,
+    "md5": "1c05a0fe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 29.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "29s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_04_ACT2_24FPS_Amodei_Ilya_Models_Want_Learn_LexClip.mp4": {
+    "mtime": 1794336619.36,
+    "md5": "b38c56f2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 33.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "33s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_05_ACT2_24FPS_Amodei_Scaling_Power_Laws_Dwarkesh2024.mp4": {
+    "mtime": 1794336657.42,
+    "md5": "dbee07f5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_06_ACT2_24FPS_Amodei_Scaling_Smoothness_GPT3_Dwarkesh2024.mp4": {
+    "mtime": 1794336694.23,
+    "md5": "bc2dd78d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_07_ACT2_24FPS_Amodei_Why_Left_OpenAI_Vision_LexClip.mp4": {
+    "mtime": 1794336731.1,
+    "md5": "d1a95e53",
+    "w": 1920,
+    "h": 1080,
+    "dur": 40.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "40s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_08_ACT2_24FPS_Amodei_Race_To_The_Top_Anthropic_LexClip.mp4": {
+    "mtime": 1794336770.0,
+    "md5": "ddffe39b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_09_ACT2_24FPS_Amodei_Cofounders_GPT2_Safety_BuildingAnthropic.mp4": {
+    "mtime": 1794336978.17,
+    "md5": "09375954",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_10_ACT3_24FPS_Amodei_Constitutional_AI_Origin_BuildingAnthropic.mp4": {
+    "mtime": 1794337003.57,
+    "md5": "3ab29768",
+    "w": 1920,
+    "h": 1080,
+    "dur": 32.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "32s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_11_ACT3_24FPS_Amodei_Constitutional_AI_Principles_Lex452.mp4": {
+    "mtime": 1794337260.6,
+    "md5": "3a47a31a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_12_ACT3_24FPS_Amodei_ChrisOlah_Mech_Interp_Lex452.mp4": {
+    "mtime": 1794337076.08,
+    "md5": "08aa81bc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 37.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "37s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_13_ACT4_24FPS_Amodei_ASL_Levels_Cofounders_BuildingAnthropic.mp4": {
+    "mtime": 1794337097.14,
+    "md5": "2ca6d9c6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_14_ACT4_24FPS_Amodei_Senate_Testimony_Human_Level_Risks.mp4": {
+    "mtime": 1794337297.98,
+    "md5": "fb671d64",
+    "w": 1920,
+    "h": 1080,
+    "dur": 36.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "36s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_15_ACT4_24FPS_Amodei_Catastrophic_CBRN_Risks_Lex452.mp4": {
+    "mtime": 1794337155.06,
+    "md5": "758abdd4",
+    "w": 1920,
+    "h": 1080,
+    "dur": 32.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "32s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_16_ACT4_24FPS_Amodei_Cancer_DNA_Microscopes_Biology_Lex452.mp4": {
+    "mtime": 1794337182.92,
+    "md5": "d036d842",
+    "w": 1920,
+    "h": 1080,
+    "dur": 36.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "36s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_amodei_disrupt_2023_6s.mp4": {
+    "mtime": 1794336434.56,
+    "md5": "f458ad2b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_amodei_tokyo_2025_6s.mp4": {
+    "mtime": 1794336435.39,
+    "md5": "0201fe1a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_anthropic_howard_6s.mp4": {
+    "mtime": 1794336432.05,
+    "md5": "d613691b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_baidu_shangdi_6s.mp4": {
+    "mtime": 1794336427.95,
+    "md5": "7519a4ce",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_bsl4_containment_6s.mp4": {
+    "mtime": 1794336436.12,
+    "md5": "fee6e451",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_cancer_fluorescence_6s.mp4": {
+    "mtime": 1794336436.94,
+    "md5": "1650a29e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_claude_shannon_6s.mp4": {
+    "mtime": 1794336431.15,
+    "md5": "49741a67",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_downing_street_2023_6s.mp4": {
+    "mtime": 1794336433.85,
+    "md5": "58ba30b5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_googleplex43_6s.mp4": {
+    "mtime": 1794336428.78,
+    "md5": "43db6953",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_openai_pioneer_6s.mp4": {
+    "mtime": 1794336429.64,
+    "md5": "f5124d23",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_princeton_icahn_6s.mp4": {
+    "mtime": 1794336425.28,
+    "md5": "a5571274",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_princeton_jadwin_6s.mp4": {
+    "mtime": 1794336426.26,
+    "md5": "40798d1c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_retinal_ganglion_6s.mp4": {
+    "mtime": 1794336426.99,
+    "md5": "dc6d5076",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_sf_mission_era_6s.mp4": {
+    "mtime": 1794336422.44,
+    "md5": "cf5fb490",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_stanford_quad_6s.mp4": {
+    "mtime": 1794336424.18,
+    "md5": "08d235b8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_tpu_v3_scaling_6s.mp4": {
+    "mtime": 1794336430.42,
+    "md5": "2119ea13",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_tuscan_leather_tools_6s.mp4": {
+    "mtime": 1794336423.42,
+    "md5": "9fd3fd85",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_white_house_2023_6s.mp4": {
+    "mtime": 1794336432.86,
+    "md5": "f7c66959",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_01_leather_and_illness_10s.mp4": {
+    "mtime": 1794336411.5,
+    "md5": "f31e98f3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_02_princeton_retina_2011_10s.mp4": {
+    "mtime": 1794336412.79,
+    "md5": "8aba8859",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_03_scaling_laws_line_10s.mp4": {
+    "mtime": 1794336414.09,
+    "md5": "3ec77531",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_04_silent_exodus_anthropic_10s.mp4": {
+    "mtime": 1794336415.4,
+    "md5": "3626f499",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_05_claude_shannon_prism_10s.mp4": {
+    "mtime": 1794336416.72,
+    "md5": "4aa76240",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_06_mech_interp_microscope_10s.mp4": {
+    "mtime": 1794336418.07,
+    "md5": "07f5c1e0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_07_asl_biosecurity_vow_12s.mp4": {
+    "mtime": 1794336419.57,
+    "md5": "7ca44d59",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_ua_clip_card_08_loving_grace_finale_12s.mp4": {
+    "mtime": 1794336421.1,
+    "md5": "03eec9b8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_02_ACT1_sf_leather_princeton_retina_2011.mp4": {
+    "mtime": 1794336399.79,
+    "md5": "fc20c535",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_02_ACT1_sf_leather_princeton_retina_2011.png": {
+    "mtime": 1794336398.21,
+    "md5": "7228b7b9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020.mp4": {
+    "mtime": 1794336402.27,
+    "md5": "5bb82d2c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020.png": {
+    "mtime": 1794336400.9,
+    "md5": "b8288ef4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_04_ACT2_silent_exit_anthropic_shannon_2021.mp4": {
+    "mtime": 1794336404.93,
+    "md5": "d3b8c4c6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_04_ACT2_silent_exit_anthropic_shannon_2021.png": {
+    "mtime": 1794336403.4,
+    "md5": "ace57b2f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_05_ACT3_constitutional_ai_mech_interp_2024.mp4": {
+    "mtime": 1794336407.87,
+    "md5": "fa3dc6d9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_05_ACT3_constitutional_ai_mech_interp_2024.png": {
+    "mtime": 1794336406.19,
+    "md5": "0fbfc89b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_06_ACT4_asl_biosecurity_machines_loving_grace.mp4": {
+    "mtime": 1794336410.51,
+    "md5": "4cbc5e65",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_06_ACT4_asl_biosecurity_machines_loving_grace.png": {
+    "mtime": 1794336409.06,
+    "md5": "adc65ab7",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_01_leather_and_illness_10s.png": {
+    "mtime": 1794336410.62,
+    "md5": "2095a2c5",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_02_princeton_retina_2011_10s.png": {
+    "mtime": 1794336411.96,
+    "md5": "05edde17",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_03_scaling_laws_line_10s.png": {
+    "mtime": 1794336413.25,
+    "md5": "2aae6874",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_04_silent_exodus_anthropic_10s.png": {
+    "mtime": 1794336414.55,
+    "md5": "534eabde",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_05_claude_shannon_prism_10s.png": {
+    "mtime": 1794336415.87,
+    "md5": "c97d9756",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_06_mech_interp_microscope_10s.png": {
+    "mtime": 1794336417.22,
+    "md5": "e17c3c2a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_07_asl_biosecurity_vow_12s.png": {
+    "mtime": 1794336418.53,
+    "md5": "7146ec72",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep07_ua_clip_card_08_loving_grace_finale_12s.png": {
+    "mtime": 1794336420.02,
+    "md5": "2f8af567",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

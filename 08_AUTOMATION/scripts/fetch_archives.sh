@@ -178,8 +178,23 @@ run_ep06() {
 }
 
 run_ep07() {
-  # EP07 — Даріо Амодей: Свідчення у Юридичному комітеті Сенату США (25.07.2023 — Public Domain)
+  # EP07 — Даріо Амодей: Свідчення у Сенаті США + повний 4-актний архів (16 HD кліпів)
   fetch_clip "https://www.youtube.com/watch?v=yBgvqGrJ3g8" "00:36:15-00:36:23" "EP07_VID_ARCH_01_ACT3_24FPS_Amodei_Senate_Biosecurity_Hearing"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "00:08:58-00:09:26" "EP07_VID_ARCH_02_ACT1_24FPS_Amodei_Biophysics_Physics_Path_Lex452"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "00:03:25-00:03:54" "EP07_VID_ARCH_03_ACT1_24FPS_Amodei_Baidu_DeepSpeech_Scaling_Lex452"
+  fetch_clip "https://www.youtube.com/watch?v=FzkCLR378fE" "00:00:13-00:00:46" "EP07_VID_ARCH_04_ACT2_24FPS_Amodei_Ilya_Models_Want_Learn_LexClip"
+  fetch_clip "https://www.youtube.com/watch?v=Nlkk3glap_U" "00:01:36-00:02:14" "EP07_VID_ARCH_05_ACT2_24FPS_Amodei_Scaling_Power_Laws_Dwarkesh2024"
+  fetch_clip "https://www.youtube.com/watch?v=Nlkk3glap_U" "00:03:38-00:04:12" "EP07_VID_ARCH_06_ACT2_24FPS_Amodei_Scaling_Smoothness_GPT3_Dwarkesh2024"
+  fetch_clip "https://www.youtube.com/watch?v=FzkCLR378fE" "00:03:26-00:04:06" "EP07_VID_ARCH_07_ACT2_24FPS_Amodei_Why_Left_OpenAI_Vision_LexClip"
+  fetch_clip "https://www.youtube.com/watch?v=FzkCLR378fE" "00:06:00-00:06:34" "EP07_VID_ARCH_08_ACT2_24FPS_Amodei_Race_To_The_Top_Anthropic_LexClip"
+  fetch_clip "https://www.youtube.com/watch?v=om2lIWXLLN4" "00:02:06-00:02:40" "EP07_VID_ARCH_09_ACT2_24FPS_Amodei_Cofounders_GPT2_Safety_BuildingAnthropic"
+  fetch_clip "https://www.youtube.com/watch?v=om2lIWXLLN4" "00:06:00-00:06:32" "EP07_VID_ARCH_10_ACT3_24FPS_Amodei_Constitutional_AI_Origin_BuildingAnthropic"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "01:53:40-01:54:18" "EP07_VID_ARCH_11_ACT3_24FPS_Amodei_Constitutional_AI_Principles_Lex452"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "00:21:25-00:22:02" "EP07_VID_ARCH_12_ACT3_24FPS_Amodei_ChrisOlah_Mech_Interp_Lex452"
+  fetch_clip "https://www.youtube.com/watch?v=om2lIWXLLN4" "00:29:28-00:29:54" "EP07_VID_ARCH_13_ACT4_24FPS_Amodei_ASL_Levels_Cofounders_BuildingAnthropic"
+  fetch_clip "https://www.youtube.com/watch?v=yBgvqGrJ3g8" "00:19:02-00:19:38" "EP07_VID_ARCH_14_ACT4_24FPS_Amodei_Senate_Testimony_Human_Level_Risks"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "00:55:48-00:56:20" "EP07_VID_ARCH_15_ACT4_24FPS_Amodei_Catastrophic_CBRN_Risks_Lex452"
+  fetch_clip "https://www.youtube.com/watch?v=ugvHCXCOmm4" "02:23:12-02:23:48" "EP07_VID_ARCH_16_ACT4_24FPS_Amodei_Cancer_DNA_Microscopes_Biology_Lex452"
 }
 
 run_ep08() {

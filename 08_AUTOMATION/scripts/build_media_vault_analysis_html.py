@@ -631,16 +631,16 @@ html += f'''
   </section>
 
 </div>
-<script src="data/season1_index.js?v=20261110_v9"></script>
-<script src="data/media_acquisition_pool.js?v=20261110_v9"></script>
-<script src="data/project_vault_inventory.js?v=20261110_v9"></script>
+<script src="data/season1_index.js?v=20261110_v10"></script>
+<script src="data/media_acquisition_pool.js?v=20261110_v10"></script>
+<script src="data/project_vault_inventory.js?v=20261110_v10"></script>
 <script>
 (function () {{
   var season = window.SEASON1_INDEX || [];
   var vault = window.PROJECT_VAULT_INVENTORY || {{}};
   var pool = window.MEDIA_ACQUISITION_POOL || {{}};
   var params = new URLSearchParams(window.location.search || "");
-  var activeEp = params.get("ep") || "05";
+  var activeEp = params.get("ep") || "07";
   if (!vault[activeEp] && season.length) activeEp = season[0].ep;
   var activeKind = "videos";
   var searchQ = "";

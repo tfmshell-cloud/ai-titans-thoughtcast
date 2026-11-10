@@ -31,8 +31,8 @@ EP_META = [
      "Повне досьє + 10 транскриптів & 3 статті (Lex #416/#258/#36, ETH Zurich World Models, ACM Turing 2018, Nokia Bell Labs, Davos 2026, arXiv JEPA) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("06", "ilya_sutskever", "episode_06_sutskever", ["ep06", "sutskever"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 11 транскриптів & 3 статті (Dwarkesh 2023/2025, No Priors, Simons Berkeley, NeurIPS 2024 Seq2Seq, NVIDIA GTC Fireside, Tel Aviv 2023, UofT 2025, SSI.inc, arXiv) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
-    ("07", "dario_amodei", "episode_07_amodei", ["ep07", "amodei"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті США 2023 + VFX сітківки + Flow конституційна призма. Очікує генерацію Veo."),
+    ("07", "dario_amodei", "episode_07_amodei", ["ep07", "amodei"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 14 першоджерельних транскриптів & 4 статті (Lex #452 5 год, Dwarkesh 2024/2026, Сенат США 2023, Alignment Salon, Building Anthropic, CBS News, РБ ООН, «Machines of Loving Grace», arXiv Scaling Laws / CAI & Transformer Circuits) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("08", "fei_fei_li", "episode_08_li", ["ep08", "feifei", "fei_fei", "fei-fei"], "🟠 Розширений препродакшн + Аудіоогляд", 46, "stage-preprod",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + TED Talk архів + 2 VFX + готовий 26-хв український подкаст NotebookLM Overview! Наступний крок: генерація візуалів ImageNet."),
     ("09", "yoshua_bengio", "episode_09_bengio", ["ep09", "bengio"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
@@ -183,10 +183,13 @@ def count_project_stats():
             ]
         elif ep == "07":
             bio_sources = [
-                "US Senate Judiciary Subcommittee Biosecurity Hearing (25.07.2023)",
-                "Anthropic Public Benefit Corporation & Constitutional AI Papers",
-                "«Machines of Loving Grace» Essay (October 2024)",
-                "Princeton Biophysics PhD Dissertation (2011) & Scaling Laws (2020)"
+                "Lex Fridman #452 (`ugvHCXCOmm4`) & Why Left OpenAI / RLHF Clips (`FzkCLR378fE`, `xNXC9UZsgiA`)",
+                "Dwarkesh Patel 2024 (`Nlkk3glap_U`), 2026 Exponential (`n1E9IZfvGMA`) & RSI Debate (`PrSf7IOYu-I`)",
+                "US Senate Judiciary Biosecurity Hearing (`yBgvqGrJ3g8` — 25.07.2023) & UN Security Council (`u-u8gOgNA9o`)",
+                "Anthropic Alignment Salon (`IPmt8b-qLgk`), Building Anthropic (`om2lIWXLLN4`) & CBS News (`MPTNHrq_4LU`)",
+                "Essay Manifesto «Machines of Loving Grace» & «Urgency of Interpretability» (`darioamodei.com`)",
+                "arXiv Papers (`2001.08361` Scaling Laws, `2212.08073` CAI) & Transformer Circuits `Scaling Monosemanticity`",
+                "Wikimedia Commons Archival Collection (18 відкритих фото: СФ 1983 → Принстон → OpenAI → Anthropic → ASL-4)"
             ]
         elif ep == "08":
             bio_sources = [
@@ -747,7 +750,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP06)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP07)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

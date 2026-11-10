@@ -898,7 +898,18 @@ ASSET_AFFINITY_MAP = {
         "09": ["sutskever_tau_2023", "end_of_pretraining", "nov2023_rift", "sutskever_regret"],
         "10": ["ep06_flow_01_ssi_obsidian", "age_of_research_ssi", "ssi_scale_in_peace", "ssi_monolith", "brain_biological_computer", "convocation_hall_2025", "silent_sanctuary"],
     },
-    "07": {"07": ["constitutional_prism"]},
+    "07": {
+        "01": ["sf_mission_era", "tuscan_leather", "san_francisco_victorian", "leather_and_illness", "stanford_quad"],
+        "02": ["leather_and_illness", "ep07_doc_02", "stanford_quad", "stanford_university_physics", "biophysics_physics_path"],
+        "03": ["camera_traversing_human_retina", "retinal_ganglion", "princeton_icahn", "princeton_jadwin", "biophysics_physics_path", "princeton_retina_2011", "ep07_flow_img_01"],
+        "04": ["scaling_laws_line", "ep07_doc_03", "scaling_power_laws", "scaling_smoothness", "baidu_shangdi", "googleplex43", "tpu_v3_scaling", "ep07_flow_img_02", "ilya_models_want_learn"],
+        "05": ["silent_exodus_anthropic", "why_left_openai", "openai_pioneer", "cofounders_gpt2_safety", "ep07_doc_04"],
+        "06": ["claude_shannon", "anthropic_howard", "ep07_doc_04", "race_to_the_top", "amodei_disrupt_2023", "white_house_2023", "downing_street_2023"],
+        "07": ["constitutional_prism", "constitutional_ai_origin", "constitutional_ai_principles", "claude_shannon_prism", "ep07_doc_01", "ep07_flow_img_04"],
+        "08": ["mech_interp_microscope", "ep07_doc_05", "chrisolah_mech_interp", "ep07_flow_img_05", "hands_cupping_levitating"],
+        "09": ["asl_biosecurity_vow", "asl_levels_cofounders", "senate_biosecurity_hearing", "senate_testimony_human_level", "catastrophic_cbrn", "bsl4_containment", "ep07_doc_06", "amodei_tokyo_2025"],
+        "10": ["loving_grace_finale", "cancer_dna_microscopes", "cancer_fluorescence", "nanobots_repairing_human_cell", "ep07_flow_img_03", "ep07_doc_06"],
+    },
     "08": {"09": ["spatial_intelligence"]},
     "09": {"05": ["attention_vector"]},
     "10": {"01": ["medical_textbook"], "05": ["global_neural_classroom"]},
@@ -1031,6 +1042,7 @@ def main():
         "04": "EP04_GEOFFREY_HINTON",
         "05": "EP05_YANN_LECUN",
         "06": "EP06_ILYA_SUTSKEVER",
+        "07": "EP07_DARIO_AMODEI",
     }
     for ep, name_ua, name_en, *_ in EP_META:
         s = vault[ep]["summary"]
