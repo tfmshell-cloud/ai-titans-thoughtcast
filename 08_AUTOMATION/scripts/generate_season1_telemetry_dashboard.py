@@ -21,8 +21,8 @@ DOCS_DIR = os.path.join(ROOT, "docs")
 EP_META = [
     ("01", "sam_altman", "episode_01_altman", ["ep01", "altman"], "🟢 В активному фінальному монтажі", 90, "stage-editing",
      "DaVinci Studio 21 • Майстер-таймлайн V3 (15:10, 103 відеокліпи V1, 2× 4K ProRes MGFX на V2, 25 UA VO, 7 Suno тем @ -30 dB, Fusion Glow FX). Готово до фінального кольорокору та рендеру."),
-    ("02", "jensen_huang", "episode_02_huang", ["ep02", "huang", "blackwell", "nvidia"], "🟠 Препродакшн & Стартовий інжест", 42, "stage-preprod",
-     "Повне досьє + сценарій + 20 кінематографічних тріад + 100 промптів + 4 Suno стеми + 2 архівні GTC відео + 2 наукові VFX + Flow кадри. Наступний крок: генерація Veo та начитка VO."),
+    ("02", "jensen_huang", "episode_02_huang", ["ep02", "huang", "blackwell", "nvidia"], "🟡 Повний архів & Досьє зібрані", 60, "stage-ingest",
+     "Повне досьє + 50 тріад (150 промптів) + 12 реальних архівних відео (Oneida/Stripe, 60 Minutes Denny's, OSU 2009, NTU 2023, GTC 2016 DGX-1, Stanford SIEPR, Blackwell) + 19 історичних фото + 6 4K Досьє + 8 4K українських цитат-карток + 16 Ken Burns 4K кліпів + 4 Suno стеми. Наступний крок: генерація решти Veo та начитка VO."),
     ("03", "demis_hassabis", "episode_03_hassabis", ["ep03", "ep02_demis_hassabis", "hassabis"], "🟡 Медіапул зібрано в Resolve", 62, "stage-ingest",
      "Найглибший ресьорч (26,500+ слів, 50 біографічних сюжетів, 30 тріад). Унікальний інжест у DaVinci (EP03_HASSABIS_CHESS): 24 відео (шахи, ZX Spectrum, вокселі, нейрони, AlphaFold, Переліт), 90 зображень. Наступний крок: озвучка ElevenLabs та збірка таймлайну."),
     ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
@@ -119,11 +119,13 @@ def count_project_stats():
             ]
         elif ep == "02":
             bio_sources = [
-                "NVIDIA GTC Keynotes (Blackwell Reveal 2024, Stanford GSB)",
-                "Oneida Baptist Institute & Denny's Historical Records",
-                "Hewlett-Packard GSB Talk / Acquired Podcast Deep Dive",
-                "SEGA RIVA 128 Rescue & CUDA 2006 Whitepaper",
-                "AlexNet 2012 NeurIPS Milestone Archive"
+                "CBS 60 Minutes (2024) — Denny's 2484 Berryessa Rd Booth #1 & Commemorative Plaque",
+                "Stanford Graduate School of Business & SIEPR Summit 2024 (No Task Beneath Me / Pain & Suffering)",
+                "Oregon State University Commencement 2009 (Young Jen-Hsun Huang) & Aloha High School",
+                "National Taiwan University Commencement 2023 (Sega $5M Rescue / Run, Don't Walk)",
+                "Stripe Sessions 2024 — Oneida Baptist Institute KY Age-9 & CUDA Zero-Billion Market",
+                "NVIDIA GTC 2016 (DGX-1 Reveal / OpenAI) & Blackwell B200 Keynote",
+                "Wikimedia Commons Archival Collection (Tamsui 1970, OBI, NV1, RIVA 128, GeForce 256, GTX 580, Morris Chang, Endeavor HQ)"
             ]
         elif ep == "03":
             bio_sources = [

@@ -77,9 +77,19 @@ run_ep01() {
 }
 
 run_ep02() {
-  # EP02 — Дженсен Хуанг: NVIDIA GTC Blackwell Keynote & Silicon Wafer
+  # EP02 — Дженсен Хуанг: Біографічні та технологічні архіви (Oneida/Stripe, Stanford GSB, 60 Minutes Denny's, OSU 2009, NTU 2023, GTC 2016 DGX-1, SIEPR 2024, GTC Blackwell)
   fetch_clip "https://www.youtube.com/watch?v=_waPvOwL9Z8" "00:14:20-00:14:28" "EP02_VID_ARCH_01_ACT3_24FPS_Huang_GTC_Stage_Walk"
   fetch_clip "https://www.youtube.com/watch?v=_waPvOwL9Z8" "00:46:10-00:46:18" "EP02_VID_ARCH_02_ACT3_24FPS_Huang_Blackwell_Wafer_Reveal"
+  fetch_clip "https://www.youtube.com/watch?v=8Pfa8kPjUio" "00:09:44-00:10:00" "EP02_VID_ARCH_03_ACT1_24FPS_Huang_Oneida_Bathrooms_Age9"
+  fetch_clip "https://www.youtube.com/watch?v=lXLBTBBil2U" "00:30:27-00:30:43" "EP02_VID_ARCH_04_ACT1_24FPS_Huang_Dennys_Dishwasher_NoTaskBeneath"
+  fetch_clip "https://www.youtube.com/watch?v=DpQQi2scsHo" "00:07:49-00:08:09" "EP02_VID_ARCH_05_ACT1_24FPS_Huang_Dennys_Booth_Founding_60Min"
+  fetch_clip "https://www.youtube.com/watch?v=DpQQi2scsHo" "00:08:21-00:08:36" "EP02_VID_ARCH_06_ACT1_24FPS_Huang_Dennys_Booth_Inside_60Min"
+  fetch_clip "https://www.youtube.com/watch?v=lMW5v7wK7zo" "00:02:40-00:02:56" "EP02_VID_ARCH_07_ACT2_24FPS_Huang_2009_OSU_We_Failed"
+  fetch_clip "https://www.youtube.com/watch?v=TOXp-Yk_Gsk" "00:11:46-00:12:04" "EP02_VID_ARCH_08_ACT2_24FPS_Huang_Sega_Lifeline_NTU2023"
+  fetch_clip "https://www.youtube.com/watch?v=8Pfa8kPjUio" "00:28:00-00:28:18" "EP02_VID_ARCH_09_ACT2_24FPS_Huang_Invented_CUDA_Stripe2024"
+  fetch_clip "https://www.youtube.com/watch?v=1ayGJDO6PKU" "00:01:26-00:01:44" "EP02_VID_ARCH_10_ACT3_24FPS_Huang_GTC2016_DGX1_Reveal"
+  fetch_clip "https://www.youtube.com/watch?v=cEg8cOx7UZk" "00:37:58-00:38:22" "EP02_VID_ARCH_11_ACT4_24FPS_Huang_Stanford_Pain_And_Suffering"
+  fetch_clip "https://www.youtube.com/watch?v=TOXp-Yk_Gsk" "00:21:08-00:21:24" "EP02_VID_ARCH_12_ACT4_24FPS_Huang_NTU2023_Run_Dont_Walk"
 }
 
 run_ep03() {

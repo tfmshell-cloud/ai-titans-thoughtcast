@@ -160,11 +160,14 @@ def find_existing_web_preview(fname_lower):
         ("video_previews/archives", [".mp4"]),
         ("video_previews/scientific_vfx", [".mp4"]),
         ("video_previews/dossiers", [".mp4"]),
+        ("archival_photos", [".jpg", ".jpeg", ".png"]),
+        ("dossiers_preview", [".jpg", ".jpeg", ".png"]),
         ("flow_keyframes", [".jpg", ".png"]),
         ("dossiers", [".png", ".jpg"]),
         ("speaker_photos", [".jpg", ".png"]),
     ]
     stem = os.path.splitext(fname_lower)[0]
+    m_doc = re.match(r"^(ep\d+_doc_\d+)", stem)
     for sub, exts in candidates:
         folder = os.path.join(DASH_DIR, "assets", sub)
         if not os.path.isdir(folder):
@@ -172,6 +175,8 @@ def find_existing_web_preview(fname_lower):
         for f in os.listdir(folder):
             fl = f.lower()
             if fl == fname_lower or os.path.splitext(fl)[0] == stem:
+                return f"assets/{sub}/{f}"
+            if m_doc and sub in ("video_previews/dossiers", "dossiers_preview") and fl.startswith(m_doc.group(1)):
                 return f"assets/{sub}/{f}"
     return ""
 
@@ -601,10 +606,30 @@ ASSET_AFFINITY_MAP = {
         "50": ["earth_horizon"],
     },
     "02": {
-        "25": ["gamer_digitized", "gaming_hardware"],
-        "29": ["developers_facing_gpu", "gtx", "server_core"],
-        "35": ["golden_transistor_dust", "blackwell_wafer"],
-        "45": ["blackwell", "gpu_server_plates", "supercomputer"],
+        "03": ["tamsui_1970", "ep02_img_arch_01"],
+        "04": ["oneida_kentucky", "ep02_img_arch_02"],
+        "08": ["oneida_bathrooms", "ua_clip_card_01"],
+        "09": ["dennys_dishwasher_notaskbeneath", "aloha_high", "stanford_keynote_portrait"],
+        "10": ["ua_clip_card_02", "osu_campus", "ep02_img_arch_04"],
+        "12": ["dennys_booth_founding", "dennys_berryessa", "ep02_img_arch_05"],
+        "13": ["dennys_booth_inside", "dennys_founding", "ep02_doc_02"],
+        "16": ["2009_osu_we_failed", "nv1_die", "ep02_img_arch_06"],
+        "21": ["sega_lifeline", "sega_rescue", "ua_clip_card_03", "ep02_doc_03"],
+        "22": ["riva_128", "ep02_img_arch_07"],
+        "23": ["morris_chang", "ep02_img_arch_08", "riva_geforce", "ep02_doc_04"],
+        "24": ["ua_clip_card_04", "ep02_doc_01"],
+        "25": ["geforce_256", "ep02_img_arch_09", "gamer_digitized", "gaming_hardware"],
+        "26": ["invented_cuda", "huang_2014_headshot"],
+        "28": ["ua_clip_card_05", "huang_gtc_2016", "ep02_img_arch_13"],
+        "29": ["evga_gtx580", "gf110_gtx580", "alexnet_gtx580", "developers_facing_gpu"],
+        "31": ["gtc2016_dgx1", "dgx1_openai", "ep02_doc_06", "dgx_supercomputer"],
+        "32": ["ua_clip_card_06", "huang_center_stanford"],
+        "34": ["pain_and_suffering", "ua_clip_card_07", "ep02_vid_arch_11"],
+        "35": ["blackwell_wafer_reveal", "golden_transistor_dust"],
+        "39": ["run_dont_walk", "ua_clip_card_08", "ep02_vid_arch_12"],
+        "45": ["dgx_b200_hgx", "nvidia_endeavor_hq", "gpu_server_plates"],
+        "49": ["gtc_stage_walk", "ep02_vid_arch_01"],
+        "50": ["nvidia_endeavor_hq", "ep02_img_arch_16"],
     },
     "03": {
         "03": ["wooden_king"],

@@ -2853,12 +2853,15 @@
       "</div>"
     ].join("\n") : "";
 
+    var archPhotoEraNote = epData.ep === "02"
+      ? "Хронологічний фотоархів 1970–2026: Тайвань, Oneida, Aloha, OSU, Denny's Berryessa, NV1, RIVA 128, GeForce 256, GTX 580, DGX & Endeavor HQ"
+      : (epData.ep === "01" ? "Ера St. Louis, John Burroughs, Loopt, YC, WWDC 2008, Stanford & OpenAI" : "Автентичні знімки спікера та історичні артефакти епохи");
     var photoSectionHtml = photoCardsHtml ? [
       "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">📸 Автентичні Історичні Фото Спікера (" + (epMedia.archival_photos || []).length + " фото • Ера YC, WWDC 2008, Stanford)</div>",
-      "      <div class=\"panel-desc\">Реальні історичні знімки з відкритого архіву Wikimedia Commons та Apple Keynote Archive.</div>",
+      "      <div class=\"panel-title\">📸 Автентичні Історичні Фото Спікера (" + (epMedia.archival_photos || []).length + " фото • " + archPhotoEraNote + ")</div>",
+      "      <div class=\"panel-desc\">Реальні історичні знімки та апаратні артефакти з відкритого архіву Wikimedia Commons та університетських/прес-архівів.</div>",
       "    </div>",
       "  </div>",
       "  <div class=\"node-tree-grid\">" + photoCardsHtml + "</div>",

@@ -66,6 +66,61 @@
     "web_preview": "assets/dossiers_preview/ep02_doc_01_nvidia_cuda.jpg"
   },
   {
+    "id": "EP02_DOC_02",
+    "ep": "02",
+    "act": "ACT2",
+    "timecode": "05:15–06:05",
+    "title": "NVIDIA Incorporation Draft: Graphics Acceleration From Booth #1",
+    "source_label": "Dennys Booth #1 Architectural Whiteboard Transcript • April 1993",
+    "highlight": "“We didn't have a clue how to write a business plan. Don Valentine of Sequoia Capital invested $1.4M purely on our former CEO's word that we were builders who refused to lose.”",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_02_ACT2_Dennys_Founding_Charter_1993.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_02_dennys_1993.jpg"
+  },
+  {
+    "id": "EP02_DOC_03",
+    "ep": "02",
+    "act": "ACT2",
+    "timecode": "06:30–09:30",
+    "title": "NV1 Failure, 60% Layoff & Sega's $5M Lifeline",
+    "source_label": "NVIDIA – SEGA Contract Renegotiation Record • CEO Shoichiro Irimajiri",
+    "highlight": "Huang flew to Tokyo to tell Sega CEO Shoichiro Irimajiri the truth: NVIDIA must walk away from its broken Sega console chip — yet asked Sega to convert the remaining $5M milestone payment into equity so NVIDIA could survive 6 months.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_03_ACT2_Sega_NV2_Rescue_Memorandum_1997.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_03_sega_rescue_1997.jpg"
+  },
+  {
+    "id": "EP02_DOC_04",
+    "ep": "02",
+    "act": "ACT2",
+    "timecode": "09:30–11:18",
+    "title": "RIVA 128 First-Silicon Victory & World's First GPU (GeForce 256)",
+    "source_label": "NVIDIA Product & IPO Milestone Brief • RIVA 128 (NV3) → GeForce 256 (NV10)",
+    "highlight": "On October 11, 1999, NVIDIA unveiled GeForce 256 (NV10) with integrated hardware Transform & Lighting — coining the industry category 'GPU' (Graphics Processing Unit) with 17 million transistors on 220nm silicon.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_04_ACT2_RIVA128_GeForce256_First_GPU_1999.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_04_riva_geforce_1999.jpg"
+  },
+  {
+    "id": "EP02_DOC_05",
+    "ep": "02",
+    "act": "ACT3",
+    "timecode": "13:45–15:25",
+    "title": "AlexNet Proves Jensen Huang's $500M CUDA Bet",
+    "source_label": "Krizhevsky, Sutskever & Hinton • 2× Consumer GeForce GTX 580 (3GB)",
+    "highlight": "Trained directly on CUDA kernels in Alex Krizhevsky's bedroom, AlexNet shattered the ImageNet Top-5 error benchmark (15.3% vs. 26.2%), triggering Huang's company-wide pivot: NVIDIA goes 100% all-in on Deep Learning.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_05_ACT3_AlexNet_GTX580_Turning_Point_2012.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_05_alexnet_gtx580_2012.jpg"
+  },
+  {
+    "id": "EP02_DOC_06",
+    "ep": "02",
+    "act": "ACT3",
+    "timecode": "15:25–16:15",
+    "title": "World's First AI Supercomputer Delivered to OpenAI",
+    "source_label": "NVIDIA DGX-1 Unit #001 Hand-Delivery to OpenAI • 8× Tesla P100 Pascal GPUs",
+    "highlight": "Handwritten Marker Inscription on OpenAI's Chassis: “To Elon & the OpenAI team — To the future of computing & humanity. I give you the world's first DGX-1.” — Jensen Huang, 2016.",
+    "raw_4k_png": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_06_ACT3_DGX1_OpenAI_Delivery_2016.png",
+    "web_preview": "assets/dossiers_preview/ep02_doc_06_dgx1_openai_2016.jpg"
+  },
+  {
     "id": "EP03_DOC_01",
     "ep": "03",
     "act": "ACT3",

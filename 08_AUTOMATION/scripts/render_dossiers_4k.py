@@ -129,6 +129,96 @@ DOSSIERS = [
         "footer_right": "EP02 JENSEN HUANG • TRACK V2"
     },
     {
+        "id": "EP02_DOC_02",
+        "ep": "02",
+        "act": "ACT2",
+        "timecode": "05:15–06:05",
+        "filename": "EP02_DOC_02_ACT2_Dennys_Founding_Charter_1993.png",
+        "web_file": "ep02_doc_02_dennys_1993.jpg",
+        "style": "letter",
+        "stamp": "ARCHIVAL ORIGIN LEDGER // APRIL 5, 1993 • 2484 BERRYESSA RD, SAN JOSE",
+        "source_label": "Dennys Booth #1 Architectural Whiteboard Transcript • April 1993",
+        "title": "NVIDIA Incorporation Draft: Graphics Acceleration From Booth #1",
+        "meta": "Founders: Jensen Huang (Age 30, LSI Logic), Chris Malachowsky, Curtis Priem (Sun Microsystems)",
+        "body_before": "At a fluorescent-lit roadside Denny's diner near Interstate 680 in East San Jose — chosen by Huang because he had worked there as a 15-year-old dishwasher and busboy — three engineers drafted the case for 3D PC acceleration over bottomless coffee.",
+        "highlight": "“We didn't have a clue how to write a business plan. Don Valentine of Sequoia Capital invested $1.4M purely on our former CEO's word that we were builders who refused to lose.”",
+        "body_after": "Working Company Placeholder Name: NV ('Next Version') → Incorporated in California as NVIDIA Corporation (from Latin 'Invidia' — envy). Mission: solve computational workloads impossible for sequential CPUs.",
+        "footer_left": "EXHIBIT 02-B // FROM DISHWASHING TO SILICON EMPIRE",
+        "footer_right": "EP02 JENSEN HUANG • TRACK V2"
+    },
+    {
+        "id": "EP02_DOC_03",
+        "ep": "02",
+        "act": "ACT2",
+        "timecode": "06:30–09:30",
+        "filename": "EP02_DOC_03_ACT2_Sega_NV2_Rescue_Memorandum_1997.png",
+        "web_file": "ep02_doc_03_sega_rescue_1997.jpg",
+        "style": "press_alert",
+        "stamp": "CRISIS & SURVIVAL RECORD // SPRING 1997 • TOKYO & SUNNYVALE",
+        "source_label": "NVIDIA – SEGA Contract Renegotiation Record • CEO Shoichiro Irimajiri",
+        "title": "NV1 Failure, 60% Layoff & Sega's $5M Lifeline",
+        "meta": "Payroll Runway Remaining: < 30 Days • Headcount Cut: 100 → 40 Engineers",
+        "body_before": "Microsoft standardized Windows 95 Direct3D around triangle meshes, rendering NVIDIA's quadratic texture-mapping NV1 chip and NV2 architecture obsolete overnight while 38 rival GPU startups raced for PC dominance.",
+        "highlight": "Huang flew to Tokyo to tell Sega CEO Shoichiro Irimajiri the truth: NVIDIA must walk away from its broken Sega console chip — yet asked Sega to convert the remaining $5M milestone payment into equity so NVIDIA could survive 6 months.",
+        "body_after": "Irimajiri agreed — giving NVIDIA just enough capital to run virtual RIVA 128 silicon simulations on IKOS emulators without manufacturing a test prototype first.",
+        "footer_left": "EXHIBIT 02-C // THIRTY DAYS TO SOLVENCY",
+        "footer_right": "EP02 JENSEN HUANG • TRACK V2"
+    },
+    {
+        "id": "EP02_DOC_04",
+        "ep": "02",
+        "act": "ACT2",
+        "timecode": "09:30–11:18",
+        "filename": "EP02_DOC_04_ACT2_RIVA128_GeForce256_First_GPU_1999.png",
+        "web_file": "ep02_doc_04_riva_geforce_1999.jpg",
+        "style": "paper",
+        "stamp": "TSMC WAFER RAMP & NASDAQ IPO // 1997–1999 • SANTA CLARA & HSINCHU",
+        "source_label": "NVIDIA Product & IPO Milestone Brief • RIVA 128 (NV3) → GeForce 256 (NV10)",
+        "title": "RIVA 128 First-Silicon Victory & World's First GPU (GeForce 256)",
+        "meta": "1 Million Units Shipped in 4 Months (1997) • NASDAQ: NVDA IPO (Jan 22, 1999 @ $12)",
+        "body_before": "Bypassing traditional hardware tape-out test runs, NVIDIA simulated RIVA 128 entirely in software and entrusted wafer fabrication to Morris Chang's TSMC — yielding working silicon on the very first run.",
+        "highlight": "On October 11, 1999, NVIDIA unveiled GeForce 256 (NV10) with integrated hardware Transform & Lighting — coining the industry category 'GPU' (Graphics Processing Unit) with 17 million transistors on 220nm silicon.",
+        "body_after": "Sega subsequently sold its rescued equity stake during NVIDIA's public ascendancy for roughly $15M — saving Sega's cash reserves while crowning NVIDIA the lone survivor among 38 3D graphics competitors.",
+        "footer_left": "EXHIBIT 02-D // BIRTH OF THE GPU CATEGORY",
+        "footer_right": "EP02 JENSEN HUANG • TRACK V2"
+    },
+    {
+        "id": "EP02_DOC_05",
+        "ep": "02",
+        "act": "ACT3",
+        "timecode": "13:45–15:25",
+        "filename": "EP02_DOC_05_ACT3_AlexNet_GTX580_Turning_Point_2012.png",
+        "web_file": "ep02_doc_05_alexnet_gtx580_2012.jpg",
+        "style": "social_dark",
+        "stamp": "IMAGENET ILSVRC-2012 BREAKTHROUGH // SEPTEMBER 30, 2012 • TORONTO",
+        "source_label": "Krizhevsky, Sutskever & Hinton • 2× Consumer GeForce GTX 580 (3GB)",
+        "title": "AlexNet Proves Jensen Huang's $500M CUDA Bet",
+        "meta": "60M Parameters • 650,000 Neurons • Trained via CUDA C++ on Two Gaming GPUs",
+        "body_before": "After NVIDIA added expensive CUDA compute silicon to every chip since 2006 (crashing NVDA stock by 80% in 2008 as analysts called parallel compute a zero-billion-dollar hobby), three Toronto researchers bought two off-the-shelf GTX 580 gaming cards.",
+        "highlight": "Trained directly on CUDA kernels in Alex Krizhevsky's bedroom, AlexNet shattered the ImageNet Top-5 error benchmark (15.3% vs. 26.2%), triggering Huang's company-wide pivot: NVIDIA goes 100% all-in on Deep Learning.",
+        "body_after": "Architectural consequence: NVIDIA designed dedicated Tensor Cores (Volta GV100, 2017) directly for 4×4 matrix multiply-accumulate AI operations — turning graphics silicon into civilization's neural engine.",
+        "footer_left": "EXHIBIT 02-E // THE ZERO-BILLION-DOLLAR MARKET IGNITES",
+        "footer_right": "EP02 JENSEN HUANG • TRACK V2"
+    },
+    {
+        "id": "EP02_DOC_06",
+        "ep": "02",
+        "act": "ACT3",
+        "timecode": "15:25–16:15",
+        "filename": "EP02_DOC_06_ACT3_DGX1_OpenAI_Delivery_2016.png",
+        "web_file": "ep02_doc_06_dgx1_openai_2016.jpg",
+        "style": "nvidia_dark",
+        "stamp": "PRIMARY AI HISTORY ARTIFACT // AUGUST 2016 • SAN FRANCISCO",
+        "source_label": "NVIDIA DGX-1 Unit #001 Hand-Delivery to OpenAI • 8× Tesla P100 Pascal GPUs",
+        "title": "World's First AI Supercomputer Delivered to OpenAI",
+        "meta": "170 TFLOPS FP16 • NVLink High-Speed Mesh • Inscribed Box for Elon Musk & Ilya Sutskever",
+        "body_before": "Initially unveiled at GTC 2016 for $129,000 with almost zero commercial buyers in Wall Street models, the very first NVIDIA DGX-1 ('Data Center in a Box') was hand-delivered in August 2016 by Jensen Huang to OpenAI's San Francisco office.",
+        "highlight": "Handwritten Marker Inscription on OpenAI's Chassis: “To Elon & the OpenAI team — To the future of computing & humanity. I give you the world's first DGX-1.” — Jensen Huang, 2016.",
+        "body_after": "By 2024–2026 (Blackwell B200 / GB200 NVL72 — 208 billion transistors per dual-die package), NVIDIA evolved from a near-bankrupt PC graphics startup into the $3T–$4T infrastructure foundry of planetary intelligence.",
+        "footer_left": "EXHIBIT 02-F // ONE BOX THAT LAUNCHED GENERATIVE AI",
+        "footer_right": "EP02 JENSEN HUANG • TRACK V2"
+    },
+    {
         "id": "EP03_DOC_01",
         "ep": "03",
         "act": "ACT3",
@@ -303,6 +393,13 @@ def build_html(doc):
         card_bg = "#fbf9f3"
         top_ribbon = "#0f172a"
         accent = "#b45309"
+    elif st == "nvidia_dark":
+        card_bg = "#0c1210"
+        card_fg = "#ecfdf5"
+        top_ribbon = "#166534"
+        accent = "#4ade80"
+        hl_bg = "rgba(34, 197, 94, 0.16)"
+        hl_border = "#22c55e"
 
     return f"""<!DOCTYPE html>
 <html lang="en">

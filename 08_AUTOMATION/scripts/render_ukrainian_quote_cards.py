@@ -15,7 +15,7 @@ font_title_path = "/System/Library/Fonts/HelveticaNeue.ttc"
 font_code_path = "/System/Library/Fonts/Menlo.ttc"
 font_serif_path = "/System/Library/Fonts/Supplemental/Georgia.ttf"
 
-def draw_quote_card(filename, category, quote, author, accent_color=(245, 185, 65), font_size_quote=64):
+def draw_quote_card(filename, category, quote, author, accent_color=(245, 185, 65), font_size_quote=64, footer_tag="THOUGHTCAST 4K // AI TITANS // EP01: SAM ALTMAN"):
     # 1. Base dark obsidian canvas
     img = Image.new("RGBA", (W, H), (8, 10, 15, 255))
     draw = ImageDraw.Draw(img)
@@ -101,7 +101,7 @@ def draw_quote_card(filename, category, quote, author, accent_color=(245, 185, 6
 
     # Technical footer metadata
     meta_y = cy2 - 70
-    draw.text((cx1 + 120, meta_y), "THOUGHTCAST 4K // AI TITANS // EP01: SAM ALTMAN", font=font_meta, fill=(75, 90, 110, 255))
+    draw.text((cx1 + 120, meta_y), footer_tag, font=font_meta, fill=(75, 90, 110, 255))
     draw.text((cx2 - 580, meta_y), "MASTER ARCHIVAL RECORD", font=font_meta, fill=(75, 90, 110, 255))
 
     out_path = os.path.join(out_dir, filename)
