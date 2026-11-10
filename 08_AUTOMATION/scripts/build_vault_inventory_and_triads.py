@@ -11,12 +11,21 @@ Mirrors outputs to docs/data/ and docs/assets/vault_thumbs/.
 import os
 import re
 import ast
+import sys
 import json
 import hashlib
 import shutil
 import subprocess
 from datetime import datetime
 from PIL import Image, ImageOps
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
+from triads_data.policy_safety import sanitize_flow_prompt, verify_policy_safe
+from triads_data.ep01_altman_50_triads import EP01_TRIADS
+from triads_data.ep02_huang_50_triads import EP02_TRIADS
+from triads_data.ep04_to_10_triads import EP04_TO_10_TRIADS
+from build_50_scenes_data_part1 import SCENES_PART1
+from build_50_scenes_data_part2 import SCENES_PART2
 
 ROOT = "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast"
 DASH_DIR = os.path.join(ROOT, "07_DASHBOARD")
@@ -48,55 +57,7 @@ EP_META = [
      "05_RAW_FOOTAGE/flow_images/EP10_Ng/", "03_AUDIO/voiceover/"),
 ]
 
-# Policy-safe substitutions so no Flow / Veo minor safety triggers exist anywhere
-SAFETY_PATTERNS = [
-    (re.compile(r"\b(?:[1-9]|1[0-7])-year-old\s+(?:Caucasian\s+|Taiwanese-American\s+|British-Cypriot\s+|immigrant\s+|rugged\s+)?(?:boy|child|girl|kid|teenager|teen|grandmaster)'?s?\b", re.I), "young adult scholar"),
-    (re.compile(r"\b(?:[1-9]|1[0-7])-year-old\b", re.I), "young college-age"),
-    (re.compile(r"\b(?:four|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen)-year-old\s+(?:Caucasian\s+|Taiwanese-American\s+|British-Cypriot\s+|immigrant\s+|rugged\s+)?(?:boy|child|girl|kid|teenager|teen|grandmaster)'?s?\b", re.I), "young adult prodigy"),
-    (re.compile(r"\b(?:a\s+|the\s+)?(?:young|little|small|lonely|innocent)\s+(?:Caucasian\s+|Taiwanese-American\s+)?(?:boy|child|kid|girl)'s\b", re.I), "a focused young student's"),
-    (re.compile(r"\b(?:young|little|small|lonely|innocent)\s+(?:Caucasian\s+|Taiwanese-American\s+)?(?:boy|child|kid|girl|son)\b", re.I), "young adult student"),
-    (re.compile(r"\bchild's\b", re.I), "student's"),
-    (re.compile(r"\bboy's\b", re.I), "young strategist's"),
-    (re.compile(r"\bgirl's\b", re.I), "young scholar's"),
-    (re.compile(r"\bchildren's\b", re.I), "university students'"),
-    (re.compile(r"\bchildren\b", re.I), "young scholars"),
-    (re.compile(r"\bteenagers?\b", re.I), "young college students"),
-    (re.compile(r"\bteens?\b", re.I), "young college students"),
-    (re.compile(r"\bteen\b", re.I), "college-age"),
-    (re.compile(r"\bkids\b", re.I), "young students"),
-    (re.compile(r"\bkid\b", re.I), "young student"),
-    (re.compile(r"\bboys\b", re.I), "young students"),
-    (re.compile(r"\bboy\b", re.I), "young scholar"),
-    (re.compile(r"\bgirls\b", re.I), "young students"),
-    (re.compile(r"\bgirl\b", re.I), "young scholar"),
-    (re.compile(r"\bchild\b", re.I), "young scholar"),
-    (re.compile(r"\byoung son\b", re.I), "young apprentice"),
-    (re.compile(r"\btoddler\b|\binfant\b|\bminor\b|\bminors\b", re.I), "young adult apprentice"),
-]
-
-FORBIDDEN_RE = re.compile(
-    r"\b(boy|boys|boy's|girl|girls|girl's|child|children|child's|kid|kids|teen|teens|teenager|teenagers|toddler|infant|minor|minors|(?:[1-9]|1[0-7])-year-old)\b",
-    re.I,
-)
-
-
-def sanitize_flow_prompt(text):
-    if not text:
-        return ""
-    out = str(text).strip()
-    for pat, repl in SAFETY_PATTERNS:
-        out = pat.sub(repl, out)
-    # Clean accidental doubled articles like "a a focused" or "an young"
-    out = re.sub(r"\b(a|an)\s+(a|an)\s+", r"\1 ", out, flags=re.I)
-    out = re.sub(r"\ban\s+(young|focused|college|university|older)\b", r"a \1", out, flags=re.I)
-    out = re.sub(r"\s{2,}", " ", out).strip()
-    return out
-
-
-def verify_policy_safe(prompt_text, label):
-    m = FORBIDDEN_RE.search(prompt_text or "")
-    if m:
-        raise ValueError(f"Unsafe word '{m.group(0)}' detected in {label}: {prompt_text}")
+# Shared policy sanitizer imported from triads_data.policy_safety
 
 
 def classify_episode(rel_lower):
@@ -364,242 +325,169 @@ def build_vault_inventory():
     return inventory
 
 
-def parse_ep01_triads():
-    src = open(os.path.join(ROOT, "08_AUTOMATION/scripts/generate_cinematic_innovations_html.py"), encoding="utf-8").read()
-    tree = ast.parse(src)
-    items = []
-    for node in tree.body:
-        if isinstance(node, ast.Assign):
-            for tgt in node.targets:
-                if isinstance(tgt, ast.Name) and tgt.id == "INNOVATIONS":
-                    items = ast.literal_eval(node.value)
-                    break
-    triads = []
-    for it in items:
-        triads.append({
-            "num": str(it["num"]).zfill(2),
-            "id": f"ep01_triad_{str(it['num']).zfill(2)}",
-            "title_ua": it["name_ua"],
-            "title_en": it["name_en"],
-            "tc": it["tc"],
-            "act": it["act"],
-            "cat_label": it["cat_label"],
-            "concept": it["concept"],
-            "p1_start": sanitize_flow_prompt(it["p1_start"]),
-            "p2_flow": sanitize_flow_prompt(it["p2_flow"]),
-            "p3_end": sanitize_flow_prompt(it["p3_end"]),
-            "davinci_recipe": it.get("davinci_recipe", ""),
-            "sfx_cue": it.get("sfx_cue", ""),
-            "status": "todo",
-            "file": f"ep01_triad_{str(it['num']).zfill(2)}.mp4",
-            "raw_video_path": "",
-            "raw_image_path": "",
-            "video_preview": "",
-            "keyframe_preview": "",
-            "specs": "",
-        })
-    return triads
+def build_ep03_hassabis_50():
+    """Normalize 50 Demis Hassabis scenes from SCENES_PART1 + SCENES_PART2, sanitized + synced to EP03 VO chapters."""
+    scenes = SCENES_PART1 + SCENES_PART2
+    # Map scenes cleanly to EP03_VO_UA_ELEVENLABS_MASTER.txt timecodes & chapters
+    def get_vo_meta(n_int):
+        if n_int <= 2:
+            return ("00:00 – 00:45", "Акт 1 • Лондон 1976", "👶 Коріння & Ремісництво", "Усе у всесвіті є інформацією... Північний Лондон... У богемній квартирі, де батько — музикант і автор пісень...")
+        if n_int <= 6:
+            return ("00:45 – 01:30", "Акт 1 • Шахи у 4 роки", "♟️ 64 Клітинки порядку", "Чотирирічний хлопчик мовчки стежить за руками батька... Через два тижні починає обігрувати дорослих... острів абсолютного порядку.")
+        if n_int <= 14:
+            return ("01:30 – 02:45", "Акт 2 • ZX Spectrum 48K", "🕹️ Асемблер Z80", "На призові гроші купує уживаний мікрокомп'ютер ZX Spectrum 48K... Чому біологічний мозок здатний на інтуїцію, а машина приречена на сліпий перебір?")
+        if n_int <= 20:
+            return ("02:45 – 04:00", "Акт 2 • Рейтинг Ело 2300", "🏆 Майстер ФІДЕ", "У тринадцять років стає майстром ФІДЕ з рейтингом 2300... Найвеличніші уми спалюють життя на дерев'яні фігурки... Час виходити у відкритий океан.")
+        if n_int <= 26:
+            return ("04:00 – 05:15", "Акт 3 • Bullfrog & Theme Park", "🎡 Перші ШІ-агенти", "У шістнадцять екстерном складає іспити... сам пише ядро культової гри Theme Park... тисячі цифрових агентів породжують живу екосистему.")
+        if n_int <= 30:
+            return ("05:15 – 06:00", "Акт 3 • Кембридж & Elixir", "🎓 Queens' College", "Закінчивши Кембридж із найвищою відзнакою Double First-Class Honours...")
+        if n_int <= 36:
+            return ("06:00 – 07:15", "Акт 4 • Нейронаука UCL (fMRI)", "🧠 Гіпокамп і уява", "Захищає докторську з когнітивної нейробіології в UCL... Люди, які втратили пам'ять про минуле, не здатні уявити майбутнє.")
+        if n_int <= 40:
+            return ("07:15 – 09:30", "Акт 4 • DeepMind 2010 & Breakout", "⚡ Розв'язати інтелект", "Разом із Леггом та Сулейманом засновує DeepMind... Через кілька годин машина сама відкриває в Breakout тунель за стіною цеглин...")
+        if n_int <= 44:
+            return ("09:30 – 12:15", "Акт 5 • Сеул: Хід 37 (AlphaGo)", "⚫⚪ Машинна креативність", "Березень 2016, Four Seasons Сеул... 37-й хід на 5-ту лінію... людство побачило народження іншопланетної машинної креативності.")
+        if n_int <= 47:
+            return ("12:15 – 16:45", "Акт 5 • AlphaFold (200 млн білків)", "🧬 Орігамі життя", "Ігри закінчилися... AlphaFold 2 видає точність ширини атома (92 GDT)... відкривають доступ до всіх 200 мільйонів білків людства.")
+        if n_int == 48:
+            return ("16:45 – 17:45", "Акт 5 • Токамак & GNoME", "⚛️ Термоядерна плазма", "Алгоритми утримують плазму 100 мільйонів градусів всередині Токамака і відкривають 2 млн нових кристалів.")
+        if n_int == 49:
+            return ("16:00 – 16:45", "Акт 5 • Стокгольм, Нобель 2024", "🏅 Нобелівська з хімії", "Восени 2024 року в Стокгольмі Демісу Гассабісу вручають Нобелівську премію з хімії.")
+        return ("17:45 – 21:30", "Акт 5 • Нічна зміна 00:00–04:00", "🔭 Цифровий телескоп", "Працює щоночі з опівночі до четвертої... проектує живу клітину... життя починає читати власний вихідний код.")
 
-
-def parse_markdown_triads(md_path, ep_code):
-    raw = open(md_path, encoding="utf-8").read()
-    # Split cleanly by ## #NN. headers
-    blocks = re.split(r"(?=^## #\d+\.)", raw, flags=re.M)
-    triads = []
-    for b in blocks:
-        m_hdr = re.match(r"^## #(\d+)\.\s+(.+?)\s*/\s*(.+?)\s*$", b, flags=re.M)
-        if not m_hdr:
-            continue
-        num = m_hdr.group(1).zfill(2)
-        title_ua = m_hdr.group(2).strip()
-        title_en = m_hdr.group(3).strip()
-
-        m_meta = re.search(r"\*\*Таймкод:\*\*\s*`([^`]+)`\s*\|\s*\*\*Акт:\*\*\s*([^|\n]+?)\s*\|\s*\*\*Категорія:\*\*\s*(.+)$", b, flags=re.M)
-        tc = m_meta.group(1).strip() if m_meta else "00:00"
-        act = m_meta.group(2).strip() if m_meta else "Акт"
-        cat_label = m_meta.group(3).strip() if m_meta else "🎬 Сцена"
-
-        m_conc = re.search(r"\*\*Концепція:\*\*\s*(.+)", b)
-        concept = m_conc.group(1).strip() if m_conc else ""
-
-        m_dav = re.search(r"\*\*✂️ DaVinci Resolve[^:]*:\*\*\s*(.+)", b)
-        davinci = m_dav.group(1).strip() if m_dav else ""
-
-        m_sfx = re.search(r"\*\*🔊 Fairlight SFX:\*\*\s*(.+)", b)
-        sfx = m_sfx.group(1).strip() if m_sfx else ""
-
-        # Extract the 3 code blocks in order
-        prompts = re.findall(r"```(?:text)?\s*\n(.*?)\n\s*```", b, flags=re.S)
-        p1 = sanitize_flow_prompt(prompts[0] if len(prompts) >= 1 else "")
-        p2 = sanitize_flow_prompt(prompts[1] if len(prompts) >= 2 else "")
-        p3 = sanitize_flow_prompt(prompts[2] if len(prompts) >= 3 else "")
-
-        triads.append({
-            "num": num,
-            "id": f"ep{ep_code}_triad_{num}",
-            "title_ua": title_ua,
-            "title_en": title_en,
+    out = []
+    for s in scenes:
+        n_int = int(s["num"])
+        tc, act, cat_lbl, vo_q = get_vo_meta(n_int)
+        out.append({
+            "num": str(s["num"]).zfill(2),
+            "id": f"ep03_triad_{str(s['num']).zfill(2)}",
+            "title_ua": s["title"],
+            "title_en": f"Hassabis Scene #{s['num']} ({s['period']})",
+            "vo_take": f"VO EP03 ({s['period']})",
             "tc": tc,
             "act": act,
-            "cat_label": cat_label,
-            "concept": concept,
-            "p1_start": p1,
-            "p2_flow": p2,
-            "p3_end": p3,
-            "davinci_recipe": davinci,
-            "sfx_cue": sfx,
+            "cat_label": cat_lbl,
+            "vo_quote": vo_q + " — " + s["narrative"],
+            "symbol": s.get("symbol", ""),
+            "concept": s["narrative"],
+            "p1_start": sanitize_flow_prompt(s["p1_start"]),
+            "p2_flow": sanitize_flow_prompt(s["p2_flow"]),
+            "p3_end": sanitize_flow_prompt(s["p3_end"]),
+            "davinci_recipe": s.get("davinci_recipe", ""),
+            "sfx_cue": s.get("sfx_cue", ""),
             "status": "todo",
-            "file": f"ep{ep_code}_triad_{num}.mp4",
+            "file": f"ep03_triad_{str(s['num']).zfill(2)}.mp4",
             "raw_video_path": "",
             "raw_image_path": "",
             "video_preview": "",
             "keyframe_preview": "",
-            "specs": "",
+            "specs": f"{s['period']} • 24fps",
         })
-    return triads
+    return out
 
 
-def derive_triad_from_key_prompt(ep, ep_js, kp, idx):
-    """Build a vivid physical Frame A -> Flow Morph (A->B) -> End Frame B Triad from a script key beat."""
-    num = str(idx + 1).zfill(2)
-    lens = ep_js.get("camera_lens", "Panavision C-Series Anamorphic 40mm")
-    vkey = ep_js.get("visual_key", "dramatic documentary lighting")
-    tc = kp.get("tc", "00:00")
-    act_num = kp.get("act", 1)
-    act_titles = {a.get("actNum"): a.get("title", f"Акт {a.get('actNum')}") for a in ep_js.get("beat_acts", [])}
-    act_label = act_titles.get(act_num, f"Акт {act_num}")
-    cue = kp.get("cue_ua", "").strip()
-    raw_prompt = sanitize_flow_prompt(kp.get("prompt", ""))
-
-    # Clean trailing --ar or resolution tags so we compose clean A/B prompts
-    base_clean = re.sub(r"\s*--ar\s+\d+:\d+", "", raw_prompt).strip().rstrip(".")
-
-    title_short = cue[:62].rstrip(" ,.;:—-") + ("…" if len(cue) > 62 else "")
-    title_en = clean_display_name(kp.get("filename", f"EP{ep}_Scene_{num}.mp4"))
-
-    # Determine whether the existing beat prompt is predominantly an abstract/futuristic visual or a grounded scene
-    is_abstract = any(k in base_clean.lower() for k in [
-        "visualization", "holographic", "abstract", "matrix", "supernova",
-        "orbital view", "neural network", "crystalline", "prism", "wave traveling",
-        "splitting", "contrast:", "convergence", "macro visualization",
-    ])
-
-    if is_abstract:
-        cat_label = "🌐 Нейро-Метафора"
-        p1_start = sanitize_flow_prompt(
-            f"Intimate physical anchor frame for {ep_js['latin']} ({tc}): "
-            f"tactile documentary macro of authentic research notebooks, amber tungsten light, "
-            f"handwritten mathematical equations on warm parchment beside vintage computing hardware, "
-            f"{lens}, 35mm Kodak 2383 film grain --ar 16:9"
-        )
-        p2_flow = sanitize_flow_prompt(
-            f"Seamless continuous optical push-in and particle metamorphosis from the physical desk into living computational geometry: "
-            f"ink equations and paper fibers dissolve into glowing light vectors that assemble into ({base_clean}), "
-            f"smooth parallax acceleration, 24fps."
-        )
-        p3_end = sanitize_flow_prompt(
-            f"{base_clean}, hyper-detailed volumetric studio light, deep architectural scale, "
-            f"photorealistic Octane cinema frame, 8k --ar 16:9"
-        )
-    else:
-        cat_label = "🎬 Сценічний Морф"
-        p1_start = sanitize_flow_prompt(
-            f"{base_clean}, captured on {lens}, moody naturalistic lighting, crisp tactile textures --ar 16:9"
-        )
-        p2_flow = sanitize_flow_prompt(
-            f"Slow controlled camera push-in and rack-focus through atmospheric dust motes: "
-            f"as the subject holds steady, subtle bioluminescent azure and amber mathematical lattice filaments "
-            f"emerge from the shadows and weave cleanly through the scene's geometry, transforming realism into conceptual vision, 24fps."
-        )
-        p3_end = sanitize_flow_prompt(
-            f"Conceptual reverse synthesis following '{title_en}': architectural crystalline neural weights glowing in gold and cyan "
-            f"hovering cleanly over dark obsidian studio space, echoing the physical geometry of the opening scene, "
-            f"cinematic anamorphic framing, 4k --ar 16:9"
-        )
-
+def normalize_rich_triad(ep, item):
+    num = str(item["num"]).zfill(2)
     return {
         "num": num,
         "id": f"ep{ep}_triad_{num}",
-        "title_ua": title_short or f"Сцена #{num}",
-        "title_en": title_en,
-        "tc": tc,
-        "act": f"Акт {act_num} • {act_label}",
-        "cat_label": cat_label,
-        "concept": cue or f"Ключовий біт сценарію ({tc}) для {ep_js['name']} — {vkey}.",
-        "p1_start": p1_start,
-        "p2_flow": p2_flow,
-        "p3_end": p3_end,
-        "davinci_recipe": f"Edit Page: Optical Flow Smooth Cut між Start Frame A та AI Морфом (Timeline 2.39:1 • 24fps). Color Page: Node Balance -> Kodak 2383 LUT.",
-        "sfx_cue": "Фонові дрони Suno 92 BPM (доріжка A3) + низькочастотний суб-імпульс 45Hz на точці морфу.",
+        "title_ua": item["title_ua"],
+        "title_en": item.get("title_en", ""),
+        "vo_take": item.get("vo_take", f"VO EP{ep}"),
+        "tc": item.get("tc", "00:00"),
+        "act": item.get("act", "Акт"),
+        "cat_label": item.get("cat_label", "🎬 Сцена"),
+        "vo_quote": item.get("vo_quote", ""),
+        "symbol": item.get("symbol", ""),
+        "concept": item.get("vo_quote") or item.get("symbol") or "",
+        "p1_start": sanitize_flow_prompt(item["p1_start"]),
+        "p2_flow": sanitize_flow_prompt(item["p2_flow"]),
+        "p3_end": sanitize_flow_prompt(item["p3_end"]),
+        "davinci_recipe": item.get("davinci_recipe", ""),
+        "sfx_cue": item.get("sfx_cue", ""),
         "status": "todo",
-        "file": kp.get("filename", f"EP{ep}_VID_{num}.mp4"),
+        "file": f"ep{ep}_triad_{num}.mp4",
         "raw_video_path": "",
         "raw_image_path": "",
         "video_preview": "",
         "keyframe_preview": "",
-        "specs": f"Таймкод {tc} • {lens}",
+        "specs": f"{item.get('tc', '')} • 24fps",
     }
 
 
+# Keyword affinity mapping so existing disk renders & 2K frames bind to the right chronological scene
+ASSET_AFFINITY_MAP = {
+    "01": {
+        "03": ["mac_chassis", "mac_lcii", "macintosh"],
+        "05": ["crt_code", "boy_watching", "child_eye", "phosphor"],
+        "10": ["floppy", "burroughs", "dorm"],
+        "17": ["exponential_line", "curvehero"],
+        "20": ["fusion_torus", "helion", "fusion_star"],
+        "23": ["golden_signatures", "rosewood"],
+        "28": ["neural_lattice", "axons"],
+        "31": ["server_monolith", "servercold", "compute_core"],
+        "36": ["boardroom_noir", "boardroom_void"],
+        "41": ["guest_badge"],
+        "42": ["730_letter", "employees_solidarity"],
+        "50": ["earth_horizon"],
+    },
+    "02": {
+        "25": ["gamer_digitized", "gaming_hardware"],
+        "29": ["developers_facing_gpu", "gtx", "server_core"],
+        "35": ["golden_transistor_dust", "blackwell_wafer"],
+        "45": ["blackwell", "gpu_server_plates", "supercomputer"],
+    },
+    "03": {
+        "03": ["wooden_king"],
+        "04": ["chessboard", "chess_knight"],
+        "11": ["zx_spectrum"],
+        "25": ["bullfrog", "themepark", "gamer_hand"],
+        "27": ["cambridge", "gothic", "library"],
+        "34": ["fmri", "hippocampus", "neural"],
+        "39": ["breakout", "atari"],
+        "42": ["go_stone", "seoul", "move_37"],
+        "46": ["alphafold", "protein", "casp"],
+        "48": ["tokamak", "plasma"],
+        "50": ["golden_sphere", "galaxies"],
+    },
+    "04": {"05": ["backprop", "synapse_storm"]},
+    "05": {"09": ["jepa", "world_model"]},
+    "06": {"01": ["jerusalem"], "03": ["hinton_door"], "04": ["alexnet"], "10": ["ssi_obsidian"]},
+    "07": {"07": ["constitutional_prism"]},
+    "08": {"09": ["spatial_intelligence"]},
+    "09": {"05": ["attention_vector"]},
+    "10": {"01": ["medical_textbook"], "05": ["global_neural_classroom"]},
+}
+
+
 def link_existing_media_to_triads(ep, triads, old_mp_ep, vault_ep):
-    old_fq = old_mp_ep.get("flow_queue", [])
     vault_vids = vault_ep.get("videos", [])
     vault_imgs = vault_ep.get("images", [])
+    aff = ASSET_AFFINITY_MAP.get(ep, {})
 
-    # Preserve already matched ready items from existing flow_queue by index (1..N) or #num
-    for idx, t in enumerate(triads):
-        # 1. Check old flow_queue entry at same position
-        if idx < len(old_fq):
-            oq = old_fq[idx]
-            if oq.get("video_preview"):
-                t["video_preview"] = oq["video_preview"]
-            if oq.get("raw_video_path"):
-                t["raw_video_path"] = oq["raw_video_path"]
-            if oq.get("raw_image_path"):
-                t["raw_image_path"] = oq["raw_image_path"]
-            if oq.get("keyframe_preview"):
-                t["keyframe_preview"] = oq["keyframe_preview"]
-            if oq.get("file"):
-                t["file"] = oq["file"]
-            if oq.get("specs"):
-                t["specs"] = oq["specs"]
-            if oq.get("status"):
-                t["status"] = oq["status"]
-
-        # 2. Match additional keyframes or flow renders from Vault by scene number token (e.g. _01_, IMG_02)
+    for t in triads:
         num_str = t["num"]
-        if not t["raw_video_path"]:
+        kws = aff.get(num_str, [])
+        if kws:
             for v in vault_vids:
-                fl = v["file"].lower()
-                if re.search(rf"(?:flow_|_){num_str}(?:_|\.|$)", fl):
+                fl = (v["file"] + " " + v["rel_path"]).lower()
+                if any(k in fl for k in kws):
                     t["raw_video_path"] = v["rel_path"]
                     t["file"] = v["file"]
                     if v.get("preview_path"):
                         t["video_preview"] = v["preview_path"]
-                    t["keyframe_preview"] = t["keyframe_preview"] or v["thumb"]
+                    t["keyframe_preview"] = v["thumb"]
                     t["status"] = "video_ready"
                     break
-
-        if not t["raw_image_path"]:
             for im in vault_imgs:
-                fl = im["file"].lower()
-                if re.search(rf"(?:img_|kf_|_){num_str}[a-z]?(?:_|\.|$)", fl):
+                fl = (im["file"] + " " + im["rel_path"]).lower()
+                if any(k in fl for k in kws):
                     t["raw_image_path"] = im["rel_path"]
-                    t["keyframe_preview"] = im["preview_path"] or im["thumb"]
+                    t["keyframe_preview"] = t["keyframe_preview"] or im["preview_path"] or im["thumb"]
                     if t["status"] == "todo":
                         t["status"] = "image_ready"
-                    break
-
-        # Ensure keyframe_preview exists if raw_image_path or video has a vault thumb
-        if t["raw_video_path"] and not t["keyframe_preview"]:
-            for v in vault_vids:
-                if v["rel_path"] == t["raw_video_path"] and v["thumb"]:
-                    t["keyframe_preview"] = v["thumb"]
-                    break
-        if t["raw_image_path"] and not t["keyframe_preview"]:
-            for im in vault_imgs:
-                if im["rel_path"] == t["raw_image_path"] and im["thumb"]:
-                    t["keyframe_preview"] = im["thumb"]
                     break
 
 
@@ -615,24 +503,19 @@ def main():
     mp_raw = open(mp_path, encoding="utf-8").read()
     mp = json.loads(mp_raw[len("window.MEDIA_ACQUISITION_POOL = "):].rstrip(";\n "))
 
-    # 2. Build 100% policy-safe 3-Prompt Triads for ALL 10 episodes
+    # 2. Build 100% policy-safe documentary 3-Prompt Triads for ALL 10 episodes:
+    #    EP01 = 50, EP02 = 50, EP03 = 50, EP04..EP10 = 10 each (Total 220 Triads / 660 Prompts)
     triads_pool = {}
-    triad_builders = {
-        "01": parse_ep01_triads,
-        "02": lambda: parse_markdown_triads(os.path.join(ROOT, "04_VIDEO_PROMPTS/ep02_huang_20_triads.md"), "02"),
-        "03": lambda: parse_markdown_triads(os.path.join(ROOT, "04_VIDEO_PROMPTS/ep03_hassabis_30_triads.md"), "03"),
-    }
-
     for ep, name_ua, name_en, *_ in EP_META:
-        if ep in triad_builders:
-            triads = triad_builders[ep]()
+        if ep == "01":
+            triads = [normalize_rich_triad("01", it) for it in EP01_TRIADS]
+        elif ep == "02":
+            triads = [normalize_rich_triad("02", it) for it in EP02_TRIADS]
+        elif ep == "03":
+            triads = build_ep03_hassabis_50()
         else:
-            ep_js_path = os.path.join(DASH_DIR, "data", "episodes", f"ep{ep}.js")
-            ep_js = json.loads(open(ep_js_path, encoding="utf-8").read()[len("window.EPISODE_DATA = "):].rstrip(";\n "))
-            keys = [p for p in ep_js.get("prompts_100", []) if p.get("is_key")]
-            triads = [derive_triad_from_key_prompt(ep, ep_js, kp, i) for i, kp in enumerate(keys)]
+            triads = [normalize_rich_triad(ep, it) for it in EP04_TO_10_TRIADS[ep]]
 
-        # Link real disk assets
         link_existing_media_to_triads(ep, triads, mp.get(ep, {}), vault.get(ep, {}))
 
         # Verify 100% policy safety on ALL 3 prompts per triad
@@ -656,6 +539,9 @@ def main():
                     "tc": t["tc"],
                     "act": t["act"],
                     "cat_label": t["cat_label"],
+                    "vo_take": t.get("vo_take", ""),
+                    "vo_quote": t.get("vo_quote", ""),
+                    "symbol": t.get("symbol", ""),
                     "concept": t["concept"],
                     "specs": t["specs"],
                     "prompt": t["p2_flow"],

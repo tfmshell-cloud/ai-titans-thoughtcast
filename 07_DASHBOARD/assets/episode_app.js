@@ -450,7 +450,8 @@
       "        <span class=\"chip chip-purple\">" + esc(epData.archetype) + "</span>",
       "        <span class=\"chip chip-emerald\">" + esc(epData.duration) + " • " + esc(epData.script_total_words) + " слів диктора</span>",
       "        <span class=\"chip chip-amber\">100 промптів • 100 цитат • 16 WAV</span>",
-      "        <button class=\"btn btn-cyan\" id=\"btnHeroJumpMedia\" style=\"padding:2px 9px;font-size:11px;\">🎬 Дивитися Архіви & Майбутні Футажі (" + totalVidClips + ")</button>",
+      "        <button class=\"btn btn-cyan\" id=\"btnHeroJumpMedia\" style=\"padding:2px 9px;font-size:11px;\">🎬 Відео & Архів (" + totalVidClips + ")</button>",
+      "        <button class=\"btn btn-amber\" id=\"btnHeroJumpTriads\" style=\"padding:2px 10px;font-size:11px;font-weight:700;\">🎯 Документальні Сюжети (" + getTriadsEp().length + "×3)</button>",
       "      </div>",
       "      <div class=\"hero-title-row\">",
       "        <h1>" + esc(epData.name) + "</h1>",
@@ -508,7 +509,13 @@
     var heroJumpBtn = document.getElementById("btnHeroJumpMedia");
     if (heroJumpBtn) {
       heroJumpBtn.addEventListener("click", function () {
-        switchTab("media", true);
+        switchTab("media-videos", true);
+      });
+    }
+    var heroTriadJumpBtn = document.getElementById("btnHeroJumpTriads");
+    if (heroTriadJumpBtn) {
+      heroTriadJumpBtn.addEventListener("click", function () {
+        switchTab("media-triads", true);
       });
     }
   }
@@ -1998,7 +2005,7 @@
     var q = (state.triadSearch || "").trim().toLowerCase();
     var filtered = triads.filter(function (t) {
       if (state.triadFilter !== "all" && (t.status || "todo") !== state.triadFilter) return false;
-      if (q && (t.title_ua + " " + t.title_en + " " + t.p1_start + " " + t.p2_flow + " " + t.p3_end).toLowerCase().indexOf(q) === -1) return false;
+      if (q && (t.title_ua + " " + t.title_en + " " + (t.vo_quote || "") + " " + (t.symbol || "") + " " + t.act + " " + t.p1_start + " " + t.p2_flow + " " + t.p3_end).toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
 
@@ -2020,6 +2027,14 @@
         }
       }
 
+      var voQuoteHtml = (t.vo_quote || t.concept) ? [
+        "  <div style=\"margin-bottom:0.65rem;padding:0.55rem 0.75rem;border-radius:7px;background:rgba(56,189,248,0.06);border-left:3px solid var(--cyan);font-size:12px;line-height:1.5;color:#e2e8f0;\">",
+        "    <span style=\"font-weight:700;color:var(--cyan);font-size:11px;text-transform:uppercase;letter-spacing:0.03em;\">🎙️ Документальна озвучка (VO Sync): </span>",
+        "    <span>" + esc(t.vo_quote || t.concept) + "</span>",
+        (t.symbol ? ("    <div style=\"margin-top:4px;font-size:11.2px;color:var(--amber);\"><b>💎 Художній символ:</b> " + esc(t.symbol) + "</div>") : ""),
+        "  </div>"
+      ].join("\n") : "";
+
       return [
         "<article class=\"triad-card " + statusCls + "\">",
         "  <div class=\"triad-header\">",
@@ -2029,12 +2044,12 @@
         "      <div>",
         "        <div style=\"display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:4px;\">",
         "          <span class=\"tc-badge\">#" + esc(t.num) + " • TC " + esc(t.tc) + "</span>",
+        (t.vo_take ? ("          <span class=\"chip chip-cyan\">🎙️ " + esc(t.vo_take) + "</span>") : ""),
         "          <span class=\"chip chip-purple\">" + esc(t.act) + "</span>",
         "          <span class=\"chip\">" + esc(t.cat_label || "🎬 Тріада") + "</span>",
         statusBadge,
         "        </div>",
-        "        <h4 style=\"font-size:14.5px;color:var(--text-primary);margin-bottom:3px;\">" + esc(t.title_ua) + " <span style=\"color:var(--text-muted);font-weight:500;font-size:12px;\">/ " + esc(t.title_en) + "</span></h4>",
-        (t.concept ? ("        <div style=\"font-size:12px;color:var(--text-secondary);line-height:1.45;\">" + esc(t.concept) + "</div>") : ""),
+        "        <h4 style=\"font-size:14.5px;color:var(--text-primary);margin-bottom:2px;\">" + esc(t.title_ua) + " <span style=\"color:var(--text-muted);font-weight:500;font-size:12px;\">/ " + esc(t.title_en) + "</span></h4>",
         "      </div>",
         "    </div>",
         "    <div class=\"btn-group\">",
@@ -2045,6 +2060,7 @@
         "      <button class=\"btn btn-emerald\" style=\"padding:4px 10px;font-size:11px;\" data-copy-triad-full=\"" + esc(t.num) + "\">📋 Копіювати Тріаду (1+2+3)</button>",
         "    </div>",
         "  </div>",
+        voQuoteHtml,
         "  <div class=\"triad-prompts-grid\">",
         "    <div class=\"triad-step-box step-1\">",
         "      <div class=\"triad-step-head\"><span style=\"color:var(--cyan);\">1. Start Image (Кадр А • 16:9)</span><button class=\"btn\" style=\"padding:2px 7px;font-size:10.5px;\" data-copy-triad-part=\"" + esc(t.num) + ":p1\">📋 Промпт 1</button></div>",
@@ -2936,8 +2952,8 @@
     var mediaSubTabsHtml = [
       "<nav class=\"media-subtabs-bar\" aria-label=\"Розділи медіапулу\">",
       "  <button class=\"media-subtab-btn" + (curSub === "videos" ? " active" : "") + "\" data-media-subtab=\"videos\">🎥 Відеофайли <span class=\"media-subtab-count\">" + (vaultEp.videos || []).length + "</span></button>",
+      "  <button class=\"media-subtab-btn" + (curSub === "triads" ? " active" : "") + "\" data-media-subtab=\"triads\">🎯 Документальні Сюжети (Тріади 3×) <span class=\"media-subtab-count\">" + triadsEp.length + "</span></button>",
       "  <button class=\"media-subtab-btn" + (curSub === "images" ? " active" : "") + "\" data-media-subtab=\"images\">🖼️ Зображення <span class=\"media-subtab-count\">" + (vaultEp.images || []).length + "</span></button>",
-      "  <button class=\"media-subtab-btn" + (curSub === "triads" ? " active" : "") + "\" data-media-subtab=\"triads\">🚀 Тріади Flow (3 Промпти) <span class=\"media-subtab-count\">" + triadsEp.length + "</span></button>",
       (hasVeo ? ("  <button class=\"media-subtab-btn" + (curSub === "veo" ? " active" : "") + "\" data-media-subtab=\"veo\">🎞️ Veo Конвеєр</button>") : ""),
       "  <button class=\"media-subtab-btn" + (curSub === "archives" ? " active" : "") + "\" data-media-subtab=\"archives\">🎙️ Озвучка, Досьє & Архіви <span class=\"media-subtab-count\">" + audioArchCount + "</span></button>",
       "</nav>"

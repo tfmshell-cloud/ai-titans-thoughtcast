@@ -377,11 +377,13 @@ def build_html(ep_stats, shared, resolve_info):
 
         extra_links = ""
         if ep == "01":
-            extra_links = '<a class="btn-mini" href="cinematic_innovations.html">✨ 20 Фішок & Тріади ↗</a>'
+            extra_links = '<a class="btn-mini" href="episodes/ep01_altman.html#media-triads">🎬 50 Сюжетів (VO Sync) ↗</a><a class="btn-mini" href="cinematic_innovations.html">✨ 20 Кіно-Фішок ↗</a>'
         elif ep == "02":
-            extra_links = '<a class="btn-mini" href="cinematic_innovations_ep02.html">🔥 20 Тріад ↗</a>'
+            extra_links = '<a class="btn-mini" href="episodes/ep02_huang.html#media-triads">🔥 50 Сюжетів (Тріади) ↗</a>'
         elif ep == "03":
-            extra_links = '<a class="btn-mini" href="50_scenes_hassabis.html">♟️ 50 Сюжетів ↗</a><a class="btn-mini" href="cinematic_innovations_ep03.html">✨ 30 Тріад ↗</a>'
+            extra_links = '<a class="btn-mini" href="episodes/ep03_hassabis.html#media-triads">🎯 50 Сюжетів (Студія) ↗</a><a class="btn-mini" href="50_scenes_hassabis.html">♟️ 50 Сюжетів (Окрема) ↗</a>'
+        else:
+            extra_links = f'<a class="btn-mini" href="{html.escape(s["page_url"])}#media-triads">🎯 10 Сюжетів (Тріади) ↗</a>'
 
         finder_raw_url = f"http://127.0.0.1:8765/open?path={html.escape(s['raw_dir_abs'])}"
         finder_res_url = f"http://127.0.0.1:8765/open?path={html.escape(s['res_dir_abs'])}"

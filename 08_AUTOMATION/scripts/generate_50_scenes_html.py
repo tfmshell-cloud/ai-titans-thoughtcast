@@ -3,6 +3,7 @@
 import sys, os
 sys.path.append("/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/08_AUTOMATION/scripts")
 from generate_50_scenes_hassabis import SCENES
+from triads_data.policy_safety import sanitize_flow_prompt, verify_policy_safe
 
 HTML_PATHS = [
     "/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/07_DASHBOARD/50_scenes_hassabis.html",
@@ -29,7 +30,14 @@ def get_category(num_int):
 
 def generate_html():
     cards_html = ""
-    for s in SCENES:
+    for s_raw in SCENES:
+        s = dict(s_raw)
+        s["p1_start"] = sanitize_flow_prompt(s["p1_start"])
+        s["p2_flow"] = sanitize_flow_prompt(s["p2_flow"])
+        s["p3_end"] = sanitize_flow_prompt(s["p3_end"])
+        verify_policy_safe(s["p1_start"], f"50Scenes #{s['num']} P1")
+        verify_policy_safe(s["p2_flow"], f"50Scenes #{s['num']} P2")
+        verify_policy_safe(s["p3_end"], f"50Scenes #{s['num']} P3")
         n_int = int(s["num"])
         cat_key, cat_label, cat_color = get_category(n_int)
         
