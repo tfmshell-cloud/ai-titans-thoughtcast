@@ -336,19 +336,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Материнська плата і клавіатура крупним планом — фізика кремнієвого заліза."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "05",
@@ -373,7 +361,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "video_preview": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
         "keyframe_preview": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
-        "raw_image_path": "04_ASSETS/user_ai_images/Boy_watching_glowing_code_77d7ee3b_2K.jpg",
+        "raw_image_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Boy_watching_glowing_code_77d7ee3b_2K.jpg",
         "cross_candidates": []
       },
       {
@@ -503,7 +491,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "video_preview": "",
         "keyframe_preview": "assets/vault_thumbs/ep01/471dbc64_EP01_V2_ARCH_05_Burroughs_Campus_12s.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4",
-        "raw_image_path": "04_ASSETS/user_ai_images/Child_inserting_floppy_disk_92a52bea_2K.jpg",
+        "raw_image_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Child_inserting_floppy_disk_92a52bea_2K.jpg",
         "cross_candidates": []
       },
       {
@@ -764,19 +752,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep01/d6e16d0f_ep01_flow_09_fusion_torus.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
         "raw_image_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_07_Human_Watching_Miniature_Fusion_Star_2K.jpg",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
-            "display_name": "EP03 SCI 01 RNA Polymerase DNA Transcription",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
-            "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Ставка на біотехнології та довголіття (Retro Biosciences)."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "21",
@@ -984,63 +960,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
         "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Електричний розряд у живому нейроні — першоджерело архітектури штучних мереж."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Метафора злиття біологічного нейрона та кремнієвого GPU-кристала — візуал гіпотези масштабу."
-          },
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "display_name": "EP06 FLOW IMG 01 Jerusalem Limestone Roots 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/ee00ddd6_EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Контраст старого світу й вертикалі променя нового масштабу."
-          },
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
-            "display_name": "EP06 FLOW IMG 04 Researcher Viewing GPUs AlexNet 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Дослідник оцінює обчислювальні блоки перед проривом глибокого навчання."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Багатошарова нейронна решітка зі спалахами ваг."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "29",
@@ -1126,9 +1046,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
             "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Символ альянсу між капіталом і кремнієм (Microsoft × OpenAI)."
+            "source_label": "🌌 Універсальний B-Roll (з EP02 · Хуанг / GPU)",
+            "match_reason": "Рукостискання технологій та капіталу (2K ключ)."
           }
         ]
       },
@@ -1520,52 +1443,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Метафора злиття біологічного нейрона та кремнієвого GPU-кристала — візуал гіпотези масштабу."
-          },
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Материнська плата і клавіатура крупним планом — фізика кремнієвого заліза."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
-            "display_name": "Neural core pulsing in laboratory 1c257942 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Сяюче інтелектуальне ядро всередині надсучасного дата-центру."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Сяюче інтелектуальне ядро всередині надсучасного дата-центру."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "47",
@@ -1599,9 +1477,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
             "thumb": "assets/vault_thumbs/ep02/701638df_EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercompute.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Термоядерна енергія та земне тепло живлять гігаватні кластери Stargate."
+            "source_label": "🌌 Універсальний B-Roll (з EP02 · Хуанг / GPU)",
+            "match_reason": "Чиста енергія живить гігаватні обчислення."
           }
         ]
       },
@@ -1629,19 +1510,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
-            "display_name": "EP06 SCI 01 Alcubierre Warp Drive Metric",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
-            "thumb": "assets/vault_thumbs/ep06/19c4148f_EP06_SCI_01_Alcubierre_Warp_Drive_Metric.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Викривлення простору можливостей за горизонтом експоненти."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "49",
@@ -1667,19 +1536,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "display_name": "EP06 FLOW IMG 01 Jerusalem Limestone Roots 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/ee00ddd6_EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Контраст старого світу й вертикалі променя нового масштабу."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "50",
@@ -2632,19 +2489,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Юний інженер власноруч розбирає залізо системного блоку."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "11",
@@ -2670,30 +2515,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Динамічний аніме-образ молодого фаундера, що крокує у нічне місто стартапів."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічне програмування у напівтемній кімнаті біля комп'ютера."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "12",
@@ -2719,41 +2541,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Динамічний аніме-образ молодого фаундера, що крокує у нічне місто стартапів."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "display_name": "EP01 CLIP STILL CRT PixelArt 4s",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "thumb": "assets/vault_thumbs/ep03/c89a6632_EP01_CLIP_STILL_CRT_PixelArt_4s.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Класична 3D/піксельна комп'ютерна графіка ігрових рушіїв — джерело попиту на перші відеокарти NVIDIA!"
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічна зустріч інженерів-засновників за столом у закусочній 1993 року — народження NVIDIA!"
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "13",
@@ -2781,48 +2569,18 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_image_path": "",
         "cross_candidates": [
           {
-            "media_type": "video",
-            "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "display_name": "Camera moving through computer m clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Макро-огляд вінтажного апаратного корпусу початку 1990-х."
-          },
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Юний інженер власноруч розбирає залізо системного блоку."
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічна зустріч інженерів-засновників за столом у закусочній 1993 року — народження NVIDIA!"
-          },
-          {
             "media_type": "image",
             "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Апаратне креслення друкованої плати й GPU — естетика перших прототипів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Друкована плата та доріжки GPU великим планом (без логотипів)."
           }
         ]
       },
@@ -2850,19 +2608,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
-            "display_name": "Laser forms text words",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зелений промінь вінтажного осцилографа: апаратне тестування графіки та симулятор IKOS."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "15",
@@ -2917,36 +2663,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "display_name": "EP01 CLIP STILL CRT PixelArt 4s",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "thumb": "assets/vault_thumbs/ep03/c89a6632_EP01_CLIP_STILL_CRT_PixelArt_4s.jpg",
+            "file": "EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4",
+            "display_name": "EP01 V1 B2 05 Swarm Gaming RL 12s",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4",
+            "thumb": "assets/vault_thumbs/ep03/cbda60a7_EP01_V1_B2_05_Swarm_Gaming_RL_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Класична 3D/піксельна комп'ютерна графіка ігрових рушіїв — джерело попиту на перші відеокарти NVIDIA!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Візуалізація інженерного рушія та трансформації мап даних."
-          },
-          {
-            "media_type": "video",
-            "file": "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
-            "display_name": "Holographic game data streams fl…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/12c8e337_Holographic_game_data_streams_fl__0aa820c5_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Потоки ігрової геометрії та трикутників полігонів Direct3D у майстерні комп'ютерної графіки."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Рій лазерних ігрових геометричних юнітів у симуляції (4K абстракт)."
           }
         ]
       },
@@ -3003,25 +2730,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Засновник у вихорі розпаду — «До банкрутства залишилось 30 днів» Дженсена Хуанга!"
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
             "display_name": "EP01 V1 B2 07 Corporate Transmutation 15s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Жорстке виживання компанії у 1996 році — скорочення 60% штату та ставка ва-банк."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактний силует спиною перед гравітаційним вихором (4K) — момент «30 днів до банкрутства»."
           },
           {
             "media_type": "video",
@@ -3030,20 +2749,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТОП-МЕТАФОРА ДЛЯ ХУАНГА! Грошей у банку лишилось рівно на 30 днів — відлік цокає перед кожною нарадою NVIDIA."
-          },
-          {
-            "media_type": "video",
-            "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "display_name": "Photographic strobe inverting image",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Момент шоку та внутрішньої зібраності, коли компанія опиняється на межі краху."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Натиск таймера -> золоті шестерні часу (без шахів у 2-3 кадрі!) — «До банкрутства рівно 30 днів»."
           }
         ]
       },
@@ -3079,9 +2790,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Жорстке виживання компанії у 1996 році — скорочення 60% штату та ставка ва-банк."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактний силует спиною перед гравітаційним вихором (4K) — момент «30 днів до банкрутства»."
           }
         ]
       },
@@ -3143,9 +2857,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоте транзисторне рукостискання — ідеально під угоду з Ірімадзірі-саном (Sega), TSMC та передачу DGX-1."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте транзисторне рукостискання (без облич) — союз із Sega / TSMC / OpenAI."
           }
         ]
       },
@@ -3181,31 +2898,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зелені матриці субпікселів CRT — епоха графіки на рівні пікселя й трикутника."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічне програмування у напівтемній кімнаті біля комп'ютера."
-          },
-          {
-            "media_type": "video",
-            "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
-            "display_name": "Laser forms text words",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зелений промінь вінтажного осцилографа: апаратне тестування графіки та симулятор IKOS."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактні зелені субпіксельні решітки в 4K — народження 3D-рендерингу."
           },
           {
             "media_type": "image",
@@ -3214,9 +2912,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Апаратне креслення друкованої плати й GPU — естетика перших прототипів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Друкована плата та доріжки GPU великим планом (без логотипів)."
           }
         ]
       },
@@ -3252,9 +2953,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Макро-проліт блакитного лазера крізь кремнієву пластину — пряма візуалізація літографії TSMC для чіпів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Макро проліт лазера по кремнієвій пластині (4K 16:9, без написів) — виробництво чипів та архітектура CUDA NVIDIA."
           },
           {
             "media_type": "video",
@@ -3263,20 +2967,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоте транзисторне рукостискання — ідеально під угоду з Ірімадзірі-саном (Sega), TSMC та передачу DGX-1."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте транзисторне рукостискання (без облич) — союз із Sega / TSMC / OpenAI."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Двоє інженерів тестують серверний GPU-блейд — чистий індустріальний B-Roll для NVIDIA (RIVA/DGX-1)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Двоє інженерів тестують GPU-сервер у лабораторії (безіменний індустріальний 2K кадр)."
           },
           {
             "media_type": "image",
@@ -3285,20 +2995,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
             "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стартовий 2K кадр для сцен проектування RIVA 128 та вшивання CUDA у кожен кремнієвий чіп."
-          },
-          {
-            "media_type": "image",
-            "file": "ghnfbyd.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
-            "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
-            "thumb": "assets/vault_thumbs/ep01/466c154a_ghnfbyd.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Теплий світловий варіант тестування GPU-блейдів у дата-лабораторії NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стартовий 2K кадр для сцен проектування архітектури чипів та CUDA."
           }
         ]
       },
@@ -3329,25 +3031,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дощова зала засідань ради директорів: криза, тиск ринку 2008 і 30 днів до банкрутства."
-          },
-          {
-            "media_type": "video",
             "file": "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
             "display_name": "Finger slamming clock plunger",
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТОП-МЕТАФОРА ДЛЯ ХУАНГА! Грошей у банку лишилось рівно на 30 днів — відлік цокає перед кожною нарадою NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Натиск таймера -> золоті шестерні часу (без шахів у 2-3 кадрі!) — «До банкрутства рівно 30 днів»."
           }
         ]
       },
@@ -3378,36 +3072,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "display_name": "EP01 CLIP STILL CRT PixelArt 4s",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
-            "thumb": "assets/vault_thumbs/ep03/c89a6632_EP01_CLIP_STILL_CRT_PixelArt_4s.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Класична 3D/піксельна комп'ютерна графіка ігрових рушіїв — джерело попиту на перші відеокарти NVIDIA!"
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
             "display_name": "EP01 V1 CREATIVE 08 Gold Melting Brain 15s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/435413e8_EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоті монети переплавляються в сяючий кришталевий мозок — від IPO 1999 року до 3-трильйонного мозку планети."
-          },
-          {
-            "media_type": "video",
-            "file": "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
-            "display_name": "Holographic game data streams fl…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/12c8e337_Holographic_game_data_streams_fl__0aa820c5_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Потоки ігрової геометрії та трикутників полігонів Direct3D у майстерні комп'ютерної графіки."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золото переплавляється в нейронний мозок (4K абстракт) — шлях від IPO до 3-трильйонної вартості."
           }
         ]
       },
@@ -3443,9 +3118,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Занурення прямо в середовище програмного коду CUDA / терміналу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Занурення крізь нейтральний ноутбук у тунель обчислювальної архітектури (1080p)."
           },
           {
             "media_type": "video",
@@ -3454,20 +3132,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Макро-проліт блакитного лазера крізь кремнієву пластину — пряма візуалізація літографії TSMC для чіпів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Макро проліт лазера по кремнієвій пластині (4K 16:9, без написів) — виробництво чипів та архітектура CUDA NVIDIA."
           },
           {
             "media_type": "image",
             "file": "dxf_g.png",
-            "display_name": "Золоті світлові імпульси біжать по материнській платі",
+            "display_name": "Золоті електричні сигнали біжать доріжками плати",
             "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
             "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоті електричні сигнали мчать доріжками кремнієвої плати — ідеальна метафора CUDA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоті світлові траси на материнській платі (без логотипів) — CUDA та GPU."
           },
           {
             "media_type": "image",
@@ -3476,9 +3160,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
             "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стартовий 2K кадр для сцен проектування RIVA 128 та вшивання CUDA у кожен кремнієвий чіп."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стартовий 2K кадр для сцен проектування архітектури чипів та CUDA."
           }
         ]
       },
@@ -3566,20 +3253,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Нейрон стає обчислювальним центром і мережею світу (1080p 16:9) — AlexNet на GPU NVIDIA та глобальні AI-фабрики."
           },
           {
             "media_type": "image",
@@ -3588,9 +3267,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
             "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ NIPS 2012: ImageNet на двох відеокартах NVIDIA GTX 580!"
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "ІСТОРИЧНЕ ДОСЬЄ (NIPS 2012): AlexNet запускався саме на двох відеокартах NVIDIA GTX 580!"
           },
           {
             "media_type": "image",
@@ -3599,9 +3281,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "2012: запуск AlexNet на двох GPU GTX 580 очима дослідників Торонто."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "2012 рік: обчислювальний експеримент AlexNet на GPU NVIDIA."
           },
           {
             "media_type": "image",
@@ -3610,9 +3295,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
             "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Бенчмарк ImageNet CVPR 2009 — датасет, на якому переміг тандем GPU + AlexNet."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Прес-досьє бенчмарку ImageNet, де проявилася сила GPU NVIDIA."
           },
           {
             "media_type": "image",
@@ -3621,20 +3309,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
             "thumb": "assets/vault_thumbs/ep10/5b0e096a_EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "10",
-            "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
-            "match_reason": "Історія переходу від 16,000 CPU ядер до десятків GPU у дослідженнях глибокого навчання."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Матричні шари нейронів, що прискорюються на GPU."
+            "source_label": "🌌 Універсальний B-Roll (з EP10 · Ендрю Ин)",
+            "match_reason": "Порівняння 16 000 CPU Google Brain vs кількох GPU NVIDIA у дослідницьких кластерах."
           }
         ]
       },
@@ -3665,36 +3345,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "display_name": "Camera accelerating through lett clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Проліт крізь EXPONENTIAL — шалений ривок NVIDIA з нуля у 2012–2024 роках."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "display_name": "EP01 CLIP V1 19 CurveHero 17s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "17s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золота експонента зростання: момент, коли десятирічна ставка на CUDA вистрілює вгору."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прорив звукового бар'єру — метафора секунди, коли ставка на CUDA вибухає на весь світ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чиста золота експоненційна крива в космосі (4K 16:9, без жодного слова) — прорив NVIDIA."
           },
           {
             "media_type": "image",
@@ -3703,9 +3364,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
             "thumb": "assets/vault_thumbs/ep01/0b231e72_EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золота експонента зростання обчислювальної потужності CUDA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золота експонента зростання екосистеми CUDA."
           }
         ]
       },
@@ -3736,14 +3400,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
-            "preview_path": "",
+            "file": "ep01_flow_06_server_monolith.mp4",
+            "display_name": "ep01 flow 06 server monolith",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+            "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Гігантське ядро суперкомп'ютера та команда інженерів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Тунель дата-центру переходить у сяючу кремнієву решітку суперкомп'ютера."
           },
           {
             "media_type": "video",
@@ -3752,9 +3419,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Розробники в холодній залі перед велетенською серверною вежею GPU (DGX-1 / AI-фабрика)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Темний дата-центр із велетенською серверною вежею GPU (безіменний загальний план 4K)."
           },
           {
             "media_type": "video",
@@ -3763,20 +3433,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоте транзисторне рукостискання — ідеально під угоду з Ірімадзірі-саном (Sega), TSMC та передачу DGX-1."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте транзисторне рукостискання (без облич) — союз із Sega / TSMC / OpenAI."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Двоє інженерів тестують серверний GPU-блейд — чистий індустріальний B-Roll для NVIDIA (RIVA/DGX-1)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Двоє інженерів тестують GPU-сервер у лабораторії (безіменний індустріальний 2K кадр)."
           },
           {
             "media_type": "image",
@@ -3785,20 +3461,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K кадр крижаної зали дата-центру для фіналу акту інфраструктури NVIDIA."
-          },
-          {
-            "media_type": "image",
-            "file": "ghnfbyd.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
-            "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
-            "thumb": "assets/vault_thumbs/ep01/466c154a_ghnfbyd.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Теплий світловий варіант тестування GPU-блейдів у дата-лабораторії NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Холодний суперкомп'ютерний коридор NVIDIA DGX/Blackwell (2K)."
           },
           {
             "media_type": "image",
@@ -3807,20 +3475,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA)."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA)."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Футуристична зала з пульсуючим нейроядром (без таблички LONDON)."
           }
         ]
       },
@@ -3848,41 +3508,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!)."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!)."
-          },
-          {
-            "media_type": "image",
-            "file": "dv.png",
-            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
-            "rel_path": "04_ASSETS/user_ai_images/dv.png",
-            "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K кадр для нарад біля білої дошки у NVIDIA."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "33",
@@ -3910,37 +3536,18 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_image_path": "",
         "cross_candidates": [
           {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "display_name": "EP01 V1 NEW 03 Window Rain 16s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Самотній керівник о третій ночі біля вікна за розбором листів інженерів."
-          },
-          {
-            "media_type": "video",
-            "file": "Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
-            "display_name": "Mouse click triggers flash",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9810a5ce_Mouse_click_triggers_flash_42a0e76f_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Клік о другій ночі й раптові відеодзвінки команди (Дженсен читає кожен електронний лист)."
-          },
-          {
             "media_type": "image",
             "file": "jlgyf.png",
             "display_name": "Ноутбук із кодом на дерев'яному столі біля вікна",
             "rel_path": "04_ASSETS/user_ai_images/jlgyf.png",
             "thumb": "assets/vault_thumbs/ep01/27ca950d_jlgyf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Робочий стіл розробника з кодом на ноутбуці у вранішньому світлі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Ноутбук із чистим кодом на дерев'яному столі вранці (без чужих брендів)."
           }
         ]
       },
@@ -3968,30 +3575,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Засновник у вихорі розпаду — «До банкрутства залишилось 30 днів» Дженсена Хуанга!"
-          },
-          {
-            "media_type": "video",
-            "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "display_name": "Walls dissolving into textbook v…",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Аудиторія Стенфорду, де звучать незручні уроки стійкості."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "35",
@@ -4095,41 +3679,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Засновник у вихорі розпаду — «До банкрутства залишилось 30 днів» Дженсена Хуанга!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "display_name": "EP01 V1 NEW 03 Window Rain 16s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Самотній керівник о третій ночі біля вікна за розбором листів інженерів."
-          },
-          {
-            "media_type": "video",
-            "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "display_name": "Photographic strobe inverting image",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Момент шоку та внутрішньої зібраності, коли компанія опиняється на межі краху."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "39",
@@ -4163,20 +3713,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "17s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золота експонента зростання: момент, коли десятирічна ставка на CUDA вистрілює вгору."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прорив звукового бар'єру — метафора секунди, коли ставка на CUDA вибухає на весь світ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чиста золота експоненційна крива в космосі (4K 16:9, без жодного слова) — прорив NVIDIA."
           },
           {
             "media_type": "video",
@@ -4185,9 +3727,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/435413e8_EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоті монети переплавляються в сяючий кришталевий мозок — від IPO 1999 року до 3-трильйонного мозку планети."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золото переплавляється в нейронний мозок (4K абстракт) — шлях від IPO до 3-трильйонної вартості."
           }
         ]
       },
@@ -4327,9 +3872,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Макро-проліт блакитного лазера крізь кремнієву пластину — пряма візуалізація літографії TSMC для чіпів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Макро проліт лазера по кремнієвій пластині (4K 16:9, без написів) — виробництво чипів та архітектура CUDA NVIDIA."
           },
           {
             "media_type": "video",
@@ -4338,9 +3886,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Серверна сфера Дайсона для трильйонної архітектури AI-фабрик."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сфера Дайсона із серверних GPU-плат навколо зорі (4K, без облич/тексту) — планетарна інфраструктура NVIDIA."
           },
           {
             "media_type": "video",
@@ -4349,31 +3900,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Нейрон стає обчислювальним центром і мережею світу (1080p 16:9) — AlexNet на GPU NVIDIA та глобальні AI-фабрики."
           },
           {
             "media_type": "image",
             "file": "dxf_g.png",
-            "display_name": "Золоті світлові імпульси біжать по материнській платі",
+            "display_name": "Золоті електричні сигнали біжать доріжками плати",
             "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
             "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Золоті електричні сигнали мчать доріжками кремнієвої плати — ідеальна метафора CUDA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоті світлові траси на материнській платі (без логотипів) — CUDA та GPU."
           },
           {
             "media_type": "image",
@@ -4382,20 +3928,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Апаратне креслення друкованої плати й GPU — естетика перших прототипів NVIDIA."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Матричні шари нейронів, що прискорюються на GPU."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Друкована плата та доріжки GPU великим планом (без логотипів)."
           }
         ]
       },
@@ -4431,9 +3969,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Комп'ютерний зір та сканування міського простору в реальному часі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Оптичне сканування великого міста з повітря (1080p)."
           },
           {
             "media_type": "video",
@@ -4442,9 +3983,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Автономне розпізнавання об'єктів та телеметрія транспорту на бортових комп'ютерах NVIDIA Drive."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Телеметрія автопілота та розпізнавання об'єктів (без облич акторів)."
           },
           {
             "media_type": "video",
@@ -4453,9 +3997,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Проліт холодним тунелем дата-центру — сучасна електростанція інтелекту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактний холодний коридор дата-центру (4K 16:9, 0 людей) — AI-фабрики NVIDIA."
           },
           {
             "media_type": "video",
@@ -4464,20 +4011,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
             "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
             "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Коридор суперкомп'ютерного кластера NVIDIA HGX/Blackwell."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_06_server_monolith.mp4",
-            "display_name": "ep01 flow 06 server monolith",
-            "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
-            "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Коридор суперкомп'ютерного кластера NVIDIA HGX/Blackwell."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Тунель дата-центру переходить у сяючу кремнієву решітку суперкомп'ютера."
           },
           {
             "media_type": "video",
@@ -4486,20 +4025,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
             "thumb": "assets/vault_thumbs/ep01/d6e16d0f_ep01_flow_09_fusion_torus.jpg",
             "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Потужний енергетичний реактор для живлення дата-центрів нового покоління."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_09_fusion_torus.mp4",
-            "display_name": "ep01 flow 09 fusion torus",
-            "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
-            "thumb": "assets/vault_thumbs/ep01/e417ee0e_ep01_flow_09_fusion_torus.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Потужний енергетичний реактор для живлення дата-центрів нового покоління."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Термоядерний реактор як джерело гігаватної енергії майбутнього."
           },
           {
             "media_type": "video",
@@ -4508,20 +4039,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "LiDAR-сітка та просторове сканування міст у реальному часі (NVIDIA Drive / Omniverse)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Візуалізація інженерного рушія та трансформації мап даних."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Абстрактна бірюзова LiDAR-сітка сканує міський квартал у темряві (4K)."
           },
           {
             "media_type": "video",
@@ -4530,9 +4053,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Роботизовані маніпулятори та фізичний ШІ (NVIDIA Isaac Sim / GR00T)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Роботизовані маніпулятори сплітають золоту мережу в повітрі (4K) — фізика NVIDIA Isaac/GR00T."
+          },
+          {
+            "media_type": "video",
+            "file": "EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4",
+            "display_name": "EP01 V1 B2 05 Swarm Gaming RL 12s",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4",
+            "thumb": "assets/vault_thumbs/ep03/cbda60a7_EP01_V1_B2_05_Swarm_Gaming_RL_12s.jpg",
+            "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Рій лазерних ігрових геометричних юнітів у симуляції (4K абстракт)."
           },
           {
             "media_type": "video",
@@ -4541,20 +4081,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Серверна сфера Дайсона для трильйонної архітектури AI-фабрик."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Гігантське ядро суперкомп'ютера та команда інженерів NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сфера Дайсона із серверних GPU-плат навколо зорі (4K, без облич/тексту) — планетарна інфраструктура NVIDIA."
           },
           {
             "media_type": "video",
@@ -4563,31 +4095,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Розробники в холодній залі перед велетенською серверною вежею GPU (DGX-1 / AI-фабрика)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Сонце, оточене сферою з GPU-пластин — монументальний образ фабрик штучного інтелекту NVIDIA."
-          },
-          {
-            "media_type": "video",
-            "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
-            "display_name": "EP10 SCI 01 Tesla Coil Electric Discharges",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
-            "thumb": "assets/vault_thumbs/ep10/0c492c0f_EP10_SCI_01_Tesla_Coil_Electric_Discharges.jpg",
-            "preview_path": "",
-            "source_ep": "10",
-            "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
-            "match_reason": "Високовольтна енергія дата-центрів — серце нових фабрик інтелекту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Темний дата-центр із велетенською серверною вежею GPU (безіменний загальний план 4K)."
           },
           {
             "media_type": "video",
@@ -4596,20 +4109,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Нейрон стає обчислювальним центром і мережею світу (1080p 16:9) — AlexNet на GPU NVIDIA та глобальні AI-фабрики."
           },
           {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+            "media_type": "image",
+            "file": "Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "display_name": "Electrical pulses firing through… 80ff0358 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/8245a64d_Electrical_pulses_firing_through__80ff0358_2K.jpg",
             "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сяючий тунель дата-центру в 2K."
           },
           {
             "media_type": "image",
@@ -4618,9 +4137,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K кадр крижаної зали дата-центру для фіналу акту інфраструктури NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Холодний суперкомп'ютерний коридор NVIDIA DGX/Blackwell (2K)."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+            "display_name": "EP01 FLOW IMG 09 Fusion Torus Plasma 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/c0c391e0_EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Термоядерна енергетика для надпотужних ЦОД."
           },
           {
             "media_type": "image",
@@ -4629,20 +4165,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/2977578e_EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "2K кадр лазерного сканування 3D-середовища."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "2K кадр лазерного LiDAR-сканування 3D-середовища."
           },
           {
             "media_type": "image",
             "file": "kjh.png",
-            "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
+            "display_name": "Нескінченний футуристичний тунель серверних стійок",
             "rel_path": "04_ASSETS/user_ai_images/kjh.png",
             "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нескінченний тунель суперкомп'ютерних серверних стійок."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Футуристичний тунель серверних стійок."
           },
           {
             "media_type": "image",
@@ -4651,20 +4193,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA)."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA)."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Футуристична зала з пульсуючим нейроядром (без таблички LONDON)."
           }
         ]
       },
@@ -4700,53 +4234,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Занурення прямо в середовище програмного коду CUDA / терміналу."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!)."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Занурення крізь нейтральний ноутбук у тунель обчислювальної архітектури (1080p)."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Двоє інженерів тестують серверний GPU-блейд — чистий індустріальний B-Roll для NVIDIA (RIVA/DGX-1)."
-          },
-          {
-            "media_type": "image",
-            "file": "dv.png",
-            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
-            "rel_path": "04_ASSETS/user_ai_images/dv.png",
-            "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K кадр для нарад біля білої дошки у NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Двоє інженерів тестують GPU-сервер у лабораторії (безіменний індустріальний 2K кадр)."
           }
         ]
       },
@@ -4774,19 +4281,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дощова зала засідань ради директорів: криза, тиск ринку 2008 і 30 днів до банкрутства."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "48",
@@ -4872,9 +4367,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "LiDAR-сітка та просторове сканування міст у реальному часі (NVIDIA Drive / Omniverse)."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Абстрактна бірюзова LiDAR-сітка сканує міський квартал у темряві (4K)."
           },
           {
             "media_type": "video",
@@ -4883,9 +4381,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Серверна сфера Дайсона для трильйонної архітектури AI-фабрик."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сфера Дайсона із серверних GPU-плат навколо зорі (4K, без облич/тексту) — планетарна інфраструктура NVIDIA."
           },
           {
             "media_type": "video",
@@ -4894,42 +4395,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/1d11135f_EP01_V1_B2_08_Silicon_Metropolis_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мегаполіс перетворюється на золотий кремній — фінальна візія цифрового двійника Землі (NVIDIA Omniverse)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Місто трансформується у тривимірні золоті схеми (4K) — цифровий двійник світу NVIDIA."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Планета Земля, оповита цифровою нейромережею — масштаб імперії NVIDIA."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Сонце, оточене сферою з GPU-пластин — монументальний образ фабрик штучного інтелекту NVIDIA."
-          },
-          {
-            "media_type": "video",
-            "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
-            "display_name": "EP06 SCI 01 Alcubierre Warp Drive Metric",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
-            "thumb": "assets/vault_thumbs/ep06/19c4148f_EP06_SCI_01_Alcubierre_Warp_Drive_Metric.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Фізична симуляція космосу в трильйонних обчисленнях."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Планета Земля у золотих світлових артеріях обчислень (4K, 23s, без дублів)."
           },
           {
             "media_type": "video",
@@ -4938,9 +4423,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Фізика цифрових двійників Omniverse: матерія розпадається на керовані 3D-вокселі."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Світ розкривається на 3D-вокселі й голографічну галерею (1080p 16:9, силует спиною)."
           },
           {
             "media_type": "video",
@@ -4949,9 +4437,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Реальний прибережний ландшафт трансформується в цифрову симуляцію."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Реальний мегаполіс на узбережжі перетікає в золоту обчислювальну сферу (1080p 16:9)."
           },
           {
             "media_type": "image",
@@ -4960,53 +4451,68 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Планета, вкрита глобальною нейронною інфраструктурою NVIDIA."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Планетарна обчислювальна інфраструктура (2K)."
           },
           {
             "media_type": "image",
             "file": "kjh.png",
-            "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
+            "display_name": "Нескінченний футуристичний тунель серверних стійок",
             "rel_path": "04_ASSETS/user_ai_images/kjh.png",
             "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нескінченний тунель суперкомп'ютерних серверних стійок."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Футуристичний тунель серверних стійок."
           },
           {
             "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "display_name": "Researcher standing near hologra… a0248767 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+            "file": "scesxcsr.png",
+            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язку",
+            "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
+            "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
             "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Дослідник перед голографічною стіною візуальних даних (цифровий двійник)."
-          },
-          {
-            "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "display_name": "Researcher standing near hologra… af2e61c0 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Дослідник перед голографічною стіною візуальних даних (цифровий двійник)."
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Планета Земля у золотих орбітах цифрового двійника."
           },
           {
             "media_type": "image",
             "file": "vscds.png",
-            "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+            "display_name": "Глобальна мережа золотих волокон над Землею",
             "rel_path": "04_ASSETS/user_ai_images/vscds.png",
             "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Трансконтинентальна мережа оптичних каналів AI-фабрик."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна нейромережа зв'язків над континентами."
+          },
+          {
+            "media_type": "image",
+            "file": "ybr.png",
+            "display_name": "Глобальна мапа вузлів інновацій (Global Network)",
+            "rel_path": "04_ASSETS/user_ai_images/ybr.png",
+            "thumb": "assets/vault_thumbs/ep01/85177d40_ybr.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світова мапа технологічної інфраструктури."
           }
         ]
       }
@@ -5421,7 +4927,22 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": []
+        "cross_candidates": [
+          {
+            "media_type": "image",
+            "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "display_name": "Mathematical decision tree in space 3c0901ac 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/9bcba473_Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте математичне дерево варіантів у просторі."
+          }
+        ]
       },
       {
         "num": "07",
@@ -5551,52 +5072,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep03/cce89e6a_Camera_tracking_vintage_televisi__e6659a8e_1080p.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Camera_tracking_vintage_televisi…_e6659a8e_1080p.mp4",
         "raw_image_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/80-കളിലെ ZX Spectrum ഡെസ്ക് രംഗം (1).png",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "display_name": "Camera moving through computer m clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Корпус класичного комп'ютера 1980–90-х."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 10s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/dbf05075_EP01_CLIP_V1_06_Boy_Room_10s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ce1a1d79_EP01_CLIP_V1_06_Boy_Room_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
-            "display_name": "EP01 CLIP V1 07 Phosphor 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Фосфорне сяйво ретро-екрана 8-бітної ери."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "12",
@@ -5648,74 +5124,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "thumb": "assets/vault_thumbs/ep01/fd2aa327_ElevenLabs_video_seedance-2-5_Intense_macro_r_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічне занурення в код на ZX Spectrum."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "display_name": "EP01 CLIP V1 05 Eye Code 11s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дитячий погляд на зелений термінал асемблера."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 10s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/dbf05075_EP01_CLIP_V1_06_Boy_Room_10s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ce1a1d79_EP01_CLIP_V1_06_Boy_Room_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_02_crt_code.mp4",
-            "display_name": "ep01 flow 02 crt code",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мовні інструкції низького рівня в очах молодого кодера."
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K макро-кадр ока з зеленим асемблером."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "14",
@@ -5741,19 +5150,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ep01_flow_02_crt_code.mp4",
-            "display_name": "ep01 flow 02 crt code",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мовні інструкції низького рівня в очах молодого кодера."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "15",
@@ -5987,19 +5384,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стилізований перехід молодого геймдизайнера у світ великих ігор."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "24",
@@ -6025,19 +5410,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічні бдіння розробників Bullfrog у 1990-х."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "25",
@@ -6193,19 +5566,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-            "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стилізований перехід молодого геймдизайнера у світ великих ігор."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "31",
@@ -6286,25 +5647,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
-            "display_name": "EP07 SCI 01 Camera Traversing Human Retina",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
-            "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
-            "preview_path": "",
-            "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Політ всередині сітківки ока та нервових структур для блоку нейронауки."
-          },
-          {
-            "media_type": "image",
-            "file": "dxf_g.png",
-            "display_name": "Золоті світлові імпульси біжать по материнській платі",
-            "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
-            "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
-            "preview_path": "",
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зближення електронних і нейронних імпульсів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактна 3D-решітка нейронів у русі (16:9)."
           },
           {
             "media_type": "image",
@@ -6313,18 +5666,21 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Геометрична нейронна решітка активації."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чиста геометрична нейронна решітка активації."
           }
         ]
       },
       {
         "num": "34",
-        "status": "image_ready",
+        "status": "video_ready",
         "title": "Підземний томограф fMRI: спалахи в гіпокампі",
         "title_en": "Hassabis Scene #34 (2006 • Лабораторія нейровізуалізації)",
-        "file": "ep03_triad_34.mp4",
+        "file": "ep01_flow_05_neural_lattice.mp4",
         "tc": "06:00 – 07:15",
         "act": "Акт 4 • Нейронаука UCL (fMRI)",
         "cat_label": "🧠 Гіпокамп і уява",
@@ -6339,32 +5695,38 @@ window.MEDIA_ACQUISITION_POOL = {
         "p3_end": "Close-up of high-resolution 3D fMRI brain scans on an LCD monitor: vivid orange and yellow activation hotspots in the bilateral hippocampus during future scene construction, scientific accuracy, hyperrealistic 8k --ar 16:9",
         "davinci_recipe": "Deep subterranean blue environment, high-contrast orange fMRI functional heatmap glow, anamorphic lens distortion.",
         "sfx_cue": "Authentic fMRI acoustic gradient pulsing (loud rhythmic clack-clack-clack), low electromagnetic resonance, steady breathing.",
-        "video_preview": "",
-        "keyframe_preview": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
-        "raw_video_path": "",
+        "video_preview": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+        "keyframe_preview": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+        "raw_video_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
         "raw_image_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
-            "display_name": "EP07 SCI 01 Camera Traversing Human Retina",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
-            "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
-            "preview_path": "",
-            "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Політ всередині сітківки ока та нервових структур для блоку нейронауки."
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактна 3D-решітка нейронів у русі (16:9)."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Детальний 2K кадр нейрона зі спалахами аксонів для блоку когнітивної нейронауки."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Детальний 2K макро-нейрон зі синаптичними спалахами."
           },
           {
             "media_type": "image",
@@ -6373,9 +5735,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Геометрична нейронна решітка активації."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чиста геометрична нейронна решітка активації."
           }
         ]
       },
@@ -6541,9 +5906,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стратегічне рукостискання 2014 року про збереження наукової незалежності."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стратегічне технологічне партнерство 2014 року."
           },
           {
             "media_type": "image",
@@ -6552,9 +5920,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
             "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Союз фундаментальної науки DeepMind з глобальною обчислювальною машиною."
+            "source_label": "🌌 Універсальний B-Roll (з EP02 · Хуанг / GPU)",
+            "match_reason": "Стратегічний союз науки та індустрії."
           }
         ]
       },
@@ -6608,7 +5979,22 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep03/7b3a8bdd_EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37.jpg",
         "raw_video_path": "05_RAW_FOOTAGE/archives/EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction.mp4",
         "raw_image_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg",
-        "cross_candidates": []
+        "cross_candidates": [
+          {
+            "media_type": "image",
+            "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "display_name": "Mathematical decision tree in space 3c0901ac 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/9bcba473_Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте математичне дерево варіантів у просторі."
+          }
+        ]
       },
       {
         "num": "43",
@@ -6694,9 +6080,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прогнозування глобального клімату й ураганів системою DeepMind GraphCast."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золота координатна сфера вгамовує океанський циклон (4K) — прогнозування погоди GraphCast."
           }
         ]
       },
@@ -6732,9 +6121,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нано-молекулярна репарація живої клітини — перехід DeepMind від ігор до Isomorphic Labs та проєктування клітин!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоті нитки репарації живої клітини (4K) — AlphaFold та Isomorphic Labs."
           },
           {
             "media_type": "video",
@@ -6743,31 +6135,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Голографічна мапа морфує у біологічну структуру та просторову мережу."
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "display_name": "EP02 SCI 01 Nanobots Graphene Lattice Assembly",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "thumb": "assets/vault_thumbs/ep02/34fa8fc1_EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Наномолекулярна решітка — синтез нових матеріалів (DeepMind GNoME / кристали)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
-            "preview_path": "",
-            "source_ep": "05",
-            "source_label": "♻️ З фонду EP05 (Лекун)",
-            "match_reason": "Хімічні реакції й самоорганізація складних біосистем."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Голографічна геометрична мапа морфує в біологічну й просторову мережу (4K)."
           }
         ]
       },
@@ -6798,14 +6171,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "200 мільйонів білків, подарованих усій Землі в Стокгольмі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Подарунок 200 мільйонів білкових структур усьому людству."
           },
           {
             "media_type": "video",
@@ -6814,9 +6190,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прогнозування глобального клімату й ураганів системою DeepMind GraphCast."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золота координатна сфера вгамовує океанський циклон (4K) — прогнозування погоди GraphCast."
           },
           {
             "media_type": "video",
@@ -6825,9 +6204,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП З БЛОКУ ХАССАБІСА! Космічні галактики з'єднані золотими синаптичними аксонами."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Космічні галактики, поєднані золотими синаптичними нитками (4K абстракт)."
           },
           {
             "media_type": "video",
@@ -6836,31 +6218,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Голографічна мапа морфує у біологічну структуру та просторову мережу."
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "display_name": "EP02 SCI 01 Nanobots Graphene Lattice Assembly",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "thumb": "assets/vault_thumbs/ep02/34fa8fc1_EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Наномолекулярна решітка — синтез нових матеріалів (DeepMind GNoME / кристали)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "display_name": "EP02 SCI 02 Quantum Levitation Flux Pinning",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "thumb": "assets/vault_thumbs/ep02/f6b24047_EP02_SCI_02_Quantum_Levitation_Flux_Pinning.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Надпровідність та квантові дослідження матеріалів DeepMind."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Голографічна геометрична мапа морфує в біологічну й просторову мережу (4K)."
           }
         ]
       },
@@ -6896,42 +6259,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
             "thumb": "assets/vault_thumbs/ep01/d6e16d0f_ep01_flow_09_fusion_torus.jpg",
             "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ ВІЗУАЛ ПІД СЦЕНУ #48 ГАССАБІСА («Приборкання термоядерної зорі в Токамаку»)!"
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_09_fusion_torus.mp4",
-            "display_name": "ep01 flow 09 fusion torus",
-            "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
-            "thumb": "assets/vault_thumbs/ep01/e417ee0e_ep01_flow_09_fusion_torus.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ ВІЗУАЛ ПІД СЦЕНУ #48 ГАССАБІСА («Приборкання термоядерної зорі в Токамаку»)!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "display_name": "EP02 SCI 02 Quantum Levitation Flux Pinning",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "thumb": "assets/vault_thumbs/ep02/f6b24047_EP02_SCI_02_Quantum_Levitation_Flux_Pinning.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Надпровідність та квантові дослідження матеріалів DeepMind."
-          },
-          {
-            "media_type": "video",
-            "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
-            "display_name": "EP04 SCI 01 Quantum Double Slit Wave Collapse",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
-            "thumb": "assets/vault_thumbs/ep04/2142bf51_EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.jpg",
-            "preview_path": "",
-            "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "Фундаментальна фізика хвильових функцій, яку досліджує ШІ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Приборкання плазми в токамаку — проєкт DeepMind."
           },
           {
             "media_type": "image",
@@ -6940,9 +6273,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/c0c391e0_EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Токамак термоядерної плазми для керування магнітним полем від DeepMind."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Токамак термоядерної плазми для керування полем DeepMind."
           }
         ]
       },
@@ -6973,25 +6309,45 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
-            "preview_path": "",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "200 мільйонів білків, подарованих усій Землі в Стокгольмі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чисте золоте сяйво конвергенції наукових відкриттів (16:9)."
           },
           {
             "media_type": "video",
-            "file": "EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
-            "display_name": "EP04 VID ARCH 01 ACT4 24FPS Hinton Nobel Warning 2024",
-            "rel_path": "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
-            "thumb": "assets/vault_thumbs/ep04/05097a63_EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning.jpg",
-            "preview_path": "assets/video_previews/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
-            "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "Атмосфера Нобелівської церемонії в Стокгольмі 2024 (спільний тріумфальний рік із Хассабісом)."
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
+            "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Подарунок 200 мільйонів білкових структур усьому людству."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "display_name": "EP01 FLOW IMG 08 Golden Signatures Light Threads 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/12eff7dc_EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золотий резонанс наукової спадщини (2K)."
           }
         ]
       },
@@ -7022,14 +6378,31 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чисте золоте сяйво конвергенції наукових відкриттів (16:9)."
+          },
+          {
+            "media_type": "video",
             "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "display_name": "EP01 V1 B2 01 Retro Cellular 14s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нано-молекулярна репарація живої клітини — перехід DeepMind від ігор до Isomorphic Labs та проєктування клітин!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоті нитки репарації живої клітини (4K) — AlphaFold та Isomorphic Labs."
           },
           {
             "media_type": "video",
@@ -7038,9 +6411,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП З БЛОКУ ХАССАБІСА! Космічні галактики з'єднані золотими синаптичними аксонами."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Космічні галактики, поєднані золотими синаптичними нитками (4K абстракт)."
           }
         ]
       }
@@ -7513,9 +6889,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/4a1a526b_Camera_glides_over_glassy_water_87530444_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Ранковий туман над водою й історичними корпусами Кембриджа — молодий Хінтон кидає фізику й філософію."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Історичний кампус Кембриджа на світанку — студентські роки Хінтона."
           },
           {
             "media_type": "image",
@@ -7524,9 +6903,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Кембриджські зали знань, у яких Хінтон шукав правду про природу пам'яті."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Кембриджські академічні зали — пошуки природи пам'яті."
           }
         ]
       },
@@ -7562,9 +6944,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/c009a629_Plane_blade_transforming_into_ci__97ad6a7c_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "100% влучання в біографію Джеффрі Хінтона: столярний рубанок знімає дубову стружку й перетворюється на мікросхему — міст від лондонської майстерні до нейромереж!"
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "100% біографія Джеффрі Хінтона: столярний рубанок у лондонській майстерні перетворюється на мікросхему!"
           },
           {
             "media_type": "video",
@@ -7573,9 +6958,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/0da6b1a6_Timber_dissolving_into_crystal_m__ed88b1bf_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Деревина перетворюється на кристалічну обчислювальну решітку — перехід від ремесла теслі до філософії свідомості."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Деревина перетворюється на кристалічну решітку — перехід Хінтона від теслі до нейронауки."
           },
           {
             "media_type": "image",
@@ -7584,9 +6972,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/427930c2_Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Чесна фізична робота стамескою та рубанком: столярний період Джеффрі Хінтона перед поверненням до науки."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Робота рубанком і дубова стружка: лондонська столярна майстерня Джеффрі Хінтона."
           }
         ]
       },
@@ -7622,31 +7013,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation)."
-          },
-          {
-            "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
-            "preview_path": "",
-            "source_ep": "05",
-            "source_label": "♻️ З фонду EP05 (Лекун)",
-            "match_reason": "Атракторні стани та рекурентна динаміка складних мереж."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Синаптичний імпульс -> штучна багатошарова мережа (1080p 16:9) — ілюстрація Backpropagation."
           },
           {
             "media_type": "video",
@@ -7655,30 +7027,25 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/0da6b1a6_Timber_dissolving_into_crystal_m__ed88b1bf_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Деревина перетворюється на кристалічну обчислювальну решітку — перехід від ремесла теслі до філософії свідомості."
-          },
-          {
-            "media_type": "video",
-            "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "display_name": "Walls dissolving into textbook v…",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Витривалість дослідника в напівпорожньому університетському залі."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Деревина перетворюється на кристалічну решітку — перехід Хінтона від теслі до нейронауки."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
             "match_reason": "Біологічний нейрон, роботу якого Хінтон моделював 50 років."
           },
           {
@@ -7688,20 +7055,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Мікроскопія гіпокампа — доказ, як мозок зберігає розподілену пам'ять."
-          },
-          {
-            "media_type": "image",
-            "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Мікроскопія гіпокампа — доказ, як мозок зберігає розподілену пам'ять."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Мікроскопія живих нейронів мозку (2K)."
           }
         ]
       },
@@ -7737,20 +7096,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Синаптичний імпульс -> штучна багатошарова мережа (1080p 16:9) — ілюстрація Backpropagation."
           },
           {
             "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation)."
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Спалахи ваг у глибоких прихованих шарах нейромережі."
           },
           {
             "media_type": "video",
@@ -7759,9 +7124,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Свідомість занурена в сяючий потік диференціальних рівнянь Backpropagation."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоті математичні рівняння в космічній безодні (4K, без облич) — формули градієнтного спуску."
           },
           {
             "media_type": "video",
@@ -7770,9 +7138,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейронний граф пам'яті в масштабах Всесвіту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Всесвіт розподілених уявлень пам'яті."
           },
           {
             "media_type": "video",
@@ -7781,9 +7152,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прозора людська голова випромінює золоті нейронні нитки у бік кристала — буквально візуал із серії Хінтона (#04)!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактна скляна скульптура розуму випромінює золоте світло в обсидіановий кристал (4K)."
           },
           {
             "media_type": "video",
@@ -7792,31 +7166,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Спалах пера на папері: чотири революційні сторінки у журналі Nature 1986 року."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Формула функції втрат J(w,b) градієнтного спуску на скляній дошці — пряма мова Backpropagation!"
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Формула функції втрат J(w,b) градієнтного спуску на скляній дошці — пряма мова Backpropagation!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте перо запалює папір і формує мапу глобальної науки (без чужих облич) — стаття в Nature 1986."
           },
           {
             "media_type": "image",
@@ -7825,42 +7180,54 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Вузли багатошарової нейромережі під час зворотного поширення помилки."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Нейронний граф прямого та зворотного проходу."
           },
           {
             "media_type": "image",
             "file": "b_cgbxtd.png",
-            "display_name": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
+            "display_name": "Силует перед гіперпросторовим тунелем даних",
             "rel_path": "04_ASSETS/user_ai_images/b_cgbxtd.png",
             "thumb": "assets/vault_thumbs/ep01/1c75639d_b_cgbxtd.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дослідник перед потоком багатовимірних векторних ліній."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактний силует перед багатовимірним потоком даних."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
             "match_reason": "Біологічний нейрон, роботу якого Хінтон моделював 50 років."
           },
           {
             "media_type": "image",
             "file": "dv.png",
-            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
             "rel_path": "04_ASSETS/user_ai_images/dv.png",
             "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Рівняння оптимізації ваг нейромережі на скляній дошці."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Формула функції втрат Cost Function J(w,b) на скляній дошці — градієнтний спуск."
           },
           {
             "media_type": "image",
@@ -7869,9 +7236,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2K кадр багатошарової нейромережі для епохи Backpropagation."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "2K кадр багатошарової нейромережі для Backpropagation."
           },
           {
             "media_type": "image",
@@ -7880,20 +7250,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Розподілене представлення концептів у багатовимірному графі."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Всесвіт нейронних зв'язків (2K)."
           },
           {
             "media_type": "image",
-            "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
+            "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "display_name": "Mathematical decision tree in space 3c0901ac 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/9bcba473_Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
             "preview_path": "",
-            "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Синтез математичної інтуїції та диференціального аналізу."
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Дерево обчислення градієнтів."
           },
           {
             "media_type": "image",
@@ -7902,20 +7278,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Хвиля активації багатошарового перцептрону."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Багатошарова нейромережа (2K)."
           },
           {
             "media_type": "image",
             "file": "xasdwrc.png",
-            "display_name": "Макро перової ручки з краплею чорнила на папері",
+            "display_name": "Макро золотого пера з краплею чорнила на папері",
             "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
             "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перова ручка і чорнило — метафора 4-сторінкової статті в Nature 1986."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Золоте перо на папері — епохальна стаття в Nature 1986."
           }
         ]
       },
@@ -7943,41 +7325,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Долаючи висміювання та брак фінансування в часи зими ШІ."
-          },
-          {
-            "media_type": "video",
-            "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "display_name": "Man wearing tactical arctic parka",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дослідник у зимовій парці під північним сяйвом Канади — символ 30 років «Зими ШІ» в Торонто, коли Хінтон ішов проти всіх."
-          },
-          {
-            "media_type": "video",
-            "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "display_name": "Walls dissolving into textbook v…",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Витривалість дослідника в напівпорожньому університетському залі."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "07",
@@ -8011,20 +7359,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Торонто 2012: момент, коли нейромережа Хінтона вперше ожила на ігрових GPU."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Торонто 2012: момент, коли нейромережа Хінтона вперше ожила на ігрових GPU."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Торонто 2012: біологічна ідея нейромережі Хінтона переноситься на обчислювальні кластери."
           },
           {
             "media_type": "image",
@@ -8033,20 +7373,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
             "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Спільна стаття Крижевського, Суцкевера та Хінтона 2012 року про AlexNet!"
-          },
-          {
-            "media_type": "image",
-            "file": "EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
-            "display_name": "EP06 FLOW IMG 02 Student Knocking Hinton Door 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep06/84b02dac_EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
-            "preview_path": "",
-            "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Студент стукає у двері кабінету Джеффрі Хінтона в Торонто — народження команди AlexNet."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "ІСТОРИЧНЕ ДОСЬЄ: спільна проривна публікація Хінтона, Крижевського й Суцкевера 2012."
           },
           {
             "media_type": "image",
@@ -8055,9 +7387,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "У лабораторії Хінтона в Торонто 2012 року відеокарти обвалюють помилку ImageNet."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Запуск AlexNet на ігрових відеокартах у лабораторії Хінтона."
           },
           {
             "media_type": "image",
@@ -8066,20 +7401,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
             "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Тестова арена ImageNet, де модель Хінтона знизила помилку з 26% до 15%."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Хвиля активації багатошарового перцептрону."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Прес-досьє змагання ImageNet (обвал помилки з 26% до 15%)."
           }
         ]
       },
@@ -8115,20 +7442,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Діалог розумів Хінтона та його учнів — передача золотих ідей (і аукціон на озері Тахо)."
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Готельний столик біля озера Тахо (DNNresearch), де Хінтон з учнями визначає долю $44M аукціону."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Два чисті темні силуети без облич обмінюються золотими хвилями думок (4K)."
           }
         ]
       },
@@ -8164,9 +7483,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Пророче застереження Джеффрі Хінтона про розлом реальності на порозі AGI (2023–2024)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактне руйнування скляного купола перед порталом сингулярності (4K) — застереження Хінтона."
           },
           {
             "media_type": "video",
@@ -8175,9 +7497,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прозора людська голова випромінює золоті нейронні нитки у бік кристала — буквально візуал із серії Хінтона (#04)!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактна скляна скульптура розуму випромінює золоте світло в обсидіановий кристал (4K)."
           },
           {
             "media_type": "video",
@@ -8186,20 +7511,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "6s",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Алегорія наближення небезпеки, про яку Хінтон попереджає зі сцени в Стокгольмі."
-          },
-          {
-            "media_type": "video",
-            "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "display_name": "Photographic strobe inverting image",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Різке прозріння 2023 року перед тим, як застерегти світ."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Метафора наближення екзистенційної загрози в попередженні Хінтона (1080p 16:9)."
           }
         ]
       },
@@ -8235,20 +7552,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Пророче застереження Джеффрі Хінтона про розлом реальності на порозі AGI (2023–2024)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
-            "display_name": "EP03 VID ARCH 01 ACT4 24FPS Hassabis Nobel Lecture 2024",
-            "rel_path": "05_RAW_FOOTAGE/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
-            "thumb": "assets/vault_thumbs/ep03/16ccb01a_EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lectu.jpg",
-            "preview_path": "assets/video_previews/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Урочиста сцена Нобелівського банкету у Стокгольмі 2024."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Абстрактне руйнування скляного купола перед порталом сингулярності (4K) — застереження Хінтона."
           },
           {
             "media_type": "video",
@@ -8257,9 +7566,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "6s",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Алегорія наближення небезпеки, про яку Хінтон попереджає зі сцени в Стокгольмі."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Метафора наближення екзистенційної загрози в попередженні Хінтона (1080p 16:9)."
           }
         ]
       }
@@ -8509,9 +7821,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
             "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМЕ ПОПАДАННЯ В СЦЕНАРІЙ ЛЕКУНА! Авіаконструкторське походження (#01) та «15 років вигнання — аж поки не прилетів надзвуковий літак Deep Learning» (#06)!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Надзвуковий літак — пряма метафора сцени #06 Лекуна («аж поки не прилетів надзвуковий літак»)."
           }
         ]
       },
@@ -8542,58 +7857,45 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопець самотужки пізнає будову електронної плати."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "display_name": "EP01 CLIP V1 12 WaferHero 16s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Інженерна природа кремнію та мікроелектроніки."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Самостійні нічні розрахунки Яна Лекуна біля екрана."
-          },
-          {
-            "media_type": "video",
-            "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
-            "display_name": "Laser forms text words",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП ДЛЯ ЛЕКУНА (#02): «травлення плат у кислоті біля осцилографа»!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Мікроелектроніка та фізична архітектура кремнієвих плат."
           },
           {
             "media_type": "image",
             "file": "dxf_g.png",
-            "display_name": "Золоті світлові імпульси біжать по материнській платі",
+            "display_name": "Золоті електричні сигнали біжать доріжками плати",
             "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
             "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Плата у кислотній ванні молодого Лекуна та імпульси обчислень."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Травлення електронних плат та імпульси обчислень."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+            "display_name": "EP01 FLOW IMG 03 Silicon Wafer Cyan Laser Hero",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+            "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Мікроелектронна доріжка під лазерним променем."
           },
           {
             "media_type": "image",
@@ -8602,9 +7904,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Майстерня молодих років Лекуна: пайка та травлення власних плат."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Конструювання та паяння плат у майстерні."
           }
         ]
       },
@@ -8634,37 +7939,18 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_image_path": "",
         "cross_candidates": [
           {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
+            "media_type": "image",
+            "file": "dv.png",
+            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
+            "rel_path": "04_ASSETS/user_ai_images/dv.png",
+            "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Самостійні нічні розрахунки Яна Лекуна біля екрана."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перерахунок градієнтів і ваг на дошці."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Перерахунок градієнтів і ваг на дошці."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Оптимізація градієнта на білій дошці."
           },
           {
             "media_type": "image",
@@ -8673,9 +7959,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
             "thumb": "assets/vault_thumbs/ep04/82667044_EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ Nature 1986: публікація методу Backpropagation."
+            "source_label": "🌌 Універсальний B-Roll (з EP04 · Хінтон)",
+            "match_reason": "Класична стаття Nature 1986 про зворотне поширення помилки."
           }
         ]
       },
@@ -8711,31 +8000,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вузли зорової кори мозку кота, що надихнули згорткові мережі Bell Labs."
-          },
-          {
-            "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Вузли зорової кори мозку кота, що надихнули згорткові мережі Bell Labs."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "display_name": "EP01 CLIP V1 05 Eye Code 11s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Поєднання живого людського зору та машинного розпізнавання образів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Від біологічних рецепторів до згорткових шарів."
           },
           {
             "media_type": "video",
@@ -8744,9 +8014,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Сітка пікселів, що перетворюється на тензорні канали LeNet-5."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Матриця пікселів як вхідні канали згорткової мережі LeNet-5."
           },
           {
             "media_type": "video",
@@ -8755,42 +8028,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
             "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Вхід візуального сигналу в сітківку і далі до первинної зорової кори."
-          },
-          {
-            "media_type": "video",
-            "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
-            "display_name": "EP10 SCI 01 Tesla Coil Electric Discharges",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
-            "thumb": "assets/vault_thumbs/ep10/0c492c0f_EP10_SCI_01_Tesla_Coil_Electric_Discharges.jpg",
-            "preview_path": "",
-            "source_ep": "10",
-            "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
-            "match_reason": "Електричні спалахи активації нейронних мереж."
+            "source_label": "🌌 Універсальний B-Roll (з EP07 · Амодей)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Анатомія зорової сітківки та передачі оптичного сигналу (Лекун)."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ілюстрація ієрархічних нейронів зорової кори."
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зустріч людського ока і цифрової матриці."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Ієрархічні нейрони кори головного мозку."
           },
           {
             "media_type": "image",
@@ -8799,31 +8056,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
             "thumb": "assets/vault_thumbs/ep08/961a17fc_EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Анатомія комп'ютерного бачення для блоку Bell Labs / CNN."
-          },
-          {
-            "media_type": "image",
-            "file": "Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
-            "display_name": "Microscopy of brain hippocampal … 28e029e0 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Біологічна кора мозку як орієнтир для локальних рецептивних полів."
-          },
-          {
-            "media_type": "image",
-            "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Біологічна кора мозку як орієнтир для локальних рецептивних полів."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Біологічний і машинний зір (2K ключ)."
           }
         ]
       },
@@ -8859,9 +8097,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прикладне комп'ютерне бачення у реальному часі на базі згорткових архітектур."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Прикладне комп'ютерне бачення на основі згорткових мереж."
           },
           {
             "media_type": "video",
@@ -8870,9 +8111,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Сітка пікселів, що перетворюється на тензорні канали LeNet-5."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Матриця пікселів як вхідні канали згорткової мережі LeNet-5."
+          },
+          {
+            "media_type": "video",
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Динамічна нейронна мережа розпізнавання образів."
           },
           {
             "media_type": "video",
@@ -8881,9 +8139,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Реалтайм просторове сканування міської геометрії для World Models JEPA."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Комп'ютерне бачення та геометрія вулиці в реальному часі."
           },
           {
             "media_type": "video",
@@ -8892,9 +8153,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Народження статті про LeNet-5, що навчила машини читати почерк."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Публікація IEEE 1998 про згорткові мережі LeNet-5."
           },
           {
             "media_type": "image",
@@ -8903,9 +8167,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глибокі вузли згорткової мережі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Вузли глибокої згорткової архітектури."
+          },
+          {
+            "media_type": "image",
+            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+            "display_name": "Neural network nodes firing bef7f30b 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Активація згорткових шарів."
+          },
+          {
+            "media_type": "image",
+            "file": "xasdwrc.png",
+            "display_name": "Макро золотого пера з краплею чорнила на папері",
+            "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
+            "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Фундаментальна публікація IEEE про LeNet-5."
           }
         ]
       },
@@ -8941,20 +8236,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
             "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМЕ ПОПАДАННЯ В СЦЕНАРІЙ ЛЕКУНА! Авіаконструкторське походження (#01) та «15 років вигнання — аж поки не прилетів надзвуковий літак Deep Learning» (#06)!"
-          },
-          {
-            "media_type": "image",
-            "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
-            "display_name": "EP08 DOC 01 ACT2 FeiFeiLi ImageNet CVPR 2009",
-            "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
-            "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
-            "preview_path": "",
-            "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Змагання ImageNet, що підтвердило правоту конволюційних нейромереж."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Надзвуковий літак — пряма метафора сцени #06 Лекуна («аж поки не прилетів надзвуковий літак»)."
           }
         ]
       },
@@ -8990,9 +8277,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Живий код відкритих бібліотек на кшталт PyTorch."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Потік інженерного коду відкритих бібліотек."
+          },
+          {
+            "media_type": "video",
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Динамічна нейронна мережа розпізнавання образів."
           },
           {
             "media_type": "video",
@@ -9001,9 +8305,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Пакт Цукерберга і Лекуна про відкритий код FAIR/PyTorch."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Науковий альянс навколо відкритого коду FAIR та PyTorch."
           },
           {
             "media_type": "video",
@@ -9012,20 +8319,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Апаратна база глибокого навчання для згорткових мереж та PyTorch."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Апаратна база глибокого навчання для згорткових мереж та PyTorch."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Обчислювальний фундамент сучасного Deep Learning."
           },
           {
             "media_type": "image",
@@ -9034,9 +8333,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глибокі вузли згорткової мережі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Вузли глибокої згорткової архітектури."
+          },
+          {
+            "media_type": "image",
+            "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+            "display_name": "EP02 FLOW IMG 05 Hand Shaking Golden Transistor Dust 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "02",
+            "source_label": "🌌 Універсальний B-Roll (з EP02 · Хуанг / GPU)",
+            "match_reason": "Альянс навколо відкритого коду."
           }
         ]
       },
@@ -9072,9 +8388,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Фізична взаємодія зі світом, про яку говорить Ян Лекун у контексті Світових Моделей."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Втілений інтелект та взаємодія з фізичним простором."
           },
           {
             "media_type": "video",
@@ -9083,9 +8402,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чотиривимірне розуміння фізики навколишнього середовища замість голого тексту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Переклад фізичної реальності у внутрішню модель світу (JEPA)."
+          },
+          {
+            "media_type": "image",
+            "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
+            "display_name": "Researcher standing near hologra… a0248767 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Голографічні сцени реального світу перед дослідником (World Models)."
+          },
+          {
+            "media_type": "image",
+            "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+            "display_name": "Researcher standing near hologra… af2e61c0 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Голографічні сцени реального світу перед дослідником (World Models)."
           }
         ]
       },
@@ -9121,9 +8471,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Реалтайм просторове сканування міської геометрії для World Models JEPA."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Комп'ютерне бачення та геометрія вулиці в реальному часі."
           },
           {
             "media_type": "video",
@@ -9132,9 +8485,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Фізична взаємодія зі світом, про яку говорить Ян Лекун у контексті Світових Моделей."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Втілений інтелект та взаємодія з фізичним простором."
           },
           {
             "media_type": "video",
@@ -9143,9 +8499,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Топологічна побудова внутрішньої карти світу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Внутрішня топологія світу без зайвих слів."
           },
           {
             "media_type": "video",
@@ -9154,9 +8513,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Дискретизація фізичної реальності у внутрішню світову модель JEPA."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Розкладання реальності на 3D-структуру для JEPA."
           },
           {
             "media_type": "video",
@@ -9165,9 +8527,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чотиривимірне розуміння фізики навколишнього середовища замість голого тексту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Переклад фізичної реальності у внутрішню модель світу (JEPA)."
+          },
+          {
+            "media_type": "image",
+            "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
+            "display_name": "Researcher standing near hologra… a0248767 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Голографічні сцени реального світу перед дослідником (World Models)."
+          },
+          {
+            "media_type": "image",
+            "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+            "display_name": "Researcher standing near hologra… af2e61c0 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Голографічні сцени реального світу перед дослідником (World Models)."
           }
         ]
       },
@@ -9391,19 +8784,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep06/e65ccef7_EP06_FLOW_IMG_05_Cybernetic_Threads_Jerusalem_St.jpg",
         "raw_video_path": "",
         "raw_image_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_05_Cybernetic_Threads_Jerusalem_Stone_A_2K.jpg",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ВІД БЕТОНУ СРСР ДО ЗОЛОТОГО КАМЕНЮ ЄРУСАЛИМА: три арки крізь історію та світло — прямий двійник ключового кадру EP06_FLOW_IMG_01!"
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "02",
@@ -9437,53 +8818,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вірний математиці Суцкевер розчиняється у формулах оптимізації."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ВІД БЕТОНУ СРСР ДО ЗОЛОТОГО КАМЕНЮ ЄРУСАЛИМА: три арки крізь історію та світло — прямий двійник ключового кадру EP06_FLOW_IMG_01!"
-          },
-          {
-            "media_type": "video",
-            "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "display_name": "Walls dissolving into textbook v…",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нічні студії за томами алгебри без жодного викладача поруч."
-          },
-          {
-            "media_type": "image",
-            "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
-            "preview_path": "",
-            "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Самонавчання математиці за підручниками."
-          },
-          {
-            "media_type": "image",
-            "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
-            "display_name": "Gothic library interior with boo… e97ea8a1 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Томи класичної математики та філософії в тиші бібліотеки."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Занурення у чисті математичні закономірності."
           }
         ]
       },
@@ -9511,30 +8851,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "assets/vault_thumbs/ep06/84b02dac_EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
         "raw_video_path": "",
         "raw_image_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Camera_glides_over_glassy_water_87530444_1080p.mp4",
-            "display_name": "Camera glides over glassy water",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/4a1a526b_Camera_glides_over_glassy_water_87530444_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Академічна тиша перед важливими відкриттями."
-          },
-          {
-            "media_type": "video",
-            "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "display_name": "Man wearing tactical arctic parka",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Переїзд у холодний Торонто заради навчання у Джеффрі Хінтона."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "04",
@@ -9568,9 +8885,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Код тренування нейронних трансляцій Seq2Seq."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Код тренування глибоких векторних мереж."
           },
           {
             "media_type": "video",
@@ -9579,9 +8899,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Апаратний фундамент нейрообчислень."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Кремнієвий фундамент для глибокого навчання та прискорення матриць."
+          },
+          {
+            "media_type": "video",
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Векторні шари глибоких моделей послідовностей."
+          },
+          {
+            "media_type": "video",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Згортка векторів думки в єдиний смисловий центр."
           },
           {
             "media_type": "video",
@@ -9590,9 +8941,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вірний математиці Суцкевер розчиняється у формулах оптимізації."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Занурення у чисті математичні закономірності."
           },
           {
             "media_type": "video",
@@ -9601,20 +8955,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Простір багатовимірних векторів, що стискають сенси (Seq2Seq)."
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "display_name": "EP02 SCI 01 Nanobots Graphene Lattice Assembly",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
-            "thumb": "assets/vault_thumbs/ep02/34fa8fc1_EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Кристалізація векторних структур у просторі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Багатовимірний семантичний простір думок."
           },
           {
             "media_type": "video",
@@ -9623,64 +8969,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ілля Суцкевер переносить нейромережі на графічні процесори GTX 580."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Ілля Суцкевер переносить нейромережі на графічні процесори GTX 580."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Математичний вивід функцій втрат для послідовностей."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Математичний вивід функцій втрат для послідовностей."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Масштабування нейронних систем на графічних кластерах."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Інженери над високощільною обчислювальною платою під час експериментів масштабування."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Апаратний тест обчислювальної стійки."
           },
           {
             "media_type": "image",
             "file": "dxf_g.png",
-            "display_name": "Золоті світлові імпульси біжать по материнській платі",
+            "display_name": "Золоті електричні сигнали біжать доріжками плати",
             "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
             "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Матричні обчислення по золотих трасах кремнію."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Швидкісні матричні тракти обчислень."
           },
           {
             "media_type": "image",
@@ -9689,9 +9011,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
             "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Кремнієвий тракт матричних множень."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Кремнієвий тракт матричних обчислень."
           },
           {
             "media_type": "image",
@@ -9700,20 +9025,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейронний граф стискання та масштабування сенсів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Граф векторного представлення сенсів."
           },
           {
             "media_type": "image",
-            "file": "EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
-            "display_name": "EP02 DOC 01 ACT2 NVIDIA RIVA128 SEC 1999 IPO",
-            "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
-            "thumb": "assets/vault_thumbs/ep02/5d301871_EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.jpg",
+            "file": "EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "display_name": "EP01 FLOW IMG 08 Golden Signatures Light Threads 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/12eff7dc_EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads.jpg",
             "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Апаратна передісторія графічних прискорювачів NVIDIA."
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Згортка сенсів у векторному просторі."
           },
           {
             "media_type": "image",
@@ -9722,9 +9053,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Стиснуті семантичні координати думки."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Космічна геометрія векторів."
           },
           {
             "media_type": "image",
@@ -9733,9 +9067,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
             "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Головний іспит комп'ютерного бачення 2012 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Історичний контекст змагання ImageNet 2012."
           },
           {
             "media_type": "image",
@@ -9744,42 +9081,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
             "thumb": "assets/vault_thumbs/ep09/e94ef827_EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "09",
-            "source_label": "♻️ З фонду EP09 (Бенжіо)",
-            "match_reason": "Наукова стаття про механізм Attention у нейронному машинному перекладі — міст до Seq2Seq Суцкевера!"
+            "source_label": "🌌 Універсальний B-Roll (з EP09 · Бенжіо)",
+            "match_reason": "Наукова робота про Attention — прямий розвиток підходу Seq2Seq Суцкевера."
           },
           {
             "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+            "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "display_name": "Mathematical decision tree in space 3c0901ac 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/9bcba473_Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
             "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Глибокі векторні шари Seq2Seq."
-          },
-          {
-            "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "display_name": "Researcher standing near hologra… a0248767 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Науковець перед багатовимірними векторними спогадами моделі."
-          },
-          {
-            "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "display_name": "Researcher standing near hologra… af2e61c0 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Науковець перед багатовимірними векторними спогадами моделі."
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Дерево пошуку варіантів у векторних моделях."
           }
         ]
       },
@@ -9810,25 +9131,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_DOC_02_OpenAI_Introducing_12s.mp4",
-            "display_name": "EP01 DOC 02 OpenAI Introducing 12s",
-            "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_OpenAI_Introducing_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/3c729b62_EP01_DOC_02_OpenAI_Introducing_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Історичний маніфест заснування OpenAI (грудень 2015), де Ілля Суцкевер став головним науковцем."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тандем Сем Альтман — Ілля Суцкевер: народження й ідеологічний розкол OpenAI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Інтелектуальний резонанс та співпраця вчених."
           },
           {
             "media_type": "video",
@@ -9837,9 +9150,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Одержимі дослідники в лабораторії перед кластером майбутнього OpenAI/SSI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Інженери в закритій обчислювальній залі перед масштабуванням моделі."
           },
           {
             "media_type": "video",
@@ -9848,20 +9164,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
             "thumb": "assets/vault_thumbs/ep01/ab0ce010_EP01_V2_B2_03_Altman_Sutskever_TAU_10s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "АРХІВНЕ ВІДЕО (TAU 2023): живий діалог Іллі Суцкевера та Сема Альтмана!"
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зустріч співзасновників OpenAI 2015 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "АРХІВНЕ ВІДЕО (TAU 2023): реальний спільний виступ Іллі Суцкевера та Сема Альтмана."
           },
           {
             "media_type": "image",
@@ -9870,20 +9178,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
             "thumb": "assets/vault_thumbs/ep01/6b4ac0cc_EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Історичний маніфест заснування OpenAI (грудень 2015), де Ілля Суцкевер став головним науковцем."
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
-            "display_name": "EP01 IMG ARCH 02 Altman Ilya Sutskever TAU 2023",
-            "rel_path": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
-            "thumb": "assets/vault_thumbs/ep01/46b9d832_EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ ІСТОРИЧНИЙ ДОКУМЕНТ: Ілля Суцкевер та Сем Альтман разом на сцені Тель-Авівського університету 2023 року!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "4K ДОСЬЄ: маніфест заснування OpenAI 2015 року, де Суцкевер став головним науковцем."
           },
           {
             "media_type": "image",
@@ -9892,9 +9192,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
             "thumb": "assets/vault_thumbs/ep10/5b0e096a_EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "10",
-            "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
-            "match_reason": "Контекст Google Brain, з якого Ілля Суцкевер прийшов у OpenAI."
+            "source_label": "🌌 Універсальний B-Roll (з EP10 · Ендрю Ин)",
+            "match_reason": "Середовище Google Brain, з якого Суцкевер перейшов до OpenAI."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+            "display_name": "EP01 IMG ARCH 02 Altman Ilya Sutskever TAU 2023",
+            "rel_path": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+            "thumb": "assets/vault_thumbs/ep01/46b9d832_EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 768×1024",
+            "dur_label": "",
+            "is_portrait": true,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "ІСТОРИЧНЕ ФОТО (TAU 2023): Ілля Суцкевер та Сем Альтман на одній сцені."
           }
         ]
       },
@@ -9930,9 +9247,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Народження свідомої абстракції всередині моделі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Діалог між людською інтуїцією та синтетичним розумом."
+          },
+          {
+            "media_type": "image",
+            "file": "EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+            "display_name": "EP04 FLOW IMG 04 Human Head Cracking Releasing Light 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep04/7ff5e209_EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_L.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "04",
+            "source_label": "🌌 Універсальний B-Roll (з EP04 · Хінтон)",
+            "match_reason": "Світло абстракції, що народжується всередині розуму (2K)."
           }
         ]
       },
@@ -9963,25 +9297,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "display_name": "Camera accelerating through lett clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Експоненціальне масштабування моделей GPT."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "display_name": "EP01 CLIP V1 16 ServerCold 8s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стерильний обчислювальний моноліт без зайвого шуму."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чистий обчислювальний моноліт у залі масштабування."
           },
           {
             "media_type": "video",
@@ -9990,9 +9316,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "17s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Пряма лінія закону масштабування: збільшення обчислень на порядок."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Степенева крива масштабування інтелекту."
           },
           {
             "media_type": "video",
@@ -10001,20 +9330,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
             "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
             "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Багатомільйонний тренувальний цикл у холодній залі."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_06_server_monolith.mp4",
-            "display_name": "ep01 flow 06 server monolith",
-            "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
-            "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Багатомільйонний тренувальний цикл у холодній залі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Архітектура великого обчислювального кластера."
           },
           {
             "media_type": "video",
@@ -10023,20 +9344,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Апогей гіпотези масштабування на 10 порядках потужності."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Обчислювальне ядро, де масштаб знімає стелю можливостей."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Метафора десятикратного енергетичного та обчислювального масштабування."
           },
           {
             "media_type": "video",
@@ -10045,9 +9358,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Простір багатовимірних векторів, що стискають сенси (Seq2Seq)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Багатовимірний семантичний простір думок."
           },
           {
             "media_type": "video",
@@ -10056,31 +9372,54 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Одержимі дослідники в лабораторії перед кластером майбутнього OpenAI/SSI."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Масштаб енергії та обчислень планетарного рівня для суперінтелекту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Інженери в закритій обчислювальній залі перед масштабуванням моделі."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Інженери над високощільною обчислювальною платою під час експериментів масштабування."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Апаратний тест обчислювальної стійки."
+          },
+          {
+            "media_type": "image",
+            "file": "Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "display_name": "Electrical pulses firing through… 80ff0358 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/8245a64d_Electrical_pulses_firing_through__80ff0358_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Швидкісний обмін між тисячами обчислювальних вузлів."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+            "display_name": "EP01 FLOW IMG 04 Golden Exponential Curve Hero",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+            "thumb": "assets/vault_thumbs/ep01/0b231e72_EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Експонента законів масштабування."
           },
           {
             "media_type": "image",
@@ -10089,53 +9428,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Нейронний граф стискання та масштабування сенсів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Граф векторного представлення сенсів."
           },
           {
             "media_type": "image",
-            "file": "ghnfbyd.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
-            "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
-            "thumb": "assets/vault_thumbs/ep01/466c154a_ghnfbyd.jpg",
+            "file": "EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+            "display_name": "EP01 FLOW IMG 06 Supercomputer Servers Cold Hall 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Команда інженерів у нічній сервериній перед масштабуванням моделі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Обчислювальний кластер великих моделей."
           },
           {
             "media_type": "image",
             "file": "kjh.png",
-            "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
+            "display_name": "Нескінченний футуристичний тунель серверних стійок",
             "rel_path": "04_ASSETS/user_ai_images/kjh.png",
             "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Лабіринт багатомільярдних обчислювальних кластерів."
-          },
-          {
-            "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "display_name": "Researcher standing near hologra… a0248767 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Науковець перед багатовимірними векторними спогадами моделі."
-          },
-          {
-            "media_type": "image",
-            "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "display_name": "Researcher standing near hologra… af2e61c0 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Науковець перед багатовимірними векторними спогадами моделі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Архітектура надвеликих кластерів."
           }
         ]
       },
@@ -10171,9 +9497,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП ДЛЯ ІЛЛІ СУЦКЕВЕРА: корпоративний ретрит безпеки, прорив сингулярності та створення SSI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стихія неконтрольованого масштабу та потреба в безпечному SSI."
           },
           {
             "media_type": "video",
@@ -10182,9 +9511,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Народження свідомої абстракції всередині моделі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Діалог між людською інтуїцією та синтетичним розумом."
           }
         ]
       },
@@ -10215,14 +9547,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
-            "display_name": "EP01 CLIP STILL Employees Solidarity 9s",
-            "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/1751a3a1_EP01_CLIP_STILL_Employees_Solidarity_9s.jpg",
+            "file": "EP01_CLIP_STILL_730_Letter_Doc_9s.mp4",
+            "display_name": "EP01 CLIP STILL 730 Letter Doc 9s",
+            "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_730_Letter_Doc_9s.mp4",
+            "thumb": "assets/vault_thumbs/ep01/24ae11ff_EP01_CLIP_STILL_730_Letter_Doc_9s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "9s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Колективна реакція команди OpenAI на кризу листопада 2023 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "АРХІВНИЙ ЛИСТ: 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."
           },
           {
             "media_type": "video",
@@ -10231,42 +9566,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4",
             "thumb": "assets/vault_thumbs/ep01/9421b37e_EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "4s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions»."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_DOC_04_Sutskever_Regret_10s.mp4",
-            "display_name": "EP01 DOC 04 Sutskever Regret 10s",
-            "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c771ce08_EP01_DOC_04_Sutskever_Regret_10s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions»."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
-            "display_name": "EP01 UA CLIP CARD 06 730 Employees 11s",
-            "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/69af3f88_EP01_UA_CLIP_CARD_06_730_Employees_11s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тривожна рада директорів OpenAI у листопаді 2023."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "ІСТОРИЧНЕ ДОСЬЄ: офіційний допис Іллі Суцкевера про жаль від 20 листопада 2023."
           },
           {
             "media_type": "video",
@@ -10275,9 +9580,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тандем Сем Альтман — Ілля Суцкевер: народження й ідеологічний розкол OpenAI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Інтелектуальний резонанс та співпраця вчених."
           },
           {
             "media_type": "video",
@@ -10286,20 +9594,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
             "thumb": "assets/vault_thumbs/ep01/ab0ce010_EP01_V2_B2_03_Altman_Sutskever_TAU_10s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "АРХІВНЕ ВІДЕО (TAU 2023): живий діалог Іллі Суцкевера та Сема Альтмана!"
-          },
-          {
-            "media_type": "video",
-            "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "display_name": "Photographic strobe inverting image",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Спалах кризи листопада 2023 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "АРХІВНЕ ВІДЕО (TAU 2023): реальний спільний виступ Іллі Суцкевера та Сема Альтмана."
           },
           {
             "media_type": "image",
@@ -10308,9 +9608,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
             "thumb": "assets/vault_thumbs/ep01/c7777152_EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_202.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions»."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "4K ПЛАШКА ДОСЬЄ: твіт Іллі Суцкевера «I deeply regret my participation...»."
           },
           {
             "media_type": "image",
@@ -10319,9 +9622,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
             "thumb": "assets/vault_thumbs/ep01/834b23ef_EP01_DOC_05_ACT3_730_Employees_Open_Letter.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "4K ДОСЬЄ: ультиматум ради директорів OpenAI з підписом Суцкевера."
           },
           {
             "media_type": "image",
@@ -10330,31 +9636,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
             "thumb": "assets/vault_thumbs/ep01/46b9d832_EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 768×1024",
+            "dur_label": "",
+            "is_portrait": true,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ ІСТОРИЧНИЙ ДОКУМЕНТ: Ілля Суцкевер та Сем Альтман разом на сцені Тель-Авівського університету 2023 року!"
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_UA_CARD_06_730_Employees_Ultimatum.png",
-            "display_name": "EP01 UA CARD 06 730 Employees Ultimatum",
-            "rel_path": "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_06_730_Employees_Ultimatum.png",
-            "thumb": "assets/vault_thumbs/ep01/8ff7ce65_EP01_UA_CARD_06_730_Employees_Ultimatum.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."
-          },
-          {
-            "media_type": "image",
-            "file": "Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
-            "display_name": "Tech employees gathered in office b1af5ff2 2K",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep01/8cf6ac8c_Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Солідарність сотень інженерів під час листопадової кризи в OpenAI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "ІСТОРИЧНЕ ФОТО (TAU 2023): Ілля Суцкевер та Сем Альтман на одній сцені."
           }
         ]
       },
@@ -10385,36 +9672,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
-            "display_name": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7939797e_ElevenLabs_video_seedance-2-5_Slow__powerful__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Атмосферний нео-нуар дослідника під дощем — настрій ізольованої зосередженості."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Крок у невідомість нової компанії SSI."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "display_name": "EP01 CLIP V1 16 ServerCold 8s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стерильний обчислювальний моноліт без зайвого шуму."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чистий обчислювальний моноліт у залі масштабування."
           },
           {
             "media_type": "video",
@@ -10423,31 +9691,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП ДЛЯ ІЛЛІ СУЦКЕВЕРА: корпоративний ретрит безпеки, прорив сингулярності та створення SSI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стихія неконтрольованого масштабу та потреба в безпечному SSI."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "display_name": "EP01 V1 NEW 03 Window Rain 16s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
+            "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+            "display_name": "EP01 V1 B2 07 Corporate Transmutation 15s",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+            "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тиха зосереджена робота Суцкевера за межами медійного шуму."
-          },
-          {
-            "media_type": "video",
-            "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "display_name": "EP02 SCI 02 Quantum Levitation Flux Pinning",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
-            "thumb": "assets/vault_thumbs/ep02/f6b24047_EP02_SCI_02_Quantum_Levitation_Flux_Pinning.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Чистий моноліт наукової думки в стані ідеальної рівноваги."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Крок у невідомість перед масштабами майбутнього."
           },
           {
             "media_type": "image",
@@ -10456,20 +9719,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Тиха високотехнологічна лабораторія безпеки надрозуму."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Тиха високотехнологічна лабораторія безпеки надрозуму."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Тихий дослідницький центр надрозуму."
           }
         ]
       }
@@ -10796,9 +10051,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ ВІЗУАЛ ДЛЯ ТРАКТАТУ ДАРІО АМОДЕЯ! Згенерований під його медичну сцену: наноботи лікують клітини й стискають 100 років медицини."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Точний 4K візуал для медичного трактату Даріо Амодея (лікування хвороб)."
           },
           {
             "media_type": "video",
@@ -10807,9 +10065,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
             "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "3D транскрипція ДНК — наукова метафора стиснення століття біомедичних досліджень."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] 3D транскрипція ДНК — наукова метафора стиснення століття біомедицини (Амодей)."
           }
         ]
       },
@@ -10845,53 +10106,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Лабораторія Прінстона: підслуховування хору живих нейронів."
-          },
-          {
-            "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Лабораторія Прінстона: підслуховування хору живих нейронів."
-          },
-          {
-            "media_type": "video",
-            "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
-            "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
-            "preview_path": "",
-            "source_ep": "05",
-            "source_label": "♻️ З фонду EP05 (Лекун)",
-            "match_reason": "Хвильова активність клітин і біохімічних процесів."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
-            "display_name": "Human prenatal development 3D vi clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/3f4155cf_Human_prenatal_development_3D_vi_clip_8b0d0b01_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
-            "display_name": "Human prenatal development 3D vi…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/af762c74_Human_prenatal_development_3D_vi__8b0d0b01_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Лабораторія Прінстона: підслуховування сигналів живих нейронів."
           },
           {
             "media_type": "video",
@@ -10900,31 +10120,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/c976d19b_Human_zygote_cell_division_timel_clip_063791c0_1.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
-            "display_name": "Human zygote cell division timel…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/184b4e30_Human_zygote_cell_division_timel__063791c0_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Поділ клітини — біофізика живих систем (Трактат Даріо Амодея)."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Живий нейрон у темній біофізичній лабораторії."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Живі нейрони під мікроскопом у лабораторії Прінстона."
           },
           {
             "media_type": "image",
@@ -10933,9 +10148,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
             "thumb": "assets/vault_thumbs/ep08/961a17fc_EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Зорова сітківка та цифровий аналіз світлових спалахів."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Зорова сітківка та оптичний аналіз."
           },
           {
             "media_type": "image",
@@ -10944,20 +10162,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Електрофізіологічний зріз нейронів під мікроскопом (Прінстон)."
-          },
-          {
-            "media_type": "image",
-            "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Електрофізіологічний зріз нейронів під мікроскопом (Прінстон)."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Нейробіологічний дослід у лабораторії Прінстона."
           }
         ]
       },
@@ -10988,25 +10198,31 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "display_name": "Camera accelerating through lett clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Прискорення законів масштабування."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "display_name": "EP01 CLIP V1 19 CurveHero 17s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "17s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Експоненціальний графік Scaling Laws на 7 порядках величини (2020)!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Пряма логарифмічна лінія Законів Масштабування на 7 порядках величини (2020)."
+          },
+          {
+            "media_type": "video",
+            "file": "EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+            "display_name": "EP01 V1 B2 06 Server Matrix Billions 15s",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+            "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
+            "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Енергетичний масштаб законів масштабування (Scaling Laws)."
           },
           {
             "media_type": "video",
@@ -11015,9 +10231,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Елегантність степеневих рівнянь Законів Масштабування (Scaling Laws)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Степеневі закони обчислень у просторі рівнянь."
           },
           {
             "media_type": "video",
@@ -11026,20 +10245,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/435413e8_EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Конвертація мільярдних інвестицій у чистий масштаб інтелекту."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Експонента обчислювальних витрат у законах масштабування."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Конвертація ресурсів у чисту обчислювальну потужність."
           },
           {
             "media_type": "image",
@@ -11048,9 +10259,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
             "thumb": "assets/vault_thumbs/ep01/0b231e72_EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Логарифмічна пряма Законів Масштабування на 7 порядках величини."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Степенева крива Законів Масштабування на 7 порядках."
           }
         ]
       },
@@ -11081,69 +10295,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Фінальна ніч у переговорній перед створенням Anthropic."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
-            "display_name": "EP01 V1 B2 07 Corporate Transmutation 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Розрив із корпоративним курсом заради принципів безпеки."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Даріо та Даніела Амодей приймають рішення заснувати Anthropic."
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Закрита розмова команди Даріо та Даніели перед виходом в Anthropic."
-          },
-          {
-            "media_type": "video",
-            "file": "Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
-            "display_name": "Mouse click triggers flash",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9810a5ce_Mouse_click_triggers_flash_42a0e76f_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Доленосна онлайн-нарада про зміну курсу компанії."
-          },
-          {
-            "media_type": "image",
-            "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
-            "display_name": "EP02 FLOW IMG 05 Hand Shaking Golden Transistor Dust 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
-            "preview_path": "",
-            "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Передача наукової естафети та партнерства дослідників."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Спільне бачення брата й сестри Амодей."
           }
         ]
       },
@@ -11174,25 +10336,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
-            "display_name": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
-            "thumb": "assets/vault_thumbs/ep01/7939797e_ElevenLabs_video_seedance-2-5_Slow__powerful__20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Складні моральні роздуми інженера безпеки."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Коли потужність двигуна загрожує перевершити гальма контролю."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Коли потужність двигуна вимагає надійних гальм безпеки."
           },
           {
             "media_type": "video",
@@ -11201,31 +10355,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стандарти біобезпеки ASL-1..4 як золота захисна сітка над некерованою бурею."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "display_name": "EP01 V1 B3 CLOSER GoldenGrid 340f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/4d7e1eb2_EP01_V1_B3_CLOSER_GoldenGrid_340f.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальний захисний контур відповідального масштабування."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "display_name": "EP01 V1 NEW 03 Window Rain 16s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Відповідальність засновника наодинці з майбутнім технології."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Захисна координатна сітка стандартів безпеки ASL-1..4."
           },
           {
             "media_type": "video",
@@ -11234,9 +10369,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Невблаганний відлік перегонів перед запуском нових моделей: двигун проти гальм."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Невблаганний відлік перегонів безпеки проти швидкості."
           }
         ]
       },
@@ -11267,25 +10405,59 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Узгодження параметрів навколо єдиних етичних принципів."
+          },
+          {
+            "media_type": "video",
             "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "display_name": "Light point explodes into streaks",
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перо пише «Конституційний ШІ» та історичний трактат 2024 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Конституційний маніфест та трактат про медицину й біологію."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "display_name": "EP01 FLOW IMG 08 Golden Signatures Light Threads 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/12eff7dc_EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Синхронізація етичних орієнтирів."
           },
           {
             "media_type": "image",
             "file": "xasdwrc.png",
-            "display_name": "Макро перової ручки з краплею чорнила на папері",
+            "display_name": "Макро золотого пера з краплею чорнила на папері",
             "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
             "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Письмовий кодекс принципів Constitutional AI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Написання принципів Constitutional AI та Трактату 2024."
           }
         ]
       },
@@ -11321,9 +10493,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Просвічування внутрішніх фіч нейромережі Claude наскрізь (Mechanistic Interpretability)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Просвічування прихованих фіч усередині моделі Claude 3."
           },
           {
             "media_type": "image",
@@ -11332,9 +10507,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
             "thumb": "assets/vault_thumbs/ep04/7ff5e209_EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_L.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "2K концепт-кадр для механістичної інтерпретованості: промені світла виявляють приховані вузли."
+            "source_label": "🌌 Універсальний B-Roll (з EP04 · Хінтон)",
+            "match_reason": "Просвічування прихованих фіч Claude 3 Sonnet."
           }
         ]
       },
@@ -11370,9 +10548,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Коли потужність двигуна загрожує перевершити гальма контролю."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Коли потужність двигуна вимагає надійних гальм безпеки."
           },
           {
             "media_type": "video",
@@ -11381,20 +10562,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Стандарти біобезпеки ASL-1..4 як золота захисна сітка над некерованою бурею."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Захисна координатна сітка стандартів безпеки ASL-1..4."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "display_name": "EP01 V1 B3 CLOSER GoldenGrid 340f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/4d7e1eb2_EP01_V1_B3_CLOSER_GoldenGrid_340f.jpg",
+            "file": "EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+            "display_name": "EP08 SCI 01 Asteroid Approaching Earth Orbit 1080p",
+            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+            "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
             "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальний захисний контур відповідального масштабування."
+            "res_label": "1080p 16:9",
+            "dur_label": "6s",
+            "is_portrait": false,
+            "source_ep": "08",
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Небезпека неконтрольованих біо- чи кіберризиків."
           },
           {
             "media_type": "video",
@@ -11403,9 +10590,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Невблаганний відлік перегонів перед запуском нових моделей: двигун проти гальм."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Невблаганний відлік перегонів безпеки проти швидкості."
           }
         ]
       },
@@ -11441,64 +10631,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ ВІЗУАЛ ДЛЯ ТРАКТАТУ ДАРІО АМОДЕЯ! Згенерований під його медичну сцену: наноботи лікують клітини й стискають 100 років медицини."
-          },
-          {
-            "media_type": "video",
-            "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
-            "display_name": "EP03 SCI 01 RNA Polymerase DNA Transcription",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
-            "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "3D транскрипція ДНК — наукова метафора стиснення століття біомедичних досліджень."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
-            "display_name": "Human prenatal development 3D vi clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/3f4155cf_Human_prenatal_development_3D_vi_clip_8b0d0b01_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
-            "display_name": "Human prenatal development 3D vi…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/af762c74_Human_prenatal_development_3D_vi__8b0d0b01_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
-            "display_name": "Human zygote cell division timel clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/c976d19b_Human_zygote_cell_division_timel_clip_063791c0_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя."
-          },
-          {
-            "media_type": "video",
-            "file": "Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
-            "display_name": "Human zygote cell division timel…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/184b4e30_Human_zygote_cell_division_timel__063791c0_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Точний 4K візуал для медичного трактату Даріо Амодея (лікування хвороб)."
           },
           {
             "media_type": "video",
@@ -11507,9 +10645,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перо пише «Конституційний ШІ» та історичний трактат 2024 року."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Конституційний маніфест та трактат про медицину й біологію."
+          },
+          {
+            "media_type": "video",
+            "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+            "display_name": "EP03 SCI 01 RNA Polymerase DNA Transcription",
+            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+            "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
+            "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
+            "source_ep": "03",
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] 3D транскрипція ДНК — наукова метафора стиснення століття біомедицини (Амодей)."
+          },
+          {
+            "media_type": "video",
+            "file": "Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
+            "display_name": "Human zygote cell division timel clip",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
+            "thumb": "assets/vault_thumbs/ep01/c976d19b_Human_zygote_cell_division_timel_clip_063791c0_1.jpg",
+            "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Поділ клітини — біофізика живих систем (Трактат Даріо Амодея)."
           },
           {
             "media_type": "image",
@@ -11518,31 +10687,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
             "thumb": "assets/vault_thumbs/ep01/96b386bf_DNA_transcription_molecular_model_b083aad3.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 512×286",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Молекулярна модель ДНК для візуалізації перемоги над генетичними хворобами."
-          },
-          {
-            "media_type": "image",
-            "file": "DNA_transcription_molecular_model_b083aad3.jpg",
-            "display_name": "DNA transcription molecular model",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
-            "thumb": "assets/vault_thumbs/ep03/e7045db3_DNA_transcription_molecular_model_b083aad3.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Молекулярна модель ДНК для візуалізації перемоги над генетичними хворобами."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Молекулярна структура ДНК для візуалізації медичного трактату Амодея."
           },
           {
             "media_type": "image",
             "file": "scesxcsr.png",
-            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язку",
             "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
             "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальний ефект цивілізаційного прориву в охороні здоров'я."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальний ефект медичних проривів для всього людства."
           },
           {
             "media_type": "image",
@@ -11551,31 +10715,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Stages_of_cell_division_a2a1ff18.jpg",
             "thumb": "assets/vault_thumbs/ep01/749d8699_Stages_of_cell_division_a2a1ff18.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 512×286",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Еволюція живої клітини для Трактату 2024 про майбутнє біології."
-          },
-          {
-            "media_type": "image",
-            "file": "Stages_of_cell_division_a2a1ff18.jpg",
-            "display_name": "Stages of cell division",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Stages_of_cell_division_a2a1ff18.jpg",
-            "thumb": "assets/vault_thumbs/ep03/777e44d9_Stages_of_cell_division_a2a1ff18.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Еволюція живої клітини для Трактату 2024 про майбутнє біології."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Стадії поділу живої клітини — біологічні відкриття за допомогою ШІ."
           },
           {
             "media_type": "image",
             "file": "xasdwrc.png",
-            "display_name": "Макро перової ручки з краплею чорнила на папері",
+            "display_name": "Макро золотого пера з краплею чорнила на папері",
             "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
             "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Письмовий кодекс принципів Constitutional AI."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Написання принципів Constitutional AI та Трактату 2024."
           }
         ]
       }
@@ -11806,19 +10965,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Портал переходу від суворої еміграції до світла науки в Калтеху та Прінстоні."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "02",
@@ -11852,9 +10999,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Контраст високої академії Прінстона з вечірньою пральнею Фей-Фей Лі."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Класичні зали Прінстонського університету."
           }
         ]
       },
@@ -11882,19 +11032,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Портал переходу від суворої еміграції до світла науки в Калтеху та Прінстоні."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "04",
@@ -11928,31 +11066,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Наочний приклад класифікації й трекінгу об'єктів — прямий спадок датасету ImageNet!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Візуальна детекція об'єктів у реальному середовищі (спадщина ImageNet)."
           },
           {
             "media_type": "video",
-            "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "display_name": "EP01 CLIP V1 05 Eye Code 11s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
+            "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
+            "display_name": "EP01 CLIP V1 07 Phosphor 12s",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+            "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зір людини й машини: очі, що вчаться бачити 22 000 категорій видимого світу."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_02_crt_code.mp4",
-            "display_name": "ep01 flow 02 crt code",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Переклад оптичного зображення у цифровий масив чисел."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Базова цифрова матриця зображення перед класифікацією."
           },
           {
             "media_type": "video",
@@ -11961,20 +11094,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
             "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Біологічний зір людини як еталон, до якого Фей-Фей Лі підтягнула комп'ютери."
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вчити комп'ютер бачити так, як бачить людське око (ImageNet)."
+            "source_label": "🌌 Універсальний B-Roll (з EP07 · Амодей)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Живий зір людини як орієнтир комп'ютерного зору (Фей-Фей Лі)."
           }
         ]
       },
@@ -12010,9 +11135,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Просторове сканування об'єктів і геометрії вулиць для ImageNet та 3D-світу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Панорамне просторове сприйняття міської сцени."
           },
           {
             "media_type": "video",
@@ -12021,31 +11149,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Наочний приклад класифікації й трекінгу об'єктів — прямий спадок датасету ImageNet!"
-          },
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "thumb": "assets/vault_thumbs/ep01/fd2aa327_ElevenLabs_video_seedance-2-5_Intense_macro_r_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Напружений пошук візуальних патернів у міріадах зображень."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "display_name": "EP01 CLIP V1 05 Eye Code 11s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зір людини й машини: очі, що вчаться бачити 22 000 категорій видимого світу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Візуальна детекція об'єктів у реальному середовищі (спадщина ImageNet)."
           },
           {
             "media_type": "video",
@@ -12054,9 +11163,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Просторова 3D-реконструкція вулиць — безпосередній вектор World Labs Фей-Фей Лі."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "3D-сканування простору для Spatial Intelligence."
           },
           {
             "media_type": "video",
@@ -12065,20 +11177,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мапа візуальних категорій WordNet/ImageNet переростає у просторове знання."
-          },
-          {
-            "media_type": "image",
-            "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вчити комп'ютер бачити так, як бачить людське око (ImageNet)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Ієрархія об'єктів та тривимірна геометрія середовища."
           },
           {
             "media_type": "image",
@@ -12087,9 +11191,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!"
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Візуальна бібліотека світів та об'єктів (ImageNet / World Labs)."
           },
           {
             "media_type": "image",
@@ -12098,9 +11205,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!"
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Візуальна бібліотека світів та об'єктів (ImageNet / World Labs)."
           }
         ]
       },
@@ -12128,7 +11238,22 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": []
+        "cross_candidates": [
+          {
+            "media_type": "image",
+            "file": "ybr.png",
+            "display_name": "Глобальна мапа вузлів інновацій (Global Network)",
+            "rel_path": "04_ASSETS/user_ai_images/ybr.png",
+            "thumb": "assets/vault_thumbs/ep01/85177d40_ybr.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна мережа тисяч асистентів розмітки ImageNet."
+          }
+        ]
       },
       {
         "num": "07",
@@ -12156,37 +11281,18 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_image_path": "",
         "cross_candidates": [
           {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-            "thumb": "assets/vault_thumbs/ep01/fd2aa327_ElevenLabs_video_seedance-2-5_Intense_macro_r_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Напружений пошук візуальних патернів у міріадах зображень."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
-            "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Акустичний удар прориву AlexNet у 2012 році."
-          },
-          {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Обчислювальний прорив AlexNet 2012 на кластері відеокарт."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Лабораторна підтримка запуску глибоких моделей."
           },
           {
             "media_type": "image",
@@ -12195,9 +11301,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Пробудження глибокої візуальної нейромережі 2012."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Прорив глибоких візуальних мереж 2012."
           },
           {
             "media_type": "image",
@@ -12206,9 +11315,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
             "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Історична публікація AlexNet, що стала тріумфом датасету ImageNet!"
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "ІСТОРИЧНЕ ДОСЬЄ: перемога AlexNet на датасеті Фей-Фей Лі ImageNet."
           },
           {
             "media_type": "image",
@@ -12217,9 +11329,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
             "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "06",
-            "source_label": "♻️ З фонду EP06 (Суцкевер)",
-            "match_reason": "Ніч прориву AlexNet на датасеті ImageNet."
+            "source_label": "🌌 Універсальний B-Roll (з EP06 · Суцкевер)",
+            "match_reason": "Прорив ImageNet у жовтні 2012 року."
           }
         ]
       },
@@ -12250,25 +11365,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
-            "display_name": "Digital HUD tracking vehicles",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Наочний приклад класифікації й трекінгу об'єктів — прямий спадок датасету ImageNet!"
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "display_name": "EP01 V1 B2 01 Retro Cellular 14s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ілюстрація госпітального ШІ-захисту життя людини."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Технологічний захист здоров'я людини в лікарнях."
           }
         ]
       },
@@ -12304,9 +11411,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Просторове сканування об'єктів і геометрії вулиць для ImageNet та 3D-світу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Панорамне просторове сприйняття міської сцени."
           },
           {
             "media_type": "video",
@@ -12315,20 +11425,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
             "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Просторова 3D-реконструкція вулиць — безпосередній вектор World Labs Фей-Фей Лі."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перетворення 2D-планів на 3D-матрицю простору."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "3D-сканування простору для Spatial Intelligence."
           },
           {
             "media_type": "video",
@@ -12337,9 +11439,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП WORLD LABS / SPATIAL INTELLIGENCE! Роботи плетуть тривимірну золоту структуру реальності."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Просторова інженерія та робототехніка World Labs."
           },
           {
             "media_type": "video",
@@ -12348,9 +11453,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мапа візуальних категорій WordNet/ImageNet переростає у просторове знання."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Ієрархія об'єктів та тривимірна геометрія середовища."
           },
           {
             "media_type": "video",
@@ -12359,9 +11467,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Вихід із пласких 2D-пікселів у тривимірну воксельну геометрію World Labs (Фей-Фей Лі)."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Вихід із пласких 2D-пікселів у тривимірний простір World Labs."
           },
           {
             "media_type": "video",
@@ -12370,9 +11481,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Просторова реконструкція великого міста для Spatial Intelligence."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Просторове тривимірне моделювання фізичного світу."
           },
           {
             "media_type": "image",
@@ -12381,9 +11495,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/2977578e_EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "2K референс тривимірної фізики та просторового розуміння середовища."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Просторова тривимірна карта для World Labs."
           },
           {
             "media_type": "image",
@@ -12392,9 +11509,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!"
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Візуальна бібліотека світів та об'єктів (ImageNet / World Labs)."
           },
           {
             "media_type": "image",
@@ -12403,9 +11523,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!"
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Візуальна бібліотека світів та об'єктів (ImageNet / World Labs)."
           }
         ]
       },
@@ -12436,25 +11559,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "display_name": "EP01 CLIP V1 05 Eye Code 11s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Зір людини й машини: очі, що вчаться бачити 22 000 категорій видимого світу."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "display_name": "EP01 V1 B2 04 Robotic Dexterity 15s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ПРЯМИЙ КЛІП WORLD LABS / SPATIAL INTELLIGENCE! Роботи плетуть тривимірну золоту структуру реальності."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Просторова інженерія та робототехніка World Labs."
           },
           {
             "media_type": "video",
@@ -12463,9 +11578,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
             "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
             "preview_path": "",
+            "res_label": "📱 9:16 (1080×1920)",
+            "dur_label": "10s",
+            "is_portrait": true,
             "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Біологічний зір людини як еталон, до якого Фей-Фей Лі підтягнула комп'ютери."
+            "source_label": "🌌 Універсальний B-Roll (з EP07 · Амодей)",
+            "match_reason": "📐 [9:16 Вертикальне VFX] Живий зір людини як орієнтир комп'ютерного зору (Фей-Фей Лі)."
           }
         ]
       }
@@ -12701,9 +11819,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Книжкові стелажі Монреаля й перші томи наукової фантастики Бенжіо."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Фундаментальні бібліотеки філософії та математики."
           }
         ]
       },
@@ -12739,42 +11860,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі."
-          },
-          {
-            "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі."
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дискусія трьох «хрещених батьків» / колег після конференції (GANS і Attention 2014)."
-          },
-          {
-            "media_type": "video",
-            "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
-            "display_name": "Laser forms text words",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ранні експерименти з розпізнаванням мови та хвильових сигналів у Bell Labs."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Імпульс у нейронній структурі як фундамент досліджень у Монреалі."
           },
           {
             "media_type": "image",
@@ -12783,9 +11874,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
             "thumb": "assets/vault_thumbs/ep04/82667044_EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 4K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "Наукова основа, що об'єднала Хінтона, Лекуна і Бенжіо."
+            "source_label": "🌌 Універсальний B-Roll (з EP04 · Хінтон)",
+            "match_reason": "Фундамент спільного шляху «хрещених батьків» ШІ."
           }
         ]
       },
@@ -12813,41 +11907,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "display_name": "Man wearing tactical arctic parka",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Символ двадцятирічної зими ШІ у засніженому Монреалі та чесного вченого крізь Квебек."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "04",
@@ -12881,20 +11941,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Імпульс у нейронній структурі як фундамент досліджень у Монреалі."
           },
           {
             "media_type": "video",
-            "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "display_name": "Electrical spark traveling neuro…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі."
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Багатовимірна мережа зважених зв'язків слів."
           },
           {
             "media_type": "video",
@@ -12903,9 +11969,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чистий геометричний простір слів та ймовірнісних потоків GFlowNets."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Простір імовірнісних потоків (GFlowNets) та векторної математики."
           },
           {
             "media_type": "video",
@@ -12914,53 +11983,68 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "2000 рік: кожне слово стає координатою чистого смислу в нейронному космосі Бенжіо!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сузір'я слів-векторів у семантичному космосі Бенжіо (2000)."
           },
           {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+            "media_type": "image",
+            "file": "Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+            "display_name": "Artificial neural network nodes … 4e7639ee 2K",
+            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
             "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Семантичні вузли мережі."
           },
           {
             "media_type": "image",
             "file": "b_cgbxtd.png",
-            "display_name": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
+            "display_name": "Силует перед гіперпросторовим тунелем даних",
             "rel_path": "04_ASSETS/user_ai_images/b_cgbxtd.png",
             "thumb": "assets/vault_thumbs/ep01/1c75639d_b_cgbxtd.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Вхід у багатовимірний семантичний тунель смислів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Занурення у семантичний тунель значень слів."
           },
           {
             "media_type": "image",
             "file": "cdwrf.png",
-            "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+            "display_name": "Біологічний нейрон зі спалахами синапсів",
             "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
             "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Синаптичні зв'язки як прототип нейронних моделей мови."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Синаптична структура зв'язків мозку."
+          },
+          {
+            "media_type": "image",
+            "file": "dv.png",
+            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
+            "rel_path": "04_ASSETS/user_ai_images/dv.png",
+            "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Математичне виведення втрат мережі."
           },
           {
             "media_type": "image",
@@ -12969,8 +12053,11 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
             "match_reason": "Координатна решітка токенів і механізму уваги."
           },
           {
@@ -12980,31 +12067,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Світовий космос векторних слів (Word Embeddings, 2000/2003)."
-          },
-          {
-            "media_type": "image",
-            "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
-            "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
-            "preview_path": "",
-            "source_ep": "07",
-            "source_label": "♻️ З фонду EP07 (Амодей)",
-            "match_reason": "Математичні координати змісту в просторі слів."
-          },
-          {
-            "media_type": "image",
-            "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "display_name": "Neural network nodes firing bef7f30b 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Координатні шари уваги (Attention) у глибоких мережах."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Світовий простір смислових координат."
           }
         ]
       },
@@ -13035,36 +12103,31 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
+            "file": "ep01_flow_05_neural_lattice.mp4",
+            "display_name": "ep01 flow 05 neural lattice",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f4533f65_ep01_flow_05_neural_lattice.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_05_neural_lattice.mp4",
+            "res_label": "720p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Багатовимірна мережа зважених зв'язків слів."
+          },
+          {
+            "media_type": "video",
             "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ТОЧНИЙ ВІЗУАЛ ПІД 2014 РОК! Два профілі з'єднуються золотими нитками сенсу — Механізм Уваги (Attention) Богданова–Чо–Бенжіо!"
-          },
-          {
-            "media_type": "video",
-            "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "display_name": "Four men sitting at table",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Дискусія трьох «хрещених батьків» / колег після конференції (GANS і Attention 2014)."
-          },
-          {
-            "media_type": "image",
-            "file": "Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
-            "display_name": "Artificial neural network nodes … 4e7639ee 2K",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
-            "thumb": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Граф зважених зв'язків механізму Уваги."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Точна метафора Механізму Уваги (Attention) Богданова–Чо–Бенжіо 2014."
           },
           {
             "media_type": "image",
@@ -13073,8 +12136,11 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
             "match_reason": "Координатна решітка токенів і механізму уваги."
           },
           {
@@ -13084,9 +12150,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
             "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Координатні шари уваги (Attention) у глибоких мережах."
+            "source_label": "🌌 Універсальний B-Roll (з EP03 · Хассабіс / Science & AI)",
+            "match_reason": "Вузли уваги (Attention)."
           }
         ]
       },
@@ -13148,20 +12217,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ТОЧНИЙ ВІЗУАЛ ДЛЯ БЕНЖІО: золота глобальна сітка приборкує бурю планети — Інститут Mila (клімат) і Міжнародний договір безпеки ШІ!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна кліматична та безпекова координація інституту Mila й ООН."
           },
           {
             "media_type": "image",
             "file": "vscds.png",
-            "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+            "display_name": "Глобальна мережа золотих волокон над Землею",
             "rel_path": "04_ASSETS/user_ai_images/vscds.png",
             "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Міжнародна наукова колаборація Mila та ООН."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світова наукова мережа дослідників Mila."
           }
         ]
       },
@@ -13192,36 +12267,45 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Єдність міжнародної наукової спільноти заради безпеки."
+          },
+          {
+            "media_type": "video",
             "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Аргумент Бенжіо на слуханнях перед урядами світу."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Наукова тривога перед глобальними ризиками ШІ."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Планетарна відповідальність науки перед людством."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "display_name": "EP01 V1 B2 CLOSER EarthHorizon 289f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/2702e64e_EP01_V1_B2_CLOSER_EarthHorizon_289f.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Орбітальний погляд на планетарні мережі безпеки."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Планетарна відповідальність фундаментальної науки."
           },
           {
             "media_type": "video",
@@ -13230,20 +12314,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
             "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "15s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ТОЧНИЙ ВІЗУАЛ ДЛЯ БЕНЖІО: золота глобальна сітка приборкує бурю планети — Інститут Mila (клімат) і Міжнародний договір безпеки ШІ!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "display_name": "EP01 V1 B3 CLOSER GoldenGrid 340f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/4d7e1eb2_EP01_V1_B3_CLOSER_GoldenGrid_340f.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Координація міжнародного звіту про глобальну безпеку ШІ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна кліматична та безпекова координація інституту Mila й ООН."
           },
           {
             "media_type": "video",
@@ -13252,9 +12328,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "6s",
+            "is_portrait": false,
             "source_ep": "08",
-            "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
-            "match_reason": "Цивілізаційний ризик неконтрольованого ШІ в доповіді Йошуа Бенжіо."
+            "source_label": "🌌 Універсальний B-Roll (з EP08 · Фей-Фей Лі)",
+            "match_reason": "Цивілізаційний ризик у доповіді Йошуа Бенжіо."
           },
           {
             "media_type": "video",
@@ -13263,9 +12342,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Підписання першого Міжнародного звіту з безпеки ШІ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Складання Міжнародного наукового звіту про безпеку ШІ."
+          },
+          {
+            "media_type": "image",
+            "file": "EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "display_name": "EP01 FLOW IMG 08 Golden Signatures Light Threads 2K",
+            "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/12eff7dc_EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна наукова солідарність."
           },
           {
             "media_type": "image",
@@ -13274,42 +12370,54 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальна відповідальність людства над єдиною мережею інтелекту."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальна відповідальність людства."
           },
           {
             "media_type": "image",
             "file": "scesxcsr.png",
-            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язку",
             "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
             "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальна угода й екологічний моніторинг планети."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Міжнародні кліматичні й безпекові ініціативи."
           },
           {
             "media_type": "image",
             "file": "vscds.png",
-            "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+            "display_name": "Глобальна мережа золотих волокон над Землею",
             "rel_path": "04_ASSETS/user_ai_images/vscds.png",
             "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Міжнародна наукова колаборація Mila та ООН."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світова наукова мережа дослідників Mila."
           },
           {
             "media_type": "image",
             "file": "xasdwrc.png",
-            "display_name": "Макро перової ручки з краплею чорнила на папері",
+            "display_name": "Макро золотого пера з краплею чорнила на папері",
             "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
             "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Складання незалежного наукового звіту про безпеку ШІ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Фіксація наукових висновків у Звіті безпеки ШІ."
           }
         ]
       },
@@ -13345,9 +12453,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Чистий геометричний простір слів та ймовірнісних потоків GFlowNets."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Простір імовірнісних потоків (GFlowNets) та векторної математики."
           },
           {
             "media_type": "video",
@@ -13356,20 +12467,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
             "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "12s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Систематичне мислення (Система 2) та усвідомлення структури розуму."
-          },
-          {
-            "media_type": "video",
-            "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
-            "display_name": "EP04 SCI 01 Quantum Double Slit Wave Collapse",
-            "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
-            "thumb": "assets/vault_thumbs/ep04/2142bf51_EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.jpg",
-            "preview_path": "",
-            "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "Імовірнісний колапс простору станів для моделей System 2 / GFlowNets."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Усвідомлена архітектура мислення (Система 2)."
           },
           {
             "media_type": "image",
@@ -13378,9 +12481,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
             "thumb": "assets/vault_thumbs/ep04/7ff5e209_EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_L.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "04",
-            "source_label": "♻️ З фонду EP04 (Хінтон)",
-            "match_reason": "Розкриття архітектури мислення Системи 2."
+            "source_label": "🌌 Універсальний B-Roll (з EP04 · Хінтон)",
+            "match_reason": "Глибоке міркування Системи 2."
+          },
+          {
+            "media_type": "image",
+            "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "display_name": "Mathematical decision tree in space 3c0901ac 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/9bcba473_Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Розгалуження думки в архітектурах System 2."
           }
         ]
       },
@@ -13408,19 +12528,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "display_name": "Man wearing tactical arctic parka",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Символ двадцятирічної зими ШІ у засніженому Монреалі та чесного вченого крізь Квебек."
-          }
-        ]
+        "cross_candidates": []
       }
     ],
     "audio": [
@@ -13630,102 +12738,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "display_name": "Camera moving through computer m clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перше знайомство з персональним комп'ютером."
-          },
-          {
-            "media_type": "video",
             "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "display_name": "Camera plunges into terminal screen",
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Від перших журнальних програм до 10 рядків ранкового коду щодня."
-          },
-          {
-            "media_type": "video",
-            "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-            "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Раннє захоплення комп'ютерною архітектурою з дитинства."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 10s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/dbf05075_EP01_CLIP_V1_06_Boy_Room_10s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик передруковує код BASIC з журналів на ранній комп'ютер."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "display_name": "EP01 CLIP V1 06 Boy Room 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ce1a1d79_EP01_CLIP_V1_06_Boy_Room_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Хлопчик передруковує код BASIC з журналів на ранній комп'ютер."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_02_crt_code.mp4",
-            "display_name": "ep01 flow 02 crt code",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Перші рядки коду BASIC перед очами юного Ендрю Ина."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Десять рядків коду щодня — тиха звичка творця перед світанком."
-          },
-          {
-            "media_type": "image",
-            "file": "DNA_transcription_molecular_model_b083aad3.jpg",
-            "display_name": "DNA transcription molecular model",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
-            "thumb": "assets/vault_thumbs/ep01/96b386bf_DNA_transcription_molecular_model_b083aad3.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Медична спадщина батька Ендрю Ина (ранній контакт із клінічною діагностикою)."
-          },
-          {
-            "media_type": "image",
-            "file": "DNA_transcription_molecular_model_b083aad3.jpg",
-            "display_name": "DNA transcription molecular model",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
-            "thumb": "assets/vault_thumbs/ep03/e7045db3_DNA_transcription_molecular_model_b083aad3.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Медична спадщина батька Ендрю Ина (ранній контакт із клінічною діагностикою)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Десять рядків коду щодня — вхід у світ алгоритмічного мислення."
           }
         ]
       },
@@ -13761,9 +12784,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Навігаційне сприйняття простору зверху для автономних польотів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Політ автономного апарату над міським рельєфом."
+          },
+          {
+            "media_type": "video",
+            "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+            "display_name": "Digital HUD tracking vehicles",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+            "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
+            "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Сенсорна навігація та автономний зір у повітрі й місті."
           }
         ]
       },
@@ -13799,42 +12839,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
             "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тисяча машин Google Brain, підключених до візуального потоку."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_06_server_monolith.mp4",
-            "display_name": "ep01 flow 06 server monolith",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Обчислювальний масив Google X."
-          },
-          {
-            "media_type": "video",
-            "file": "ep01_flow_06_server_monolith.mp4",
-            "display_name": "ep01 flow 06 server monolith",
-            "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
-            "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
-            "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Обчислювальний масив Google X."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Серверне ядро Google Brain для самонавчання мережі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Серверний масив на 1000+ вузлів для проєкту Google Brain."
           },
           {
             "media_type": "video",
@@ -13843,9 +12853,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Інженери перед масивом із 1000 серверів Google X."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Лабораторія великомасштабних експериментів Google X."
           },
           {
             "media_type": "video",
@@ -13854,31 +12867,40 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Кластери GPU та тисячі ядер для тренування без нагляду в Google Brain."
-          },
-          {
-            "media_type": "video",
-            "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "display_name": "Neuron morphs into GPU chip",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "Кластери GPU та тисячі ядер для тренування без нагляду в Google Brain."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальний масштаб навчання без нагляду на тисячах машин."
           },
           {
             "media_type": "image",
             "file": "bhnuyvtf.png",
-            "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+            "display_name": "Інженери тестують серверний GPU-блейд у лабораторії",
             "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
             "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Налагодження 1000-серверного кластера Google Brain з Джеффом Діном."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Перевірка обладнання Google Brain."
+          },
+          {
+            "media_type": "image",
+            "file": "Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "display_name": "Electrical pulses firing through… 80ff0358 2K",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Electrical_pulses_firing_through…_80ff0358_2K.jpg",
+            "thumb": "assets/vault_thumbs/ep01/8245a64d_Electrical_pulses_firing_through__80ff0358_2K.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Масштабна архітектура серверів Google X."
           },
           {
             "media_type": "image",
@@ -13887,9 +12909,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тисяча серверів Google Brain для неконтрольованого навчання."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Масив із 1000 серверів Google Brain."
+          },
+          {
+            "media_type": "image",
+            "file": "kjh.png",
+            "display_name": "Нескінченний футуристичний тунель серверних стійок",
+            "rel_path": "04_ASSETS/user_ai_images/kjh.png",
+            "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глибина обчислювальної системи Google X."
           }
         ]
       },
@@ -13917,19 +12956,7 @@ window.MEDIA_ACQUISITION_POOL = {
         "keyframe_preview": "",
         "raw_video_path": "",
         "raw_image_path": "",
-        "cross_candidates": [
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Серверне ядро Google Brain для самонавчання мережі."
-          }
-        ]
+        "cross_candidates": []
       },
       {
         "num": "05",
@@ -13957,48 +12984,18 @@ window.MEDIA_ACQUISITION_POOL = {
         "raw_image_path": "",
         "cross_candidates": [
           {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!"
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!"
-          },
-          {
-            "media_type": "video",
-            "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "display_name": "Walls dissolving into textbook v…",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Тиха стенфордська лекційна зала перед записом перших відеоуроків CS229."
-          },
-          {
             "media_type": "image",
             "file": "dv.png",
-            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
             "rel_path": "04_ASSETS/user_ai_images/dv.png",
             "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ідеальний ключ до CS229 / Coursera: на дошці буквально формула Cost Function J(w,b) Ендрю Ина!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "100% ЗБІГ: фірмова формула Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 та Coursera!"
           }
         ]
       },
@@ -14029,58 +13026,31 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "СВІТЛО В КОЖНОМУ ДОМІ: мільйони студентів Coursera і «ШІ як нова електрика» по всій Землі!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "display_name": "EP01 V1 B2 CLOSER EarthHorizon 289f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/2702e64e_EP01_V1_B2_CLOSER_EarthHorizon_289f.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Демократизація знань через Coursera у кожному куточку Землі."
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo clip",
-            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!"
-          },
-          {
-            "media_type": "video",
-            "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "display_name": "Spark disruption in corporate bo…",
-            "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
-            "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
-            "preview_path": "",
-            "source_ep": "03",
-            "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
-            "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальне охоплення Coursera та «нова електрика» у кожному домі."
           },
           {
             "media_type": "image",
             "file": "dv.png",
-            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+            "display_name": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
             "rel_path": "04_ASSETS/user_ai_images/dv.png",
             "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ідеальний ключ до CS229 / Coursera: на дошці буквально формула Cost Function J(w,b) Ендрю Ина!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "100% ЗБІГ: фірмова формула Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 та Coursera!"
           },
           {
             "media_type": "image",
@@ -14089,31 +13059,54 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Світло знань й електрифікації ШІ по всій Землі (Coursera)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світло освіти Coursera в кожному домі на Землі."
           },
           {
             "media_type": "image",
             "file": "scesxcsr.png",
-            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язку",
             "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
             "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальне охоплення мільйонів слухачів освіти в усьому світі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світове поширення онлайн-освіти та індустрії ШІ."
           },
           {
             "media_type": "image",
             "file": "vscds.png",
-            "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+            "display_name": "Глобальна мережа золотих волокон над Землею",
             "rel_path": "04_ASSETS/user_ai_images/vscds.png",
             "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мільйони учнів Coursera з усіх континентів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Слухачі Coursera по всій планеті."
+          },
+          {
+            "media_type": "image",
+            "file": "ybr.png",
+            "display_name": "Глобальна мапа вузлів інновацій (Global Network)",
+            "rel_path": "04_ASSETS/user_ai_images/ybr.png",
+            "thumb": "assets/vault_thumbs/ep01/85177d40_ybr.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Масштабування знань і «нової електрики» по всьому світу."
           }
         ]
       },
@@ -14149,31 +13142,54 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/1d11135f_EP01_V1_B2_08_Silicon_Metropolis_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ендрю Ин: «Штучний інтелект — це нова електрика», що перетворює всю індустріальну економіку."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Економічна трансформація індустрій через повсюдний ШІ."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "СВІТЛО В КОЖНОМУ ДОМІ: мільйони студентів Coursera і «ШІ як нова електрика» по всій Землі!"
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальне охоплення Coursera та «нова електрика» у кожному домі."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
-            "display_name": "EP01 V1 B3 04 Golden Grid Stabilizing 15s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
+            "file": "Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+            "display_name": "Physical matter dissolves into b clip",
+            "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+            "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Цифрова мережа стабілізує кліматичні й енергетичні системи планети."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Електрифікація сучасної економіки алгоритмами."
+          },
+          {
+            "media_type": "image",
+            "file": "dxf_g.png",
+            "display_name": "Золоті електричні сигнали біжать доріжками плати",
+            "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
+            "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
+            "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Кремнієві артерії нової індустріальної електрифікації."
           },
           {
             "media_type": "image",
@@ -14182,20 +13198,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
             "thumb": "assets/vault_thumbs/ep02/701638df_EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercompute.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "02",
-            "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
-            "match_reason": "Сила енергетики, спрямована в обчислювальний двигун цивілізації."
+            "source_label": "🌌 Універсальний B-Roll (з EP02 · Хуанг / GPU)",
+            "match_reason": "Енергетичний ресурс «нової електрики»."
           },
           {
             "media_type": "image",
-            "file": "vscds.png",
-            "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
-            "rel_path": "04_ASSETS/user_ai_images/vscds.png",
-            "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
+            "file": "ybr.png",
+            "display_name": "Глобальна мапа вузлів інновацій (Global Network)",
+            "rel_path": "04_ASSETS/user_ai_images/ybr.png",
+            "thumb": "assets/vault_thumbs/ep01/85177d40_ybr.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Мільйони учнів Coursera з усіх континентів."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Масштабування знань і «нової електрики» по всьому світу."
           }
         ]
       },
@@ -14226,25 +13248,17 @@ window.MEDIA_ACQUISITION_POOL = {
         "cross_candidates": [
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Data-Centric структуризація даних для промислових заводів."
-          },
-          {
-            "media_type": "video",
             "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "display_name": "EP01 V1 CREATIVE 05 Holo Geo Matrix 16s",
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
             "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "16s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Точна структурована інженерія даних (Data-Centric AI)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чиста структурована інженерія даних (Data-Centric AI)."
           }
         ]
       },
@@ -14306,9 +13320,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
             "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
             "preview_path": "",
+            "res_label": "1080p 16:9",
+            "dur_label": "10s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Від перших журнальних програм до 10 рядків ранкового коду щодня."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Десять рядків коду щодня — вхід у світ алгоритмічного мислення."
+          },
+          {
+            "media_type": "video",
+            "file": "ep01_flow_08_golden_signatures.mp4",
+            "display_name": "ep01 flow 08 golden signatures",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4",
+            "thumb": "assets/vault_thumbs/ep01/668e7de6_ep01_flow_08_golden_signatures.jpg",
+            "preview_path": "assets/video_previews/flow/ep01_flow_08_golden_signatures.mp4",
+            "res_label": "1080p 16:9",
+            "dur_label": "8s",
+            "is_portrait": false,
+            "source_ep": "01",
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чисте світло знань на світанку фіналу Сезону."
           },
           {
             "media_type": "video",
@@ -14317,42 +13348,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
             "thumb": "assets/vault_thumbs/ep01/1d11135f_EP01_V1_B2_08_Silicon_Metropolis_14s.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "14s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Ендрю Ин: «Штучний інтелект — це нова електрика», що перетворює всю індустріальну економіку."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Економічна трансформація індустрій через повсюдний ШІ."
           },
           {
             "media_type": "video",
-            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+            "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "display_name": "EP01 V1 B2 10 Earth Horizon Finale 550f",
+            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
+            "thumb": "assets/vault_thumbs/ep01/e9edba1e_EP01_V1_B2_10_Earth_Horizon_Finale_550f.jpg",
             "preview_path": "",
+            "res_label": "4K 16:9",
+            "dur_label": "23s",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "СВІТЛО В КОЖНОМУ ДОМІ: мільйони студентів Coursera і «ШІ як нова електрика» по всій Землі!"
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "display_name": "EP01 V1 B2 CLOSER EarthHorizon 289f",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
-            "thumb": "assets/vault_thumbs/ep01/2702e64e_EP01_V1_B2_CLOSER_EarthHorizon_289f.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Демократизація знань через Coursera у кожному куточку Землі."
-          },
-          {
-            "media_type": "video",
-            "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
-            "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
-            "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
-            "preview_path": "",
-            "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Десять рядків коду щодня — тиха звичка творця перед світанком."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Глобальне охоплення Coursera та «нова електрика» у кожному домі."
           },
           {
             "media_type": "image",
@@ -14361,9 +13376,12 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 2K",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Світло знань й електрифікації ШІ по всій Землі (Coursera)."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світло освіти Coursera в кожному домі на Землі."
           },
           {
             "media_type": "image",
@@ -14372,20 +13390,26 @@ window.MEDIA_ACQUISITION_POOL = {
             "rel_path": "04_ASSETS/user_ai_images/jlgyf.png",
             "thumb": "assets/vault_thumbs/ep01/27ca950d_jlgyf.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Світанок, чистий файл коду — фінальний символ навчання ШІ."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Чистий файл і перші десять рядків коду на світанку."
           },
           {
             "media_type": "image",
             "file": "scesxcsr.png",
-            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+            "display_name": "Планета Земля в золотих орбітальних кільцях зв'язку",
             "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
             "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
             "preview_path": "",
+            "res_label": "🖼️ 1376×768",
+            "dur_label": "",
+            "is_portrait": false,
             "source_ep": "01",
-            "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
-            "match_reason": "Глобальне охоплення мільйонів слухачів освіти в усьому світі."
+            "source_label": "🌌 Універсальний B-Roll (з EP01 · Альтман / Базовий фонд)",
+            "match_reason": "Світове поширення онлайн-освіти та індустрії ШІ."
           }
         ]
       }

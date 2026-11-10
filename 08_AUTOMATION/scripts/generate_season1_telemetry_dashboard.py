@@ -238,9 +238,11 @@ def count_project_stats():
                     matched_ep = "03"
                 else:
                     m_ep_explicit = _re.search(r"(?:^|[^a-z0-9])ep(0[1-9]|10)(?:[^0-9]|$)", rel)
-                    if m_ep_explicit:
+                    if "fjall_jokull_flashcard" in rel or "test_typewriter" in rel:
+                        matched_ep = None
+                    elif m_ep_explicit:
                         matched_ep = m_ep_explicit.group(1)
-                    elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel or "test_typewriter" in rel:
+                    elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel:
                         matched_ep = "01"
                     else:
                         for ep, _, _, kws, *_ in EP_META:
@@ -673,13 +675,13 @@ def build_html(ep_stats, shared, resolve_info):
     <section class="kpi-grid">
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--sky)">{tot_videos}</div>
-        <div class="kpi-label">🎥 Унікальних Відео на диску (.mp4)</div>
-        <div class="kpi-sub">{tot_usable_vid_refs} крос-зв'язків у 10 студіях (макс. повторне використання ♻️)</div>
+        <div class="kpi-label">🎥 Відео на диску ({tot_videos - shared['videos']} у студіях)</div>
+        <div class="kpi-sub">{tot_usable_vid_refs} крос-зв'язків чистих 16:9 B-Roll · +{shared['videos']} тест поза студіями</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--amber)">{tot_images}</div>
-        <div class="kpi-label">🖼️ Унікальних Зображень на диску (2K/4K)</div>
-        <div class="kpi-sub">{tot_usable_img_refs} підібраних референсів по епізодах (0% дублювання файлів)</div>
+        <div class="kpi-label">🖼️ Зображень на диску ({tot_images - shared['images']} у студіях)</div>
+        <div class="kpi-sub">{tot_usable_img_refs} підібраних 2K/4K кадрів · +{shared['images']} позапроєктний архів</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--emerald)">{tot_audio}</div>

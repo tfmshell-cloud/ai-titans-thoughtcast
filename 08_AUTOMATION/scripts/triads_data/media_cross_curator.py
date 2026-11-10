@@ -1,1201 +1,922 @@
 #!/usr/bin/env python3
 """
-Visual Cross-Hero Curation & Semantic Title Registry across all 234 Videos & 293 Images.
+Precision Visual Cross-Hero Curation & Semantic Title Registry across 234 Videos & 293 Images.
 
-Built from full contact-sheet inspection of every video and image in 04_ASSETS and
-05_RAW_FOOTAGE so reusable cinematic renders, scientific VFX, hardware macro plates,
-and archival/concept keyframes can serve ALL 10 AI Titans authentically without duplicating
-heavy video binaries on disk or breaking DaVinci Resolve timelines.
+Strict rules enforced after full 3-frame (start / mid / end) visual audit of all videos:
+1. Off-topic / test files (e.g., Icelandic flashcard fjall_jokull_flashcard.png, test_typewriter.mp4)
+   are excluded from all Titan studios so editors never see unrelated clutter.
+2. Stylized anime / Seedance persona clips, Sam Altman actor lookalikes, Apple Macintosh LC II props,
+   OpenAI / Loopt / Psychological Friction screen text, and Hassabis-specific chess/ZX Spectrum/London
+   scenes stay STRICTLY isolated to their native hero.
+3. Blueprint wireframes (flow_previs_animatics & ep02..ep10_flow_01 previs grids) are tagged as `previs`
+   and never cross-shared as finished cinematic B-Roll.
+4. Only genuinely clean, visually verified abstract / scientific / hardware / cosmic / neural assets
+   (or rare 100%-biographical matches like Hinton's carpentry plane & Sutskever's TAU/Regret artifacts)
+   are curated across episodes, strictly deduplicated by file MD5 per episode.
 """
 
-# Cryptic/ambiguous filenames get clean Ukrainian titles (for both native EP and cross-matches),
-# and off-topic/duplicate files can be marked explicitly.
-CRYPTIC_TITLE_OVERRIDES = {
-    "04_assets/user_ai_images/,io.png": "Хлопчик біля вінтажного CRT-монітора (теплий ретро-кадр)",
-    "04_assets/user_ai_images/vfre.png": "Хлопчик біля вінтажного CRT-монітора (варіант крупний)",
-    "04_assets/user_ai_images/2026-11-09_14.45.29.jpg": "Ретро-комп'ютер у шкільному класі інформатики 1990-х",
-    "04_assets/user_ai_images/;ll;.png": "Нічна аеропанорама Кремнієвої долини та затоки Сан-Франциско",
-    "04_assets/user_ai_images/_df.png": "Відображення зеленого коду і юнака на старому CRT-екрані",
-    "04_assets/user_ai_images/mymyy.png": "Відображення зеленого коду на CRT (варіант 2)",
-    "04_assets/user_ai_images/_fgxfhcg.png": "Ділове рукостискання на фоні хмарочосів уночі",
-    "04_assets/user_ai_images/_nkbh.png": "Юний хакер у нічному гаражі біля CRT-термінала",
-    "04_assets/user_ai_images/nlbv.png": "Нічна кімната програміста з трьома зеленими моніторами",
-    "04_assets/user_ai_images/_v.png": "Студент із рюкзаком на нічній дощовій вулиці кампуса",
-    "04_assets/user_ai_images/_yfht.png": "Засновник один у темному кабінеті перед монітором",
-    "04_assets/user_ai_images/b_cgbxtd.png": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
-    "04_assets/user_ai_images/bhnuyvtf.png": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
-    "04_assets/user_ai_images/ghnfbyd.png": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
-    "04_assets/user_ai_images/bvcb.png": "Юнак біля трибуни в залі з високими вікнами (стилізований світ)",
-    "04_assets/user_ai_images/by.png": "Крупний чорно-білий портрет на фоні формул і кіноплівки",
-    "04_assets/user_ai_images/byr.png": "Камера спостереження біля вілли Кремнієвої долини ввечері",
-    "04_assets/user_ai_images/utyfgv.png": "Тактичний дрон-HUD над особняком Кремнієвої долини",
-    "04_assets/user_ai_images/cdwrf.png": "Біологічний нейрон із електричними синаптичними спалахами",
-    "04_assets/user_ai_images/cfz.png": "Засновник із бейджем заходить до скляного офісу (варіант А)",
-    "04_assets/user_ai_images/image.png": "Засновник із бейджем заходить до скляного офісу (варіант В)",
-    "04_assets/user_ai_images/csr.png": "Макро логотипу Apple на корпусі Macintosh LC II",
-    "04_assets/user_ai_images/dv.png": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
-    "04_assets/user_ai_images/dxf_g.png": "Золоті світлові імпульси біжать по материнській платі",
-    "04_assets/user_ai_images/edsfrdtf.png": "Хлопчик розбирає материнську плату ПК у сонячній кімнаті (варіант А)",
-    "04_assets/user_ai_images/mk.png": "Хлопчик розбирає материнську плату ПК (варіант B)",
-    "04_assets/user_ai_images/vcx.png": "Хлопчик розбирає материнську плату ПК (варіант C)",
-    "04_assets/user_ai_images/xzcs.png": "Хлопчик розбирає материнську плату ПК (варіант D)",
-    "04_assets/user_ai_images/fjall_jokull_flashcard.png": "[Поза проєктом] Ісландська картка fjall/jökull (архів)",
-    "04_assets/user_ai_images/hmufj.png": "Портрет рудоволосого хлопчика — молодий дослідник",
-    "04_assets/user_ai_images/jlgyf.png": "Ноутбук із кодом на дерев'яному столі біля вікна",
-    "04_assets/user_ai_images/kjh.png": "Безкінечний футуристичний тунель серверних стійок і фракталів",
-    "04_assets/user_ai_images/kut.png": "Ч/Б студент за комп'ютером у гуртожитку (Radiohead постер)",
-    "04_assets/user_ai_images/sdgfhtyj.png": "Студент за ноутбуком у кімнаті гуртожитку 2000-х (колір)",
-    "04_assets/user_ai_images/lknjb.png": "Макро вентиляційних решіток Macintosh LC II із внутрішнім сяйвом",
-    "04_assets/user_ai_images/mmjghnfgbdf.png": "Аніме: хлопчик розкриває сяючий комп'ютер у сонячній кімнаті (A)",
-    "04_assets/user_ai_images/sax.png": "Аніме: хлопчик розкриває сяючий комп'ютер у сонячній кімнаті (B)",
-    "04_assets/user_ai_images/p;.png": "Кінетична типографіка: EXPONENTIAL",
-    "04_assets/user_ai_images/rvdst.png": "Великий план очей дорослого візіонера",
-    "04_assets/user_ai_images/rvt.png": "Напружений крупний план засновника в темному офісі",
-    "04_assets/user_ai_images/scesxcsr.png": "Планета Земля в золотих орбітальних кільцях зв'язків",
-    "04_assets/user_ai_images/tredf.png": "Аніме-ілюстрація: молодий фаундер вибігає з гуртожитку у нічне місто",
-    "04_assets/user_ai_images/vscds.png": "Глобальна нейромережа золотих волокон над півкулею Землі",
-    "04_assets/user_ai_images/ybr.png": "Світова мапа глобальних інноваційних вузлів та мереж",
-    "04_assets/user_ai_images/xas.png": "Виснажений засновник на нічному відеодзвінку у темній кімнаті",
-    "04_assets/user_ai_images/xasdwrc.png": "Макро перової ручки з краплею чорнила на папері",
-    "04_assets/user_ai_images/xdgcfh.png": "Світанок над мегаполісом біля океану (Сан-Франциско)",
-    "04_assets/user_ai_images/xdry.png": "Юнак перед мікрофоном у залі (озвучена правда)",
-    "elevenlabs_video_seedance-2-5_authentic_histo_2026-11-09t12_29_51.mp4": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
-    "elevenlabs_video_seedance-2-5_dynamic_camera__2026-11-09t12_53_36.mp4": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
-    "elevenlabs_video_seedance-2-5_intense_macro_r_2026-11-09t12_58_53.mp4": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
-    "elevenlabs_video_seedance-2-5_seamless_stylis_2026-11-09t11_32_59.mp4": "Seedance Аніме: дитина відкриває сяючий комп'ютер (дубль A)",
-    "elevenlabs_video_seedance-2-5_seamless_stylis_2026-11-09t12_34_37.mp4": "Seedance Аніме: дитина відкриває сяючий комп'ютер (дубль B)",
-    "elevenlabs_video_seedance-2-5_slow,_powerful__2026-11-09t12_52_53.mp4": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
-}
-
-OFF_TOPIC_PATHS = {
+# Completely hidden from EP01..EP10 studios (still accounted for honestly in global telemetry _meta)
+HIDDEN_NON_PROJECT_PATHS = {
     "04_assets/user_ai_images/fjall_jokull_flashcard.png",
+    "05_raw_footage/dossiers_press/test_typewriter.mp4",
 }
 
-# Cross-hero curation table: maps reusable visually verified assets to OTHER Titans
-# with explicit Ukrainian rationale + exact matching Triad scene numbers.
-# Note: Rules skip any target ep matching the file's native owner automatically.
+# Clean Ukrainian titles for cryptic filenames, non-Latin filenames, and multi-language Hassabis prompts
+CRYPTIC_TITLE_OVERRIDES = {
+    # EP01 user_ai_images
+    "04_assets/user_ai_images/,io.png": "Хлопчик біля вінтажного CRT-монітора (теплий кадр)",
+    "04_assets/user_ai_images/vfre.png": "Хлопчик біля вінтажного CRT-монітора (копія)",
+    "04_assets/user_ai_images/2026-11-09_14.45.29.jpg": "Комп'ютерний клас 1990-х: ретро ПК у школі",
+    "04_assets/user_ai_images/;ll;.png": "Нічна аеропанорама затоки Сан-Франциско та Долини",
+    "04_assets/user_ai_images/_df.png": "Зелений код і хлопчик на старому CRT-екрані",
+    "04_assets/user_ai_images/mymyy.png": "Зелений код і хлопчик на CRT-екрані (копія)",
+    "04_assets/user_ai_images/_fgxfhcg.png": "Ділове рукостискання в скляному хмарочосі вночі",
+    "04_assets/user_ai_images/_nkbh.png": "Юний програміст у нічній кімнаті перед CRT-терміналом",
+    "04_assets/user_ai_images/nlbv.png": "Нічне робоче місце з трьома зеленими терміналами",
+    "04_assets/user_ai_images/_v.png": "Студент із рюкзаком на нічній дощовій вулиці кампуса",
+    "04_assets/user_ai_images/_yfht.png": "Засновник наодинці в темному кабінеті перед монітором",
+    "04_assets/user_ai_images/b_cgbxtd.png": "Силует перед гіперпросторовим тунелем даних",
+    "04_assets/user_ai_images/bhnuyvtf.png": "Інженери тестують серверний GPU-блейд у лабораторії",
+    "04_assets/user_ai_images/ghnfbyd.png": "Інженери тестують GPU-сервер (тепле освітлення)",
+    "04_assets/user_ai_images/bvcb.png": "Сценічна трибуна у залі з високими вікнами",
+    "04_assets/user_ai_images/by.png": "Ч/Б кінопортрет на фоні формул і плівки",
+    "04_assets/user_ai_images/byr.png": "Камера спостереження біля воріт вілли ввечері",
+    "04_assets/user_ai_images/utyfgv.png": "Дрон-HUD телеметрія над особняком Долини",
+    "04_assets/user_ai_images/cdwrf.png": "Біологічний нейрон зі спалахами синапсів",
+    "04_assets/user_ai_images/cfz.png": "Керівник із бейджем заходить до скляного офісу",
+    "04_assets/user_ai_images/image.png": "Керівник із бейджем заходить до офісу (копія)",
+    "04_assets/user_ai_images/csr.png": "Макро райдужного логотипу на корпусі Macintosh LC II",
+    "04_assets/user_ai_images/dv.png": "Дослідник пише рівняння Cost Function J(w,b) на дошці",
+    "04_assets/user_ai_images/dxf_g.png": "Золоті електричні сигнали біжать доріжками плати",
+    "04_assets/user_ai_images/edsfrdtf.png": "Хлопчик розбирає системну плату в сонячній кімнаті",
+    "04_assets/user_ai_images/mk.png": "Хлопчик розбирає системну плату (копія 1)",
+    "04_assets/user_ai_images/vcx.png": "Хлопчик розбирає системну плату (копія 2)",
+    "04_assets/user_ai_images/xzcs.png": "Хлопчик розбирає системну плату (варіант 3)",
+    "04_assets/user_ai_images/hmufj.png": "Портрет юного дослідника (великий план)",
+    "04_assets/user_ai_images/jlgyf.png": "Ноутбук із кодом на дерев'яному столі біля вікна",
+    "04_assets/user_ai_images/kjh.png": "Нескінченний футуристичний тунель серверних стійок",
+    "04_assets/user_ai_images/kut.png": "Ч/Б студент за ноутбуком у кімнаті гуртожитку",
+    "04_assets/user_ai_images/sdgfhtyj.png": "Студент за ноутбуком у гуртожитку 2000-х (колір)",
+    "04_assets/user_ai_images/lknjb.png": "Макро вентиляційних решіток Macintosh LC II із сяйвом",
+    "04_assets/user_ai_images/mmjghnfgbdf.png": "Аніме-концепт: дитина відкриває сяючий ПК",
+    "04_assets/user_ai_images/sax.png": "Аніме-концепт: дитина відкриває сяючий ПК (копія)",
+    "04_assets/user_ai_images/p;.png": "Типографічна заставка EXPONENTIAL",
+    "04_assets/user_ai_images/rvdst.png": "Великий план очей візіонера (прямий погляд)",
+    "04_assets/user_ai_images/rvt.png": "Напружений портрет у темному кабінеті",
+    "04_assets/user_ai_images/scesxcsr.png": "Планета Земля в золотих орбітальних кільцях зв'язку",
+    "04_assets/user_ai_images/tredf.png": "Аніме-концепт: юний фаундер виходить у нічне місто",
+    "04_assets/user_ai_images/vscds.png": "Глобальна мережа золотих волокон над Землею",
+    "04_assets/user_ai_images/ybr.png": "Глобальна мапа вузлів інновацій (Global Network)",
+    "04_assets/user_ai_images/xas.png": "Нічний відеодзвінок ради директорів у темряві",
+    "04_assets/user_ai_images/xasdwrc.png": "Макро золотого пера з краплею чорнила на папері",
+    "04_assets/user_ai_images/xdgcfh.png": "Світанок над мегаполісом біля океану",
+    "04_assets/user_ai_images/xdry.png": "Виступ перед мікрофоном у залі",
+    # EP01 Seedance animations
+    "elevenlabs_video_seedance-2-5_authentic_histo_2026-11-09t12_29_51.mp4": "Seedance (EP01): хлопчик вивчає материнську плату",
+    "elevenlabs_video_seedance-2-5_dynamic_camera__2026-11-09t12_53_36.mp4": "Seedance (EP01): перехід зі скетчу в нічний Стенфорд",
+    "elevenlabs_video_seedance-2-5_intense_macro_r_2026-11-09t12_58_53.mp4": "Seedance (EP01): погляд програміста перед CRT-монітором",
+    "elevenlabs_video_seedance-2-5_seamless_stylis_2026-11-09t11_32_59.mp4": "Seedance (EP01): скетч у хлопчика біля плати (варіант А)",
+    "elevenlabs_video_seedance-2-5_seamless_stylis_2026-11-09t12_34_37.mp4": "Seedance (EP01): скетч у хлопчика біля плати (варіант B)",
+    "elevenlabs_video_seedance-2-5_slow,_powerful__2026-11-09t12_52_53.mp4": "Seedance (EP01): морф до сцени виступу біля мікрофона",
+    # EP03 Hassabis non-English filenames -> Clean Ukrainian
+    "80-കളിലെ zx spectrum ഡെസ്ക് രംഗം (1).png": "ZX Spectrum 1980-х — ретро-стіл із касетами (дубль)",
+    "80-കളിലെ zx spectrum ഡെസ്ക് രംഗം.png": "ZX Spectrum 1980-х — ретро-стіл із касетами",
+    "gylltur tímagöng með fornum klukkum.png": "Золотий тунель часу зі старовинними годинниками (PNG)",
+    "gylltur_tímagöng_með_fornum_klukkum.png_2387450b.jpg": "Золотий тунель часу зі старовинними годинниками",
+    "poiss malemäng boheemlaslikus elutoas.png": "Юний шахіст у богемній лондонській вітальні (PNG)",
+    "poiss_malemäng_boheemlaslikus_elutoas.png_26e37029.jpg": "Юний шахіст у богемній лондонській вітальні",
+    "skákborð_endurspeglast_í_augum_barns.png_82f4e399.jpg": "Шахівниця у відблиску очей дитини (JPG)",
+    "skákborð endurspeglast í augum barns (1).png": "Шахівниця у відблиску очей дитини (копія 1)",
+    "skákborð endurspeglast í augum barns (2).png": "Шахівниця у відблиску очей дитини (копія 2)",
+    "skákborð endurspeglast í augum barns.png": "Шахівниця у відблиску очей дитини",
+}
+
+# Verified CLEAN cross-hero rules:
+# - ZERO actor faces from EP01, ZERO anime Seedance, ZERO Macintosh/Apple, ZERO foreign text/UI, ZERO previs blueprints.
+# - Each video/image inspected across start, middle, and end frames.
 CROSS_CURATION_RULES = [
-    # --- HARDWARE, SILICON, GPUS & COMPUTE FACTORIES (High value for Huang EP02, Sutskever EP06, Ng EP10, Hinton EP04) ---
+    # ======================== CLEAN ABSTRACT & HARDWARE 4K/1080p VIDEOS (16:9) ========================
+    {
+        "match": "ep01_clip_v1_12_waferhero_16s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["23", "26", "44"], "reason": "Макро проліт лазера по кремнієвій пластині (4K 16:9, без написів) — виробництво чипів та архітектура CUDA NVIDIA."},
+            "05": {"scenes": ["02"], "reason": "Мікроелектроніка та фізична архітектура кремнієвих плат."},
+            "06": {"scenes": ["04"], "reason": "Кремнієвий фундамент для глибокого навчання та прискорення матриць."},
+        },
+    },
+    {
+        "match": "ep01_clip_v1_16_servercold_8s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Абстрактний холодний коридор дата-центру (4K 16:9, 0 людей) — AI-фабрики NVIDIA."},
+            "06": {"scenes": ["07", "10"], "reason": "Чистий обчислювальний моноліт у залі масштабування."},
+            "10": {"scenes": ["03"], "reason": "Серверний масив на 1000+ вузлів для проєкту Google Brain."},
+        },
+    },
+    {
+        "match": "ep01_flow_06_server_monolith.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["31", "45"], "reason": "Тунель дата-центру переходить у сяючу кремнієву решітку суперкомп'ютера."},
+            "06": {"scenes": ["07"], "reason": "Архітектура великого обчислювального кластера."},
+        },
+    },
+    {
+        "match": "ep01_v1_creative_06_obsessive_builders_14s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["31", "45"], "reason": "Темний дата-центр із велетенською серверною вежею GPU (безіменний загальний план 4K)."},
+            "06": {"scenes": ["05", "07"], "reason": "Інженери в закритій обчислювальній залі перед масштабуванням моделі."},
+            "10": {"scenes": ["03"], "reason": "Лабораторія великомасштабних експериментів Google X."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_06_server_matrix_billions_15s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["44", "45", "50"], "reason": "Сфера Дайсона із серверних GPU-плат навколо зорі (4K, без облич/тексту) — планетарна інфраструктура NVIDIA."},
+            "06": {"scenes": ["07"], "reason": "Метафора десятикратного енергетичного та обчислювального масштабування."},
+            "07": {"scenes": ["04"], "reason": "Енергетичний масштаб законів масштабування (Scaling Laws)."},
+        },
+    },
+    {
+        "match": "ep01_clip_v1_19_curvehero_17s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["30", "39"], "reason": "Чиста золота експоненційна крива в космосі (4K 16:9, без жодного слова) — прорив NVIDIA."},
+            "06": {"scenes": ["07"], "reason": "Степенева крива масштабування інтелекту."},
+            "07": {"scenes": ["04"], "reason": "Пряма логарифмічна лінія Законів Масштабування на 7 порядках величини (2020)."},
+        },
+    },
     {
         "match": "neuron_morphs_into_gpu_chip_23314d03",
         "kind": "video",
         "targets": {
-            "01": {"scenes": ["28", "46"], "reason": "Метафора злиття біологічного нейрона та кремнієвого GPU-кристала — візуал гіпотези масштабу."},
-            "02": {"scenes": ["29", "44", "45"], "reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores."},
-            "04": {"scenes": ["07"], "reason": "Торонто 2012: момент, коли нейромережа Хінтона вперше ожила на ігрових GPU."},
-            "05": {"scenes": ["07"], "reason": "Апаратна база глибокого навчання для згорткових мереж та PyTorch."},
-            "06": {"scenes": ["04"], "reason": "Ілля Суцкевер переносить нейромережі на графічні процесори GTX 580."},
-            "10": {"scenes": ["03"], "reason": "Кластери GPU та тисячі ядер для тренування без нагляду в Google Brain."},
+            "01": {"scenes": ["28", "46"], "reason": "Чистий морф біологічного нейрона -> нічний ЦОД -> глобальна мережа (без облич)."},
+            "02": {"scenes": ["29", "44", "45"], "reason": "Нейрон стає обчислювальним центром і мережею світу (1080p 16:9) — AlexNet на GPU NVIDIA та глобальні AI-фабрики."},
+            "04": {"scenes": ["07"], "reason": "Торонто 2012: біологічна ідея нейромережі Хінтона переноситься на обчислювальні кластери."},
+            "05": {"scenes": ["07"], "reason": "Обчислювальний фундамент сучасного Deep Learning."},
+            "06": {"scenes": ["04"], "reason": "Масштабування нейронних систем на графічних кластерах."},
+            "10": {"scenes": ["03"], "reason": "Глобальний масштаб навчання без нагляду на тисячах машин."},
         },
     },
     {
-        "match": "bhnuyvtf.png",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["23", "31", "46"], "reason": "Двоє інженерів тестують серверний GPU-блейд — чистий індустріальний B-Roll для NVIDIA (RIVA/DGX-1)."},
-            "06": {"scenes": ["04", "07"], "reason": "Інженери над високощільною обчислювальною платою під час експериментів масштабування."},
-            "08": {"scenes": ["07"], "reason": "Обчислювальний прорив AlexNet 2012 на кластері відеокарт."},
-            "10": {"scenes": ["03"], "reason": "Налагодження 1000-серверного кластера Google Brain з Джеффом Діном."},
-        },
-    },
-    {
-        "match": "ghnfbyd.png",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["23", "31"], "reason": "Теплий світловий варіант тестування GPU-блейдів у дата-лабораторії NVIDIA."},
-            "06": {"scenes": ["07"], "reason": "Команда інженерів у нічній сервериній перед масштабуванням моделі."},
-        },
-    },
-    {
-        "match": "dxf_g.png",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["26", "44"], "reason": "Золоті електричні сигнали мчать доріжками кремнієвої плати — ідеальна метафора CUDA."},
-            "03": {"scenes": ["33"], "reason": "Зближення електронних і нейронних імпульсів."},
-            "05": {"scenes": ["02"], "reason": "Плата у кислотній ванні молодого Лекуна та імпульси обчислень."},
-            "06": {"scenes": ["04"], "reason": "Матричні обчислення по золотих трасах кремнію."},
-        },
-    },
-    {
-        "match": "ep01_v1_creative_06_obsessive_builders",
+        "match": "ep01_v1_creative_08_gold_melting_brain_15s.mp4",
         "kind": "video",
         "targets": {
-            "02": {"scenes": ["31", "45"], "reason": "Розробники в холодній залі перед велетенською серверною вежею GPU (DGX-1 / AI-фабрика)."},
-            "06": {"scenes": ["05", "07"], "reason": "Одержимі дослідники в лабораторії перед кластером майбутнього OpenAI/SSI."},
-            "10": {"scenes": ["03"], "reason": "Інженери перед масивом із 1000 серверів Google X."},
+            "02": {"scenes": ["25", "39"], "reason": "Золото переплавляється в нейронний мозок (4K абстракт) — шлях від IPO до 3-трильйонної вартості."},
+            "07": {"scenes": ["04"], "reason": "Конвертація ресурсів у чисту обчислювальну потужність."},
         },
     },
     {
-        "match": "ep01_v1_b2_09_researchers_compute_core",
+        "match": "ep01_v1_creative_07_golden_transistor_dust_8s.mp4",
         "kind": "video",
         "targets": {
-            "02": {"scenes": ["31", "45"], "reason": "Гігантське ядро суперкомп'ютера та команда інженерів NVIDIA."},
-            "06": {"scenes": ["07"], "reason": "Обчислювальне ядро, де масштаб знімає стелю можливостей."},
-            "10": {"scenes": ["03", "04"], "reason": "Серверне ядро Google Brain для самонавчання мережі."},
+            "02": {"scenes": ["21", "23", "31"], "reason": "Золоте транзисторне рукостискання (без облич) — союз із Sega / TSMC / OpenAI."},
+            "03": {"scenes": ["40"], "reason": "Стратегічне технологічне партнерство 2014 року."},
+            "05": {"scenes": ["07"], "reason": "Науковий альянс навколо відкритого коду FAIR та PyTorch."},
         },
     },
     {
-        "match": "ep01_v1_new_06_cosmic_dyson_7s",
+        "match": "ep01_clip_v1_07_phosphor_12s.mp4",
         "kind": "video",
         "targets": {
-            "02": {"scenes": ["45", "50"], "reason": "Сонце, оточене сферою з GPU-пластин — монументальний образ фабрик штучного інтелекту NVIDIA."},
-            "06": {"scenes": ["07"], "reason": "Масштаб енергії та обчислень планетарного рівня для суперінтелекту."},
-            "07": {"scenes": ["04"], "reason": "Експонента обчислювальних витрат у законах масштабування."},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_06_server_matrix_billions",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["44", "45", "50"], "reason": "Серверна сфера Дайсона для трильйонної архітектури AI-фабрик."},
-            "06": {"scenes": ["07"], "reason": "Апогей гіпотези масштабування на 10 порядках потужності."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_12_waferhero",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["23", "26", "44"], "reason": "Макро-проліт блакитного лазера крізь кремнієву пластину — пряма візуалізація літографії TSMC для чіпів NVIDIA."},
-            "05": {"scenes": ["02"], "reason": "Інженерна природа кремнію та мікроелектроніки."},
-            "06": {"scenes": ["04"], "reason": "Апаратний фундамент нейрообчислень."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_16_servercold",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Проліт холодним тунелем дата-центру — сучасна електростанція інтелекту."},
-            "06": {"scenes": ["07", "10"], "reason": "Стерильний обчислювальний моноліт без зайвого шуму."},
-            "10": {"scenes": ["03"], "reason": "Тисяча машин Google Brain, підключених до візуального потоку."},
-        },
-    },
-    {
-        "match": "ep01_flow_06_server_monolith",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Коридор суперкомп'ютерного кластера NVIDIA HGX/Blackwell."},
-            "06": {"scenes": ["07"], "reason": "Багатомільйонний тренувальний цикл у холодній залі."},
-            "10": {"scenes": ["03"], "reason": "Обчислювальний масив Google X."},
-        },
-    },
-    {
-        "match": "ep01_flow_img_03_silicon_wafer_cyan_laser_hero",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["23", "26"], "reason": "Стартовий 2K кадр для сцен проектування RIVA 128 та вшивання CUDA у кожен кремнієвий чіп."},
-            "06": {"scenes": ["04"], "reason": "Кремнієвий тракт матричних множень."},
-        },
-    },
-    {
-        "match": "ep01_flow_img_06_supercomputer_servers_cold_hall_2k",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["31", "45"], "reason": "2K кадр крижаної зали дата-центру для фіналу акту інфраструктури NVIDIA."},
-            "10": {"scenes": ["03"], "reason": "Тисяча серверів Google Brain для неконтрольованого навчання."},
-        },
-    },
-    {
-        "match": "ep06_flow_study_04b_motherboard_traces_gpu_2k",
-        "kind": "image",
-        "targets": {
-            "01": {"scenes": ["04", "46"], "reason": "Материнська плата і клавіатура крупним планом — фізика кремнієвого заліза."},
-            "02": {"scenes": ["13", "22", "44"], "reason": "Апаратне креслення друкованої плати й GPU — естетика перших прототипів NVIDIA."},
-            "05": {"scenes": ["02"], "reason": "Майстерня молодих років Лекуна: пайка та травлення власних плат."},
-        },
-    },
-    {
-        "match": "ep06_flow_img_04_researcher_viewing_gpus_alexnet_2k",
-        "kind": "image",
-        "targets": {
-            "01": {"scenes": ["28"], "reason": "Дослідник оцінює обчислювальні блоки перед проривом глибокого навчання."},
-            "02": {"scenes": ["29"], "reason": "2012: запуск AlexNet на двох GPU GTX 580 очима дослідників Торонто."},
-            "04": {"scenes": ["07"], "reason": "У лабораторії Хінтона в Торонто 2012 року відеокарти обвалюють помилку ImageNet."},
-            "08": {"scenes": ["07"], "reason": "Ніч прориву AlexNet на датасеті ImageNet."},
-        },
-    },
-    {
-        "match": "ep02_flow_img_05_hand_shaking_golden_transistor_dust",
-        "kind": "image",
-        "targets": {
-            "01": {"scenes": ["31"], "reason": "Символ альянсу між капіталом і кремнієм (Microsoft × OpenAI)."},
-            "03": {"scenes": ["40"], "reason": "Союз фундаментальної науки DeepMind з глобальною обчислювальною машиною."},
-            "07": {"scenes": ["05"], "reason": "Передача наукової естафети та партнерства дослідників."},
-        },
-    },
-    {
-        "match": "ep01_v1_creative_07_golden_transistor_dust",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["21", "23", "31"], "reason": "Золоте транзисторне рукостискання — ідеально під угоду з Ірімадзірі-саном (Sega), TSMC та передачу DGX-1."},
-            "03": {"scenes": ["40"], "reason": "Стратегічне рукостискання 2014 року про збереження наукової незалежності."},
-            "05": {"scenes": ["07"], "reason": "Пакт Цукерберга і Лекуна про відкритий код FAIR/PyTorch."},
-        },
-    },
-    {
-        "match": "ep01_v1_creative_08_gold_melting_brain",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["25", "39"], "reason": "Золоті монети переплавляються в сяючий кришталевий мозок — від IPO 1999 року до 3-трильйонного мозку планети."},
-            "07": {"scenes": ["04"], "reason": "Конвертація мільярдних інвестицій у чистий масштаб інтелекту."},
-        },
-    },
-    {
-        "match": "ep02_flow_img_06_magma_flowing_into_supercomputer",
-        "kind": "image",
-        "targets": {
-            "01": {"scenes": ["47"], "reason": "Термоядерна енергія та земне тепло живлять гігаватні кластери Stargate."},
-            "10": {"scenes": ["07"], "reason": "Сила енергетики, спрямована в обчислювальний двигун цивілізації."},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_08_silicon_metropolis",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["50"], "reason": "Мегаполіс перетворюється на золотий кремній — фінальна візія цифрового двійника Землі (NVIDIA Omniverse)."},
-            "10": {"scenes": ["07", "10"], "reason": "Ендрю Ин: «Штучний інтелект — це нова електрика», що перетворює всю індустріальну економіку."},
-        },
-    },
-
-    # --- CARPENTRY, CAMBRIDGE, CANADIAN WINTER & NEURAL SCIENCE (Goldmine for Hinton EP04, Bengio EP09, Amodei EP07) ---
-    {
-        "match": "plane_blade_transforming_into_ci",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["03"], "reason": "100% влучання в біографію Джеффрі Хінтона: столярний рубанок знімає дубову стружку й перетворюється на мікросхему — міст від лондонської майстерні до нейромереж!"},
-        },
-    },
-    {
-        "match": "carpenters_plane_making_oak_shaving",
-        "kind": "image",
-        "targets": {
-            "04": {"scenes": ["03"], "reason": "Чесна фізична робота стамескою та рубанком: столярний період Джеффрі Хінтона перед поверненням до науки."},
-        },
-    },
-    {
-        "match": "timber_dissolving_into_crystal_m",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["03", "04"], "reason": "Деревина перетворюється на кристалічну обчислювальну решітку — перехід від ремесла теслі до філософії свідомості."},
-        },
-    },
-    {
-        "match": "camera_glides_over_glassy_water_87530444",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["02"], "reason": "Ранковий туман над водою й історичними корпусами Кембриджа — молодий Хінтон кидає фізику й філософію."},
-            "06": {"scenes": ["03"], "reason": "Академічна тиша перед важливими відкриттями."},
-        },
-    },
-    {
-        "match": "gothic_library_interior_with_boo",
-        "kind": "image",
-        "targets": {
-            "04": {"scenes": ["02"], "reason": "Кембриджські зали знань, у яких Хінтон шукав правду про природу пам'яті."},
-            "06": {"scenes": ["02"], "reason": "Томи класичної математики та філософії в тиші бібліотеки."},
-            "08": {"scenes": ["02"], "reason": "Контраст високої академії Прінстона з вечірньою пральнею Фей-Фей Лі."},
-            "09": {"scenes": ["01"], "reason": "Книжкові стелажі Монреаля й перші томи наукової фантастики Бенжіо."},
-        },
-    },
-    {
-        "match": "man_wearing_tactical_arctic_parka_24ef8e34",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["06"], "reason": "Дослідник у зимовій парці під північним сяйвом Канади — символ 30 років «Зими ШІ» в Торонто, коли Хінтон ішов проти всіх."},
-            "06": {"scenes": ["03"], "reason": "Переїзд у холодний Торонто заради навчання у Джеффрі Хінтона."},
-            "09": {"scenes": ["03", "10"], "reason": "Символ двадцятирічної зими ШІ у засніженому Монреалі та чесного вченого крізь Квебек."},
-        },
-    },
-    {
-        "match": "student_knocking_hinton_door",
-        "kind": "image",
-        "targets": {
-            "04": {"scenes": ["07"], "reason": "Студент стукає у двері кабінету Джеффрі Хінтона в Торонто — народження команди AlexNet."},
+            "02": {"scenes": ["22"], "reason": "Абстрактні зелені субпіксельні решітки в 4K — народження 3D-рендерингу."},
+            "05": {"scenes": ["04", "05"], "reason": "Матриця пікселів як вхідні канали згорткової мережі LeNet-5."},
+            "08": {"scenes": ["04"], "reason": "Базова цифрова матриця зображення перед класифікацією."},
         },
     },
     {
         "match": "electrical_spark_traveling_neuro",
         "kind": "video",
         "targets": {
-            "01": {"scenes": ["28"], "reason": "Електричний розряд у живому нейроні — першоджерело архітектури штучних мереж."},
-            "04": {"scenes": ["04", "05"], "reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation)."},
-            "05": {"scenes": ["04"], "reason": "Вузли зорової кори мозку кота, що надихнули згорткові мережі Bell Labs."},
-            "07": {"scenes": ["03"], "reason": "Лабораторія Прінстона: підслуховування хору живих нейронів."},
-            "09": {"scenes": ["02", "04"], "reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі."},
+            "01": {"scenes": ["28"], "reason": "Абстрактний розряд нейрона, що переходить у багатошарову мережу."},
+            "04": {"scenes": ["04", "05"], "reason": "Синаптичний імпульс -> штучна багатошарова мережа (1080p 16:9) — ілюстрація Backpropagation."},
+            "05": {"scenes": ["04"], "reason": "Від біологічних рецепторів до згорткових шарів."},
+            "07": {"scenes": ["03"], "reason": "Лабораторія Прінстона: підслуховування сигналів живих нейронів."},
+            "09": {"scenes": ["02", "04"], "reason": "Імпульс у нейронній структурі як фундамент досліджень у Монреалі."},
         },
     },
     {
-        "match": "cdwrf.png",
-        "kind": "image",
-        "targets": {
-            "03": {"scenes": ["34"], "reason": "Детальний 2K кадр нейрона зі спалахами аксонів для блоку когнітивної нейронауки."},
-            "04": {"scenes": ["04", "05"], "reason": "Біологічний нейрон, роботу якого Хінтон моделював 50 років."},
-            "05": {"scenes": ["04"], "reason": "Ілюстрація ієрархічних нейронів зорової кори."},
-            "07": {"scenes": ["03"], "reason": "Живий нейрон у темній біофізичній лабораторії."},
-            "09": {"scenes": ["04"], "reason": "Синаптичні зв'язки як прототип нейронних моделей мови."},
-        },
-    },
-    {
-        "match": "neural_network_nodes_firing",
-        "kind": "image",
-        "targets": {
-            "01": {"scenes": ["28"], "reason": "Багатошарова нейронна решітка зі спалахами ваг."},
-            "02": {"scenes": ["29", "44"], "reason": "Матричні шари нейронів, що прискорюються на GPU."},
-            "04": {"scenes": ["05", "07"], "reason": "Хвиля активації багатошарового перцептрону."},
-            "06": {"scenes": ["04"], "reason": "Глибокі векторні шари Seq2Seq."},
-            "09": {"scenes": ["04", "05"], "reason": "Координатні шари уваги (Attention) у глибоких мережах."},
-        },
-    },
-    {
-        "match": "artificial_neural_network_nodes_",
-        "kind": "image",
-        "targets": {
-            "04": {"scenes": ["05"], "reason": "Вузли багатошарової нейромережі під час зворотного поширення помилки."},
-            "09": {"scenes": ["05"], "reason": "Граф зважених зв'язків механізму Уваги."},
-        },
-    },
-    {
-        "match": "microscopy_of_brain_hippocampal",
-        "kind": "image",
-        "targets": {
-            "04": {"scenes": ["04"], "reason": "Мікроскопія гіпокампа — доказ, як мозок зберігає розподілену пам'ять."},
-            "05": {"scenes": ["04"], "reason": "Біологічна кора мозку як орієнтир для локальних рецептивних полів."},
-            "07": {"scenes": ["03"], "reason": "Електрофізіологічний зріз нейронів під мікроскопом (Прінстон)."},
-        },
-    },
-    {
-        "match": "ep01_v1_creative_04_mind_radiating_light",
+        "match": "ep01_flow_05_neural_lattice.mp4",
         "kind": "video",
         "targets": {
-            "04": {"scenes": ["05", "09"], "reason": "Прозора людська голова випромінює золоті нейронні нитки у бік кристала — буквально візуал із серії Хінтона (#04)!"},
-            "06": {"scenes": ["06", "08"], "reason": "Народження свідомої абстракції всередині моделі."},
-            "07": {"scenes": ["08"], "reason": "Просвічування внутрішніх фіч нейромережі Claude наскрізь (Mechanistic Interpretability)."},
-            "09": {"scenes": ["09"], "reason": "Систематичне мислення (Система 2) та усвідомлення структури розуму."},
+            "03": {"scenes": ["33", "34"], "reason": "Абстрактна 3D-решітка нейронів у русі (16:9)."},
+            "04": {"scenes": ["05"], "reason": "Спалахи ваг у глибоких прихованих шарах нейромережі."},
+            "05": {"scenes": ["05", "07"], "reason": "Динамічна нейронна мережа розпізнавання образів."},
+            "06": {"scenes": ["04"], "reason": "Векторні шари глибоких моделей послідовностей."},
+            "09": {"scenes": ["04", "05"], "reason": "Багатовимірна мережа зважених зв'язків слів."},
         },
     },
     {
-        "match": "ep04_flow_img_04_human_head_cracking_releasing_light",
-        "kind": "image",
+        "match": "ep01_v1_creative_01_equations_void_8s.mp4",
+        "kind": "video",
         "targets": {
-            "07": {"scenes": ["08"], "reason": "2K концепт-кадр для механістичної інтерпретованості: промені світла виявляють приховані вузли."},
-            "09": {"scenes": ["09"], "reason": "Розкриття архітектури мислення Системи 2."},
+            "04": {"scenes": ["05"], "reason": "Золоті математичні рівняння в космічній безодні (4K, без облич) — формули градієнтного спуску."},
+            "06": {"scenes": ["02", "04"], "reason": "Занурення у чисті математичні закономірності."},
+            "07": {"scenes": ["04"], "reason": "Степеневі закони обчислень у просторі рівнянь."},
+            "09": {"scenes": ["04", "09"], "reason": "Простір імовірнісних потоків (GFlowNets) та векторної математики."},
+        },
+    },
+    {
+        "match": "ep01_v1_creative_02_galaxies_axons_12s.mp4",
+        "kind": "video",
+        "targets": {
+            "03": {"scenes": ["47", "50"], "reason": "Космічні галактики, поєднані золотими синаптичними нитками (4K абстракт)."},
+            "04": {"scenes": ["05"], "reason": "Всесвіт розподілених уявлень пам'яті."},
+            "06": {"scenes": ["04", "07"], "reason": "Багатовимірний семантичний простір думок."},
+            "09": {"scenes": ["04"], "reason": "Сузір'я слів-векторів у семантичному космосі Бенжіо (2000)."},
+        },
+    },
+    {
+        "match": "ep01_v1_creative_04_mind_radiating_light_12s.mp4",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["05", "09"], "reason": "Абстрактна скляна скульптура розуму випромінює золоте світло в обсидіановий кристал (4K)."},
+            "06": {"scenes": ["06", "08"], "reason": "Діалог між людською інтуїцією та синтетичним розумом."},
+            "07": {"scenes": ["08"], "reason": "Просвічування прихованих фіч усередині моделі Claude 3."},
+            "09": {"scenes": ["09"], "reason": "Усвідомлена архітектура мислення (Система 2)."},
+        },
+    },
+    {
+        "match": "ep01_v1_b3_03_two_silhouettes_nadella_12s.mp4",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["08"], "reason": "Два чисті темні силуети без облич обмінюються золотими хвилями думок (4K)."},
+            "06": {"scenes": ["05", "09"], "reason": "Інтелектуальний резонанс та співпраця вчених."},
+            "07": {"scenes": ["05"], "reason": "Спільне бачення брата й сестри Амодей."},
+            "09": {"scenes": ["05"], "reason": "Точна метафора Механізму Уваги (Attention) Богданова–Чо–Бенжіо 2014."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_03_singularity_threat_12s.mp4",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["09", "10"], "reason": "Абстрактне руйнування скляного купола перед порталом сингулярності (4K) — застереження Хінтона."},
+            "06": {"scenes": ["08", "10"], "reason": "Стихія неконтрольованого масштабу та потреба в безпечному SSI."},
+            "07": {"scenes": ["06", "09"], "reason": "Коли потужність двигуна вимагає надійних гальм безпеки."},
+            "09": {"scenes": ["08"], "reason": "Наукова тривога перед глобальними ризиками ШІ."},
+        },
+    },
+    {
+        "match": "ep01_flow_08_golden_signatures.mp4",
+        "kind": "video",
+        "targets": {
+            "03": {"scenes": ["49", "50"], "reason": "Чисте золоте сяйво конвергенції наукових відкриттів (16:9)."},
+            "06": {"scenes": ["04"], "reason": "Згортка векторів думки в єдиний смисловий центр."},
+            "07": {"scenes": ["07"], "reason": "Узгодження параметрів навколо єдиних етичних принципів."},
+            "09": {"scenes": ["08"], "reason": "Єдність міжнародної наукової спільноти заради безпеки."},
+            "10": {"scenes": ["10"], "reason": "Чисте світло знань на світанку фіналу Сезону."},
+        },
+    },
+    {
+        "match": "ep01_v1_b3_04_golden_grid_stabilizing_15s.mp4",
+        "kind": "video",
+        "targets": {
+            "03": {"scenes": ["45", "47"], "reason": "Золота координатна сфера вгамовує океанський циклон (4K) — прогнозування погоди GraphCast."},
+            "07": {"scenes": ["06", "09"], "reason": "Захисна координатна сітка стандартів безпеки ASL-1..4."},
+            "09": {"scenes": ["07", "08"], "reason": "Глобальна кліматична та безпекова координація інституту Mila й ООН."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_10_earth_horizon_finale_550f.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["50"], "reason": "Планета Земля у золотих світлових артеріях обчислень (4K, 23s, без дублів)."},
+            "03": {"scenes": ["47", "49"], "reason": "Подарунок 200 мільйонів білкових структур усьому людству."},
+            "09": {"scenes": ["08"], "reason": "Планетарна відповідальність фундаментальної науки."},
+            "10": {"scenes": ["06", "07", "10"], "reason": "Глобальне охоплення Coursera та «нова електрика» у кожному домі."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_08_silicon_metropolis_14s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["50"], "reason": "Місто трансформується у тривимірні золоті схеми (4K) — цифровий двійник світу NVIDIA."},
+            "10": {"scenes": ["07", "10"], "reason": "Економічна трансформація індустрій через повсюдний ШІ."},
+        },
+    },
+    {
+        "match": "physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["50"], "reason": "Реальний мегаполіс на узбережжі перетікає в золоту обчислювальну сферу (1080p 16:9)."},
+            "05": {"scenes": ["08", "09"], "reason": "Переклад фізичної реальності у внутрішню модель світу (JEPA)."},
+            "08": {"scenes": ["09"], "reason": "Просторове тривимірне моделювання фізичного світу."},
+            "10": {"scenes": ["07"], "reason": "Електрифікація сучасної економіки алгоритмами."},
+        },
+    },
+    {
+        "match": "light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["05"], "reason": "Золоте перо запалює папір і формує мапу глобальної науки (без чужих облич) — стаття в Nature 1986."},
+            "05": {"scenes": ["05"], "reason": "Публікація IEEE 1998 про згорткові мережі LeNet-5."},
+            "07": {"scenes": ["07", "10"], "reason": "Конституційний маніфест та трактат про медицину й біологію."},
+            "09": {"scenes": ["08"], "reason": "Складання Міжнародного наукового звіту про безпеку ШІ."},
+        },
+    },
+    {
+        "match": "camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["26", "46"], "reason": "Занурення крізь нейтральний ноутбук у тунель обчислювальної архітектури (1080p)."},
+            "05": {"scenes": ["07"], "reason": "Потік інженерного коду відкритих бібліотек."},
+            "06": {"scenes": ["04"], "reason": "Код тренування глибоких векторних мереж."},
+            "10": {"scenes": ["01", "10"], "reason": "Десять рядків коду щодня — вхід у світ алгоритмічного мислення."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_04_robotic_dexterity_15s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Роботизовані маніпулятори сплітають золоту мережу в повітрі (4K) — фізика NVIDIA Isaac/GR00T."},
+            "05": {"scenes": ["08", "09"], "reason": "Втілений інтелект та взаємодія з фізичним простором."},
+            "08": {"scenes": ["09", "10"], "reason": "Просторова інженерія та робототехніка World Labs."},
+        },
+    },
+    {
+        "match": "ep01_v1_creative_05_holo_geo_matrix_16s.mp4",
+        "kind": "video",
+        "targets": {
+            "03": {"scenes": ["46", "47"], "reason": "Голографічна геометрична мапа морфує в біологічну й просторову мережу (4K)."},
+            "05": {"scenes": ["09"], "reason": "Внутрішня топологія світу без зайвих слів."},
+            "08": {"scenes": ["05", "09"], "reason": "Ієрархія об'єктів та тривимірна геометрія середовища."},
+            "10": {"scenes": ["08"], "reason": "Чиста структурована інженерія даних (Data-Centric AI)."},
+        },
+    },
+    {
+        "match": "glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["50"], "reason": "Світ розкривається на 3D-вокселі й голографічну галерею (1080p 16:9, силует спиною)."},
+            "05": {"scenes": ["09"], "reason": "Розкладання реальності на 3D-структуру для JEPA."},
+            "08": {"scenes": ["09"], "reason": "Вихід із пласких 2D-пікселів у тривимірний простір World Labs."},
+        },
+    },
+    {
+        "match": "ep01_v1_assoc_01_lidar_city_grid_8s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45", "50"], "reason": "Абстрактна бірюзова LiDAR-сітка сканує міський квартал у темряві (4K)."},
+            "05": {"scenes": ["05", "09"], "reason": "Комп'ютерне бачення та геометрія вулиці в реальному часі."},
+            "08": {"scenes": ["05", "09"], "reason": "3D-сканування простору для Spatial Intelligence."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_05_swarm_gaming_rl_12s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["16", "45"], "reason": "Рій лазерних ігрових геометричних юнітів у симуляції (4K абстракт)."},
+        },
+    },
+    {
+        "match": "digital_hud_tracking_vehicles_d7d30811_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Телеметрія автопілота та розпізнавання об'єктів (без облич акторів)."},
+            "05": {"scenes": ["05"], "reason": "Прикладне комп'ютерне бачення на основі згорткових мереж."},
+            "08": {"scenes": ["04", "05"], "reason": "Візуальна детекція об'єктів у реальному середовищі (спадщина ImageNet)."},
+            "10": {"scenes": ["02"], "reason": "Сенсорна навігація та автономний зір у повітрі й місті."},
+        },
+    },
+    {
+        "match": "aerial_view_of_city_center_41b81743_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Оптичне сканування великого міста з повітря (1080p)."},
+            "08": {"scenes": ["05", "09"], "reason": "Панорамне просторове сприйняття міської сцени."},
+            "10": {"scenes": ["02"], "reason": "Політ автономного апарату над міським рельєфом."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_01_retro_cellular_14s.mp4",
+        "kind": "video",
+        "targets": {
+            "03": {"scenes": ["46", "50"], "reason": "Золоті нитки репарації живої клітини (4K) — AlphaFold та Isomorphic Labs."},
+            "07": {"scenes": ["02", "10"], "reason": "Точний 4K візуал для медичного трактату Даріо Амодея (лікування хвороб)."},
+            "08": {"scenes": ["08"], "reason": "Технологічний захист здоров'я людини в лікарнях."},
+        },
+    },
+    {
+        "match": "ep01_flow_09_fusion_torus.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Термоядерний реактор як джерело гігаватної енергії майбутнього."},
+            "03": {"scenes": ["48"], "reason": "Приборкання плазми в токамаку — проєкт DeepMind."},
+        },
+    },
+    {
+        "match": "ep08_sci_01_asteroid_approaching_earth_orbit_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["09", "10"], "reason": "Метафора наближення екзистенційної загрози в попередженні Хінтона (1080p 16:9)."},
+            "07": {"scenes": ["09"], "reason": "Небезпека неконтрольованих біо- чи кіберризиків."},
+            "09": {"scenes": ["08"], "reason": "Цивілізаційний ризик у доповіді Йошуа Бенжіо."},
+        },
+    },
+    {
+        "match": "ep01_v1_b2_07_corporate_transmutation_15s.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["18", "19"], "reason": "Абстрактний силует спиною перед гравітаційним вихором (4K) — момент «30 днів до банкрутства»."},
+            "06": {"scenes": ["10"], "reason": "Крок у невідомість перед масштабами майбутнього."},
+        },
+    },
+    {
+        "match": "finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "kind": "video",
+        "targets": {
+            "02": {"scenes": ["18", "24"], "reason": "Натиск таймера -> золоті шестерні часу (без шахів у 2-3 кадрі!) — «До банкрутства рівно 30 днів»."},
+            "07": {"scenes": ["06", "09"], "reason": "Невблаганний відлік перегонів безпеки проти швидкості."},
         },
     },
 
-    # --- MATH, EQUATIONS, WHITEBOARD J(w,b), PUBLICATIONS & WRITING ---
+    # ============== RARE 100%-BIOGRAPHICAL MATCHES (STRICTLY ONLY MATCHING HERO) ==============
     {
-        "match": "spark_disruption_in_corporate_bo",
+        "match": "plane_blade_transforming_into_ci",
         "kind": "video",
         "targets": {
-            "02": {"scenes": ["32", "46"], "reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!)."},
-            "04": {"scenes": ["05"], "reason": "Формула функції втрат J(w,b) градієнтного спуску на скляній дошці — пряма мова Backpropagation!"},
-            "05": {"scenes": ["03"], "reason": "Перерахунок градієнтів і ваг на дошці."},
-            "06": {"scenes": ["04"], "reason": "Математичний вивід функцій втрат для послідовностей."},
-            "09": {"scenes": ["03", "04"], "reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії."},
-            "10": {"scenes": ["05", "06"], "reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!"},
+            "04": {"scenes": ["03"], "reason": "100% біографія Джеффрі Хінтона: столярний рубанок у лондонській майстерні перетворюється на мікросхему!"},
         },
     },
     {
-        "match": "dv.png",
+        "match": "timber_dissolving_into_crystal_m",
+        "kind": "video",
+        "targets": {
+            "04": {"scenes": ["03", "04"], "reason": "Деревина перетворюється на кристалічну решітку — перехід Хінтона від теслі до нейронауки."},
+        },
+    },
+    {
+        "match": "carpenters_plane_making_oak_shaving",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["32", "46"], "reason": "2K кадр для нарад біля білої дошки у NVIDIA."},
-            "04": {"scenes": ["05"], "reason": "Рівняння оптимізації ваг нейромережі на скляній дошці."},
-            "10": {"scenes": ["05", "06"], "reason": "Ідеальний ключ до CS229 / Coursera: на дошці буквально формула Cost Function J(w,b) Ендрю Ина!"},
+            "04": {"scenes": ["03"], "reason": "Робота рубанком і дубова стружка: лондонська столярна майстерня Джеффрі Хінтона."},
         },
     },
     {
-        "match": "ep01_v1_creative_01_equations_void",
+        "match": "camera_glides_over_glassy_water_87530444",
         "kind": "video",
         "targets": {
-            "04": {"scenes": ["05"], "reason": "Свідомість занурена в сяючий потік диференціальних рівнянь Backpropagation."},
-            "06": {"scenes": ["02", "04"], "reason": "Вірний математиці Суцкевер розчиняється у формулах оптимізації."},
-            "07": {"scenes": ["04"], "reason": "Елегантність степеневих рівнянь Законів Масштабування (Scaling Laws)."},
-            "09": {"scenes": ["04", "09"], "reason": "Чистий геометричний простір слів та ймовірнісних потоків GFlowNets."},
+            "04": {"scenes": ["02"], "reason": "Історичний кампус Кембриджа на світанку — студентські роки Хінтона."},
         },
     },
     {
-        "match": "ep07_flow_img_01_human_dissolving_into_equations",
+        "match": "gothic_library_interior_with_boo",
         "kind": "image",
         "targets": {
-            "04": {"scenes": ["05"], "reason": "Синтез математичної інтуїції та диференціального аналізу."},
-            "06": {"scenes": ["02"], "reason": "Самонавчання математиці за підручниками."},
-            "09": {"scenes": ["04"], "reason": "Математичні координати змісту в просторі слів."},
+            "04": {"scenes": ["02"], "reason": "Кембриджські академічні зали — пошуки природи пам'яті."},
+            "08": {"scenes": ["02"], "reason": "Класичні зали Прінстонського університету."},
+            "09": {"scenes": ["01"], "reason": "Фундаментальні бібліотеки філософії та математики."},
         },
     },
     {
-        "match": "walls_dissolving_into_textbook_v",
+        "match": "ep01_v2_b2_03_altman_sutskever_tau_10s.mp4",
         "kind": "video",
         "targets": {
-            "02": {"scenes": ["34"], "reason": "Аудиторія Стенфорду, де звучать незручні уроки стійкості."},
-            "04": {"scenes": ["04", "06"], "reason": "Витривалість дослідника в напівпорожньому університетському залі."},
-            "06": {"scenes": ["02"], "reason": "Нічні студії за томами алгебри без жодного викладача поруч."},
-            "10": {"scenes": ["05"], "reason": "Тиха стенфордська лекційна зала перед записом перших відеоуроків CS229."},
+            "06": {"scenes": ["05", "09"], "reason": "АРХІВНЕ ВІДЕО (TAU 2023): реальний спільний виступ Іллі Суцкевера та Сема Альтмана."},
         },
     },
     {
-        "match": "light_point_explodes_into_streaks_0827d703",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["05"], "reason": "Спалах пера на папері: чотири революційні сторінки у журналі Nature 1986 року."},
-            "05": {"scenes": ["05"], "reason": "Народження статті про LeNet-5, що навчила машини читати почерк."},
-            "07": {"scenes": ["07", "10"], "reason": "Перо пише «Конституційний ШІ» та історичний трактат 2024 року."},
-            "09": {"scenes": ["08"], "reason": "Підписання першого Міжнародного звіту з безпеки ШІ."},
-        },
-    },
-    {
-        "match": "xasdwrc.png",
+        "match": "altman_ilya_sutskever_tau_2023",
         "kind": "image",
         "targets": {
-            "04": {"scenes": ["05"], "reason": "Перова ручка і чорнило — метафора 4-сторінкової статті в Nature 1986."},
-            "07": {"scenes": ["07", "10"], "reason": "Письмовий кодекс принципів Constitutional AI."},
-            "09": {"scenes": ["08"], "reason": "Складання незалежного наукового звіту про безпеку ШІ."},
+            "06": {"scenes": ["05", "09"], "reason": "ІСТОРИЧНЕ ФОТО (TAU 2023): Ілля Суцкевер та Сем Альтман на одній сцені."},
+        },
+    },
+    {
+        "match": "ep01_clip_still_sutskever_regret_doc_4s.mp4",
+        "kind": "video",
+        "targets": {
+            "06": {"scenes": ["09"], "reason": "ІСТОРИЧНЕ ДОСЬЄ: офіційний допис Іллі Суцкевера про жаль від 20 листопада 2023."},
+        },
+    },
+    {
+        "match": "ep01_doc_04_act3_sutskever_regret_post",
+        "kind": "image",
+        "targets": {
+            "06": {"scenes": ["09"], "reason": "4K ПЛАШКА ДОСЬЄ: твіт Іллі Суцкевера «I deeply regret my participation...»."},
+        },
+    },
+    {
+        "match": "ep01_clip_still_730_letter_doc_9s.mp4",
+        "kind": "video",
+        "targets": {
+            "06": {"scenes": ["09"], "reason": "АРХІВНИЙ ЛИСТ: 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."},
+        },
+    },
+    {
+        "match": "ep01_doc_05_act3_730_employees",
+        "kind": "image",
+        "targets": {
+            "06": {"scenes": ["09"], "reason": "4K ДОСЬЄ: ультиматум ради директорів OpenAI з підписом Суцкевера."},
+        },
+    },
+    {
+        "match": "ep01_doc_02_act2_openai_introducing",
+        "kind": "image",
+        "targets": {
+            "06": {"scenes": ["05"], "reason": "4K ДОСЬЄ: маніфест заснування OpenAI 2015 року, де Суцкевер став головним науковцем."},
         },
     },
 
-    # --- BIOPHYSICS, CELLULAR BIOLOGY, ALPHAFOLD & MEDICAL AI (Hassabis EP03, Amodei EP07, Fei-Fei EP08, Ng EP10) ---
+    # ============== SPECIFIC 9:16 SCIENTIFIC ANIMATIONS (EXPLICITLY TAGGED AS 9:16) ==============
     {
-        "match": "ep01_v1_b2_01_retro_cellular",
+        "match": "ep01_sci_01_supersonic_prandtl_glauert",
         "kind": "video",
         "targets": {
-            "03": {"scenes": ["46", "50"], "reason": "Нано-молекулярна репарація живої клітини — перехід DeepMind від ігор до Isomorphic Labs та проєктування клітин!"},
-            "07": {"scenes": ["02", "10"], "reason": "ПРЯМИЙ ВІЗУАЛ ДЛЯ ТРАКТАТУ ДАРІО АМОДЕЯ! Згенерований під його медичну сцену: наноботи лікують клітини й стискають 100 років медицини."},
-            "08": {"scenes": ["08"], "reason": "Ілюстрація госпітального ШІ-захисту життя людини."},
+            "05": {"scenes": ["01", "06"], "reason": "📐 [9:16 Вертикальне VFX] Надзвуковий літак — пряма метафора сцени #06 Лекуна («аж поки не прилетів надзвуковий літак»)."},
         },
     },
     {
-        "match": "ep03_sci_01_rna_polymerase_dna_transcription",
+        "match": "ep03_sci_01_rna_polymerase_dna",
         "kind": "video",
         "targets": {
-            "01": {"scenes": ["20"], "reason": "Ставка на біотехнології та довголіття (Retro Biosciences)."},
-            "07": {"scenes": ["02", "10"], "reason": "3D транскрипція ДНК — наукова метафора стиснення століття біомедичних досліджень."},
-        },
-    },
-    {
-        "match": "human_prenatal_development_3d_vi",
-        "kind": "video",
-        "targets": {
-            "07": {"scenes": ["03", "10"], "reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея."},
-        },
-    },
-    {
-        "match": "human_zygote_cell_division_timel",
-        "kind": "video",
-        "targets": {
-            "07": {"scenes": ["03", "10"], "reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя."},
+            "07": {"scenes": ["02", "10"], "reason": "📐 [9:16 Вертикальне VFX] 3D транскрипція ДНК — наукова метафора стиснення століття біомедицини (Амодей)."},
         },
     },
     {
         "match": "ep07_sci_01_camera_traversing_human_retina",
         "kind": "video",
         "targets": {
-            "03": {"scenes": ["33", "34"], "reason": "Політ всередині сітківки ока та нервових структур для блоку нейронауки."},
-            "05": {"scenes": ["04"], "reason": "Вхід візуального сигналу в сітківку і далі до первинної зорової кори."},
-            "08": {"scenes": ["04", "10"], "reason": "Біологічний зір людини як еталон, до якого Фей-Фей Лі підтягнула комп'ютери."},
+            "05": {"scenes": ["04"], "reason": "📐 [9:16 Вертикальне VFX] Анатомія зорової сітківки та передачі оптичного сигналу (Лекун)."},
+            "08": {"scenes": ["04", "10"], "reason": "📐 [9:16 Вертикальне VFX] Живий зір людини як орієнтир комп'ютерного зору (Фей-Фей Лі)."},
         },
     },
     {
-        "match": "dna_transcription_molecular_model",
-        "kind": "image",
+        "match": "human_zygote_cell_division_timel",
+        "kind": "video",
         "targets": {
-            "07": {"scenes": ["10"], "reason": "Молекулярна модель ДНК для візуалізації перемоги над генетичними хворобами."},
-            "10": {"scenes": ["01"], "reason": "Медична спадщина батька Ендрю Ина (ранній контакт із клінічною діагностикою)."},
-        },
-    },
-    {
-        "match": "stages_of_cell_division",
-        "kind": "image",
-        "targets": {
-            "07": {"scenes": ["10"], "reason": "Еволюція живої клітини для Трактату 2024 про майбутнє біології."},
+            "07": {"scenes": ["03", "10"], "reason": "📐 [9:16 Вертикальне VFX] Поділ клітини — біофізика живих систем (Трактат Даріо Амодея)."},
         },
     },
 
-    # --- VISION, SPATIAL INTELLIGENCE, 3D VOXELS & AUTONOMOUS HUD (LeCun EP05, Fei-Fei Li EP08, Huang EP02, Ng EP10) ---
+    # ======================== CLEAN 2K/4K ABSTRACT & SCIENTIFIC IMAGES ========================
     {
-        "match": "ep01_v1_b2_04_robotic_dexterity",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Роботизовані маніпулятори та фізичний ШІ (NVIDIA Isaac Sim / GR00T)."},
-            "05": {"scenes": ["08", "09"], "reason": "Фізична взаємодія зі світом, про яку говорить Ян Лекун у контексті Світових Моделей."},
-            "08": {"scenes": ["09", "10"], "reason": "ПРЯМИЙ КЛІП WORLD LABS / SPATIAL INTELLIGENCE! Роботи плетуть тривимірну золоту структуру реальності."},
-        },
-    },
-    {
-        "match": "glass_shatters_into_voxel_bricks_64038",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["50"], "reason": "Фізика цифрових двійників Omniverse: матерія розпадається на керовані 3D-вокселі."},
-            "05": {"scenes": ["09"], "reason": "Дискретизація фізичної реальності у внутрішню світову модель JEPA."},
-            "08": {"scenes": ["09"], "reason": "Вихід із пласких 2D-пікселів у тривимірну воксельну геометрію World Labs (Фей-Фей Лі)."},
-        },
-    },
-    {
-        "match": "physical_matter_dissolves_into_b",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["50"], "reason": "Реальний прибережний ландшафт трансформується в цифрову симуляцію."},
-            "05": {"scenes": ["08", "09"], "reason": "Чотиривимірне розуміння фізики навколишнього середовища замість голого тексту."},
-            "08": {"scenes": ["09"], "reason": "Просторова реконструкція великого міста для Spatial Intelligence."},
-        },
-    },
-    {
-        "match": "digital_hud_tracking_vehicles_d7d30811",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Автономне розпізнавання об'єктів та телеметрія транспорту на бортових комп'ютерах NVIDIA Drive."},
-            "05": {"scenes": ["05"], "reason": "Прикладне комп'ютерне бачення у реальному часі на базі згорткових архітектур."},
-            "08": {"scenes": ["04", "05", "08"], "reason": "Наочний приклад класифікації й трекінгу об'єктів — прямий спадок датасету ImageNet!"},
-        },
-    },
-    {
-        "match": "aerial_view_of_city_center_41b81743",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Комп'ютерний зір та сканування міського простору в реальному часі."},
-            "08": {"scenes": ["05", "09"], "reason": "Просторове сканування об'єктів і геометрії вулиць для ImageNet та 3D-світу."},
-            "10": {"scenes": ["02"], "reason": "Навігаційне сприйняття простору зверху для автономних польотів."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_05_eye_code",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["13"], "reason": "Дитячий погляд на зелений термінал асемблера."},
-            "05": {"scenes": ["04"], "reason": "Поєднання живого людського зору та машинного розпізнавання образів."},
-            "08": {"scenes": ["04", "05", "10"], "reason": "Зір людини й машини: очі, що вчаться бачити 22 000 категорій видимого світу."},
-        },
-    },
-    {
-        "match": "ep01_flow_02_crt_code",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["13", "14"], "reason": "Мовні інструкції низького рівня в очах молодого кодера."},
-            "08": {"scenes": ["04"], "reason": "Переклад оптичного зображення у цифровий масив чисел."},
-            "10": {"scenes": ["01"], "reason": "Перші рядки коду BASIC перед очами юного Ендрю Ина."},
-        },
-    },
-    {
-        "match": "elevenlabs_video_seedance-2-5_intense_macro_r",
-        "kind": "video",
-        "targets": {
-            "01": {"scenes": ["05", "13"], "reason": "Напружене фокусування програміста, коли код оживає прямо в зіницях."},
-            "03": {"scenes": ["13"], "reason": "Нічне занурення в код на ZX Spectrum."},
-            "08": {"scenes": ["05", "07"], "reason": "Напружений пошук візуальних патернів у міріадах зображень."},
-        },
-    },
-    {
-        "match": "ep08_flow_img_01_human_eye_merging_with_data",
+        "match": "dxf_g.png",
         "kind": "image",
         "targets": {
-            "05": {"scenes": ["04"], "reason": "Анатомія комп'ютерного бачення для блоку Bell Labs / CNN."},
-            "07": {"scenes": ["03"], "reason": "Зорова сітківка та цифровий аналіз світлових спалахів."},
+            "02": {"scenes": ["26", "44"], "reason": "Золоті світлові траси на материнській платі (без логотипів) — CUDA та GPU."},
+            "05": {"scenes": ["02"], "reason": "Травлення електронних плат та імпульси обчислень."},
+            "06": {"scenes": ["04"], "reason": "Швидкісні матричні тракти обчислень."},
+            "10": {"scenes": ["07"], "reason": "Кремнієві артерії нової індустріальної електрифікації."},
         },
     },
     {
-        "match": "ep01_v1_creative_05_holo_geo_matrix",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["46", "47"], "reason": "Голографічна мапа морфує у біологічну структуру та просторову мережу."},
-            "05": {"scenes": ["09"], "reason": "Топологічна побудова внутрішньої карти світу."},
-            "08": {"scenes": ["05", "09"], "reason": "Мапа візуальних категорій WordNet/ImageNet переростає у просторове знання."},
-            "10": {"scenes": ["08"], "reason": "Точна структурована інженерія даних (Data-Centric AI)."},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_00_startup_engine_matrix",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["16", "45"], "reason": "Візуалізація інженерного рушія та трансформації мап даних."},
-            "08": {"scenes": ["09"], "reason": "Перетворення 2D-планів на 3D-матрицю простору."},
-            "10": {"scenes": ["08"], "reason": "Data-Centric структуризація даних для промислових заводів."},
-        },
-    },
-    {
-        "match": "ep01_sci_01_supersonic_prandtl_glauert",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["30", "39"], "reason": "Прорив звукового бар'єру — метафора секунди, коли ставка на CUDA вибухає на весь світ."},
-            "05": {"scenes": ["01", "06"], "reason": "ПРЯМЕ ПОПАДАННЯ В СЦЕНАРІЙ ЛЕКУНА! Авіаконструкторське походження (#01) та «15 років вигнання — аж поки не прилетів надзвуковий літак Deep Learning» (#06)!"},
-            "08": {"scenes": ["07"], "reason": "Акустичний удар прориву AlexNet у 2012 році."},
-        },
-    },
-
-    # --- SAFETY, ATTENTION, ALIGNMENT, PLANETARY SCALE & DEMOCRATIZATION (Bengio EP09, Amodei EP07, Sutskever EP06, Ng EP10) ---
-    {
-        "match": "ep01_v1_b3_03_two_silhouettes_nadella",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["08"], "reason": "Діалог розумів Хінтона та його учнів — передача золотих ідей (і аукціон на озері Тахо)."},
-            "06": {"scenes": ["05", "09"], "reason": "Тандем Сем Альтман — Ілля Суцкевер: народження й ідеологічний розкол OpenAI."},
-            "07": {"scenes": ["05"], "reason": "Даріо та Даніела Амодей приймають рішення заснувати Anthropic."},
-            "09": {"scenes": ["05"], "reason": "ТОЧНИЙ ВІЗУАЛ ПІД 2014 РОК! Два профілі з'єднуються золотими нитками сенсу — Механізм Уваги (Attention) Богданова–Чо–Бенжіо!"},
-        },
-    },
-    {
-        "match": "ep01_v1_b3_04_golden_grid_stabilizing",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["45", "47"], "reason": "Прогнозування глобального клімату й ураганів системою DeepMind GraphCast."},
-            "07": {"scenes": ["06", "09"], "reason": "Стандарти біобезпеки ASL-1..4 як золота захисна сітка над некерованою бурею."},
-            "09": {"scenes": ["07", "08"], "reason": "ТОЧНИЙ ВІЗУАЛ ДЛЯ БЕНЖІО: золота глобальна сітка приборкує бурю планети — Інститут Mila (клімат) і Міжнародний договір безпеки ШІ!"},
-            "10": {"scenes": ["07"], "reason": "Цифрова мережа стабілізує кліматичні й енергетичні системи планети."},
-        },
-    },
-    {
-        "match": "ep01_v1_b3_closer_goldengrid",
-        "kind": "video",
-        "targets": {
-            "07": {"scenes": ["06", "09"], "reason": "Глобальний захисний контур відповідального масштабування."},
-            "09": {"scenes": ["08"], "reason": "Координація міжнародного звіту про глобальну безпеку ШІ."},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_03_singularity_threat",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["09", "10"], "reason": "Пророче застереження Джеффрі Хінтона про розлом реальності на порозі AGI (2023–2024)."},
-            "06": {"scenes": ["08", "10"], "reason": "ПРЯМИЙ КЛІП ДЛЯ ІЛЛІ СУЦКЕВЕРА: корпоративний ретрит безпеки, прорив сингулярності та створення SSI."},
-            "07": {"scenes": ["06", "09"], "reason": "Коли потужність двигуна загрожує перевершити гальма контролю."},
-            "09": {"scenes": ["08"], "reason": "Аргумент Бенжіо на слуханнях перед урядами світу."},
-        },
-    },
-    {
-        "match": "ep01_v1_creative_02_galaxies_axons",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["47", "50"], "reason": "ПРЯМИЙ КЛІП З БЛОКУ ХАССАБІСА! Космічні галактики з'єднані золотими синаптичними аксонами."},
-            "04": {"scenes": ["05"], "reason": "Нейронний граф пам'яті в масштабах Всесвіту."},
-            "06": {"scenes": ["04", "07"], "reason": "Простір багатовимірних векторів, що стискають сенси (Seq2Seq)."},
-            "09": {"scenes": ["04"], "reason": "2000 рік: кожне слово стає координатою чистого смислу в нейронному космосі Бенжіо!"},
-        },
-    },
-    {
-        "match": "ep03_flow_img_14_galaxies_connected_by_golden_axons",
+        "match": "bhnuyvtf.png",
         "kind": "image",
         "targets": {
-            "04": {"scenes": ["05"], "reason": "Розподілене представлення концептів у багатовимірному графі."},
-            "06": {"scenes": ["04"], "reason": "Стиснуті семантичні координати думки."},
-            "09": {"scenes": ["04"], "reason": "Світовий космос векторних слів (Word Embeddings, 2000/2003)."},
+            "02": {"scenes": ["23", "31", "46"], "reason": "Двоє інженерів тестують GPU-сервер у лабораторії (безіменний індустріальний 2K кадр)."},
+            "06": {"scenes": ["04", "07"], "reason": "Апаратний тест обчислювальної стійки."},
+            "08": {"scenes": ["07"], "reason": "Лабораторна підтримка запуску глибоких моделей."},
+            "10": {"scenes": ["03"], "reason": "Перевірка обладнання Google Brain."},
         },
     },
     {
-        "match": "ep01_v1_b2_10_earth_horizon_finale_290f",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["50"], "reason": "Планета Земля, оповита цифровою нейромережею — масштаб імперії NVIDIA."},
-            "03": {"scenes": ["47", "49"], "reason": "200 мільйонів білків, подарованих усій Землі в Стокгольмі."},
-            "09": {"scenes": ["08"], "reason": "Планетарна відповідальність науки перед людством."},
-            "10": {"scenes": ["06", "07", "10"], "reason": "СВІТЛО В КОЖНОМУ ДОМІ: мільйони студентів Coursera і «ШІ як нова електрика» по всій Землі!"},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_closer_earthhorizon",
-        "kind": "video",
-        "targets": {
-            "09": {"scenes": ["08"], "reason": "Орбітальний погляд на планетарні мережі безпеки."},
-            "10": {"scenes": ["06", "10"], "reason": "Демократизація знань через Coursera у кожному куточку Землі."},
-        },
-    },
-    {
-        "match": "scesxcsr.png",
+        "match": "dv.png",
         "kind": "image",
         "targets": {
-            "01": {"scenes": ["48"], "reason": "Земля в золотих орбітальних кільцях інтелекту та комунікацій."},
-            "07": {"scenes": ["10"], "reason": "Глобальний ефект цивілізаційного прориву в охороні здоров'я."},
-            "09": {"scenes": ["08"], "reason": "Глобальна угода й екологічний моніторинг планети."},
-            "10": {"scenes": ["06", "10"], "reason": "Глобальне охоплення мільйонів слухачів освіти в усьому світі."},
+            "04": {"scenes": ["05"], "reason": "Формула функції втрат Cost Function J(w,b) на скляній дошці — градієнтний спуск."},
+            "05": {"scenes": ["03"], "reason": "Оптимізація градієнта на білій дошці."},
+            "09": {"scenes": ["04"], "reason": "Математичне виведення втрат мережі."},
+            "10": {"scenes": ["05", "06"], "reason": "100% ЗБІГ: фірмова формула Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 та Coursera!"},
         },
     },
     {
-        "match": "vscds.png",
+        "match": "cdwrf.png",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["50"], "reason": "Трансконтинентальна мережа оптичних каналів AI-фабрик."},
-            "09": {"scenes": ["07", "08"], "reason": "Міжнародна наукова колаборація Mila та ООН."},
-            "10": {"scenes": ["06", "07"], "reason": "Мільйони учнів Coursera з усіх континентів."},
+            "03": {"scenes": ["34"], "reason": "Детальний 2K макро-нейрон зі синаптичними спалахами."},
+            "04": {"scenes": ["04", "05"], "reason": "Біологічний нейрон, роботу якого Хінтон моделював 50 років."},
+            "05": {"scenes": ["04"], "reason": "Ієрархічні нейрони кори головного мозку."},
+            "07": {"scenes": ["03"], "reason": "Живі нейрони під мікроскопом у лабораторії Прінстона."},
+            "09": {"scenes": ["04"], "reason": "Синаптична структура зв'язків мозку."},
         },
     },
     {
-        "match": "ep01_v1_new_02_burroughs_monoliths",
-        "kind": "video",
-        "targets": {
-            "06": {"scenes": ["01", "02"], "reason": "ВІД БЕТОНУ СРСР ДО ЗОЛОТОГО КАМЕНЮ ЄРУСАЛИМА: три арки крізь історію та світло — прямий двійник ключового кадру EP06_FLOW_IMG_01!"},
-            "08": {"scenes": ["01", "03"], "reason": "Портал переходу від суворої еміграції до світла науки в Калтеху та Прінстоні."},
-        },
-    },
-    {
-        "match": "ep06_flow_img_01_jerusalem_limestone_roots",
+        "match": "ep01_flow_img_03_silicon_wafer_cyan_laser_hero",
         "kind": "image",
         "targets": {
-            "01": {"scenes": ["28", "49"], "reason": "Контраст старого світу й вертикалі променя нового масштабу."},
-        },
-    },
-
-    # --- FOUNDER GRIT, LATE-NIGHT WORK, CRISIS, CLOCKS & STARTUP ORIGINS (Huang EP02, Amodei EP07, Sutskever EP06, Ng EP10) ---
-    {
-        "match": "ep01_clip_v1_15_foundergrit",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["18", "34", "38"], "reason": "Засновник у вихорі розпаду — «До банкрутства залишилось 30 днів» Дженсена Хуанга!"},
-            "04": {"scenes": ["06"], "reason": "Долаючи висміювання та брак фінансування в часи зими ШІ."},
-            "06": {"scenes": ["10"], "reason": "Крок у невідомість нової компанії SSI."},
+            "02": {"scenes": ["23", "26"], "reason": "Стартовий 2K кадр для сцен проектування архітектури чипів та CUDA."},
+            "05": {"scenes": ["02"], "reason": "Мікроелектронна доріжка під лазерним променем."},
+            "06": {"scenes": ["04"], "reason": "Кремнієвий тракт матричних обчислень."},
         },
     },
     {
-        "match": "ep01_v1_b2_07_corporate_transmutation",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["18", "19"], "reason": "Жорстке виживання компанії у 1996 році — скорочення 60% штату та ставка ва-банк."},
-            "07": {"scenes": ["05"], "reason": "Розрив із корпоративним курсом заради принципів безпеки."},
-        },
-    },
-    {
-        "match": "finger_slamming_clock_plunger",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["18", "24"], "reason": "ТОП-МЕТАФОРА ДЛЯ ХУАНГА! Грошей у банку лишилось рівно на 30 днів — відлік цокає перед кожною нарадою NVIDIA."},
-            "07": {"scenes": ["06", "09"], "reason": "Невблаганний відлік перегонів перед запуском нових моделей: двигун проти гальм."},
-        },
-    },
-    {
-        "match": "four_men_sitting_at_table_3911bdbc",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["12", "13"], "reason": "Нічна зустріч інженерів-засновників за столом у закусочній 1993 року — народження NVIDIA!"},
-            "04": {"scenes": ["08"], "reason": "Готельний столик біля озера Тахо (DNNresearch), де Хінтон з учнями визначає долю $44M аукціону."},
-            "06": {"scenes": ["05"], "reason": "Зустріч співзасновників OpenAI 2015 року."},
-            "07": {"scenes": ["05"], "reason": "Закрита розмова команди Даріо та Даніели перед виходом в Anthropic."},
-            "09": {"scenes": ["02", "05"], "reason": "Дискусія трьох «хрещених батьків» / колег після конференції (GANS і Attention 2014)."},
-        },
-    },
-    {
-        "match": "ep01_v1_b2_02_rosewood_boardroom",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["24", "47"], "reason": "Дощова зала засідань ради директорів: криза, тиск ринку 2008 і 30 днів до банкрутства."},
-            "06": {"scenes": ["09"], "reason": "Тривожна рада директорів OpenAI у листопаді 2023."},
-            "07": {"scenes": ["05"], "reason": "Фінальна ніч у переговорній перед створенням Anthropic."},
-        },
-    },
-    {
-        "match": "ep01_v1_new_03_window_rain",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["33", "38"], "reason": "Самотній керівник о третій ночі біля вікна за розбором листів інженерів."},
-            "06": {"scenes": ["10"], "reason": "Тиха зосереджена робота Суцкевера за межами медійного шуму."},
-            "07": {"scenes": ["06"], "reason": "Відповідальність засновника наодинці з майбутнім технології."},
-        },
-    },
-    {
-        "match": "ep01_v1_new_01_silhouette_dorm",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["11", "22"], "reason": "Нічне програмування у напівтемній кімнаті біля комп'ютера."},
-            "03": {"scenes": ["24"], "reason": "Нічні бдіння розробників Bullfrog у 1990-х."},
-            "05": {"scenes": ["02", "03"], "reason": "Самостійні нічні розрахунки Яна Лекуна біля екрана."},
-            "10": {"scenes": ["01", "10"], "reason": "Десять рядків коду щодня — тиха звичка творця перед світанком."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_19_curvehero",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["30", "39"], "reason": "Золота експонента зростання: момент, коли десятирічна ставка на CUDA вистрілює вгору."},
-            "06": {"scenes": ["07"], "reason": "Пряма лінія закону масштабування: збільшення обчислень на порядок."},
-            "07": {"scenes": ["04"], "reason": "Експоненціальний графік Scaling Laws на 7 порядках величини (2020)!"},
-        },
-    },
-    {
-        "match": "camera_accelerating_through_lett_clip_24ed2370",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["30"], "reason": "Проліт крізь EXPONENTIAL — шалений ривок NVIDIA з нуля у 2012–2024 роках."},
-            "06": {"scenes": ["07"], "reason": "Експоненціальне масштабування моделей GPT."},
-            "07": {"scenes": ["04"], "reason": "Прискорення законів масштабування."},
-        },
-    },
-    {
-        "match": "laser_forms_text_words_89a267cd",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["14", "22"], "reason": "Зелений промінь вінтажного осцилографа: апаратне тестування графіки та симулятор IKOS."},
-            "05": {"scenes": ["02"], "reason": "ПРЯМИЙ КЛІП ДЛЯ ЛЕКУНА (#02): «травлення плат у кислоті біля осцилографа»!"},
-            "09": {"scenes": ["02"], "reason": "Ранні експерименти з розпізнаванням мови та хвильових сигналів у Bell Labs."},
-        },
-    },
-    {
-        "match": "ep01_clip_stills_altman_crt_pixelart" if False else "ep01_clip_still_crt_pixelart",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["12", "16", "25"], "reason": "Класична 3D/піксельна комп'ютерна графіка ігрових рушіїв — джерело попиту на перші відеокарти NVIDIA!"},
-        },
-    },
-    {
-        "match": "holographic_game_data_streams",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["16", "25"], "reason": "Потоки ігрової геометрії та трикутників полігонів Direct3D у майстерні комп'ютерної графіки."},
-        },
-    },
-    {
-        "match": "elevenlabs_video_seedance-2-5_authentic_histo",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["10", "13"], "reason": "Юний інженер власноруч розбирає залізо системного блоку."},
-            "05": {"scenes": ["02"], "reason": "Хлопець самотужки пізнає будову електронної плати."},
-            "10": {"scenes": ["01"], "reason": "Раннє захоплення комп'ютерною архітектурою з дитинства."},
-        },
-    },
-    {
-        "match": "elevenlabs_video_seedance-2-5_dynamic_camera__2026-11-09t12_53_36",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["11", "12"], "reason": "Динамічний аніме-образ молодого фаундера, що крокує у нічне місто стартапів."},
-            "03": {"scenes": ["23", "30"], "reason": "Стилізований перехід молодого геймдизайнера у світ великих ігор."},
-        },
-    },
-    {
-        "match": "elevenlabs_video_seedance-2-5_slow,_powerful__2026-11-09t12_52_53",
-        "kind": "video",
-        "targets": {
-            "06": {"scenes": ["10"], "reason": "Атмосферний нео-нуар дослідника під дощем — настрій ізольованої зосередженості."},
-            "07": {"scenes": ["06"], "reason": "Складні моральні роздуми інженера безпеки."},
-        },
-    },
-    {
-        "match": "mouse_click_triggers_flash_42a0e76f",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["33"], "reason": "Клік о другій ночі й раптові відеодзвінки команди (Дженсен читає кожен електронний лист)."},
-            "07": {"scenes": ["05"], "reason": "Доленосна онлайн-нарада про зміну курсу компанії."},
-        },
-    },
-    {
-        "match": "photographic_strobe_inverting_image_81594c7e",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["18", "38"], "reason": "Момент шоку та внутрішньої зібраності, коли компанія опиняється на межі краху."},
-            "04": {"scenes": ["09"], "reason": "Різке прозріння 2023 року перед тим, як застерегти світ."},
-            "06": {"scenes": ["09"], "reason": "Спалах кризи листопада 2023 року."},
-        },
-    },
-    {
-        "match": "camera_plunges_into_terminal_screen_11075f8d",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["26", "46"], "reason": "Занурення прямо в середовище програмного коду CUDA / терміналу."},
-            "05": {"scenes": ["07"], "reason": "Живий код відкритих бібліотек на кшталт PyTorch."},
-            "06": {"scenes": ["04"], "reason": "Код тренування нейронних трансляцій Seq2Seq."},
-            "10": {"scenes": ["01", "10"], "reason": "Від перших журнальних програм до 10 рядків ранкового коду щодня."},
-        },
-    },
-    {
-        "match": "camera_moving_through_computer_m_clip_2acf3bda",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["13"], "reason": "Макро-огляд вінтажного апаратного корпусу початку 1990-х."},
-            "03": {"scenes": ["11"], "reason": "Корпус класичного комп'ютера 1980–90-х."},
-            "10": {"scenes": ["01"], "reason": "Перше знайомство з персональним комп'ютером."},
-        },
-    },
-
-    # --- SPECIFIC SCIENTIFIC VFX + SUTSKEVER OPENAI ARCHIVES ---
-    {
-        "match": "ep01_flow_09_fusion_torus",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Потужний енергетичний реактор для живлення дата-центрів нового покоління."},
-            "03": {"scenes": ["48"], "reason": "ПРЯМИЙ ВІЗУАЛ ПІД СЦЕНУ #48 ГАССАБІСА («Приборкання термоядерної зорі в Токамаку»)!"},
-        },
-    },
-    {
-        "match": "ep01_flow_img_09_fusion_torus_plasma",
+        "match": "ep01_flow_img_04_golden_exponential_curve_hero",
         "kind": "image",
         "targets": {
-            "03": {"scenes": ["48"], "reason": "Токамак термоядерної плазми для керування магнітним полем від DeepMind."},
+            "02": {"scenes": ["30"], "reason": "Золота експонента зростання екосистеми CUDA."},
+            "06": {"scenes": ["07"], "reason": "Експонента законів масштабування."},
+            "07": {"scenes": ["04"], "reason": "Степенева крива Законів Масштабування на 7 порядках."},
         },
     },
     {
-        "match": "ep02_sci_01_nanobots_graphene_lattice",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["46", "47"], "reason": "Наномолекулярна решітка — синтез нових матеріалів (DeepMind GNoME / кристали)."},
-            "06": {"scenes": ["04"], "reason": "Кристалізація векторних структур у просторі."},
-        },
-    },
-    {
-        "match": "ep02_sci_02_quantum_levitation_flux_pinning",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["47", "48"], "reason": "Надпровідність та квантові дослідження матеріалів DeepMind."},
-            "06": {"scenes": ["10"], "reason": "Чистий моноліт наукової думки в стані ідеальної рівноваги."},
-        },
-    },
-    {
-        "match": "ep04_sci_01_quantum_double_slit_wave_collapse",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["48"], "reason": "Фундаментальна фізика хвильових функцій, яку досліджує ШІ."},
-            "09": {"scenes": ["09"], "reason": "Імовірнісний колапс простору станів для моделей System 2 / GFlowNets."},
-        },
-    },
-    {
-        "match": "ep05_sci_01_belousov_zhabotinsky_oscillator",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["46"], "reason": "Хімічні реакції й самоорганізація складних біосистем."},
-            "04": {"scenes": ["04"], "reason": "Атракторні стани та рекурентна динаміка складних мереж."},
-            "07": {"scenes": ["03"], "reason": "Хвильова активність клітин і біохімічних процесів."},
-        },
-    },
-    {
-        "match": "ep06_sci_01_alcubierre_warp_drive_metric",
-        "kind": "video",
-        "targets": {
-            "01": {"scenes": ["48"], "reason": "Викривлення простору можливостей за горизонтом експоненти."},
-            "02": {"scenes": ["50"], "reason": "Фізична симуляція космосу в трильйонних обчисленнях."},
-        },
-    },
-    {
-        "match": "ep08_sci_01_asteroid_approaching_earth_orbit",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["09", "10"], "reason": "Алегорія наближення небезпеки, про яку Хінтон попереджає зі сцени в Стокгольмі."},
-            "09": {"scenes": ["08"], "reason": "Цивілізаційний ризик неконтрольованого ШІ в доповіді Йошуа Бенжіо."},
-        },
-    },
-    {
-        "match": "ep10_sci_01_tesla_coil_electric_discharges",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45"], "reason": "Високовольтна енергія дата-центрів — серце нових фабрик інтелекту."},
-            "05": {"scenes": ["04"], "reason": "Електричні спалахи активації нейронних мереж."},
-        },
-    },
-    {
-        "match": "altman_ilya_sutskever_tau_2023",
-        "kind": "any",
-        "targets": {
-            "06": {"scenes": ["05", "09"], "reason": "РЕАЛЬНИЙ ІСТОРИЧНИЙ ДОКУМЕНТ: Ілля Суцкевер та Сем Альтман разом на сцені Тель-Авівського університету 2023 року!"},
-        },
-    },
-    {
-        "match": "sutskever_regret",
-        "kind": "any",
-        "targets": {
-            "06": {"scenes": ["09"], "reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions»."},
-        },
-    },
-    {
-        "match": "730_employees",
-        "kind": "any",
-        "targets": {
-            "06": {"scenes": ["09"], "reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера."},
-        },
-    },
-    {
-        "match": "employees_solidarity",
-        "kind": "video",
-        "targets": {
-            "06": {"scenes": ["09"], "reason": "Колективна реакція команди OpenAI на кризу листопада 2023 року."},
-        },
-    },
-    {
-        "match": "openai_introducing",
-        "kind": "any",
-        "targets": {
-            "06": {"scenes": ["05"], "reason": "Історичний маніфест заснування OpenAI (грудень 2015), де Ілля Суцкевер став головним науковцем."},
-        },
-    },
-    {
-        "match": "03_alexnet_nips" if False else "sutskever_alexnet_nips",
+        "match": "ep01_flow_img_05_neural_lattice_glowing_nodes_2k",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["29"], "reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ NIPS 2012: ImageNet на двох відеокартах NVIDIA GTX 580!"},
-            "04": {"scenes": ["07"], "reason": "Спільна стаття Крижевського, Суцкевера та Хінтона 2012 року про AlexNet!"},
-            "08": {"scenes": ["07"], "reason": "Історична публікація AlexNet, що стала тріумфом датасету ImageNet!"},
+            "03": {"scenes": ["33", "34"], "reason": "Чиста геометрична нейронна решітка активації."},
+            "04": {"scenes": ["05"], "reason": "2K кадр багатошарової нейромережі для Backpropagation."},
+            "05": {"scenes": ["05", "07"], "reason": "Вузли глибокої згорткової архітектури."},
+            "06": {"scenes": ["04", "07"], "reason": "Граф векторного представлення сенсів."},
+            "08": {"scenes": ["07"], "reason": "Прорив глибоких візуальних мереж 2012."},
+            "09": {"scenes": ["04", "05"], "reason": "Координатна решітка токенів і механізму уваги."},
         },
     },
     {
-        "match": "ep04_doc_01_act2_hinton_backprop_nature",
+        "match": "ep01_flow_img_06_supercomputer_servers_cold_hall_2k",
         "kind": "image",
         "targets": {
-            "05": {"scenes": ["03"], "reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ Nature 1986: публікація методу Backpropagation."},
-            "09": {"scenes": ["02"], "reason": "Наукова основа, що об'єднала Хінтона, Лекуна і Бенжіо."},
+            "02": {"scenes": ["31", "45"], "reason": "Холодний суперкомп'ютерний коридор NVIDIA DGX/Blackwell (2K)."},
+            "06": {"scenes": ["07"], "reason": "Обчислювальний кластер великих моделей."},
+            "10": {"scenes": ["03"], "reason": "Масив із 1000 серверів Google Brain."},
         },
     },
     {
-        "match": "ep02_doc_01_act2_nvidia_riva128",
+        "match": "ep01_flow_img_08_golden_signatures_light_threads_2k",
         "kind": "image",
         "targets": {
-            "06": {"scenes": ["04"], "reason": "Апаратна передісторія графічних прискорювачів NVIDIA."},
+            "03": {"scenes": ["49"], "reason": "Золотий резонанс наукової спадщини (2K)."},
+            "06": {"scenes": ["04"], "reason": "Згортка сенсів у векторному просторі."},
+            "07": {"scenes": ["07"], "reason": "Синхронізація етичних орієнтирів."},
+            "09": {"scenes": ["08"], "reason": "Глобальна наукова солідарність."},
         },
     },
     {
-        "match": "ep08_doc_01_act2_feifeili_imagenet",
+        "match": "ep01_flow_img_09_fusion_torus_plasma_2k",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["29"], "reason": "Бенчмарк ImageNet CVPR 2009 — датасет, на якому переміг тандем GPU + AlexNet."},
-            "04": {"scenes": ["07"], "reason": "Тестова арена ImageNet, де модель Хінтона знизила помилку з 26% до 15%."},
-            "05": {"scenes": ["06"], "reason": "Змагання ImageNet, що підтвердило правоту конволюційних нейромереж."},
-            "06": {"scenes": ["04"], "reason": "Головний іспит комп'ютерного бачення 2012 року."},
+            "02": {"scenes": ["45"], "reason": "Термоядерна енергетика для надпотужних ЦОД."},
+            "03": {"scenes": ["48"], "reason": "Токамак термоядерної плазми для керування полем DeepMind."},
         },
     },
     {
-        "match": "ep09_doc_01_act2_bengio_attention",
+        "match": "ep01_flow_img_10_earth_horizon_neural_grid_2k",
         "kind": "image",
         "targets": {
-            "06": {"scenes": ["04"], "reason": "Наукова стаття про механізм Attention у нейронному машинному перекладі — міст до Seq2Seq Суцкевера!"},
-        },
-    },
-    {
-        "match": "ep10_doc_01_act2_andrewng_googlebrain",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["29"], "reason": "Історія переходу від 16,000 CPU ядер до десятків GPU у дослідженнях глибокого навчання."},
-            "06": {"scenes": ["05"], "reason": "Контекст Google Brain, з якого Ілля Суцкевер прийшов у OpenAI."},
-        },
-    },
-    {
-        "match": "arch_01_act3_24fps_hinton" if False else "ep04_vid_arch_01_act4_24fps_hinton_nobel",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["49"], "reason": "Атмосфера Нобелівської церемонії в Стокгольмі 2024 (спільний тріумфальний рік із Хассабісом)."},
-        },
-    },
-    {
-        "match": "ep03_vid_arch_01_act4_24fps_hassabis_nobel",
-        "kind": "video",
-        "targets": {
-            "04": {"scenes": ["10"], "reason": "Урочиста сцена Нобелівського банкету у Стокгольмі 2024."},
-        },
-    },
-    {
-        "match": "ep01_v2_b2_03_altman_sutskever_tau_10s",
-        "kind": "video",
-        "targets": {
-            "06": {"scenes": ["05", "09"], "reason": "АРХІВНЕ ВІДЕО (TAU 2023): живий діалог Іллі Суцкевера та Сема Альтмана!"},
-        },
-    },
-    {
-        "match": "jlgyf.png",
-        "kind": "image",
-        "targets": {
-            "02": {"scenes": ["33"], "reason": "Робочий стіл розробника з кодом на ноутбуці у вранішньому світлі."},
-            "10": {"scenes": ["10"], "reason": "Світанок, чистий файл коду — фінальний символ навчання ШІ."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_06_boy_room",
-        "kind": "video",
-        "targets": {
-            "03": {"scenes": ["11", "13"], "reason": "Хлопчик за нічним зеленим монітором вивчає перший код."},
-            "10": {"scenes": ["01"], "reason": "Хлопчик передруковує код BASIC з журналів на ранній комп'ютер."},
-        },
-    },
-    {
-        "match": "ep01_clip_v1_07_phosphor",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["22"], "reason": "Зелені матриці субпікселів CRT — епоха графіки на рівні пікселя й трикутника."},
-            "03": {"scenes": ["11"], "reason": "Фосфорне сяйво ретро-екрана 8-бітної ери."},
-            "05": {"scenes": ["04", "05"], "reason": "Сітка пікселів, що перетворюється на тензорні канали LeNet-5."},
+            "02": {"scenes": ["50"], "reason": "Планетарна обчислювальна інфраструктура (2K)."},
+            "09": {"scenes": ["08"], "reason": "Глобальна відповідальність людства."},
+            "10": {"scenes": ["06", "10"], "reason": "Світло освіти Coursera в кожному домі на Землі."},
         },
     },
     {
         "match": "kjh.png",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["45", "50"], "reason": "Нескінченний тунель суперкомп'ютерних серверних стійок."},
-            "06": {"scenes": ["07"], "reason": "Лабіринт багатомільярдних обчислювальних кластерів."},
+            "02": {"scenes": ["45", "50"], "reason": "Футуристичний тунель серверних стійок."},
+            "06": {"scenes": ["07"], "reason": "Архітектура надвеликих кластерів."},
+            "10": {"scenes": ["03"], "reason": "Глибина обчислювальної системи Google X."},
         },
     },
     {
         "match": "b_cgbxtd.png",
         "kind": "image",
         "targets": {
-            "04": {"scenes": ["05"], "reason": "Дослідник перед потоком багатовимірних векторних ліній."},
-            "09": {"scenes": ["04"], "reason": "Вхід у багатовимірний семантичний тунель смислів."},
+            "04": {"scenes": ["05"], "reason": "Абстрактний силует перед багатовимірним потоком даних."},
+            "09": {"scenes": ["04"], "reason": "Занурення у семантичний тунель значень слів."},
         },
     },
     {
-        "match": "tech_employees_gathered_in_office",
+        "match": "scesxcsr.png",
         "kind": "image",
         "targets": {
-            "06": {"scenes": ["09"], "reason": "Солідарність сотень інженерів під час листопадової кризи в OpenAI."},
-        },
-    },
-    # --- EXTRA CURATED 2K KEYFRAMES & SPATIAL VISION FOR EP02, EP04-EP10 ---
-    {
-        "match": "ep01_v1_assoc_01_lidar_city_grid",
-        "kind": "video",
-        "targets": {
-            "02": {"scenes": ["45", "50"], "reason": "LiDAR-сітка та просторове сканування міст у реальному часі (NVIDIA Drive / Omniverse)."},
-            "05": {"scenes": ["05", "09"], "reason": "Реалтайм просторове сканування міської геометрії для World Models JEPA."},
-            "08": {"scenes": ["05", "09"], "reason": "Просторова 3D-реконструкція вулиць — безпосередній вектор World Labs Фей-Фей Лі."},
+            "02": {"scenes": ["50"], "reason": "Планета Земля у золотих орбітах цифрового двійника."},
+            "07": {"scenes": ["10"], "reason": "Глобальний ефект медичних проривів для всього людства."},
+            "09": {"scenes": ["08"], "reason": "Міжнародні кліматичні й безпекові ініціативи."},
+            "10": {"scenes": ["06", "10"], "reason": "Світове поширення онлайн-освіти та індустрії ШІ."},
         },
     },
     {
-        "match": "ep03_flow_img_10_lidar_scanning_tactical",
+        "match": "vscds.png",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["45"], "reason": "2K кадр лазерного сканування 3D-середовища."},
-            "08": {"scenes": ["09"], "reason": "2K референс тривимірної фізики та просторового розуміння середовища."},
+            "02": {"scenes": ["50"], "reason": "Глобальна нейромережа зв'язків над континентами."},
+            "09": {"scenes": ["07", "08"], "reason": "Світова наукова мережа дослідників Mila."},
+            "10": {"scenes": ["06"], "reason": "Слухачі Coursera по всій планеті."},
+        },
+    },
+    {
+        "match": "ybr.png",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["50"], "reason": "Світова мапа технологічної інфраструктури."},
+            "08": {"scenes": ["06"], "reason": "Глобальна мережа тисяч асистентів розмітки ImageNet."},
+            "10": {"scenes": ["06", "07"], "reason": "Масштабування знань і «нової електрики» по всьому світу."},
+        },
+    },
+    {
+        "match": "xasdwrc.png",
+        "kind": "image",
+        "targets": {
+            "04": {"scenes": ["05"], "reason": "Золоте перо на папері — епохальна стаття в Nature 1986."},
+            "05": {"scenes": ["05"], "reason": "Фундаментальна публікація IEEE про LeNet-5."},
+            "07": {"scenes": ["07", "10"], "reason": "Написання принципів Constitutional AI та Трактату 2024."},
+            "09": {"scenes": ["08"], "reason": "Фіксація наукових висновків у Звіті безпеки ШІ."},
+        },
+    },
+    {
+        "match": "jlgyf.png",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["33"], "reason": "Ноутбук із чистим кодом на дерев'яному столі вранці (без чужих брендів)."},
+            "10": {"scenes": ["10"], "reason": "Чистий файл і перші десять рядків коду на світанку."},
+        },
+    },
+    {
+        "match": "mathematical_decision_tree_in_space",
+        "kind": "image",
+        "targets": {
+            "03": {"scenes": ["06", "42"], "reason": "Золоте математичне дерево варіантів у просторі."},
+            "04": {"scenes": ["05"], "reason": "Дерево обчислення градієнтів."},
+            "06": {"scenes": ["04"], "reason": "Дерево пошуку варіантів у векторних моделях."},
+            "09": {"scenes": ["09"], "reason": "Розгалуження думки в архітектурах System 2."},
+        },
+    },
+    {
+        "match": "electrical_pulses_firing_through",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["45"], "reason": "Сяючий тунель дата-центру в 2K."},
+            "06": {"scenes": ["07"], "reason": "Швидкісний обмін між тисячами обчислювальних вузлів."},
+            "10": {"scenes": ["03"], "reason": "Масштабна архітектура серверів Google X."},
+        },
+    },
+    {
+        "match": "ep06_flow_study_04b_motherboard_traces_gpu_2k",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["13", "22", "44"], "reason": "Друкована плата та доріжки GPU великим планом (без логотипів)."},
+            "05": {"scenes": ["02"], "reason": "Конструювання та паяння плат у майстерні."},
+        },
+    },
+    {
+        "match": "ep06_flow_img_04_researcher_viewing_gpus_alexnet_2k",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["29"], "reason": "2012 рік: обчислювальний експеримент AlexNet на GPU NVIDIA."},
+            "04": {"scenes": ["07"], "reason": "Запуск AlexNet на ігрових відеокартах у лабораторії Хінтона."},
+            "08": {"scenes": ["07"], "reason": "Прорив ImageNet у жовтні 2012 року."},
+        },
+    },
+    {
+        "match": "dna_transcription_molecular_model",
+        "kind": "image",
+        "targets": {
+            "07": {"scenes": ["10"], "reason": "Молекулярна структура ДНК для візуалізації медичного трактату Амодея."},
+        },
+    },
+    {
+        "match": "stages_of_cell_division",
+        "kind": "image",
+        "targets": {
+            "07": {"scenes": ["10"], "reason": "Стадії поділу живої клітини — біологічні відкриття за допомогою ШІ."},
+        },
+    },
+    {
+        "match": "neural_network_nodes_firing_bef7f30b",
+        "kind": "image",
+        "targets": {
+            "04": {"scenes": ["05"], "reason": "Багатошарова нейромережа (2K)."},
+            "05": {"scenes": ["05"], "reason": "Активація згорткових шарів."},
+            "09": {"scenes": ["05"], "reason": "Вузли уваги (Attention)."},
+        },
+    },
+    {
+        "match": "artificial_neural_network_nodes_",
+        "kind": "image",
+        "targets": {
+            "04": {"scenes": ["05"], "reason": "Нейронний граф прямого та зворотного проходу."},
+            "09": {"scenes": ["04"], "reason": "Семантичні вузли мережі."},
+        },
+    },
+    {
+        "match": "microscopy_of_brain_hippocampal_…_28e029e0".replace("…_", ""),
+        "kind": "image",
+        "targets": {
+            "04": {"scenes": ["04"], "reason": "Мікроскопія гіпокампа — природний прототип нейронної пам'яті."},
+            "07": {"scenes": ["03"], "reason": "Електрофізіологічний зріз нейронів."},
+        },
+    },
+    {
+        "match": "28e029e0_2k.jpg",
+        "kind": "image",
+        "targets": {
+            "04": {"scenes": ["04"], "reason": "Мікроскопія живих нейронів мозку (2K)."},
+            "07": {"scenes": ["03"], "reason": "Нейробіологічний дослід у лабораторії Прінстона."},
+        },
+    },
+    {
+        "match": "neural_core_pulsing_in_laboratory_1c257942",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["31", "45"], "reason": "Футуристична зала з пульсуючим нейроядром (без таблички LONDON)."},
+            "06": {"scenes": ["10"], "reason": "Тихий дослідницький центр надрозуму."},
         },
     },
     {
         "match": "researcher_standing_near_hologra",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["50"], "reason": "Дослідник перед голографічною стіною візуальних даних (цифровий двійник)."},
-            "06": {"scenes": ["04", "07"], "reason": "Науковець перед багатовимірними векторними спогадами моделі."},
-            "08": {"scenes": ["05", "09"], "reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!"},
+            "05": {"scenes": ["08", "09"], "reason": "Голографічні сцени реального світу перед дослідником (World Models)."},
+            "08": {"scenes": ["05", "09"], "reason": "Візуальна бібліотека світів та об'єктів (ImageNet / World Labs)."},
         },
     },
     {
-        "match": "neural_core_pulsing_in_laboratory",
+        "match": "ep02_flow_img_05_hand_shaking_golden_transistor_dust",
         "kind": "image",
         "targets": {
-            "01": {"scenes": ["46"], "reason": "Сяюче інтелектуальне ядро всередині надсучасного дата-центру."},
-            "02": {"scenes": ["31", "45"], "reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA)."},
-            "06": {"scenes": ["10"], "reason": "Тиха високотехнологічна лабораторія безпеки надрозуму."},
+            "01": {"scenes": ["31"], "reason": "Рукостискання технологій та капіталу (2K ключ)."},
+            "03": {"scenes": ["40"], "reason": "Стратегічний союз науки та індустрії."},
+            "05": {"scenes": ["07"], "reason": "Альянс навколо відкритого коду."},
         },
     },
     {
-        "match": "ep01_flow_img_02_crt_code_eye_reflection",
+        "match": "ep02_flow_img_06_magma_flowing_into_supercomputer",
         "kind": "image",
         "targets": {
-            "03": {"scenes": ["13"], "reason": "2K макро-кадр ока з зеленим асемблером."},
-            "05": {"scenes": ["04"], "reason": "Зустріч людського ока і цифрової матриці."},
-            "08": {"scenes": ["04", "05"], "reason": "Вчити комп'ютер бачити так, як бачить людське око (ImageNet)."},
+            "01": {"scenes": ["47"], "reason": "Чиста енергія живить гігаватні обчислення."},
+            "10": {"scenes": ["07"], "reason": "Енергетичний ресурс «нової електрики»."},
         },
     },
     {
-        "match": "ep01_flow_img_05_neural_lattice_glowing",
+        "match": "ep03_flow_img_10_lidar_scanning_tactical_map",
         "kind": "image",
         "targets": {
-            "03": {"scenes": ["33", "34"], "reason": "Геометрична нейронна решітка активації."},
-            "04": {"scenes": ["05"], "reason": "2K кадр багатошарової нейромережі для епохи Backpropagation."},
-            "05": {"scenes": ["05", "07"], "reason": "Глибокі вузли згорткової мережі."},
-            "06": {"scenes": ["04", "07"], "reason": "Нейронний граф стискання та масштабування сенсів."},
-            "08": {"scenes": ["07"], "reason": "Пробудження глибокої візуальної нейромережі 2012."},
-            "09": {"scenes": ["04", "05"], "reason": "Координатна решітка токенів і механізму уваги."},
+            "02": {"scenes": ["45"], "reason": "2K кадр лазерного LiDAR-сканування 3D-середовища."},
+            "08": {"scenes": ["09"], "reason": "Просторова тривимірна карта для World Labs."},
         },
     },
     {
-        "match": "ep01_flow_img_04_golden_exponential_curve",
+        "match": "ep03_flow_img_14_galaxies_connected_by_golden_axons",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["30"], "reason": "Золота експонента зростання обчислювальної потужності CUDA."},
-            "07": {"scenes": ["04"], "reason": "Логарифмічна пряма Законів Масштабування на 7 порядках величини."},
+            "04": {"scenes": ["05"], "reason": "Всесвіт нейронних зв'язків (2K)."},
+            "06": {"scenes": ["04"], "reason": "Космічна геометрія векторів."},
+            "09": {"scenes": ["04"], "reason": "Світовий простір смислових координат."},
         },
     },
     {
-        "match": "ep01_flow_img_10_earth_horizon_neural_grid",
+        "match": "ep04_flow_img_04_human_head_cracking_releasing_light",
         "kind": "image",
         "targets": {
-            "02": {"scenes": ["50"], "reason": "Планета, вкрита глобальною нейронною інфраструктурою NVIDIA."},
-            "09": {"scenes": ["08"], "reason": "Глобальна відповідальність людства над єдиною мережею інтелекту."},
-            "10": {"scenes": ["06", "10"], "reason": "Світло знань й електрифікації ШІ по всій Землі (Coursera)."},
+            "06": {"scenes": ["06"], "reason": "Світло абстракції, що народжується всередині розуму (2K)."},
+            "07": {"scenes": ["08"], "reason": "Просвічування прихованих фіч Claude 3 Sonnet."},
+            "09": {"scenes": ["09"], "reason": "Глибоке міркування Системи 2."},
+        },
+    },
+    {
+        "match": "ep08_flow_img_01_human_eye_merging_with_data",
+        "kind": "image",
+        "targets": {
+            "05": {"scenes": ["04"], "reason": "Біологічний і машинний зір (2K ключ)."},
+            "07": {"scenes": ["03"], "reason": "Зорова сітківка та оптичний аналіз."},
+        },
+    },
+    {
+        "match": "ep01_doc_01_act2_nvidia_riva128" if False else "ep02_doc_01_act2_nvidia_riva128",
+        "kind": "image",
+        "targets": {},
+    },
+    {
+        "match": "sutskever_alexnet_nips",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["29"], "reason": "ІСТОРИЧНЕ ДОСЬЄ (NIPS 2012): AlexNet запускався саме на двох відеокартах NVIDIA GTX 580!"},
+            "04": {"scenes": ["07"], "reason": "ІСТОРИЧНЕ ДОСЬЄ: спільна проривна публікація Хінтона, Крижевського й Суцкевера 2012."},
+            "08": {"scenes": ["07"], "reason": "ІСТОРИЧНЕ ДОСЬЄ: перемога AlexNet на датасеті Фей-Фей Лі ImageNet."},
+        },
+    },
+    {
+        "match": "ep08_doc_01_act2_feifeili_imagenet",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["29"], "reason": "Прес-досьє бенчмарку ImageNet, де проявилася сила GPU NVIDIA."},
+            "04": {"scenes": ["07"], "reason": "Прес-досьє змагання ImageNet (обвал помилки з 26% до 15%)."},
+            "06": {"scenes": ["04"], "reason": "Історичний контекст змагання ImageNet 2012."},
+        },
+    },
+    {
+        "match": "ep04_doc_01_act2_hinton_backprop_nature",
+        "kind": "image",
+        "targets": {
+            "05": {"scenes": ["03"], "reason": "Класична стаття Nature 1986 про зворотне поширення помилки."},
+            "09": {"scenes": ["02"], "reason": "Фундамент спільного шляху «хрещених батьків» ШІ."},
+        },
+    },
+    {
+        "match": "ep09_doc_01_act2_bengio_attention",
+        "kind": "image",
+        "targets": {
+            "06": {"scenes": ["04"], "reason": "Наукова робота про Attention — прямий розвиток підходу Seq2Seq Суцкевера."},
+        },
+    },
+    {
+        "match": "ep10_doc_01_act2_andrewng_googlebrain",
+        "kind": "image",
+        "targets": {
+            "02": {"scenes": ["29"], "reason": "Порівняння 16 000 CPU Google Brain vs кількох GPU NVIDIA у дослідницьких кластерах."},
+            "06": {"scenes": ["05"], "reason": "Середовище Google Brain, з якого Суцкевер перейшов до OpenAI."},
         },
     },
 ]
@@ -1211,20 +932,45 @@ def get_display_title_override(rel_path, default_display):
     return default_display
 
 
-def is_off_topic(rel_path):
-    return (rel_path or "").lower() in OFF_TOPIC_PATHS
+def is_hidden_non_project(rel_path):
+    return (rel_path or "").lower() in HIDDEN_NON_PROJECT_PATHS
+
+
+def _universal_cross_category(entry, media_type):
+    """Map cross-shared assets to neutral thematic categories so foreign folder names
+    like Chess / ZX Spectrum / Go never confuse another Titan's studio UI."""
+    rl = (entry.get("rel_path") or "").lower()
+    if entry.get("cat") in ("archive", "dossiers", "portraits"):
+        return entry["cat"], entry["cat_label"]
+    if entry.get("is_portrait") or "scientific_animations" in rl:
+        return "sci_vfx_cross", "🔬 Науковий VFX"
+    if any(k in rl for k in ("wafer", "server", "silicon", "phosphor", "motherboard", "gpu", "dxf_g", "bhnuyvtf", "kjh", "build", "comput")):
+        return "cross_hardware", "💻 Кремній, Сервери & GPU"
+    if any(k in rl for k in ("lidar", "voxel", "holo", "robotic", "hud", "aerial", "swarm", "metropolis", "physical_matter", "dv.png", "mathematical")):
+        return "cross_spatial", "🌐 3D-Простір, Код & Симуляції"
+    if any(k in rl for k in ("cellular", "dna", "zygote", "retina", "neuron", "electrical_spark", "cdwrf", "hippocampal", "bio")):
+        return "cross_bio_neuro", "🧠 Нейронаука & Біофізика"
+    return "cross_abstract", "🌌 Абстрактний Кіно-B-Roll"
 
 
 def curate_cross_assets_for_inventory(native_entries_by_ep):
     """
-    Given {ep: {"videos": [...], "images": [...]}}, return curated cross-matched
-    entries per target episode WITHOUT duplicating files inside their own native episode.
+    Given {ep: {"videos": [...], "images": [...]}}, return curated CLEAN cross-matched
+    entries per target episode WITHOUT duplicating files by path OR by MD5 byte content,
+    and NEVER pulling previs schematics, off-topic items, or mismatched personas.
     """
     cross_by_ep = {ep: {"videos": [], "images": []} for ep in native_entries_by_ep}
-    seen_per_ep = {
+    seen_paths = {
         ep: {
             "video": {it["rel_path"].lower() for it in native_entries_by_ep[ep]["videos"]},
             "image": {it["rel_path"].lower() for it in native_entries_by_ep[ep]["images"]},
+        }
+        for ep in native_entries_by_ep
+    }
+    seen_md5 = {
+        ep: {
+            "video": {it.get("md5", "") for it in native_entries_by_ep[ep]["videos"] if it.get("md5")},
+            "image": {it.get("md5", "") for it in native_entries_by_ep[ep]["images"] if it.get("md5")},
         }
         for ep in native_entries_by_ep
     }
@@ -1247,6 +993,8 @@ def curate_cross_assets_for_inventory(native_entries_by_ep):
         needle = rule["match"].lower()
         r_kind = rule.get("kind", "any")
         targets = rule.get("targets", {})
+        if not needle or not targets:
+            continue
 
         for src_ep, bucket in native_entries_by_ep.items():
             for kind_key, media_type in (("videos", "video"), ("images", "image")):
@@ -1254,24 +1002,36 @@ def curate_cross_assets_for_inventory(native_entries_by_ep):
                     continue
                 for entry in bucket[kind_key]:
                     rel_l = entry["rel_path"].lower()
-                    if is_off_topic(rel_l):
+                    if is_hidden_non_project(rel_l):
                         continue
-                    hay = (rel_l + " " + entry["file"].lower())
+                    if entry.get("cat") == "previs":
+                        continue
+                    hay = rel_l + " " + entry["file"].lower()
                     if needle not in hay:
                         continue
 
                     matched_rules_count += 1
+                    e_md5 = entry.get("md5", "")
                     for target_ep, meta in targets.items():
                         if target_ep == src_ep or target_ep not in cross_by_ep:
                             continue
-                        if rel_l in seen_per_ep[target_ep][media_type]:
+                        if rel_l in seen_paths[target_ep][media_type]:
                             continue
-                        seen_per_ep[target_ep][media_type].add(rel_l)
+                        if e_md5 and e_md5 in seen_md5[target_ep][media_type]:
+                            continue
+
+                        seen_paths[target_ep][media_type].add(rel_l)
+                        if e_md5:
+                            seen_md5[target_ep][media_type].add(e_md5)
 
                         cloned = dict(entry)
                         cloned["is_cross"] = True
+                        cloned["is_dup_md5"] = False
+                        c_cat, c_label = _universal_cross_category(entry, media_type)
+                        cloned["cat"] = c_cat
+                        cloned["cat_label"] = c_label
                         cloned["source_ep"] = src_ep
-                        cloned["source_label"] = f"♻️ З фонду EP{src_ep} ({ep_names_short.get(src_ep, 'Проєкт')})"
+                        cloned["source_label"] = f"🌌 Універсальний B-Roll (з EP{src_ep} · {ep_names_short.get(src_ep, 'Проєкт')})"
                         cloned["match_reason"] = meta["reason"]
                         cloned["suggested_scenes"] = list(meta.get("scenes", []))
                         cross_by_ep[target_ep][kind_key].append(cloned)
@@ -1280,11 +1040,7 @@ def curate_cross_assets_for_inventory(native_entries_by_ep):
 
 
 def link_cross_candidates_to_triads(ep, triads, vault_ep):
-    """
-    Attach ready reusable cross-assets from vault_ep onto matching Triads as
-    non-destructive `cross_candidates` so editors can reuse them immediately instead of
-    spending extra Flow generation credits.
-    """
+    """Attach clean reusable assets from vault_ep onto matching Triads as `cross_candidates`."""
     by_scene = {}
     for media_kind, arr in (("video", vault_ep.get("videos", [])), ("image", vault_ep.get("images", []))):
         for item in arr:
@@ -1298,6 +1054,9 @@ def link_cross_candidates_to_triads(ep, triads, vault_ep):
                     "rel_path": item["rel_path"],
                     "thumb": item.get("thumb", ""),
                     "preview_path": item.get("preview_path", ""),
+                    "res_label": item.get("res_label", ""),
+                    "dur_label": item.get("dur_label", ""),
+                    "is_portrait": bool(item.get("is_portrait", False)),
                     "source_ep": item.get("source_ep", ""),
                     "source_label": item.get("source_label", ""),
                     "match_reason": item.get("match_reason", ""),
@@ -1305,6 +1064,5 @@ def link_cross_candidates_to_triads(ep, triads, vault_ep):
 
     for t in triads:
         cands = by_scene.get(t["num"], [])
-        # Put videos before images
-        cands.sort(key=lambda c: (0 if c["media_type"] == "video" else 1, c["file"].lower()))
+        cands.sort(key=lambda c: (0 if c["media_type"] == "video" else 1, 1 if c.get("is_portrait") else 0, c["file"].lower()))
         t["cross_candidates"] = cands

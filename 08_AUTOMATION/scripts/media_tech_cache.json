@@ -1,0 +1,5252 @@
+{
+  "04_ASSETS/user_ai_images/,io.png": {
+    "mtime": 1794233712.26,
+    "md5": "3a1b4e01",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/2026-11-09_14.45.29.jpg": {
+    "mtime": 1794235529.31,
+    "md5": "8a965d02",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/;ll;.png": {
+    "mtime": 1794240782.13,
+    "md5": "36b9d8d1",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/Boy_watching_glowing_code_77d7ee3b_2K.jpg": {
+    "mtime": 1794242975.59,
+    "md5": "813fa693",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/Child_inserting_floppy_disk_92a52bea_2K.jpg": {
+    "mtime": 1794242979.96,
+    "md5": "19412c88",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/_df.png": {
+    "mtime": 1794234828.34,
+    "md5": "6faefabb",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/_fgxfhcg.png": {
+    "mtime": 1794238950.61,
+    "md5": "336d9e8e",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/_nkbh.png": {
+    "mtime": 1794224350.6,
+    "md5": "0cf23ba1",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/_v.png": {
+    "mtime": 1794224141.77,
+    "md5": "969df5e3",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/_yfht.png": {
+    "mtime": 1794239578.24,
+    "md5": "8246b223",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/b_cgbxtd.png": {
+    "mtime": 1794239583.64,
+    "md5": "e7c9d91a",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/bhnuyvtf.png": {
+    "mtime": 1794239747.47,
+    "md5": "18ec3773",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/bvcb.png": {
+    "mtime": 1794224110.62,
+    "md5": "07fe9a90",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/by.png": {
+    "mtime": 1794238257.28,
+    "md5": "2a14d28d",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/byr.png": {
+    "mtime": 1794238583.02,
+    "md5": "a9f43cbf",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/cdwrf.png": {
+    "mtime": 1794237743.16,
+    "md5": "ef2f1d97",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/cfz.png": {
+    "mtime": 1794240464.08,
+    "md5": "4f3a212f",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/csr.png": {
+    "mtime": 1794233577.75,
+    "md5": "97155bfb",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/dv.png": {
+    "mtime": 1794238945.32,
+    "md5": "34404809",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/dxf_g.png": {
+    "mtime": 1794233167.19,
+    "md5": "166b2929",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/edsfrdtf.png": {
+    "mtime": 1794223386.98,
+    "md5": "d7a61ef5",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/ghnfbyd.png": {
+    "mtime": 1794239753.31,
+    "md5": "9a4610b4",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/hmufj.png": {
+    "mtime": 1794238758.37,
+    "md5": "4e0ea7b8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/image.png": {
+    "mtime": 1794240455.2,
+    "md5": "4f3a212f",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/jlgyf.png": {
+    "mtime": 1794240082.33,
+    "md5": "01b4298e",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/kjh.png": {
+    "mtime": 1794240140.07,
+    "md5": "f4f799f7",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/kut.png": {
+    "mtime": 1794237938.51,
+    "md5": "ab0bc6aa",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/lknjb.png": {
+    "mtime": 1794233161.03,
+    "md5": "7d863ce6",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/mk.png": {
+    "mtime": 1794224575.74,
+    "md5": "d7a61ef5",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/mmjghnfgbdf.png": {
+    "mtime": 1794223381.72,
+    "md5": "546ead05",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/mymyy.png": {
+    "mtime": 1794233725.8,
+    "md5": "6faefabb",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/nlbv.png": {
+    "mtime": 1794224363.7,
+    "md5": "31da7d2b",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/p;.png": {
+    "mtime": 1794238391.84,
+    "md5": "29c139fc",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/rvdst.png": {
+    "mtime": 1794238762.71,
+    "md5": "2c0166a8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/rvt.png": {
+    "mtime": 1794238218.92,
+    "md5": "c0dd542e",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/sax.png": {
+    "mtime": 1794224681.42,
+    "md5": "546ead05",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/scesxcsr.png": {
+    "mtime": 1794240809.68,
+    "md5": "d66ea66c",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/sdgfhtyj.png": {
+    "mtime": 1794237952.05,
+    "md5": "e39572c9",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/tredf.png": {
+    "mtime": 1794224130.28,
+    "md5": "62dca701",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/utyfgv.png": {
+    "mtime": 1794238592.36,
+    "md5": "1bf4e262",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/vcx.png": {
+    "mtime": 1794224601.36,
+    "md5": "d7a61ef5",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/vfre.png": {
+    "mtime": 1794234834.35,
+    "md5": "3a1b4e01",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/vscds.png": {
+    "mtime": 1794237740.93,
+    "md5": "841cc931",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/xas.png": {
+    "mtime": 1794240341.3,
+    "md5": "a2880b9e",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/xasdwrc.png": {
+    "mtime": 1794239357.45,
+    "md5": "dc04d5e8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/xdgcfh.png": {
+    "mtime": 1794238405.02,
+    "md5": "212785f5",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/xdry.png": {
+    "mtime": 1794224123.02,
+    "md5": "e34a4de8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/xzcs.png": {
+    "mtime": 1794224669.71,
+    "md5": "8ba4616f",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "04_ASSETS/user_ai_images/ybr.png": {
+    "mtime": 1794239409.4,
+    "md5": "3d38496a",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg": {
+    "mtime": 1794077495.65,
+    "md5": "00f3e931",
+    "w": 390,
+    "h": 520,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 390×520",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP02_PHOTO_01_Jensen_Huang_Archival_Portrait.jpg": {
+    "mtime": 1794077496.87,
+    "md5": "f1a9f90f",
+    "w": 1745,
+    "h": 2324,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 1745×2324",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP03_PHOTO_01_Demis_Hassabis_Archival_Portrait.jpg": {
+    "mtime": 1794077498.41,
+    "md5": "f84b78c4",
+    "w": 2458,
+    "h": 3275,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP04_PHOTO_01_Geoffrey_Hinton_Archival_Portrait.jpg": {
+    "mtime": 1794077500.02,
+    "md5": "07bc7b2c",
+    "w": 3840,
+    "h": 5377,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP05_PHOTO_01_Yann_LeCun_Archival_Portrait.jpg": {
+    "mtime": 1794077501.34,
+    "md5": "65c983ca",
+    "w": 2082,
+    "h": 2635,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP06_PHOTO_01_Ilya_Sutskever_Archival_Portrait.jpg": {
+    "mtime": 1794077502.12,
+    "md5": "81dcc0a7",
+    "w": 192,
+    "h": 287,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 192×287",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP07_PHOTO_01_Dario_Amodei_Archival_Portrait.jpg": {
+    "mtime": 1794077503.23,
+    "md5": "f6a03100",
+    "w": 1500,
+    "h": 1941,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 1500×1941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP08_PHOTO_01_Fei-Fei_Li_Archival_Portrait.jpg": {
+    "mtime": 1794077504.2,
+    "md5": "1cd1bfb7",
+    "w": 909,
+    "h": 1350,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 909×1350",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP09_PHOTO_01_Yoshua_Bengio_Archival_Portrait.jpg": {
+    "mtime": 1794077505.77,
+    "md5": "ec9c4ea8",
+    "w": 2430,
+    "h": 2930,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/EP10_PHOTO_01_Andrew_Ng_Archival_Portrait.jpg": {
+    "mtime": 1794077507.37,
+    "md5": "5ba7079f",
+    "w": 2219,
+    "h": 2724,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg": {
+    "mtime": 1794132220.11,
+    "md5": "dd9ed29e",
+    "w": 1024,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 1024×1280",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg": {
+    "mtime": 1794132220.41,
+    "md5": "312c5f18",
+    "w": 768,
+    "h": 1024,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 768×1024",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg": {
+    "mtime": 1794132220.46,
+    "md5": "13ca53c1",
+    "w": 640,
+    "h": 480,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 640×480",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg": {
+    "mtime": 1794132220.5,
+    "md5": "b7ca9451",
+    "w": 1280,
+    "h": 720,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×720",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg": {
+    "mtime": 1794158412.06,
+    "md5": "63e82af8",
+    "w": 721,
+    "h": 541,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 721×541",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg": {
+    "mtime": 1794158413.17,
+    "md5": "5984f4ca",
+    "w": 730,
+    "h": 517,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 730×517",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg": {
+    "mtime": 1794158425.06,
+    "md5": "73d19530",
+    "w": 480,
+    "h": 360,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 480×360",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.webp": {
+    "mtime": 1794158413.64,
+    "md5": "f3a7fbd9",
+    "w": 480,
+    "h": 360,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 480×360",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_08_Altman_TechCrunch_Disrupt_2014_YC_President.jpg": {
+    "mtime": 1794158415.77,
+    "md5": "5a3e83e8",
+    "w": 5184,
+    "h": 3456,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_09_Altman_TechCrunch_Disrupt_2019_OpenAI_CEO.jpg": {
+    "mtime": 1794158416.49,
+    "md5": "257de3fa",
+    "w": 2228,
+    "h": 2324,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_10_Altman_TED_Vancouver_2023_GPT4.jpg": {
+    "mtime": 1794158417.21,
+    "md5": "6c53d147",
+    "w": 2184,
+    "h": 2633,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_11_Altman_November_2022_ChatGPT_Genesis.jpg": {
+    "mtime": 1794158418.57,
+    "md5": "f2267f38",
+    "w": 3327,
+    "h": 5000,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg": {
+    "mtime": 1794229306.98,
+    "md5": "f9097dba",
+    "w": 512,
+    "h": 286,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 512×286",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Finger_drawing_glowing_algorithm…_57eaed58_1080p.mp4": {
+    "mtime": 1794267532.18,
+    "md5": "5df3d29c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg": {
+    "mtime": 1794229529.55,
+    "md5": "2f5c5090",
+    "w": 1536,
+    "h": 2752,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 1536×2752",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4": {
+    "mtime": 1794229537.54,
+    "md5": "d00c073e",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_zygote_cell_division_timel…_063791c0_1080p.mp4": {
+    "mtime": 1794229618.15,
+    "md5": "fe723ff4",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Marker_writing_glowing_words_d757ace3_1080p.mp4": {
+    "mtime": 1794265850.3,
+    "md5": "81c9bc91",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Stages_of_cell_division_a2a1ff18.jpg": {
+    "mtime": 1794229623.17,
+    "md5": "1690585d",
+    "w": 512,
+    "h": 286,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 512×286",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4": {
+    "mtime": 1794267006.83,
+    "md5": "68a5a92f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/80-കളിലെ ZX Spectrum ഡെസ്ക് രംഗം (1).png": {
+    "mtime": 1794245474.37,
+    "md5": "d02f545b",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/80-കളിലെ ZX Spectrum ഡെസ്ക് രംഗം.png": {
+    "mtime": 1794245140.41,
+    "md5": "d02f545b",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/CRT_monitor_displaying_pixel_art_a12cad8c_2K.jpg": {
+    "mtime": 1794247408.86,
+    "md5": "db4773f5",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/CRT_screen_displaying_assembly_code_366dace1_2K.jpg": {
+    "mtime": 1794267133.54,
+    "md5": "af254b9e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/CRT_screen_displaying_assembly_code_fa15c58b_2K.jpg": {
+    "mtime": 1794267148.06,
+    "md5": "5d142592",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Camera_tracking_vintage_televisi…_e6659a8e_1080p.mp4": {
+    "mtime": 1794267159.29,
+    "md5": "d9505e34",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4": {
+    "mtime": 1794251108.22,
+    "md5": "46c08218",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4": {
+    "mtime": 1794266695.77,
+    "md5": "19bed701",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4": {
+    "mtime": 1794266449.87,
+    "md5": "019b1ca8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Teenager_programming_at_computer_543b4c38_2K.jpg": {
+    "mtime": 1794267339.21,
+    "md5": "2d6ce9dd",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Aircraft_banking_into_evening_sky_46d97595_1080p.mp4": {
+    "mtime": 1794268543.18,
+    "md5": "586a2d83",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Aircraft_climbing_into_stratosph…_081016cf_1080p.mp4": {
+    "mtime": 1794269251.49,
+    "md5": "21ff3234",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Flight_01_London_TowerBridge_Launch_RWY27L.png": {
+    "mtime": 1794268990.07,
+    "md5": "bf803035",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Flight_02_London_Supersonic_Climb_Trails.png": {
+    "mtime": 1794267893.3,
+    "md5": "2a317d69",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Flight_03_SFO_GoldenGate_VTOL_Landing_RWY01L.png": {
+    "mtime": 1794267899.12,
+    "md5": "c6be1c8a",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Flight_04_SFO_GoldenGate_Touchdown_RWY28L.png": {
+    "mtime": 1794269000.55,
+    "md5": "d72d3ad2",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg": {
+    "mtime": 1794266861.81,
+    "md5": "4ee5530c",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4": {
+    "mtime": 1794266647.88,
+    "md5": "4e82138c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4": {
+    "mtime": 1794266805.06,
+    "md5": "1e296f67",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg": {
+    "mtime": 1794267736.02,
+    "md5": "d48475ae",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg": {
+    "mtime": 1794266834.68,
+    "md5": "d7a83896",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg": {
+    "mtime": 1794266822.93,
+    "md5": "5d860858",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg": {
+    "mtime": 1794266547.65,
+    "md5": "c684b2af",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg": {
+    "mtime": 1794266582.87,
+    "md5": "62b992bc",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg": {
+    "mtime": 1794266850.57,
+    "md5": "692808c2",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4": {
+    "mtime": 1794238074.19,
+    "md5": "0c888b6a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg": {
+    "mtime": 1794266753.73,
+    "md5": "f0ded703",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg": {
+    "mtime": 1794266765.15,
+    "md5": "961d96cd",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4": {
+    "mtime": 1794239355.82,
+    "md5": "15929b0e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Split-screen_displaying_photogra…_7c7cfca8_2K.jpg": {
+    "mtime": 1794266772.44,
+    "md5": "caea4c0a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Split-screen_nostalgic_and_cold_…_06c72dd3_2K.jpg": {
+    "mtime": 1794266784.74,
+    "md5": "f0890d0c",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Steam_rising_from_tea_cup_16747a03_2K.jpg": {
+    "mtime": 1794266563.4,
+    "md5": "2592e617",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Steam_rising_from_tea_mug_9fd8eafa_2K.jpg": {
+    "mtime": 1794266596.43,
+    "md5": "a289b50a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4": {
+    "mtime": 1794188031.16,
+    "md5": "83e56d7c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4": {
+    "mtime": 1794191226.31,
+    "md5": "d60ffe39",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_moving_rook_for_checkmate_40d08020_1080p.mp4": {
+    "mtime": 1794267326.28,
+    "md5": "e8b91a2e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_playing_chess_in_tournament_6eb2549e_2K.jpg": {
+    "mtime": 1794267195.96,
+    "md5": "65262a3e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_playing_chess_tournament_48f87787_2K.jpg": {
+    "mtime": 1794267184.06,
+    "md5": "1464981d",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_sitting_at_miniature_desk_aed3b17f_2K.jpg": {
+    "mtime": 1794265587.74,
+    "md5": "3ade5d18",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_smiling_at_chess_move_b4fa61c4_2K.jpg": {
+    "mtime": 1794265502.88,
+    "md5": "9ce85804",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_touching_wooden_knight_976ddc32_2K.jpg": {
+    "mtime": 1794265614.3,
+    "md5": "9cb6028f",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_touching_wooden_knight_9aa41684_2K.jpg": {
+    "mtime": 1794265625.32,
+    "md5": "2e3ab3e8",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_watching_chess_game_b0b4a46c_2K.jpg": {
+    "mtime": 1794265637.02,
+    "md5": "bec731bb",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Boy_watching_chess_game_c445d69e_2K.jpg": {
+    "mtime": 1794265707.55,
+    "md5": "d6f2e703",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Camera_pushing_toward_baby_cradle_b407eebe_1080p.mp4": {
+    "mtime": 1794265799.31,
+    "md5": "cd3d694e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Carpenters_plane_making_oak_shaving_045b2681_2K.jpg": {
+    "mtime": 1794266381.88,
+    "md5": "8cc63c47",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Carved_wooden_chess_knight_on_0b95223a_2K.jpg": {
+    "mtime": 1794266935.11,
+    "md5": "33408293",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Child_checkmating_adult_in_chess_219076e1_2K.jpg": {
+    "mtime": 1794265598.97,
+    "md5": "ae7bcb79",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Child_writing_chess_notation_b1779305_2K.jpg": {
+    "mtime": 1794265576.21,
+    "md5": "3ad7b0e3",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_ASSOC_02_Chess_Sandstorm_8s.mp4": {
+    "mtime": 1794188034.99,
+    "md5": "c0134c7b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_B3_01_Chess_King_Falling_12s.mp4": {
+    "mtime": 1794193017.61,
+    "md5": "b34b5954",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s.mp4": {
+    "mtime": 1794189354.77,
+    "md5": "c57c84db",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP03_London_Chess_Tournament_1989_HeroStill.png": {
+    "mtime": 1794246376.83,
+    "md5": "5c649d1f",
+    "w": 1280,
+    "h": 720,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×720",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/ElevenLabs_video_seedance-2-5_Cinematic wide-_2026-11-09T17_43_20.mp4": {
+    "mtime": 1794246525.84,
+    "md5": "5deb964a",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4": {
+    "mtime": 1794267049.53,
+    "md5": "bd7ba89d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Gylltur tímagöng með fornum klukkum.png": {
+    "mtime": 1794244908.88,
+    "md5": "578af256",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Gylltur_tímagöng_með_fornum_klukkum.png_2387450b.jpg": {
+    "mtime": 1794267059.92,
+    "md5": "8aabb735",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Infant_Reference_Portrait_cb.png": {
+    "mtime": 1794254136.78,
+    "md5": "ae20cdfc",
+    "w": 1024,
+    "h": 1024,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1024×1024",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Infant_eyes_reflecting_coordinat…_4efc6e92_2K.jpg": {
+    "mtime": 1794265751.63,
+    "md5": "568a2e6a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Infant_eyes_reflecting_grid_1a2a878a_2K.jpg": {
+    "mtime": 1794265779.85,
+    "md5": "57996905",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4": {
+    "mtime": 1794265678.8,
+    "md5": "8937928a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Player_moving_chess_piece_3fb132c7_1080p.mp4": {
+    "mtime": 1794267272.52,
+    "md5": "b8d3b5ce",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Poiss malemäng boheemlaslikus elutoas.png": {
+    "mtime": 1794244562.15,
+    "md5": "784a441d",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Poiss_malemäng_boheemlaslikus_elutoas.png_26e37029.jpg": {
+    "mtime": 1794267007.29,
+    "md5": "5b0a987d",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Programmer_coding_chess_on_computer_96f59b84_2K.jpg": {
+    "mtime": 1794265507.36,
+    "md5": "a781bc6d",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Skákborð_endurspeglast_í_augum_barns.png_82f4e399.jpg": {
+    "mtime": 1794266998.85,
+    "md5": "1e95810a",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Skákborð endurspeglast í augum barns (1).png": {
+    "mtime": 1794244696.08,
+    "md5": "b39567cc",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Skákborð endurspeglast í augum barns (2).png": {
+    "mtime": 1794244700.32,
+    "md5": "b39567cc",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Skákborð endurspeglast í augum barns.png": {
+    "mtime": 1794244689.72,
+    "md5": "b39567cc",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Slow_tracking_camera_pushes_past_322cd6c4.mp4": {
+    "mtime": 1794267245.84,
+    "md5": "581d61ba",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Vintage mechanical chess clock in golden light.png": {
+    "mtime": 1794244899.96,
+    "md5": "7bae388e",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Vintage_mechanical_chess_clock_in_6b21bddd.jpg": {
+    "mtime": 1794267039.52,
+    "md5": "d5cb4ad2",
+    "w": 1672,
+    "h": 941,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1672×941",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Wicker_baby_cradle_in_room_134312e9_2K.jpg": {
+    "mtime": 1794266373.47,
+    "md5": "43393afb",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Wooden_chess_knight_on_chessboard_33286eb4_2K.jpg": {
+    "mtime": 1794266951.2,
+    "md5": "40c201f1",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4": {
+    "mtime": 1794132959.19,
+    "md5": "a3a4e1f7",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4": {
+    "mtime": 1794132959.45,
+    "md5": "408a828f",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4": {
+    "mtime": 1794132959.77,
+    "md5": "8617d3df",
+    "w": 1080,
+    "h": 1920,
+    "dur": 8.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4": {
+    "mtime": 1794132959.97,
+    "md5": "cc9b8c0c",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4": {
+    "mtime": 1794132960.24,
+    "md5": "af4af330",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4": {
+    "mtime": 1794132960.45,
+    "md5": "8ef6cb8c",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4": {
+    "mtime": 1794132960.72,
+    "md5": "9bb69861",
+    "w": 360,
+    "h": 640,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (360×640)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4": {
+    "mtime": 1794132960.88,
+    "md5": "672f781c",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4": {
+    "mtime": 1793646779.94,
+    "md5": "46b9eac2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_02_Asteroid_Entering_Earth_Atmosphere_1080p.mp4": {
+    "mtime": 1793646840.27,
+    "md5": "93d36097",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP09_SCI_01_Asteroid_Coasting_Deep_Space_1080p.mp4": {
+    "mtime": 1793646621.98,
+    "md5": "e533c8e5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP09_SCI_02_Asteroid_Surface_Micro_Structure_1080p.mp4": {
+    "mtime": 1793646675.96,
+    "md5": "bf733b84",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4": {
+    "mtime": 1794132961.19,
+    "md5": "da50834d",
+    "w": 720,
+    "h": 1280,
+    "dur": 20.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (720×1280)",
+    "dur_label": "20s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_05_neural_lattice.mp4": {
+    "mtime": 1794079728.21,
+    "md5": "e6357cd9",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4": {
+    "mtime": 1794079728.85,
+    "md5": "fc331d91",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_07_boardroom_noir.mp4": {
+    "mtime": 1794079729.49,
+    "md5": "e7a6e17c",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_08_golden_signatures.mp4": {
+    "mtime": 1794079730.16,
+    "md5": "297d074e",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4": {
+    "mtime": 1794079730.82,
+    "md5": "57a753ed",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_10_earth_horizon.mp4": {
+    "mtime": 1794079731.44,
+    "md5": "9f414e1e",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4": {
+    "mtime": 1794131760.73,
+    "md5": "0d87748b",
+    "w": 1280,
+    "h": 720,
+    "dur": 12.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/archives/EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4": {
+    "mtime": 1794131779.37,
+    "md5": "a5dfad65",
+    "w": 1280,
+    "h": 720,
+    "dur": 17.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "17s"
+  },
+  "05_RAW_FOOTAGE/archives/EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4": {
+    "mtime": 1794077881.89,
+    "md5": "3729ce61",
+    "w": 480,
+    "h": 360,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "480×360",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4": {
+    "mtime": 1794131823.0,
+    "md5": "302d8031",
+    "w": 640,
+    "h": 480,
+    "dur": 13.1,
+    "is_portrait": false,
+    "res_label": "640×480",
+    "dur_label": "13s"
+  },
+  "05_RAW_FOOTAGE/archives/EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4": {
+    "mtime": 1794131846.35,
+    "md5": "538340f9",
+    "w": 1280,
+    "h": 720,
+    "dur": 18.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "18s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_01_ACT3_24FPS_Huang_GTC_Stage_Walk.mp4": {
+    "mtime": 1794078101.5,
+    "md5": "c10c6680",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_02_ACT3_24FPS_Huang_Blackwell_Wafer_Reveal.mp4": {
+    "mtime": 1794078121.04,
+    "md5": "86bb0c18",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4": {
+    "mtime": 1794079128.89,
+    "md5": "9306b7f0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction.mp4": {
+    "mtime": 1794079146.73,
+    "md5": "06af5c6c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.1,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4": {
+    "mtime": 1794077902.12,
+    "md5": "bf24f515",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP05_VID_ARCH_01_ACT2_24FPS_LeCun_BellLabs_1989_Digits.mp4": {
+    "mtime": 1794077913.42,
+    "md5": "164cd5ce",
+    "w": 654,
+    "h": 480,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "654×480",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_01_ACT2_24FPS_Sutskever_Simons_Lecture.mp4": {
+    "mtime": 1794079163.76,
+    "md5": "ba0fadf5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP07_VID_ARCH_01_ACT3_24FPS_Amodei_Senate_Biosecurity_Hearing.mp4": {
+    "mtime": 1794078632.95,
+    "md5": "a3e25cbc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_01_ACT2_24FPS_FeiFeiLi_ImageNet_Stage.mp4": {
+    "mtime": 1794078662.88,
+    "md5": "88a874b5",
+    "w": 1280,
+    "h": 720,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP09_VID_ARCH_01_ACT3_24FPS_Bengio_Senate_Testimony.mp4": {
+    "mtime": 1794078704.12,
+    "md5": "64285695",
+    "w": 1920,
+    "h": 1080,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_01_ACT2_24FPS_AndrewNg_Stanford_CS229_Chalkboard.mp4": {
+    "mtime": 1794078917.81,
+    "md5": "d0373958",
+    "w": 1280,
+    "h": 720,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_01_Altman_Portrait_15s.mp4": {
+    "mtime": 1794185714.4,
+    "md5": "674300a2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_03_Jobs_Stage_10s.mp4": {
+    "mtime": 1794185709.68,
+    "md5": "e2f25cff",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_04_Stanford_Campus_12s.mp4": {
+    "mtime": 1794185703.69,
+    "md5": "d7144455",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4": {
+    "mtime": 1794185700.51,
+    "md5": "bbbc2bb9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_06_Childhood_Mac_10s.mp4": {
+    "mtime": 1794185696.35,
+    "md5": "95a7f8fd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_07_Loopt_Founder_12s.mp4": {
+    "mtime": 1794185707.33,
+    "md5": "2ca83d6f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block3_master/EP01_V2_B3_01_Altman_ChatGPT_Launch_10s.mp4": {
+    "mtime": 1794193014.39,
+    "md5": "f213e5dc",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block3_master/EP01_V2_B3_02_Altman_TED_2023_10s.mp4": {
+    "mtime": 1794193015.83,
+    "md5": "4f9e5c2f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s.mp4": {
+    "mtime": 1794191235.46,
+    "md5": "f42b3a5a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_02_Stanford_2014_10s.mp4": {
+    "mtime": 1794191236.67,
+    "md5": "159c86fe",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4": {
+    "mtime": 1794191237.94,
+    "md5": "8d3cec0d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s.mp4": {
+    "mtime": 1794191239.23,
+    "md5": "75710bbd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/archives/alternate_takes/ep01_flow_07_boardroom_noir_ua_alt.mp4": {
+    "mtime": 1794149008.81,
+    "md5": "431e192f",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_01_Gamer_Digitized_Into_GPU_Screen_2K.jpg": {
+    "mtime": 1794132958.37,
+    "md5": "dc1ae074",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_02_Gaming_Hardware_Disintegrating_2K.jpg": {
+    "mtime": 1794132958.71,
+    "md5": "95118c2b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP02_FLOW_IMG_03_Developers_Facing_GPU_Server_Core_2K.jpg": {
+    "mtime": 1794132958.96,
+    "md5": "00e37fd3",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01D_Chessboard_Sand_Storm_2K.jpg": {
+    "mtime": 1794132958.03,
+    "md5": "3db1b4ec",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01E_Chessboard_Merging_Digital_Grid_2K.jpg": {
+    "mtime": 1794132958.42,
+    "md5": "13361c5e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01F_Human_Trapped_Warping_Chessboard_2K.jpg": {
+    "mtime": 1794132958.51,
+    "md5": "f94d006b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg": {
+    "mtime": 1794132959.15,
+    "md5": "b17f9f77",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02A_Gamer_Hand_Merging_Controller_2K.jpg": {
+    "mtime": 1794132958.33,
+    "md5": "9928ca18",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02B_Young_Hassabis_Teen_Gamer_2K.jpg": {
+    "mtime": 1794132958.74,
+    "md5": "d4aeaefd",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02C_Esports_Arena_Tower_Zoom_2K.jpg": {
+    "mtime": 1794132958.79,
+    "md5": "b18513a8",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02D_Hassabis_Bullfrog_ThemePark_Coder_2K.jpg": {
+    "mtime": 1794132959.05,
+    "md5": "9a0a5521",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07B_Player_Placing_Go_Stone_2K.jpg": {
+    "mtime": 1794132957.73,
+    "md5": "f5b179ed",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07C_Cybernetic_Stone_Hologram_2K.jpg": {
+    "mtime": 1794132957.8,
+    "md5": "aba1e7d7",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07D_Human_LeeSedol_Vs_AlphaGo_2K.jpg": {
+    "mtime": 1794132957.84,
+    "md5": "c3c63412",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07E_Go_Stones_Digital_Grid_Battle_2K.jpg": {
+    "mtime": 1794132957.89,
+    "md5": "6aa8de8c",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07F_Cosmic_Go_Vortex_2K.jpg": {
+    "mtime": 1794132957.94,
+    "md5": "f3d35332",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_08_Map_Morphing_Into_Protein_AlphaFold_2K.jpg": {
+    "mtime": 1794132958.64,
+    "md5": "a3400c2b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_09_AlphaStar_Swarm_Units_StarCraft_2K.jpg": {
+    "mtime": 1794132958.83,
+    "md5": "659413d8",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg": {
+    "mtime": 1794132958.87,
+    "md5": "1b693949",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_11_DQN_Atari_Breakout_Shattering_2K.jpg": {
+    "mtime": 1794132958.92,
+    "md5": "0b33c5d0",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_01_Player_Falling_Digital_Abyss_2K.jpg": {
+    "mtime": 1794132958.24,
+    "md5": "e5602258",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_02_Grandmaster_Mind_Shattering_2K.jpg": {
+    "mtime": 1794132958.46,
+    "md5": "abac40ed",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP04_FLOW_IMG_03_Nerve_Impulse_Vs_Laser_Beams_A_2K.jpg": {
+    "mtime": 1794132959.01,
+    "md5": "2083affd",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP05_FLOW_IMG_01_Biological_Synapse_Vs_Digital_Laser_2K.jpg": {
+    "mtime": 1794132959.09,
+    "md5": "28808a0f",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_05_Cybernetic_Threads_Jerusalem_Stone_A_2K.jpg": {
+    "mtime": 1794132975.9,
+    "md5": "b12cd9c8",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_06_Cybernetic_Threads_Jerusalem_Stone_B_2K.jpg": {
+    "mtime": 1794132975.94,
+    "md5": "bf3b1a0e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_07_Cybernetic_Singularity_Portal_2K.jpg": {
+    "mtime": 1794132958.28,
+    "md5": "30bb9dd3",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP06_FLOW_IMG_08_Wooden_Hand_Algorithmic_Tentacles_2K.jpg": {
+    "mtime": 1794132958.55,
+    "md5": "ca465342",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg": {
+    "mtime": 1794132957.98,
+    "md5": "b637b450",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_02_Human_Golden_Equations_Alignment_2K.jpg": {
+    "mtime": 1794132958.15,
+    "md5": "20f06263",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg": {
+    "mtime": 1794132958.1,
+    "md5": "27416234",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP09_FLOW_IMG_01_Human_Silhouette_In_Digital_Matrix_2K.jpg": {
+    "mtime": 1794132958.19,
+    "md5": "cb231d2f",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP10_FLOW_IMG_03_Holographic_Map_Morphing_City_2K.jpg": {
+    "mtime": 1794132958.6,
+    "md5": "65b85593",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07B_Go_Stone_CloseA_2K.jpg": {
+    "mtime": 1794130230.14,
+    "md5": "545214e4",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07C_Go_Stone_CloseB_2K.jpg": {
+    "mtime": 1794130327.16,
+    "md5": "11092f5b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07D_Fingers_Holding_Go_Stone_2K.jpg": {
+    "mtime": 1794130381.41,
+    "md5": "0f4e9979",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07E_Go_Stone_Landing_Grid_2K.jpg": {
+    "mtime": 1794130392.05,
+    "md5": "75b01d66",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07F_Grandmaster_Lee_Sedol_Temples_2K.jpg": {
+    "mtime": 1794130348.62,
+    "md5": "ceadb0ba",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01B_Chess_Go_Boards_Floating_2K.jpg": {
+    "mtime": 1794130418.0,
+    "md5": "2f1d9eda",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg": {
+    "mtime": 1794130428.28,
+    "md5": "45e58fb9",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07G_MCTS_Policy_Heatmap_2K.jpg": {
+    "mtime": 1794130406.16,
+    "md5": "3421282e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07H_Go_Board_Cosmic_Nebula_2K.jpg": {
+    "mtime": 1794130370.43,
+    "md5": "d7d83946",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg": {
+    "mtime": 1794130362.73,
+    "md5": "5e75922a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg": {
+    "mtime": 1794130338.14,
+    "md5": "086645de",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg": {
+    "mtime": 1794130143.11,
+    "md5": "b826bde3",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg": {
+    "mtime": 1794130316.59,
+    "md5": "c427898b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg": {
+    "mtime": 1794130302.11,
+    "md5": "3b19adf7",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_05_Businessman_Dissolving_Into_Data_2K.jpg": {
+    "mtime": 1794133559.25,
+    "md5": "79677e42",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_06_Gold_Coins_Melting_Forming_Brain_2K.jpg": {
+    "mtime": 1794133586.25,
+    "md5": "b82ee730",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_07B_Human_Watching_Miniature_Fusion_Star_Var2_2K.jpg": {
+    "mtime": 1794133760.67,
+    "md5": "6416d11a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_07_Human_Watching_Miniature_Fusion_Star_2K.jpg": {
+    "mtime": 1794133787.31,
+    "md5": "93504636",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP01_FLOW_IMG_08_Dyson_Swarm_Servers_Encasing_Star_2K.jpg": {
+    "mtime": 1794133897.5,
+    "md5": "722ba6bd",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg": {
+    "mtime": 1794133597.74,
+    "md5": "2e5fb5f4",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg": {
+    "mtime": 1794133709.06,
+    "md5": "2b53f855",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_07_Star_Encased_By_GPU_Server_Plates_2K.jpg": {
+    "mtime": 1794133909.7,
+    "md5": "a33ed072",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_12_DNA_Unspooling_Into_Binary_Code_2K.jpg": {
+    "mtime": 1794133628.97,
+    "md5": "9266885f",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_13_Golden_Sphere_Vibrating_Resonance_2K.jpg": {
+    "mtime": 1794133885.65,
+    "md5": "ee623438",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg": {
+    "mtime": 1794133931.17,
+    "md5": "2413cade",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_15_Tokamak_Plasma_Magnetic_Confinement_2K.jpg": {
+    "mtime": 1794133787.31,
+    "md5": "93504636",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg": {
+    "mtime": 1794133673.2,
+    "md5": "cd263991",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_05_Man_Touching_Fracturing_Mirror_2K.jpg": {
+    "mtime": 1794133874.96,
+    "md5": "ea5d3804",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_06_Camera_Flying_Through_Glowing_Hyperplane_2K.jpg": {
+    "mtime": 1794133822.87,
+    "md5": "b817aa2e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_02_Cybernetic_Torso_Conducting_Ship_2K.jpg": {
+    "mtime": 1794133639.87,
+    "md5": "e95b6040",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_03_Cyan_Laser_Pulsing_Through_Leaf_2K.jpg": {
+    "mtime": 1794133697.88,
+    "md5": "e38dfd15",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_09_Human_Figure_Suspended_In_Void_2K.jpg": {
+    "mtime": 1794133686.45,
+    "md5": "d720517a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_10_Astronaut_Facing_Black_Hole_Horizon_2K.jpg": {
+    "mtime": 1794133920.66,
+    "md5": "be56d433",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_11_Crystal_Containing_Civilization_2K.jpg": {
+    "mtime": 1794133940.84,
+    "md5": "cbac9317",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP06_FLOW_IMG_12_Cybernetic_Entity_Examining_Human_2K.jpg": {
+    "mtime": 1794133864.35,
+    "md5": "83d49087",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_03_Nanobots_Repairing_Human_Cell_2K.jpg": {
+    "mtime": 1794133650.26,
+    "md5": "f4ebda6f",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_04_Hands_Cupping_Levitating_Liquid_Mirror_2K.jpg": {
+    "mtime": 1794133661.44,
+    "md5": "cbe39850",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP07_FLOW_IMG_05_Finger_Touching_Glowing_AI_Core_2K.jpg": {
+    "mtime": 1794133951.24,
+    "md5": "c1d4bb26",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_02_Silhouettes_Morphing_Into_3D_Wireframe_2K.jpg": {
+    "mtime": 1794133582.43,
+    "md5": "59cd6a06",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_03_Painter_Holding_Glowing_Brush_2K.jpg": {
+    "mtime": 1794133842.76,
+    "md5": "379bc9ad",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP08_FLOW_IMG_04_Robotic_Arms_Weaving_Golden_Tapestry_2K.jpg": {
+    "mtime": 1794133799.23,
+    "md5": "a8cd8648",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP09_FLOW_IMG_02_Golden_Grid_Stabilizing_Stormy_Ocean_2K.jpg": {
+    "mtime": 1794133810.11,
+    "md5": "33e7f9c2",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP09_FLOW_IMG_03_Two_Silhouettes_Connecting_Symbols_2K.jpg": {
+    "mtime": 1794133853.16,
+    "md5": "f68c3bf9",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_04_Skyscraper_Piercing_Binary_Rain_2K.jpg": {
+    "mtime": 1794133618.55,
+    "md5": "1bdeef62",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_05_Metropolis_Transforming_Into_Silicon_2K.jpg": {
+    "mtime": 1794133720.93,
+    "md5": "4b3d6ddb",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_06_Energy_Pulses_Flowing_Through_Earth_2K.jpg": {
+    "mtime": 1794133734.33,
+    "md5": "412343d5",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg": {
+    "mtime": 1794130269.53,
+    "md5": "4441f589",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg": {
+    "mtime": 1794130241.11,
+    "md5": "ae821fa4",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg": {
+    "mtime": 1794130251.3,
+    "md5": "04faaa25",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg": {
+    "mtime": 1794130280.82,
+    "md5": "79e0622b",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro.jpg": {
+    "mtime": 1794126552.72,
+    "md5": "c9994b53",
+    "w": 1200,
+    "h": 896,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1200×896",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg": {
+    "mtime": 1794126548.6,
+    "md5": "a2695917",
+    "w": 1200,
+    "h": 896,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1200×896",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg": {
+    "mtime": 1794126541.19,
+    "md5": "046a9f3f",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02F_Silhouette_At_Computer_2K.jpg": {
+    "mtime": 1794130195.98,
+    "md5": "ef3ee3f5",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07B_Smartphone_Vibrating_Table_2K.jpg": {
+    "mtime": 1794130185.62,
+    "md5": "e7010f0d",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg": {
+    "mtime": 1794130121.74,
+    "md5": "32c48b07",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01A_Mac_ADB_Ports_Canvas_4K.png": {
+    "mtime": 1794125634.92,
+    "md5": "b54cda36",
+    "w": 3456,
+    "h": 1890,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01B_Mac_Texture_Canvas_4K.png": {
+    "mtime": 1794125748.64,
+    "md5": "7d418b2c",
+    "w": 3456,
+    "h": 1890,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01C_Mac_Ports_Close_Canvas_4K.png": {
+    "mtime": 1794125775.09,
+    "md5": "d1a32f4a",
+    "w": 3456,
+    "h": 1890,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K.jpg": {
+    "mtime": 1794130164.59,
+    "md5": "8798656a",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01E_Mac_Boardroom_StudyB_2K.jpg": {
+    "mtime": 1794130171.93,
+    "md5": "2e603b21",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01F_Vintage_Hardware_Macro_2K.jpg": {
+    "mtime": 1794130153.89,
+    "md5": "9fb99eb5",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K.jpg": {
+    "mtime": 1794130132.83,
+    "md5": "57ca1026",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_03A_Silicon_Traces_Canvas_4K_v1.png": {
+    "mtime": 1794080265.02,
+    "md5": "5282a702",
+    "w": 4752,
+    "h": 3396,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_03B_Silicon_Traces_Canvas_4K_v2.png": {
+    "mtime": 1794080398.67,
+    "md5": "056cbd06",
+    "w": 4752,
+    "h": 3396,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_03C_Silicon_Traces_Canvas_4K_v3.png": {
+    "mtime": 1794080399.92,
+    "md5": "68bd4bab",
+    "w": 4752,
+    "h": 3396,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_03D_Silicon_Traces_Canvas_8K_v4.png": {
+    "mtime": 1794080405.17,
+    "md5": "8837fa94",
+    "w": 9504,
+    "h": 6792,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_04B_Exponential_Line_Duplicate.png": {
+    "mtime": 1794127724.98,
+    "md5": "2d045638",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_06B_Architectural_Monoliths_2K.jpg": {
+    "mtime": 1794130291.42,
+    "md5": "06ffa61e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_07C_Computer_Boardroom_Void_2K.jpg": {
+    "mtime": 1794130204.63,
+    "md5": "67738cdc",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_08B_Optical_Symbolic_Filaments_2K.jpg": {
+    "mtime": 1794130214.08,
+    "md5": "d44342c0",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg": {
+    "mtime": 1794128672.15,
+    "md5": "e36cc21e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg": {
+    "mtime": 1794126556.96,
+    "md5": "404db96f",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png": {
+    "mtime": 1794127528.9,
+    "md5": "1831f6ca",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png": {
+    "mtime": 1794127872.24,
+    "md5": "2d045638",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg": {
+    "mtime": 1794128092.07,
+    "md5": "f0065d87",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg": {
+    "mtime": 1794128172.23,
+    "md5": "82204d92",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg": {
+    "mtime": 1794155813.54,
+    "md5": "60cce437",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K_white_glow_v1.jpg": {
+    "mtime": 1794128202.65,
+    "md5": "6649f341",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg": {
+    "mtime": 1794128937.82,
+    "md5": "ec446ad4",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg": {
+    "mtime": 1794128942.77,
+    "md5": "824b5c1c",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg": {
+    "mtime": 1794128946.97,
+    "md5": "187057d2",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4": {
+    "mtime": 1794248024.29,
+    "md5": "9cb033dd",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Boy_aging_into_tech_leader_cd380219_1080p.mp4": {
+    "mtime": 1794236803.4,
+    "md5": "f8480465",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Boy_viewing_glowing_terminal_code_a3fe5f00_1080p.mp4": {
+    "mtime": 1794236751.29,
+    "md5": "2810930c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4": {
+    "mtime": 1794238584.73,
+    "md5": "089aeb28",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4": {
+    "mtime": 1794236704.41,
+    "md5": "e066b238",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4": {
+    "mtime": 1794238261.9,
+    "md5": "74516eae",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4": {
+    "mtime": 1794240397.6,
+    "md5": "3e473448",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4": {
+    "mtime": 1794238799.91,
+    "md5": "21d46b44",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4": {
+    "mtime": 1794249004.83,
+    "md5": "1e296f67",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4": {
+    "mtime": 1794236632.7,
+    "md5": "762889cd",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4": {
+    "mtime": 1794236614.07,
+    "md5": "ee73e89a",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4": {
+    "mtime": 1794236606.33,
+    "md5": "8f5457ee",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4": {
+    "mtime": 1794236638.53,
+    "md5": "8c6ccb29",
+    "w": 1284,
+    "h": 716,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4": {
+    "mtime": 1794236626.65,
+    "md5": "b880213b",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4": {
+    "mtime": 1794236619.35,
+    "md5": "0320a146",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4": {
+    "mtime": 1794236849.31,
+    "md5": "237cf6b8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4": {
+    "mtime": 1794229537.54,
+    "md5": "d00c073e",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4": {
+    "mtime": 1794229618.15,
+    "md5": "fe723ff4",
+    "w": 1080,
+    "h": 1920,
+    "dur": 10.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4": {
+    "mtime": 1794238063.23,
+    "md5": "8410ba09",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4": {
+    "mtime": 1794239967.36,
+    "md5": "05655c6e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_c712a46e_1080p.mp4": {
+    "mtime": 1794239979.27,
+    "md5": "661459ab",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4": {
+    "mtime": 1793870301.22,
+    "md5": "2144f842",
+    "w": 1080,
+    "h": 1920,
+    "dur": 6.0,
+    "is_portrait": true,
+    "res_label": "📱 9:16 (1080×1920)",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4": {
+    "mtime": 1794240713.84,
+    "md5": "71f55f5e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4": {
+    "mtime": 1794238074.19,
+    "md5": "0c888b6a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4": {
+    "mtime": 1794238504.62,
+    "md5": "b1d5bbfe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4": {
+    "mtime": 1794241036.67,
+    "md5": "06888cbd",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4": {
+    "mtime": 1794239355.82,
+    "md5": "15929b0e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Teenage_boy_speaking_into_microp…_9259f8fe_1080p.mp4": {
+    "mtime": 1794262404.54,
+    "md5": "fd74d96b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4": {
+    "mtime": 1794301893.51,
+    "md5": "e6428e38",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Altman_Adult_Portrait_Direct_Gaze_2K.png": {
+    "mtime": 1794255367.11,
+    "md5": "2c0166a8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Boy_watching_glowing_code_77d7ee3b_2K.jpg": {
+    "mtime": 1794242975.59,
+    "md5": "813fa693",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Child_inserting_floppy_disk_92a52bea_2K.jpg": {
+    "mtime": 1794242979.96,
+    "md5": "19412c88",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg": {
+    "mtime": 1794229306.98,
+    "md5": "f9097dba",
+    "w": 512,
+    "h": 286,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 512×286",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Altman_Face_Closeup_Ref.png": {
+    "mtime": 1794262072.86,
+    "md5": "efd680a2",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Church_Confession_AngleMic_Ref.png": {
+    "mtime": 1794261957.7,
+    "md5": "f076fd09",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Church_Confession_DarkBg_Ref.png": {
+    "mtime": 1794261618.11,
+    "md5": "57d010dd",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Church_Confession_FrontMic_Ref.png": {
+    "mtime": 1794262023.22,
+    "md5": "003deae8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Church_Confession_Wide_Ref.png": {
+    "mtime": 1794261966.43,
+    "md5": "3b962f52",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/EP01_Mac_LCII_Corner_Ref.png": {
+    "mtime": 1794126310.81,
+    "md5": "a320399a",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Electrical_pulses_firing_through…_80ff0358_2K.jpg": {
+    "mtime": 1794243121.38,
+    "md5": "e7adb7ca",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Guest_badge_on_desk_a7ff707c_2K.jpg": {
+    "mtime": 1794243277.52,
+    "md5": "5fbffa1e",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Macintosh_Rainbow_Apple_Logo_Corner_2K.png": {
+    "mtime": 1794255367.1,
+    "md5": "97155bfb",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Mathematical_decision_tree_in_space_3c0901ac_2K.jpg": {
+    "mtime": 1794244145.73,
+    "md5": "36fe1243",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Stages_of_cell_division_a2a1ff18.jpg": {
+    "mtime": 1794229623.17,
+    "md5": "1690585d",
+    "w": 512,
+    "h": 286,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 512×286",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Tech_employees_gathered_in_office_b1af5ff2_2K.jpg": {
+    "mtime": 1794243100.62,
+    "md5": "80b72e8d",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Three_people_discussing_at_table_e4a9158b_2K.jpg": {
+    "mtime": 1794243089.62,
+    "md5": "cb3c7338",
+    "w": 2752,
+    "h": 1536,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Young_Altman_Child_Soulful_Portrait_2K.png": {
+    "mtime": 1794255367.1,
+    "md5": "4e0ea7b8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Young_Altman_School_Auditorium_Microphone_2001_2K.png": {
+    "mtime": 1794255367.11,
+    "md5": "e34a4de8",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/user_ai_generations/images_vault/Young_Altman_School_Podium_Assembly_2K.png": {
+    "mtime": 1794255367.11,
+    "md5": "07fe9a90",
+    "w": 1376,
+    "h": 768,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1376×768",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/flow_videos/EP01_Altman/EP01_FLOW_VID_01_ACT1_Macintosh_LC_II_Chassis_1080p24.mp4": {
+    "mtime": 1794127713.63,
+    "md5": "4ea71403",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_videos/EP01_Altman/EP01_FLOW_VID_02_ACT1_CRT_Assembly_Child_Eye_720p24.mp4": {
+    "mtime": 1794127481.69,
+    "md5": "bae4da84",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_videos/EP01_Altman/EP01_FLOW_VID_03_ACT1_Silicon_Wafer_Cyan_Laser_720p24.mp4": {
+    "mtime": 1794127673.11,
+    "md5": "343f0127",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_videos/EP01_Altman/EP01_FLOW_VID_04_ACT1_Golden_Exponential_Curve_720p24.mp4": {
+    "mtime": 1794128058.47,
+    "md5": "13483691",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_730_Letter_Doc_9s.mp4": {
+    "mtime": 1794251155.85,
+    "md5": "c4154690",
+    "w": 3840,
+    "h": 2160,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Altman_2009_Loopt_6s.mp4": {
+    "mtime": 1794251115.56,
+    "md5": "249a3612",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.9,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Altman_2019_OpenAI_6s.mp4": {
+    "mtime": 1794251135.11,
+    "md5": "4ac1eda3",
+    "w": 3840,
+    "h": 2160,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Altman_Sutskever_TAU_9s.mp4": {
+    "mtime": 1794251129.06,
+    "md5": "c95e341e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Altman_TED2023_11s.mp4": {
+    "mtime": 1794251161.33,
+    "md5": "6a9322b2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.6,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "11s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Board_Ouster_Doc_8s.mp4": {
+    "mtime": 1794251144.13,
+    "md5": "a56e25e4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.2,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boardroom_Tense_9s.mp4": {
+    "mtime": 1794251141.63,
+    "md5": "c5190579",
+    "w": 3840,
+    "h": 2160,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boy_At_Vintage_CRT_5s.mp4": {
+    "mtime": 1794255398.68,
+    "md5": "9ffd7f59",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boy_Watching_Code_5s.mp4": {
+    "mtime": 1794251104.57,
+    "md5": "318fadde",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Burroughs_Campus_6s.mp4": {
+    "mtime": 1794251110.4,
+    "md5": "48b8cd41",
+    "w": 3840,
+    "h": 2160,
+    "dur": 6.1,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_ChatGPT_Genesis_7s.mp4": {
+    "mtime": 1794251138.15,
+    "md5": "c9a4481a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 6.9,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "7s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Child_Floppy_Disk_4s.mp4": {
+    "mtime": 1794251106.37,
+    "md5": "deb6fc6a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4": {
+    "mtime": 1794251153.12,
+    "md5": "e2484ff9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Guest_Badge_Desk_10s.mp4": {
+    "mtime": 1794251148.1,
+    "md5": "cd11ea8d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Jobs_Altman_WWDC_5s.mp4": {
+    "mtime": 1794251116.81,
+    "md5": "3f843fe2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Loopt_Shirt_10s.mp4": {
+    "mtime": 1794251113.37,
+    "md5": "82166f78",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Mac_Rainbow_Logo_4s.mp4": {
+    "mtime": 1794255394.81,
+    "md5": "bb7fdfe6",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Math_Decision_Tree_8s.mp4": {
+    "mtime": 1794251121.32,
+    "md5": "3e60258f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 7.7,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Neural_Lattice_10s.mp4": {
+    "mtime": 1794251133.01,
+    "md5": "e8cd3ba9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_School_Auditorium_5s.mp4": {
+    "mtime": 1794255400.41,
+    "md5": "3c299305",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Stanford_2014_4s.mp4": {
+    "mtime": 1794251126.21,
+    "md5": "326e48bd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Stargate_100B_Doc_10s.mp4": {
+    "mtime": 1794251157.89,
+    "md5": "71b52f24",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4": {
+    "mtime": 1794251149.51,
+    "md5": "f02e041f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_TechCrunch_2014_10s.mp4": {
+    "mtime": 1794251124.99,
+    "md5": "ebc8a5bb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 9.6,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_YC2005_Doc_4s.mp4": {
+    "mtime": 1794251118.22,
+    "md5": "414f1935",
+    "w": 3840,
+    "h": 2160,
+    "dur": 4.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "4s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Young_Altman_Portrait_5s.mp4": {
+    "mtime": 1794255396.68,
+    "md5": "1fcc3abf",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_01_Base.png": {
+    "mtime": 1794258382.01,
+    "md5": "4b4a9084",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_01_Burroughs_Turning_Point_10s.mov": {
+    "mtime": 1794258395.28,
+    "md5": "30254ca0",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_02_Autonomy_Axiom_Quote_12s.mov": {
+    "mtime": 1794258403.38,
+    "md5": "056ebb72",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_02_Base.png": {
+    "mtime": 1794258382.05,
+    "md5": "0cddfc99",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_01_Extension_Of_Thought_12s.mp4": {
+    "mtime": 1794251088.69,
+    "md5": "5b8dc3a9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_02_Psychological_Friction_18s.mp4": {
+    "mtime": 1794251091.32,
+    "md5": "ccfde1bf",
+    "w": 3840,
+    "h": 2160,
+    "dur": 18.2,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "18s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_03_Exponential_Risk_15s.mp4": {
+    "mtime": 1794251093.54,
+    "md5": "978fae96",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.2,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_04_Compute_Equations_18s.mp4": {
+    "mtime": 1794251096.17,
+    "md5": "0eaaec08",
+    "w": 3840,
+    "h": 2160,
+    "dur": 18.2,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "18s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_05_Guest_Badge_8s.mp4": {
+    "mtime": 1794251097.41,
+    "md5": "395a6cb5",
+    "w": 3840,
+    "h": 2160,
+    "dur": 7.8,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4": {
+    "mtime": 1794251099.02,
+    "md5": "5e03acb9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.7,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "11s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_07_Three_Rules_12s.mp4": {
+    "mtime": 1794251100.84,
+    "md5": "cf6afe9d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_08_Plastic_Reality_10s.mp4": {
+    "mtime": 1794251102.39,
+    "md5": "e1344575",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4": {
+    "mtime": 1794127713.63,
+    "md5": "4ea71403",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4": {
+    "mtime": 1794127481.69,
+    "md5": "bae4da84",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4": {
+    "mtime": 1794127673.11,
+    "md5": "343f0127",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4": {
+    "mtime": 1794128058.47,
+    "md5": "13483691",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_05_neural_lattice.mp4": {
+    "mtime": 1794148874.07,
+    "md5": "c668f48f",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4": {
+    "mtime": 1794149113.86,
+    "md5": "b0768bb3",
+    "w": 1280,
+    "h": 720,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_07_boardroom_noir.mp4": {
+    "mtime": 1794155970.06,
+    "md5": "2f706770",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4": {
+    "mtime": 1794155331.43,
+    "md5": "41cc9e28",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4": {
+    "mtime": 1794155456.32,
+    "md5": "ca55ea9d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep01_flow_10_earth_horizon.mp4": {
+    "mtime": 1794155553.38,
+    "md5": "004d49fe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 7.9,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep02_flow_01_blackwell_wafer_matrix.mp4": {
+    "mtime": 1794079732.13,
+    "md5": "b38d7693",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep03_flow_01_alphafold_protein_cosmos.mp4": {
+    "mtime": 1794079732.82,
+    "md5": "16da19ff",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep04_flow_01_backprop_synapse_storm.mp4": {
+    "mtime": 1794079733.52,
+    "md5": "07b43b61",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep05_flow_01_jepa_world_model_grid.mp4": {
+    "mtime": 1794079736.34,
+    "md5": "a5f325c3",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep06_flow_01_ssi_obsidian_monolith.mp4": {
+    "mtime": 1794079737.04,
+    "md5": "8b4f65ae",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep07_flow_01_constitutional_prism.mp4": {
+    "mtime": 1794079737.75,
+    "md5": "6ace30ca",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep08_flow_01_spatial_intelligence_dome.mp4": {
+    "mtime": 1794079738.44,
+    "md5": "0c48d733",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep09_flow_01_attention_vector_threads.mp4": {
+    "mtime": 1794079739.17,
+    "md5": "df4858a4",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/ep10_flow_01_global_neural_classroom.mp4": {
+    "mtime": 1794079739.85,
+    "md5": "0fc66f56",
+    "w": 1280,
+    "h": 720,
+    "dur": 5.0,
+    "is_portrait": false,
+    "res_label": "720p 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4": {
+    "mtime": 1794189518.0,
+    "md5": "84900c65",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4": {
+    "mtime": 1794189351.81,
+    "md5": "3c03cd34",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4": {
+    "mtime": 1794189354.97,
+    "md5": "b85b4381",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4": {
+    "mtime": 1794189353.05,
+    "md5": "82953537",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4": {
+    "mtime": 1794189374.02,
+    "md5": "07072074",
+    "w": 3840,
+    "h": 2160,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4": {
+    "mtime": 1794189373.67,
+    "md5": "67ceac55",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4": {
+    "mtime": 1794189371.46,
+    "md5": "4be3cf01",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4": {
+    "mtime": 1794189374.21,
+    "md5": "5306a596",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_5s.mp4": {
+    "mtime": 1794189501.56,
+    "md5": "5be06927",
+    "w": 3840,
+    "h": 2160,
+    "dur": 5.1,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "5s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4": {
+    "mtime": 1794189545.73,
+    "md5": "c91a6a25",
+    "w": 3840,
+    "h": 2160,
+    "dur": 7.1,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "7s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_02_Boardroom_Void_14s.mp4": {
+    "mtime": 1794193019.62,
+    "md5": "fa02c1cc",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4": {
+    "mtime": 1794193021.29,
+    "md5": "fa24960f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4": {
+    "mtime": 1794193023.35,
+    "md5": "86f24dc6",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4": {
+    "mtime": 1794192001.84,
+    "md5": "d54546cd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4": {
+    "mtime": 1794191219.16,
+    "md5": "ca6a3c61",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4": {
+    "mtime": 1794191220.91,
+    "md5": "7e8e3cc5",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4": {
+    "mtime": 1794191222.64,
+    "md5": "7bf07dcb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4": {
+    "mtime": 1794191224.61,
+    "md5": "4aeefce9",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4": {
+    "mtime": 1794191228.34,
+    "md5": "862b5378",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4": {
+    "mtime": 1794191230.29,
+    "md5": "7ac7db04",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4": {
+    "mtime": 1794191232.24,
+    "md5": "9efccc6b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4": {
+    "mtime": 1794191233.94,
+    "md5": "d3d6e268",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_214f.mp4": {
+    "mtime": 1794192056.52,
+    "md5": "fb75b01c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.9,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4": {
+    "mtime": 1794191303.95,
+    "md5": "a18286f7",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.1,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4": {
+    "mtime": 1794191388.29,
+    "md5": "ff1e9c5c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 22.9,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "23s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4": {
+    "mtime": 1794185627.97,
+    "md5": "f4b67073",
+    "w": 3840,
+    "h": 2160,
+    "dur": 11.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "11s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4": {
+    "mtime": 1794185632.62,
+    "md5": "3080b828",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4": {
+    "mtime": 1794185636.99,
+    "md5": "2909f038",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_08_Hardware_15s.mp4": {
+    "mtime": 1794185642.51,
+    "md5": "1e5de4b7",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_09_Architecture_15s.mp4": {
+    "mtime": 1794185648.09,
+    "md5": "79a0e127",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4": {
+    "mtime": 1794185652.66,
+    "md5": "5b8b2d93",
+    "w": 3840,
+    "h": 2160,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_13_Garage_14s.mp4": {
+    "mtime": 1794185657.85,
+    "md5": "2d59c01c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4": {
+    "mtime": 1794185663.31,
+    "md5": "583c9f5d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4": {
+    "mtime": 1794185667.0,
+    "md5": "7ef17ea6",
+    "w": 3840,
+    "h": 2160,
+    "dur": 8.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "8s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4": {
+    "mtime": 1794185671.21,
+    "md5": "4642758b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 17.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "17s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4": {
+    "mtime": 1794242562.79,
+    "md5": "3f3e8d8e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4": {
+    "mtime": 1794242568.07,
+    "md5": "1fe5262b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.2,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B4_CLOSER_DeepSpace_154f.mp4": {
+    "mtime": 1794242571.35,
+    "md5": "5e3c1d62",
+    "w": 3840,
+    "h": 2160,
+    "dur": 6.4,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B4_FINALE_DeepSpace_147f.mp4": {
+    "mtime": 1794241572.09,
+    "md5": "63cdf72b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 6.1,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4": {
+    "mtime": 1794186246.41,
+    "md5": "2dc32206",
+    "w": 3840,
+    "h": 2160,
+    "dur": 14.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "14s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Boardroom_15s.mp4": {
+    "mtime": 1794187169.39,
+    "md5": "796dedc0",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4": {
+    "mtime": 1794186252.26,
+    "md5": "d756770e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4": {
+    "mtime": 1794186258.06,
+    "md5": "128a84ef",
+    "w": 3840,
+    "h": 2160,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_04_Smartphone_Loopt_16s.mp4": {
+    "mtime": 1794186263.93,
+    "md5": "5a1807c1",
+    "w": 3840,
+    "h": 2160,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_05_Founder_Data_15s.mp4": {
+    "mtime": 1794186269.51,
+    "md5": "583c9f5d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 15.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "15s"
+  },
+  "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_06_Cosmic_Dyson_12s.mp4": {
+    "mtime": 1794186274.83,
+    "md5": "af593f76",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_01_Extension_Of_Thought.mp4": {
+    "mtime": 1794186704.95,
+    "md5": "1f7ece25",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_01_Extension_Of_Thought.png": {
+    "mtime": 1794184942.27,
+    "md5": "89c1e0eb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_02_Indifference_To_Authority.mp4": {
+    "mtime": 1794186707.72,
+    "md5": "5ab93cfc",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_02_Indifference_To_Authority.png": {
+    "mtime": 1794184942.34,
+    "md5": "1f6d61f5",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_03_Autonomy_Equation.mp4": {
+    "mtime": 1794186710.29,
+    "md5": "2fc76b21",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_03_Autonomy_Equation.png": {
+    "mtime": 1794184942.4,
+    "md5": "7513dc81",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_04_Linear_Vs_Exponential.mp4": {
+    "mtime": 1794186713.01,
+    "md5": "a6dbf34b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_04_Linear_Vs_Exponential.png": {
+    "mtime": 1794184942.47,
+    "md5": "db20e399",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_05_Psychological_Friction.mp4": {
+    "mtime": 1794186715.84,
+    "md5": "a4354b17",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_05_Psychological_Friction.png": {
+    "mtime": 1794184942.53,
+    "md5": "d17815ec",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_06_Risk_Of_Standing_Still.mp4": {
+    "mtime": 1794190967.08,
+    "md5": "83090f5f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_07_Linear_Blind_Spot.mp4": {
+    "mtime": 1794190977.91,
+    "md5": "50a5e02f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_08_Scaling_Hypothesis.mp4": {
+    "mtime": 1794190988.96,
+    "md5": "9d7a9898",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_09_Compute_Equation.mp4": {
+    "mtime": 1794190999.75,
+    "md5": "2d801f74",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_10_Exponential_Adoption.mp4": {
+    "mtime": 1794192960.15,
+    "md5": "d66c6751",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_11_Citadel_Paradox.mp4": {
+    "mtime": 1794192973.18,
+    "md5": "9f4f0082",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_12_Loyalty_Axiom.mp4": {
+    "mtime": 1794192985.59,
+    "md5": "0c892762",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_13_Paradigm_Of_Power.mp4": {
+    "mtime": 1794192999.17,
+    "md5": "4d875c4e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_14_Physicality_Of_Compute.mp4": {
+    "mtime": 1794241414.62,
+    "md5": "b9baabe4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_15_Seven_Trillion_Equation.mp4": {
+    "mtime": 1794241427.36,
+    "md5": "2ccba198",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_16_Builders_Code_Three_Rules.mp4": {
+    "mtime": 1794241439.79,
+    "md5": "1097541f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_CARD_17_Plastic_Reality_Finale.mp4": {
+    "mtime": 1794241452.89,
+    "md5": "ba91e1c4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png": {
+    "mtime": 1794077734.87,
+    "md5": "9b7f88df",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_YC_2005_Program_10s.mp4": {
+    "mtime": 1794186350.99,
+    "md5": "dc7e0784",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png": {
+    "mtime": 1794077736.22,
+    "md5": "9860bad2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_OpenAI_Introducing_12s.mp4": {
+    "mtime": 1794191240.71,
+    "md5": "db17c106",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png": {
+    "mtime": 1794077737.52,
+    "md5": "c946902e",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_Board_Ouster_10s.mp4": {
+    "mtime": 1794193009.86,
+    "md5": "8759c07f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png": {
+    "mtime": 1794077738.9,
+    "md5": "11b83ebb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4": {
+    "mtime": 1794193011.15,
+    "md5": "eb6c4319",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png": {
+    "mtime": 1794077740.23,
+    "md5": "3bed5c1c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_Employees_Letter_12s.mp4": {
+    "mtime": 1794193012.66,
+    "md5": "423883fb",
+    "w": 3840,
+    "h": 2160,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_06_ACT4_Stargate_100B_Supercluster.png": {
+    "mtime": 1794241486.6,
+    "md5": "09db5455",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_06_Stargate_100B_Report_10s.mp4": {
+    "mtime": 1794241488.46,
+    "md5": "5b46aead",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_07_7_Trillion_Chip_Network_10s.mp4": {
+    "mtime": 1794241490.46,
+    "md5": "d2f23538",
+    "w": 3840,
+    "h": 2160,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "4K 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_07_ACT4_Seven_Trillion_Chip_Network.png": {
+    "mtime": 1794241488.63,
+    "md5": "efa15735",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png": {
+    "mtime": 1794077741.56,
+    "md5": "743a944c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP03_DOC_01_ACT3_AlphaGo_Move37_Nature_2016.png": {
+    "mtime": 1794077742.93,
+    "md5": "76b47954",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png": {
+    "mtime": 1794077744.33,
+    "md5": "96f8946c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP05_DOC_01_ACT2_LeCun_LeNet5_IEEE_1998.png": {
+    "mtime": 1794077745.72,
+    "md5": "d0e3321a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png": {
+    "mtime": 1794077747.05,
+    "md5": "65824097",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP07_DOC_01_ACT3_Amodei_Constitutional_AI_2022.png": {
+    "mtime": 1794077748.36,
+    "md5": "ab6a395c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png": {
+    "mtime": 1794077749.67,
+    "md5": "8fecd92d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png": {
+    "mtime": 1794077751.01,
+    "md5": "768d6849",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png": {
+    "mtime": 1794077752.37,
+    "md5": "8eec3c60",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_01_Extension_Of_Thought_Macintosh.png": {
+    "mtime": 1794250699.84,
+    "md5": "e399d3bf",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_02_Psychological_Friction_Loopt.png": {
+    "mtime": 1794250699.91,
+    "md5": "2b1aa742",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_03_Exponential_Risk_Manifesto.png": {
+    "mtime": 1794250699.98,
+    "md5": "b2ce462c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_04_Compute_Equations_Microsoft.png": {
+    "mtime": 1794250700.04,
+    "md5": "a4665f2f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_05_Guest_Badge_Nov2023.png": {
+    "mtime": 1794250700.1,
+    "md5": "8fee0e55",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_06_730_Employees_Ultimatum.png": {
+    "mtime": 1794250700.17,
+    "md5": "3e69e332",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_07_Three_Rules_Exponential_Life.png": {
+    "mtime": 1794250700.23,
+    "md5": "82fedcf1",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_08_Plastic_Reality_Finale.png": {
+    "mtime": 1794250700.3,
+    "md5": "a845b59d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  }
+}

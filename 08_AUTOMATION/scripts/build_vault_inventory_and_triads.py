@@ -27,7 +27,7 @@ from triads_data.ep04_to_10_triads import EP04_TO_10_TRIADS
 from triads_data.media_cross_curator import (
     curate_cross_assets_for_inventory,
     get_display_title_override,
-    is_off_topic,
+    is_hidden_non_project,
     link_cross_candidates_to_triads,
 )
 from build_50_scenes_data_part1 import SCENES_PART1
@@ -106,8 +106,8 @@ def classify_media_category(rel_lower, is_video):
             return "flow_b2", "🧱 Блок 2 Master"
         if "v1_block3_master" in rel_lower:
             return "flow_b3", "🧱 Блок 3 Master"
-        if "flow_previs_animatics" in rel_lower:
-            return "previs", "🎞️ Превіз Аніматики"
+        if "flow_previs_animatics" in rel_lower or re.search(r"flow_renders/ep(0[2-9]|10)_flow_01_", rel_lower):
+            return "previs", "📐 Превіз-макет (Схема)"
         if "flow_renders" in rel_lower or "flow_videos" in rel_lower:
             return "flow", "🚀 Google Flow / Veo"
         if "user_ai_generations" in rel_lower:
@@ -223,8 +223,92 @@ def make_thumbnail(src_path, ep, is_video):
             return ""
 
 
+TECH_CACHE_PATH = os.path.join(os.path.dirname(__file__), "media_tech_cache.json")
+
+
+def load_tech_cache():
+    if os.path.exists(TECH_CACHE_PATH):
+        try:
+            return json.load(open(TECH_CACHE_PATH, encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def save_tech_cache(cache):
+    try:
+        json.dump(cache, open(TECH_CACHE_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+
+def probe_media_tech(fp, rel, is_vid, cache):
+    mtime = round(os.path.getmtime(fp), 2)
+    rec = cache.get(rel)
+    if rec and rec.get("mtime") == mtime and rec.get("w") is not None:
+        return rec
+
+    with open(fp, "rb") as fh:
+        md5 = hashlib.md5(fh.read()).hexdigest()[:8]
+    w, h, dur = 0, 0, 0.0
+    if is_vid:
+        res = subprocess.run([FFMPEG, "-i", fp], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        m_dur = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", res.stderr)
+        if m_dur:
+            dur = int(m_dur.group(1)) * 3600 + int(m_dur.group(2)) * 60 + float(m_dur.group(3))
+        m_dim = re.search(r"Video:.*?,\s*(\d{3,4})x(\d{3,4})", res.stderr)
+        if m_dim:
+            w, h = int(m_dim.group(1)), int(m_dim.group(2))
+    else:
+        try:
+            with Image.open(fp) as im:
+                im = ImageOps.exif_transpose(im)
+                w, h = im.size
+        except Exception:
+            pass
+
+    is_portrait = bool(h > w and w > 0)
+    if is_vid:
+        if is_portrait:
+            res_label = f"📱 9:16 ({w}×{h})"
+        elif w >= 3800:
+            res_label = "4K 16:9"
+        elif w >= 1900:
+            res_label = "1080p 16:9"
+        elif w >= 1200:
+            res_label = "720p 16:9"
+        else:
+            res_label = f"{w}×{h}" if w else "MP4"
+        dur_label = f"{int(round(dur))}s" if dur >= 1 else ""
+    else:
+        if w >= 3800:
+            res_label = "🖼️ 4K"
+        elif w >= 1900:
+            res_label = "🖼️ 2K"
+        elif w:
+            res_label = f"🖼️ {w}×{h}"
+        else:
+            res_label = "🖼️ IMG"
+        dur_label = ""
+
+    rec = {
+        "mtime": mtime,
+        "md5": md5,
+        "w": w,
+        "h": h,
+        "dur": round(dur, 1),
+        "is_portrait": is_portrait,
+        "res_label": res_label,
+        "dur_label": dur_label,
+    }
+    cache[rel] = rec
+    return rec
+
+
 def build_vault_inventory():
     inventory = {}
+    hidden_non_project = []
+    tech_cache = load_tech_cache()
     for ep, name_ua, name_en, _, primary_dir, vo_dir in EP_META:
         inventory[ep] = {
             "ep": ep,
@@ -272,17 +356,26 @@ def build_vault_inventory():
 
                 sz = os.path.getsize(fp)
                 sz_mb = round(sz / (1024.0 * 1024.0), 2)
+
+                if (is_vid or is_img) and is_hidden_non_project(rel):
+                    hidden_non_project.append({
+                        "file": f,
+                        "rel_path": rel,
+                        "media_type": "video" if is_vid else "image",
+                        "size_mb": sz_mb,
+                    })
+                    continue
+
                 st = inventory[ep]["summary"]
                 st["total_mb"] = round(st["total_mb"] + sz_mb, 2)
 
                 if is_vid or is_img:
                     cat, cat_label = classify_media_category(rel_lower, is_vid)
-                    if is_off_topic(rel):
-                        cat, cat_label = "off_topic", "🗄️ Позапроєктний архів"
                     thumb = make_thumbnail(fp, ep, is_vid)
                     if thumb:
                         total_thumbs += 1
                     web_prev = find_existing_web_preview(f.lower())
+                    tech = probe_media_tech(fp, rel, is_vid, tech_cache)
                     entry = {
                         "file": f,
                         "display_name": get_display_title_override(rel, clean_display_name(f)),
@@ -294,6 +387,11 @@ def build_vault_inventory():
                         "cat_label": cat_label,
                         "size_mb": sz_mb,
                         "ext": ext.lstrip(".").upper(),
+                        "md5": tech["md5"],
+                        "res_label": tech["res_label"],
+                        "dur_label": tech["dur_label"],
+                        "is_portrait": tech["is_portrait"],
+                        "is_dup_md5": False,
                         "is_cross": False,
                         "source_ep": ep,
                         "source_label": f"⭐ Власний асет EP{ep}",
@@ -326,7 +424,33 @@ def build_vault_inventory():
                         "ext": ext.lstrip(".").upper(),
                     })
 
-    # Cross-curate visually verified reusable assets across ALL 10 heroes (resource efficiency!)
+    save_tech_cache(tech_cache)
+
+    # Mark byte-identical MD5 duplicates inside each hero's native vault (keep canonical primary first)
+    def folder_priority(entry):
+        rl = entry["rel_path"].lower()
+        if "images_vault" in rl or "v1_gapless_master" in rl or "01_primary_keyframes" in rl:
+            return 0
+        if "user_ai_generations/" in rl or "flow_renders/v1_" in rl:
+            return 1
+        if "ep02_demis_hassabis" in rl and not re.search(r"[^\x20-\x7e]", entry["file"]):
+            return 1
+        return 2
+
+    for ep in inventory:
+        for arr_key in ("videos", "images"):
+            arr = inventory[ep][arr_key]
+            arr.sort(key=lambda x: (folder_priority(x), x["cat"], x["file"].lower()))
+            seen_m = {}
+            for it in arr:
+                m = it.get("md5", "")
+                if m and m in seen_m:
+                    it["is_dup_md5"] = True
+                    it["dup_of"] = seen_m[m]
+                elif m:
+                    seen_m[m] = it["file"]
+
+    # Cross-curate visually verified abstract & clean assets across ALL 10 heroes (0 duplicates!)
     native_snapshot = {
         ep: {"videos": list(inventory[ep]["videos"]), "images": list(inventory[ep]["images"])}
         for ep in inventory
@@ -340,16 +464,18 @@ def build_vault_inventory():
         cross_v = cross_by_ep[ep]["videos"]
         cross_i = cross_by_ep[ep]["images"]
 
-        native_v.sort(key=lambda x: (x["cat"], x["file"].lower()))
-        native_i.sort(key=lambda x: (x["cat"], x["file"].lower()))
-        cross_v.sort(key=lambda x: (x.get("source_ep", ""), x["cat"], x["file"].lower()))
-        cross_i.sort(key=lambda x: (x.get("source_ep", ""), x["cat"], x["file"].lower()))
+        native_v.sort(key=lambda x: (1 if x.get("is_dup_md5") else 0, 1 if x.get("cat") == "previs" else 0, x["cat"], x["file"].lower()))
+        native_i.sort(key=lambda x: (1 if x.get("is_dup_md5") else 0, x["cat"], x["file"].lower()))
+        cross_v.sort(key=lambda x: (1 if x.get("is_portrait") else 0, x.get("source_ep", ""), x["file"].lower()))
+        cross_i.sort(key=lambda x: (x.get("source_ep", ""), x["file"].lower()))
 
         st["native_videos_count"] = len(native_v)
+        st["native_videos_unique"] = sum(1 for x in native_v if not x.get("is_dup_md5"))
         st["cross_videos_count"] = len(cross_v)
         st["videos_count"] = len(native_v) + len(cross_v)
 
         st["native_images_count"] = len(native_i)
+        st["native_images_unique"] = sum(1 for x in native_i if not x.get("is_dup_md5"))
         st["cross_images_count"] = len(cross_i)
         st["images_count"] = len(native_i) + len(cross_i)
 
@@ -357,7 +483,12 @@ def build_vault_inventory():
         inventory[ep]["images"] = native_i + cross_i
         inventory[ep]["audio"].sort(key=lambda x: (x["cat"], x["file"].lower()))
 
-    print(f"[VAULT] Inventory built. Verified/generated {total_thumbs} thumbnails. Applied {matched_rules} cross-hero visual links.")
+    inventory["_meta"] = {
+        "hidden_non_project": hidden_non_project,
+        "hidden_videos_count": sum(1 for x in hidden_non_project if x["media_type"] == "video"),
+        "hidden_images_count": sum(1 for x in hidden_non_project if x["media_type"] == "image"),
+    }
+    print(f"[VAULT] Inventory built. Verified {total_thumbs} thumbs. Excluded {len(hidden_non_project)} non-project/test files. Applied {matched_rules} clean cross-hero links.")
     return inventory
 
 

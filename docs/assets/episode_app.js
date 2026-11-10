@@ -14,9 +14,12 @@
     activeTab: "sop",
     mediaSubTab: "videos",
     vaultVidOrigin: "all",
+    vaultVidUniqueOnly: false,
+    vaultVidOnly169: false,
     vaultVidCat: "all",
     vaultVidSearch: "",
     vaultImgOrigin: "all",
+    vaultImgUniqueOnly: false,
     vaultImgCat: "all",
     vaultImgSearch: "",
     triadFilter: "all",
@@ -1881,6 +1884,8 @@
     }
     var nativeCnt = videos.filter(function (v) { return !v.is_cross; }).length;
     var crossCnt = videos.filter(function (v) { return !!v.is_cross; }).length;
+    var dupCnt = videos.filter(function (v) { return !!v.is_dup_md5; }).length;
+    var portraitCnt = videos.filter(function (v) { return !!v.is_portrait; }).length;
     var catCounts = {};
     var catLabels = {};
     videos.forEach(function (v) {
@@ -1890,8 +1895,14 @@
     var originPillsHtml = [
       "<button class=\"filter-pill" + (state.vaultVidOrigin === "all" ? " active" : "") + "\" data-vvid-origin=\"all\">📦 Усі (" + videos.length + ")</button>",
       "<button class=\"filter-pill" + (state.vaultVidOrigin === "native" ? " active" : "") + "\" data-vvid-origin=\"native\">⭐ Власні героя (" + nativeCnt + ")</button>",
-      "<button class=\"filter-pill" + (state.vaultVidOrigin === "cross" ? " active" : "") + "\" data-vvid-origin=\"cross\">♻️ З Медіатеки 234/293 (" + crossCnt + ")</button>"
+      "<button class=\"filter-pill" + (state.vaultVidOrigin === "cross" ? " active" : "") + "\" data-vvid-origin=\"cross\">🌌 Абстрактні & Спільні (" + crossCnt + ")</button>"
     ];
+    if (dupCnt > 0) {
+      originPillsHtml.push("<button class=\"filter-pill" + (state.vaultVidUniqueOnly ? " active" : "") + "\" id=\"btnToggleVidUnique\">✨ Без копій MD5 (" + (videos.length - dupCnt) + ")</button>");
+    }
+    if (portraitCnt > 0) {
+      originPillsHtml.push("<button class=\"filter-pill" + (state.vaultVidOnly169 ? " active" : "") + "\" id=\"btnToggleVid169\">🖥️ Тільки 16:9 (" + (videos.length - portraitCnt) + ")</button>");
+    }
     var pillsHtml = ["<button class=\"filter-pill" + (state.vaultVidCat === "all" ? " active" : "") + "\" data-vvid-cat=\"all\">Усі категорії (" + videos.length + ")</button>"];
     Object.keys(catCounts).sort().forEach(function (cat) {
       pillsHtml.push("<button class=\"filter-pill" + (state.vaultVidCat === cat ? " active" : "") + "\" data-vvid-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
@@ -1901,8 +1912,10 @@
     var filtered = videos.filter(function (v) {
       if (state.vaultVidOrigin === "native" && v.is_cross) return false;
       if (state.vaultVidOrigin === "cross" && !v.is_cross) return false;
+      if (state.vaultVidUniqueOnly && v.is_dup_md5) return false;
+      if (state.vaultVidOnly169 && v.is_portrait) return false;
       if (state.vaultVidCat !== "all" && v.cat !== state.vaultVidCat) return false;
-      if (q && (v.file + " " + v.display_name + " " + v.rel_path + " " + v.cat_label + " " + (v.match_reason || "") + " " + (v.source_label || "") + " " + (v.suggested_scenes || []).join(" ")).toLowerCase().indexOf(q) === -1) return false;
+      if (q && (v.file + " " + v.display_name + " " + v.rel_path + " " + v.cat_label + " " + (v.res_label || "") + " " + (v.match_reason || "") + " " + (v.source_label || "") + " " + (v.suggested_scenes || []).join(" ")).toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
 
@@ -1914,8 +1927,15 @@
         return "<span class=\"vault-scene-tag\">#" + esc(sc) + "</span>";
       }).join("");
       var originBadgeHtml = v.is_cross
-        ? "<span class=\"vault-origin-badge is-cross\">" + esc(v.source_label || "♻️ Зі спільної медіатеки") + "</span>"
+        ? "<span class=\"vault-origin-badge is-cross\">" + esc(v.source_label || "🌌 Універсальний B-Roll") + "</span>"
         : "<span class=\"vault-origin-badge is-native\">⭐ Власний EP" + esc(epData.ep) + "</span>";
+      var dupBadgeHtml = v.is_dup_md5
+        ? "<span class=\"vault-origin-badge is-dup\" title=\"Побайтова копія файлу: " + esc(v.dup_of || "") + "\">👯 Копія MD5</span>"
+        : "";
+      var portBadgeHtml = v.is_portrait
+        ? "<span class=\"vault-origin-badge is-portrait\">📱 9:16 Портрет</span>"
+        : "";
+      var fmtTag = [v.res_label, v.dur_label, v.size_mb ? (v.size_mb + " MB") : ""].filter(Boolean).join(" • ");
       var rationaleHtml = v.match_reason
         ? "<div class=\"vault-rationale\"><b>🎯 Сценарій:</b> " + esc(v.match_reason) + (scenesHtml ? (" <span>(" + scenesHtml + ")</span>") : "") + "</div>"
         : "";
@@ -1924,10 +1944,10 @@
         "  <div class=\"vault-thumb-box\" data-inline-play-vid=\"" + esc(playSrc) + "\" title=\"Клікніть, щоб програти відео прямо тут\">",
         thumbSrc ? ("    <img src=\"" + esc(thumbSrc) + "\" alt=\"" + esc(v.display_name) + "\" loading=\"lazy\">") : "    <div style=\"display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);\">🎥 " + esc(v.ext) + "</div>",
         "    <span class=\"vault-tag-tl\">" + esc(v.cat_label) + "</span>",
-        "    <span class=\"vault-tag-br\">" + esc(v.ext) + " • " + esc(v.size_mb) + " MB</span>",
+        "    <span class=\"vault-tag-br\">" + esc(fmtTag || (v.ext + " • " + v.size_mb + " MB")) + "</span>",
         "    <div class=\"vault-play-badge\">▶</div>",
         "  </div>",
-        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;\">" + originBadgeHtml + "</div>",
+        "  <div style=\"display:flex;align-items:center;gap:5px;flex-wrap:wrap;\">" + originBadgeHtml + portBadgeHtml + dupBadgeHtml + "</div>",
         "  <div class=\"vault-title\">" + esc(v.display_name) + "</div>",
         rationaleHtml,
         "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(v.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(v.file) + "</div>",
@@ -1945,15 +1965,15 @@
       "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🎥 Відеофайли — EP" + esc(epData.ep) + " (" + videos.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " підібраних)</div>",
-      "      <div class=\"panel-desc\">Клік по прев'ю миттєво запускає HTML5-плеєр. Рекомендації <b>♻️ З Медіатеки</b> дозволяють повторно використати готові рендери без витрат Flow.</div>",
+      "      <div class=\"panel-title\">🎥 Відеофайли — EP" + esc(epData.ep) + " (" + videos.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " універсальних B-Roll)</div>",
+      "      <div class=\"panel-desc\">Клік по прев'ю миттєво запускає HTML5-плеєр. У <b>🌌 Абстрактні & Спільні</b> зібрані лише перевірені безіменні кадри без чужих облич, аніме й тексту інших героїв.</div>",
       "    </div>",
       "    <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(vaultEp.primary_footage_dir) + "\">📁 Папка у Finder</button>",
       "  </div>",
       "  <div class=\"vault-origin-bar\">" + originPillsHtml.join("") + "</div>",
       "  <div class=\"filter-toolbar\">",
       "    <div class=\"filter-pills\">" + pillsHtml.join("") + "</div>",
-      "    <input type=\"search\" id=\"vaultVidSearchInput\" class=\"search-input\" placeholder=\"Пошук відео або теми сцени...\" value=\"" + esc(state.vaultVidSearch) + "\">",
+      "    <input type=\"search\" id=\"vaultVidSearchInput\" class=\"search-input\" placeholder=\"Пошук відео, 4K або теми сцени...\" value=\"" + esc(state.vaultVidSearch) + "\">",
       "  </div>",
       "  <div class=\"vault-grid\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Немає відео за цим фільтром.</div>") + "</div>",
       "</div>"
@@ -1967,6 +1987,7 @@
     }
     var nativeCnt = images.filter(function (im) { return !im.is_cross; }).length;
     var crossCnt = images.filter(function (im) { return !!im.is_cross; }).length;
+    var dupCnt = images.filter(function (im) { return !!im.is_dup_md5; }).length;
     var catCounts = {};
     var catLabels = {};
     images.forEach(function (im) {
@@ -1976,8 +1997,11 @@
     var originPillsHtml = [
       "<button class=\"filter-pill" + (state.vaultImgOrigin === "all" ? " active" : "") + "\" data-vimg-origin=\"all\">📦 Усі (" + images.length + ")</button>",
       "<button class=\"filter-pill" + (state.vaultImgOrigin === "native" ? " active" : "") + "\" data-vimg-origin=\"native\">⭐ Власні героя (" + nativeCnt + ")</button>",
-      "<button class=\"filter-pill" + (state.vaultImgOrigin === "cross" ? " active" : "") + "\" data-vimg-origin=\"cross\">♻️ З Медіатеки 234/293 (" + crossCnt + ")</button>"
+      "<button class=\"filter-pill" + (state.vaultImgOrigin === "cross" ? " active" : "") + "\" data-vimg-origin=\"cross\">🌌 Абстрактні & Спільні (" + crossCnt + ")</button>"
     ];
+    if (dupCnt > 0) {
+      originPillsHtml.push("<button class=\"filter-pill" + (state.vaultImgUniqueOnly ? " active" : "") + "\" id=\"btnToggleImgUnique\">✨ Без копій MD5 (" + (images.length - dupCnt) + ")</button>");
+    }
     var pillsHtml = ["<button class=\"filter-pill" + (state.vaultImgCat === "all" ? " active" : "") + "\" data-vimg-cat=\"all\">Усі категорії (" + images.length + ")</button>"];
     Object.keys(catCounts).sort().forEach(function (cat) {
       pillsHtml.push("<button class=\"filter-pill" + (state.vaultImgCat === cat ? " active" : "") + "\" data-vimg-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
@@ -1987,6 +2011,7 @@
     var filtered = images.filter(function (im) {
       if (state.vaultImgOrigin === "native" && im.is_cross) return false;
       if (state.vaultImgOrigin === "cross" && !im.is_cross) return false;
+      if (state.vaultImgUniqueOnly && im.is_dup_md5) return false;
       if (state.vaultImgCat !== "all" && im.cat !== state.vaultImgCat) return false;
       if (q && (im.file + " " + im.display_name + " " + im.rel_path + " " + im.cat_label + " " + (im.match_reason || "") + " " + (im.source_label || "") + " " + (im.suggested_scenes || []).join(" ")).toLowerCase().indexOf(q) === -1) return false;
       return true;
@@ -1999,8 +2024,12 @@
         return "<span class=\"vault-scene-tag\">#" + esc(sc) + "</span>";
       }).join("");
       var originBadgeHtml = im.is_cross
-        ? "<span class=\"vault-origin-badge is-cross\">" + esc(im.source_label || "♻️ Зі спільної медіатеки") + "</span>"
+        ? "<span class=\"vault-origin-badge is-cross\">" + esc(im.source_label || "🌌 Універсальний B-Roll") + "</span>"
         : "<span class=\"vault-origin-badge is-native\">⭐ Власний EP" + esc(epData.ep) + "</span>";
+      var dupBadgeHtml = im.is_dup_md5
+        ? "<span class=\"vault-origin-badge is-dup\" title=\"Побайтова копія файлу: " + esc(im.dup_of || "") + "\">👯 Копія MD5</span>"
+        : "";
+      var fmtTag = [im.res_label, im.ext, im.size_mb ? (im.size_mb + " MB") : ""].filter(Boolean).join(" • ");
       var rationaleHtml = im.match_reason
         ? "<div class=\"vault-rationale\"><b>🎯 Сценарій:</b> " + esc(im.match_reason) + (scenesHtml ? (" <span>(" + scenesHtml + ")</span>") : "") + "</div>"
         : "";
@@ -2009,9 +2038,9 @@
         "  <div class=\"vault-thumb-box\"" + (pIdx !== -1 ? (" data-popup-pidx=\"" + pIdx + "\"") : (" data-reveal-finder=\"" + esc(im.rel_path) + "\"")) + " title=\"Клікніть, щоб відкрити у великому вікні\">",
         "    <img src=\"" + esc(imgSrc) + "\" alt=\"" + esc(im.display_name) + "\" loading=\"lazy\">",
         "    <span class=\"vault-tag-tl\">" + esc(im.cat_label) + "</span>",
-        "    <span class=\"vault-tag-br\">" + esc(im.ext) + " • " + esc(im.size_mb) + " MB</span>",
+        "    <span class=\"vault-tag-br\">" + esc(fmtTag || (im.ext + " • " + im.size_mb + " MB")) + "</span>",
         "  </div>",
-        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;\">" + originBadgeHtml + "</div>",
+        "  <div style=\"display:flex;align-items:center;gap:5px;flex-wrap:wrap;\">" + originBadgeHtml + dupBadgeHtml + "</div>",
         "  <div class=\"vault-title\">" + esc(im.display_name) + "</div>",
         rationaleHtml,
         "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(im.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(im.file) + "</div>",
@@ -2029,8 +2058,8 @@
       "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🖼️ Галерея Кадрів & Досьє — EP" + esc(epData.ep) + " (" + images.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " підібраних)</div>",
-      "      <div class=\"panel-desc\">2K концепт-кадри для старту Flow, архівні фото, формули й 4K плашки. Відфільтровано за категоріями та джерелом.</div>",
+      "      <div class=\"panel-title\">🖼️ Галерея Кадрів & Досьє — EP" + esc(epData.ep) + " (" + images.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " універсальних)</div>",
+      "      <div class=\"panel-desc\">2K концепт-кадри для старту Flow, архівні фото, формули й 4K плашки. Повністю очищено від дублів та сторонніх файлів.</div>",
       "    </div>",
       "  </div>",
       "  <div class=\"vault-origin-bar\">" + originPillsHtml.join("") + "</div>",
@@ -2096,11 +2125,12 @@
         cands.slice(0, 6).map(function (c) {
           var cpIdx = findPlaylistIdxByFileOrPath(playlist, c.file, c.rel_path);
           var cThumb = c.thumb ? ("../" + c.thumb) : "";
+          var cMeta = [c.res_label, c.dur_label].filter(Boolean).join(" · ");
           return [
             "<div class=\"triad-cross-item\">",
             (cThumb ? ("<img src=\"" + esc(cThumb) + "\" alt=\"" + esc(c.display_name) + "\" loading=\"lazy\">") : ""),
             "<div style=\"min-width:0;flex:1;\">",
-            "  <div style=\"font-size:11px;font-weight:700;color:var(--text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;\">" + (c.media_type === "video" ? "🎥 " : "🖼️ ") + esc(c.display_name) + "</div>",
+            "  <div style=\"display:flex;align-items:center;gap:4px;\"><span style=\"font-size:11px;font-weight:700;color:var(--text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;\">" + (c.media_type === "video" ? "🎥 " : "🖼️ ") + esc(c.display_name) + "</span>" + (cMeta ? ("<span class=\"vault-fmt-pill\">" + esc(cMeta) + "</span>") : "") + "</div>",
             "  <div style=\"font-size:10px;color:#94a3b8;line-height:1.3;\">" + esc(c.source_label) + " — " + esc(c.match_reason) + "</div>",
             "  <div style=\"display:flex;gap:4px;margin-top:4px;flex-wrap:wrap;\">",
             (cpIdx !== -1 ? ("<button class=\"btn btn-amber\" style=\"padding:1px 6px;font-size:10px;\" data-play-pidx=\"" + cpIdx + "\">▶️</button><button class=\"btn btn-cyan\" style=\"padding:1px 6px;font-size:10px;\" data-popup-pidx=\"" + cpIdx + "\">🔍</button>") : ""),
@@ -3460,6 +3490,20 @@
           refreshSubPaneOnly("videos", null);
         });
       });
+      var btnToggleVidUnique = scopeEl.querySelector("#btnToggleVidUnique");
+      if (btnToggleVidUnique) {
+        btnToggleVidUnique.addEventListener("click", function () {
+          state.vaultVidUniqueOnly = !state.vaultVidUniqueOnly;
+          refreshSubPaneOnly("videos", null);
+        });
+      }
+      var btnToggleVid169 = scopeEl.querySelector("#btnToggleVid169");
+      if (btnToggleVid169) {
+        btnToggleVid169.addEventListener("click", function () {
+          state.vaultVidOnly169 = !state.vaultVidOnly169;
+          refreshSubPaneOnly("videos", null);
+        });
+      }
       scopeEl.querySelectorAll("[data-vvid-cat]").forEach(function (pill) {
         pill.addEventListener("click", function () {
           state.vaultVidCat = pill.getAttribute("data-vvid-cat");
@@ -3480,6 +3524,13 @@
           refreshSubPaneOnly("images", null);
         });
       });
+      var btnToggleImgUnique = scopeEl.querySelector("#btnToggleImgUnique");
+      if (btnToggleImgUnique) {
+        btnToggleImgUnique.addEventListener("click", function () {
+          state.vaultImgUniqueOnly = !state.vaultImgUniqueOnly;
+          refreshSubPaneOnly("images", null);
+        });
+      }
       scopeEl.querySelectorAll("[data-vimg-cat]").forEach(function (pill) {
         pill.addEventListener("click", function () {
           state.vaultImgCat = pill.getAttribute("data-vimg-cat");
