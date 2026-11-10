@@ -310,11 +310,133 @@ def probe_media_tech(fp, rel, is_vid, cache):
     return rec
 
 
+EP_RESEARCH_DIRS = {
+    "01": "sam_altman",
+    "02": "jensen_huang",
+    "03": "demis_hassabis",
+    "04": "geoffrey_hinton",
+    "05": "yann_lecun",
+    "06": "ilya_sutskever",
+    "07": "dario_amodei",
+    "08": "fei_fei_li",
+    "09": "yoshua_bengio",
+    "10": "andrew_ng",
+}
+
+
+def collect_research_docs_for_ep(ep, name_ua):
+    import unicodedata as _ud
+    docs = []
+    seen_rel = set()
+    res_folder = EP_RESEARCH_DIRS.get(ep, "")
+    hero_root = os.path.join(ROOT, "01_RESEARCH", res_folder) if res_folder else ""
+
+    def extract_md_meta(fp):
+        title, url, words = "", "", 0
+        try:
+            txt = open(fp, encoding="utf-8", errors="ignore").read()
+            words = len(txt.split())
+            for ln in txt.splitlines()[:30]:
+                s = ln.strip()
+                if not title and s.startswith("# "):
+                    title = s[2:].strip()
+                if not url:
+                    m_u = re.search(r"https?://[^\s)\]>\"']+", s)
+                    if m_u:
+                        url = m_u.group(0).rstrip(".,;:")
+        except Exception:
+            pass
+        return title, url, words
+
+    if hero_root and os.path.exists(hero_root):
+        for r, _, files in os.walk(hero_root):
+            for f in sorted(files):
+                if f.startswith("."):
+                    continue
+                fp = os.path.join(r, f)
+                rel = os.path.relpath(fp, ROOT)
+                rel_lower = rel.lower()
+                ext = os.path.splitext(f)[1].lower()
+                if ext not in (".md", ".txt", ".pdf", ".json"):
+                    continue
+                seen_rel.add(rel)
+                if "/transcripts/" in rel_lower:
+                    cat, cat_lbl = "transcript", "🎙️ Транскрипт"
+                elif "/articles/" in rel_lower:
+                    cat, cat_lbl = "article", "📰 Стаття / arXiv"
+                elif "registry" in rel_lower:
+                    cat, cat_lbl = "registry", "🗂️ Медіа-Реєстр"
+                else:
+                    cat, cat_lbl = "dossier", "🧬 Мастер-Досьє"
+                title, url, words = extract_md_meta(fp) if ext in (".md", ".txt") else ("", "", 0)
+                docs.append({
+                    "file": f,
+                    "title": title or clean_display_name(f),
+                    "rel_path": rel,
+                    "cat": cat,
+                    "cat_label": cat_lbl,
+                    "ext": ext.lstrip(".").upper(),
+                    "word_count": words,
+                    "size_kb": round(os.path.getsize(fp) / 1024.0, 1),
+                    "source_url": url,
+                })
+
+    pdf_dir = os.path.join(ROOT, "01_RESEARCH", "source_pdfs_and_dossiers")
+    if os.path.exists(pdf_dir):
+        surname = _ud.normalize("NFC", name_ua.split()[-1].lower())
+        aliases = [surname]
+        if ep == "03":
+            aliases.append("гассабіс")
+        for f in sorted(os.listdir(pdf_dir)):
+            if f.startswith("."):
+                continue
+            fn_norm = _ud.normalize("NFC", f.lower())
+            matched = False
+            if "епізод " in fn_norm:
+                matched = (f"епізод {ep}" in fn_norm)
+            elif f"ep{ep}" in fn_norm:
+                matched = True
+            else:
+                for al in aliases:
+                    stem = al[:-1] if len(al) > 4 else al
+                    if stem and re.search(rf"(?<![a-zа-яіїєґ0-9]){re.escape(stem)}", fn_norm):
+                        if len(al) <= 3:
+                            matched = bool(re.search(rf"(?<![a-zа-яіїєґ0-9]){re.escape(al)}(?![a-zа-яіїєґ0-9])", fn_norm))
+                        else:
+                            matched = True
+                        if matched:
+                            break
+            if not matched:
+                continue
+            fp = os.path.join(pdf_dir, f)
+            rel = os.path.relpath(fp, ROOT)
+            if rel in seen_rel:
+                continue
+            ext = os.path.splitext(f)[1].lower()
+            title, url, words = extract_md_meta(fp) if ext in (".md", ".txt") else ("", "", 0)
+            docs.append({
+                "file": f,
+                "title": title or clean_display_name(f),
+                "rel_path": rel,
+                "cat": "pdf_md",
+                "cat_label": "📕 PDF/MD Досьє" if ext == ".pdf" else "📘 Джерело MD",
+                "ext": ext.lstrip(".").upper(),
+                "word_count": words,
+                "size_kb": round(os.path.getsize(fp) / 1024.0, 1),
+                "source_url": url,
+            })
+
+    cat_order = {"dossier": 0, "registry": 1, "transcript": 2, "article": 3, "pdf_md": 4}
+    docs.sort(key=lambda d: (cat_order.get(d["cat"], 9), d["file"].lower()))
+    return docs
+
+
 def build_vault_inventory():
     inventory = {}
     hidden_non_project = []
     tech_cache = load_tech_cache()
     for ep, name_ua, name_en, _, primary_dir, vo_dir in EP_META:
+        r_docs = collect_research_docs_for_ep(ep, name_ua)
         inventory[ep] = {
             "ep": ep,
             "name": name_ua,
@@ -324,6 +446,7 @@ def build_vault_inventory():
             "videos": [],
             "images": [],
             "audio": [],
+            "research_docs": r_docs,
             "summary": {
                 "videos_count": 0,
                 "images_count": 0,
@@ -331,6 +454,10 @@ def build_vault_inventory():
                 "vo_count": 0,
                 "suno_count": 0,
                 "other_audio_count": 0,
+                "research_docs_count": len(r_docs),
+                "transcripts_count": sum(1 for d in r_docs if d["cat"] == "transcript"),
+                "articles_count": sum(1 for d in r_docs if d["cat"] == "article"),
+                "research_words": sum(d["word_count"] for d in r_docs),
                 "total_mb": 0.0,
             },
         }
@@ -711,7 +838,18 @@ ASSET_AFFINITY_MAP = {
         "09": ["ep05_flow_01_jepa", "jepa_world_model", "jepa_architecture", "baby_3d"],
         "10": ["davos_2026_embodied", "sailing_badewind", "close_hauled_finale", "lecun_eu_2026"],
     },
-    "06": {"01": ["jerusalem"], "03": ["hinton_door"], "04": ["alexnet"], "10": ["ssi_obsidian"]},
+    "06": {
+        "01": ["gorky_winter_1986", "jerusalem_walls", "jerusalem_axion", "jerusalem_limestone"],
+        "02": ["jerusalem_panorama", "uoft_university_college", "simons_lecture"],
+        "03": ["studying_with_hinton", "room4306_toronto", "uoft_sandford_fleming", "hinton_door"],
+        "04": ["seq2seq_scaling", "seq2seq_vector", "jensen_huang_alexnet", "gtx580_alexnet_die", "alexnet"],
+        "05": ["openai_origins", "openai_pioneer_building", "stanford_quad_2012", "sutskever_googlebrain_2014"],
+        "06": ["detective_novel_metaphor", "compression_learning", "agatha_christie"],
+        "07": ["gpt_emergent_behaviors", "deep_learning_alchemy", "scaling_10x", "scaling_laws_servers", "next_token_dwarkesh"],
+        "08": ["agi_effigy_bonfire", "bonfire_superalignment", "superalignment_safety"],
+        "09": ["sutskever_tau_2023", "end_of_pretraining", "nov2023_rift", "sutskever_regret"],
+        "10": ["ep06_flow_01_ssi_obsidian", "age_of_research_ssi", "ssi_scale_in_peace", "ssi_monolith", "brain_biological_computer", "convocation_hall_2025", "silent_sanctuary"],
+    },
     "07": {"07": ["constitutional_prism"]},
     "08": {"09": ["spatial_intelligence"]},
     "09": {"05": ["attention_vector"]},

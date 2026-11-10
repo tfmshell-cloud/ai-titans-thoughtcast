@@ -8338,5 +8338,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_01_Gorky_Nizhny_Novgorod_Winter_1986.jpg": {
+    "mtime": 1794323702.92,
+    "md5": "a2754e4b",
+    "w": 1920,
+    "h": 1311,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_02_Jerusalem_Golden_Limestone_Walls.jpg": {
+    "mtime": 1794323702.96,
+    "md5": "cbd51f04",
+    "w": 1920,
+    "h": 1440,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_03_Jerusalem_Old_City_Panorama.jpg": {
+    "mtime": 1794323702.99,
+    "md5": "2e0f2286",
+    "w": 1920,
+    "h": 1279,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_04_University_College_Toronto.jpg": {
+    "mtime": 1794323703.02,
+    "md5": "cdf981cf",
+    "w": 1920,
+    "h": 1080,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_05_UofT_Sandford_Fleming_2001_Room_4306.jpg": {
+    "mtime": 1794323703.05,
+    "md5": "5d8a522f",
+    "w": 1920,
+    "h": 1440,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_06_NVIDIA_GTX580_GF110_AlexNet_Die.jpg": {
+    "mtime": 1794323703.08,
+    "md5": "c79a83bc",
+    "w": 1920,
+    "h": 1682,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_07_AlexNet_CNN_Architecture_2012.jpg": {
+    "mtime": 1794323703.11,
+    "md5": "f0ef88fd",
+    "w": 1426,
+    "h": 626,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1426×626",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_08_Stanford_University_Quad_2012.jpg": {
+    "mtime": 1794323703.11,
+    "md5": "c86f6f67",
+    "w": 1920,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_09_Googleplex_Google_Brain_2014.jpg": {
+    "mtime": 1794323703.14,
+    "md5": "ded86109",
+    "w": 1920,
+    "h": 1280,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_10_Ilya_Sutskever_Google_Brain_Stage_2014.jpg": {
+    "mtime": 1794323703.17,
+    "md5": "f06157e2",
+    "w": 1920,
+    "h": 1566,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_11_Ilya_Sutskever_Stanford_Solo_2014.jpg": {
+    "mtime": 1794323703.2,
+    "md5": "36ff01e8",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_12_OpenAI_Pioneer_Building_SF.jpg": {
+    "mtime": 1794323703.2,
+    "md5": "4a4ea797",
+    "w": 1920,
+    "h": 965,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_13_Supercomputer_Cluster_Scaling_Laws.jpg": {
+    "mtime": 1794323703.23,
+    "md5": "7d6f63c4",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_14_AGI_Effigy_Retreat_Bonfire_2023.jpg": {
+    "mtime": 1794323703.23,
+    "md5": "cb99e6dc",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_15_Sutskever_Altman_Tel_Aviv_2023.jpg": {
+    "mtime": 1794323703.24,
+    "md5": "17e53727",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_16_Tel_Aviv_University_SSI_Hub.jpg": {
+    "mtime": 1794323703.24,
+    "md5": "fb79f7a5",
+    "w": 1920,
+    "h": 1439,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_17_Toronto_Convocation_Hall_2025.jpg": {
+    "mtime": 1794323703.28,
+    "md5": "d4e7e228",
+    "w": 1920,
+    "h": 1078,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_18_Safe_Superintelligence_SSI_Monolith.jpg": {
+    "mtime": 1794323703.31,
+    "md5": "94cb1238",
+    "w": 1600,
+    "h": 1066,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1600×1066",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_02_ACT1_24FPS_Sutskever_UofT_Convocation_Return_2025.mp4": {
+    "mtime": 1794323671.45,
+    "md5": "1bd45610",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_03_ACT1_24FPS_Sutskever_Studying_With_Hinton_UofT.mp4": {
+    "mtime": 1794323734.95,
+    "md5": "ccf488a0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_04_ACT1_24FPS_Sutskever_Pre_AlexNet_2012_NoPriors.mp4": {
+    "mtime": 1794323843.77,
+    "md5": "52114e77",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_05_ACT1_24FPS_Sutskever_Jensen_Huang_AlexNet_GTC.mp4": {
+    "mtime": 1794323929.01,
+    "md5": "62757bed",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_06_ACT2_24FPS_Sutskever_Seq2Seq_Scaling_NeurIPS2024.mp4": {
+    "mtime": 1794323973.12,
+    "md5": "f7d015d6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4": {
+    "mtime": 1794324031.41,
+    "md5": "3c780562",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_08_ACT2_24FPS_Sutskever_Compression_Learning_GTC.mp4": {
+    "mtime": 1794324068.28,
+    "md5": "5943d443",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_09_ACT3_24FPS_Sutskever_Detective_Novel_Metaphor_GTC.mp4": {
+    "mtime": 1794324108.8,
+    "md5": "71aa0e1b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_10_ACT3_24FPS_Sutskever_Deep_Learning_Alchemy_TAU2023.mp4": {
+    "mtime": 1794324150.32,
+    "md5": "ace1a1bd",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_11_ACT3_24FPS_Sutskever_Next_Token_Dwarkesh2023.mp4": {
+    "mtime": 1794324195.36,
+    "md5": "aa8da78c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_12_ACT3_24FPS_Sutskever_GPT_Emergent_Behaviors_NoPriors.mp4": {
+    "mtime": 1794324239.49,
+    "md5": "bd1dd961",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4": {
+    "mtime": 1794324283.22,
+    "md5": "a30b8221",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_14_ACT4_24FPS_Sutskever_End_Of_Pretraining_NeurIPS2024.mp4": {
+    "mtime": 1794324320.53,
+    "md5": "2890b5a2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 32.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "32s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_15_ACT4_24FPS_Sutskever_Age_Of_Research_SSI_Dwarkesh2025.mp4": {
+    "mtime": 1794324648.08,
+    "md5": "23a2d6f9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/archives/EP06_VID_ARCH_16_ACT4_24FPS_Sutskever_Brain_Biological_Computer_UofT2025.mp4": {
+    "mtime": 1794324367.57,
+    "md5": "3cbfd0ff",
+    "w": 1920,
+    "h": 1080,
+    "dur": 30.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "30s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s.mp4": {
+    "mtime": 1794323769.54,
+    "md5": "8c0e4944",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_AlexNet_Diagram_2012_6s.mp4": {
+    "mtime": 1794323764.53,
+    "md5": "153ad970",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Convocation_Hall_2025_6s.mp4": {
+    "mtime": 1794323771.89,
+    "md5": "ade38eb5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_GTX580_AlexNet_Die_6s.mp4": {
+    "mtime": 1794323763.93,
+    "md5": "573a30d0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Googleplex_Brain_2014_6s.mp4": {
+    "mtime": 1794323766.32,
+    "md5": "f5b68565",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Gorky_Winter_1986_6s.mp4": {
+    "mtime": 1794323759.76,
+    "md5": "1e8fe2dc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Jerusalem_Panorama_6s.mp4": {
+    "mtime": 1794323761.48,
+    "md5": "cc33d252",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Jerusalem_Walls_6s.mp4": {
+    "mtime": 1794323760.54,
+    "md5": "0b683be4",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_OpenAI_Pioneer_Building_6s.mp4": {
+    "mtime": 1794323768.42,
+    "md5": "7a99f307",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_SSI_Monolith_2024_6s.mp4": {
+    "mtime": 1794323772.42,
+    "md5": "e252f68e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Scaling_Laws_Servers_6s.mp4": {
+    "mtime": 1794323769.0,
+    "md5": "f5108403",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Stanford_Quad_2012_6s.mp4": {
+    "mtime": 1794323765.51,
+    "md5": "c81ebdf8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Sutskever_GoogleBrain_2014_6s.mp4": {
+    "mtime": 1794323767.07,
+    "md5": "7ce362df",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Sutskever_Stanford_Solo_6s.mp4": {
+    "mtime": 1794323767.61,
+    "md5": "22a5ec48",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4": {
+    "mtime": 1794323770.13,
+    "md5": "e188069c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Tel_Aviv_University_6s.mp4": {
+    "mtime": 1794323771.1,
+    "md5": "4b31514a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_UofT_Sandford_Fleming_6s.mp4": {
+    "mtime": 1794323763.24,
+    "md5": "3c5e4b8a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_UofT_University_College_6s.mp4": {
+    "mtime": 1794323762.36,
+    "md5": "4d249609",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_01_Jerusalem_Axion_10s.mp4": {
+    "mtime": 1794323751.7,
+    "md5": "d537953a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_02_Room4306_Toronto_10s.mp4": {
+    "mtime": 1794323752.66,
+    "md5": "b8a571b3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_03_Seq2Seq_Vector_10s.mp4": {
+    "mtime": 1794323753.62,
+    "md5": "71f512be",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_04_Agatha_Christie_10s.mp4": {
+    "mtime": 1794323754.58,
+    "md5": "e048f2b9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_05_Scaling_10x_10s.mp4": {
+    "mtime": 1794323755.53,
+    "md5": "6e87de51",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_06_Bonfire_Superalignment_10s.mp4": {
+    "mtime": 1794323756.49,
+    "md5": "0d41221c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_07_SSI_Scale_In_Peace_12s.mp4": {
+    "mtime": 1794323757.67,
+    "md5": "e97cc818",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_UA_CLIP_CARD_08_Silent_Sanctuary_Finale_12s.mp4": {
+    "mtime": 1794323758.84,
+    "md5": "afc62069",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_02_ACT1_Gorky_Jerusalem_Toronto_Room_4306.png": {
+    "mtime": 1794323738.82,
+    "md5": "6214fac7",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_02_Room_4306_10s.mp4": {
+    "mtime": 1794323740.34,
+    "md5": "82e3bdeb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_03_ACT2_Seq2Seq_Vector_Space_GoogleBrain_2014.png": {
+    "mtime": 1794323741.52,
+    "md5": "e767f25f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_03_Seq2Seq_2014_10s.mp4": {
+    "mtime": 1794323743.01,
+    "md5": "9eed8a6e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_04_ACT3_Compression_Agatha_Christie_Scaling_GPT4.png": {
+    "mtime": 1794323744.17,
+    "md5": "c3f58efe",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_04_Scaling_Compression_10s.mp4": {
+    "mtime": 1794323745.59,
+    "md5": "d17be70a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_05_ACT3_AGI_Effigy_Superalignment_Nov2023_Rift.png": {
+    "mtime": 1794323746.76,
+    "md5": "c8b8ed5f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_05_Nov2023_Rift_10s.mp4": {
+    "mtime": 1794323748.16,
+    "md5": "99833571",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_06_ACT4_SSI_Monolith_PaloAlto_TelAviv_2026.png": {
+    "mtime": 1794323749.31,
+    "md5": "a0594609",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_06_SSI_Sanctuary_10s.mp4": {
+    "mtime": 1794323750.74,
+    "md5": "8461b118",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_01_Inner_Foundation_Jerusalem.png": {
+    "mtime": 1794323750.85,
+    "md5": "deb7a62b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_02_Room_4306_Hinton_48Hours.png": {
+    "mtime": 1794323751.81,
+    "md5": "f884aba4",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_03_Seq2Seq_Thought_Vector.png": {
+    "mtime": 1794323752.77,
+    "md5": "a3f0d43a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_04_Agatha_Christie_World_Model.png": {
+    "mtime": 1794323753.73,
+    "md5": "d0dc8400",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_05_Scaling_Ceiling_Vanishes.png": {
+    "mtime": 1794323754.69,
+    "md5": "a5965f91",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_06_Feel_The_AGI_Bonfire.png": {
+    "mtime": 1794323755.64,
+    "md5": "d3585404",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_07_Safe_Superintelligence_Peace.png": {
+    "mtime": 1794323756.6,
+    "md5": "8db1a7b1",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP06_UA_CARD_08_Silent_Geometry_Truth_Finale.png": {
+    "mtime": 1794323757.78,
+    "md5": "6cb7b4d2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

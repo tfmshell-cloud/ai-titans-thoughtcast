@@ -413,9 +413,10 @@
 
     var vSummary = ((window.PROJECT_VAULT_INVENTORY || {})[epData.ep] || {}).summary || {};
     var totalVidClips = vSummary.videos_count || ((epMediaInit.archives || []).length + (epMediaInit.flow_queue || []).length + (epMediaInit.dossiers || []).length);
+    var resDocsCount = vSummary.research_docs_count || 0;
 
     var contextLinksHtml = "<a class=\"btn-nav-stat\" href=\"../season1_telemetry_dashboard.html\">📊 Статистика (10 Героїв)</a>";
-    contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../media_vault_analysis.html\">🗂️ Медіа-Волт</a>";
+    contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../media_vault_analysis.html?ep=" + esc(epData.ep) + "\">🗂️ Медіа-Волт</a>";
     if (epData.ep === "01") {
       contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../cinematic_innovations.html\">🎬 20 Кіно-Фішок</a>";
     } else if (epData.ep === "02") {
@@ -457,6 +458,7 @@
       "        <span class=\"chip chip-amber\">100 промптів • 100 цитат • 16 WAV</span>",
       "        <button class=\"btn btn-cyan\" id=\"btnHeroJumpMedia\" style=\"padding:2px 9px;font-size:11px;\">🎬 Відео & Архів (" + totalVidClips + ")</button>",
       "        <button class=\"btn btn-amber\" id=\"btnHeroJumpTriads\" style=\"padding:2px 10px;font-size:11px;font-weight:700;\">🎯 Документальні Сюжети (" + getTriadsEp().length + "×3)</button>",
+      (resDocsCount ? ("        <button class=\"btn btn-purple\" id=\"btnHeroJumpResearch\" style=\"padding:2px 9px;font-size:11px;\">📚 Джерела & Транскрипти (" + resDocsCount + ")</button>") : ""),
       "      </div>",
       "      <div class=\"hero-title-row\">",
       "        <h1>" + esc(epData.name) + "</h1>",
@@ -476,7 +478,7 @@
 
       "  <nav class=\"studio-tabs\" id=\"studioTabs\">",
       "    <button class=\"studio-tab-btn active\" data-tab=\"sop\">🧭 1. Алгоритм дій (SOP) <span class=\"tab-count-badge\" id=\"badgeSopCount\">0/22</span></button>",
-      "    <button class=\"studio-tab-btn\" data-tab=\"bio\">🧬 2. Біографія та кризи <span class=\"tab-count-badge\">" + (epData.biography || []).length + "</span></button>",
+      "    <button class=\"studio-tab-btn\" data-tab=\"bio\">🧬 2. Біографія, кризи & Джерела <span class=\"tab-count-badge\">" + ((epData.biography || []).length + (resDocsCount ? (" • " + resDocsCount + " док.") : "")) + "</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"script\">🎬 3. Режисерський сценарій <span class=\"tab-count-badge\">4 акти</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"prompts\">🎥 4. 100 Візуальних промптів <span class=\"tab-count-badge\" id=\"badgeVidCount\">0/100</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"quotes\">💬 5. 100 Цитат і тез <span class=\"tab-count-badge\">100</span></button>",
@@ -523,10 +525,17 @@
         switchTab("media-triads", true);
       });
     }
+    var heroResJumpBtn = document.getElementById("btnHeroJumpResearch");
+    if (heroResJumpBtn) {
+      heroResJumpBtn.addEventListener("click", function () {
+        switchTab("bio", true);
+      });
+    }
   }
 
   function switchTab(tabId, updateHash) {
     if (tabId) tabId = String(tabId).replace(/^pane-/, "");
+    var rawHash = tabId;
     if (tabId && tabId.indexOf("media-") === 0) {
       var subPart = tabId.slice("media-".length);
       if (["videos", "images", "triads", "veo", "archives"].indexOf(subPart) !== -1) {
@@ -536,7 +545,10 @@
       renderMedia();
     }
     var valid = ["sop", "bio", "script", "prompts", "quotes", "audio", "media", "davinci"];
-    if (valid.indexOf(tabId) === -1) tabId = "sop";
+    if (valid.indexOf(tabId) === -1) {
+      tabId = "sop";
+      rawHash = "sop";
+    }
     state.activeTab = tabId;
 
     var btns = document.querySelectorAll(".studio-tab-btn");
@@ -549,9 +561,9 @@
     }
     if (updateHash) {
       try {
-        history.replaceState(null, "", "#" + tabId);
+        history.replaceState(null, "", "#" + rawHash);
       } catch (e) {
-        window.location.hash = tabId;
+        window.location.hash = rawHash;
       }
     }
   }
@@ -715,6 +727,79 @@
       ].join("\n");
     }).join("\n");
 
+    var vEp = getVaultEp();
+    var rDocs = vEp.research_docs || [];
+    var rSum = vEp.summary || {};
+    var docFilter = state.bioDocCat || "all";
+    var docQuery = (state.bioDocSearch || "").trim().toLowerCase();
+
+    var docCounts = { all: rDocs.length };
+    rDocs.forEach(function (d) {
+      docCounts[d.cat] = (docCounts[d.cat] || 0) + 1;
+    });
+
+    var filteredDocs = rDocs.filter(function (d) {
+      if (docFilter !== "all" && d.cat !== docFilter) return false;
+      if (docQuery && (d.title + " " + d.file + " " + d.cat_label + " " + (d.source_url || "")).toLowerCase().indexOf(docQuery) === -1) return false;
+      return true;
+    });
+
+    var docCatOrder = [
+      ["all", "📦 Усі (" + rDocs.length + ")"],
+      ["transcript", "🎙️ Транскрипти (" + (docCounts.transcript || 0) + ")"],
+      ["article", "📰 Статті & arXiv (" + (docCounts.article || 0) + ")"],
+      ["registry", "🗂️ Реєстри (" + (docCounts.registry || 0) + ")"],
+      ["dossier", "🧬 Досьє (" + (docCounts.dossier || 0) + ")"],
+      ["pdf_md", "📕 PDF/MD (" + (docCounts.pdf_md || 0) + ")"]
+    ];
+
+    var docPillsHtml = docCatOrder.map(function (pair) {
+      return "<button class=\"filter-pill" + (docFilter === pair[0] ? " active" : "") + "\" data-bio-doc-cat=\"" + pair[0] + "\">" + pair[1] + "</button>";
+    }).join("");
+
+    var docsGridHtml = filteredDocs.map(function (d) {
+      var metaParts = [d.ext];
+      if (d.word_count > 0) metaParts.push(d.word_count.toLocaleString("uk-UA") + " слів");
+      if (d.size_kb > 0) metaParts.push(d.size_kb + " KB");
+      return [
+        "<div style=\"background:rgba(15,23,42,0.72);border:1px solid var(--border);border-radius:10px;padding:0.75rem 0.9rem;display:flex;flex-direction:column;gap:6px;justify-content:space-between;\">",
+        "  <div>",
+        "    <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap;\">",
+        "      <span class=\"chip chip-cyan\" style=\"font-size:10.5px;\">" + esc(d.cat_label) + "</span>",
+        "      <span style=\"font-family:var(--mono);font-size:10.5px;color:var(--text-muted);\">" + esc(metaParts.join(" • ")) + "</span>",
+        "    </div>",
+        "    <div style=\"font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.35;margin-bottom:4px;\">" + esc(d.title) + "</div>",
+        "    <div style=\"font-family:var(--mono);font-size:10.5px;color:var(--cyan);word-break:break-all;\">" + esc(d.rel_path) + "</div>",
+        "  </div>",
+        "  <div class=\"btn-group\" style=\"margin-top:4px;\">",
+        (d.source_url ? ("    <a class=\"btn btn-emerald\" style=\"padding:3px 8px;font-size:11px;text-decoration:none;\" href=\"" + esc(d.source_url) + "\" target=\"_blank\" rel=\"noopener\">🌐 Першоджерело ↗</a>") : ""),
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-reveal-finder=\"" + esc(d.rel_path) + "\">📁 Finder</button>",
+        "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" data-copy-doc-path=\"" + esc(d.rel_path) + "\">📋 Шлях</button>",
+        "  </div>",
+        "</div>"
+      ].filter(Boolean).join("\n");
+    }).join("\n");
+
+    var researchPanelHtml = [
+      "<div class=\"panel-card\" style=\"margin-top:1rem;border-color:rgba(56,189,248,0.4);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">📚 База Знань, Транскрипти, Статті & Реєстри NotebookLM — EP" + esc(epData.ep) + " (" + rDocs.length + " файлів)</div>",
+      "      <div class=\"panel-desc\">Повний локальний корпус першоджерел: <b>" + (rSum.transcripts_count || 0) + " транскриптів</b>, <b>" + (rSum.articles_count || 0) + " наукових статей</b> та <b>" + ((rSum.research_words || 0).toLocaleString("uk-UA")) + " слів</b> фактажу для NotebookLM та сценарію.</div>",
+      "    </div>",
+      "    <div class=\"btn-group\">",
+      "      <button class=\"btn btn-amber\" id=\"btnBioJumpArchives\">📼 Відео-архіви & Фото (#media-archives) →</button>",
+      "      <a class=\"btn btn-cyan\" style=\"text-decoration:none;\" href=\"../media_vault_analysis.html?ep=" + esc(epData.ep) + "\">🗂️ Медіа-Волт (Усі файли) →</a>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"filter-toolbar\">",
+      "    <div class=\"filter-pills\">" + docPillsHtml + "</div>",
+      "    <input type=\"search\" id=\"bioDocSearchInput\" class=\"search-input\" placeholder=\"Пошук транскрипту, arXiv або PDF...\" value=\"" + esc(state.bioDocSearch || "") + "\">",
+      "  </div>",
+      "  <div style=\"display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0.75rem;\">" + (docsGridHtml || "<div style='color:var(--text-muted);padding:1rem;'>Документів за цим фільтром не знайдено.</div>") + "</div>",
+      "</div>"
+    ].join("\n");
+
     pane.innerHTML = [
       "<div class=\"panel-card\">",
       "  <div class=\"panel-head\">",
@@ -728,7 +813,8 @@
       "    </div>",
       "  </div>",
       "  <div class=\"bio-timeline\">" + rows + "</div>",
-      "</div>"
+      "</div>",
+      researchPanelHtml
     ].join("\n");
 
     document.getElementById("btnCopyNbName").addEventListener("click", function () {
@@ -736,6 +822,35 @@
     });
     document.getElementById("btnCopyNbPrompt").addEventListener("click", function () {
       copyText(nbPrompt, "інструкція Audio Overview для NotebookLM");
+    });
+    var bioArchBtn = document.getElementById("btnBioJumpArchives");
+    if (bioArchBtn) {
+      bioArchBtn.addEventListener("click", function () {
+        switchTab("media-archives", true);
+      });
+    }
+    pane.querySelectorAll("[data-bio-doc-cat]").forEach(function (pill) {
+      pill.addEventListener("click", function () {
+        state.bioDocCat = pill.getAttribute("data-bio-doc-cat");
+        renderBio();
+      });
+    });
+    var docSearchEl = document.getElementById("bioDocSearchInput");
+    if (docSearchEl) {
+      docSearchEl.addEventListener("input", function () {
+        state.bioDocSearch = docSearchEl.value || "";
+        renderBio();
+        var refEl = document.getElementById("bioDocSearchInput");
+        if (refEl) {
+          refEl.focus();
+          try { var L = refEl.value.length; refEl.setSelectionRange(L, L); } catch (e) {}
+        }
+      });
+    }
+    pane.querySelectorAll("[data-copy-doc-path]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyText(btn.getAttribute("data-copy-doc-path"), "шлях першоджерела");
+      });
     });
   }
 
@@ -2853,15 +2968,15 @@
       "</div>"
     ].join("\n") : "";
 
-    var archPhotoEraNote = epData.ep === "02"
-      ? "Хронологічний фотоархів 1970–2026: Тайвань, Oneida, Aloha, OSU, Denny's Berryessa, NV1, RIVA 128, GeForce 256, GTX 580, DGX & Endeavor HQ"
-      : (epData.ep === "03"
-        ? "Хронологічний фотоархів 1976–2025: Північний Лондон, Шахи, ZX Spectrum, Кембридж, UCL, DeepMind King's Cross, AlphaGo, AlphaFold 2 & Стокгольм Нобель 2024"
-        : (epData.ep === "04"
-          ? "Хронологічний фотоархів 1847–2024: Джордж Буль, Еверест, Кембридж, Столярство, Единбург, CMU, Торонто, Тахо $44M, Тюрінг 2018 & Стокгольм Нобель 2024"
-          : (epData.ep === "05"
-            ? "Хронологічний фотоархів 1977–2026: Париж, Tektronix 475A, MOS 6502, ESIEE, Сорбонна, Мінський, Bell Labs Holmdel, NYU Курант, Meta FAIR, Гутенберг, Бейдевінд & AMI Labs"
-            : (epData.ep === "01" ? "Ера St. Louis, John Burroughs, Loopt, YC, WWDC 2008, Stanford & OpenAI" : "Автентичні знімки спікера та історичні артефакти епохи"))));
+    var archPhotoEraMap = {
+      "01": "Ера St. Louis, John Burroughs, Loopt, YC, WWDC 2008, Stanford & OpenAI",
+      "02": "Хронологічний фотоархів 1970–2026: Тайвань, Oneida, Aloha, OSU, Denny's Berryessa, NV1, RIVA 128, GeForce 256, GTX 580, DGX & Endeavor HQ",
+      "03": "Хронологічний фотоархів 1976–2025: Північний Лондон, Шахи, ZX Spectrum, Кембридж, UCL, DeepMind King's Cross, AlphaGo, AlphaFold 2 & Стокгольм Нобель 2024",
+      "04": "Хронологічний фотоархів 1847–2024: Джордж Буль, Еверест, Кембридж, Столярство, Единбург, CMU, Торонто, Тахо $44M, Тюрінг 2018 & Стокгольм Нобель 2024",
+      "05": "Хронологічний фотоархів 1977–2026: Париж, Tektronix 475A, MOS 6502, ESIEE, Сорбонна, Мінський, Bell Labs Holmdel, NYU Курант, Meta FAIR, Гутенберг, Бейдевінд & AMI Labs",
+      "06": "Хронологічний фотоархів 1986–2026: Горький, Єрусалим, UofT Кабінет №4306, GTX 580 GF110, Стенфорд, Google Brain 2014, OpenAI Pioneer SF, Багаття AGI, Тель-Авів & SSI"
+    };
+    var archPhotoEraNote = archPhotoEraMap[epData.ep] || "Автентичні знімки спікера та історичні артефакти епохи";
     var photoSectionHtml = photoCardsHtml ? [
       "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
       "  <div class=\"panel-head\">",

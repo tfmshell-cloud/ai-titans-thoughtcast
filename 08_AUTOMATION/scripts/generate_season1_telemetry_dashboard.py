@@ -29,8 +29,8 @@ EP_META = [
      "Повне досьє + 10 транскриптів & 3 статті (Nobel Lecture 2024, CBS 60 Minutes, BBC News 2023, ACM Turing 2018, U of T, NobelPrize.org, Diary Of A CEO) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("05", "yann_lecun", "episode_05_lecun", ["ep05", "lecun"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 10 транскриптів & 3 статті (Lex #416/#258/#36, ETH Zurich World Models, ACM Turing 2018, Nokia Bell Labs, Davos 2026, arXiv JEPA) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
-    ("06", "ilya_sutskever", "episode_06_sutskever", ["ep06", "sutskever"], "🟠 Препродакшн & Стартовий інжест", 42, "stage-preprod",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + лекція Simons Institute + VFX Alcubierre + 13 зображень/Flow-досліджень (Єрусалим, GPU AlexNet, SSI моноліт) + бін у Resolve."),
+    ("06", "ilya_sutskever", "episode_06_sutskever", ["ep06", "sutskever"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 11 транскриптів & 3 статті (Dwarkesh 2023/2025, No Priors, Simons Berkeley, NeurIPS 2024 Seq2Seq, NVIDIA GTC Fireside, Tel Aviv 2023, UofT 2025, SSI.inc, arXiv) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("07", "dario_amodei", "episode_07_amodei", ["ep07", "amodei"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті США 2023 + VFX сітківки + Flow конституційна призма. Очікує генерацію Veo."),
     ("08", "fei_fei_li", "episode_08_li", ["ep08", "feifei", "fei_fei", "fei-fei"], "🟠 Розширений препродакшн + Аудіоогляд", 46, "stage-preprod",
@@ -72,15 +72,21 @@ def count_project_stats():
                     if rf.endswith(".md"):
                         r_words += len(open(os.path.join(rr, rf), encoding="utf-8", errors="ignore").read().split())
 
-        # Also check PDF dossier
+        # Also check PDF dossier (Unicode-normalized, exact episode/word match to avoid short surname collisions like 'Ин')
+        import unicodedata as _ud
+        import re as _re_pdf
         pdf_dir = os.path.join(ROOT, "01_RESEARCH", "source_pdfs_and_dossiers")
         pdf_matches = []
         if os.path.exists(pdf_dir):
-            last_name_ua = s_info.get("name", "").split()[-1].lower()
-            for pf in os.listdir(pdf_dir):
+            last_name_ua = _ud.normalize("NFC", s_info.get("name", "").split()[-1].lower())
+            for pf in sorted(os.listdir(pdf_dir)):
                 if pf.startswith("."):
                     continue
-                if f"епізод {ep}" in pf.lower() or (last_name_ua and last_name_ua in pf.lower()):
+                pf_norm = _ud.normalize("NFC", pf.lower())
+                if "епізод " in pf_norm:
+                    if f"епізод {ep}" in pf_norm:
+                        pdf_matches.append(pf)
+                elif f"ep{ep}" in pf_norm or (last_name_ua and _re_pdf.search(rf"(?<![a-zа-яіїєґ0-9]){_re_pdf.escape(last_name_ua)}(?![a-zа-яіїєґ0-9])", pf_norm)):
                     pdf_matches.append(pf)
 
         # 2. Scripts metrics
@@ -167,10 +173,13 @@ def count_project_stats():
             ]
         elif ep == "06":
             bio_sources = [
-                "Simons Institute UC Berkeley Lectures (Unreasonable Effectiveness of Deep Learning)",
-                "NeurIPS 2012 (AlexNet) & NeurIPS 2014 (Seq2Seq)",
-                "OpenAI Research Archive (GPT-1 to GPT-4, Scaling Laws, Superalignment)",
-                "Safe Superintelligence Inc. (SSI) Founding Manifesto (2024)"
+                "Dwarkesh Patel 2025 (Age of Research / SSI) & 2023 (`aR20FWCCjAs`, `Yf1o0TQzry8`)",
+                "No Priors Ep. 39 (AlexNet, GPT Emergence, Superalignment `Ft0gTO2K85A`)",
+                "Simons Institute UC Berkeley Lectures (`AKMuA_TVz3A`, `TlPaxVVa_WM`) & UC Berkeley EECS (`RvEwFvl-TrY`)",
+                "NeurIPS 2024 Seq2Seq Test of Time (`WQQdd6qGxNs`) & NVIDIA GTC Fireside (`I6qQinoY9WM` — Detective Novel)",
+                "Tel Aviv University 2023 (`xjDn-kFfpGU` — Alchemy) & UofT 2025 Honorary Degree (`zuZ2zaotrJs`)",
+                "Safe Superintelligence Inc. Founding Manifesto (`ssi.inc`) & arXiv (AlexNet / Seq2Seq / Scaling Laws)",
+                "Wikimedia Commons Archival Collection (18 відкритих фото: Горький → Єрусалим → Торонто → OpenAI → SSI)"
             ]
         elif ep == "07":
             bio_sources = [
@@ -738,7 +747,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP05)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP06)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

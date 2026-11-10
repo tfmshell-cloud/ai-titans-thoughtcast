@@ -158,8 +158,23 @@ run_ep05() {
 }
 
 run_ep06() {
-  # EP06 — Ілля Суцкевер: Лекція в Інституті Саймонса (Берклі) про генералізацію та стиснення
+  # EP06 — Ілля Суцкевер: Лекція в Інституті Саймонса + повний 4-актний архів (16 HD кліпів)
   fetch_clip "https://www.youtube.com/watch?v=AKMuA_TVz3A" "00:03:10-00:03:18" "EP06_VID_ARCH_01_ACT2_24FPS_Sutskever_Simons_Lecture"
+  fetch_clip "https://www.youtube.com/watch?v=zuZ2zaotrJs" "00:00:24-00:00:52" "EP06_VID_ARCH_02_ACT1_24FPS_Sutskever_UofT_Convocation_Return_2025"
+  fetch_clip "https://www.youtube.com/watch?v=zuZ2zaotrJs" "00:01:08-00:01:36" "EP06_VID_ARCH_03_ACT1_24FPS_Sutskever_Studying_With_Hinton_UofT"
+  fetch_clip "https://www.youtube.com/watch?v=Ft0gTO2K85A" "00:00:36-00:01:04" "EP06_VID_ARCH_04_ACT1_24FPS_Sutskever_Pre_AlexNet_2012_NoPriors"
+  fetch_clip "https://www.youtube.com/watch?v=I6qQinoY9WM" "00:04:55-00:05:25" "EP06_VID_ARCH_05_ACT1_24FPS_Sutskever_Jensen_Huang_AlexNet_GTC"
+  fetch_clip "https://www.youtube.com/watch?v=WQQdd6qGxNs" "00:05:36-00:06:06" "EP06_VID_ARCH_06_ACT2_24FPS_Sutskever_Seq2Seq_Scaling_NeurIPS2024"
+  fetch_clip "https://www.youtube.com/watch?v=Ft0gTO2K85A" "00:06:48-00:07:18" "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors"
+  fetch_clip "https://www.youtube.com/watch?v=I6qQinoY9WM" "00:12:28-00:12:56" "EP06_VID_ARCH_08_ACT2_24FPS_Sutskever_Compression_Learning_GTC"
+  fetch_clip "https://www.youtube.com/watch?v=I6qQinoY9WM" "00:28:16-00:28:50" "EP06_VID_ARCH_09_ACT3_24FPS_Sutskever_Detective_Novel_Metaphor_GTC"
+  fetch_clip "https://www.youtube.com/watch?v=xjDn-kFfpGU" "00:03:24-00:03:54" "EP06_VID_ARCH_10_ACT3_24FPS_Sutskever_Deep_Learning_Alchemy_TAU2023"
+  fetch_clip "https://www.youtube.com/watch?v=Yf1o0TQzry8" "00:00:24-00:00:54" "EP06_VID_ARCH_11_ACT3_24FPS_Sutskever_Next_Token_Dwarkesh2023"
+  fetch_clip "https://www.youtube.com/watch?v=Ft0gTO2K85A" "00:13:52-00:14:22" "EP06_VID_ARCH_12_ACT3_24FPS_Sutskever_GPT_Emergent_Behaviors_NoPriors"
+  fetch_clip "https://www.youtube.com/watch?v=Ft0gTO2K85A" "00:35:10-00:35:40" "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors"
+  fetch_clip "https://www.youtube.com/watch?v=WQQdd6qGxNs" "00:08:18-00:08:50" "EP06_VID_ARCH_14_ACT4_24FPS_Sutskever_End_Of_Pretraining_NeurIPS2024"
+  fetch_clip "https://www.youtube.com/watch?v=aR20FWCCjAs" "00:21:16-00:21:46" "EP06_VID_ARCH_15_ACT4_24FPS_Sutskever_Age_Of_Research_SSI_Dwarkesh2025"
+  fetch_clip "https://www.youtube.com/watch?v=zuZ2zaotrJs" "00:06:14-00:06:44" "EP06_VID_ARCH_16_ACT4_24FPS_Sutskever_Brain_Biological_Computer_UofT2025"
 }
 
 run_ep07() {

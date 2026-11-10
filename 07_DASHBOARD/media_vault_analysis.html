@@ -239,8 +239,30 @@
       <a href="index.html" class="btn btn-secondary">
         📊 Головний Дашборд
       </a>
+      <a href="season1_telemetry_dashboard.html" class="btn btn-secondary">
+        📈 Телеметрія 10 Титанів
+      </a>
     </div>
   </header>
+
+  <!-- SECTION 0: LIVE MULTI-HERO MEDIA VAULT WORKBENCH (EP01 - EP10) -->
+  <section id="seasonVaultWorkbench" style="background:linear-gradient(135deg,#0f172a,#111827);border:1px solid rgba(56,189,248,0.45);border-radius:16px;padding:1.75rem;margin-bottom:2.5rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.1rem;">
+      <div>
+        <div class="badge badge-cyan" style="margin-bottom:0.45rem;">🎬 ЄДИНИЙ МЕДІА-ВОЛТ СЕЗОНУ 1 (EP01 – EP10)</div>
+        <h2 style="margin:0 0 0.35rem 0;">УСІ ВІДЕО, АРХІВИ, 4K ДОСЬЄ, ФОТО ТА ТРАНСКРИПТИ ПО КОЖНОМУ ГЕРОЮ</h2>
+        <p style="color:var(--text-muted);font-size:0.9rem;max-width:920px;">
+          Живий інтерактивний індекс бази <code style="color:var(--cyan);">PROJECT_VAULT_INVENTORY</code> та <code style="color:var(--gold);">MEDIA_ACQUISITION_POOL</code>. Оберіть титана (зокрема EP05 Ян Лекун або EP06 Ілля Суцкевер), щоб переглянути всі відеокліпи, фото та завантажені першоджерела.
+        </p>
+      </div>
+      <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+        <input id="vaultGlobalSearch" type="search" placeholder="Пошук файлу, фото або транскрипту..." style="padding:0.55rem 0.9rem;border-radius:8px;border:1px solid var(--border);background:#07090e;color:#f8fafc;min-width:250px;font-size:0.85rem;">
+      </div>
+    </div>
+    <div id="seasonHeroSelector" style="display:flex;gap:0.45rem;flex-wrap:wrap;margin-bottom:1.15rem;"></div>
+    <div id="seasonHeroSummaryStrip" style="display:flex;gap:0.65rem;flex-wrap:wrap;align-items:center;margin-bottom:1.15rem;"></div>
+    <div id="seasonVaultContent"></div>
+  </section>
 
   <!-- SECTION 1: 25 VIDEOS IN-DEPTH CRITIQUE -->
   <section>
@@ -1721,5 +1743,127 @@
   </section>
 
 </div>
+<script src="data/season1_index.js?v=20261110_v8"></script>
+<script src="data/media_acquisition_pool.js?v=20261110_v8"></script>
+<script src="data/project_vault_inventory.js?v=20261110_v8"></script>
+<script>
+(function () {
+  var season = window.SEASON1_INDEX || [];
+  var vault = window.PROJECT_VAULT_INVENTORY || {};
+  var pool = window.MEDIA_ACQUISITION_POOL || {};
+  var params = new URLSearchParams(window.location.search || "");
+  var activeEp = params.get("ep") || "05";
+  if (!vault[activeEp] && season.length) activeEp = season[0].ep;
+  var activeKind = "videos";
+  var searchQ = "";
+
+  function esc(s) {
+    return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function renderVaultWorkbench() {
+    var selEl = document.getElementById("seasonHeroSelector");
+    var sumEl = document.getElementById("seasonHeroSummaryStrip");
+    var bodyEl = document.getElementById("seasonVaultContent");
+    if (!selEl || !sumEl || !bodyEl) return;
+
+    selEl.innerHTML = season.map(function (h) {
+      var s = (vault[h.ep] || {}).summary || {};
+      var isAct = h.ep === activeEp;
+      return '<button data-pick-ep="' + esc(h.ep) + '" class="btn ' + (isAct ? 'btn-primary' : 'btn-secondary') + '" style="padding:0.45rem 0.85rem;font-size:0.8rem;">' +
+        'EP' + esc(h.ep) + ' • ' + esc(h.name) + ' <span style="opacity:0.8;">(' + (s.videos_count || 0) + '📹/' + (s.images_count || 0) + '🖼️/' + (s.research_docs_count || 0) + '📚)</span></button>';
+    }).join("");
+
+    var hInfo = season.find(function (x) { return x.ep === activeEp; }) || {};
+    var vEp = vault[activeEp] || {};
+    var vSum = vEp.summary || {};
+    var pEp = pool[activeEp] || {};
+    var q = searchQ.trim().toLowerCase();
+
+    sumEl.innerHTML = [
+      '<span class="badge badge-cyan" style="margin:0;">🎥 Відео: ' + (vSum.videos_count || 0) + ' (Власних: ' + (vSum.native_videos_count || 0) + ')</span>',
+      '<span class="badge badge-gold" style="margin:0;">🖼️ Фото & 4K карти: ' + (vSum.images_count || 0) + '</span>',
+      '<span class="badge badge-emerald" style="margin:0;">📚 Джерел & Транскриптів: ' + (vSum.research_docs_count || 0) + ' (' + ((vSum.research_words || 0).toLocaleString("uk-UA")) + ' слів)</span>',
+      '<button data-vault-kind="videos" class="btn ' + (activeKind === "videos" ? "btn-primary" : "btn-secondary") + '" style="padding:0.35rem 0.75rem;font-size:0.78rem;">🎥 Відео (' + ((vEp.videos || []).length) + ')</button>',
+      '<button data-vault-kind="images" class="btn ' + (activeKind === "images" ? "btn-primary" : "btn-secondary") + '" style="padding:0.35rem 0.75rem;font-size:0.78rem;">🖼️ Зображення (' + ((vEp.images || []).length) + ')</button>',
+      '<button data-vault-kind="research" class="btn ' + (activeKind === "research" ? "btn-primary" : "btn-secondary") + '" style="padding:0.35rem 0.75rem;font-size:0.78rem;">📚 Транскрипти & Статті (' + ((vEp.research_docs || []).length) + ')</button>',
+      (hInfo.page_url ? ('<a href="' + esc(hInfo.page_url) + '#media-archives" class="btn btn-secondary" style="padding:0.35rem 0.75rem;font-size:0.78rem;">🚀 Відкрити Студію EP' + esc(activeEp) + ' →</a>') : '')
+    ].join("");
+
+    if (activeKind === "research") {
+      var docs = (vEp.research_docs || []).filter(function (d) {
+        return !q || (d.title + " " + d.file + " " + d.rel_path).toLowerCase().indexOf(q) !== -1;
+      });
+      bodyEl.innerHTML = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:0.9rem;">' + docs.map(function (d) {
+        return '<div style="background:#07090e;border:1px solid var(--border);border-radius:10px;padding:0.85rem;">' +
+          '<div style="display:flex;justify-content:space-between;font-size:0.74rem;margin-bottom:0.35rem;"><span style="color:var(--cyan);font-weight:700;">' + esc(d.cat_label) + '</span><span style="color:var(--text-muted);font-family:var(--mono);">' + esc(d.ext) + (d.word_count ? (' • ' + d.word_count.toLocaleString("uk-UA") + ' слів') : '') + '</span></div>' +
+          '<div style="font-weight:700;font-size:0.9rem;margin-bottom:0.35rem;">' + esc(d.title) + '</div>' +
+          '<div style="font-family:var(--mono);font-size:0.72rem;color:var(--text-muted);word-break:break-all;margin-bottom:0.5rem;">' + esc(d.rel_path) + '</div>' +
+          (d.source_url ? ('<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener" style="color:var(--emerald);font-size:0.78rem;">🌐 Першоджерело ↗</a>') : '') +
+        '</div>';
+      }).join("") + '</div>';
+    } else if (activeKind === "images") {
+      var imgs = (vEp.images || []).filter(function (im) {
+        return !q || (im.display_name + " " + im.file + " " + im.cat_label).toLowerCase().indexOf(q) !== -1;
+      });
+      bodyEl.innerHTML = '<div class="image-grid">' + imgs.map(function (im) {
+        var src = im.thumb || ("../" + im.rel_path);
+        return '<div class="img-card"><img src="' + esc(src) + '" alt="' + esc(im.display_name) + '" loading="lazy">' +
+          '<div class="img-meta"><div class="img-name" title="' + esc(im.file) + '">' + esc(im.display_name) + '</div>' +
+          '<div style="margin-top:0.3rem;display:flex;justify-content:space-between;font-size:0.7rem;"><span>' + esc(im.res_label || im.ext) + '</span><a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/' + esc(im.rel_path) + '" target="_blank" style="color:var(--cyan);">Finder</a></div></div></div>';
+      }).join("") + '</div>';
+    } else {
+      var vids = (vEp.videos || []).filter(function (v) {
+        return !q || (v.display_name + " " + v.file + " " + v.cat_label).toLowerCase().indexOf(q) !== -1;
+      });
+      bodyEl.innerHTML = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem;">' + vids.map(function (v) {
+        var prev = v.preview_path || ("../" + v.rel_path);
+        var thumb = v.thumb || "";
+        return '<div class="video-card" style="background:#07090e;">' +
+          '<div data-play-src="' + esc(prev) + '" style="position:relative;aspect-ratio:16/9;background:#020408;cursor:pointer;overflow:hidden;">' +
+            (thumb ? ('<img src="' + esc(thumb) + '" alt="' + esc(v.display_name) + '" style="width:100%;height:100%;object-fit:cover;">') : '') +
+            '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.28);font-size:28px;">▶️</div>' +
+            '<span style="position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.8);padding:2px 6px;border-radius:4px;font-size:11px;font-family:var(--mono);color:var(--gold);">' + esc(v.res_label || v.ext) + (v.dur_label ? (' • ' + v.dur_label) : '') + '</span>' +
+          '</div>' +
+          '<div style="padding:0.85rem;">' +
+            '<div style="font-size:0.72rem;color:var(--cyan);font-weight:700;margin-bottom:0.25rem;">' + esc(v.cat_label) + '</div>' +
+            '<div style="font-weight:700;font-size:0.9rem;margin-bottom:0.35rem;">' + esc(v.display_name) + '</div>' +
+            '<div style="font-family:var(--mono);font-size:0.7rem;color:var(--text-muted);word-break:break-all;margin-bottom:0.5rem;">' + esc(v.rel_path) + '</div>' +
+            '<a href="http://127.0.0.1:8765/reveal?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/' + esc(v.rel_path) + '" target="_blank" style="color:var(--cyan);font-size:0.75rem;text-decoration:underline;">🔍 Показати у Finder</a>' +
+          '</div></div>';
+      }).join("") + '</div>';
+    }
+
+    selEl.querySelectorAll("[data-pick-ep]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        activeEp = b.getAttribute("data-pick-ep");
+        renderVaultWorkbench();
+      });
+    });
+    sumEl.querySelectorAll("[data-vault-kind]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        activeKind = b.getAttribute("data-vault-kind");
+        renderVaultWorkbench();
+      });
+    });
+    bodyEl.querySelectorAll("[data-play-src]").forEach(function (box) {
+      box.addEventListener("click", function () {
+        var src = box.getAttribute("data-play-src");
+        box.innerHTML = '<video src="' + esc(src) + '" controls autoplay playsinline style="width:100%;height:100%;object-fit:contain;background:#000;"></video>';
+        box.style.cursor = "default";
+      });
+    });
+  }
+
+  var gs = document.getElementById("vaultGlobalSearch");
+  if (gs) {
+    gs.addEventListener("input", function () {
+      searchQ = gs.value || "";
+      renderVaultWorkbench();
+    });
+  }
+  renderVaultWorkbench();
+})();
+</script>
 </body>
 </html>

@@ -183,12 +183,15 @@
       var conflict = CONFLICTS[h.ep] || h.role;
       var act1Track = getHeroPrimaryTrack(h.ep);
       var epMedia = mediaPool[h.ep] || {};
+      var vaultEp = (window.PROJECT_VAULT_INVENTORY || {})[h.ep] || {};
+      var vSum = vaultEp.summary || {};
       var dosCount = (epMedia.dossiers || []).length || 0;
       var archCount = (epMedia.archives || []).length || 0;
       var flowCount = (epMedia.flow_queue || []).length || 0;
       var sciCount = (epMedia.scientific_vfx || []).length || 0;
-      var galCount = (epMedia.flow_gallery || []).length || 0;
-      var totalMp4Count = dosCount + archCount + flowCount + sciCount;
+      var galCount = vSum.images_count || (((epMedia.flow_gallery || []).length || 0) + ((epMedia.archival_photos || []).length || 0));
+      var totalMp4Count = vSum.videos_count || (dosCount + archCount + flowCount + sciCount);
+      var researchDocsCnt = vSum.research_docs_count || 0;
       var firstArch = (epMedia.archives || [])[0];
       var veoList = (window.VEO_ANIMATION_PIPELINE || []).filter(function (v) { return v.ep === h.ep; });
       var veoStatusMap = getVeoStatusMap();
@@ -234,9 +237,9 @@
 
         "  <div class=\"hero-metrics-strip\">",
         "    <span>📝 <strong>" + esc(h.script_words) + "</strong> слів</span>",
-        "    <span>🎬 <strong>" + totalMp4Count + "</strong> MP4 (Flow+Наука+Архів)</span>",
-        "    <span>🖼️ <strong>" + galCount + "</strong> 2K кадрів & артів</span>",
-        "    <span>🎵 <strong>" + prog.heroWavCount + "/4</strong> актів WAV</span>",
+        "    <span>🎬 <strong>" + totalMp4Count + "</strong> відео (Волт+Архів)</span>",
+        "    <span>🖼️ <strong>" + galCount + "</strong> фото & 4K артів</span>",
+        (researchDocsCnt ? ("    <span>📚 <strong>" + researchDocsCnt + "</strong> джерел/транскриптів</span>") : ("    <span>🎵 <strong>" + prog.heroWavCount + "/4</strong> актів WAV</span>")),
         "  </div>",
 
         "  <div class=\"hero-prog-row\">",
@@ -245,7 +248,10 @@
         "  </div>",
 
         "  <div class=\"hero-deep-links\" onclick=\"event.stopPropagation();\">",
-        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(251,191,36,0.65);background:rgba(251,191,36,0.13);color:var(--amber);\">🎬 Відео-Монітор & Футажі (" + totalMp4Count + " MP4)</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(251,191,36,0.65);background:rgba(251,191,36,0.13);color:var(--amber);\">🎬 Відео-Монітор (" + totalMp4Count + " MP4)</a>",
+        "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#media-archives\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(52,211,153,0.55);background:rgba(16,185,129,0.12);color:var(--emerald);\">📼 Архів & Фото (" + archCount + "+" + (epMedia.archival_photos || []).length + ")</a>",
+        (researchDocsCnt ? ("    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#bio\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(56,189,248,0.55);color:var(--cyan);\">📚 Джерела (" + researchDocsCnt + ")</a>") : ""),
+        "    <a class=\"deep-chip\" href=\"media_vault_analysis.html?ep=" + esc(h.ep) + "\" target=\"_blank\" rel=\"noopener\">🗂️ Волт</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#audio\" target=\"_blank\" rel=\"noopener\" style=\"border-color:rgba(52,211,153,0.45);color:var(--emerald);\">🎵 4 WAV + Suno</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#script\" target=\"_blank\" rel=\"noopener\">🎬 Сценарій</a>",
         "    <a class=\"deep-chip\" href=\"" + esc(h.page_url) + "#prompts\" target=\"_blank\" rel=\"noopener\">🎥 100 Промптів</a>",
