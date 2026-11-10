@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📊 AI Titans Thoughtcast — Глобальний Дашборд Статистики & Статусу</title>
+  <style>
+    :root {
+      --bg: #07090e;
+      --panel: #0f141e;
+      --panel-2: #151c2a;
+      --border: rgba(255,255,255,0.09);
+      --text: #eef2f9;
+      --muted: #8f9bb3;
+      --amber: #f59e0b;
+      --emerald: #10b981;
+      --sky: #38bdf8;
+      --purple: #a78bfa;
+      --rose: #f43f5e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top right, rgba(56,189,248,0.08), transparent 45%),
+                  radial-gradient(circle at bottom left, rgba(245,158,11,0.06), transparent 45%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem clamp(1rem, 3vw, 3rem);
+    }
+    .container { max-width: 1460px; margin: 0 auto; }
+    .top-nav {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border);
+    }
+    .brand h1 {
+      margin: 0; font-size: clamp(1.5rem, 2.8vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #fff, #38bdf8, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .brand p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    .nav-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .nav-btn {
+      padding: 0.55rem 0.95rem; border-radius: 10px; text-decoration: none; font-size: 0.85rem; font-weight: 600;
+      background: var(--panel-2); color: var(--text); border: 1px solid var(--border); transition: 0.2s;
+    }
+    .nav-btn:hover { border-color: var(--sky); transform: translateY(-1px); }
+    .nav-btn.highlight { background: linear-gradient(135deg, rgba(245,158,11,0.22), rgba(16,185,129,0.22)); border-color: rgba(245,158,11,0.5); }
+
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin-bottom: 1.75rem;
+    }
+    .kpi-card {
+      background: linear-gradient(180deg, var(--panel-2), var(--panel));
+      border: 1px solid var(--border); border-radius: 16px; padding: 1.25rem; position: relative; overflow: hidden;
+    }
+    .kpi-card::after {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--sky), var(--amber));
+    }
+    .kpi-num { font-size: 2rem; font-weight: 800; line-height: 1.1; margin-bottom: 0.3rem; }
+    .kpi-label { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+    .kpi-sub { font-size: 0.76rem; color: var(--sky); margin-top: 0.35rem; }
+
+    .hygiene-banner {
+      background: linear-gradient(90deg, rgba(16,185,129,0.12), rgba(56,189,248,0.1));
+      border: 1px solid rgba(16,185,129,0.35); border-radius: 14px; padding: 1rem 1.35rem;
+      margin-bottom: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .hygiene-banner strong { color: var(--emerald); }
+
+    .chart-panel {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 2rem;
+    }
+    .chart-panel h2 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+    .chart-legend { display: flex; gap: 1.2rem; font-size: 0.8rem; color: var(--muted); margin-bottom: 1.1rem; }
+    .dot { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; }
+    .dot-vid { background: var(--sky); } .dot-img { background: var(--amber); } .dot-aud { background: var(--emerald); }
+
+    .chart-row {
+      display: grid; grid-template-columns: 240px 1fr 240px; align-items: center; gap: 1rem; margin-bottom: 0.65rem; font-size: 0.86rem;
+    }
+    @media (max-width: 820px) { .chart-row { grid-template-columns: 1fr; gap: 0.35rem; } }
+    .chart-label { display: flex; align-items: center; gap: 0.5rem; }
+    .ep-pill { background: rgba(255,255,255,0.08); padding: 2px 7px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: var(--sky); }
+    .pct-tag { margin-left: auto; color: var(--muted); font-size: 0.78rem; }
+    .chart-bar-wrap { display: flex; height: 12px; background: rgba(255,255,255,0.05); border-radius: 99px; overflow: hidden; }
+    .bar-seg { height: 100%; }
+    .seg-vid { background: var(--sky); } .seg-img { background: var(--amber); } .seg-aud { background: var(--emerald); }
+    .chart-nums { display: flex; justify-content: flex-end; gap: 0.7rem; font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .c-vid { color: var(--sky); } .c-img { color: var(--amber); } .c-aud { color: var(--emerald); }
+
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;
+    }
+    .filter-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .chip {
+      padding: 0.48rem 0.9rem; border-radius: 99px; background: var(--panel); border: 1px solid var(--border);
+      color: var(--muted); font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: 0.15s;
+    }
+    .chip.active, .chip:hover { color: #fff; border-color: var(--sky); background: rgba(56,189,248,0.16); }
+    .search-box {
+      padding: 0.52rem 1rem; border-radius: 10px; background: var(--panel); border: 1px solid var(--border);
+      color: #fff; min-width: 260px; font-size: 0.88rem; outline: none;
+    }
+    .search-box:focus { border-color: var(--amber); }
+
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); gap: 1.25rem; }
+    @media (max-width: 640px) { .cards-grid { grid-template-columns: 1fr; } }
+    .titan-card {
+      background: linear-gradient(180deg, var(--panel-2), var(--panel));
+      border: 1px solid var(--border); border-radius: 18px; padding: 1.4rem; display: flex; flex-direction: column; gap: 1rem;
+    }
+    .titan-card.stage-editing { border-color: rgba(16,185,129,0.45); }
+    .titan-card.stage-ingest { border-color: rgba(245,158,11,0.45); }
+
+    .card-top { display: flex; gap: 1.15rem; align-items: flex-start; }
+    .avatar-box { position: relative; width: 82px; height: 82px; flex-shrink: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #0a0d14; }
+    .avatar-box img { width: 100%; height: 100%; object-fit: cover; }
+    .ep-badge { position: absolute; bottom: 4px; right: 4px; background: rgba(0,0,0,0.8); color: #fff; font-size: 0.7rem; font-weight: 800; padding: 2px 6px; border-radius: 6px; }
+    .card-head-info { flex: 1; min-width: 0; }
+    .stage-row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.3rem; }
+    .stage-badge { font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
+    .stage-badge.stage-editing { background: rgba(16,185,129,0.18); color: #34d399; border: 1px solid rgba(16,185,129,0.4); }
+    .stage-badge.stage-ingest { background: rgba(245,158,11,0.18); color: #fbbf24; border: 1px solid rgba(245,158,11,0.4); }
+    .stage-badge.stage-preprod { background: rgba(167,139,250,0.18); color: #c4b5fd; border: 1px solid rgba(167,139,250,0.4); }
+    .stage-badge.stage-research { background: rgba(56,189,248,0.16); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.35); }
+    .size-badge { font-size: 0.76rem; color: var(--muted); font-weight: 600; }
+
+    .card-head-info h2 { margin: 0; font-size: 1.25rem; font-weight: 800; }
+    .latin-sub { font-weight: 500; color: var(--muted); font-size: 0.92rem; }
+    .ep-subtitle { font-size: 0.83rem; color: var(--muted); margin: 0.2rem 0 0.6rem; }
+
+    .progress-track { height: 7px; background: rgba(255,255,255,0.07); border-radius: 99px; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 99px; }
+    .progress-fill.stage-editing { background: linear-gradient(90deg, #10b981, #34d399); }
+    .progress-fill.stage-ingest { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+    .progress-fill.stage-preprod { background: linear-gradient(90deg, #8b5cf6, #38bdf8); }
+    .progress-fill.stage-research { background: linear-gradient(90deg, #0284c7, #38bdf8); }
+    .progress-meta { display: flex; justify-content: space-between; font-size: 0.76rem; color: var(--muted); margin-top: 0.3rem; }
+
+    .stage-note { margin: 0; font-size: 0.86rem; color: #cbd5e1; background: rgba(255,255,255,0.025); padding: 0.7rem 0.9rem; border-radius: 10px; border-left: 3px solid var(--sky); }
+
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+    @media (max-width: 720px) { .metrics-grid { grid-template-columns: repeat(2, 1fr); } }
+    .metric-box { background: rgba(0,0,0,0.28); border: 1px solid var(--border); border-radius: 10px; padding: 0.65rem; }
+    .m-val { font-size: 1.28rem; font-weight: 800; }
+    .m-vid .m-val { color: var(--sky); } .m-img .m-val { color: var(--amber); } .m-aud .m-val { color: var(--emerald); } .m-res .m-val { color: var(--purple); }
+    .m-lbl { font-size: 0.76rem; font-weight: 700; color: var(--text); }
+    .m-sub { font-size: 0.68rem; color: var(--muted); margin-top: 0.25rem; line-height: 1.3; }
+
+    .sources-drawer { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 10px; padding: 0.6rem 0.9rem; }
+    .sources-drawer summary { cursor: pointer; font-size: 0.83rem; font-weight: 700; color: var(--amber); user-select: none; }
+    .sources-list { margin: 0.7rem 0 0.2rem; padding-left: 1.1rem; font-size: 0.79rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.4rem; }
+    .sources-list a { color: var(--sky); text-decoration: none; margin-left: 4px; }
+    .sources-list a:hover { text-decoration: underline; }
+    .src-type { display: inline-block; font-size: 0.7rem; padding: 1px 6px; border-radius: 4px; background: rgba(56,189,248,0.15); color: var(--sky); font-weight: 700; margin-right: 4px; }
+    .src-type.src-bib { background: rgba(167,139,250,0.16); color: var(--purple); }
+    .src-type.src-pdf { background: rgba(245,158,11,0.16); color: var(--amber); }
+
+    .card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.4rem; }
+    .btn-primary {
+      padding: 0.5rem 0.9rem; border-radius: 9px; text-decoration: none; font-size: 0.82rem; font-weight: 700;
+      background: linear-gradient(135deg, rgba(56,189,248,0.28), rgba(16,185,129,0.25)); border: 1px solid rgba(56,189,248,0.5); color: #fff;
+    }
+    .btn-mini {
+      padding: 0.5rem 0.75rem; border-radius: 9px; text-decoration: none; font-size: 0.78rem; font-weight: 600;
+      background: var(--panel); border: 1px solid var(--border); color: var(--muted); transition: 0.15s;
+    }
+    .btn-mini:hover { color: #fff; border-color: var(--amber); }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="top-nav">
+      <div class="brand">
+        <h1>📊 AI TITANS THOUGHTCAST — Телеметрія & Стадії Виробництва</h1>
+        <p>Оновлено з живої файлової системи та DaVinci Resolve Studio 21 • 2026-11-10 08:55 • Всі 10 Титанів Сезону 1</p>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-btn highlight" href="index.html">🏛️ Головний Хаб Сезону 1</a>
+        <a class="nav-btn" href="media_vault_analysis.html">🎥 Медіа-Сховище</a>
+        <a class="nav-btn" href="50_scenes_hassabis.html">♟️ 50 Сюжетів Гассабіса</a>
+        <a class="nav-btn" href="episodes/ep01_altman.html">🎙️ EP01 Альтман</a>
+        <a class="nav-btn" href="episodes/ep03_hassabis.html">🎙️ EP03 Гассабіс</a>
+      </nav>
+    </header>
+
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-num" style="color:var(--sky)">235</div>
+        <div class="kpi-label">🎥 Всього Відеофайлів (.mp4/.mov)</div>
+        <div class="kpi-sub">AI-генерації, Flow, Архіви, 4K Картки та VFX</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num" style="color:var(--amber)">294</div>
+        <div class="kpi-label">🖼️ Всього Зображень (2K / 4K)</div>
+        <div class="kpi-sub">Ключові кейфрейми, прес-досьє та портрети</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num" style="color:var(--emerald)">152</div>
+        <div class="kpi-label">🎙️ Всього Аудіо-файлів</div>
+        <div class="kpi-sub">Диктор (UA/EN), 92 BPM Suno Стеми & NotebookLM</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num" style="color:var(--purple)">151,752</div>
+        <div class="kpi-label">📚 Слів Проведеного Ресьорчу</div>
+        <div class="kpi-sub">37 досьє-документів • 77 першоджерел</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-num" style="color:#f472b6">5.27 GB</div>
+        <div class="kpi-label">💾 Обсяг Медіа-Асетів</div>
+        <div class="kpi-sub">Проєкт Resolve: 8 таймлайни • Синхрон з GDrive</div>
+      </div>
+    </section>
+
+    <section class="hygiene-banner">
+      <div>
+        <strong>✅ Робочий простір очищено (Zero-Bit Loss SHA256):</strong> Усі останні матеріали Деміса Гассабіса (включно з трансатлантичним <em>«Перельотом»</em> та готичною бібліотекою) та Сема Альтмана побітово звірено (SHA256), структуровано в проєкті та дзеркальовано на Google Drive (6.44 GB). Із Desktop та Downloads безпечно видалено зайві копії та скріншоти.
+      </div>
+      <div style="font-size:0.84rem;color:var(--sky);font-weight:700;">
+        DaVinci Resolve Live: 🟢 Підключено (393 кліпів EP01 • 103 кліпів EP03)
+      </div>
+    </section>
+
+    <section class="chart-panel">
+      <h2>📈 Розподіл Медіаактивів та Готовність по Кожному Герою (Live Зріз)</h2>
+      <div class="chart-legend">
+        <span><span class="dot dot-vid"></span>Відеофайли</span>
+        <span><span class="dot dot-img"></span>Зображення (2K/4K)</span>
+        <span><span class="dot dot-aud"></span>Аудіо / Озвучка / Suno</span>
+      </div>
+      
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP01</span>
+            <strong>Сем Альтман</strong>
+            <span class="pct-tag">90%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 182, Фото/Арт: 143, Аудіо: 99">
+            <div class="bar-seg seg-vid" style="width:42.9%"></div>
+            <div class="bar-seg seg-img" style="width:33.7%"></div>
+            <div class="bar-seg seg-aud" style="width:23.3%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 182</span>
+            <span class="c-img">🖼️ 143</span>
+            <span class="c-aud">🎙️ 99</span>
+            <span class="c-mb">2433 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP02</span>
+            <strong>Дженсен Хуанг</strong>
+            <span class="pct-tag">42%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 5, Фото/Арт: 8, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.9%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 5</span>
+            <span class="c-img">🖼️ 8</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">224 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP03</span>
+            <strong>Деміс Гассабіс</strong>
+            <span class="pct-tag">62%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 24, Фото/Арт: 90, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:5.7%"></div>
+            <div class="bar-seg seg-img" style="width:21.2%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 24</span>
+            <span class="c-img">🖼️ 90</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">628 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP04</span>
+            <strong>Джеффрі Хінтон</strong>
+            <span class="pct-tag">34%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 3, Фото/Арт: 9, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:2.1%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 3</span>
+            <span class="c-img">🖼️ 9</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">201 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP05</span>
+            <strong>Ян Лекун</strong>
+            <span class="pct-tag">34%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 3, Фото/Арт: 5, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.5%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 3</span>
+            <span class="c-img">🖼️ 5</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">189 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP06</span>
+            <strong>Ілля Суцкевер</strong>
+            <span class="pct-tag">42%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 3, Фото/Арт: 13, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:3.1%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 3</span>
+            <span class="c-img">🖼️ 13</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">206 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP07</span>
+            <strong>Даріо Амодей</strong>
+            <span class="pct-tag">34%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 3, Фото/Арт: 7, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.7%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 3</span>
+            <span class="c-img">🖼️ 7</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">198 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP08</span>
+            <strong>Фей-Фей Лі</strong>
+            <span class="pct-tag">46%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 4, Фото/Арт: 6, Аудіо: 5">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.5%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 4</span>
+            <span class="c-img">🖼️ 6</span>
+            <span class="c-aud">🎙️ 5</span>
+            <span class="c-mb">239 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP09</span>
+            <strong>Йошуа Бенжіо</strong>
+            <span class="pct-tag">34%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 4, Фото/Арт: 5, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.5%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 4</span>
+            <span class="c-img">🖼️ 5</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">200 MB</span>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">
+            <span class="ep-pill">EP10</span>
+            <strong>Ендрю Ин</strong>
+            <span class="pct-tag">40%</span>
+          </div>
+          <div class="chart-bar-wrap" title="Відео: 3, Фото/Арт: 8, Аудіо: 4">
+            <div class="bar-seg seg-vid" style="width:1.5%"></div>
+            <div class="bar-seg seg-img" style="width:1.9%"></div>
+            <div class="bar-seg seg-aud" style="width:1.5%"></div>
+          </div>
+          <div class="chart-nums">
+            <span class="c-vid">🎥 3</span>
+            <span class="c-img">🖼️ 8</span>
+            <span class="c-aud">🎙️ 4</span>
+            <span class="c-mb">202 MB</span>
+          </div>
+        </div>
+    </section>
+
+    <div class="controls">
+      <div class="filter-chips">
+        <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
+        <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Медіапул зібрано (EP03)</button>
+        <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
+        <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
+      </div>
+      <input class="search-box" type="search" placeholder="🔍 Пошук героя, теми або джерела..." oninput="searchCards(this.value)">
+    </div>
+
+    <section class="cards-grid" id="cardsGrid">
+      
+        <article class="titan-card stage-editing" data-stage="stage-editing" data-search="сем альтман sam altman анатомія експоненти ceo openai • експрезидент y combinator the new yorker — «the doomsday invention» (2016) john burroughs school alumni &amp; safe space archive (2001–2023) apple wwdc 2008 keynote &amp; loopt iphone sdk demo stanford cs183b «how to start a startup» (2014) y combinator blog &amp; openai charter (2015–2023) us senate judiciary hearing c-span (16.05.2023) time ceo of the year 2023 &amp; openai 120-hour timeline">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/sam_altman.jpg" alt="Сем Альтман" onerror="this.style.display='none'">
+              <span class="ep-badge">EP01</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-editing">🟢 В активному фінальному монтажі</span>
+                <span class="size-badge">2432.6 MB</span>
+              </div>
+              <h2>Сем Альтман <span class="latin-sub">(Sam Altman)</span></h2>
+              <div class="ep-subtitle">«Анатомія експоненти» — CEO OpenAI • Експрезидент Y Combinator</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-editing" style="width:90%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>90%</strong></span>
+                <span>Всього медіаактивів: <strong>424</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">DaVinci Studio 21 • Майстер-таймлайн V3 (15:10, 103 відеокліпи V1, 2× 4K ProRes MGFX на V2, 25 UA VO, 7 Suno тем @ -30 dB, Fusion Glow FX). Готово до фінального кольорокору та рендеру.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">182</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 102 • Архів: 18 • VFX: 1 • Картки/4K: 61</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">143</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">99</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 82 • Suno 92 BPM: 13 • Інше: 4</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">16,561</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">4 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (18)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Присяга та свідчення Сема Альтмана у Сенаті США (Крупний план)</strong> — <em>Subcommittee on Privacy, Technology, &amp; the Law (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)</em> <a href="https://www.youtube.com/watch?v=CBYhVcO4WgI" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Заява Альтмана у Конгресі про ризики та ліцензування ШІ</strong> — <em>Senate Judiciary Committee (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)</em> <a href="https://www.youtube.com/watch?v=CBYhVcO4WgI" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Удар суддівського молотка та загальний план зали засідань Сенату</strong> — <em>Hart Senate Office Building, Room 216 (16.05.2023, C-SPAN / YouTube TO0J2Yw7usM)</em> <a href="https://www.youtube.com/watch?v=CBYhVcO4WgI" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>23-річний Сем Альтман зі Стівом Джобсом на WWDC 2008 (Loopt)</strong> — <em>Apple Worldwide Developers Conference (09.06.2008, YouTube KhhId_WG7RA)</em> <a href="https://www.youtube.com/watch?v=KhhId_WG7RA" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Сем Альтман читає лекцію CS183B у Стенфорді як Президент Y Combinator</strong> — <em>Stanford University CS183B (2014, YouTube CBYhVcO4WgI)</em> <a href="https://www.youtube.com/watch?v=CBYhVcO4WgI" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Історичний фотоархів: 23-річний Сем Альтман як CEO Loopt (Phil Glockner, 2009)</strong> — <em>Wikimedia Commons (File:Sam_Altman_in_2009.jpg, CC BY 2.0 / Flickr Phil Glockner)</em> <a href="https://commons.wikimedia.org/wiki/File:Sam_Altman_in_2009.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Кейноут OpenAI DevDay: Альтман презентує платформу GPT-4 Turbo та GPTs (06.11.2023)</strong> — <em>OpenAI Official Stream (06.11.2023, San Francisco / YouTube 11 днів до кризи)</em> <a href="https://www.youtube.com/watch?v=U9mJuUkhUzk" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Сем Альтман інспектує магнітно-інерційний термоядерний реактор Polaris (Helion Energy)</strong> — <em>Helion Energy Lab Records (Everett, WA / TechCrunch Disrupt / Cleantech Media)</em> <a href="https://www.helionenergy.com/" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Sam Altman (EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/5/5a/Meeting_with_Masayoshi_Son_and_Sam_Altman_%28February_3%2C_2025%29_%283x4_cropped_on_Altman%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> The New Yorker — «The Doomsday Invention» (2016)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> John Burroughs School Alumni &amp; Safe Space Archive (2001–2023)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Apple WWDC 2008 Keynote &amp; Loopt iPhone SDK Demo</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Stanford CS183B «How to Start a Startup» (2014)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Y Combinator Blog &amp; OpenAI Charter (2015–2023)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> US Senate Judiciary Hearing C-SPAN (16.05.2023)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> TIME CEO of the Year 2023 &amp; OpenAI 120-Hour Timeline</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Сема_Альтмана.md</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 01 — Сем Альтман: Анатомія експоненти.pdf</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep01_altman.html">🎙️ Відкрити Студію EP01 →</a>
+            <a class="btn-mini" href="cinematic_innovations.html">✨ 20 Фішок & Тріади ↗</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/sam_altman" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-preprod" data-stage="stage-preprod" data-search="дженсен хуанг jensen huang алхімія страждання та кремнію засновник і ceo nvidia • творець екосистеми cuda nvidia gtc keynotes (blackwell reveal 2024, stanford gsb) oneida baptist institute &amp; denny&#x27;s historical records hewlett-packard gsb talk / acquired podcast deep dive sega riva 128 rescue &amp; cuda 2006 whitepaper alexnet 2012 neurips milestone archive">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/jensen_huang.jpg" alt="Дженсен Хуанг" onerror="this.style.display='none'">
+              <span class="ep-badge">EP02</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-preprod">🟠 Препродакшн &amp; Стартовий інжест</span>
+                <span class="size-badge">223.7 MB</span>
+              </div>
+              <h2>Дженсен Хуанг <span class="latin-sub">(Jensen Huang)</span></h2>
+              <div class="ep-subtitle">«Алхімія страждання та кремнію» — Засновник і CEO NVIDIA • Творець екосистеми CUDA</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-preprod" style="width:42%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>42%</strong></span>
+                <span>Всього медіаактивів: <strong>17</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 20 кінематографічних тріад + 100 промптів + 4 Suno стеми + 2 архівні GTC відео + 2 наукові VFX + Flow кадри. Наступний крок: генерація Veo та начитка VO.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">5</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 2 • VFX: 2 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">8</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,287</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">3 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (10)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Вихід Дженсена Хуанга на сцену арени GTC</strong> — <em>NVIDIA Official GTC Keynote Press Stream</em> <a href="https://www.youtube.com/watch?v=_waPvOwL9Z8" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Презентація кремнієвої пластини Blackwell B200</strong> — <em>NVIDIA Official GTC Keynote Press Stream</em> <a href="https://www.youtube.com/watch?v=_waPvOwL9Z8" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Jensen Huang (EP02_PHOTO_01_Jensen_Huang_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/c/c8/Jensen_Huang_Stanford_2026-04-30_010_%28cropped%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> NVIDIA GTC Keynotes (Blackwell Reveal 2024, Stanford GSB)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Oneida Baptist Institute &amp; Denny&#x27;s Historical Records</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Hewlett-Packard GSB Talk / Acquired Podcast Deep Dive</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> SEGA RIVA 128 Rescue &amp; CUDA 2006 Whitepaper</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> AlexNet 2012 NeurIPS Milestone Archive</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 02 — Дженсен Хуанг: Алхімія страждання та кремнію.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Дженсена_Хуанга.md</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep02_huang.html">🎙️ Відкрити Студію EP02 →</a>
+            <a class="btn-mini" href="cinematic_innovations_ep02.html">🔥 20 Тріад ↗</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/jensen_huang" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-ingest" data-stage="stage-ingest" data-search="деміс гассабіс demis hassabis гросмейстер біологічного коду співзасновник і ceo google deepmind • нобелівський лауреат з хімії 2024 nobel prize committee in chemistry 2024 official citation &amp; lecture nature (2021) — «highly accurate protein structure prediction with alphafold» science (2007) — hassabis et al. hippocampal amnesia &amp; future imagination ucl cognitive neuroscience phd thesis (eleanor maguire lab, 2009) google deepmind alphago documentary (seoul, march 2016, move 37) british chess federation archives &amp; bullfrog theme park (1994) cambridge queens&#x27; college double first class computer science tripos">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/demis_hassabis.jpg" alt="Деміс Гассабіс" onerror="this.style.display='none'">
+              <span class="ep-badge">EP03</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-ingest">🟡 Медіапул зібрано в Resolve</span>
+                <span class="size-badge">628.2 MB</span>
+              </div>
+              <h2>Деміс Гассабіс <span class="latin-sub">(Demis Hassabis)</span></h2>
+              <div class="ep-subtitle">«Гросмейстер біологічного коду» — Співзасновник і CEO Google DeepMind • Нобелівський лауреат з хімії 2024</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-ingest" style="width:62%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>62%</strong></span>
+                <span>Всього медіаактивів: <strong>118</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Найглибший ресьорч (26,500+ слів, 50 біографічних сюжетів, 30 тріад). Унікальний інжест у DaVinci (EP03_HASSABIS_CHESS): 24 відео (шахи, ZX Spectrum, вокселі, нейрони, AlphaFold, Переліт), 90 зображень. Наступний крок: озвучка ElevenLabs та збірка таймлайну.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">24</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 21 • Архів: 2 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">90</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">26,540</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">4 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (12)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Нобелівська лекція Деміса Гассабіса у Стокгольмі (2024)</strong> — <em>Nobel Prize Official Channel (Stockholm, Dec 2024)</em> <a href="https://www.youtube.com/watch?v=YtPaZsasmNA" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Архівне відео:</span> <strong>Реакція в Сеулі на легендарний Хід 37 (AlphaGo vs Lee Sedol)</strong> — <em>Google DeepMind Official — AlphaGo Documentary</em> <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Demis Hassabis (EP03_PHOTO_01_Demis_Hassabis_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Nobel Prize Committee in Chemistry 2024 Official Citation &amp; Lecture</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Nature (2021) — «Highly accurate protein structure prediction with AlphaFold»</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Science (2007) — Hassabis et al. Hippocampal Amnesia &amp; Future Imagination</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> UCL Cognitive Neuroscience PhD Thesis (Eleanor Maguire Lab, 2009)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Google DeepMind AlphaGo Documentary (Seoul, March 2016, Move 37)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> British Chess Federation Archives &amp; Bullfrog Theme Park (1994)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Cambridge Queens&#x27; College Double First Class Computer Science Tripos</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 03 — Деміс Гассабіс: Гросмейстер біологічного коду.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Деміса_Гассабіса.md</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep03_hassabis.html">🎙️ Відкрити Студію EP03 →</a>
+            <a class="btn-mini" href="50_scenes_hassabis.html">♟️ 50 Сюжетів ↗</a><a class="btn-mini" href="cinematic_innovations_ep03.html">✨ 30 Тріад ↗</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/demis_hassabis" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-research" data-stage="stage-research" data-search="джеффрі хінтон geoffrey hinton прометей синапсів і тінь предків хрещений батько deep learning • нобелівський лауреат з фізики 2024 nobel prize in physics 2024 official citation &amp; banquet speech acm a.m. turing award 2018 lecture (deep learning) nature (1986) — rumelhart, hinton, williams: backpropagation university of toronto / cifar neural computation archive imagenet 2012 (alexnet) &amp; nyt 2023 google exit interview">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/geoffrey_hinton.jpg" alt="Джеффрі Хінтон" onerror="this.style.display='none'">
+              <span class="ep-badge">EP04</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-research">🔵 Ресьорч, Сценарій &amp; Базовий арт</span>
+                <span class="size-badge">201.4 MB</span>
+              </div>
+              <h2>Джеффрі Хінтон <span class="latin-sub">(Geoffrey Hinton)</span></h2>
+              <div class="ep-subtitle">«Прометей синапсів і тінь предків» — Хрещений батько Deep Learning • Нобелівський лауреат з фізики 2024</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-research" style="width:34%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>34%</strong></span>
+                <span>Всього медіаактивів: <strong>16</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + 100 цитат + 100 промптів + 4 Suno стеми + Нобелівський архів 2024 + VFX колапс хвилі + Flow-дослідження. Очікує генерацію відеоряду.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">3</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">9</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,492</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">3 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (9)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Нобелівське попередження Джеффрі Хінтона у Стокгольмі (2024)</strong> — <em>Nobel Prize Official Banquet Speech (Dec 2024)</em> <a href="https://www.youtube.com/watch?v=-f5WQAk3dYo" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Geoffrey Hinton (EP04_PHOTO_01_Geoffrey_Hinton_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Geoffrey_Hinton_in_2026.jpg/3840px-Geoffrey_Hinton_in_2026.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Nobel Prize in Physics 2024 Official Citation &amp; Banquet Speech</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ACM A.M. Turing Award 2018 Lecture (Deep Learning)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Nature (1986) — Rumelhart, Hinton, Williams: Backpropagation</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> University of Toronto / CIFAR Neural Computation Archive</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ImageNet 2012 (AlexNet) &amp; NYT 2023 Google Exit Interview</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Джеффрі_Хінтона.md</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 04 — Джеффрі Хінтон: Прометей синапсів і тінь предків.pdf</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep04_hinton.html">🎙️ Відкрити Студію EP04 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/geoffrey_hinton" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-research" data-stage="stage-research" data-search="ян лекун yann lecun єретик світла та світових моделей головний науковець з ai у meta (fair) • творець cnn, pytorch та jepa acm a.m. turing award 2018 lecture at&amp;t bell labs archive (lenet-5 convolutional networks, 1989–1993) meta ai (fair) open source &amp; pytorch documentation a path towards autonomous machine intelligence (jepa paper, 2022)">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/yann_lecun.jpg" alt="Ян Лекун" onerror="this.style.display='none'">
+              <span class="ep-badge">EP05</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-research">🔵 Ресьорч, Сценарій &amp; Базовий арт</span>
+                <span class="size-badge">189.0 MB</span>
+              </div>
+              <h2>Ян Лекун <span class="latin-sub">(Yann LeCun)</span></h2>
+              <div class="ep-subtitle">«Єретик світла та світових моделей» — Головний науковець з AI у Meta (FAIR) • Творець CNN, PyTorch та JEPA</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-research" style="width:34%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>34%</strong></span>
+                <span>Всього медіаактивів: <strong>12</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Bell Labs 1989 + VFX осцилятор + Flow JEPA рендер. Очікує розширення B-Roll.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">3</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">5</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,693</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">3 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (8)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Bell Labs (1989): Ян Лекун та перша у світі згорткова мережа LeNet</strong> — <em>Yann LeCun Official Bell Labs Archive (1989–1993)</em> <a href="https://www.youtube.com/watch?v=FwFduRA_L6Q" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Yann LeCun (EP05_PHOTO_01_Yann_LeCun_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ACM A.M. Turing Award 2018 Lecture</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> AT&amp;T Bell Labs Archive (LeNet-5 Convolutional Networks, 1989–1993)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Meta AI (FAIR) Open Source &amp; PyTorch Documentation</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> A Path Towards Autonomous Machine Intelligence (JEPA Paper, 2022)</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Яна_Лекуна.md</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 05 — Ян Лекун: Єретик світла та світових моделей.pdf</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep05_lecun.html">🎙️ Відкрити Студію EP05 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/yann_lecun" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-preprod" data-stage="stage-preprod" data-search="ілля суцкевер ilya sutskever алхімік масштабування та тиші засновник safe superintelligence (ssi) • співзасновник openai simons institute uc berkeley lectures (unreasonable effectiveness of deep learning) neurips 2012 (alexnet) &amp; neurips 2014 (seq2seq) openai research archive (gpt-1 to gpt-4, scaling laws, superalignment) safe superintelligence inc. (ssi) founding manifesto (2024)">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/ilya_sutskever.jpg" alt="Ілля Суцкевер" onerror="this.style.display='none'">
+              <span class="ep-badge">EP06</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-preprod">🟠 Препродакшн &amp; Стартовий інжест</span>
+                <span class="size-badge">205.8 MB</span>
+              </div>
+              <h2>Ілля Суцкевер <span class="latin-sub">(Ilya Sutskever)</span></h2>
+              <div class="ep-subtitle">«Алхімік масштабування та тиші» — Засновник Safe Superintelligence (SSI) • Співзасновник OpenAI</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-preprod" style="width:42%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>42%</strong></span>
+                <span>Всього медіаактивів: <strong>20</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + лекція Simons Institute + VFX Alcubierre + 13 зображень/Flow-досліджень (Єрусалим, GPU AlexNet, SSI моноліт) + бін у Resolve.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">3</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">13</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,582</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">3 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (8)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Лекція Іллі Суцкевера в Інституті Саймонса (Стиснення = Розум)</strong> — <em>Simons Institute for the Theory of Computing (UC Berkeley)</em> <a href="https://www.youtube.com/watch?v=AKMuA_TVz3A" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Ilya Sutskever (EP06_PHOTO_01_Ilya_Sutskever_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Simons Institute UC Berkeley Lectures (Unreasonable Effectiveness of Deep Learning)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> NeurIPS 2012 (AlexNet) &amp; NeurIPS 2014 (Seq2Seq)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> OpenAI Research Archive (GPT-1 to GPT-4, Scaling Laws, Superalignment)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Safe Superintelligence Inc. (SSI) Founding Manifesto (2024)</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 06 — Ілля Суцкевер: Алхімік масштабування та тиші.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Іллі_Суцкевера.md</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep06_sutskever.html">🎙️ Відкрити Студію EP06 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/ilya_sutskever" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-research" data-stage="stage-research" data-search="даріо амодей dario amodei фізика совісті та машини благодаті співзасновник і ceo anthropic • співавтор scaling laws та constitutional ai us senate judiciary subcommittee biosecurity hearing (25.07.2023) anthropic public benefit corporation &amp; constitutional ai papers «machines of loving grace» essay (october 2024) princeton biophysics phd dissertation (2011) &amp; scaling laws (2020)">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/dario_amodei.jpg" alt="Даріо Амодей" onerror="this.style.display='none'">
+              <span class="ep-badge">EP07</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-research">🔵 Ресьорч, Сценарій &amp; Базовий арт</span>
+                <span class="size-badge">197.6 MB</span>
+              </div>
+              <h2>Даріо Амодей <span class="latin-sub">(Dario Amodei)</span></h2>
+              <div class="ep-subtitle">«Фізика совісті та машини благодаті» — Співзасновник і CEO Anthropic • Співавтор Scaling Laws та Constitutional AI</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-research" style="width:34%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>34%</strong></span>
+                <span>Всього медіаактивів: <strong>14</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті США 2023 + VFX сітківки + Flow конституційна призма. Очікує генерацію Veo.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">3</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">7</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,353</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">2 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (7)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Свідчення Даріо Амодея у Сенаті США щодо біобезпеки ШІ</strong> — <em>U.S. Senate Judiciary Subcommittee Hearing (25.07.2023 — Public Domain)</em> <a href="https://www.youtube.com/watch?v=yBgvqGrJ3g8" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Dario Amodei (EP07_PHOTO_01_Dario_Amodei_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> US Senate Judiciary Subcommittee Biosecurity Hearing (25.07.2023)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Anthropic Public Benefit Corporation &amp; Constitutional AI Papers</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> «Machines of Loving Grace» Essay (October 2024)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Princeton Biophysics PhD Dissertation (2011) &amp; Scaling Laws (2020)</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 07 — Даріо Амодей: Фізика совісті та машини благодаті.pdf</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep07_amodei.html">🎙️ Відкрити Студію EP07 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/dario_amodei" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-preprod" data-stage="stage-preprod" data-search="фей-фей лі fei-fei li очі машин та пара пральні творець imagenet • співдиректорка stanford hai • засновниця world labs «the worlds i see» (2023 memoir — stanford / princeton) imagenet cvpr 2009 milestone paper (14m labeled images) ted talk official archive &amp; stanford hai keynotes world labs spatial intelligence launch (2024)">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/fei_fei_li.jpg" alt="Фей-Фей Лі" onerror="this.style.display='none'">
+              <span class="ep-badge">EP08</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-preprod">🟠 Розширений препродакшн + Аудіоогляд</span>
+                <span class="size-badge">238.7 MB</span>
+              </div>
+              <h2>Фей-Фей Лі <span class="latin-sub">(Fei-Fei Li)</span></h2>
+              <div class="ep-subtitle">«Очі машин та пара пральні» — Творець ImageNet • Співдиректорка Stanford HAI • Засновниця World Labs</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-preprod" style="width:46%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>46%</strong></span>
+                <span>Всього медіаактивів: <strong>15</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + TED Talk архів + 2 VFX + готовий 26-хв український подкаст NotebookLM Overview! Наступний крок: генерація візуалів ImageNet.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 2 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">6</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">5</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 1</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">14,314</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">6 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (11)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Виступ Фей-Фей Лі на сцені TED про народження ImageNet</strong> — <em>TED Official Archive — Fei-Fei Li</em> <a href="https://www.youtube.com/watch?v=40riCqvRoMs" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Fei-Fei Li (EP08_PHOTO_01_Fei-Fei_Li_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> «The Worlds I See» (2023 Memoir — Stanford / Princeton)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ImageNet CVPR 2009 Milestone Paper (14M labeled images)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> TED Talk Official Archive &amp; Stanford HAI Keynotes</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> World Labs Spatial Intelligence Launch (2024)</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Архітектори Розуму: Глобальний каталог-довідник лідерів ШІ.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 08 — Фей-Фей Лі: Очі машин та пара пральні.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Фей-Фей Лі.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Фей-Фей_Лі.md</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Іллі_Суцкевера.md</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep08_li.html">🎙️ Відкрити Студію EP08 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/fei_fei_li" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-research" data-stage="stage-research" data-search="йошуа бенжіо yoshua bengio вартовий монреаля та архітектура уваги засновник інституту mila • лауреат премії тюрінга • співавтор attention acm a.m. turing award 2018 citation (neural language models &amp; attention) us senate judiciary hearing (25.07.2023) &amp; international ai safety report mila — quebec artificial intelligence institute archives (université de montréal) iclr 2015 neural machine translation (bahdanau, cho, bengio)">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/yoshua_bengio.jpg" alt="Йошуа Бенжіо" onerror="this.style.display='none'">
+              <span class="ep-badge">EP09</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-research">🔵 Ресьорч, Сценарій &amp; Базовий арт</span>
+                <span class="size-badge">200.2 MB</span>
+              </div>
+              <h2>Йошуа Бенжіо <span class="latin-sub">(Yoshua Bengio)</span></h2>
+              <div class="ep-subtitle">«Вартовий Монреаля та архітектура уваги» — Засновник інституту Mila • Лауреат Премії Тюрінга • Співавтор Attention</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-research" style="width:34%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>34%</strong></span>
+                <span>Всього медіаактивів: <strong>13</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті 2023 + 2 наукові VFX + Flow Attention Threads. Очікує генерацію Veo.</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 2 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">5</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,224</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">3 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (8)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Виступ Йошуа Бенжіо в Сенаті США про ризики втрати контролю</strong> — <em>U.S. Senate Judiciary Subcommittee Hearing (25.07.2023 — Public Domain)</em> <a href="https://www.youtube.com/watch?v=hm1zexCjELo" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Yoshua Bengio (EP09_PHOTO_01_Yoshua_Bengio_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ACM A.M. Turing Award 2018 Citation (Neural Language Models &amp; Attention)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> US Senate Judiciary Hearing (25.07.2023) &amp; International AI Safety Report</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Mila — Quebec Artificial Intelligence Institute Archives (Université de Montréal)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> ICLR 2015 Neural Machine Translation (Bahdanau, Cho, Bengio)</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Йошуа_Бенжіо.md</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 09 — Йошуа Бенжіо: Вартовий Монреаля та архітектура уваги.pdf</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep09_bengio.html">🎙️ Відкрити Студію EP09 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/yoshua_bengio" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+        <article class="titan-card stage-preprod" data-stage="stage-preprod" data-search="ендрю ин andrew ng вчитель світу та нова електрика співзасновник google brain та coursera • засновник deeplearning.ai та ai fund stanford cs229 machine learning open courseware google brain founding cat-recognition paper (icml 2012) coursera &amp; deeplearning.ai founding chronicles data-centric ai &amp; baidu ai lab archives">
+          <div class="card-top">
+            <div class="avatar-box">
+              <img src="assets/avatars/andrew_ng.jpg" alt="Ендрю Ин" onerror="this.style.display='none'">
+              <span class="ep-badge">EP10</span>
+            </div>
+            <div class="card-head-info">
+              <div class="stage-row">
+                <span class="stage-badge stage-preprod">🟠 Препродакшн &amp; Стартовий інжест</span>
+                <span class="size-badge">202.4 MB</span>
+              </div>
+              <h2>Ендрю Ин <span class="latin-sub">(Andrew Ng)</span></h2>
+              <div class="ep-subtitle">«Вчитель світу та нова електрика» — Співзасновник Google Brain та Coursera • Засновник DeepLearning.AI та AI Fund</div>
+              <div class="progress-track">
+                <div class="progress-fill stage-preprod" style="width:40%"></div>
+              </div>
+              <div class="progress-meta">
+                <span>Готовність виробництва: <strong>40%</strong></span>
+                <span>Всього медіаактивів: <strong>15</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <p class="stage-note">Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Stanford CS229 + VFX катушка Тесли + Flow-дослідження (медичний підручник, голографічна карта, бін у Resolve).</p>
+
+          <div class="metrics-grid">
+            <div class="metric-box m-vid">
+              <div class="m-val">3</div>
+              <div class="m-lbl">🎥 Відеофайлів</div>
+              <div class="m-sub">AI/Flow: 1 • Архів: 1 • VFX: 1 • Картки/4K: 0</div>
+            </div>
+            <div class="metric-box m-img">
+              <div class="m-val">8</div>
+              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
+              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+            </div>
+            <div class="metric-box m-aud">
+              <div class="m-val">4</div>
+              <div class="m-lbl">🎙️ Аудіо-стемів</div>
+              <div class="m-sub">VO: 0 • Suno 92 BPM: 4 • Інше: 0</div>
+            </div>
+            <div class="metric-box m-res">
+              <div class="m-val">13,706</div>
+              <div class="m-lbl">📚 Слів ресьорчу</div>
+              <div class="m-sub">6 досьє • 100 промптів • 100 цитат</div>
+            </div>
+          </div>
+
+          <details class="sources-drawer">
+            <summary>📚 Джерела, архівні посилання та верифіковані документи (11)</summary>
+            <ul class="sources-list">
+              <li><span class="src-type">Архівне відео:</span> <strong>Стенфордська лекція Ендрю Ина (CS229 Machine Learning)</strong> — <em>Stanford Online — CS229 Machine Learning (CC / Open Course)</em> <a href="https://www.youtube.com/watch?v=jGwO_UgTS7I" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type">Офіційний портрет:</span> <strong>Andrew Ng (EP10_PHOTO_01_Andrew_Ng_Archival_Portrait.jpg)</strong> — <em>Wikimedia Commons (Open Editorial / CC / Public Domain — see Commons file page)</em> <a href="https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg" target="_blank" rel="noopener">↗ Перейти</a></li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Stanford CS229 Machine Learning Open Courseware</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Google Brain Founding Cat-Recognition Paper (ICML 2012)</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Coursera &amp; DeepLearning.AI Founding Chronicles</li><li><span class="src-type src-bib">Наукове/Медійне джерело:</span> Data-Centric AI &amp; Baidu AI Lab Archives</li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 08 — Фей-Фей Лі: Очі машин та пара пральні.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 04 — Джеффрі Хінтон: Прометей синапсів і тінь предків.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 10 — Ендрю Ин: Вчитель світу та нова електрика.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Епізод 07 — Даріо Амодей: Фізика совісті та машини благодаті.pdf</code></li><li><span class="src-type src-pdf">PDF/MD Досьє:</span> <code>Мастер-досьє__Ендрю_Ин.md</code></li>
+            </ul>
+          </details>
+
+          <div class="card-actions">
+            <a class="btn-primary" href="episodes/ep10_ng.html">🎙️ Відкрити Студію EP10 →</a>
+            
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/01_RESEARCH/andrew_ng" title="Локальний міст у Finder">📂 Досьє (Finder)</a>
+            <a class="btn-mini" href="http://127.0.0.1:8765/open?path=/Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE" title="Локальний міст у Finder">🎞️ Футажі (Finder)</a>
+          </div>
+        </article>
+        
+    </section>
+
+    <footer>
+      AI Titans Thoughtcast Production Ecosystem • Згенеровано скриптом <code>generate_season1_telemetry_dashboard.py</code> • 100% верифіковані метрики.
+    </footer>
+  </div>
+
+  <script>
+    let currentStage = 'all';
+    let currentQuery = '';
+    function applyFilters() {
+      document.querySelectorAll('.titan-card').forEach(card => {
+        const st = card.dataset.stage;
+        const txt = card.dataset.search || '';
+        const okStage = (currentStage === 'all' || st === currentStage);
+        const okQuery = (!currentQuery || txt.includes(currentQuery));
+        card.style.display = (okStage && okQuery) ? 'flex' : 'none';
+      });
+    }
+    function filterCards(stage, btn) {
+      currentStage = stage;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    }
+    function searchCards(q) {
+      currentQuery = (q || '').trim().toLowerCase();
+      applyFilters();
+    }
+  </script>
+</body>
+</html>
