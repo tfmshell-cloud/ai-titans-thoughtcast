@@ -1,33 +1,44 @@
-# EP10 — Ендрю Ин | Реєстр Медіаконтенту Google Flow & 2K Keyframes
+# EP10 — Ендрю Ин: Повний Каталог Медіа-Асетів
 
-> **Тема епізоду:** «Вчитель світу та нова електрика» (21:30 хв)
-> **Пріоритетна черга:** 10 базових сцен. **Галерея концепт-кадрів та B-roll:** 9 асетів.
+- **4K Досьє-плашки (`05_RAW_FOOTAGE/dossiers_press/`):** 6
+- **HD Архівні відеокліпи 1080p24 (`05_RAW_FOOTAGE/archives/`):** 16
+- **Фотоархів Wikimedia Commons (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/`):** 18
+- **Flow Ключові кадри & 4K UA Цитат-Картки:** 17
 
-## 1. Пріоритетна Черга Google Flow / Veo (10 базових сцен)
+## Архівні відеокліпи (16 HD)
+- `ARCH #01` [05:30–05:38] **EP10_VID_ARCH_01_ACT2_24FPS_AndrewNg_Stanford_CS229_Chalkboard.mp4** — Стенфордська лекція Ендрю Ина (CS229 Machine Learning)
+- `ARCH #02` [01:45–02:35] **EP10_VID_ARCH_02_ACT1_24FPS_AndrewNg_Stanford_CS229_2008_Classic.mp4** — Історична лекція CS229 (2008): завдання, які неможливо запрограмувати вручну
+- `ARCH #03` [03:30–04:30] **EP10_VID_ARCH_03_ACT1_24FPS_AndrewNg_Autonomous_Helicopter_RL.mp4** — Автономний трюковий вертоліт навчається перевернутого польоту через RL
+- `ARCH #04` [04:30–05:15] **EP10_VID_ARCH_04_ACT1_24FPS_AndrewNg_Robotics_Aerodynamics_Stanford.mp4** — Чому аеродинаміку неможливо закодувати вручну — дайте комп'ютеру вчитися самому
+- `ARCH #05` [05:45–07:00] **EP10_VID_ARCH_05_ACT2_24FPS_AndrewNg_Google_Brain_Team_Origin.mp4** — Як команда Google Brain трансформувала Google у AI-компанію
+- `ARCH #06` [07:00–08:30] **EP10_VID_ARCH_06_ACT2_24FPS_AndrewNg_Baidu_1300_AI_Team_SVOD.mp4** — Google Brain і керівництво 1,300 дослідниками ШІ в Baidu Research
+- `ARCH #07` [08:30–10:45] **EP10_VID_ARCH_07_ACT2_24FPS_AndrewNg_Cats_Xrays_Transfer_Learning.mp4** — Від розпізнавання котів на YouTube до медичних рентген-знімків
+- `ARCH #08` [10:45–12:15] **EP10_VID_ARCH_08_ACT2_24FPS_AndrewNg_EDUKWEST_Koller_Coursera_100K.mp4** — Ендрю Ин і Дафна Коллер: 100 000 студентів на перших курсах та народження Coursera
+- `ARCH #09` [12:15–14:00] **EP10_VID_ARCH_09_ACT3_24FPS_AndrewNg_Coursera_Tens_of_Thousands.mp4** — Як масштабувати університетську освіту на сотні тисяч учнів одночасно
+- `ARCH #10` [14:30–15:45] **EP10_VID_ARCH_10_ACT3_24FPS_AndrewNg_AI_Is_The_New_Electricity_2017.mp4** — Маніфест «ШІ — це нова електрика»: трансформація кожної індустрії
+- `ARCH #11` [16:15–17:15] **EP10_VID_ARCH_11_ACT3_24FPS_AndrewNg_Steel_Defects_Data_Centric_AI.mp4** — 39 типів дефектів на сталевому заводі: чому Big Data не працює на виробництві
+- `ARCH #12` [17:15–18:00] **EP10_VID_ARCH_12_ACT3_24FPS_AndrewNg_Databricks_Fifty_Good_Images.mp4** — Досить усього 50 якісних зображень, якщо дані відібрано з любов'ю
+- `ARCH #13` [13:30–14:30] **EP10_VID_ARCH_13_ACT3_24FPS_AndrewNg_OReilly_Read_Papers_Replicate.mp4** — Секретна формула кар'єри в ШІ: читай статті й відтворюй результати
+- `ARCH #14` [18:00–19:00] **EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4** — GPT-3.5 у циклі Agentic Workflow перемагає моноліт GPT-4 (Sequoia AI Ascent)
+- `ARCH #15` [19:00–19:45] **EP10_VID_ARCH_15_ACT4_24FPS_AndrewNg_LangChain_Protect_Open_Source.mp4** — Захист відкритих ваг і відкритого коду від регуляторних монополій
+- `ARCH #16` [19:45–21:30] **EP10_VID_ARCH_16_ACT4_24FPS_AndrewNg_Snowflake_Great_Time_To_Be_Builder.mp4** — «Найкращий час в історії, щоб бути творцем»: послання наприкінці Сезону 1
 
-| № | Статус | Таймкод | Назва сцени | Файл / Кадр | Технічні характеристики |
-| :-: | :-: | :-: | :--- | :--- | :--- |
-| **01** | ⏳ У розробці | `0:00–00:25` | **Сінгапур і Гонконг (1984): юний Ендрю за комп'ютером** | `ep10_flow_01_childhood_singapore.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **02** | 🔵 2K Кадр готовий | `0:25–01:45` | **Батько-лікар показує юному Ендрю підручник з експертних систем (1984)** | `05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg` | 2752×1536 (2K Master JPG готовий) • Початок шляху в штучний інтелект |
-| **03** | ⏳ У розробці | `2:30–04:00` | **Стенфорд: автономний вертоліт навчається акробатиці через RL** | `ep10_flow_03_autonomous_helicopter.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **04** | ⏳ У розробці | `4:30–06:30` | **Google Brain (2012): нейромережа відкриває концепцію кота** | `ep10_flow_04_google_brain_cat.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **05** | ⏳ У розробці | `7:00–09:00` | **Baidu: масштабування акустичних моделей Deep Speech** | `ep10_flow_05_baidu_deep_speech.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **06** | ⏳ У розробці | `10:00–12:30` | **Coursera: Всесвітня аудиторія, 5 мільйонів учнів навчаються ML** | `ep10_flow_06_coursera_revolution.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **07** | ⏳ У розробці | `13:00–15:00` | **Data-Centric AI: фокус на якості даних замість коду** | `ep10_flow_07_data_centric.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **08** | ⏳ У розробці | `15:30–17:30` | **Landing AI: машинний зір на фабриках та в індустрії** | `ep10_flow_08_landing_ai_industry.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **09** | ⏳ У розробці | `18:00–19:30` | **AI Fund: посівне поле нових технологічних паростків** | `ep10_flow_09_ai_fund_ecosystem.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **10** | ⏳ У розробці | `20:00–21:30` | **AI як нова електрика: трансформація людської цивілізації** | `ep10_flow_10_ai_new_electricity.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-
-## 2. Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (9 асетів)
-
-| Код | Бейдж | Таймкод | Назва асету | Локальний шлях | Роздільна здатність |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **KF #02 (2K)** | 🖼️ 2K Кадр готовий | `00:25–01:45` | Doctor Father Medical Textbook (Батько-лікар показує підручник) | `05_RAW_FOOTAGE/flow_images/EP10_Ng/01_primary_keyframes/EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #02B (2K)** | 🎬 B-Roll Кадр | `01:45–02:30` | Father & Son Medical AI Textbook (Батько та син вивчають схеми) | `05_RAW_FOOTAGE/flow_images/EP10_Ng/02_broll_stills_and_studies/EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg` | 2752×1536 (2K JPG) |
-| **GOOGLE BRAIN #03** | 🐱 16 000 Ядер • Розпізнавання котів | `06:00–07:30` | Суперкомп'ютерні сервери Google Brain у крижаній залі (16,000 Cores Cat Neuron) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg` | 2752×1536 (2K JPG) |
-| **COURSERA #04** | 🎓 Нова Електрика • Мільйони учнів | `10:30–12:30` | Планета, охоплена сяйвом знань (Coursera & DeepLearning.AI Education Grid) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg` | 2752×1536 (2K JPG) |
-| **CHILDHOOD #05** | 💻 Сінгапур 1980-ті • Перший код | `02:00–03:30` | Хлопчик перед вінтажним комп'ютером у темній кімнаті | `05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg` | 1920×1080 (1080p JPG) |
-| **SMART CITY #06** | 🏙️ Розумне місто • AI for Everyone | `09:00–10:30` | Голографічна карта трансформується у сяюче розумне місто | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP10_FLOW_IMG_03_Holographic_Map_Morphing_City_2K.jpg` | 2752×1536 (2K JPG) |
-| **SINGAPORE #04** | 🏙️ Код Сінгапуру • Раффлз | `02:00–03:30` | Хмарочос пронизує вертикальний дощ двійкового коду над затокою | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_04_Skyscraper_Piercing_Binary_Rain_2K.jpg` | 2752×1536 (2K JPG) |
-| **GRID #05** | ⚡ Нова Електрика • Світова Інфраструктура | `17:30–19:00` | Будівлі мегаполіса перетворюються на кремнієві інтегральні плати | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_05_Metropolis_Transforming_Into_Silicon_2K.jpg` | 2752×1536 (2K JPG) |
-| **PLANET #06** | 🌍 Coursera • Знання для 8 Мільярдів | `13:00–14:30` | Золоті імпульси знань поширюються тектонічними контурами Землі | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP10_FLOW_IMG_06_Energy_Pulses_Flowing_Through_Earth_2K.jpg` | 2752×1536 (2K JPG) |
+## Фотоархів Wikimedia Commons (18)
+- `ФОТО #01 (1976–1984 • Гонконг)` **EP10_PH_01** — Історична бухта Вікторія в Гонконзі — роки дитинства в родині лікаря Рональда Ина (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_01_hong_kong_childhood_era.jpg`)
+- `ФОТО #02 (1988 • Raffles, Сінгапур)` **EP10_PH_02** — Вежа з годинником легендарної школи Raffles Institution у Сінгапурі (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_02_raffles_institution_singapore.jpg`)
+- `ФОТО #03 (Перший Apple II • BASIC)` **EP10_PH_03** — Комп'ютер Apple II 1977 року — перші рядки коду BASIC без жодної зайвої коми (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_03_apple_ii_basic_coding_youth.jpg`)
+- `ФОТО #04 (1997 • Carnegie Mellon)` **EP10_PH_04** — Панорама Університету Карнегі-Меллона — потрійний бакалавр за 3 роки (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_04_carnegie_mellon_bs_era.jpg`)
+- `ФОТО #05 (1998 • MIT Killian Court)` **EP10_PH_05** — Академічний двір Killian Court у MIT — магістерське дослідження навчання (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_05_mit_killian_court_ms_era.jpg`)
+- `ФОТО #06 (2002 • UC Berkeley)` **EP10_PH_06** — Вежа Sather Tower в Каліфорнійському університеті Берклі (PhD під керівництвом Джордана) (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_06_uc_berkeley_sather_tower_phd.jpg`)
+- `ФОТО #07 (2002+ • Stanford Quad)` **EP10_PH_07** — Головний кампус Стенфордського університету з вежі Гувера — лабораторія CS229 (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_07_stanford_university_professor_quad.jpg`)
+- `ФОТО #08 (Автономний вертоліт RL)` **EP10_PH_08** — Перевернутий політ радіокерованого вертольота — ілюстрація експериментів Stanford (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_08_inverted_rc_helicopter_rl_flight.jpg`)
+- `ФОТО #09 (2011 • Googleplex)` **EP10_PH_09** — Кампус Googleplex у Маунтін-В'ю — народження таємного проєкту Google Brain (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_09_googleplex_mountain_view_google_brain.jpg`)
+- `ФОТО #10 (2012 • Нейрон Кота)` **EP10_PH_10** — Мордочка смугастого кота — обличчя з чистої статистики 16 000 серверних ядер (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_10_google_brain_cat_neuron_2012.jpg`)
+- `ФОТО #11 (Coursera HQ)` **EP10_PH_11** — 381 E. Evelyn Avenue у Маунтін-В'ю — перша штаб-квартира Coursera (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_11_coursera_mountain_view_hq.jpg`)
+- `ФОТО #12 (2012 • Запуск Coursera)` **EP10_PH_12** — Зустріч партнерів Coursera у роки глобальної освітньої революції (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_12_coursera_global_launch_era.jpg`)
+- `ФОТО #13 (2014 • Baidu Шанді)` **EP10_PH_13** — Штаб-квартира Baidu в пекінському Шанді — керівництво 1,300 дослідниками ШІ (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_13_baidu_shangdi_chief_scientist_hq.jpg`)
+- `ФОТО #14 (WSJ Keynote Stage)` **EP10_PH_14** — Ендрю Ин у фірмовій блакитній сорочці на сцені WSJ D.Live (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_14_andrew_ng_wsj_ai_electricity_keynote.jpg`)
+- `ФОТО #15 (Нитка Нової Електрики)` **EP10_PH_15** — Світна нитка розжарення у темряві — символ маніфесту «ШІ — це нова електрика» (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_15_ai_is_the_new_electricity_bulb.jpg`)
+- `ФОТО #16 (Landing AI • Заводи)` **EP10_PH_16** — Прецизійна оптична інспекція промислових деталей (комп'ютерний зір Data-Centric AI) (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_16_landing_ai_precision_factory_vision.jpg`)
+- `ФОТО #17 (Лампа Едісона • Світло)` **EP10_PH_17** — Класична лампа Едісона — міст від винайдення електрики до доступу знань для всіх (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_17_edison_grid_new_electricity_glow.jpg`)
+- `ФОТО #18 (Світанок на Землі • МКС)` **EP10_PH_18** — Світанок над нічними вогнями континентів із борту МКС — фінал 10-серійного Сезону (`05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_18_earth_dawn_global_builders_finale.jpg`)

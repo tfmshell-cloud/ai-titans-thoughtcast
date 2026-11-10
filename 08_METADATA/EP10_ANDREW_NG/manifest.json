@@ -1,0 +1,208 @@
+{
+  "episode_id": "EP10",
+  "hero": "Andrew Ng",
+  "hero_ua": "Ендрю Ин",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/andrew_ng/",
+  "summary": {
+    "research_docs_count": 24,
+    "transcripts_count": 16,
+    "articles_count": 4,
+    "research_words": 119242,
+    "videos_total": 60,
+    "videos_native": 49,
+    "images_total": 51,
+    "images_native": 39,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 10 — ЕНДРЮ ИН",
+      "rel_path": "01_RESEARCH/andrew_ng/MASTER_DOSSIER_EP10.md",
+      "url": "",
+      "words": 13706
+    },
+    {
+      "title": "GLOBAL MEDIA ARCHIVES REGISTRY — EP10: ANDREW NG («Вчитель світу та нова електрика»)",
+      "rel_path": "01_RESEARCH/andrew_ng/GLOBAL_MEDIA_ARCHIVES_REGISTRY_ANDREW_NG.md",
+      "url": "",
+      "words": 458
+    },
+    {
+      "title": "Andrew Ng — Core Architectural & Educational Theses",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_Core_Theses.md",
+      "url": "",
+      "words": 148
+    },
+    {
+      "title": "Stanford CS229 Machine Learning Lecture 1 — Andrew Ng (2018)",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_01_Stanford_CS229_2018_Lecture1.md",
+      "url": "https://www.youtube.com/watch?v=jGwO_UgTS7I",
+      "words": 13280
+    },
+    {
+      "title": "Stanford CS229 Classic Machine Learning Lecture 1 — Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_02_Stanford_CS229_Classic_2008.md",
+      "url": "https://www.youtube.com/watch?v=UzxYlbK2c7E",
+      "words": 11990
+    },
+    {
+      "title": "AI Frontiers 2017 — Andrew Ng: AI is the New Electricity",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_04_AIFrontiers_New_Electricity_2017.md",
+      "url": "https://www.youtube.com/watch?v=JsGPh-HOqjY",
+      "words": 8327
+    },
+    {
+      "title": "DeepLearning.AI — From Model-Centric to Data-Centric AI | Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_05_DeepLearningAI_Data_Centric_AI.md",
+      "url": "https://www.youtube.com/watch?v=06-AZXmwHjo",
+      "words": 11011
+    },
+    {
+      "title": "Databricks Keynote — Data-Centric AI: From Big Data to Good Data | Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_06_Databricks_Good_Data_Principles.md",
+      "url": "https://www.youtube.com/watch?v=avoijDORAlc",
+      "words": 4859
+    },
+    {
+      "title": "Sequoia Capital — What's Next for AI Agentic Workflows ft. Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_07_Sequoia_Agentic_Workflows.md",
+      "url": "https://www.youtube.com/watch?v=sal78ACtGTc",
+      "words": 2683
+    },
+    {
+      "title": "Snowflake BUILD 2024 — Andrew Ng on AI Agents & Agentic Reasoning",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_08_Snowflake_BUILD_Agentic_Reasoning.md",
+      "url": "https://www.youtube.com/watch?v=KrRD7r7y7NY",
+      "words": 4917
+    },
+    {
+      "title": "LangChain Interrupt — The Future of AI Agents with Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_09_LangChain_Future_Of_AI_Agents.md",
+      "url": "https://www.youtube.com/watch?v=OaRhpwz_TGM",
+      "words": 6124
+    },
+    {
+      "title": "SVOD — Andrew Ng on Google Brain, Baidu, Coursera & Stanford",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_10_SVOD_GoogleBrain_Baidu_Coursera.md",
+      "url": "https://www.youtube.com/watch?v=PS9MELl8vLQ",
+      "words": 4010
+    },
+    {
+      "title": "Interview with Daphne Koller and Andrew Ng of Coursera",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_11_EDUKWEST_Koller_Ng_Coursera.md",
+      "url": "https://www.youtube.com/watch?v=e-NoK9jOuEE",
+      "words": 4434
+    },
+    {
+      "title": "Stanford 2011 — The Future of Robotics and AI | Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_12_Stanford_2011_Robotics_Future.md",
+      "url": "https://www.youtube.com/watch?v=AY4ajbu_G3k",
+      "words": 3194
+    },
+    {
+      "title": "Startup Grind — AI is the New Electricity | Dr. Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_13_StartupGrind_AI_New_Electricity.md",
+      "url": "https://www.youtube.com/watch?v=fgbBtnCvcDI",
+      "words": 3793
+    },
+    {
+      "title": "Stanford — Autonomous Helicopters Teach Themselves to Fly Stunts",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_14_Stanford_Autonomous_Helicopter_RL.md",
+      "url": "https://www.youtube.com/watch?v=M-QUkgk3HyE",
+      "words": 593
+    },
+    {
+      "title": "Andrew Ng O'Reilly AI Conference Keynote",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_15_OReilly_AI_Conference_AndrewNg.md",
+      "url": "https://www.youtube.com/watch?v=mQ29kb_jZYI",
+      "words": 4967
+    },
+    {
+      "title": "TensorFlow — Data-Centric AI: A New Paradigm | Andrew Ng",
+      "rel_path": "01_RESEARCH/andrew_ng/transcripts/EP10_TR_16_TensorFlow_Data_Centric_AI_Paradigm.md",
+      "url": "https://www.youtube.com/watch?v=2OlzQ295oCk",
+      "words": 1752
+    },
+    {
+      "title": "Andrew Ng, Google Brain & Coursera — Wikipedia Archives",
+      "rel_path": "01_RESEARCH/andrew_ng/articles/EP10_ART_01_AndrewNg_Wikipedia_and_Education_Chronicle.md",
+      "url": "",
+      "words": 6499
+    },
+    {
+      "title": "Landmark Scientific Papers: Google Brain Cat Neuron, Inverted Helicopters & Baidu Deep Speech",
+      "rel_path": "01_RESEARCH/andrew_ng/articles/EP10_ART_02_GoogleBrain_Cat_Neuron_and_Helicopter_Papers.md",
+      "url": "https://doi.org/10.48550/arxiv.1605.08695",
+      "words": 1013
+    },
+    {
+      "title": "Data-Centric AI, DeepLearning.AI, Landing AI & AI Fund Field Archives",
+      "rel_path": "01_RESEARCH/andrew_ng/articles/EP10_ART_03_Data_Centric_AI_LandingAI_and_AIFund.md",
+      "url": "",
+      "words": 3100
+    },
+    {
+      "title": "MOOC Education Revolution, Agentic Workflows & The Batch Archive",
+      "rel_path": "01_RESEARCH/andrew_ng/articles/EP10_ART_04_Coursera_MOOC_and_Agentic_Workflows_Archives.md",
+      "url": "",
+      "words": 6080
+    },
+    {
+      "title": "Епізод 10 — Ендрю Ин: Вчитель світу та нова електрика",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 10 — Ендрю Ин: Вчитель світу та нова електрика.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 10 — ЕНДРЮ ИН",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Ендрю_Ин.md",
+      "url": "",
+      "words": 2304
+    }
+  ],
+  "archival_clips": [
+    "EP10_VID_ARCH_01_ACT2_24FPS_AndrewNg_Stanford_CS229_Chalkboard.mp4",
+    "EP10_VID_ARCH_02_ACT1_24FPS_AndrewNg_Stanford_CS229_2008_Classic.mp4",
+    "EP10_VID_ARCH_03_ACT1_24FPS_AndrewNg_Autonomous_Helicopter_RL.mp4",
+    "EP10_VID_ARCH_04_ACT1_24FPS_AndrewNg_Robotics_Aerodynamics_Stanford.mp4",
+    "EP10_VID_ARCH_05_ACT2_24FPS_AndrewNg_Google_Brain_Team_Origin.mp4",
+    "EP10_VID_ARCH_06_ACT2_24FPS_AndrewNg_Baidu_1300_AI_Team_SVOD.mp4",
+    "EP10_VID_ARCH_07_ACT2_24FPS_AndrewNg_Cats_Xrays_Transfer_Learning.mp4",
+    "EP10_VID_ARCH_08_ACT2_24FPS_AndrewNg_EDUKWEST_Koller_Coursera_100K.mp4",
+    "EP10_VID_ARCH_09_ACT3_24FPS_AndrewNg_Coursera_Tens_of_Thousands.mp4",
+    "EP10_VID_ARCH_10_ACT3_24FPS_AndrewNg_AI_Is_The_New_Electricity_2017.mp4",
+    "EP10_VID_ARCH_11_ACT3_24FPS_AndrewNg_Steel_Defects_Data_Centric_AI.mp4",
+    "EP10_VID_ARCH_12_ACT3_24FPS_AndrewNg_Databricks_Fifty_Good_Images.mp4",
+    "EP10_VID_ARCH_13_ACT3_24FPS_AndrewNg_OReilly_Read_Papers_Replicate.mp4",
+    "EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4",
+    "EP10_VID_ARCH_15_ACT4_24FPS_AndrewNg_LangChain_Protect_Open_Source.mp4",
+    "EP10_VID_ARCH_16_ACT4_24FPS_AndrewNg_Snowflake_Great_Time_To_Be_Builder.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_01_hong_kong_childhood_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_02_raffles_institution_singapore.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_03_apple_ii_basic_coding_youth.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_04_carnegie_mellon_bs_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_05_mit_killian_court_ms_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_06_uc_berkeley_sather_tower_phd.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_07_stanford_university_professor_quad.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_08_inverted_rc_helicopter_rl_flight.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_09_googleplex_mountain_view_google_brain.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_10_google_brain_cat_neuron_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_11_coursera_mountain_view_hq.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_12_coursera_global_launch_era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_13_baidu_shangdi_chief_scientist_hq.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_14_andrew_ng_wsj_ai_electricity_keynote.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_15_ai_is_the_new_electricity_bulb.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_16_landing_ai_precision_factory_vision.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_17_edison_grid_new_electricity_glow.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_18_earth_dawn_global_builders_finale.jpg"
+  ]
+}

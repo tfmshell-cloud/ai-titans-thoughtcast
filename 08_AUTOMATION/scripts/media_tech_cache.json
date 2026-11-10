@@ -11418,5 +11418,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_01_hong_kong_childhood_era.jpg": {
+    "mtime": 1794340623.69,
+    "md5": "1fbbd8eb",
+    "w": 1280,
+    "h": 899,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×899",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_02_raffles_institution_singapore.jpg": {
+    "mtime": 1794340623.71,
+    "md5": "2b7e4690",
+    "w": 1136,
+    "h": 758,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1136×758",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_03_apple_ii_basic_coding_youth.jpg": {
+    "mtime": 1794340623.73,
+    "md5": "aca78c12",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_04_carnegie_mellon_bs_era.jpg": {
+    "mtime": 1794340623.74,
+    "md5": "a764a28f",
+    "w": 1280,
+    "h": 769,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×769",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_05_mit_killian_court_ms_era.jpg": {
+    "mtime": 1794340626.5,
+    "md5": "0934351f",
+    "w": 1280,
+    "h": 852,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×852",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_06_uc_berkeley_sather_tower_phd.jpg": {
+    "mtime": 1794340629.07,
+    "md5": "1448e0b6",
+    "w": 1280,
+    "h": 986,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×986",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_07_stanford_university_professor_quad.jpg": {
+    "mtime": 1794340631.7,
+    "md5": "d75a11eb",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_08_inverted_rc_helicopter_rl_flight.jpg": {
+    "mtime": 1794340634.32,
+    "md5": "cc05dbc0",
+    "w": 1280,
+    "h": 960,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×960",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_09_googleplex_mountain_view_google_brain.jpg": {
+    "mtime": 1794340636.95,
+    "md5": "d9e9ed28",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_10_google_brain_cat_neuron_2012.jpg": {
+    "mtime": 1794340639.52,
+    "md5": "9859f92c",
+    "w": 1280,
+    "h": 851,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×851",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_11_coursera_mountain_view_hq.jpg": {
+    "mtime": 1794340642.13,
+    "md5": "40473a97",
+    "w": 1280,
+    "h": 877,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×877",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_12_coursera_global_launch_era.jpg": {
+    "mtime": 1794340644.75,
+    "md5": "43b319dd",
+    "w": 1280,
+    "h": 720,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×720",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_13_baidu_shangdi_chief_scientist_hq.jpg": {
+    "mtime": 1794340647.39,
+    "md5": "146c1dfe",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_14_andrew_ng_wsj_ai_electricity_keynote.jpg": {
+    "mtime": 1794340647.42,
+    "md5": "e3e032da",
+    "w": 1280,
+    "h": 1021,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×1021",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_15_ai_is_the_new_electricity_bulb.jpg": {
+    "mtime": 1794340647.45,
+    "md5": "32f511b1",
+    "w": 1200,
+    "h": 1200,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1200×1200",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_16_landing_ai_precision_factory_vision.jpg": {
+    "mtime": 1794340647.47,
+    "md5": "1f90fe65",
+    "w": 1280,
+    "h": 960,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×960",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_17_edison_grid_new_electricity_glow.jpg": {
+    "mtime": 1794340647.48,
+    "md5": "d2989cae",
+    "w": 968,
+    "h": 1200,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 968×1200",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_andrew/ep10_img_arch_18_earth_dawn_global_builders_finale.jpg": {
+    "mtime": 1794340647.5,
+    "md5": "f61bd869",
+    "w": 1280,
+    "h": 853,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1280×853",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_02_ACT1_24FPS_AndrewNg_Stanford_CS229_2008_Classic.mp4": {
+    "mtime": 1794341041.28,
+    "md5": "d730e47b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 42.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "42s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_03_ACT1_24FPS_AndrewNg_Autonomous_Helicopter_RL.mp4": {
+    "mtime": 1794341056.9,
+    "md5": "d78cd022",
+    "w": 1920,
+    "h": 1080,
+    "dur": 44.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "44s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_04_ACT1_24FPS_AndrewNg_Robotics_Aerodynamics_Stanford.mp4": {
+    "mtime": 1794341095.94,
+    "md5": "2c92def4",
+    "w": 1920,
+    "h": 1080,
+    "dur": 48.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "48s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_05_ACT2_24FPS_AndrewNg_Google_Brain_Team_Origin.mp4": {
+    "mtime": 1794341230.96,
+    "md5": "d820bbfe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 42.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "42s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_06_ACT2_24FPS_AndrewNg_Baidu_1300_AI_Team_SVOD.mp4": {
+    "mtime": 1794341270.75,
+    "md5": "8eb45a4d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 43.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "43s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_07_ACT2_24FPS_AndrewNg_Cats_Xrays_Transfer_Learning.mp4": {
+    "mtime": 1794341317.23,
+    "md5": "443a3d15",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_08_ACT2_24FPS_AndrewNg_EDUKWEST_Koller_Coursera_100K.mp4": {
+    "mtime": 1794341361.37,
+    "md5": "805b3410",
+    "w": 1920,
+    "h": 1080,
+    "dur": 46.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "46s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_09_ACT3_24FPS_AndrewNg_Coursera_Tens_of_Thousands.mp4": {
+    "mtime": 1794341395.2,
+    "md5": "4889059b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_10_ACT3_24FPS_AndrewNg_AI_Is_The_New_Electricity_2017.mp4": {
+    "mtime": 1794341435.77,
+    "md5": "cff78125",
+    "w": 1920,
+    "h": 1080,
+    "dur": 47.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "47s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_11_ACT3_24FPS_AndrewNg_Steel_Defects_Data_Centric_AI.mp4": {
+    "mtime": 1794341472.53,
+    "md5": "ba95d9ac",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_12_ACT3_24FPS_AndrewNg_Databricks_Fifty_Good_Images.mp4": {
+    "mtime": 1794341508.08,
+    "md5": "5189f8db",
+    "w": 1920,
+    "h": 1080,
+    "dur": 44.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "44s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_13_ACT3_24FPS_AndrewNg_OReilly_Read_Papers_Replicate.mp4": {
+    "mtime": 1794341524.23,
+    "md5": "7da0a9a6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4": {
+    "mtime": 1794341553.14,
+    "md5": "f41c65f5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 43.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "43s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_15_ACT4_24FPS_AndrewNg_LangChain_Protect_Open_Source.mp4": {
+    "mtime": 1794341593.34,
+    "md5": "c24b9175",
+    "w": 1920,
+    "h": 1080,
+    "dur": 45.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "45s"
+  },
+  "05_RAW_FOOTAGE/archives/EP10_VID_ARCH_16_ACT4_24FPS_AndrewNg_Snowflake_Great_Time_To_Be_Builder.mp4": {
+    "mtime": 1794341726.39,
+    "md5": "1081061f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 44.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "44s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_andrew_ng_wsj_stage_6s.mp4": {
+    "mtime": 1794340739.78,
+    "md5": "fee93d21",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_apple_ii_basic_6s.mp4": {
+    "mtime": 1794340731.88,
+    "md5": "4e26fced",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_baidu_shangdi_hq_6s.mp4": {
+    "mtime": 1794340739.09,
+    "md5": "5cfac5b0",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_carnegie_mellon_6s.mp4": {
+    "mtime": 1794340732.61,
+    "md5": "61891fdc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_cat_neuron_2012_6s.mp4": {
+    "mtime": 1794340736.92,
+    "md5": "7b4f3f10",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_coursera_hq_6s.mp4": {
+    "mtime": 1794340737.66,
+    "md5": "9275d22a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_coursera_launch_team_6s.mp4": {
+    "mtime": 1794340738.36,
+    "md5": "39b94c24",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_earth_dawn_lights_finale_6s.mp4": {
+    "mtime": 1794340742.3,
+    "md5": "f1c6c898",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_edison_bulb_glow_6s.mp4": {
+    "mtime": 1794340741.58,
+    "md5": "c05621e2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_googleplex_google_brain_6s.mp4": {
+    "mtime": 1794340736.25,
+    "md5": "18e2c1c5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_hong_kong_harbour_6s.mp4": {
+    "mtime": 1794340730.55,
+    "md5": "78ddede7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_inverted_helicopter_rl_6s.mp4": {
+    "mtime": 1794340735.53,
+    "md5": "b23b9d0d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_landing_ai_factory_6s.mp4": {
+    "mtime": 1794340741.04,
+    "md5": "a67c48b6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_mit_killian_court_6s.mp4": {
+    "mtime": 1794340733.35,
+    "md5": "099b047a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_new_electricity_filament_6s.mp4": {
+    "mtime": 1794340740.32,
+    "md5": "5a54aac2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_raffles_singapore_6s.mp4": {
+    "mtime": 1794340731.19,
+    "md5": "6d6e8bc3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_stanford_quad_6s.mp4": {
+    "mtime": 1794340734.78,
+    "md5": "c680ffe3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_uc_berkeley_sather_6s.mp4": {
+    "mtime": 1794340734.05,
+    "md5": "67ee9ef8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_01_prometheus_blue_shirt_10s.mp4": {
+    "mtime": 1794340720.25,
+    "md5": "4d27a641",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_02_singapore_basic_doctor_10s.mp4": {
+    "mtime": 1794340721.52,
+    "md5": "7b9211c2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_03_inverted_helicopter_scale_10s.mp4": {
+    "mtime": 1794340722.78,
+    "md5": "22b58fb8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_04_google_brain_cat_ghost_10s.mp4": {
+    "mtime": 1794340724.03,
+    "md5": "79118189",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_05_cs229_webcam_104k_10s.mp4": {
+    "mtime": 1794340725.3,
+    "md5": "2003dd21",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_06_ai_new_electricity_10s.mp4": {
+    "mtime": 1794340726.56,
+    "md5": "f450df05",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_07_data_centric_agentic_12s.mp4": {
+    "mtime": 1794340728.03,
+    "md5": "6236648c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_ua_clip_card_08_ten_lines_dawn_finale_12s.mp4": {
+    "mtime": 1794340729.5,
+    "md5": "409d81a8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_02_ACT1_hong_kong_singapore_raffles_basic_1984.mp4": {
+    "mtime": 1794340709.63,
+    "md5": "992daefc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_02_ACT1_hong_kong_singapore_raffles_basic_1984.png": {
+    "mtime": 1794340708.22,
+    "md5": "f95c92b6",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_03_ACT2_google_brain_16000_cores_cat_neuron_2012.mp4": {
+    "mtime": 1794340712.06,
+    "md5": "88e4c169",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_03_ACT2_google_brain_16000_cores_cat_neuron_2012.png": {
+    "mtime": 1794340710.72,
+    "md5": "c5d95447",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_04_ACT3_cs229_webcam_104k_coursera_baidu_2014.mp4": {
+    "mtime": 1794340714.47,
+    "md5": "2203481a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_04_ACT3_cs229_webcam_104k_coursera_baidu_2014.png": {
+    "mtime": 1794340713.14,
+    "md5": "e022b413",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_05_ACT3_ai_is_the_new_electricity_data_centric_2021.mp4": {
+    "mtime": 1794340716.87,
+    "md5": "beb843da",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_05_ACT3_ai_is_the_new_electricity_data_centric_2021.png": {
+    "mtime": 1794340715.53,
+    "md5": "33b1403d",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_06_ACT4_open_source_gutenberg_agentic_workflows_finale.mp4": {
+    "mtime": 1794340719.33,
+    "md5": "60539895",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_06_ACT4_open_source_gutenberg_agentic_workflows_finale.png": {
+    "mtime": 1794340717.96,
+    "md5": "7e7c4e13",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_01_prometheus_blue_shirt_10s.png": {
+    "mtime": 1794340719.42,
+    "md5": "72fef5fd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_02_singapore_basic_doctor_10s.png": {
+    "mtime": 1794340720.69,
+    "md5": "fa9346ca",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_03_inverted_helicopter_scale_10s.png": {
+    "mtime": 1794340721.96,
+    "md5": "96c32944",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_04_google_brain_cat_ghost_10s.png": {
+    "mtime": 1794340723.21,
+    "md5": "3cb64ff0",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_05_cs229_webcam_104k_10s.png": {
+    "mtime": 1794340724.47,
+    "md5": "60bf43ee",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_06_ai_new_electricity_10s.png": {
+    "mtime": 1794340725.73,
+    "md5": "fb235804",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_07_data_centric_agentic_12s.png": {
+    "mtime": 1794340727.0,
+    "md5": "41d1345c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep10_ua_clip_card_08_ten_lines_dawn_finale_12s.png": {
+    "mtime": 1794340728.48,
+    "md5": "d1f21ad8",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

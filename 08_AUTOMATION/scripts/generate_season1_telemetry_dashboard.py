@@ -37,8 +37,8 @@ EP_META = [
      "Повне досьє + 12 першоджерельних транскриптів & 4 статті (TED 2015/2024, Stanford HAI/SIEPR, Hinton & Li UofT, Tim Ferriss, Hoover, No Priors, Latent Space World Labs, arXiv ImageNet & Stanford Vision Lab) + 26-хв NotebookLM + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 цитат-карток + 26 4K кліпів."),
     ("09", "yoshua_bengio", "episode_09_bengio", ["ep09", "bengio"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 16 першоджерельних транскриптів & 4 статті (HLF Turing Lecture, TED 2024, TEDxMontreal, NeurIPS 2019 System 2, MSR GFlowNets, Сенат США & Канади, AAAI 2020, Diary of a CEO, arXiv Attention/GFlowNets/Scientist AI, Монреальська декларація) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 цитат-карток + 26 4K кліпів."),
-    ("10", "andrew_ng", "episode_10_ng", ["ep10", "andrew_ng", "_ng_"], "🟠 Препродакшн & Стартовий інжест", 40, "stage-preprod",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Stanford CS229 + VFX катушка Тесли + Flow-дослідження (медичний підручник, голографічна карта, бін у Resolve).")
+    ("10", "andrew_ng", "episode_10_ng", ["ep10", "andrew_ng", "_ng_"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 15 транскриптів + 4 архівні статті + 6 4K-досьє + 16 HD архівних кліпів + 18 фото Wikimedia + 8 4K UA-цитат + 18 Ken Burns (6с) + Flow-кадри + 4 Suno стеми + VFX катушка Тесли."),
 ]
 
 
@@ -213,10 +213,10 @@ def count_project_stats():
             ]
         elif ep == "10":
             bio_sources = [
-                "Stanford CS229 Machine Learning Open Courseware",
-                "Google Brain Founding Cat-Recognition Paper (ICML 2012)",
-                "Coursera & DeepLearning.AI Founding Chronicles",
-                "Data-Centric AI & Baidu AI Lab Archives"
+                "Stanford CS229 & Autonomous Helicopter RL (arXiv 1105.0010)",
+                "Google Brain 16,000-Core Cat Neuron Paper (ICML 2012, arXiv 1112.6209)",
+                "Coursera (104K+ Students), DeepLearning.AI & Baidu Deep Speech Archives",
+                "AI is the New Electricity, Data-Centric AI (Landing AI) & Agentic Workflows"
             ]
 
         ep_stats[ep] = {
@@ -756,7 +756,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP09)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP10)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

@@ -1,0 +1,17 @@
+# Stanford — Autonomous Helicopters Teach Themselves to Fly Stunts
+- **YouTube URL:** `https://www.youtube.com/watch?v=M-QUkgk3HyE`
+- **Video ID:** `M-QUkgk3HyE`
+- **Word Count (captions):** 549
+
+---
+
+- **[00:00:01]** [Music] this program is brought to you by Stanford University please visit us at stanford.edu [Music] so what you're seeing today is by far
+- **[00:00:22]** the most difficult aerobatic Maneuvers flown by any computer control helicopter the goal is always for us to take really hard problems that humans are very good at solving uh for instance Garrett can pick up any helicopter uh even ones he's never seen and go fly amazing aerobatics so the question for us is always why
+- **[00:00:43]** can't computers do things like this so our goal is to build software that can learn to go fly a helicopter uh the way that a human being can and that way we don't need so much engineering effort to build control systems like this so the basic technology used to develop the helicopter controller was the type of AI algorithm typee of artificial intelligence algorithm called apprenticeship
+- **[00:01:06]** learning what the helicopter does is it watches a human pilot fly the helicopter around for a while and by watching a human pilot learn to fly it then learns to fly by itself and so what it does is it watch the person fly and then um it'll try to fly the same Stunt maneu by itself and maybe try a few times until it sort of nails the maneuver and what
+- **[00:01:27]** you're seeing is the end result of this um machine learning process called apprenticeship learning so basically what the software does is it acquires all the measurements off of the instruments and then it puts them into something called a common filter that uh figures out where the helicopter is which way it's facing uh what its velocity is and so on and then
+- **[00:01:47]** uh that information is fed into a control system that decides based on where the helicopter is and where we want the helicopter to go the controller actually computes new controls to send out to the helicopter every 20th of a second what we do is we collect several demonstrations from our expert pilot and then our algorithms process these demonstrations to figure out what would
+- **[00:02:08]** be the ideal version of let's say a flip or a roll or a loop Etc and then we use that as a specification for our control problem and this allows us to find trajectories that are better trajectories than the pilot can demonstrate the helicopter doesn't want to fly it always wants to just tip over and crash so you always have to be maintaining the U the orientation of it
+- **[00:02:29]** where as an airplane if you let go of the sticks it would more or less fly fairly straight I've never seen anything like this done the the only autonomous helicopters I've seen are just they're hovering way points and doing quite basic Maneuvers in order to make these applications work well in order for us to trust helicopters and these sort of
+- **[00:02:50]** mission critical applications is important that we have very robust very reliable helicop helicopter controllers that um Can Fly maybe as well as a very best human pilots in the world can and the work you saw today I think um took a large step towards achieving
+- **[00:03:10]** [Music] that the proceeding program is copyrighted by Stanford University please visit us at stanford.edu

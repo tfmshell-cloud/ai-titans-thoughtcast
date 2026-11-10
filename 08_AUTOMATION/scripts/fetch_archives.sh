@@ -238,8 +238,23 @@ run_ep09() {
 }
 
 run_ep10() {
-  # EP10 — Ендрю Ин: Класична лекція Stanford CS229 Machine Learning біля зеленої дошки
+  # EP10 — Ендрю Ин: Класичні лекції, автономний вертоліт, Google Brain, Coursera, Data-Centric AI та Agentic Workflows (16 кліпів)
   fetch_clip "https://www.youtube.com/watch?v=jGwO_UgTS7I" "00:01:40-00:01:48" "EP10_VID_ARCH_01_ACT2_24FPS_AndrewNg_Stanford_CS229_Chalkboard"
+  fetch_clip "https://www.youtube.com/watch?v=UzxYlbK2c7E" "00:02:08-00:02:50" "EP10_VID_ARCH_02_ACT1_24FPS_AndrewNg_Stanford_CS229_2008_Classic"
+  fetch_clip "https://www.youtube.com/watch?v=M-QUkgk3HyE" "00:00:22-00:01:06" "EP10_VID_ARCH_03_ACT1_24FPS_AndrewNg_Autonomous_Helicopter_RL"
+  fetch_clip "https://www.youtube.com/watch?v=AY4ajbu_G3k" "00:03:20-00:04:08" "EP10_VID_ARCH_04_ACT1_24FPS_AndrewNg_Robotics_Aerodynamics_Stanford"
+  fetch_clip "https://www.youtube.com/watch?v=jGwO_UgTS7I" "00:07:48-00:08:30" "EP10_VID_ARCH_05_ACT2_24FPS_AndrewNg_Google_Brain_Team_Origin"
+  fetch_clip "https://www.youtube.com/watch?v=PS9MELl8vLQ" "00:02:15-00:02:58" "EP10_VID_ARCH_06_ACT2_24FPS_AndrewNg_Baidu_1300_AI_Team_SVOD"
+  fetch_clip "https://www.youtube.com/watch?v=fgbBtnCvcDI" "00:08:25-00:09:10" "EP10_VID_ARCH_07_ACT2_24FPS_AndrewNg_Cats_Xrays_Transfer_Learning"
+  fetch_clip "https://www.youtube.com/watch?v=e-NoK9jOuEE" "00:01:00-00:01:46" "EP10_VID_ARCH_08_ACT2_24FPS_AndrewNg_EDUKWEST_Koller_Coursera_100K"
+  fetch_clip "https://www.youtube.com/watch?v=e-NoK9jOuEE" "00:04:50-00:05:35" "EP10_VID_ARCH_09_ACT3_24FPS_AndrewNg_Coursera_Tens_of_Thousands"
+  fetch_clip "https://www.youtube.com/watch?v=JsGPh-HOqjY" "00:02:51-00:03:38" "EP10_VID_ARCH_10_ACT3_24FPS_AndrewNg_AI_Is_The_New_Electricity_2017"
+  fetch_clip "https://www.youtube.com/watch?v=06-AZXmwHjo" "00:02:23-00:03:08" "EP10_VID_ARCH_11_ACT3_24FPS_AndrewNg_Steel_Defects_Data_Centric_AI"
+  fetch_clip "https://www.youtube.com/watch?v=avoijDORAlc" "00:07:12-00:07:56" "EP10_VID_ARCH_12_ACT3_24FPS_AndrewNg_Databricks_Fifty_Good_Images"
+  fetch_clip "https://www.youtube.com/watch?v=mQ29kb_jZYI" "00:18:45-00:19:30" "EP10_VID_ARCH_13_ACT3_24FPS_AndrewNg_OReilly_Read_Papers_Replicate"
+  fetch_clip "https://www.youtube.com/watch?v=sal78ACtGTc" "00:02:45-00:03:28" "EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT"
+  fetch_clip "https://www.youtube.com/watch?v=OaRhpwz_TGM" "00:25:55-00:26:40" "EP10_VID_ARCH_15_ACT4_24FPS_AndrewNg_LangChain_Protect_Open_Source"
+  fetch_clip "https://www.youtube.com/watch?v=KrRD7r7y7NY" "00:25:38-00:26:22" "EP10_VID_ARCH_16_ACT4_24FPS_AndrewNg_Snowflake_Great_Time_To_Be_Builder"
 }
 
 MODE="${1:---starter}"

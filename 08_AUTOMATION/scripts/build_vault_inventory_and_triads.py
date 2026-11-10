@@ -934,7 +934,18 @@ ASSET_AFFINITY_MAP = {
         "09": ["scientistai_humility", "gflownets_molecules", "turing_pioneers_system2", "gflownet_molecules", "grandson_scientist_ai", "ep09_doc_05", "asteroid_coasting"],
         "10": ["introvert_love_future", "winter_bicycle_quebec", "canada_aurora_finale", "bicycle_moral_bastion", "conscience_compass", "ep09_doc_06", "asteroid_surface"],
     },
-    "10": {"01": ["medical_textbook"], "05": ["global_neural_classroom"]},
+    "10": {
+        "01": ["medical_textbook", "hong_kong_childhood", "hong_kong_harbour", "raffles_institution", "raffles_singapore", "apple_ii_basic", "singapore_basic_doctor", "prometheus_blue_shirt", "ep10_doc_02", "stanford_cs229_2008"],
+        "02": ["autonomous_helicopter_rl", "inverted_rc_helicopter", "inverted_helicopter", "robotics_aerodynamics", "carnegie_mellon", "mit_killian_court", "uc_berkeley_sather_tower", "stanford_university_professor_quad", "stanford_quad", "ep10_doc_02"],
+        "03": ["google_brain_team_origin", "googleplex_mountain_view", "googleplex_google_brain", "baidu_1300", "baidu_shangdi", "ep10_doc_03"],
+        "04": ["cat_neuron_2012", "google_brain_cat_neuron", "cats_xrays", "google_brain_cat_ghost", "ep10_doc_03"],
+        "05": ["global_neural_classroom", "edukwest_koller_coursera", "cs229_webcam_104k", "stanford_cs229_chalkboard", "ep10_doc_01", "ep10_doc_04"],
+        "06": ["coursera_tens_of_thousands", "coursera_mountain_view_hq", "coursera_hq", "coursera_global_launch", "coursera_launch_team", "oreilly_read_papers", "energy_pulses_earth", "ep10_doc_04"],
+        "07": ["ai_is_the_new_electricity", "tesla_coil_electric", "andrew_ng_wsj", "new_electricity_bulb", "new_electricity_filament", "edison_grid", "edison_bulb", "metropolis_silicon", "ep10_doc_05"],
+        "08": ["steel_defects_data_centric", "fifty_good_images", "landing_ai_precision_factory", "landing_ai_factory", "data_centric_agentic", "ep10_doc_05"],
+        "09": ["sequoia_agentic_workflows", "protect_open_source", "data_centric_agentic", "skyscraper_binary_rain", "map_city", "ep10_doc_06"],
+        "10": ["great_time_to_be_builder", "earth_dawn_global_builders", "earth_dawn_lights", "ten_lines_dawn_finale", "ep10_doc_06", "energy_pulses_earth"],
+    },
 }
 
 
@@ -1067,6 +1078,7 @@ def main():
         "07": "EP07_DARIO_AMODEI",
         "08": "EP08_FEI_FEI_LI",
         "09": "EP09_YOSHUA_BENGIO",
+        "10": "EP10_ANDREW_NG",
     }
     for ep, name_ua, name_en, *_ in EP_META:
         s = vault[ep]["summary"]
