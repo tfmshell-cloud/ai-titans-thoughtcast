@@ -13,8 +13,10 @@
   var state = {
     activeTab: "sop",
     mediaSubTab: "videos",
+    vaultVidOrigin: "all",
     vaultVidCat: "all",
     vaultVidSearch: "",
+    vaultImgOrigin: "all",
     vaultImgCat: "all",
     vaultImgSearch: "",
     triadFilter: "all",
@@ -1782,18 +1784,19 @@
       if (seenFiles[vv.file.toLowerCase()]) return;
       seenFiles[vv.file.toLowerCase()] = true;
       var vSrc = resolveMediaSrc(vv.rel_path, vv.preview_path, vv.thumb);
+      var vLabelPrefix = vv.is_cross ? "♻️ " : "";
       list.push({
         uid: "vault_vid_" + idx,
         type: "video",
         kind: "vault_video",
-        kindLabel: vv.cat_label || "🎥 Відео з архіву проєкту",
-        chipClass: "chip-cyan",
+        kindLabel: vLabelPrefix + (vv.cat_label || "🎥 Відео з архіву проєкту"),
+        chipClass: vv.is_cross ? "chip-emerald" : "chip-cyan",
         title: vv.display_name || vv.file,
         file: vv.file,
         rel_path: vv.rel_path,
         tc: vv.size_mb + " MB",
-        track: (vv.cat_label || "Медіа-Пул") + " • " + (vv.ext || "MP4"),
-        desc: "Локальний файл: " + vv.rel_path + " (" + vv.size_mb + " MB)",
+        track: (vv.source_label || vv.cat_label || "Медіа-Пул") + " • " + (vv.ext || "MP4"),
+        desc: (vv.match_reason ? ("Підбір: " + vv.match_reason + " | ") : "") + "Файл: " + vv.rel_path + " (" + vv.size_mb + " MB)",
         src: vSrc,
         poster: vv.thumb ? ("../" + vv.thumb) : "",
         localPath: repoRoot + vv.rel_path,
@@ -1807,18 +1810,19 @@
       if (seenFiles[vi.file.toLowerCase()]) return;
       seenFiles[vi.file.toLowerCase()] = true;
       var iSrc = resolveMediaSrc(vi.rel_path, vi.preview_path, vi.thumb);
+      var iLabelPrefix = vi.is_cross ? "♻️ " : "";
       list.push({
         uid: "vault_img_" + idx,
         type: "image",
         kind: "vault_image",
-        kindLabel: vi.cat_label || "🖼️ Зображення проєкту",
-        chipClass: "chip-amber",
+        kindLabel: iLabelPrefix + (vi.cat_label || "🖼️ Зображення проєкту"),
+        chipClass: vi.is_cross ? "chip-cyan" : "chip-amber",
         title: vi.display_name || vi.file,
         file: vi.file,
         rel_path: vi.rel_path,
         tc: vi.size_mb + " MB",
-        track: (vi.cat_label || "Галерея") + " • " + (vi.ext || "JPG"),
-        desc: "Локальний файл: " + vi.rel_path + " (" + vi.size_mb + " MB)",
+        track: (vi.source_label || vi.cat_label || "Галерея") + " • " + (vi.ext || "JPG"),
+        desc: (vi.match_reason ? ("Підбір: " + vi.match_reason + " | ") : "") + "Файл: " + vi.rel_path + " (" + vi.size_mb + " MB)",
         src: iSrc,
         poster: vi.thumb ? ("../" + vi.thumb) : iSrc,
         localPath: repoRoot + vi.rel_path,
@@ -1875,21 +1879,30 @@
     if (!videos.length) {
       return "<div class=\"panel-card\"><div class=\"panel-title\">🎥 Відеофайли ще не додані для EP" + esc(epData.ep) + "</div><div class=\"panel-desc\">Використайте вкладку «🚀 Тріади Flow» для генерації нових відеосцен або покладіть MP4/MOV файли у папку " + esc(vaultEp.primary_footage_dir) + ".</div></div>";
     }
+    var nativeCnt = videos.filter(function (v) { return !v.is_cross; }).length;
+    var crossCnt = videos.filter(function (v) { return !!v.is_cross; }).length;
     var catCounts = {};
     var catLabels = {};
     videos.forEach(function (v) {
       catCounts[v.cat] = (catCounts[v.cat] || 0) + 1;
       catLabels[v.cat] = v.cat_label;
     });
-    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultVidCat === "all" ? " active" : "") + "\" data-vvid-cat=\"all\">Усі відео (" + videos.length + ")</button>"];
+    var originPillsHtml = [
+      "<button class=\"filter-pill" + (state.vaultVidOrigin === "all" ? " active" : "") + "\" data-vvid-origin=\"all\">📦 Усі (" + videos.length + ")</button>",
+      "<button class=\"filter-pill" + (state.vaultVidOrigin === "native" ? " active" : "") + "\" data-vvid-origin=\"native\">⭐ Власні героя (" + nativeCnt + ")</button>",
+      "<button class=\"filter-pill" + (state.vaultVidOrigin === "cross" ? " active" : "") + "\" data-vvid-origin=\"cross\">♻️ З Медіатеки 234/293 (" + crossCnt + ")</button>"
+    ];
+    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultVidCat === "all" ? " active" : "") + "\" data-vvid-cat=\"all\">Усі категорії (" + videos.length + ")</button>"];
     Object.keys(catCounts).sort().forEach(function (cat) {
       pillsHtml.push("<button class=\"filter-pill" + (state.vaultVidCat === cat ? " active" : "") + "\" data-vvid-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
     });
 
     var q = (state.vaultVidSearch || "").trim().toLowerCase();
     var filtered = videos.filter(function (v) {
+      if (state.vaultVidOrigin === "native" && v.is_cross) return false;
+      if (state.vaultVidOrigin === "cross" && !v.is_cross) return false;
       if (state.vaultVidCat !== "all" && v.cat !== state.vaultVidCat) return false;
-      if (q && (v.file + " " + v.display_name + " " + v.rel_path + " " + v.cat_label).toLowerCase().indexOf(q) === -1) return false;
+      if (q && (v.file + " " + v.display_name + " " + v.rel_path + " " + v.cat_label + " " + (v.match_reason || "") + " " + (v.source_label || "") + " " + (v.suggested_scenes || []).join(" ")).toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
 
@@ -1897,15 +1910,26 @@
       var pIdx = findPlaylistIdxByFileOrPath(playlist, v.file, v.rel_path);
       var playSrc = resolveMediaSrc(v.rel_path, v.preview_path, "");
       var thumbSrc = v.thumb ? ("../" + v.thumb) : "";
+      var scenesHtml = (v.suggested_scenes || []).map(function (sc) {
+        return "<span class=\"vault-scene-tag\">#" + esc(sc) + "</span>";
+      }).join("");
+      var originBadgeHtml = v.is_cross
+        ? "<span class=\"vault-origin-badge is-cross\">" + esc(v.source_label || "♻️ Зі спільної медіатеки") + "</span>"
+        : "<span class=\"vault-origin-badge is-native\">⭐ Власний EP" + esc(epData.ep) + "</span>";
+      var rationaleHtml = v.match_reason
+        ? "<div class=\"vault-rationale\"><b>🎯 Сценарій:</b> " + esc(v.match_reason) + (scenesHtml ? (" <span>(" + scenesHtml + ")</span>") : "") + "</div>"
+        : "";
       return [
-        "<div class=\"vault-card\">",
+        "<div class=\"vault-card" + (v.is_cross ? " is-cross" : "") + "\">",
         "  <div class=\"vault-thumb-box\" data-inline-play-vid=\"" + esc(playSrc) + "\" title=\"Клікніть, щоб програти відео прямо тут\">",
         thumbSrc ? ("    <img src=\"" + esc(thumbSrc) + "\" alt=\"" + esc(v.display_name) + "\" loading=\"lazy\">") : "    <div style=\"display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);\">🎥 " + esc(v.ext) + "</div>",
         "    <span class=\"vault-tag-tl\">" + esc(v.cat_label) + "</span>",
         "    <span class=\"vault-tag-br\">" + esc(v.ext) + " • " + esc(v.size_mb) + " MB</span>",
         "    <div class=\"vault-play-badge\">▶</div>",
         "  </div>",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;\">" + originBadgeHtml + "</div>",
         "  <div class=\"vault-title\">" + esc(v.display_name) + "</div>",
+        rationaleHtml,
         "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(v.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(v.file) + "</div>",
         "  <div class=\"btn-group\">",
         (pIdx !== -1 ? "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">🖥️ У монітор</button>" : ""),
@@ -1914,21 +1938,22 @@
         "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(v.rel_path) + "\">📋</button>",
         "  </div>",
         "</div>"
-      ].join("\n");
+      ].filter(Boolean).join("\n");
     }).join("\n");
 
     return [
       "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🎥 Усі Згенеровані & Зібрані Відео — EP" + esc(epData.ep) + " (" + videos.length + " файлів)</div>",
-      "      <div class=\"panel-desc\">Клік по прев'ю миттєво запускає HTML5-плеєр на картці. Кнопка «У монітор» або «Кінозал» відкриває відео на великому екрані.</div>",
+      "      <div class=\"panel-title\">🎥 Відеофайли — EP" + esc(epData.ep) + " (" + videos.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " підібраних)</div>",
+      "      <div class=\"panel-desc\">Клік по прев'ю миттєво запускає HTML5-плеєр. Рекомендації <b>♻️ З Медіатеки</b> дозволяють повторно використати готові рендери без витрат Flow.</div>",
       "    </div>",
       "    <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(vaultEp.primary_footage_dir) + "\">📁 Папка у Finder</button>",
       "  </div>",
+      "  <div class=\"vault-origin-bar\">" + originPillsHtml.join("") + "</div>",
       "  <div class=\"filter-toolbar\">",
       "    <div class=\"filter-pills\">" + pillsHtml.join("") + "</div>",
-      "    <input type=\"search\" id=\"vaultVidSearchInput\" class=\"search-input\" placeholder=\"Пошук відео за назвою...\" value=\"" + esc(state.vaultVidSearch) + "\">",
+      "    <input type=\"search\" id=\"vaultVidSearchInput\" class=\"search-input\" placeholder=\"Пошук відео або теми сцени...\" value=\"" + esc(state.vaultVidSearch) + "\">",
       "  </div>",
       "  <div class=\"vault-grid\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Немає відео за цим фільтром.</div>") + "</div>",
       "</div>"
@@ -1940,35 +1965,55 @@
     if (!images.length) {
       return "<div class=\"panel-card\"><div class=\"panel-title\">🖼️ Зображення ще не додані для EP" + esc(epData.ep) + "</div></div>";
     }
+    var nativeCnt = images.filter(function (im) { return !im.is_cross; }).length;
+    var crossCnt = images.filter(function (im) { return !!im.is_cross; }).length;
     var catCounts = {};
     var catLabels = {};
     images.forEach(function (im) {
       catCounts[im.cat] = (catCounts[im.cat] || 0) + 1;
       catLabels[im.cat] = im.cat_label;
     });
-    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultImgCat === "all" ? " active" : "") + "\" data-vimg-cat=\"all\">Усі зображення (" + images.length + ")</button>"];
+    var originPillsHtml = [
+      "<button class=\"filter-pill" + (state.vaultImgOrigin === "all" ? " active" : "") + "\" data-vimg-origin=\"all\">📦 Усі (" + images.length + ")</button>",
+      "<button class=\"filter-pill" + (state.vaultImgOrigin === "native" ? " active" : "") + "\" data-vimg-origin=\"native\">⭐ Власні героя (" + nativeCnt + ")</button>",
+      "<button class=\"filter-pill" + (state.vaultImgOrigin === "cross" ? " active" : "") + "\" data-vimg-origin=\"cross\">♻️ З Медіатеки 234/293 (" + crossCnt + ")</button>"
+    ];
+    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultImgCat === "all" ? " active" : "") + "\" data-vimg-cat=\"all\">Усі категорії (" + images.length + ")</button>"];
     Object.keys(catCounts).sort().forEach(function (cat) {
       pillsHtml.push("<button class=\"filter-pill" + (state.vaultImgCat === cat ? " active" : "") + "\" data-vimg-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
     });
 
     var q = (state.vaultImgSearch || "").trim().toLowerCase();
     var filtered = images.filter(function (im) {
+      if (state.vaultImgOrigin === "native" && im.is_cross) return false;
+      if (state.vaultImgOrigin === "cross" && !im.is_cross) return false;
       if (state.vaultImgCat !== "all" && im.cat !== state.vaultImgCat) return false;
-      if (q && (im.file + " " + im.display_name + " " + im.rel_path + " " + im.cat_label).toLowerCase().indexOf(q) === -1) return false;
+      if (q && (im.file + " " + im.display_name + " " + im.rel_path + " " + im.cat_label + " " + (im.match_reason || "") + " " + (im.source_label || "") + " " + (im.suggested_scenes || []).join(" ")).toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
 
     var cardsHtml = filtered.map(function (im) {
       var pIdx = findPlaylistIdxByFileOrPath(playlist, im.file, im.rel_path);
       var imgSrc = im.thumb ? ("../" + im.thumb) : resolveMediaSrc(im.rel_path, im.preview_path, im.thumb);
+      var scenesHtml = (im.suggested_scenes || []).map(function (sc) {
+        return "<span class=\"vault-scene-tag\">#" + esc(sc) + "</span>";
+      }).join("");
+      var originBadgeHtml = im.is_cross
+        ? "<span class=\"vault-origin-badge is-cross\">" + esc(im.source_label || "♻️ Зі спільної медіатеки") + "</span>"
+        : "<span class=\"vault-origin-badge is-native\">⭐ Власний EP" + esc(epData.ep) + "</span>";
+      var rationaleHtml = im.match_reason
+        ? "<div class=\"vault-rationale\"><b>🎯 Сценарій:</b> " + esc(im.match_reason) + (scenesHtml ? (" <span>(" + scenesHtml + ")</span>") : "") + "</div>"
+        : "";
       return [
-        "<div class=\"vault-card\">",
+        "<div class=\"vault-card" + (im.is_cross ? " is-cross" : "") + "\">",
         "  <div class=\"vault-thumb-box\"" + (pIdx !== -1 ? (" data-popup-pidx=\"" + pIdx + "\"") : (" data-reveal-finder=\"" + esc(im.rel_path) + "\"")) + " title=\"Клікніть, щоб відкрити у великому вікні\">",
         "    <img src=\"" + esc(imgSrc) + "\" alt=\"" + esc(im.display_name) + "\" loading=\"lazy\">",
         "    <span class=\"vault-tag-tl\">" + esc(im.cat_label) + "</span>",
         "    <span class=\"vault-tag-br\">" + esc(im.ext) + " • " + esc(im.size_mb) + " MB</span>",
         "  </div>",
+        "  <div style=\"display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;\">" + originBadgeHtml + "</div>",
         "  <div class=\"vault-title\">" + esc(im.display_name) + "</div>",
+        rationaleHtml,
         "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(im.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(im.file) + "</div>",
         "  <div class=\"btn-group\">",
         (pIdx !== -1 ? "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">🖥️ У монітор</button>" : ""),
@@ -1977,20 +2022,21 @@
         "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(im.rel_path) + "\">📋</button>",
         "  </div>",
         "</div>"
-      ].join("\n");
+      ].filter(Boolean).join("\n");
     }).join("\n");
 
     return [
       "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
       "  <div class=\"panel-head\">",
       "    <div>",
-      "      <div class=\"panel-title\">🖼️ Галерея Згенерованих Кадрів & Досьє — EP" + esc(epData.ep) + " (" + images.length + " зображень)</div>",
-      "      <div class=\"panel-desc\">2K концепт-кадри для Google Flow, історичні фото, кадри з архіву та 4K плашки. Відфільтровано за тематичними категоріями.</div>",
+      "      <div class=\"panel-title\">🖼️ Галерея Кадрів & Досьє — EP" + esc(epData.ep) + " (" + images.length + " доступних: " + nativeCnt + " власних + " + crossCnt + " підібраних)</div>",
+      "      <div class=\"panel-desc\">2K концепт-кадри для старту Flow, архівні фото, формули й 4K плашки. Відфільтровано за категоріями та джерелом.</div>",
       "    </div>",
       "  </div>",
+      "  <div class=\"vault-origin-bar\">" + originPillsHtml.join("") + "</div>",
       "  <div class=\"filter-toolbar\">",
       "    <div class=\"filter-pills\">" + pillsHtml.join("") + "</div>",
-      "    <input type=\"search\" id=\"vaultImgSearchInput\" class=\"search-input\" placeholder=\"Пошук зображення за назвою...\" value=\"" + esc(state.vaultImgSearch) + "\">",
+      "    <input type=\"search\" id=\"vaultImgSearchInput\" class=\"search-input\" placeholder=\"Пошук зображення або теми сцени...\" value=\"" + esc(state.vaultImgSearch) + "\">",
       "  </div>",
       "  <div class=\"vault-grid\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Немає зображень за цим фільтром.</div>") + "</div>",
       "</div>"
@@ -2000,12 +2046,17 @@
   function buildTriadsQueueHtml(triads, playlist) {
     var rdyVid = triads.filter(function (t) { return t.status === "video_ready"; }).length;
     var rdyImg = triads.filter(function (t) { return t.status === "image_ready"; }).length;
+    var hasCrossCnt = triads.filter(function (t) { return (t.cross_candidates || []).length > 0; }).length;
     var todoCnt = triads.length - rdyVid - rdyImg;
 
     var q = (state.triadSearch || "").trim().toLowerCase();
     var filtered = triads.filter(function (t) {
-      if (state.triadFilter !== "all" && (t.status || "todo") !== state.triadFilter) return false;
-      if (q && (t.title_ua + " " + t.title_en + " " + (t.vo_quote || "") + " " + (t.symbol || "") + " " + t.act + " " + t.p1_start + " " + t.p2_flow + " " + t.p3_end).toLowerCase().indexOf(q) === -1) return false;
+      if (state.triadFilter === "has_cross") {
+        if (!(t.cross_candidates || []).length) return false;
+      } else if (state.triadFilter !== "all" && (t.status || "todo") !== state.triadFilter) {
+        return false;
+      }
+      if (q && (t.title_ua + " " + t.title_en + " " + (t.vo_quote || "") + " " + (t.symbol || "") + " " + t.act + " " + t.p1_start + " " + t.p2_flow + " " + t.p3_end + " " + (t.cross_candidates || []).map(function (c) { return c.display_name + " " + c.match_reason; }).join(" ")).toLowerCase().indexOf(q) === -1) return false;
       return true;
     });
 
@@ -2032,6 +2083,34 @@
         "    <span style=\"font-weight:700;color:var(--cyan);font-size:11px;text-transform:uppercase;letter-spacing:0.03em;\">🎙️ Документальна озвучка (VO Sync): </span>",
         "    <span>" + esc(t.vo_quote || t.concept) + "</span>",
         (t.symbol ? ("    <div style=\"margin-top:4px;font-size:11.2px;color:var(--amber);\"><b>💎 Художній символ:</b> " + esc(t.symbol) + "</div>") : ""),
+        "  </div>"
+      ].join("\n") : "";
+
+      var cands = t.cross_candidates || [];
+      var crossCandsHtml = cands.length ? [
+        "  <div class=\"triad-cross-box\">",
+        "    <div class=\"triad-cross-head\">",
+        "      <span>♻️ Готові референси & B-Roll із Загальної Медіатеки проєкту (" + cands.length + " шт. — економія ресурсів Flow!)</span>",
+        "    </div>",
+        "    <div class=\"triad-cross-row\">",
+        cands.slice(0, 6).map(function (c) {
+          var cpIdx = findPlaylistIdxByFileOrPath(playlist, c.file, c.rel_path);
+          var cThumb = c.thumb ? ("../" + c.thumb) : "";
+          return [
+            "<div class=\"triad-cross-item\">",
+            (cThumb ? ("<img src=\"" + esc(cThumb) + "\" alt=\"" + esc(c.display_name) + "\" loading=\"lazy\">") : ""),
+            "<div style=\"min-width:0;flex:1;\">",
+            "  <div style=\"font-size:11px;font-weight:700;color:var(--text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;\">" + (c.media_type === "video" ? "🎥 " : "🖼️ ") + esc(c.display_name) + "</div>",
+            "  <div style=\"font-size:10px;color:#94a3b8;line-height:1.3;\">" + esc(c.source_label) + " — " + esc(c.match_reason) + "</div>",
+            "  <div style=\"display:flex;gap:4px;margin-top:4px;flex-wrap:wrap;\">",
+            (cpIdx !== -1 ? ("<button class=\"btn btn-amber\" style=\"padding:1px 6px;font-size:10px;\" data-play-pidx=\"" + cpIdx + "\">▶️</button><button class=\"btn btn-cyan\" style=\"padding:1px 6px;font-size:10px;\" data-popup-pidx=\"" + cpIdx + "\">🔍</button>") : ""),
+            "    <button class=\"btn\" style=\"padding:1px 6px;font-size:10px;\" data-reveal-finder=\"" + esc(c.rel_path) + "\">📁</button>",
+            "  </div>",
+            "</div>",
+            "</div>"
+          ].join("");
+        }).join("\n"),
+        "    </div>",
         "  </div>"
       ].join("\n") : "";
 
@@ -2075,6 +2154,7 @@
         "      <pre class=\"triad-prompt-code\">" + esc(t.p3_end) + "</pre>",
         "    </div>",
         "  </div>",
+        crossCandsHtml,
         "  <div class=\"triad-footer-meta\">",
         "    <span><b>✂️ DaVinci Resolve:</b> " + esc(t.davinci_recipe) + "</span>",
         "    <span><b>🔊 SFX:</b> " + esc(t.sfx_cue) + "</span>",
@@ -2097,6 +2177,7 @@
       "      <button class=\"filter-pill" + (state.triadFilter === "all" ? " active" : "") + "\" data-triad-filter=\"all\">Усі (" + triads.length + ")</button>",
       "      <button class=\"filter-pill" + (state.triadFilter === "video_ready" ? " active" : "") + "\" data-triad-filter=\"video_ready\">✅ Відео готові (" + rdyVid + ")</button>",
       "      <button class=\"filter-pill" + (state.triadFilter === "image_ready" ? " active" : "") + "\" data-triad-filter=\"image_ready\">🖼️ Лише 2K кадр (" + rdyImg + ")</button>",
+      "      <button class=\"filter-pill" + (state.triadFilter === "has_cross" ? " active" : "") + "\" data-triad-filter=\"has_cross\">♻️ Є готовий B-Roll (" + hasCrossCnt + ")</button>",
       "      <button class=\"filter-pill" + (state.triadFilter === "todo" ? " active" : "") + "\" data-triad-filter=\"todo\">⏳ В черзі (" + todoCnt + ")</button>",
       "    </div>",
       "    <input type=\"search\" id=\"triadSearchInput\" class=\"search-input\" placeholder=\"Пошук сцен та промптів...\" value=\"" + esc(state.triadSearch) + "\">",
@@ -2857,14 +2938,19 @@
     var primaryDirDisplay = vaultEp.primary_footage_dir || "05_RAW_FOOTAGE/";
     var voDirDisplay = vaultEp.vo_dir || "03_AUDIO/voiceover/";
 
+    var natVidCnt = (vSum.native_videos_count !== undefined) ? vSum.native_videos_count : (vSum.videos_count || 0);
+    var crossVidCnt = vSum.cross_videos_count || 0;
+    var natImgCnt = (vSum.native_images_count !== undefined) ? vSum.native_images_count : (vSum.images_count || 0);
+    var crossImgCnt = vSum.cross_images_count || 0;
+
     var executiveHeroHtml = [
       "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.4);background:linear-gradient(180deg, rgba(17,23,38,0.85), rgba(11,15,23,0.9));margin-bottom:0.85rem;\">",
       "  <div class=\"panel-head\" style=\"border-bottom:none;padding-bottom:0;\">",
       "    <div>",
       "      <div class=\"panel-title\" style=\"font-size:16px;color:var(--text-primary);display:flex;align-items:center;gap:8px;flex-wrap:wrap;\">",
       "        <span>🗂️ Медіа-Пул Епізоду " + esc(epData.ep) + " • " + esc(epData.name) + "</span>",
-      "        <span class=\"chip chip-cyan\">🎥 " + (vSum.videos_count || 0) + " Відео</span>",
-      "        <span class=\"chip chip-amber\">🖼️ " + (vSum.images_count || 0) + " Зображень</span>",
+      "        <span class=\"chip chip-cyan\">🎥 " + (vSum.videos_count || 0) + " Відео (" + natVidCnt + " власних" + (crossVidCnt ? (" + " + crossVidCnt + " з фонду") : "") + ")</span>",
+      "        <span class=\"chip chip-amber\">🖼️ " + (vSum.images_count || 0) + " Фото (" + natImgCnt + " власних" + (crossImgCnt ? (" + " + crossImgCnt + " з фонду") : "") + ")</span>",
       "        <span class=\"chip chip-purple\">🚀 " + triadsEp.length + " Тріад Flow (3-Промпт)</span>",
       "        <span class=\"chip chip-emerald\">🎙️ " + voTotalDisplay + " Голос • 🎵 " + sunoTotalDisplay + " Suno</span>",
       "      </div>",
@@ -3368,6 +3454,12 @@
     }
 
     function bindMediaDynamicControls(scopeEl) {
+      scopeEl.querySelectorAll("[data-vvid-origin]").forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          state.vaultVidOrigin = pill.getAttribute("data-vvid-origin");
+          refreshSubPaneOnly("videos", null);
+        });
+      });
       scopeEl.querySelectorAll("[data-vvid-cat]").forEach(function (pill) {
         pill.addEventListener("click", function () {
           state.vaultVidCat = pill.getAttribute("data-vvid-cat");
@@ -3382,6 +3474,12 @@
         });
       }
 
+      scopeEl.querySelectorAll("[data-vimg-origin]").forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          state.vaultImgOrigin = pill.getAttribute("data-vimg-origin");
+          refreshSubPaneOnly("images", null);
+        });
+      });
       scopeEl.querySelectorAll("[data-vimg-cat]").forEach(function (pill) {
         pill.addEventListener("click", function () {
           state.vaultImgCat = pill.getAttribute("data-vimg-cat");

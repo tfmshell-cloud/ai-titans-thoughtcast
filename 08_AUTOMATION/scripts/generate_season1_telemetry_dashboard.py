@@ -240,7 +240,7 @@ def count_project_stats():
                     m_ep_explicit = _re.search(r"(?:^|[^a-z0-9])ep(0[1-9]|10)(?:[^0-9]|$)", rel)
                     if m_ep_explicit:
                         matched_ep = m_ep_explicit.group(1)
-                    elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel:
+                    elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel or "test_typewriter" in rel:
                         matched_ep = "01"
                     else:
                         for ep, _, _, kws, *_ in EP_META:
@@ -330,6 +330,27 @@ def build_html(ep_stats, shared, resolve_info):
 
     max_media = max((s["videos"] + s["images"] + s["audio"]) for s in ep_stats.values()) or 1
 
+    # Load curated cross-hero reuse counts from project_vault_inventory.js & flow_triads_pool.js
+    vault_map = {}
+    triads_map = {}
+    vp_path = os.path.join(DASH_DIR, "data", "project_vault_inventory.js")
+    if os.path.exists(vp_path):
+        try:
+            vraw = open(vp_path, encoding="utf-8").read()
+            vault_map = json.loads(vraw[len("window.PROJECT_VAULT_INVENTORY = "):].rstrip(";\n "))
+        except Exception:
+            vault_map = {}
+    tp_path = os.path.join(DASH_DIR, "data", "flow_triads_pool.js")
+    if os.path.exists(tp_path):
+        try:
+            traw = open(tp_path, encoding="utf-8").read()
+            triads_map = json.loads(traw[len("window.FLOW_TRIADS_POOL = "):].rstrip(";\n "))
+        except Exception:
+            triads_map = {}
+
+    tot_usable_vid_refs = sum((vault_map.get(ep, {}).get("summary", {}).get("videos_count", 0)) for ep in ep_stats)
+    tot_usable_img_refs = sum((vault_map.get(ep, {}).get("summary", {}).get("images_count", 0)) for ep in ep_stats)
+
     cards_html = []
     chart_rows_html = []
 
@@ -339,6 +360,13 @@ def build_html(ep_stats, shared, resolve_info):
         mb = s["bytes"] / (1024 * 1024)
         vb = s["videos_breakdown"]
         ab = s["audio_breakdown"]
+        vsum = vault_map.get(ep, {}).get("summary", {})
+        cross_v = vsum.get("cross_videos_count", 0)
+        cross_i = vsum.get("cross_images_count", 0)
+        usable_v = vsum.get("videos_count", s["videos"])
+        usable_i = vsum.get("images_count", s["images"])
+        tr_ep = triads_map.get(ep, [])
+        tr_cross_cnt = sum(1 for t in tr_ep if t.get("cross_candidates"))
 
         # Chart row
         w_vid = (s["videos"] / max_media) * 100
@@ -357,8 +385,8 @@ def build_html(ep_stats, shared, resolve_info):
             <div class="bar-seg seg-aud" style="width:{max(w_aud, 1.5 if s['audio']>0 else 0):.1f}%"></div>
           </div>
           <div class="chart-nums">
-            <span class="c-vid">🎥 {s['videos']}</span>
-            <span class="c-img">🖼️ {s['images']}</span>
+            <span class="c-vid" title="Власні на диску: {s['videos']} | Всього з медіатекою: {usable_v}">🎥 {s['videos']}{f' (+{cross_v}♻️)' if cross_v else ''}</span>
+            <span class="c-img" title="Власні на диску: {s['images']} | Всього з медіатекою: {usable_i}">🖼️ {s['images']}{f' (+{cross_i}♻️)' if cross_i else ''}</span>
             <span class="c-aud">🎙️ {s['audio']}</span>
             <span class="c-mb">{mb:.0f} MB</span>
           </div>
@@ -416,14 +444,14 @@ def build_html(ep_stats, shared, resolve_info):
 
           <div class="metrics-grid">
             <div class="metric-box m-vid">
-              <div class="m-val">{s['videos']}</div>
-              <div class="m-lbl">🎥 Відеофайлів</div>
-              <div class="m-sub">AI/Flow: {vb['ai_flow']} • Архів: {vb['archival']} • VFX: {vb['sci_vfx']} • Картки/4K: {vb['cards_stills']}</div>
+              <div class="m-val">{usable_v} <span style="font-size:0.78rem;color:var(--muted);font-weight:500;">({s['videos']} власні + {cross_v}♻️)</span></div>
+              <div class="m-lbl">🎥 Відео у роботі (EP{ep})</div>
+              <div class="m-sub">На диску: {vb['ai_flow']} Flow/AI • {vb['archival']} Архів • {vb['sci_vfx']} VFX • {vb['cards_stills']} Картки | Тріад з готовим B-Roll: {tr_cross_cnt}/{len(tr_ep)}</div>
             </div>
             <div class="metric-box m-img">
-              <div class="m-val">{s['images']}</div>
-              <div class="m-lbl">🖼️ Зображень (2K/4K)</div>
-              <div class="m-sub">Кейфрейми, прес-досьє та портрети</div>
+              <div class="m-val">{usable_i} <span style="font-size:0.78rem;color:var(--muted);font-weight:500;">({s['images']} власні + {cross_i}♻️)</span></div>
+              <div class="m-lbl">🖼️ Зображення (2K/4K)</div>
+              <div class="m-sub">Власні кейфрейми/досьє + крос-референси зі спільної медіатеки</div>
             </div>
             <div class="metric-box m-aud">
               <div class="m-val">{s['audio']}</div>
@@ -533,16 +561,16 @@ def build_html(ep_stats, shared, resolve_info):
     .dot-vid {{ background: var(--sky); }} .dot-img {{ background: var(--amber); }} .dot-aud {{ background: var(--emerald); }}
 
     .chart-row {{
-      display: grid; grid-template-columns: 240px 1fr 240px; align-items: center; gap: 1rem; margin-bottom: 0.65rem; font-size: 0.86rem;
+      display: grid; grid-template-columns: 230px 1fr 345px; align-items: center; gap: 1rem; margin-bottom: 0.65rem; font-size: 0.86rem;
     }}
-    @media (max-width: 820px) {{ .chart-row {{ grid-template-columns: 1fr; gap: 0.35rem; }} }}
+    @media (max-width: 960px) {{ .chart-row {{ grid-template-columns: 1fr; gap: 0.35rem; }} }}
     .chart-label {{ display: flex; align-items: center; gap: 0.5rem; }}
     .ep-pill {{ background: rgba(255,255,255,0.08); padding: 2px 7px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: var(--sky); }}
     .pct-tag {{ margin-left: auto; color: var(--muted); font-size: 0.78rem; }}
     .chart-bar-wrap {{ display: flex; height: 12px; background: rgba(255,255,255,0.05); border-radius: 99px; overflow: hidden; }}
     .bar-seg {{ height: 100%; }}
     .seg-vid {{ background: var(--sky); }} .seg-img {{ background: var(--amber); }} .seg-aud {{ background: var(--emerald); }}
-    .chart-nums {{ display: flex; justify-content: flex-end; gap: 0.7rem; font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }}
+    .chart-nums {{ display: flex; justify-content: flex-end; gap: 0.65rem; font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }}
     .c-vid {{ color: var(--sky); }} .c-img {{ color: var(--amber); }} .c-aud {{ color: var(--emerald); }}
 
     .controls {{
@@ -645,13 +673,13 @@ def build_html(ep_stats, shared, resolve_info):
     <section class="kpi-grid">
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--sky)">{tot_videos}</div>
-        <div class="kpi-label">🎥 Всього Відеофайлів (.mp4/.mov)</div>
-        <div class="kpi-sub">AI-генерації, Flow, Архіви, 4K Картки та VFX</div>
+        <div class="kpi-label">🎥 Унікальних Відео на диску (.mp4)</div>
+        <div class="kpi-sub">{tot_usable_vid_refs} крос-зв'язків у 10 студіях (макс. повторне використання ♻️)</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--amber)">{tot_images}</div>
-        <div class="kpi-label">🖼️ Всього Зображень (2K / 4K)</div>
-        <div class="kpi-sub">Ключові кейфрейми, прес-досьє та портрети</div>
+        <div class="kpi-label">🖼️ Унікальних Зображень на диску (2K/4K)</div>
+        <div class="kpi-sub">{tot_usable_img_refs} підібраних референсів по епізодах (0% дублювання файлів)</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-num" style="color:var(--emerald)">{tot_audio}</div>

@@ -16,7 +16,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 13.76,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Boy_aging_into_tech_leader_cd380219_1080p.mp4",
@@ -28,7 +31,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 7.56,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Boy_viewing_glowing_terminal_code_a3fe5f00_1080p.mp4",
@@ -40,7 +46,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 6.94,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
@@ -52,7 +61,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 9.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
@@ -64,7 +76,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 14.73,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4",
@@ -76,7 +91,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 8.19,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
@@ -88,7 +106,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 23.64,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
@@ -100,7 +121,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 12.72,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
@@ -112,11 +136,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 15.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Authentic histo 2026-11-09T12 29 51",
+        "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
         "preview_path": "",
@@ -124,11 +151,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 4.99,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Dynamic camera  2026-11-09T12 53 36",
+        "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
         "preview_path": "",
@@ -136,11 +166,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 6.0,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Intense macro r 2026-11-09T12 58 53",
+        "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
         "preview_path": "",
@@ -148,11 +181,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 6.36,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Seamless stylis 2026-11-09T11 32 59",
+        "display_name": "Seedance Аніме: дитина відкриває сяючий комп'ютер (дубль A)",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T11_32_59.mp4",
         "preview_path": "",
@@ -160,11 +196,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 7.16,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Seamless stylis 2026-11-09T12 34 37",
+        "display_name": "Seedance Аніме: дитина відкриває сяючий комп'ютер (дубль B)",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4",
         "preview_path": "",
@@ -172,11 +211,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 7.02,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
-        "display_name": "ElevenLabs video seedance-2-5 Slow, powerful  2026-11-09T12 52 53",
+        "display_name": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
         "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
         "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
         "preview_path": "",
@@ -184,7 +226,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 4.76,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
@@ -196,7 +241,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 5.46,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
@@ -208,7 +256,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 6.07,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
@@ -220,7 +271,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 4.16,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
@@ -232,7 +286,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 8.27,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
@@ -244,7 +301,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 13.24,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Light_point_explodes_into_streaks_c712a46e_1080p.mp4",
@@ -256,7 +316,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 12.51,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
@@ -268,7 +331,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 5.98,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
@@ -280,7 +346,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 5.25,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
@@ -292,7 +361,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 15.57,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
@@ -304,7 +376,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 7.53,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
@@ -316,7 +391,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 16.4,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
@@ -328,7 +406,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 8.82,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Teenage_boy_speaking_into_microp…_9259f8fe_1080p.mp4",
@@ -340,7 +421,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 7.34,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
@@ -352,7 +436,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen",
         "cat_label": "🎥 Авторські ШІ-Генерації",
         "size_mb": 9.29,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_07_boardroom_noir_ua_alt.mp4",
@@ -364,7 +451,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.78,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_01_Altman_Portrait_15s.mp4",
@@ -376,7 +466,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 5.8,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_03_Jobs_Stage_10s.mp4",
@@ -388,7 +481,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.7,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_04_Stanford_Campus_12s.mp4",
@@ -400,7 +496,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.16,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4",
@@ -412,7 +511,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 6.22,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_06_Childhood_Mac_10s.mp4",
@@ -424,7 +526,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.79,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_ARCH_07_Loopt_Founder_12s.mp4",
@@ -436,7 +541,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.61,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s.mp4",
@@ -448,7 +556,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 5.87,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B2_02_Stanford_2014_10s.mp4",
@@ -460,7 +571,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 2.24,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
@@ -472,7 +586,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.61,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s.mp4",
@@ -484,7 +601,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 6.7,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B3_01_Altman_ChatGPT_Launch_10s.mp4",
@@ -496,7 +616,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 14.67,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V2_B3_02_Altman_TED_2023_10s.mp4",
@@ -508,7 +631,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 5.34,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
@@ -520,7 +646,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.86,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
@@ -532,7 +661,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 2.05,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4",
@@ -544,7 +676,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 0.37,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
@@ -556,7 +691,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.07,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
@@ -568,7 +706,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.63,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_01_mac_chassis.mp4",
@@ -580,7 +721,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 4.04,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_02_crt_code.mp4",
@@ -592,7 +736,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 5.87,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_03_silicon_laser.mp4",
@@ -604,7 +751,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 9.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_04_exponential_line.mp4",
@@ -616,7 +766,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 6.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_05_neural_lattice.mp4",
@@ -628,7 +781,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 13.04,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_06_server_monolith.mp4",
@@ -640,7 +796,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 7.99,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_07_boardroom_noir.mp4",
@@ -652,7 +811,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 3.73,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_08_golden_signatures.mp4",
@@ -664,7 +826,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 14.4,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_09_fusion_torus.mp4",
@@ -676,7 +841,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 13.51,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_10_earth_horizon.mp4",
@@ -688,7 +856,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 13.97,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_VID_01_ACT1_Macintosh_LC_II_Chassis_1080p24.mp4",
@@ -700,7 +871,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 4.04,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_VID_02_ACT1_CRT_Assembly_Child_Eye_720p24.mp4",
@@ -712,7 +886,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 5.87,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_VID_03_ACT1_Silicon_Wafer_Cyan_Laser_720p24.mp4",
@@ -724,7 +901,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 9.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_VID_04_ACT1_Golden_Exponential_Curve_720p24.mp4",
@@ -736,7 +916,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 6.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
@@ -748,7 +931,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 19.27,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
@@ -760,7 +946,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 9.64,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
@@ -772,7 +961,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 4.16,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
@@ -784,7 +976,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 15.06,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
@@ -796,7 +991,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 11.63,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
@@ -808,7 +1006,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 14.36,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
@@ -820,7 +1021,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 11.15,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
@@ -832,7 +1036,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 16.77,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
@@ -844,7 +1051,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 11.87,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_10_Earth_Horizon_Finale_214f.mp4",
@@ -856,7 +1066,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 13.2,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
@@ -868,7 +1081,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 15.34,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4",
@@ -880,7 +1096,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b2",
         "cat_label": "🧱 Блок 2 Master",
         "size_mb": 31.44,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B3_02_Boardroom_Void_14s.mp4",
@@ -892,7 +1111,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b3",
         "cat_label": "🧱 Блок 3 Master",
         "size_mb": 12.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
@@ -904,7 +1126,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b3",
         "cat_label": "🧱 Блок 3 Master",
         "size_mb": 9.79,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
@@ -916,7 +1141,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_b3",
         "cat_label": "🧱 Блок 3 Master",
         "size_mb": 16.06,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
@@ -928,7 +1156,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 5.47,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
@@ -940,7 +1171,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 8.06,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
@@ -952,7 +1186,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 11.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
@@ -964,7 +1201,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 8.37,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
@@ -976,7 +1216,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 12.46,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
@@ -988,7 +1231,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 9.62,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
@@ -1000,7 +1246,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 5.85,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
@@ -1012,7 +1261,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 8.5,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_06_Cosmic_Dyson_5s.mp4",
@@ -1024,7 +1276,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 4.99,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
@@ -1036,7 +1291,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_creative",
         "cat_label": "🎨 Креативні Flow-Рендери",
         "size_mb": 6.69,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
@@ -1048,7 +1306,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 5.2,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
@@ -1060,7 +1321,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 6.48,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
@@ -1072,7 +1336,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 7.21,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_08_Hardware_15s.mp4",
@@ -1084,7 +1351,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 8.26,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_09_Architecture_15s.mp4",
@@ -1096,7 +1366,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 9.89,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_12_WaferHero_16s.mp4",
@@ -1108,7 +1381,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 5.36,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_13_Garage_14s.mp4",
@@ -1120,7 +1396,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 8.18,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
@@ -1132,7 +1411,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 10.43,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
@@ -1144,7 +1426,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 6.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
@@ -1156,7 +1441,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 3.52,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
@@ -1168,7 +1456,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 13.97,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
@@ -1180,7 +1471,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 12.47,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B4_CLOSER_DeepSpace_154f.mp4",
@@ -1192,7 +1486,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 7.35,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_B4_FINALE_DeepSpace_147f.mp4",
@@ -1204,7 +1501,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 15.65,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
@@ -1216,7 +1516,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 8.01,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_02_Burroughs_Boardroom_15s.mp4",
@@ -1228,7 +1531,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 8.19,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
@@ -1240,7 +1546,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 10.61,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
@@ -1252,7 +1561,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 8.76,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_04_Smartphone_Loopt_16s.mp4",
@@ -1264,7 +1576,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 9.47,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_05_Founder_Data_15s.mp4",
@@ -1276,7 +1591,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 10.43,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_V1_NEW_06_Cosmic_Dyson_12s.mp4",
@@ -1288,7 +1606,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow_gapless",
         "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
         "size_mb": 12.88,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_05_neural_lattice.mp4",
@@ -1300,7 +1621,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 0.65,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_06_server_monolith.mp4",
@@ -1312,7 +1636,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 0.2,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_07_boardroom_noir.mp4",
@@ -1324,7 +1651,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 0.2,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_08_golden_signatures.mp4",
@@ -1336,7 +1666,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 0.52,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_09_fusion_torus.mp4",
@@ -1348,7 +1681,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 1.01,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ep01_flow_10_earth_horizon.mp4",
@@ -1360,7 +1696,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "previs",
         "cat_label": "🎞️ Превіз Аніматики",
         "size_mb": 0.09,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
@@ -1372,7 +1711,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 6.75,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_01_Extension_Of_Thought.mp4",
@@ -1384,7 +1726,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_02_Indifference_To_Authority.mp4",
@@ -1396,7 +1741,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_03_Autonomy_Equation.mp4",
@@ -1408,7 +1756,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_04_Linear_Vs_Exponential.mp4",
@@ -1420,7 +1771,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_05_Psychological_Friction.mp4",
@@ -1432,7 +1786,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.13,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_06_Risk_Of_Standing_Still.mp4",
@@ -1444,7 +1801,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_07_Linear_Blind_Spot.mp4",
@@ -1456,7 +1816,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_08_Scaling_Hypothesis.mp4",
@@ -1468,7 +1831,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.13,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_09_Compute_Equation.mp4",
@@ -1480,7 +1846,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_10_Exponential_Adoption.mp4",
@@ -1492,7 +1861,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.13,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_11_Citadel_Paradox.mp4",
@@ -1504,7 +1876,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.12,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_12_Loyalty_Axiom.mp4",
@@ -1516,7 +1891,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.1,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_13_Paradigm_Of_Power.mp4",
@@ -1528,7 +1906,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.13,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_14_Physicality_Of_Compute.mp4",
@@ -1540,7 +1921,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.15,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_15_Seven_Trillion_Equation.mp4",
@@ -1552,7 +1936,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.14,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_16_Builders_Code_Three_Rules.mp4",
@@ -1564,7 +1951,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.13,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_17_Plastic_Reality_Finale.mp4",
@@ -1576,7 +1966,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.14,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_730_Letter_Doc_9s.mp4",
@@ -1588,7 +1981,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 9.17,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Altman_2009_Loopt_6s.mp4",
@@ -1600,7 +1996,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 5.99,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Altman_2019_OpenAI_6s.mp4",
@@ -1612,7 +2011,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 7.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Altman_Sutskever_TAU_9s.mp4",
@@ -1624,7 +2026,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 6.8,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Altman_TED2023_11s.mp4",
@@ -1636,7 +2041,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 10.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Board_Ouster_Doc_8s.mp4",
@@ -1648,7 +2056,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 7.89,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Boardroom_Tense_9s.mp4",
@@ -1660,7 +2071,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 11.29,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Boy_At_Vintage_CRT_5s.mp4",
@@ -1672,7 +2086,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 5.44,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Boy_Watching_Code_5s.mp4",
@@ -1684,7 +2101,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 7.91,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Burroughs_Campus_6s.mp4",
@@ -1696,7 +2116,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 6.25,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_ChatGPT_Genesis_7s.mp4",
@@ -1708,7 +2131,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 17.8,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Child_Floppy_Disk_4s.mp4",
@@ -1720,7 +2146,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 6.29,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
@@ -1732,7 +2161,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 22.25,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Guest_Badge_Desk_10s.mp4",
@@ -1744,7 +2176,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 17.97,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Jobs_Altman_WWDC_5s.mp4",
@@ -1756,7 +2191,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 1.55,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Loopt_Shirt_10s.mp4",
@@ -1768,7 +2206,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 6.14,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Mac_Rainbow_Logo_4s.mp4",
@@ -1780,7 +2221,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.44,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Math_Decision_Tree_8s.mp4",
@@ -1792,7 +2236,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 15.49,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Neural_Lattice_10s.mp4",
@@ -1804,7 +2251,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 18.42,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_School_Auditorium_5s.mp4",
@@ -1816,7 +2266,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.29,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Stanford_2014_4s.mp4",
@@ -1828,7 +2281,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 1.89,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Stargate_100B_Doc_10s.mp4",
@@ -1840,7 +2296,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 6.78,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4",
@@ -1852,7 +2311,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.65,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_TechCrunch_2014_10s.mp4",
@@ -1864,7 +2326,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 10.8,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_YC2005_Doc_4s.mp4",
@@ -1876,7 +2341,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.98,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CLIP_STILL_Young_Altman_Portrait_5s.mp4",
@@ -1888,7 +2356,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 4.55,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_01_YC_2005_Program_10s.mp4",
@@ -1900,7 +2371,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.93,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_02_OpenAI_Introducing_12s.mp4",
@@ -1912,7 +2386,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 5.58,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_03_Board_Ouster_10s.mp4",
@@ -1924,7 +2401,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 4.03,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_04_Sutskever_Regret_10s.mp4",
@@ -1936,7 +2416,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 3.57,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_05_Employees_Letter_12s.mp4",
@@ -1948,7 +2431,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 4.67,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_06_Stargate_100B_Report_10s.mp4",
@@ -1960,7 +2446,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 5.86,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_07_7_Trillion_Chip_Network_10s.mp4",
@@ -1972,7 +2461,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 5.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_MGFX_01_Burroughs_Turning_Point_10s.mov",
@@ -1984,7 +2476,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 139.55,
-        "ext": "MOV"
+        "ext": "MOV",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_MGFX_02_Autonomy_Axiom_Quote_12s.mov",
@@ -1996,7 +2491,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 193.08,
-        "ext": "MOV"
+        "ext": "MOV",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_01_Extension_Of_Thought_12s.mp4",
@@ -2008,7 +2506,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.22,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_02_Psychological_Friction_18s.mp4",
@@ -2020,7 +2521,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.26,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_03_Exponential_Risk_15s.mp4",
@@ -2032,7 +2536,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.23,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_04_Compute_Equations_18s.mp4",
@@ -2044,7 +2551,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.27,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_05_Guest_Badge_8s.mp4",
@@ -2056,7 +2566,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
@@ -2068,7 +2581,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.2,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_07_Three_Rules_12s.mp4",
@@ -2080,7 +2596,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.22,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CLIP_CARD_08_Plastic_Reality_10s.mp4",
@@ -2092,13 +2611,108 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "stills",
         "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
         "size_mb": 0.14,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
+      },
+      {
+        "file": "test_typewriter.mp4",
+        "display_name": "test typewriter",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/test_typewriter.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/test_typewriter.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/710ff816_test_typewriter.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 0.52,
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Електричний розряд у живому нейроні — першоджерело архітектури штучних мереж.",
+        "suggested_scenes": [
+          "28"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Метафора злиття біологічного нейрона та кремнієвого GPU-кристала — візуал гіпотези масштабу.",
+        "suggested_scenes": [
+          "28",
+          "46"
+        ]
+      },
+      {
+        "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "display_name": "EP03 SCI 01 RNA Polymerase DNA Transcription",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 9.95,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Ставка на біотехнології та довголіття (Retro Biosciences).",
+        "suggested_scenes": [
+          "20"
+        ]
+      },
+      {
+        "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "display_name": "EP06 SCI 01 Alcubierre Warp Drive Metric",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/19c4148f_EP06_SCI_01_Alcubierre_Warp_Drive_Metric.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 3.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Викривлення простору можливостей за горизонтом експоненти.",
+        "suggested_scenes": [
+          "48"
+        ]
       }
     ],
     "images": [
       {
         "file": ",io.png",
-        "display_name": ",io",
+        "display_name": "Хлопчик біля вінтажного CRT-монітора (теплий ретро-кадр)",
         "rel_path": "04_ASSETS/user_ai_images/,io.png",
         "web_src": "../../04_ASSETS/user_ai_images/,io.png",
         "preview_path": "",
@@ -2106,11 +2720,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.13,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "2026-11-09_14.45.29.jpg",
-        "display_name": "2026-11-09 14.45.29",
+        "display_name": "Ретро-комп'ютер у шкільному класі інформатики 1990-х",
         "rel_path": "04_ASSETS/user_ai_images/2026-11-09_14.45.29.jpg",
         "web_src": "../../04_ASSETS/user_ai_images/2026-11-09_14.45.29.jpg",
         "preview_path": "",
@@ -2118,11 +2735,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.16,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": ";ll;.png",
-        "display_name": ";ll;",
+        "display_name": "Нічна аеропанорама Кремнієвої долини та затоки Сан-Франциско",
         "rel_path": "04_ASSETS/user_ai_images/;ll;.png",
         "web_src": "../../04_ASSETS/user_ai_images/;ll;.png",
         "preview_path": "",
@@ -2130,11 +2750,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.3,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "_df.png",
-        "display_name": "df",
+        "display_name": "Відображення зеленого коду і юнака на старому CRT-екрані",
         "rel_path": "04_ASSETS/user_ai_images/_df.png",
         "web_src": "../../04_ASSETS/user_ai_images/_df.png",
         "preview_path": "",
@@ -2142,11 +2765,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.17,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "_fgxfhcg.png",
-        "display_name": "fgxfhcg",
+        "display_name": "Ділове рукостискання на фоні хмарочосів уночі",
         "rel_path": "04_ASSETS/user_ai_images/_fgxfhcg.png",
         "web_src": "../../04_ASSETS/user_ai_images/_fgxfhcg.png",
         "preview_path": "",
@@ -2154,11 +2780,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.16,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "_nkbh.png",
-        "display_name": "nkbh",
+        "display_name": "Юний хакер у нічному гаражі біля CRT-термінала",
         "rel_path": "04_ASSETS/user_ai_images/_nkbh.png",
         "web_src": "../../04_ASSETS/user_ai_images/_nkbh.png",
         "preview_path": "",
@@ -2166,11 +2795,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.17,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "_v.png",
-        "display_name": "v",
+        "display_name": "Студент із рюкзаком на нічній дощовій вулиці кампуса",
         "rel_path": "04_ASSETS/user_ai_images/_v.png",
         "web_src": "../../04_ASSETS/user_ai_images/_v.png",
         "preview_path": "",
@@ -2178,11 +2810,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.13,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "_yfht.png",
-        "display_name": "yfht",
+        "display_name": "Засновник один у темному кабінеті перед монітором",
         "rel_path": "04_ASSETS/user_ai_images/_yfht.png",
         "web_src": "../../04_ASSETS/user_ai_images/_yfht.png",
         "preview_path": "",
@@ -2190,7 +2825,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Altman_Adult_Portrait_Direct_Gaze_2K.png",
@@ -2202,11 +2840,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "b_cgbxtd.png",
-        "display_name": "b cgbxtd",
+        "display_name": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
         "rel_path": "04_ASSETS/user_ai_images/b_cgbxtd.png",
         "web_src": "../../04_ASSETS/user_ai_images/b_cgbxtd.png",
         "preview_path": "",
@@ -2214,11 +2855,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.25,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "bhnuyvtf.png",
-        "display_name": "bhnuyvtf",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
         "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
         "web_src": "../../04_ASSETS/user_ai_images/bhnuyvtf.png",
         "preview_path": "",
@@ -2226,7 +2870,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Boy_watching_glowing_code_77d7ee3b_2K.jpg",
@@ -2238,7 +2885,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 2.76,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Boy_watching_glowing_code_77d7ee3b_2K.jpg",
@@ -2250,11 +2900,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 2.76,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "bvcb.png",
-        "display_name": "bvcb",
+        "display_name": "Юнак біля трибуни в залі з високими вікнами (стилізований світ)",
         "rel_path": "04_ASSETS/user_ai_images/bvcb.png",
         "web_src": "../../04_ASSETS/user_ai_images/bvcb.png",
         "preview_path": "",
@@ -2262,11 +2915,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "by.png",
-        "display_name": "by",
+        "display_name": "Крупний чорно-білий портрет на фоні формул і кіноплівки",
         "rel_path": "04_ASSETS/user_ai_images/by.png",
         "web_src": "../../04_ASSETS/user_ai_images/by.png",
         "preview_path": "",
@@ -2274,11 +2930,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.2,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "byr.png",
-        "display_name": "byr",
+        "display_name": "Камера спостереження біля вілли Кремнієвої долини ввечері",
         "rel_path": "04_ASSETS/user_ai_images/byr.png",
         "web_src": "../../04_ASSETS/user_ai_images/byr.png",
         "preview_path": "",
@@ -2286,11 +2945,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.27,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "cdwrf.png",
-        "display_name": "cdwrf",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
         "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
         "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
         "preview_path": "",
@@ -2298,11 +2960,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.19,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "cfz.png",
-        "display_name": "cfz",
+        "display_name": "Засновник із бейджем заходить до скляного офісу (варіант А)",
         "rel_path": "04_ASSETS/user_ai_images/cfz.png",
         "web_src": "../../04_ASSETS/user_ai_images/cfz.png",
         "preview_path": "",
@@ -2310,7 +2975,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Child_inserting_floppy_disk_92a52bea_2K.jpg",
@@ -2322,7 +2990,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Child_inserting_floppy_disk_92a52bea_2K.jpg",
@@ -2334,11 +3005,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "csr.png",
-        "display_name": "csr",
+        "display_name": "Макро логотипу Apple на корпусі Macintosh LC II",
         "rel_path": "04_ASSETS/user_ai_images/csr.png",
         "web_src": "../../04_ASSETS/user_ai_images/csr.png",
         "preview_path": "",
@@ -2346,7 +3020,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.14,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "DNA_transcription_molecular_model_b083aad3.jpg",
@@ -2358,11 +3035,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.1,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "dv.png",
-        "display_name": "dv",
+        "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
         "rel_path": "04_ASSETS/user_ai_images/dv.png",
         "web_src": "../../04_ASSETS/user_ai_images/dv.png",
         "preview_path": "",
@@ -2370,11 +3050,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.22,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "dxf_g.png",
-        "display_name": "dxf g",
+        "display_name": "Золоті світлові імпульси біжать по материнській платі",
         "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
         "web_src": "../../04_ASSETS/user_ai_images/dxf_g.png",
         "preview_path": "",
@@ -2382,11 +3065,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.24,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "edsfrdtf.png",
-        "display_name": "edsfrdtf",
+        "display_name": "Хлопчик розбирає материнську плату ПК у сонячній кімнаті (варіант А)",
         "rel_path": "04_ASSETS/user_ai_images/edsfrdtf.png",
         "web_src": "../../04_ASSETS/user_ai_images/edsfrdtf.png",
         "preview_path": "",
@@ -2394,7 +3080,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.18,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Electrical_pulses_firing_through…_80ff0358_2K.jpg",
@@ -2406,7 +3095,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.49,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Altman_Face_Closeup_Ref.png",
@@ -2418,7 +3110,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Church_Confession_AngleMic_Ref.png",
@@ -2430,7 +3125,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.11,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Church_Confession_DarkBg_Ref.png",
@@ -2442,7 +3140,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.08,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Church_Confession_FrontMic_Ref.png",
@@ -2454,7 +3155,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.14,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Church_Confession_Wide_Ref.png",
@@ -2466,7 +3170,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.27,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_Mac_LCII_Corner_Ref.png",
@@ -2478,23 +3185,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.12,
-        "ext": "PNG"
-      },
-      {
-        "file": "fjall_jokull_flashcard.png",
-        "display_name": "fjall jokull flashcard",
-        "rel_path": "04_ASSETS/user_ai_images/fjall_jokull_flashcard.png",
-        "web_src": "../../04_ASSETS/user_ai_images/fjall_jokull_flashcard.png",
-        "preview_path": "",
-        "thumb": "assets/vault_thumbs/ep01/4888f52d_fjall_jokull_flashcard.jpg",
-        "cat": "ai_gen_img",
-        "cat_label": "🎨 Авторські ШІ-Кадри",
-        "size_mb": 1.33,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ghnfbyd.png",
-        "display_name": "ghnfbyd",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
         "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
         "web_src": "../../04_ASSETS/user_ai_images/ghnfbyd.png",
         "preview_path": "",
@@ -2502,7 +3200,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.22,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Guest_badge_on_desk_a7ff707c_2K.jpg",
@@ -2514,11 +3215,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.13,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "hmufj.png",
-        "display_name": "hmufj",
+        "display_name": "Портрет рудоволосого хлопчика — молодий дослідник",
         "rel_path": "04_ASSETS/user_ai_images/hmufj.png",
         "web_src": "../../04_ASSETS/user_ai_images/hmufj.png",
         "preview_path": "",
@@ -2526,11 +3230,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.16,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "image.png",
-        "display_name": "image",
+        "display_name": "Засновник із бейджем заходить до скляного офісу (варіант В)",
         "rel_path": "04_ASSETS/user_ai_images/image.png",
         "web_src": "../../04_ASSETS/user_ai_images/image.png",
         "preview_path": "",
@@ -2538,11 +3245,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "jlgyf.png",
-        "display_name": "jlgyf",
+        "display_name": "Ноутбук із кодом на дерев'яному столі біля вікна",
         "rel_path": "04_ASSETS/user_ai_images/jlgyf.png",
         "web_src": "../../04_ASSETS/user_ai_images/jlgyf.png",
         "preview_path": "",
@@ -2550,11 +3260,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "kjh.png",
-        "display_name": "kjh",
+        "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
         "rel_path": "04_ASSETS/user_ai_images/kjh.png",
         "web_src": "../../04_ASSETS/user_ai_images/kjh.png",
         "preview_path": "",
@@ -2562,11 +3275,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.39,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "kut.png",
-        "display_name": "kut",
+        "display_name": "Ч/Б студент за комп'ютером у гуртожитку (Radiohead постер)",
         "rel_path": "04_ASSETS/user_ai_images/kut.png",
         "web_src": "../../04_ASSETS/user_ai_images/kut.png",
         "preview_path": "",
@@ -2574,11 +3290,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "lknjb.png",
-        "display_name": "lknjb",
+        "display_name": "Макро вентиляційних решіток Macintosh LC II із внутрішнім сяйвом",
         "rel_path": "04_ASSETS/user_ai_images/lknjb.png",
         "web_src": "../../04_ASSETS/user_ai_images/lknjb.png",
         "preview_path": "",
@@ -2586,7 +3305,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.13,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Macintosh_Rainbow_Apple_Logo_Corner_2K.png",
@@ -2598,7 +3320,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.14,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Mathematical_decision_tree_in_space_3c0901ac_2K.jpg",
@@ -2610,11 +3335,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.51,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "mk.png",
-        "display_name": "mk",
+        "display_name": "Хлопчик розбирає материнську плату ПК (варіант B)",
         "rel_path": "04_ASSETS/user_ai_images/mk.png",
         "web_src": "../../04_ASSETS/user_ai_images/mk.png",
         "preview_path": "",
@@ -2622,11 +3350,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.18,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "mmjghnfgbdf.png",
-        "display_name": "mmjghnfgbdf",
+        "display_name": "Аніме: хлопчик розкриває сяючий комп'ютер у сонячній кімнаті (A)",
         "rel_path": "04_ASSETS/user_ai_images/mmjghnfgbdf.png",
         "web_src": "../../04_ASSETS/user_ai_images/mmjghnfgbdf.png",
         "preview_path": "",
@@ -2634,11 +3365,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "mymyy.png",
-        "display_name": "mymyy",
+        "display_name": "Відображення зеленого коду на CRT (варіант 2)",
         "rel_path": "04_ASSETS/user_ai_images/mymyy.png",
         "web_src": "../../04_ASSETS/user_ai_images/mymyy.png",
         "preview_path": "",
@@ -2646,11 +3380,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.17,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "nlbv.png",
-        "display_name": "nlbv",
+        "display_name": "Нічна кімната програміста з трьома зеленими моніторами",
         "rel_path": "04_ASSETS/user_ai_images/nlbv.png",
         "web_src": "../../04_ASSETS/user_ai_images/nlbv.png",
         "preview_path": "",
@@ -2658,11 +3395,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.2,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "p;.png",
-        "display_name": "p;",
+        "display_name": "Кінетична типографіка: EXPONENTIAL",
         "rel_path": "04_ASSETS/user_ai_images/p;.png",
         "web_src": "../../04_ASSETS/user_ai_images/p;.png",
         "preview_path": "",
@@ -2670,11 +3410,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.06,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "rvdst.png",
-        "display_name": "rvdst",
+        "display_name": "Великий план очей дорослого візіонера",
         "rel_path": "04_ASSETS/user_ai_images/rvdst.png",
         "web_src": "../../04_ASSETS/user_ai_images/rvdst.png",
         "preview_path": "",
@@ -2682,11 +3425,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "rvt.png",
-        "display_name": "rvt",
+        "display_name": "Напружений крупний план засновника в темному офісі",
         "rel_path": "04_ASSETS/user_ai_images/rvt.png",
         "web_src": "../../04_ASSETS/user_ai_images/rvt.png",
         "preview_path": "",
@@ -2694,11 +3440,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "sax.png",
-        "display_name": "sax",
+        "display_name": "Аніме: хлопчик розкриває сяючий комп'ютер у сонячній кімнаті (B)",
         "rel_path": "04_ASSETS/user_ai_images/sax.png",
         "web_src": "../../04_ASSETS/user_ai_images/sax.png",
         "preview_path": "",
@@ -2706,11 +3455,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "scesxcsr.png",
-        "display_name": "scesxcsr",
+        "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
         "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
         "web_src": "../../04_ASSETS/user_ai_images/scesxcsr.png",
         "preview_path": "",
@@ -2718,11 +3470,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "sdgfhtyj.png",
-        "display_name": "sdgfhtyj",
+        "display_name": "Студент за ноутбуком у кімнаті гуртожитку 2000-х (колір)",
         "rel_path": "04_ASSETS/user_ai_images/sdgfhtyj.png",
         "web_src": "../../04_ASSETS/user_ai_images/sdgfhtyj.png",
         "preview_path": "",
@@ -2730,7 +3485,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.2,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Stages_of_cell_division_a2a1ff18.jpg",
@@ -2742,7 +3500,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.06,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
@@ -2754,7 +3515,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 3.84,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Three_people_discussing_at_table_e4a9158b_2K.jpg",
@@ -2766,11 +3530,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 2.51,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "tredf.png",
-        "display_name": "tredf",
+        "display_name": "Аніме-ілюстрація: молодий фаундер вибігає з гуртожитку у нічне місто",
         "rel_path": "04_ASSETS/user_ai_images/tredf.png",
         "web_src": "../../04_ASSETS/user_ai_images/tredf.png",
         "preview_path": "",
@@ -2778,11 +3545,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.2,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "utyfgv.png",
-        "display_name": "utyfgv",
+        "display_name": "Тактичний дрон-HUD над особняком Кремнієвої долини",
         "rel_path": "04_ASSETS/user_ai_images/utyfgv.png",
         "web_src": "../../04_ASSETS/user_ai_images/utyfgv.png",
         "preview_path": "",
@@ -2790,11 +3560,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.27,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "vcx.png",
-        "display_name": "vcx",
+        "display_name": "Хлопчик розбирає материнську плату ПК (варіант C)",
         "rel_path": "04_ASSETS/user_ai_images/vcx.png",
         "web_src": "../../04_ASSETS/user_ai_images/vcx.png",
         "preview_path": "",
@@ -2802,11 +3575,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.18,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "vfre.png",
-        "display_name": "vfre",
+        "display_name": "Хлопчик біля вінтажного CRT-монітора (варіант крупний)",
         "rel_path": "04_ASSETS/user_ai_images/vfre.png",
         "web_src": "../../04_ASSETS/user_ai_images/vfre.png",
         "preview_path": "",
@@ -2814,11 +3590,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.13,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "vscds.png",
-        "display_name": "vscds",
+        "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
         "rel_path": "04_ASSETS/user_ai_images/vscds.png",
         "web_src": "../../04_ASSETS/user_ai_images/vscds.png",
         "preview_path": "",
@@ -2826,11 +3605,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "xas.png",
-        "display_name": "xas",
+        "display_name": "Виснажений засновник на нічному відеодзвінку у темній кімнаті",
         "rel_path": "04_ASSETS/user_ai_images/xas.png",
         "web_src": "../../04_ASSETS/user_ai_images/xas.png",
         "preview_path": "",
@@ -2838,11 +3620,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "xasdwrc.png",
-        "display_name": "xasdwrc",
+        "display_name": "Макро перової ручки з краплею чорнила на папері",
         "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
         "web_src": "../../04_ASSETS/user_ai_images/xasdwrc.png",
         "preview_path": "",
@@ -2850,11 +3635,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.13,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "xdgcfh.png",
-        "display_name": "xdgcfh",
+        "display_name": "Світанок над мегаполісом біля океану (Сан-Франциско)",
         "rel_path": "04_ASSETS/user_ai_images/xdgcfh.png",
         "web_src": "../../04_ASSETS/user_ai_images/xdgcfh.png",
         "preview_path": "",
@@ -2862,11 +3650,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.23,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "xdry.png",
-        "display_name": "xdry",
+        "display_name": "Юнак перед мікрофоном у залі (озвучена правда)",
         "rel_path": "04_ASSETS/user_ai_images/xdry.png",
         "web_src": "../../04_ASSETS/user_ai_images/xdry.png",
         "preview_path": "",
@@ -2874,11 +3665,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "xzcs.png",
-        "display_name": "xzcs",
+        "display_name": "Хлопчик розбирає материнську плату ПК (варіант D)",
         "rel_path": "04_ASSETS/user_ai_images/xzcs.png",
         "web_src": "../../04_ASSETS/user_ai_images/xzcs.png",
         "preview_path": "",
@@ -2886,11 +3680,14 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.2,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "ybr.png",
-        "display_name": "ybr",
+        "display_name": "Світова мапа глобальних інноваційних вузлів та мереж",
         "rel_path": "04_ASSETS/user_ai_images/ybr.png",
         "web_src": "../../04_ASSETS/user_ai_images/ybr.png",
         "preview_path": "",
@@ -2898,7 +3695,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.21,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Young_Altman_Child_Soulful_Portrait_2K.png",
@@ -2910,7 +3710,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.16,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Young_Altman_School_Auditorium_Microphone_2001_2K.png",
@@ -2922,7 +3725,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "Young_Altman_School_Podium_Assembly_2K.png",
@@ -2934,7 +3740,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "ai_gen_img",
         "cat_label": "🎨 Авторські ШІ-Кадри",
         "size_mb": 0.15,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_05_Businessman_Dissolving_Into_Data_2K.jpg",
@@ -2946,7 +3755,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_06_Gold_Coins_Melting_Forming_Brain_2K.jpg",
@@ -2958,7 +3770,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.01,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07_Human_Watching_Miniature_Fusion_Star_2K.jpg",
@@ -2970,7 +3785,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.04,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07B_Human_Watching_Miniature_Fusion_Star_Var2_2K.jpg",
@@ -2982,7 +3800,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.28,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_08_Dyson_Swarm_Servers_Encasing_Star_2K.jpg",
@@ -2994,7 +3815,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.31,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro.jpg",
@@ -3006,7 +3830,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 0.72,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg",
@@ -3018,7 +3845,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 1.02,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg",
@@ -3030,7 +3860,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 0.7,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_02F_Silhouette_At_Computer_2K.jpg",
@@ -3042,7 +3875,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.64,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07B_Smartphone_Vibrating_Table_2K.jpg",
@@ -3054,7 +3890,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07D_Silhouette_Against_Window_2K.jpg",
@@ -3066,7 +3905,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.77,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01A_Mac_ADB_Ports_Canvas_4K.png",
@@ -3078,7 +3920,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.31,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01B_Mac_Texture_Canvas_4K.png",
@@ -3090,7 +3935,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 0.94,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01C_Mac_Ports_Close_Canvas_4K.png",
@@ -3102,7 +3950,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.21,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K.jpg",
@@ -3114,7 +3965,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.06,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01E_Mac_Boardroom_StudyB_2K.jpg",
@@ -3126,7 +3980,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.72,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_01F_Vintage_Hardware_Macro_2K.jpg",
@@ -3138,7 +3995,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.75,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K.jpg",
@@ -3150,7 +4010,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.79,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_03A_Silicon_Traces_Canvas_4K_v1.png",
@@ -3162,7 +4025,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.3,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_03B_Silicon_Traces_Canvas_4K_v2.png",
@@ -3174,7 +4040,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 4.75,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_03C_Silicon_Traces_Canvas_4K_v3.png",
@@ -3186,7 +4055,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 4.9,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_03D_Silicon_Traces_Canvas_8K_v4.png",
@@ -3198,7 +4070,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 8.35,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_04B_Exponential_Line_Duplicate.png",
@@ -3210,7 +4085,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_06B_Architectural_Monoliths_2K.jpg",
@@ -3222,7 +4100,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_07C_Computer_Boardroom_Void_2K.jpg",
@@ -3234,7 +4115,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.06,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_STUDY_08B_Optical_Symbolic_Filaments_2K.jpg",
@@ -3246,7 +4130,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.12,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_01_Extension_Of_Thought.png",
@@ -3258,7 +4145,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_02_Indifference_To_Authority.png",
@@ -3270,7 +4160,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_03_Autonomy_Equation.png",
@@ -3282,7 +4175,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_04_Linear_Vs_Exponential.png",
@@ -3294,7 +4190,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.11,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_CARD_05_Psychological_Friction.png",
@@ -3306,7 +4205,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png",
@@ -3318,7 +4220,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.59,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
@@ -3330,7 +4235,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.58,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_03_ACT3_Board_Ouster_Nov17_2023.png",
@@ -3342,7 +4250,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.55,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
@@ -3354,7 +4265,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.56,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
@@ -3366,7 +4280,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.63,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_06_ACT4_Stargate_100B_Supercluster.png",
@@ -3378,7 +4295,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.18,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_DOC_07_ACT4_Seven_Trillion_Chip_Network.png",
@@ -3390,7 +4310,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.17,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_01_Extension_Of_Thought_Macintosh.png",
@@ -3402,7 +4325,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_02_Psychological_Friction_Loopt.png",
@@ -3414,7 +4340,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_03_Exponential_Risk_Manifesto.png",
@@ -3426,7 +4355,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_04_Compute_Equations_Microsoft.png",
@@ -3438,7 +4370,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_05_Guest_Badge_Nov2023.png",
@@ -3450,7 +4385,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.1,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_06_730_Employees_Ultimatum.png",
@@ -3462,7 +4400,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.11,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_07_Three_Rules_Exponential_Life.png",
@@ -3474,7 +4415,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_UA_CARD_08_Plastic_Reality_Finale.png",
@@ -3486,7 +4430,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 0.11,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg",
@@ -3498,7 +4445,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 0.1,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
@@ -3510,7 +4460,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 0.9,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
@@ -3522,7 +4475,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 0.17,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
@@ -3534,7 +4490,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
@@ -3546,7 +4505,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.15,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
@@ -3558,7 +4520,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.29,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K.jpg",
@@ -3570,7 +4535,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 0.11,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_07_Smartphone_Boardroom_Noir_Rain_2K_white_glow_v1.jpg",
@@ -3582,7 +4550,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 2.6,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_08_Golden_Signatures_Light_Threads_2K.jpg",
@@ -3594,7 +4565,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.3,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
@@ -3606,7 +4580,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.74,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
@@ -3618,7 +4595,25 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.2,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
+      },
+      {
+        "file": "fjall_jokull_flashcard.png",
+        "display_name": "[Поза проєктом] Ісландська картка fjall/jökull (архів)",
+        "rel_path": "04_ASSETS/user_ai_images/fjall_jokull_flashcard.png",
+        "web_src": "../../04_ASSETS/user_ai_images/fjall_jokull_flashcard.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/4888f52d_fjall_jokull_flashcard.jpg",
+        "cat": "off_topic",
+        "cat_label": "🗄️ Позапроєктний архів",
+        "size_mb": 1.33,
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_MGFX_01_Base.png",
@@ -3630,7 +4625,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "other_img",
         "cat_label": "🖼️ Інші Зображення",
         "size_mb": 0.08,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_MGFX_02_Base.png",
@@ -3642,7 +4640,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "other_img",
         "cat_label": "🖼️ Інші Зображення",
         "size_mb": 0.09,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
@@ -3654,7 +4655,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.39,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
@@ -3666,7 +4670,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.11,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
@@ -3678,7 +4685,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.03,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
@@ -3690,7 +4700,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg",
@@ -3702,7 +4715,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.3,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg",
@@ -3714,7 +4730,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.25,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg",
@@ -3726,7 +4745,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.04,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.webp",
@@ -3738,7 +4760,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.02,
-        "ext": "WEBP"
+        "ext": "WEBP",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_08_Altman_TechCrunch_Disrupt_2014_YC_President.jpg",
@@ -3750,7 +4775,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 8.58,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_09_Altman_TechCrunch_Disrupt_2019_OpenAI_CEO.jpg",
@@ -3762,7 +4790,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.36,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_10_Altman_TED_Vancouver_2023_GPT4.jpg",
@@ -3774,7 +4805,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.09,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_IMG_ARCH_11_Altman_November_2022_ChatGPT_Genesis.jpg",
@@ -3786,7 +4820,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 10.78,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
       },
       {
         "file": "EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
@@ -3798,7 +4835,164 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.09,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "01",
+        "source_label": "⭐ Власний асет EP01"
+      },
+      {
+        "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "display_name": "EP02 FLOW IMG 05 Hand Shaking Golden Transistor Dust 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Символ альянсу між капіталом і кремнієм (Microsoft × OpenAI).",
+        "suggested_scenes": [
+          "31"
+        ]
+      },
+      {
+        "file": "EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "display_name": "EP02 FLOW IMG 06 Magma Flowing Into Supercomputer 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/701638df_EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercompute.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.29,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Термоядерна енергія та земне тепло живлять гігаватні кластери Stargate.",
+        "suggested_scenes": [
+          "47"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory 1c257942 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.35,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Сяюче інтелектуальне ядро всередині надсучасного дата-центру.",
+        "suggested_scenes": [
+          "46"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 2.96,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Сяюче інтелектуальне ядро всередині надсучасного дата-центру.",
+        "suggested_scenes": [
+          "46"
+        ]
+      },
+      {
+        "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "display_name": "Neural network nodes firing bef7f30b 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Багатошарова нейронна решітка зі спалахами ваг.",
+        "suggested_scenes": [
+          "28"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "cat": "broll_stills",
+        "cat_label": "🎨 B-Roll Концепти & Дослідження",
+        "size_mb": 3.47,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Материнська плата і клавіатура крупним планом — фізика кремнієвого заліза.",
+        "suggested_scenes": [
+          "04",
+          "46"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+        "display_name": "EP06 FLOW IMG 01 Jerusalem Limestone Roots 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/ee00ddd6_EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.07,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Контраст старого світу й вертикалі променя нового масштабу.",
+        "suggested_scenes": [
+          "28",
+          "49"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "display_name": "EP06 FLOW IMG 04 Researcher Viewing GPUs AlexNet 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.28,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Дослідник оцінює обчислювальні блоки перед проривом глибокого навчання.",
+        "suggested_scenes": [
+          "28"
+        ]
       }
     ],
     "audio": [
@@ -4794,13 +5988,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 174,
-      "images_count": 142,
+      "videos_count": 179,
+      "images_count": 150,
       "audio_count": 99,
       "vo_count": 82,
       "suno_count": 13,
       "other_audio_count": 4,
-      "total_mb": 2353.79
+      "total_mb": 2354.31,
+      "native_videos_count": 175,
+      "cross_videos_count": 4,
+      "native_images_count": 142,
+      "cross_images_count": 8
     }
   },
   "02": {
@@ -4820,7 +6018,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 6.6,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_VID_ARCH_02_ACT3_24FPS_Huang_Blackwell_Wafer_Reveal.mp4",
@@ -4832,7 +6033,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 6.48,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "ep02_flow_01_blackwell_wafer_matrix.mp4",
@@ -4844,7 +6048,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.15,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
@@ -4856,7 +6063,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 13.45,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
@@ -4868,7 +6078,958 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 5.67,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
+      },
+      {
+        "file": "Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "display_name": "Aerial view of city center",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Комп'ютерний зір та сканування міського простору в реальному часі.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "display_name": "Camera accelerating through lett clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Проліт крізь EXPONENTIAL — шалений ривок NVIDIA з нуля у 2012–2024 роках.",
+        "suggested_scenes": [
+          "30"
+        ]
+      },
+      {
+        "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "display_name": "Camera moving through computer m clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 14.73,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Макро-огляд вінтажного апаратного корпусу початку 1990-х.",
+        "suggested_scenes": [
+          "13"
+        ]
+      },
+      {
+        "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "display_name": "Camera plunges into terminal screen",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 23.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Занурення прямо в середовище програмного коду CUDA / терміналу.",
+        "suggested_scenes": [
+          "26",
+          "46"
+        ]
+      },
+      {
+        "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "display_name": "Digital HUD tracking vehicles",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 12.72,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Автономне розпізнавання об'єктів та телеметрія транспорту на бортових комп'ютерах NVIDIA Drive.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Юний інженер власноруч розбирає залізо системного блоку.",
+        "suggested_scenes": [
+          "10",
+          "13"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 6.0,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Динамічний аніме-образ молодого фаундера, що крокує у нічне місто стартапів.",
+        "suggested_scenes": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "display_name": "Four men sitting at table",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нічна зустріч інженерів-засновників за столом у закусочній 1993 року — народження NVIDIA!",
+        "suggested_scenes": [
+          "12",
+          "13"
+        ]
+      },
+      {
+        "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
+        "display_name": "Laser forms text words",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зелений промінь вінтажного осцилографа: апаратне тестування графіки та симулятор IKOS.",
+        "suggested_scenes": [
+          "14",
+          "22"
+        ]
+      },
+      {
+        "file": "Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "display_name": "Mouse click triggers flash",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9810a5ce_Mouse_click_triggers_flash_42a0e76f_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.25,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Клік о другій ночі й раптові відеодзвінки команди (Дженсен читає кожен електронний лист).",
+        "suggested_scenes": [
+          "33"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores.",
+        "suggested_scenes": [
+          "29",
+          "44",
+          "45"
+        ]
+      },
+      {
+        "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "display_name": "Photographic strobe inverting image",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 7.53,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Момент шоку та внутрішньої зібраності, коли компанія опиняється на межі краху.",
+        "suggested_scenes": [
+          "18",
+          "38"
+        ]
+      },
+      {
+        "file": "Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "display_name": "Physical matter dissolves into b clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 16.4,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Реальний прибережний ландшафт трансформується в цифрову симуляцію.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!).",
+        "suggested_scenes": [
+          "32",
+          "46"
+        ]
+      },
+      {
+        "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "display_name": "Walls dissolving into textbook v…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Аудиторія Стенфорду, де звучать незручні уроки стійкості.",
+        "suggested_scenes": [
+          "34"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 7.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Коридор суперкомп'ютерного кластера NVIDIA HGX/Blackwell.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "ep01_flow_09_fusion_torus.mp4",
+        "display_name": "ep01 flow 09 fusion torus",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+        "thumb": "assets/vault_thumbs/ep01/d6e16d0f_ep01_flow_09_fusion_torus.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 13.51,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Потужний енергетичний реактор для живлення дата-центрів нового покоління.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 19.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Візуалізація інженерного рушія та трансформації мап даних.",
+        "suggested_scenes": [
+          "16",
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 4.16,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Дощова зала засідань ради директорів: криза, тиск ринку 2008 і 30 днів до банкрутства.",
+        "suggested_scenes": [
+          "24",
+          "47"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "display_name": "EP01 V1 B2 04 Robotic Dexterity 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.63,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Роботизовані маніпулятори та фізичний ШІ (NVIDIA Isaac Sim / GR00T).",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "display_name": "EP01 V1 B2 06 Server Matrix Billions 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 14.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Серверна сфера Дайсона для трильйонної архітектури AI-фабрик.",
+        "suggested_scenes": [
+          "44",
+          "45",
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "display_name": "EP01 V1 B2 07 Corporate Transmutation 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.15,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Жорстке виживання компанії у 1996 році — скорочення 60% штату та ставка ва-банк.",
+        "suggested_scenes": [
+          "18",
+          "19"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "display_name": "EP01 V1 B2 08 Silicon Metropolis 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/1d11135f_EP01_V1_B2_08_Silicon_Metropolis_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 16.77,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Мегаполіс перетворюється на золотий кремній — фінальна візія цифрового двійника Землі (NVIDIA Omniverse).",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Гігантське ядро суперкомп'ютера та команда інженерів NVIDIA.",
+        "suggested_scenes": [
+          "31",
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.34,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Планета Земля, оповита цифровою нейромережею — масштаб імперії NVIDIA.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "display_name": "EP01 V1 CREATIVE 06 Obsessive Builders 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 9.62,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Розробники в холодній залі перед велетенською серверною вежею GPU (DGX-1 / AI-фабрика).",
+        "suggested_scenes": [
+          "31",
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 07 Golden Transistor Dust 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 5.85,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Золоте транзисторне рукостискання — ідеально під угоду з Ірімадзірі-саном (Sega), TSMC та передачу DGX-1.",
+        "suggested_scenes": [
+          "21",
+          "23",
+          "31"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "display_name": "EP01 V1 CREATIVE 08 Gold Melting Brain 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/435413e8_EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.5,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Золоті монети переплавляються в сяючий кришталевий мозок — від IPO 1999 року до 3-трильйонного мозку планети.",
+        "suggested_scenes": [
+          "25",
+          "39"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 6.69,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Сонце, оточене сферою з GPU-пластин — монументальний образ фабрик штучного інтелекту NVIDIA.",
+        "suggested_scenes": [
+          "45",
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "display_name": "EP01 CLIP V1 07 Phosphor 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 7.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зелені матриці субпікселів CRT — епоха графіки на рівні пікселя й трикутника.",
+        "suggested_scenes": [
+          "22"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "display_name": "EP01 CLIP V1 12 WaferHero 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Макро-проліт блакитного лазера крізь кремнієву пластину — пряма візуалізація літографії TSMC для чіпів NVIDIA.",
+        "suggested_scenes": [
+          "23",
+          "26",
+          "44"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 10.43,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Засновник у вихорі розпаду — «До банкрутства залишилось 30 днів» Дженсена Хуанга!",
+        "suggested_scenes": [
+          "18",
+          "34",
+          "38"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "display_name": "EP01 CLIP V1 16 ServerCold 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 6.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Проліт холодним тунелем дата-центру — сучасна електростанція інтелекту.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "display_name": "EP01 CLIP V1 19 CurveHero 17s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 3.52,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Золота експонента зростання: момент, коли десятирічна ставка на CUDA вистрілює вгору.",
+        "suggested_scenes": [
+          "30",
+          "39"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нічне програмування у напівтемній кімнаті біля комп'ютера.",
+        "suggested_scenes": [
+          "11",
+          "22"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "display_name": "EP01 V1 NEW 03 Window Rain 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Самотній керівник о третій ночі біля вікна за розбором листів інженерів.",
+        "suggested_scenes": [
+          "33",
+          "38"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
+        "cat": "previs",
+        "cat_label": "🎞️ Превіз Аніматики",
+        "size_mb": 0.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Коридор суперкомп'ютерного кластера NVIDIA HGX/Blackwell.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "ep01_flow_09_fusion_torus.mp4",
+        "display_name": "ep01 flow 09 fusion torus",
+        "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+        "thumb": "assets/vault_thumbs/ep01/e417ee0e_ep01_flow_09_fusion_torus.jpg",
+        "cat": "previs",
+        "cat_label": "🎞️ Превіз Аніматики",
+        "size_mb": 1.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Потужний енергетичний реактор для живлення дата-центрів нового покоління.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 6.75,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Прорив звукового бар'єру — метафора секунди, коли ставка на CUDA вибухає на весь світ.",
+        "suggested_scenes": [
+          "30",
+          "39"
+        ]
+      },
+      {
+        "file": "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "display_name": "Finger slamming clock plunger",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
+        "cat": "chess",
+        "cat_label": "♟️ Шахи & Походження",
+        "size_mb": 16.04,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "ТОП-МЕТАФОРА ДЛЯ ХУАНГА! Грошей у банку лишилось рівно на 30 днів — відлік цокає перед кожною нарадою NVIDIA.",
+        "suggested_scenes": [
+          "18",
+          "24"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
+        "display_name": "EP01 CLIP STILL CRT PixelArt 4s",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/c89a6632_EP01_CLIP_STILL_CRT_PixelArt_4s.jpg",
+        "cat": "gaming",
+        "cat_label": "🕹️ ZX Spectrum & Геймінг",
+        "size_mb": 9.07,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Класична 3D/піксельна комп'ютерна графіка ігрових рушіїв — джерело попиту на перші відеокарти NVIDIA!",
+        "suggested_scenes": [
+          "12",
+          "16",
+          "25"
+        ]
+      },
+      {
+        "file": "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "display_name": "Glass shatters into voxel bricks",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
+        "cat": "gaming",
+        "cat_label": "🕹️ ZX Spectrum & Геймінг",
+        "size_mb": 12.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Фізика цифрових двійників Omniverse: матерія розпадається на керовані 3D-вокселі.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
+        "display_name": "Holographic game data streams fl…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/12c8e337_Holographic_game_data_streams_fl__0aa820c5_1080p.jpg",
+        "cat": "gaming",
+        "cat_label": "🕹️ ZX Spectrum & Геймінг",
+        "size_mb": 8.25,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Потоки ігрової геометрії та трикутників полігонів Direct3D у майстерні комп'ютерної графіки.",
+        "suggested_scenes": [
+          "16",
+          "25"
+        ]
+      },
+      {
+        "file": "EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "display_name": "EP01 V1 ASSOC 01 Lidar City Grid 8s",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
+        "cat": "go_game",
+        "cat_label": "⚪ Гра Go & Стратегія",
+        "size_mb": 6.8,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "LiDAR-сітка та просторове сканування міст у реальному часі (NVIDIA Drive / Omniverse).",
+        "suggested_scenes": [
+          "45",
+          "50"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Нейрон перероджується у GPU-матрицю NVIDIA: прорив AlexNet 2012 та народження Tensor Cores.",
+        "suggested_scenes": [
+          "29",
+          "44",
+          "45"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Засновник біля прозорої маркерної дошки розбирає математичну модель першопричин (Дженсен без кабінету біля дошки!).",
+        "suggested_scenes": [
+          "32",
+          "46"
+        ]
+      },
+      {
+        "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "display_name": "EP06 SCI 01 Alcubierre Warp Drive Metric",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/19c4148f_EP06_SCI_01_Alcubierre_Warp_Drive_Metric.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 3.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Фізична симуляція космосу в трильйонних обчисленнях.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "display_name": "EP10 SCI 01 Tesla Coil Electric Discharges",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep10/0c492c0f_EP10_SCI_01_Tesla_Coil_Electric_Discharges.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 12.43,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "10",
+        "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
+        "match_reason": "Високовольтна енергія дата-центрів — серце нових фабрик інтелекту.",
+        "suggested_scenes": [
+          "45"
+        ]
       }
     ],
     "images": [
@@ -4882,7 +7043,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.36,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_FLOW_IMG_02_Gaming_Hardware_Disintegrating_2K.jpg",
@@ -4894,7 +7058,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 2.62,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_FLOW_IMG_03_Developers_Facing_GPU_Server_Core_2K.jpg",
@@ -4906,7 +7073,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.31,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
@@ -4918,7 +7088,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.4,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
@@ -4930,7 +7103,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.29,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_FLOW_IMG_07_Star_Encased_By_GPU_Server_Plates_2K.jpg",
@@ -4942,7 +7118,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.54,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
@@ -4954,7 +7133,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.61,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
       },
       {
         "file": "EP02_PHOTO_01_Jensen_Huang_Archival_Portrait.jpg",
@@ -4966,7 +7148,441 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.27,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "02",
+        "source_label": "⭐ Власний асет EP02"
+      },
+      {
+        "file": "bhnuyvtf.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+        "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Двоє інженерів тестують серверний GPU-блейд — чистий індустріальний B-Roll для NVIDIA (RIVA/DGX-1).",
+        "suggested_scenes": [
+          "23",
+          "31",
+          "46"
+        ]
+      },
+      {
+        "file": "dv.png",
+        "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+        "rel_path": "04_ASSETS/user_ai_images/dv.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dv.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.22,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "2K кадр для нарад біля білої дошки у NVIDIA.",
+        "suggested_scenes": [
+          "32",
+          "46"
+        ]
+      },
+      {
+        "file": "dxf_g.png",
+        "display_name": "Золоті світлові імпульси біжать по материнській платі",
+        "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dxf_g.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.24,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Золоті електричні сигнали мчать доріжками кремнієвої плати — ідеальна метафора CUDA.",
+        "suggested_scenes": [
+          "26",
+          "44"
+        ]
+      },
+      {
+        "file": "ghnfbyd.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
+        "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
+        "web_src": "../../04_ASSETS/user_ai_images/ghnfbyd.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/466c154a_ghnfbyd.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.22,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Теплий світловий варіант тестування GPU-блейдів у дата-лабораторії NVIDIA.",
+        "suggested_scenes": [
+          "23",
+          "31"
+        ]
+      },
+      {
+        "file": "jlgyf.png",
+        "display_name": "Ноутбук із кодом на дерев'яному столі біля вікна",
+        "rel_path": "04_ASSETS/user_ai_images/jlgyf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/jlgyf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/27ca950d_jlgyf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.15,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Робочий стіл розробника з кодом на ноутбуці у вранішньому світлі.",
+        "suggested_scenes": [
+          "33"
+        ]
+      },
+      {
+        "file": "kjh.png",
+        "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
+        "rel_path": "04_ASSETS/user_ai_images/kjh.png",
+        "web_src": "../../04_ASSETS/user_ai_images/kjh.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.39,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нескінченний тунель суперкомп'ютерних серверних стійок.",
+        "suggested_scenes": [
+          "45",
+          "50"
+        ]
+      },
+      {
+        "file": "vscds.png",
+        "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+        "rel_path": "04_ASSETS/user_ai_images/vscds.png",
+        "web_src": "../../04_ASSETS/user_ai_images/vscds.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Трансконтинентальна мережа оптичних каналів AI-фабрик.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "display_name": "EP01 FLOW IMG 03 Silicon Wafer Cyan Laser Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.17,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Стартовий 2K кадр для сцен проектування RIVA 128 та вшивання CUDA у кожен кремнієвий чіп.",
+        "suggested_scenes": [
+          "23",
+          "26"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "display_name": "EP01 FLOW IMG 04 Golden Exponential Curve Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0b231e72_EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.09,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Золота експонента зростання обчислювальної потужності CUDA.",
+        "suggested_scenes": [
+          "30"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "display_name": "EP01 FLOW IMG 06 Supercomputer Servers Cold Hall 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.29,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "2K кадр крижаної зали дата-центру для фіналу акту інфраструктури NVIDIA.",
+        "suggested_scenes": [
+          "31",
+          "45"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "display_name": "EP01 FLOW IMG 10 Earth Horizon Neural Grid 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.2,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Планета, вкрита глобальною нейронною інфраструктурою NVIDIA.",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "display_name": "EP03 FLOW IMG 10 Lidar Scanning Tactical Map 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/2977578e_EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.13,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "2K кадр лазерного сканування 3D-середовища.",
+        "suggested_scenes": [
+          "45"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory 1c257942 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.35,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA).",
+        "suggested_scenes": [
+          "31",
+          "45"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 2.96,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Пульсуюче суперкомп'ютерне ядро (DGX-1 / AI-фабрика NVIDIA).",
+        "suggested_scenes": [
+          "31",
+          "45"
+        ]
+      },
+      {
+        "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "display_name": "Neural network nodes firing bef7f30b 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Матричні шари нейронів, що прискорюються на GPU.",
+        "suggested_scenes": [
+          "29",
+          "44"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "display_name": "Researcher standing near hologra… a0248767 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.24,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Дослідник перед голографічною стіною візуальних даних (цифровий двійник).",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "display_name": "Researcher standing near hologra… af2e61c0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.59,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Дослідник перед голографічною стіною візуальних даних (цифровий двійник).",
+        "suggested_scenes": [
+          "50"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "cat": "broll_stills",
+        "cat_label": "🎨 B-Roll Концепти & Дослідження",
+        "size_mb": 3.47,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Апаратне креслення друкованої плати й GPU — естетика перших прототипів NVIDIA.",
+        "suggested_scenes": [
+          "13",
+          "22",
+          "44"
+        ]
+      },
+      {
+        "file": "EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "display_name": "EP06 DOC 01 ACT2 Sutskever AlexNet NIPS 2012",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ NIPS 2012: ImageNet на двох відеокартах NVIDIA GTX 580!",
+        "suggested_scenes": [
+          "29"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "display_name": "EP06 FLOW IMG 04 Researcher Viewing GPUs AlexNet 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.28,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "2012: запуск AlexNet на двох GPU GTX 580 очима дослідників Торонто.",
+        "suggested_scenes": [
+          "29"
+        ]
+      },
+      {
+        "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "display_name": "EP08 DOC 01 ACT2 FeiFeiLi ImageNet CVPR 2009",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.59,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Бенчмарк ImageNet CVPR 2009 — датасет, на якому переміг тандем GPU + AlexNet.",
+        "suggested_scenes": [
+          "29"
+        ]
+      },
+      {
+        "file": "EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "display_name": "EP10 DOC 01 ACT2 AndrewNg GoogleBrain Coursera 2011",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep10/5b0e096a_EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.61,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "10",
+        "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
+        "match_reason": "Історія переходу від 16,000 CPU ядер до десятків GPU у дослідженнях глибокого навчання.",
+        "suggested_scenes": [
+          "29"
+        ]
       }
     ],
     "audio": [
@@ -5012,13 +7628,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 5,
-      "images_count": 8,
+      "videos_count": 53,
+      "images_count": 30,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 223.65
+      "total_mb": 223.65,
+      "native_videos_count": 5,
+      "cross_videos_count": 48,
+      "native_images_count": 8,
+      "cross_images_count": 22
     }
   },
   "03": {
@@ -5038,7 +7658,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 7.73,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
@@ -5050,7 +7673,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 6.07,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
@@ -5062,7 +7688,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 4.16,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Marker_writing_glowing_words_d757ace3_1080p.mp4",
@@ -5074,7 +7703,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 7.46,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
@@ -5086,7 +7718,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 14.94,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
@@ -5098,7 +7733,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.46,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction.mp4",
@@ -5110,7 +7748,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.51,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_moving_rook_for_checkmate_40d08020_1080p.mp4",
@@ -5122,7 +7763,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 7.28,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Camera_pushing_toward_baby_cradle_b407eebe_1080p.mp4",
@@ -5134,7 +7778,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 11.57,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "ElevenLabs_video_seedance-2-5_Cinematic wide-_2026-11-09T17_43_20.mp4",
@@ -5146,7 +7793,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 5.01,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_V1_ASSOC_02_Chess_Sandstorm_8s.mp4",
@@ -5158,7 +7808,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 6.93,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_V1_B3_01_Chess_King_Falling_12s.mp4",
@@ -5170,7 +7823,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 11.74,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s.mp4",
@@ -5182,7 +7838,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 10.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
@@ -5194,7 +7853,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 16.04,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
@@ -5206,7 +7868,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 8.23,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Player_moving_chess_piece_3fb132c7_1080p.mp4",
@@ -5218,7 +7883,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 8.43,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Slow_tracking_camera_pushes_past_322cd6c4.mp4",
@@ -5230,7 +7898,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 5.71,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Aircraft_banking_into_evening_sky_46d97595_1080p.mp4",
@@ -5242,7 +7913,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт Альтман → Хассабіс",
         "size_mb": 11.58,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Aircraft_climbing_into_stratosph…_081016cf_1080p.mp4",
@@ -5254,7 +7928,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт Альтман → Хассабіс",
         "size_mb": 11.33,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "ep03_flow_01_alphafold_protein_cosmos.mp4",
@@ -5266,7 +7943,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.68,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Camera_tracking_vintage_televisi…_e6659a8e_1080p.mp4",
@@ -5278,7 +7958,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 8.65,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_CLIP_STILL_CRT_PixelArt_4s.mp4",
@@ -5290,7 +7973,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 9.07,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
@@ -5302,7 +7988,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 12.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
@@ -5314,7 +8003,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 8.25,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
@@ -5326,7 +8018,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "go_game",
         "cat_label": "⚪ Гра Go & Стратегія",
         "size_mb": 6.8,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4",
@@ -5338,7 +8033,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "go_game",
         "cat_label": "⚪ Гра Go & Стратегія",
         "size_mb": 10.43,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Camera_glides_over_glassy_water_87530444_1080p.mp4",
@@ -5350,7 +8048,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 12.27,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
@@ -5362,7 +8063,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 15.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
@@ -5374,7 +8078,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 15.57,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
@@ -5386,7 +8093,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 8.82,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
@@ -5398,7 +8108,459 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 9.95,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
+      },
+      {
+        "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "display_name": "Camera moving through computer m clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 14.73,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Корпус класичного комп'ютера 1980–90-х.",
+        "suggested_scenes": [
+          "11"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "display_name": "Seedance Аніме: молодий фаундер виходить у нічне неонове місто",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/13ad2873_ElevenLabs_video_seedance-2-5_Dynamic_camera__20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 6.0,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Стилізований перехід молодого геймдизайнера у світ великих ігор.",
+        "suggested_scenes": [
+          "23",
+          "30"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/fd2aa327_ElevenLabs_video_seedance-2-5_Intense_macro_r_20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 6.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нічне занурення в код на ZX Spectrum.",
+        "suggested_scenes": [
+          "13"
+        ]
+      },
+      {
+        "file": "ep01_flow_02_crt_code.mp4",
+        "display_name": "ep01 flow 02 crt code",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
+        "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 5.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Мовні інструкції низького рівня в очах молодого кодера.",
+        "suggested_scenes": [
+          "13",
+          "14"
+        ]
+      },
+      {
+        "file": "ep01_flow_09_fusion_torus.mp4",
+        "display_name": "ep01 flow 09 fusion torus",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+        "thumb": "assets/vault_thumbs/ep01/d6e16d0f_ep01_flow_09_fusion_torus.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 13.51,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ ВІЗУАЛ ПІД СЦЕНУ #48 ГАССАБІСА («Приборкання термоядерної зорі в Токамаку»)!",
+        "suggested_scenes": [
+          "48"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "display_name": "EP01 V1 B2 01 Retro Cellular 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 9.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нано-молекулярна репарація живої клітини — перехід DeepMind від ігор до Isomorphic Labs та проєктування клітин!",
+        "suggested_scenes": [
+          "46",
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.34,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "200 мільйонів білків, подарованих усій Землі в Стокгольмі.",
+        "suggested_scenes": [
+          "47",
+          "49"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "display_name": "EP01 V1 B3 04 Golden Grid Stabilizing 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 16.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Прогнозування глобального клімату й ураганів системою DeepMind GraphCast.",
+        "suggested_scenes": [
+          "45",
+          "47"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "display_name": "EP01 CLIP V1 06 Boy Room 10s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/dbf05075_EP01_CLIP_V1_06_Boy_Room_10s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 5.47,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код.",
+        "suggested_scenes": [
+          "11",
+          "13"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 02 Galaxies Axons 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 11.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ КЛІП З БЛОКУ ХАССАБІСА! Космічні галактики з'єднані золотими синаптичними аксонами.",
+        "suggested_scenes": [
+          "47",
+          "50"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "display_name": "EP01 V1 CREATIVE 05 Holo Geo Matrix 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 12.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Голографічна мапа морфує у біологічну структуру та просторову мережу.",
+        "suggested_scenes": [
+          "46",
+          "47"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 07 Golden Transistor Dust 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 5.85,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Стратегічне рукостискання 2014 року про збереження наукової незалежності.",
+        "suggested_scenes": [
+          "40"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "display_name": "EP01 CLIP V1 05 Eye Code 11s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Дитячий погляд на зелений термінал асемблера.",
+        "suggested_scenes": [
+          "13"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "display_name": "EP01 CLIP V1 06 Boy Room 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ce1a1d79_EP01_CLIP_V1_06_Boy_Room_12s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 6.48,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Хлопчик за нічним зеленим монітором вивчає перший код.",
+        "suggested_scenes": [
+          "11",
+          "13"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "display_name": "EP01 CLIP V1 07 Phosphor 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 7.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Фосфорне сяйво ретро-екрана 8-бітної ери.",
+        "suggested_scenes": [
+          "11"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нічні бдіння розробників Bullfrog у 1990-х.",
+        "suggested_scenes": [
+          "24"
+        ]
+      },
+      {
+        "file": "ep01_flow_09_fusion_torus.mp4",
+        "display_name": "ep01 flow 09 fusion torus",
+        "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_09_fusion_torus.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_09_fusion_torus.mp4",
+        "thumb": "assets/vault_thumbs/ep01/e417ee0e_ep01_flow_09_fusion_torus.jpg",
+        "cat": "previs",
+        "cat_label": "🎞️ Превіз Аніматики",
+        "size_mb": 1.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ ВІЗУАЛ ПІД СЦЕНУ #48 ГАССАБІСА («Приборкання термоядерної зорі в Токамаку»)!",
+        "suggested_scenes": [
+          "48"
+        ]
+      },
+      {
+        "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "display_name": "EP02 SCI 01 Nanobots Graphene Lattice Assembly",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/34fa8fc1_EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 13.45,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Наномолекулярна решітка — синтез нових матеріалів (DeepMind GNoME / кристали).",
+        "suggested_scenes": [
+          "46",
+          "47"
+        ]
+      },
+      {
+        "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "display_name": "EP02 SCI 02 Quantum Levitation Flux Pinning",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/f6b24047_EP02_SCI_02_Quantum_Levitation_Flux_Pinning.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 5.67,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Надпровідність та квантові дослідження матеріалів DeepMind.",
+        "suggested_scenes": [
+          "47",
+          "48"
+        ]
+      },
+      {
+        "file": "EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
+        "display_name": "EP04 VID ARCH 01 ACT4 24FPS Hinton Nobel Warning 2024",
+        "rel_path": "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
+        "preview_path": "assets/video_previews/archives/EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
+        "thumb": "assets/vault_thumbs/ep04/05097a63_EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning.jpg",
+        "cat": "archive",
+        "cat_label": "📼 Реальний Архів",
+        "size_mb": 3.4,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "Атмосфера Нобелівської церемонії в Стокгольмі 2024 (спільний тріумфальний рік із Хассабісом).",
+        "suggested_scenes": [
+          "49"
+        ]
+      },
+      {
+        "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "display_name": "EP04 SCI 01 Quantum Double Slit Wave Collapse",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/2142bf51_EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 4.75,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "Фундаментальна фізика хвильових функцій, яку досліджує ШІ.",
+        "suggested_scenes": [
+          "48"
+        ]
+      },
+      {
+        "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 10.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "05",
+        "source_label": "♻️ З фонду EP05 (Лекун)",
+        "match_reason": "Хімічні реакції й самоорганізація складних біосистем.",
+        "suggested_scenes": [
+          "46"
+        ]
+      },
+      {
+        "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "display_name": "EP07 SCI 01 Camera Traversing Human Retina",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 7.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Політ всередині сітківки ока та нервових структур для блоку нейронауки.",
+        "suggested_scenes": [
+          "33",
+          "34"
+        ]
       }
     ],
     "images": [
@@ -5412,7 +8574,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 0.1,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Human_prenatal_development_3D_vi…_3ec5e8ed_2K.jpg",
@@ -5424,7 +8589,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 2.37,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Stages_of_cell_division_a2a1ff18.jpg",
@@ -5436,7 +8604,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "alphafold",
         "cat_label": "🧬 AlphaFold & Біологія",
         "size_mb": 0.06,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_01D_Chessboard_Sand_Storm_2K.jpg",
@@ -5448,7 +8619,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.25,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_01E_Chessboard_Merging_Digital_Grid_2K.jpg",
@@ -5460,7 +8634,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.26,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_01F_Human_Trapped_Warping_Chessboard_2K.jpg",
@@ -5472,7 +8649,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.45,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg",
@@ -5484,7 +8664,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 2.69,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_02A_Gamer_Hand_Merging_Controller_2K.jpg",
@@ -5496,7 +8679,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_02B_Young_Hassabis_Teen_Gamer_2K.jpg",
@@ -5508,7 +8694,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.12,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_02C_Esports_Arena_Tower_Zoom_2K.jpg",
@@ -5520,7 +8709,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.11,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_02D_Hassabis_Bullfrog_ThemePark_Coder_2K.jpg",
@@ -5532,7 +8724,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 2.92,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07B_Player_Placing_Go_Stone_2K.jpg",
@@ -5544,7 +8739,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.57,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07C_Cybernetic_Stone_Hologram_2K.jpg",
@@ -5556,7 +8754,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.02,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07D_Human_LeeSedol_Vs_AlphaGo_2K.jpg",
@@ -5568,7 +8769,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 2.96,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07E_Go_Stones_Digital_Grid_Battle_2K.jpg",
@@ -5580,7 +8784,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.32,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07F_Cosmic_Go_Vortex_2K.jpg",
@@ -5592,7 +8799,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.7,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_08_Map_Morphing_Into_Protein_AlphaFold_2K.jpg",
@@ -5604,7 +8814,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.42,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_09_AlphaStar_Swarm_Units_StarCraft_2K.jpg",
@@ -5616,7 +8829,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.13,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
@@ -5628,7 +8844,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.13,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_11_DQN_Atari_Breakout_Shattering_2K.jpg",
@@ -5640,7 +8859,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.48,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_12_DNA_Unspooling_Into_Binary_Code_2K.jpg",
@@ -5652,7 +8874,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_13_Golden_Sphere_Vibrating_Resonance_2K.jpg",
@@ -5664,7 +8889,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.98,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
@@ -5676,7 +8904,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.54,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_15_Tokamak_Plasma_Magnetic_Confinement_2K.jpg",
@@ -5688,7 +8919,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.04,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_BROLL_07B_Go_Stone_CloseA_2K.jpg",
@@ -5700,7 +8934,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.38,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_BROLL_07C_Go_Stone_CloseB_2K.jpg",
@@ -5712,7 +8949,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.53,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_BROLL_07D_Fingers_Holding_Go_Stone_2K.jpg",
@@ -5724,7 +8964,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.84,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_BROLL_07E_Go_Stone_Landing_Grid_2K.jpg",
@@ -5736,7 +8979,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.85,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_BROLL_07F_Grandmaster_Lee_Sedol_Temples_2K.jpg",
@@ -5748,7 +8994,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.69,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_STUDY_01B_Chess_Go_Boards_Floating_2K.jpg",
@@ -5760,7 +9009,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.18,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg",
@@ -5772,7 +9024,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.68,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_STUDY_07G_MCTS_Policy_Heatmap_2K.jpg",
@@ -5784,7 +9039,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 2.93,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_STUDY_07H_Go_Board_Cosmic_Nebula_2K.jpg",
@@ -5796,7 +9054,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.34,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_playing_chess_in_tournament_6eb2549e_2K.jpg",
@@ -5808,7 +9069,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.15,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_playing_chess_tournament_48f87787_2K.jpg",
@@ -5820,7 +9084,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.23,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_sitting_at_miniature_desk_aed3b17f_2K.jpg",
@@ -5832,7 +9099,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.99,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_smiling_at_chess_move_b4fa61c4_2K.jpg",
@@ -5844,7 +9114,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.68,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_touching_wooden_knight_976ddc32_2K.jpg",
@@ -5856,7 +9129,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.75,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_touching_wooden_knight_9aa41684_2K.jpg",
@@ -5868,7 +9144,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.68,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_watching_chess_game_b0b4a46c_2K.jpg",
@@ -5880,7 +9159,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.81,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Boy_watching_chess_game_c445d69e_2K.jpg",
@@ -5892,7 +9174,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.81,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
@@ -5904,7 +9189,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.86,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Carved_wooden_chess_knight_on_0b95223a_2K.jpg",
@@ -5916,7 +9204,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.76,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Child_checkmating_adult_in_chess_219076e1_2K.jpg",
@@ -5928,7 +9219,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.45,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Child_writing_chess_notation_b1779305_2K.jpg",
@@ -5940,7 +9234,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.57,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_London_Chess_Tournament_1989_HeroStill.png",
@@ -5952,7 +9249,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 1.6,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Gylltur tímagöng með fornum klukkum.png",
@@ -5964,7 +9264,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.93,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Gylltur_tímagöng_með_fornum_klukkum.png_2387450b.jpg",
@@ -5976,7 +9279,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 1.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Infant_eyes_reflecting_coordinat…_4efc6e92_2K.jpg",
@@ -5988,7 +9294,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Infant_eyes_reflecting_grid_1a2a878a_2K.jpg",
@@ -6000,7 +9309,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Infant_Reference_Portrait_cb.png",
@@ -6012,7 +9324,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 0.12,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Poiss malemäng boheemlaslikus elutoas.png",
@@ -6024,7 +9339,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.63,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Poiss_malemäng_boheemlaslikus_elutoas.png_26e37029.jpg",
@@ -6036,7 +9354,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 0.79,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Programmer_coding_chess_on_computer_96f59b84_2K.jpg",
@@ -6048,7 +9369,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.78,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Skákborð_endurspeglast_í_augum_barns.png_82f4e399.jpg",
@@ -6060,7 +9384,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 0.64,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Skákborð endurspeglast í augum barns (1).png",
@@ -6072,7 +9399,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.33,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Skákborð endurspeglast í augum barns (2).png",
@@ -6084,7 +9414,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.33,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Skákborð endurspeglast í augum barns.png",
@@ -6096,7 +9429,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.33,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Vintage mechanical chess clock in golden light.png",
@@ -6108,7 +9444,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.29,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Vintage_mechanical_chess_clock_in_6b21bddd.jpg",
@@ -6120,7 +9459,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 0.69,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Wicker_baby_cradle_in_room_134312e9_2K.jpg",
@@ -6132,7 +9474,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 3.75,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Wooden_chess_knight_on_chessboard_33286eb4_2K.jpg",
@@ -6144,7 +9489,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "chess",
         "cat_label": "♟️ Шахи & Походження",
         "size_mb": 2.93,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_DOC_01_ACT3_AlphaGo_Move37_Nature_2016.png",
@@ -6156,7 +9504,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.61,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Flight_01_London_TowerBridge_Launch_RWY27L.png",
@@ -6168,7 +9519,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт (Кадри)",
         "size_mb": 0.22,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Flight_02_London_Supersonic_Climb_Trails.png",
@@ -6180,7 +9534,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт (Кадри)",
         "size_mb": 0.22,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Flight_03_SFO_GoldenGate_VTOL_Landing_RWY01L.png",
@@ -6192,7 +9549,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт (Кадри)",
         "size_mb": 0.21,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Flight_04_SFO_GoldenGate_Touchdown_RWY28L.png",
@@ -6204,7 +9564,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flight",
         "cat_label": "✈️ Переліт (Кадри)",
         "size_mb": 0.21,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "80-കളിലെ ZX Spectrum ഡെസ്ക് രംഗം (1).png",
@@ -6216,7 +9579,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 2.4,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "80-കളിലെ ZX Spectrum ഡെസ്ക് രംഗം.png",
@@ -6228,7 +9594,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 2.4,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "CRT_monitor_displaying_pixel_art_a12cad8c_2K.jpg",
@@ -6240,7 +9609,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 3.17,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "CRT_screen_displaying_assembly_code_366dace1_2K.jpg",
@@ -6252,7 +9624,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 2.97,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "CRT_screen_displaying_assembly_code_fa15c58b_2K.jpg",
@@ -6264,7 +9639,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 3.2,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Teenager_programming_at_computer_543b4c38_2K.jpg",
@@ -6276,7 +9654,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "gaming",
         "cat_label": "🕹️ ZX Spectrum & Геймінг",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg",
@@ -6288,7 +9669,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.05,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg",
@@ -6300,7 +9684,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 2.99,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg",
@@ -6312,7 +9699,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 2.77,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
@@ -6324,7 +9714,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.21,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
@@ -6336,7 +9729,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.83,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
@@ -6348,7 +9744,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.62,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
@@ -6360,7 +9759,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 4.27,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
@@ -6372,7 +9774,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
@@ -6384,7 +9789,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 2.96,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
@@ -6396,7 +9804,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.4,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
@@ -6408,7 +9819,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.24,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
@@ -6420,7 +9834,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.59,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Split-screen_displaying_photogra…_7c7cfca8_2K.jpg",
@@ -6432,7 +9849,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Split-screen_nostalgic_and_cold_…_06c72dd3_2K.jpg",
@@ -6444,7 +9864,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 3.43,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Steam_rising_from_tea_cup_16747a03_2K.jpg",
@@ -6456,7 +9879,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 2.52,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "Steam_rising_from_tea_mug_9fd8eafa_2K.jpg",
@@ -6468,7 +9894,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "neuro",
         "cat_label": "🧠 Нейронаука & AlphaGo",
         "size_mb": 2.55,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
       },
       {
         "file": "EP03_PHOTO_01_Demis_Hassabis_Archival_Portrait.jpg",
@@ -6480,7 +9909,125 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 5.13,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "03",
+        "source_label": "⭐ Власний асет EP03"
+      },
+      {
+        "file": "cdwrf.png",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+        "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.19,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Детальний 2K кадр нейрона зі спалахами аксонів для блоку когнітивної нейронауки.",
+        "suggested_scenes": [
+          "34"
+        ]
+      },
+      {
+        "file": "dxf_g.png",
+        "display_name": "Золоті світлові імпульси біжать по материнській платі",
+        "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dxf_g.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.24,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зближення електронних і нейронних імпульсів.",
+        "suggested_scenes": [
+          "33"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.9,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "2K макро-кадр ока з зеленим асемблером.",
+        "suggested_scenes": [
+          "13"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Геометрична нейронна решітка активації.",
+        "suggested_scenes": [
+          "33",
+          "34"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "display_name": "EP01 FLOW IMG 09 Fusion Torus Plasma 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c0c391e0_EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.74,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Токамак термоядерної плазми для керування магнітним полем від DeepMind.",
+        "suggested_scenes": [
+          "48"
+        ]
+      },
+      {
+        "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "display_name": "EP02 FLOW IMG 05 Hand Shaking Golden Transistor Dust 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Союз фундаментальної науки DeepMind з глобальною обчислювальною машиною.",
+        "suggested_scenes": [
+          "40"
+        ]
       }
     ],
     "audio": [
@@ -6526,13 +10073,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 31,
-      "images_count": 90,
+      "videos_count": 54,
+      "images_count": 96,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 688.54
+      "total_mb": 688.54,
+      "native_videos_count": 31,
+      "cross_videos_count": 23,
+      "native_images_count": 90,
+      "cross_images_count": 6
     }
   },
   "04": {
@@ -6552,7 +10103,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 3.4,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "ep04_flow_01_backprop_synapse_storm.mp4",
@@ -6564,7 +10118,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.52,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
@@ -6576,7 +10133,454 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 4.75,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation).",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "display_name": "Four men sitting at table",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Готельний столик біля озера Тахо (DNNresearch), де Хінтон з учнями визначає долю $44M аукціону.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "display_name": "Light point explodes into streaks",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.24,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Спалах пера на папері: чотири революційні сторінки у журналі Nature 1986 року.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "display_name": "Man wearing tactical arctic parka",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.98,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Дослідник у зимовій парці під північним сяйвом Канади — символ 30 років «Зими ШІ» в Торонто, коли Хінтон ішов проти всіх.",
+        "suggested_scenes": [
+          "06"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Торонто 2012: момент, коли нейромережа Хінтона вперше ожила на ігрових GPU.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "display_name": "Photographic strobe inverting image",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 7.53,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Різке прозріння 2023 року перед тим, як застерегти світ.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Формула функції втрат J(w,b) градієнтного спуску на скляній дошці — пряма мова Backpropagation!",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "display_name": "Walls dissolving into textbook v…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Витривалість дослідника в напівпорожньому університетському залі.",
+        "suggested_scenes": [
+          "04",
+          "06"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Пророче застереження Джеффрі Хінтона про розлом реальності на порозі AGI (2023–2024).",
+        "suggested_scenes": [
+          "09",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 9.79,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Діалог розумів Хінтона та його учнів — передача золотих ідей (і аукціон на озері Тахо).",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 01 Equations Void 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Свідомість занурена в сяючий потік диференціальних рівнянь Backpropagation.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 02 Galaxies Axons 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 11.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нейронний граф пам'яті в масштабах Всесвіту.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 04 Mind Radiating Light 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.37,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Прозора людська голова випромінює золоті нейронні нитки у бік кристала — буквально візуал із серії Хінтона (#04)!",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 10.43,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Долаючи висміювання та брак фінансування в часи зими ШІ.",
+        "suggested_scenes": [
+          "06"
+        ]
+      },
+      {
+        "file": "Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
+        "display_name": "Timber dissolving into crystal m…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/0da6b1a6_Timber_dissolving_into_crystal_m__ed88b1bf_1080p.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 14.94,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Деревина перетворюється на кристалічну обчислювальну решітку — перехід від ремесла теслі до філософії свідомості.",
+        "suggested_scenes": [
+          "03",
+          "04"
+        ]
+      },
+      {
+        "file": "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
+        "display_name": "EP03 VID ARCH 01 ACT4 24FPS Hassabis Nobel Lecture 2024",
+        "rel_path": "05_RAW_FOOTAGE/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
+        "preview_path": "assets/video_previews/archives/EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
+        "thumb": "assets/vault_thumbs/ep03/16ccb01a_EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lectu.jpg",
+        "cat": "archive",
+        "cat_label": "📼 Реальний Архів",
+        "size_mb": 1.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Урочиста сцена Нобелівського банкету у Стокгольмі 2024.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
+        "display_name": "Plane blade transforming into ci…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/c009a629_Plane_blade_transforming_into_ci__97ad6a7c_1080p.jpg",
+        "cat": "chess",
+        "cat_label": "♟️ Шахи & Походження",
+        "size_mb": 8.23,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "100% влучання в біографію Джеффрі Хінтона: столярний рубанок знімає дубову стружку й перетворюється на мікросхему — міст від лондонської майстерні до нейромереж!",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "display_name": "Camera glides over glassy water",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/4a1a526b_Camera_glides_over_glassy_water_87530444_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 12.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Ранковий туман над водою й історичними корпусами Кембриджа — молодий Хінтон кидає фізику й філософію.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Живий синаптичний імпульс: прообраз хвилі зворотного поширення помилки (Backpropagation).",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Торонто 2012: момент, коли нейромережа Хінтона вперше ожила на ігрових GPU.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Формула функції втрат J(w,b) градієнтного спуску на скляній дошці — пряма мова Backpropagation!",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 10.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "05",
+        "source_label": "♻️ З фонду EP05 (Лекун)",
+        "match_reason": "Атракторні стани та рекурентна динаміка складних мереж.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "display_name": "EP08 SCI 01 Asteroid Approaching Earth Orbit 1080p",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 5.89,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Алегорія наближення небезпеки, про яку Хінтон попереджає зі сцени в Стокгольмі.",
+        "suggested_scenes": [
+          "09",
+          "10"
+        ]
       }
     ],
     "images": [
@@ -6590,7 +10594,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_FLOW_IMG_02_Grandmaster_Mind_Shattering_2K.jpg",
@@ -6602,7 +10609,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.58,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_FLOW_IMG_03_Nerve_Impulse_Vs_Laser_Beams_A_2K.jpg",
@@ -6614,7 +10624,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.36,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
@@ -6626,7 +10639,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.77,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_FLOW_IMG_05_Man_Touching_Fracturing_Mirror_2K.jpg",
@@ -6638,7 +10654,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.96,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_FLOW_IMG_06_Camera_Flying_Through_Glowing_Hyperplane_2K.jpg",
@@ -6650,7 +10669,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.59,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
@@ -6662,7 +10684,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.63,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
       },
       {
         "file": "EP04_PHOTO_01_Geoffrey_Hinton_Archival_Portrait.jpg",
@@ -6674,7 +10699,335 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.87,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "04",
+        "source_label": "⭐ Власний асет EP04"
+      },
+      {
+        "file": "b_cgbxtd.png",
+        "display_name": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
+        "rel_path": "04_ASSETS/user_ai_images/b_cgbxtd.png",
+        "web_src": "../../04_ASSETS/user_ai_images/b_cgbxtd.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/1c75639d_b_cgbxtd.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.25,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Дослідник перед потоком багатовимірних векторних ліній.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "cdwrf.png",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+        "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.19,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Біологічний нейрон, роботу якого Хінтон моделював 50 років.",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "dv.png",
+        "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+        "rel_path": "04_ASSETS/user_ai_images/dv.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dv.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.22,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Рівняння оптимізації ваг нейромережі на скляній дошці.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "xasdwrc.png",
+        "display_name": "Макро перової ручки з краплею чорнила на папері",
+        "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
+        "web_src": "../../04_ASSETS/user_ai_images/xasdwrc.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.13,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перова ручка і чорнило — метафора 4-сторінкової статті в Nature 1986.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "2K кадр багатошарової нейромережі для епохи Backpropagation.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "display_name": "EP03 FLOW IMG 14 Galaxies Connected By Golden Axons 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Розподілене представлення концептів у багатовимірному графі.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
+        "display_name": "Carpenters plane making oak shaving 045b2681 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/427930c2_Carpenters_plane_making_oak_shaving_045b2681_2K.jpg",
+        "cat": "chess",
+        "cat_label": "♟️ Шахи & Походження",
+        "size_mb": 2.86,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Чесна фізична робота стамескою та рубанком: столярний період Джеффрі Хінтона перед поверненням до науки.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "display_name": "Artificial neural network nodes … 4e7639ee 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.21,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Вузли багатошарової нейромережі під час зворотного поширення помилки.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "display_name": "Gothic library interior with boo… e97ea8a1 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.83,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Кембриджські зали знань, у яких Хінтон шукав правду про природу пам'яті.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 28e029e0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.62,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Мікроскопія гіпокампа — доказ, як мозок зберігає розподілену пам'ять.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 4.27,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Мікроскопія гіпокампа — доказ, як мозок зберігає розподілену пам'ять.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "display_name": "Neural network nodes firing bef7f30b 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Хвиля активації багатошарового перцептрону.",
+        "suggested_scenes": [
+          "05",
+          "07"
+        ]
+      },
+      {
+        "file": "EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "display_name": "EP06 DOC 01 ACT2 Sutskever AlexNet NIPS 2012",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Спільна стаття Крижевського, Суцкевера та Хінтона 2012 року про AlexNet!",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "display_name": "EP06 FLOW IMG 02 Student Knocking Hinton Door 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/84b02dac_EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.57,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Студент стукає у двері кабінету Джеффрі Хінтона в Торонто — народження команди AlexNet.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "display_name": "EP06 FLOW IMG 04 Researcher Viewing GPUs AlexNet 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.28,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "У лабораторії Хінтона в Торонто 2012 року відеокарти обвалюють помилку ImageNet.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Синтез математичної інтуїції та диференціального аналізу.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "display_name": "EP08 DOC 01 ACT2 FeiFeiLi ImageNet CVPR 2009",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.59,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Тестова арена ImageNet, де модель Хінтона знизила помилку з 26% до 15%.",
+        "suggested_scenes": [
+          "07"
+        ]
       }
     ],
     "audio": [
@@ -6720,13 +11073,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 3,
-      "images_count": 8,
+      "videos_count": 26,
+      "images_count": 25,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 197.83
+      "total_mb": 197.83,
+      "native_videos_count": 3,
+      "cross_videos_count": 23,
+      "native_images_count": 8,
+      "cross_images_count": 17
     }
   },
   "05": {
@@ -6746,7 +11103,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 0.73,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "ep05_flow_01_jepa_world_model_grid.mp4",
@@ -6758,7 +11118,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.63,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
@@ -6770,7 +11133,472 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 10.21,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
+      },
+      {
+        "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "display_name": "Camera plunges into terminal screen",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 23.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Живий код відкритих бібліотек на кшталт PyTorch.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "display_name": "Digital HUD tracking vehicles",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 12.72,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Прикладне комп'ютерне бачення у реальному часі на базі згорткових архітектур.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Вузли зорової кори мозку кота, що надихнули згорткові мережі Bell Labs.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Хлопець самотужки пізнає будову електронної плати.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
+        "display_name": "Laser forms text words",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ КЛІП ДЛЯ ЛЕКУНА (#02): «травлення плат у кислоті біля осцилографа»!",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "display_name": "Light point explodes into streaks",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.24,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Народження статті про LeNet-5, що навчила машини читати почерк.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Апаратна база глибокого навчання для згорткових мереж та PyTorch.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "display_name": "Physical matter dissolves into b clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 16.4,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Чотиривимірне розуміння фізики навколишнього середовища замість голого тексту.",
+        "suggested_scenes": [
+          "08",
+          "09"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перерахунок градієнтів і ваг на дошці.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "display_name": "EP01 V1 B2 04 Robotic Dexterity 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.63,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Фізична взаємодія зі світом, про яку говорить Ян Лекун у контексті Світових Моделей.",
+        "suggested_scenes": [
+          "08",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "display_name": "EP01 V1 CREATIVE 05 Holo Geo Matrix 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 12.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Топологічна побудова внутрішньої карти світу.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 07 Golden Transistor Dust 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/30f08909_EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 5.85,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Пакт Цукерберга і Лекуна про відкритий код FAIR/PyTorch.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "display_name": "EP01 CLIP V1 05 Eye Code 11s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Поєднання живого людського зору та машинного розпізнавання образів.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "display_name": "EP01 CLIP V1 07 Phosphor 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5760027e_EP01_CLIP_V1_07_Phosphor_12s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 7.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Сітка пікселів, що перетворюється на тензорні канали LeNet-5.",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "display_name": "EP01 CLIP V1 12 WaferHero 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Інженерна природа кремнію та мікроелектроніки.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Самостійні нічні розрахунки Яна Лекуна біля екрана.",
+        "suggested_scenes": [
+          "02",
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 6.75,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМЕ ПОПАДАННЯ В СЦЕНАРІЙ ЛЕКУНА! Авіаконструкторське походження (#01) та «15 років вигнання — аж поки не прилетів надзвуковий літак Deep Learning» (#06)!",
+        "suggested_scenes": [
+          "01",
+          "06"
+        ]
+      },
+      {
+        "file": "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "display_name": "Glass shatters into voxel bricks",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
+        "cat": "gaming",
+        "cat_label": "🕹️ ZX Spectrum & Геймінг",
+        "size_mb": 12.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Дискретизація фізичної реальності у внутрішню світову модель JEPA.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "display_name": "EP01 V1 ASSOC 01 Lidar City Grid 8s",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
+        "cat": "go_game",
+        "cat_label": "⚪ Гра Go & Стратегія",
+        "size_mb": 6.8,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Реалтайм просторове сканування міської геометрії для World Models JEPA.",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Вузли зорової кори мозку кота, що надихнули згорткові мережі Bell Labs.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Апаратна база глибокого навчання для згорткових мереж та PyTorch.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Перерахунок градієнтів і ваг на дошці.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "display_name": "EP07 SCI 01 Camera Traversing Human Retina",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 7.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Вхід візуального сигналу в сітківку і далі до первинної зорової кори.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "display_name": "EP10 SCI 01 Tesla Coil Electric Discharges",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep10/0c492c0f_EP10_SCI_01_Tesla_Coil_Electric_Discharges.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 12.43,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "10",
+        "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
+        "match_reason": "Електричні спалахи активації нейронних мереж.",
+        "suggested_scenes": [
+          "04"
+        ]
       }
     ],
     "images": [
@@ -6784,7 +11612,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.35,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "EP05_FLOW_IMG_02_Cybernetic_Torso_Conducting_Ship_2K.jpg",
@@ -6796,7 +11627,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.74,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "EP05_FLOW_IMG_03_Cyan_Laser_Pulsing_Through_Leaf_2K.jpg",
@@ -6808,7 +11642,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.94,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "EP05_DOC_01_ACT2_LeCun_LeNet5_IEEE_1998.png",
@@ -6820,7 +11657,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.63,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
       },
       {
         "file": "EP05_PHOTO_01_Yann_LeCun_Archival_Portrait.jpg",
@@ -6832,7 +11672,201 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.78,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "05",
+        "source_label": "⭐ Власний асет EP05"
+      },
+      {
+        "file": "cdwrf.png",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+        "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.19,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ілюстрація ієрархічних нейронів зорової кори.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "dxf_g.png",
+        "display_name": "Золоті світлові імпульси біжать по материнській платі",
+        "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dxf_g.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.24,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Плата у кислотній ванні молодого Лекуна та імпульси обчислень.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.9,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зустріч людського ока і цифрової матриці.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глибокі вузли згорткової мережі.",
+        "suggested_scenes": [
+          "05",
+          "07"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 28e029e0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.62,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Біологічна кора мозку як орієнтир для локальних рецептивних полів.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 4.27,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Біологічна кора мозку як орієнтир для локальних рецептивних полів.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "display_name": "EP04 DOC 01 ACT2 Hinton Backprop Nature 1986",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/82667044_EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "РЕАЛЬНЕ ПРЕС-ДОСЬЄ Nature 1986: публікація методу Backpropagation.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "display_name": "EP06 FLOW STUDY 04B Motherboard Traces GPU 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/02_broll_stills_and_studies/EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/78a53065_EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
+        "cat": "broll_stills",
+        "cat_label": "🎨 B-Roll Концепти & Дослідження",
+        "size_mb": 3.47,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Майстерня молодих років Лекуна: пайка та травлення власних плат.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "display_name": "EP08 FLOW IMG 01 Human Eye Merging With Data 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/961a17fc_EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.96,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Анатомія комп'ютерного бачення для блоку Bell Labs / CNN.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "display_name": "EP08 DOC 01 ACT2 FeiFeiLi ImageNet CVPR 2009",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.59,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Змагання ImageNet, що підтвердило правоту конволюційних нейромереж.",
+        "suggested_scenes": [
+          "06"
+        ]
       }
     ],
     "audio": [
@@ -6878,13 +11912,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 3,
-      "images_count": 5,
+      "videos_count": 27,
+      "images_count": 15,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 189.03
+      "total_mb": 189.03,
+      "native_videos_count": 3,
+      "cross_videos_count": 24,
+      "native_images_count": 5,
+      "cross_images_count": 10
     }
   },
   "06": {
@@ -6904,7 +11942,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 0.39,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "ep06_flow_01_ssi_obsidian_monolith.mp4",
@@ -6916,7 +11957,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.17,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
@@ -6928,7 +11972,741 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 3.32,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
+      },
+      {
+        "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "display_name": "Camera accelerating through lett clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Експоненціальне масштабування моделей GPT.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "display_name": "Camera plunges into terminal screen",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 23.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Код тренування нейронних трансляцій Seq2Seq.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "display_name": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/7939797e_ElevenLabs_video_seedance-2-5_Slow__powerful__20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Атмосферний нео-нуар дослідника під дощем — настрій ізольованої зосередженості.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "display_name": "Four men sitting at table",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зустріч співзасновників OpenAI 2015 року.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "display_name": "Man wearing tactical arctic parka",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.98,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Переїзд у холодний Торонто заради навчання у Джеффрі Хінтона.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ілля Суцкевер переносить нейромережі на графічні процесори GTX 580.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "display_name": "Photographic strobe inverting image",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f128c3ca_Photographic_strobe_inverting_image_81594c7e_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 7.53,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Спалах кризи листопада 2023 року.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Математичний вивід функцій втрат для послідовностей.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "display_name": "Walls dissolving into textbook v…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нічні студії за томами алгебри без жодного викладача поруч.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
+        "display_name": "EP01 V2 B2 03 Altman Sutskever TAU 10s",
+        "rel_path": "05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_03_Altman_Sutskever_TAU_10s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ab0ce010_EP01_V2_B2_03_Altman_Sutskever_TAU_10s.jpg",
+        "cat": "archive",
+        "cat_label": "📼 Реальний Архів",
+        "size_mb": 3.61,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "АРХІВНЕ ВІДЕО (TAU 2023): живий діалог Іллі Суцкевера та Сема Альтмана!",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 7.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Багатомільйонний тренувальний цикл у холодній залі.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 4.16,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тривожна рада директорів OpenAI у листопаді 2023.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ КЛІП ДЛЯ ІЛЛІ СУЦКЕВЕРА: корпоративний ретрит безпеки, прорив сингулярності та створення SSI.",
+        "suggested_scenes": [
+          "08",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "display_name": "EP01 V1 B2 06 Server Matrix Billions 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3353f147_EP01_V1_B2_06_Server_Matrix_Billions_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 14.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Апогей гіпотези масштабування на 10 порядках потужності.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Обчислювальне ядро, де масштаб знімає стелю можливостей.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 9.79,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тандем Сем Альтман — Ілля Суцкевер: народження й ідеологічний розкол OpenAI.",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 01 Equations Void 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Вірний математиці Суцкевер розчиняється у формулах оптимізації.",
+        "suggested_scenes": [
+          "02",
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 02 Galaxies Axons 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 11.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Простір багатовимірних векторів, що стискають сенси (Seq2Seq).",
+        "suggested_scenes": [
+          "04",
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 04 Mind Radiating Light 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.37,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Народження свідомої абстракції всередині моделі.",
+        "suggested_scenes": [
+          "06",
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "display_name": "EP01 V1 CREATIVE 06 Obsessive Builders 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 9.62,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Одержимі дослідники в лабораторії перед кластером майбутнього OpenAI/SSI.",
+        "suggested_scenes": [
+          "05",
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 6.69,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Масштаб енергії та обчислень планетарного рівня для суперінтелекту.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "display_name": "EP01 CLIP V1 12 WaferHero 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_12_WaferHero_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/af491812_EP01_CLIP_V1_12_WaferHero_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Апаратний фундамент нейрообчислень.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "display_name": "EP01 CLIP V1 15 FounderGrit 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_15_FounderGrit_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d60434fb_EP01_CLIP_V1_15_FounderGrit_15s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 10.43,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Крок у невідомість нової компанії SSI.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "display_name": "EP01 CLIP V1 16 ServerCold 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 6.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Стерильний обчислювальний моноліт без зайвого шуму.",
+        "suggested_scenes": [
+          "07",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "display_name": "EP01 CLIP V1 19 CurveHero 17s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 3.52,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Пряма лінія закону масштабування: збільшення обчислень на порядок.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 10.61,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ВІД БЕТОНУ СРСР ДО ЗОЛОТОГО КАМЕНЮ ЄРУСАЛИМА: три арки крізь історію та світло — прямий двійник ключового кадру EP06_FLOW_IMG_01!",
+        "suggested_scenes": [
+          "01",
+          "02"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "display_name": "EP01 V1 NEW 03 Window Rain 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тиха зосереджена робота Суцкевера за межами медійного шуму.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
+        "cat": "previs",
+        "cat_label": "🎞️ Превіз Аніматики",
+        "size_mb": 0.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Багатомільйонний тренувальний цикл у холодній залі.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
+        "display_name": "EP01 CLIP STILL Employees Solidarity 9s",
+        "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/1751a3a1_EP01_CLIP_STILL_Employees_Solidarity_9s.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 22.25,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Колективна реакція команди OpenAI на кризу листопада 2023 року.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4",
+        "display_name": "EP01 CLIP STILL Sutskever Regret Doc 4s",
+        "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9421b37e_EP01_CLIP_STILL_Sutskever_Regret_Doc_4s.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 3.65,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions».",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_DOC_02_OpenAI_Introducing_12s.mp4",
+        "display_name": "EP01 DOC 02 OpenAI Introducing 12s",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_OpenAI_Introducing_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_OpenAI_Introducing_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3c729b62_EP01_DOC_02_OpenAI_Introducing_12s.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 5.58,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Історичний маніфест заснування OpenAI (грудень 2015), де Ілля Суцкевер став головним науковцем.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_DOC_04_Sutskever_Regret_10s.mp4",
+        "display_name": "EP01 DOC 04 Sutskever Regret 10s",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c771ce08_EP01_DOC_04_Sutskever_Regret_10s.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 3.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions».",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
+        "display_name": "EP01 UA CLIP CARD 06 730 Employees 11s",
+        "rel_path": "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/69af3f88_EP01_UA_CLIP_CARD_06_730_Employees_11s.jpg",
+        "cat": "stills",
+        "cat_label": "🗂️ 4K Пластини / Кіно-Відео",
+        "size_mb": 0.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "display_name": "EP02 SCI 01 Nanobots Graphene Lattice Assembly",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/34fa8fc1_EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 13.45,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Кристалізація векторних структур у просторі.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "display_name": "EP02 SCI 02 Quantum Levitation Flux Pinning",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP02_SCI_02_Quantum_Levitation_Flux_Pinning.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/f6b24047_EP02_SCI_02_Quantum_Levitation_Flux_Pinning.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 5.67,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Чистий моноліт наукової думки в стані ідеальної рівноваги.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "display_name": "Camera glides over glassy water",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Camera_glides_over_glassy_water_87530444_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/4a1a526b_Camera_glides_over_glassy_water_87530444_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 12.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Академічна тиша перед важливими відкриттями.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Ілля Суцкевер переносить нейромережі на графічні процесори GTX 580.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Математичний вивід функцій втрат для послідовностей.",
+        "suggested_scenes": [
+          "04"
+        ]
       }
     ],
     "images": [
@@ -6942,7 +12720,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.26,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_06_Cybernetic_Threads_Jerusalem_Stone_B_2K.jpg",
@@ -6954,7 +12735,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.08,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_07_Cybernetic_Singularity_Portal_2K.jpg",
@@ -6966,7 +12750,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.75,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_08_Wooden_Hand_Algorithmic_Tentacles_2K.jpg",
@@ -6978,7 +12765,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.58,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_09_Human_Figure_Suspended_In_Void_2K.jpg",
@@ -6990,7 +12780,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.82,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_10_Astronaut_Facing_Black_Hole_Horizon_2K.jpg",
@@ -7002,7 +12795,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_11_Crystal_Containing_Civilization_2K.jpg",
@@ -7014,7 +12810,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.55,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_12_Cybernetic_Entity_Examining_Human_2K.jpg",
@@ -7026,7 +12825,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.02,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_STUDY_04B_Motherboard_Traces_GPU_2K.jpg",
@@ -7038,7 +12840,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.47,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
@@ -7050,7 +12855,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.63,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_01_Jerusalem_Limestone_Roots_2K.jpg",
@@ -7062,7 +12870,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.07,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_02_Student_Knocking_Hinton_Door_2K.jpg",
@@ -7074,7 +12885,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.57,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
@@ -7086,7 +12900,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.28,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
       },
       {
         "file": "EP06_PHOTO_01_Ilya_Sutskever_Archival_Portrait.jpg",
@@ -7098,7 +12915,471 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.01,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "06",
+        "source_label": "⭐ Власний асет EP06"
+      },
+      {
+        "file": "bhnuyvtf.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+        "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Інженери над високощільною обчислювальною платою під час експериментів масштабування.",
+        "suggested_scenes": [
+          "04",
+          "07"
+        ]
+      },
+      {
+        "file": "dxf_g.png",
+        "display_name": "Золоті світлові імпульси біжать по материнській платі",
+        "rel_path": "04_ASSETS/user_ai_images/dxf_g.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dxf_g.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9038555f_dxf_g.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.24,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Матричні обчислення по золотих трасах кремнію.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "ghnfbyd.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (тепле світло)",
+        "rel_path": "04_ASSETS/user_ai_images/ghnfbyd.png",
+        "web_src": "../../04_ASSETS/user_ai_images/ghnfbyd.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/466c154a_ghnfbyd.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.22,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Команда інженерів у нічній сервериній перед масштабуванням моделі.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "kjh.png",
+        "display_name": "Безкінечний футуристичний тунель серверних стійок і фракталів",
+        "rel_path": "04_ASSETS/user_ai_images/kjh.png",
+        "web_src": "../../04_ASSETS/user_ai_images/kjh.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/751ad528_kjh.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.39,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Лабіринт багатомільярдних обчислювальних кластерів.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
+        "display_name": "Tech employees gathered in office b1af5ff2 2K",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/images_vault/Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/8cf6ac8c_Tech_employees_gathered_in_office_b1af5ff2_2K.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 3.84,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Солідарність сотень інженерів під час листопадової кризи в OpenAI.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
+        "display_name": "EP01 DOC 02 ACT2 OpenAI Introducing Dec11 2015",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6b4ac0cc_EP01_DOC_02_ACT2_OpenAI_Introducing_Dec11_2015.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.58,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Історичний маніфест заснування OpenAI (грудень 2015), де Ілля Суцкевер став головним науковцем.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
+        "display_name": "EP01 DOC 04 ACT3 Sutskever Regret Post Nov20 2023",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_2023.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7777152_EP01_DOC_04_ACT3_Sutskever_Regret_Post_Nov20_202.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.56,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: Твіт Іллі Суцкевера 20 листопада 2023 «I deeply regret my participation in the board's actions».",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
+        "display_name": "EP01 DOC 05 ACT3 730 Employees Open Letter",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_ACT3_730_Employees_Open_Letter.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/834b23ef_EP01_DOC_05_ACT3_730_Employees_Open_Letter.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_UA_CARD_06_730_Employees_Ultimatum.png",
+        "display_name": "EP01 UA CARD 06 730 Employees Ultimatum",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_06_730_Employees_Ultimatum.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP01_UA_CARD_06_730_Employees_Ultimatum.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/8ff7ce65_EP01_UA_CARD_06_730_Employees_Ultimatum.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 0.11,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ АРТЕФАКТ: відкритий лист 730+ співробітників OpenAI включно з підписом Іллі Суцкевера.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "display_name": "EP01 FLOW IMG 03 Silicon Wafer Cyan Laser Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0a8c6b2c_EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.17,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Кремнієвий тракт матричних множень.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Нейронний граф стискання та масштабування сенсів.",
+        "suggested_scenes": [
+          "04",
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "display_name": "EP01 IMG ARCH 02 Altman Ilya Sutskever TAU 2023",
+        "rel_path": "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/46b9d832_EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+        "cat": "portraits",
+        "cat_label": "📸 Портрети Спікера",
+        "size_mb": 0.11,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "РЕАЛЬНИЙ ІСТОРИЧНИЙ ДОКУМЕНТ: Ілля Суцкевер та Сем Альтман разом на сцені Тель-Авівського університету 2023 року!",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
+        "display_name": "EP02 DOC 01 ACT2 NVIDIA RIVA128 SEC 1999 IPO",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/5d301871_EP02_DOC_01_ACT2_NVIDIA_RIVA128_SEC_1999_IPO.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.61,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Апаратна передісторія графічних прискорювачів NVIDIA.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "display_name": "EP03 FLOW IMG 14 Galaxies Connected By Golden Axons 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Стиснуті семантичні координати думки.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "display_name": "Gothic library interior with boo… e97ea8a1 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.83,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Томи класичної математики та філософії в тиші бібліотеки.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory 1c257942 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/80a45fb7_Neural_core_pulsing_in_laboratory_1c257942_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.35,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Тиха високотехнологічна лабораторія безпеки надрозуму.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "display_name": "Neural core pulsing in laboratory c0abcd76 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/c13339c1_Neural_core_pulsing_in_laboratory_c0abcd76_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 2.96,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Тиха високотехнологічна лабораторія безпеки надрозуму.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "display_name": "Neural network nodes firing bef7f30b 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Глибокі векторні шари Seq2Seq.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "display_name": "Researcher standing near hologra… a0248767 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.24,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Науковець перед багатовимірними векторними спогадами моделі.",
+        "suggested_scenes": [
+          "04",
+          "07"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "display_name": "Researcher standing near hologra… af2e61c0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.59,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Науковець перед багатовимірними векторними спогадами моделі.",
+        "suggested_scenes": [
+          "04",
+          "07"
+        ]
+      },
+      {
+        "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Самонавчання математиці за підручниками.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "display_name": "EP08 DOC 01 ACT2 FeiFeiLi ImageNet CVPR 2009",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/8f345e7d_EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.59,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Головний іспит комп'ютерного бачення 2012 року.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
+        "display_name": "EP09 DOC 01 ACT2 Bengio Attention Bahdanau 2014",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep09/e94ef827_EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.58,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "09",
+        "source_label": "♻️ З фонду EP09 (Бенжіо)",
+        "match_reason": "Наукова стаття про механізм Attention у нейронному машинному перекладі — міст до Seq2Seq Суцкевера!",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "display_name": "EP10 DOC 01 ACT2 AndrewNg GoogleBrain Coursera 2011",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep10/5b0e096a_EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.61,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "10",
+        "source_label": "♻️ З фонду EP10 (Ендрю Ин)",
+        "match_reason": "Контекст Google Brain, з якого Ілля Суцкевер прийшов у OpenAI.",
+        "suggested_scenes": [
+          "05"
+        ]
       }
     ],
     "audio": [
@@ -7144,13 +13425,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 3,
-      "images_count": 14,
+      "videos_count": 41,
+      "images_count": 38,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 209.37
+      "total_mb": 209.37,
+      "native_videos_count": 3,
+      "cross_videos_count": 38,
+      "native_images_count": 14,
+      "cross_images_count": 24
     }
   },
   "07": {
@@ -7170,7 +13455,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.78,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "ep07_flow_01_constitutional_prism.mp4",
@@ -7182,7 +13470,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 1.25,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
@@ -7194,7 +13485,534 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 7.29,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
+      },
+      {
+        "file": "Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "display_name": "Camera accelerating through lett clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/157f04c6_Camera_accelerating_through_lett_clip_24ed2370_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Прискорення законів масштабування.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Лабораторія Прінстона: підслуховування хору живих нейронів.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "display_name": "Seedance Аніме: задумливий дослідник під дощем за вікном лабораторії",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/7939797e_ElevenLabs_video_seedance-2-5_Slow__powerful__20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Складні моральні роздуми інженера безпеки.",
+        "suggested_scenes": [
+          "06"
+        ]
+      },
+      {
+        "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "display_name": "Four men sitting at table",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Закрита розмова команди Даріо та Даніели перед виходом в Anthropic.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
+        "display_name": "Human prenatal development 3D vi clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Human_prenatal_development_3D_vi_clip_8b0d0b01_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3f4155cf_Human_prenatal_development_3D_vi_clip_8b0d0b01_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 6.07,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея.",
+        "suggested_scenes": [
+          "03",
+          "10"
+        ]
+      },
+      {
+        "file": "Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
+        "display_name": "Human zygote cell division timel clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Human_zygote_cell_division_timel_clip_063791c0_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c976d19b_Human_zygote_cell_division_timel_clip_063791c0_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.16,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя.",
+        "suggested_scenes": [
+          "03",
+          "10"
+        ]
+      },
+      {
+        "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "display_name": "Light point explodes into streaks",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.24,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перо пише «Конституційний ШІ» та історичний трактат 2024 року.",
+        "suggested_scenes": [
+          "07",
+          "10"
+        ]
+      },
+      {
+        "file": "Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "display_name": "Mouse click triggers flash",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9810a5ce_Mouse_click_triggers_flash_42a0e76f_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.25,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Доленосна онлайн-нарада про зміну курсу компанії.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "display_name": "EP01 V1 B2 01 Retro Cellular 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 9.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ ВІЗУАЛ ДЛЯ ТРАКТАТУ ДАРІО АМОДЕЯ! Згенерований під його медичну сцену: наноботи лікують клітини й стискають 100 років медицини.",
+        "suggested_scenes": [
+          "02",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "display_name": "EP01 V1 B2 02 Rosewood Boardroom 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c1835605_EP01_V1_B2_02_Rosewood_Boardroom_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 4.16,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Фінальна ніч у переговорній перед створенням Anthropic.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Коли потужність двигуна загрожує перевершити гальма контролю.",
+        "suggested_scenes": [
+          "06",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "display_name": "EP01 V1 B2 07 Corporate Transmutation 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/df3e417c_EP01_V1_B2_07_Corporate_Transmutation_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.15,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Розрив із корпоративним курсом заради принципів безпеки.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 9.79,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Даріо та Даніела Амодей приймають рішення заснувати Anthropic.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "display_name": "EP01 V1 B3 04 Golden Grid Stabilizing 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 16.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Стандарти біобезпеки ASL-1..4 як золота захисна сітка над некерованою бурею.",
+        "suggested_scenes": [
+          "06",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 01 Equations Void 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Елегантність степеневих рівнянь Законів Масштабування (Scaling Laws).",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 04 Mind Radiating Light 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.37,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Просвічування внутрішніх фіч нейромережі Claude наскрізь (Mechanistic Interpretability).",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "display_name": "EP01 V1 CREATIVE 08 Gold Melting Brain 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/435413e8_EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.5,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Конвертація мільярдних інвестицій у чистий масштаб інтелекту.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "display_name": "EP01 V1 NEW 06 Cosmic Dyson 7s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_NEW_06_Cosmic_Dyson_7s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/7c3a467c_EP01_V1_NEW_06_Cosmic_Dyson_7s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 6.69,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Експонента обчислювальних витрат у законах масштабування.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "display_name": "EP01 CLIP V1 19 CurveHero 17s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f032d3f7_EP01_CLIP_V1_19_CurveHero_17s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 3.52,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Експоненціальний графік Scaling Laws на 7 порядках величини (2020)!",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "display_name": "EP01 V1 B3 CLOSER GoldenGrid 340f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/4d7e1eb2_EP01_V1_B3_CLOSER_GoldenGrid_340f.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 12.47,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глобальний захисний контур відповідального масштабування.",
+        "suggested_scenes": [
+          "06",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "display_name": "EP01 V1 NEW 03 Window Rain 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b582dfd9_EP01_V1_NEW_03_Window_Rain_16s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Відповідальність засновника наодинці з майбутнім технології.",
+        "suggested_scenes": [
+          "06"
+        ]
+      },
+      {
+        "file": "Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
+        "display_name": "Human prenatal development 3D vi…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_prenatal_development_3D_vi…_8b0d0b01_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/af762c74_Human_prenatal_development_3D_vi__8b0d0b01_1080p.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 6.07,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Чудо формування живого організму — біофізична оптика Даріо Амодея.",
+        "suggested_scenes": [
+          "03",
+          "10"
+        ]
+      },
+      {
+        "file": "Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
+        "display_name": "Human zygote cell division timel…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Human_zygote_cell_division_timel…_063791c0_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/184b4e30_Human_zygote_cell_division_timel__063791c0_1080p.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 4.16,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Таймлапс поділу клітини як символ алгоритмічного розуміння життя.",
+        "suggested_scenes": [
+          "03",
+          "10"
+        ]
+      },
+      {
+        "file": "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "display_name": "Finger slamming clock plunger",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/b76fb4eb_Finger_slamming_clock_plunger_dd1a4152_1080p.jpg",
+        "cat": "chess",
+        "cat_label": "♟️ Шахи & Походження",
+        "size_mb": 16.04,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Невблаганний відлік перегонів перед запуском нових моделей: двигун проти гальм.",
+        "suggested_scenes": [
+          "06",
+          "09"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Лабораторія Прінстона: підслуховування хору живих нейронів.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "display_name": "EP03 SCI 01 RNA Polymerase DNA Transcription",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP03_SCI_01_RNA_Polymerase_DNA_Transcription.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/31a18ebf_EP03_SCI_01_RNA_Polymerase_DNA_Transcription.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 9.95,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "3D транскрипція ДНК — наукова метафора стиснення століття біомедичних досліджень.",
+        "suggested_scenes": [
+          "02",
+          "10"
+        ]
+      },
+      {
+        "file": "EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "display_name": "EP05 SCI 01 Belousov Zhabotinsky Oscillator",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep05/9af5aedf_EP05_SCI_01_Belousov_Zhabotinsky_Oscillator.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 10.21,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "05",
+        "source_label": "♻️ З фонду EP05 (Лекун)",
+        "match_reason": "Хвильова активність клітин і біохімічних процесів.",
+        "suggested_scenes": [
+          "03"
+        ]
       }
     ],
     "images": [
@@ -7208,7 +14026,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.54,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_FLOW_IMG_02_Human_Golden_Equations_Alignment_2K.jpg",
@@ -7220,7 +14041,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.42,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_FLOW_IMG_03_Nanobots_Repairing_Human_Cell_2K.jpg",
@@ -7232,7 +14056,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.93,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_FLOW_IMG_04_Hands_Cupping_Levitating_Liquid_Mirror_2K.jpg",
@@ -7244,7 +14071,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.03,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_FLOW_IMG_05_Finger_Touching_Glowing_AI_Core_2K.jpg",
@@ -7256,7 +14086,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.33,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_DOC_01_ACT3_Amodei_Constitutional_AI_2022.png",
@@ -7268,7 +14101,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.62,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
       },
       {
         "file": "EP07_PHOTO_01_Dario_Amodei_Archival_Portrait.jpg",
@@ -7280,7 +14116,258 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.77,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "07",
+        "source_label": "⭐ Власний асет EP07"
+      },
+      {
+        "file": "cdwrf.png",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+        "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.19,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Живий нейрон у темній біофізичній лабораторії.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "DNA_transcription_molecular_model_b083aad3.jpg",
+        "display_name": "DNA transcription molecular model",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/96b386bf_DNA_transcription_molecular_model_b083aad3.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.1,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Молекулярна модель ДНК для візуалізації перемоги над генетичними хворобами.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "scesxcsr.png",
+        "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+        "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
+        "web_src": "../../04_ASSETS/user_ai_images/scesxcsr.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глобальний ефект цивілізаційного прориву в охороні здоров'я.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Stages_of_cell_division_a2a1ff18.jpg",
+        "display_name": "Stages of cell division",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/Stages_of_cell_division_a2a1ff18.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/images_vault/Stages_of_cell_division_a2a1ff18.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/749d8699_Stages_of_cell_division_a2a1ff18.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.06,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Еволюція живої клітини для Трактату 2024 про майбутнє біології.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "xasdwrc.png",
+        "display_name": "Макро перової ручки з краплею чорнила на папері",
+        "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
+        "web_src": "../../04_ASSETS/user_ai_images/xasdwrc.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.13,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Письмовий кодекс принципів Constitutional AI.",
+        "suggested_scenes": [
+          "07",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "display_name": "EP01 FLOW IMG 04 Golden Exponential Curve Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0b231e72_EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.09,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Логарифмічна пряма Законів Масштабування на 7 порядках величини.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "display_name": "EP02 FLOW IMG 05 Hand Shaking Golden Transistor Dust 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor_Dust_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/6072907e_EP02_FLOW_IMG_05_Hand_Shaking_Golden_Transistor.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Передача наукової естафети та партнерства дослідників.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "DNA_transcription_molecular_model_b083aad3.jpg",
+        "display_name": "DNA transcription molecular model",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/e7045db3_DNA_transcription_molecular_model_b083aad3.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 0.1,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Молекулярна модель ДНК для візуалізації перемоги над генетичними хворобами.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Stages_of_cell_division_a2a1ff18.jpg",
+        "display_name": "Stages of cell division",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Stages_of_cell_division_a2a1ff18.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Stages_of_cell_division_a2a1ff18.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/777e44d9_Stages_of_cell_division_a2a1ff18.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 0.06,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Еволюція живої клітини для Трактату 2024 про майбутнє біології.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 28e029e0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_28e029e0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fff50232_Microscopy_of_brain_hippocampal___28e029e0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.62,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Електрофізіологічний зріз нейронів під мікроскопом (Прінстон).",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "display_name": "Microscopy of brain hippocampal … 8c46eff3 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Microscopy_of_brain_hippocampal_…_8c46eff3_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ba2eff81_Microscopy_of_brain_hippocampal___8c46eff3_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 4.27,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Електрофізіологічний зріз нейронів під мікроскопом (Прінстон).",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "display_name": "EP04 FLOW IMG 04 Human Head Cracking Releasing Light 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/7ff5e209_EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_L.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 2.77,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "2K концепт-кадр для механістичної інтерпретованості: промені світла виявляють приховані вузли.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "display_name": "EP08 FLOW IMG 01 Human Eye Merging With Data 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/961a17fc_EP08_FLOW_IMG_01_Human_Eye_Merging_With_Data_2K.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.96,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Зорова сітківка та цифровий аналіз світлових спалахів.",
+        "suggested_scenes": [
+          "03"
+        ]
       }
     ],
     "audio": [
@@ -7326,13 +14413,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 3,
-      "images_count": 7,
+      "videos_count": 30,
+      "images_count": 20,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 197.59
+      "total_mb": 197.59,
+      "native_videos_count": 3,
+      "cross_videos_count": 27,
+      "native_images_count": 7,
+      "cross_images_count": 13
     }
   },
   "08": {
@@ -7352,7 +14443,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 0.94,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "ep08_flow_01_spatial_intelligence_dome.mp4",
@@ -7364,7 +14458,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.07,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
@@ -7376,7 +14473,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 5.89,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_SCI_02_Asteroid_Entering_Earth_Atmosphere_1080p.mp4",
@@ -7388,7 +14488,306 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 5.06,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
+      },
+      {
+        "file": "Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "display_name": "Aerial view of city center",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Просторове сканування об'єктів і геометрії вулиць для ImageNet та 3D-світу.",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "display_name": "Digital HUD tracking vehicles",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Digital_HUD_tracking_vehicles_d7d30811_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/fa0374e3_Digital_HUD_tracking_vehicles_d7d30811_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 12.72,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Наочний приклад класифікації й трекінгу об'єктів — прямий спадок датасету ImageNet!",
+        "suggested_scenes": [
+          "04",
+          "05",
+          "08"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "display_name": "Seedance: інтенсивний макро-план очей за окулярами перед матрицею коду",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/fd2aa327_ElevenLabs_video_seedance-2-5_Intense_macro_r_20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 6.36,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Напружений пошук візуальних патернів у міріадах зображень.",
+        "suggested_scenes": [
+          "05",
+          "07"
+        ]
+      },
+      {
+        "file": "Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "display_name": "Physical matter dissolves into b clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f0ec9175_Physical_matter_dissolves_into_b_clip_f843df4f_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 16.4,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Просторова реконструкція великого міста для Spatial Intelligence.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "ep01_flow_02_crt_code.mp4",
+        "display_name": "ep01 flow 02 crt code",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
+        "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 5.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Переклад оптичного зображення у цифровий масив чисел.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 19.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перетворення 2D-планів на 3D-матрицю простору.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "display_name": "EP01 V1 B2 01 Retro Cellular 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3d3c865a_EP01_V1_B2_01_Retro_Cellular_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 9.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ілюстрація госпітального ШІ-захисту життя людини.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "display_name": "EP01 V1 B2 04 Robotic Dexterity 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e0fafa4c_EP01_V1_B2_04_Robotic_Dexterity_15s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.63,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ПРЯМИЙ КЛІП WORLD LABS / SPATIAL INTELLIGENCE! Роботи плетуть тривимірну золоту структуру реальності.",
+        "suggested_scenes": [
+          "09",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "display_name": "EP01 V1 CREATIVE 05 Holo Geo Matrix 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 12.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Мапа візуальних категорій WordNet/ImageNet переростає у просторове знання.",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "display_name": "EP01 CLIP V1 05 Eye Code 11s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_05_Eye_Code_11s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d0db1aff_EP01_CLIP_V1_05_Eye_Code_11s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 5.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Зір людини й машини: очі, що вчаться бачити 22 000 категорій видимого світу.",
+        "suggested_scenes": [
+          "04",
+          "05",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "display_name": "EP01 V1 NEW 02 Burroughs Monoliths 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_02_Burroughs_Monoliths_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/9126b2d4_EP01_V1_NEW_02_Burroughs_Monoliths_15s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 10.61,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Портал переходу від суворої еміграції до світла науки в Калтеху та Прінстоні.",
+        "suggested_scenes": [
+          "01",
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "display_name": "EP01 SCI 01 Supersonic Prandtl Glauert Breakout",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/943d7753_EP01_SCI_01_Supersonic_Prandtl_Glauert_Breakout.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 6.75,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Акустичний удар прориву AlexNet у 2012 році.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "display_name": "Glass shatters into voxel bricks",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/11ec10a5_Glass_shatters_into_voxel_bricks_6403835d_1080p.jpg",
+        "cat": "gaming",
+        "cat_label": "🕹️ ZX Spectrum & Геймінг",
+        "size_mb": 12.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Вихід із пласких 2D-пікселів у тривимірну воксельну геометрію World Labs (Фей-Фей Лі).",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "display_name": "EP01 V1 ASSOC 01 Lidar City Grid 8s",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/ffbf86f0_EP01_V1_ASSOC_01_Lidar_City_Grid_8s.jpg",
+        "cat": "go_game",
+        "cat_label": "⚪ Гра Go & Стратегія",
+        "size_mb": 6.8,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Просторова 3D-реконструкція вулиць — безпосередній вектор World Labs Фей-Фей Лі.",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "display_name": "EP07 SCI 01 Camera Traversing Human Retina",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP07_SCI_01_Camera_Traversing_Human_Retina.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/e90839f6_EP07_SCI_01_Camera_Traversing_Human_Retina.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 7.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Біологічний зір людини як еталон, до якого Фей-Фей Лі підтягнула комп'ютери.",
+        "suggested_scenes": [
+          "04",
+          "10"
+        ]
       }
     ],
     "images": [
@@ -7402,7 +14801,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.96,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_FLOW_IMG_02_Silhouettes_Morphing_Into_3D_Wireframe_2K.jpg",
@@ -7414,7 +14816,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.33,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_FLOW_IMG_03_Painter_Holding_Glowing_Brush_2K.jpg",
@@ -7426,7 +14831,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.28,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_FLOW_IMG_04_Robotic_Arms_Weaving_Golden_Tapestry_2K.jpg",
@@ -7438,7 +14846,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.98,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_DOC_01_ACT2_FeiFeiLi_ImageNet_CVPR_2009.png",
@@ -7450,7 +14861,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.59,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
       },
       {
         "file": "EP08_PHOTO_01_Fei-Fei_Li_Archival_Portrait.jpg",
@@ -7462,7 +14876,184 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 0.21,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "08",
+        "source_label": "⭐ Власний асет EP08"
+      },
+      {
+        "file": "bhnuyvtf.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+        "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Обчислювальний прорив AlexNet 2012 на кластері відеокарт.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "display_name": "EP01 FLOW IMG 02 CRT Code Eye Reflection Hero",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d28817fd_EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 0.9,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Вчити комп'ютер бачити так, як бачить людське око (ImageNet).",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Пробудження глибокої візуальної нейромережі 2012.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "display_name": "EP03 FLOW IMG 10 Lidar Scanning Tactical Map 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/2977578e_EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.13,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "2K референс тривимірної фізики та просторового розуміння середовища.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "display_name": "Gothic library interior with boo… e97ea8a1 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.83,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Контраст високої академії Прінстона з вечірньою пральнею Фей-Фей Лі.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "display_name": "Researcher standing near hologra… a0248767 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_a0248767_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/478ea387_Researcher_standing_near_hologra__a0248767_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.24,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "display_name": "Researcher standing near hologra… af2e61c0 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Researcher_standing_near_hologra…_af2e61c0_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/d5a855ff_Researcher_standing_near_hologra__af2e61c0_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.59,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "ТИПОВИЙ ВІЗУАЛ IMAGENET: дослідниця перед голограмою тисяч візуальних категорій та сцен реальності!",
+        "suggested_scenes": [
+          "05",
+          "09"
+        ]
+      },
+      {
+        "file": "EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "display_name": "EP06 DOC 01 ACT2 Sutskever AlexNet NIPS 2012",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/9fdc13bb_EP06_DOC_01_ACT2_Sutskever_AlexNet_NIPS_2012.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Історична публікація AlexNet, що стала тріумфом датасету ImageNet!",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "display_name": "EP06 FLOW IMG 04 Researcher Viewing GPUs AlexNet 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP06_Sutskever/01_primary_keyframes/EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep06/08cf3466_EP06_FLOW_IMG_04_Researcher_Viewing_GPUs_AlexNet.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.28,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "06",
+        "source_label": "♻️ З фонду EP06 (Суцкевер)",
+        "match_reason": "Ніч прориву AlexNet на датасеті ImageNet.",
+        "suggested_scenes": [
+          "07"
+        ]
       }
     ],
     "audio": [
@@ -7518,13 +15109,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 4,
-      "images_count": 6,
+      "videos_count": 19,
+      "images_count": 15,
       "audio_count": 5,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 1,
-      "total_mb": 238.7
+      "total_mb": 238.7,
+      "native_videos_count": 4,
+      "cross_videos_count": 15,
+      "native_images_count": 6,
+      "cross_images_count": 9
     }
   },
   "09": {
@@ -7544,7 +15139,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 2.11,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "ep09_flow_01_attention_vector_threads.mp4",
@@ -7556,7 +15154,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.46,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_SCI_01_Asteroid_Coasting_Deep_Space_1080p.mp4",
@@ -7568,7 +15169,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 10.98,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_SCI_02_Asteroid_Surface_Micro_Structure_1080p.mp4",
@@ -7580,7 +15184,379 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 11.03,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ea4cc2f_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі.",
+        "suggested_scenes": [
+          "02",
+          "04"
+        ]
+      },
+      {
+        "file": "Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "display_name": "Four men sitting at table",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ca0580f0_Four_men_sitting_at_table_3911bdbc_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Дискусія трьох «хрещених батьків» / колег після конференції (GANS і Attention 2014).",
+        "suggested_scenes": [
+          "02",
+          "05"
+        ]
+      },
+      {
+        "file": "Laser_forms_text_words_89a267cd_1080p.mp4",
+        "display_name": "Laser forms text words",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/a2578366_Laser_forms_text_words_89a267cd_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ранні експерименти з розпізнаванням мови та хвильових сигналів у Bell Labs.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "display_name": "Light point explodes into streaks",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5beee0ea_Light_point_explodes_into_streaks_0827d703_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.24,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Підписання першого Міжнародного звіту з безпеки ШІ.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "display_name": "Man wearing tactical arctic parka",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Man_wearing_tactical_arctic_parka_24ef8e34_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/0fd60479_Man_wearing_tactical_arctic_parka_24ef8e34_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 5.98,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Символ двадцятирічної зими ШІ у засніженому Монреалі та чесного вченого крізь Квебек.",
+        "suggested_scenes": [
+          "03",
+          "10"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії.",
+        "suggested_scenes": [
+          "03",
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "display_name": "EP01 V1 B2 03 Singularity Threat 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f50924a9_EP01_V1_B2_03_Singularity_Threat_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Аргумент Бенжіо на слуханнях перед урядами світу.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.34,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Планетарна відповідальність науки перед людством.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "display_name": "EP01 V1 B3 03 Two Silhouettes Nadella 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f6210644_EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 9.79,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ТОЧНИЙ ВІЗУАЛ ПІД 2014 РОК! Два профілі з'єднуються золотими нитками сенсу — Механізм Уваги (Attention) Богданова–Чо–Бенжіо!",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "display_name": "EP01 V1 B3 04 Golden Grid Stabilizing 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 16.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ТОЧНИЙ ВІЗУАЛ ДЛЯ БЕНЖІО: золота глобальна сітка приборкує бурю планети — Інститут Mila (клімат) і Міжнародний договір безпеки ШІ!",
+        "suggested_scenes": [
+          "07",
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "display_name": "EP01 V1 CREATIVE 01 Equations Void 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b3c899ae_EP01_V1_CREATIVE_01_Equations_Void_8s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Чистий геометричний простір слів та ймовірнісних потоків GFlowNets.",
+        "suggested_scenes": [
+          "04",
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 02 Galaxies Axons 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/40570043_EP01_V1_CREATIVE_02_Galaxies_Axons_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 11.11,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "2000 рік: кожне слово стає координатою чистого смислу в нейронному космосі Бенжіо!",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "display_name": "EP01 V1 CREATIVE 04 Mind Radiating Light 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d1f389a1_EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 8.37,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Систематичне мислення (Система 2) та усвідомлення структури розуму.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "display_name": "EP01 V1 B2 CLOSER EarthHorizon 289f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2702e64e_EP01_V1_B2_CLOSER_EarthHorizon_289f.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 13.97,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Орбітальний погляд на планетарні мережі безпеки.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "display_name": "EP01 V1 B3 CLOSER GoldenGrid 340f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/4d7e1eb2_EP01_V1_B3_CLOSER_GoldenGrid_340f.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 12.47,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Координація міжнародного звіту про глобальну безпеку ШІ.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "display_name": "Electrical spark traveling neuro…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/8198b474_Electrical_spark_traveling_neuro__362f1f95_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Передача сигналу в біологічному мозку як фундамент досліджень у Монреалі.",
+        "suggested_scenes": [
+          "02",
+          "04"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Спільне обговорення рівнянь біля дошки відкритої лабораторії.",
+        "suggested_scenes": [
+          "03",
+          "04"
+        ]
+      },
+      {
+        "file": "EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "display_name": "EP04 SCI 01 Quantum Double Slit Wave Collapse",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/2142bf51_EP04_SCI_01_Quantum_Double_Slit_Wave_Collapse.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 4.75,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "Імовірнісний колапс простору станів для моделей System 2 / GFlowNets.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "display_name": "EP08 SCI 01 Asteroid Approaching Earth Orbit 1080p",
+        "rel_path": "05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/scientific_animations/EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep08/51b6ec22_EP08_SCI_01_Asteroid_Approaching_Earth_Orbit_108.jpg",
+        "cat": "sci_vfx",
+        "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
+        "size_mb": 5.89,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "08",
+        "source_label": "♻️ З фонду EP08 (Фей-Фей Лі)",
+        "match_reason": "Цивілізаційний ризик неконтрольованого ШІ в доповіді Йошуа Бенжіо.",
+        "suggested_scenes": [
+          "08"
+        ]
       }
     ],
     "images": [
@@ -7594,7 +15570,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 2.91,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_FLOW_IMG_02_Golden_Grid_Stabilizing_Stormy_Ocean_2K.jpg",
@@ -7606,7 +15585,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.37,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_FLOW_IMG_03_Two_Silhouettes_Connecting_Symbols_2K.jpg",
@@ -7618,7 +15600,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 2.28,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_DOC_01_ACT2_Bengio_Attention_Bahdanau_2014.png",
@@ -7630,7 +15615,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.58,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
       },
       {
         "file": "EP09_PHOTO_01_Yoshua_Bengio_Archival_Portrait.jpg",
@@ -7642,7 +15630,279 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.11,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "09",
+        "source_label": "⭐ Власний асет EP09"
+      },
+      {
+        "file": "b_cgbxtd.png",
+        "display_name": "Силует перед гіперпросторовим тунелем даних (синьо-фіолетовий)",
+        "rel_path": "04_ASSETS/user_ai_images/b_cgbxtd.png",
+        "web_src": "../../04_ASSETS/user_ai_images/b_cgbxtd.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/1c75639d_b_cgbxtd.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.25,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Вхід у багатовимірний семантичний тунель смислів.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "cdwrf.png",
+        "display_name": "Біологічний нейрон із електричними синаптичними спалахами",
+        "rel_path": "04_ASSETS/user_ai_images/cdwrf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/cdwrf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c7f96927_cdwrf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.19,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Синаптичні зв'язки як прототип нейронних моделей мови.",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "scesxcsr.png",
+        "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+        "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
+        "web_src": "../../04_ASSETS/user_ai_images/scesxcsr.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глобальна угода й екологічний моніторинг планети.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "vscds.png",
+        "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+        "rel_path": "04_ASSETS/user_ai_images/vscds.png",
+        "web_src": "../../04_ASSETS/user_ai_images/vscds.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Міжнародна наукова колаборація Mila та ООН.",
+        "suggested_scenes": [
+          "07",
+          "08"
+        ]
+      },
+      {
+        "file": "xasdwrc.png",
+        "display_name": "Макро перової ручки з краплею чорнила на папері",
+        "rel_path": "04_ASSETS/user_ai_images/xasdwrc.png",
+        "web_src": "../../04_ASSETS/user_ai_images/xasdwrc.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d5313c85_xasdwrc.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.13,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Складання незалежного наукового звіту про безпеку ШІ.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "display_name": "EP01 FLOW IMG 05 Neural Lattice Glowing Nodes 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e3092193_EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.15,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Координатна решітка токенів і механізму уваги.",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "display_name": "EP01 FLOW IMG 10 Earth Horizon Neural Grid 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.2,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глобальна відповідальність людства над єдиною мережею інтелекту.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "display_name": "EP03 FLOW IMG 14 Galaxies Connected By Golden Axons 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/f27cd585_EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Ax.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Світовий космос векторних слів (Word Embeddings, 2000/2003).",
+        "suggested_scenes": [
+          "04"
+        ]
+      },
+      {
+        "file": "Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "display_name": "Artificial neural network nodes … 4e7639ee 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Artificial_neural_network_nodes_…_4e7639ee_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/4be1f495_Artificial_neural_network_nodes___4e7639ee_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.21,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Граф зважених зв'язків механізму Уваги.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "display_name": "Gothic library interior with boo… e97ea8a1 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Gothic_library_interior_with_boo…_e97ea8a1_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/1e26fe94_Gothic_library_interior_with_boo__e97ea8a1_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.83,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Книжкові стелажі Монреаля й перші томи наукової фантастики Бенжіо.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "display_name": "Neural network nodes firing bef7f30b 2K",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/256032f6_Neural_network_nodes_firing_bef7f30b_2K.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 3.4,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Координатні шари уваги (Attention) у глибоких мережах.",
+        "suggested_scenes": [
+          "04",
+          "05"
+        ]
+      },
+      {
+        "file": "EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "display_name": "EP04 FLOW IMG 04 Human Head Cracking Releasing Light 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_Light_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/7ff5e209_EP04_FLOW_IMG_04_Human_Head_Cracking_Releasing_L.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 2.77,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "Розкриття архітектури мислення Системи 2.",
+        "suggested_scenes": [
+          "09"
+        ]
+      },
+      {
+        "file": "EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "display_name": "EP04 DOC 01 ACT2 Hinton Backprop Nature 1986",
+        "rel_path": "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "web_src": "../../05_RAW_FOOTAGE/dossiers_press/EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep04/82667044_EP04_DOC_01_ACT2_Hinton_Backprop_Nature_1986.jpg",
+        "cat": "dossiers",
+        "cat_label": "📰 4K Досьє & Преса",
+        "size_mb": 2.63,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "04",
+        "source_label": "♻️ З фонду EP04 (Хінтон)",
+        "match_reason": "Наукова основа, що об'єднала Хінтона, Лекуна і Бенжіо.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "display_name": "EP07 FLOW IMG 01 Human Dissolving Into Equations 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep07/c038989c_EP07_FLOW_IMG_01_Human_Dissolving_Into_Equations.jpg",
+        "cat": "batch3",
+        "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
+        "size_mb": 3.54,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "07",
+        "source_label": "♻️ З фонду EP07 (Амодей)",
+        "match_reason": "Математичні координати змісту в просторі слів.",
+        "suggested_scenes": [
+          "04"
+        ]
       }
     ],
     "audio": [
@@ -7688,13 +15948,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 4,
-      "images_count": 5,
+      "videos_count": 23,
+      "images_count": 19,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 200.24
+      "total_mb": 200.24,
+      "native_videos_count": 4,
+      "cross_videos_count": 19,
+      "native_images_count": 5,
+      "cross_images_count": 14
     }
   },
   "10": {
@@ -7714,7 +15978,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "archive",
         "cat_label": "📼 Реальний Архів",
         "size_mb": 1.02,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "ep10_flow_01_global_neural_classroom.mp4",
@@ -7726,7 +15993,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "flow",
         "cat_label": "🚀 Google Flow / Veo",
         "size_mb": 0.03,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
@@ -7738,7 +16008,475 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "sci_vfx",
         "cat_label": "🔬 Наукові 3D-Анімації (VFX)",
         "size_mb": 12.43,
-        "ext": "MP4"
+        "ext": "MP4",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
+      },
+      {
+        "file": "Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "display_name": "Aerial view of city center",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b96b7551_Aerial_view_of_city_center_41b81743_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 13.76,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Навігаційне сприйняття простору зверху для автономних польотів.",
+        "suggested_scenes": [
+          "02"
+        ]
+      },
+      {
+        "file": "Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "display_name": "Camera moving through computer m clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/803dd6ff_Camera_moving_through_computer_m_clip_2acf3bda_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 14.73,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перше знайомство з персональним комп'ютером.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "display_name": "Camera plunges into terminal screen",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/09d37864_Camera_plunges_into_terminal_screen_11075f8d_108.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 23.64,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Від перших журнальних програм до 10 рядків ранкового коду щодня.",
+        "suggested_scenes": [
+          "01",
+          "10"
+        ]
+      },
+      {
+        "file": "ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "display_name": "Seedance: хлопчик досліджує материнську плату в кімнаті 1990-х",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/02729562_ElevenLabs_video_seedance-2-5_Authentic_histo_20.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 4.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Раннє захоплення комп'ютерною архітектурою з дитинства.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/326e1b44_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Кластери GPU та тисячі ядер для тренування без нагляду в Google Brain.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo clip",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/6a73ca93_Spark_disruption_in_corporate_bo_clip_a6171ebf_1.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!",
+        "suggested_scenes": [
+          "05",
+          "06"
+        ]
+      },
+      {
+        "file": "Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "display_name": "Walls dissolving into textbook v…",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v…_de18897e_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/b9f51995_Walls_dissolving_into_textbook_v__de18897e_1080p.jpg",
+        "cat": "ai_gen",
+        "cat_label": "🎥 Авторські ШІ-Генерації",
+        "size_mb": 9.29,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тиха стенфордська лекційна зала перед записом перших відеоуроків CS229.",
+        "suggested_scenes": [
+          "05"
+        ]
+      },
+      {
+        "file": "ep01_flow_02_crt_code.mp4",
+        "display_name": "ep01 flow 02 crt code",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_02_crt_code.mp4",
+        "thumb": "assets/vault_thumbs/ep01/f738360c_ep01_flow_02_crt_code.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 5.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Перші рядки коду BASIC перед очами юного Ендрю Ина.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/b857d3bf_ep01_flow_06_server_monolith.jpg",
+        "cat": "flow",
+        "cat_label": "🚀 Google Flow / Veo",
+        "size_mb": 7.99,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Обчислювальний масив Google X.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "display_name": "EP01 V1 B2 00 Startup Engine Matrix 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ea30e9b5_EP01_V1_B2_00_Startup_Engine_Matrix_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 19.27,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Data-Centric структуризація даних для промислових заводів.",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "display_name": "EP01 V1 B2 08 Silicon Metropolis 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_08_Silicon_Metropolis_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/1d11135f_EP01_V1_B2_08_Silicon_Metropolis_14s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 16.77,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ендрю Ин: «Штучний інтелект — це нова електрика», що перетворює всю індустріальну економіку.",
+        "suggested_scenes": [
+          "07",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "display_name": "EP01 V1 B2 09 Researchers Compute Core 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/f3864169_EP01_V1_B2_09_Researchers_Compute_Core_12s.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 11.87,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Серверне ядро Google Brain для самонавчання мережі.",
+        "suggested_scenes": [
+          "03",
+          "04"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "display_name": "EP01 V1 B2 10 Earth Horizon Finale 290f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_290f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5b6c407e_EP01_V1_B2_10_Earth_Horizon_Finale_290f.jpg",
+        "cat": "flow_b2",
+        "cat_label": "🧱 Блок 2 Master",
+        "size_mb": 15.34,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "СВІТЛО В КОЖНОМУ ДОМІ: мільйони студентів Coursera і «ШІ як нова електрика» по всій Землі!",
+        "suggested_scenes": [
+          "06",
+          "07",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "display_name": "EP01 V1 B3 04 Golden Grid Stabilizing 15s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/eccb2692_EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.jpg",
+        "cat": "flow_b3",
+        "cat_label": "🧱 Блок 3 Master",
+        "size_mb": 16.06,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Цифрова мережа стабілізує кліматичні й енергетичні системи планети.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "display_name": "EP01 CLIP V1 06 Boy Room 10s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_CLIP_V1_06_Boy_Room_10s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/dbf05075_EP01_CLIP_V1_06_Boy_Room_10s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 5.47,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Хлопчик передруковує код BASIC з журналів на ранній комп'ютер.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "display_name": "EP01 V1 CREATIVE 05 Holo Geo Matrix 16s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/5c007906_EP01_V1_CREATIVE_05_Holo_Geo_Matrix_16s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 12.46,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Точна структурована інженерія даних (Data-Centric AI).",
+        "suggested_scenes": [
+          "08"
+        ]
+      },
+      {
+        "file": "EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "display_name": "EP01 V1 CREATIVE 06 Obsessive Builders 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_06_Obsessive_Builders_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/c878c54c_EP01_V1_CREATIVE_06_Obsessive_Builders_14s.jpg",
+        "cat": "flow_creative",
+        "cat_label": "🎨 Креативні Flow-Рендери",
+        "size_mb": 9.62,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Інженери перед масивом із 1000 серверів Google X.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "display_name": "EP01 CLIP V1 06 Boy Room 12s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/ce1a1d79_EP01_CLIP_V1_06_Boy_Room_12s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 6.48,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Хлопчик передруковує код BASIC з журналів на ранній комп'ютер.",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "display_name": "EP01 CLIP V1 16 ServerCold 8s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2ff88442_EP01_CLIP_V1_16_ServerCold_8s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 6.32,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тисяча машин Google Brain, підключених до візуального потоку.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "display_name": "EP01 V1 B2 CLOSER EarthHorizon 289f",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B2_CLOSER_EarthHorizon_289f.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2702e64e_EP01_V1_B2_CLOSER_EarthHorizon_289f.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 13.97,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Демократизація знань через Coursera у кожному куточку Землі.",
+        "suggested_scenes": [
+          "06",
+          "10"
+        ]
+      },
+      {
+        "file": "EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "display_name": "EP01 V1 NEW 01 Silhouette Dorm 14s",
+        "rel_path": "05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/19526082_EP01_V1_NEW_01_Silhouette_Dorm_14s.jpg",
+        "cat": "flow_gapless",
+        "cat_label": "🎬 Master Таймлайн (V1 Gapless)",
+        "size_mb": 8.01,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Десять рядків коду щодня — тиха звичка творця перед світанком.",
+        "suggested_scenes": [
+          "01",
+          "10"
+        ]
+      },
+      {
+        "file": "ep01_flow_06_server_monolith.mp4",
+        "display_name": "ep01 flow 06 server monolith",
+        "rel_path": "05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/flow_previs_animatics/ep01_flow_06_server_monolith.mp4",
+        "preview_path": "assets/video_previews/flow/ep01_flow_06_server_monolith.mp4",
+        "thumb": "assets/vault_thumbs/ep01/67404fae_ep01_flow_06_server_monolith.jpg",
+        "cat": "previs",
+        "cat_label": "🎞️ Превіз Аніматики",
+        "size_mb": 0.2,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Обчислювальний масив Google X.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "display_name": "Neuron morphs into GPU chip",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/fa689173_Neuron_morphs_into_GPU_chip_23314d03_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 15.57,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Кластери GPU та тисячі ядер для тренування без нагляду в Google Brain.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "display_name": "Spark disruption in corporate bo…",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Spark_disruption_in_corporate_bo…_a6171ebf_1080p.mp4",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/eedffdc6_Spark_disruption_in_corporate_bo__a6171ebf_1080p.jpg",
+        "cat": "neuro",
+        "cat_label": "🧠 Нейронаука & AlphaGo",
+        "size_mb": 8.82,
+        "ext": "MP4",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "ТОП-ЗБІГ! На дошці виписана фірмова функція втрат Ендрю Ина COST FUNCTION J(w,b) з легендарного курсу CS229 / Coursera!",
+        "suggested_scenes": [
+          "05",
+          "06"
+        ]
       }
     ],
     "images": [
@@ -7752,7 +16490,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch3",
         "cat_label": "🎮 Ігри / Шахи / Наука (2K)",
         "size_mb": 3.42,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_FLOW_IMG_04_Skyscraper_Piercing_Binary_Rain_2K.jpg",
@@ -7764,7 +16505,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.99,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_FLOW_IMG_05_Metropolis_Transforming_Into_Silicon_2K.jpg",
@@ -7776,7 +16520,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.62,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_FLOW_IMG_06_Energy_Pulses_Flowing_Through_Earth_2K.jpg",
@@ -7788,7 +16535,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "batch4",
         "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
         "size_mb": 3.31,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_FLOW_BROLL_02B_Father_Son_Medical_Textbook_Close_2K.jpg",
@@ -7800,7 +16550,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "broll_stills",
         "cat_label": "🎨 B-Roll Концепти & Дослідження",
         "size_mb": 3.61,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_DOC_01_ACT2_AndrewNg_GoogleBrain_Coursera_2011.png",
@@ -7812,7 +16565,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "dossiers",
         "cat_label": "📰 4K Досьє & Преса",
         "size_mb": 2.61,
-        "ext": "PNG"
+        "ext": "PNG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_FLOW_IMG_02_Doctor_Father_Medical_Textbook_2K.jpg",
@@ -7824,7 +16580,10 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "keyframes",
         "cat_label": "🖼️ Головні 2K Keyframes",
         "size_mb": 3.86,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
       },
       {
         "file": "EP10_PHOTO_01_Andrew_Ng_Archival_Portrait.jpg",
@@ -7836,7 +16595,204 @@ window.PROJECT_VAULT_INVENTORY = {
         "cat": "portraits",
         "cat_label": "📸 Портрети Спікера",
         "size_mb": 1.22,
-        "ext": "JPG"
+        "ext": "JPG",
+        "is_cross": false,
+        "source_ep": "10",
+        "source_label": "⭐ Власний асет EP10"
+      },
+      {
+        "file": "bhnuyvtf.png",
+        "display_name": "Двоє інженерів тестують GPU-серверний блейд у лабораторії (варіант А)",
+        "rel_path": "04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/bhnuyvtf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/62015091_bhnuyvtf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Налагодження 1000-серверного кластера Google Brain з Джеффом Діном.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "DNA_transcription_molecular_model_b083aad3.jpg",
+        "display_name": "DNA transcription molecular model",
+        "rel_path": "05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/user_ai_generations/images_vault/DNA_transcription_molecular_model_b083aad3.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/96b386bf_DNA_transcription_molecular_model_b083aad3.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.1,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Медична спадщина батька Ендрю Ина (ранній контакт із клінічною діагностикою).",
+        "suggested_scenes": [
+          "01"
+        ]
+      },
+      {
+        "file": "dv.png",
+        "display_name": "Дослідник пише рівняння Cost Function J(w,b) на скляній дошці",
+        "rel_path": "04_ASSETS/user_ai_images/dv.png",
+        "web_src": "../../04_ASSETS/user_ai_images/dv.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/d290662b_dv.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.22,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Ідеальний ключ до CS229 / Coursera: на дошці буквально формула Cost Function J(w,b) Ендрю Ина!",
+        "suggested_scenes": [
+          "05",
+          "06"
+        ]
+      },
+      {
+        "file": "jlgyf.png",
+        "display_name": "Ноутбук із кодом на дерев'яному столі біля вікна",
+        "rel_path": "04_ASSETS/user_ai_images/jlgyf.png",
+        "web_src": "../../04_ASSETS/user_ai_images/jlgyf.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/27ca950d_jlgyf.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.15,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Світанок, чистий файл коду — фінальний символ навчання ШІ.",
+        "suggested_scenes": [
+          "10"
+        ]
+      },
+      {
+        "file": "scesxcsr.png",
+        "display_name": "Планета Земля в золотих орбітальних кільцях зв'язків",
+        "rel_path": "04_ASSETS/user_ai_images/scesxcsr.png",
+        "web_src": "../../04_ASSETS/user_ai_images/scesxcsr.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/42f52851_scesxcsr.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Глобальне охоплення мільйонів слухачів освіти в усьому світі.",
+        "suggested_scenes": [
+          "06",
+          "10"
+        ]
+      },
+      {
+        "file": "vscds.png",
+        "display_name": "Глобальна нейромережа золотих волокон над півкулею Землі",
+        "rel_path": "04_ASSETS/user_ai_images/vscds.png",
+        "web_src": "../../04_ASSETS/user_ai_images/vscds.png",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/2c026223_vscds.jpg",
+        "cat": "ai_gen_img",
+        "cat_label": "🎨 Авторські ШІ-Кадри",
+        "size_mb": 0.23,
+        "ext": "PNG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Мільйони учнів Coursera з усіх континентів.",
+        "suggested_scenes": [
+          "06",
+          "07"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "display_name": "EP01 FLOW IMG 06 Supercomputer Servers Cold Hall 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/3f802b10_EP01_FLOW_IMG_06_Supercomputer_Servers_Cold_Hall.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.29,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Тисяча серверів Google Brain для неконтрольованого навчання.",
+        "suggested_scenes": [
+          "03"
+        ]
+      },
+      {
+        "file": "EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "display_name": "EP01 FLOW IMG 10 Earth Horizon Neural Grid 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep01/e9538809_EP01_FLOW_IMG_10_Earth_Horizon_Neural_Grid_2K.jpg",
+        "cat": "keyframes",
+        "cat_label": "🖼️ Головні 2K Keyframes",
+        "size_mb": 3.2,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "01",
+        "source_label": "♻️ З фонду EP01 (Альтман / Базовий фонд)",
+        "match_reason": "Світло знань й електрифікації ШІ по всій Землі (Coursera).",
+        "suggested_scenes": [
+          "06",
+          "10"
+        ]
+      },
+      {
+        "file": "EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "display_name": "EP02 FLOW IMG 06 Magma Flowing Into Supercomputer 2K",
+        "rel_path": "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercomputer_2K.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep02/701638df_EP02_FLOW_IMG_06_Magma_Flowing_Into_Supercompute.jpg",
+        "cat": "batch4",
+        "cat_label": "🌌 Космос / Біологія / Кремній (2K)",
+        "size_mb": 3.29,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "02",
+        "source_label": "♻️ З фонду EP02 (Хуанг / GPU)",
+        "match_reason": "Сила енергетики, спрямована в обчислювальний двигун цивілізації.",
+        "suggested_scenes": [
+          "07"
+        ]
+      },
+      {
+        "file": "DNA_transcription_molecular_model_b083aad3.jpg",
+        "display_name": "DNA transcription molecular model",
+        "rel_path": "05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
+        "web_src": "../../05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/DNA_transcription_molecular_model_b083aad3.jpg",
+        "preview_path": "",
+        "thumb": "assets/vault_thumbs/ep03/e7045db3_DNA_transcription_molecular_model_b083aad3.jpg",
+        "cat": "alphafold",
+        "cat_label": "🧬 AlphaFold & Біологія",
+        "size_mb": 0.1,
+        "ext": "JPG",
+        "is_cross": true,
+        "source_ep": "03",
+        "source_label": "♻️ З фонду EP03 (Хассабіс / Science & AI)",
+        "match_reason": "Медична спадщина батька Ендрю Ина (ранній контакт із клінічною діагностикою).",
+        "suggested_scenes": [
+          "01"
+        ]
       }
     ],
     "audio": [
@@ -7882,13 +16838,17 @@ window.PROJECT_VAULT_INVENTORY = {
       }
     ],
     "summary": {
-      "videos_count": 3,
-      "images_count": 8,
+      "videos_count": 27,
+      "images_count": 18,
       "audio_count": 4,
       "vo_count": 0,
       "suno_count": 4,
       "other_audio_count": 0,
-      "total_mb": 202.45
+      "total_mb": 202.45,
+      "native_videos_count": 3,
+      "cross_videos_count": 24,
+      "native_images_count": 8,
+      "cross_images_count": 10
     }
   }
 };

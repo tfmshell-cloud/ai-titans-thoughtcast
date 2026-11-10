@@ -24,6 +24,12 @@ from triads_data.policy_safety import sanitize_flow_prompt, verify_policy_safe
 from triads_data.ep01_altman_50_triads import EP01_TRIADS
 from triads_data.ep02_huang_50_triads import EP02_TRIADS
 from triads_data.ep04_to_10_triads import EP04_TO_10_TRIADS
+from triads_data.media_cross_curator import (
+    curate_cross_assets_for_inventory,
+    get_display_title_override,
+    is_off_topic,
+    link_cross_candidates_to_triads,
+)
 from build_50_scenes_data_part1 import SCENES_PART1
 from build_50_scenes_data_part2 import SCENES_PART2
 
@@ -66,7 +72,7 @@ def classify_episode(rel_lower):
     m_explicit = re.search(r"(?:^|[^a-z0-9])ep(0[1-9]|10)(?:[^0-9]|$)", rel_lower)
     if m_explicit:
         return m_explicit.group(1)
-    if "user_ai_generations" in rel_lower or "user_ai_images" in rel_lower or "altman" in rel_lower:
+    if "user_ai_generations" in rel_lower or "user_ai_images" in rel_lower or "altman" in rel_lower or "test_typewriter" in rel_lower:
         return "01"
     for ep, _, _, kws, *_ in EP_META:
         if any(k in rel_lower for k in kws):
@@ -271,13 +277,15 @@ def build_vault_inventory():
 
                 if is_vid or is_img:
                     cat, cat_label = classify_media_category(rel_lower, is_vid)
+                    if is_off_topic(rel):
+                        cat, cat_label = "off_topic", "🗄️ Позапроєктний архів"
                     thumb = make_thumbnail(fp, ep, is_vid)
                     if thumb:
                         total_thumbs += 1
                     web_prev = find_existing_web_preview(f.lower())
                     entry = {
                         "file": f,
-                        "display_name": clean_display_name(f),
+                        "display_name": get_display_title_override(rel, clean_display_name(f)),
                         "rel_path": rel,
                         "web_src": "../../" + rel,
                         "preview_path": web_prev,
@@ -286,6 +294,9 @@ def build_vault_inventory():
                         "cat_label": cat_label,
                         "size_mb": sz_mb,
                         "ext": ext.lstrip(".").upper(),
+                        "is_cross": False,
+                        "source_ep": ep,
+                        "source_label": f"⭐ Власний асет EP{ep}",
                     }
                     if is_vid:
                         inventory[ep]["videos"].append(entry)
@@ -315,13 +326,38 @@ def build_vault_inventory():
                         "ext": ext.lstrip(".").upper(),
                     })
 
-    # Sort items inside each episode neatly by category & filename
+    # Cross-curate visually verified reusable assets across ALL 10 heroes (resource efficiency!)
+    native_snapshot = {
+        ep: {"videos": list(inventory[ep]["videos"]), "images": list(inventory[ep]["images"])}
+        for ep in inventory
+    }
+    cross_by_ep, matched_rules = curate_cross_assets_for_inventory(native_snapshot)
+
     for ep in inventory:
-        inventory[ep]["videos"].sort(key=lambda x: (x["cat"], x["file"].lower()))
-        inventory[ep]["images"].sort(key=lambda x: (x["cat"], x["file"].lower()))
+        st = inventory[ep]["summary"]
+        native_v = inventory[ep]["videos"]
+        native_i = inventory[ep]["images"]
+        cross_v = cross_by_ep[ep]["videos"]
+        cross_i = cross_by_ep[ep]["images"]
+
+        native_v.sort(key=lambda x: (x["cat"], x["file"].lower()))
+        native_i.sort(key=lambda x: (x["cat"], x["file"].lower()))
+        cross_v.sort(key=lambda x: (x.get("source_ep", ""), x["cat"], x["file"].lower()))
+        cross_i.sort(key=lambda x: (x.get("source_ep", ""), x["cat"], x["file"].lower()))
+
+        st["native_videos_count"] = len(native_v)
+        st["cross_videos_count"] = len(cross_v)
+        st["videos_count"] = len(native_v) + len(cross_v)
+
+        st["native_images_count"] = len(native_i)
+        st["cross_images_count"] = len(cross_i)
+        st["images_count"] = len(native_i) + len(cross_i)
+
+        inventory[ep]["videos"] = native_v + cross_v
+        inventory[ep]["images"] = native_i + cross_i
         inventory[ep]["audio"].sort(key=lambda x: (x["cat"], x["file"].lower()))
 
-    print(f"[VAULT] Inventory built. Verified/generated {total_thumbs} thumbnails.")
+    print(f"[VAULT] Inventory built. Verified/generated {total_thumbs} thumbnails. Applied {matched_rules} cross-hero visual links.")
     return inventory
 
 
@@ -517,6 +553,7 @@ def main():
             triads = [normalize_rich_triad(ep, it) for it in EP04_TO_10_TRIADS[ep]]
 
         link_existing_media_to_triads(ep, triads, mp.get(ep, {}), vault.get(ep, {}))
+        link_cross_candidates_to_triads(ep, triads, vault.get(ep, {}))
 
         # Verify 100% policy safety on ALL 3 prompts per triad
         for t in triads:
@@ -554,6 +591,7 @@ def main():
                     "keyframe_preview": t["keyframe_preview"],
                     "raw_video_path": t["raw_video_path"],
                     "raw_image_path": t["raw_image_path"],
+                    "cross_candidates": t.get("cross_candidates", []),
                 })
             mp[ep]["flow_queue"] = synced_fq
 

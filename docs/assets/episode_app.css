@@ -1583,6 +1583,110 @@ a { color: inherit; text-decoration: none; }
   color: var(--cyan);
 }
 
+.vault-card.is-cross {
+  border-color: rgba(56, 189, 248, 0.34);
+  background: linear-gradient(180deg, rgba(16, 26, 44, 0.92), var(--surface-elevated));
+}
+
+.vault-origin-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 0.55rem;
+}
+
+.vault-origin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  width: fit-content;
+}
+
+.vault-origin-badge.is-native {
+  background: rgba(16, 185, 129, 0.14);
+  color: var(--emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.vault-origin-badge.is-cross {
+  background: rgba(56, 189, 248, 0.14);
+  color: var(--cyan);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+}
+
+.vault-rationale {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.06);
+  border-left: 2px solid var(--cyan);
+  font-size: 11px;
+  line-height: 1.42;
+  color: #cbd5e1;
+}
+
+.vault-scene-tag {
+  display: inline-block;
+  padding: 1px 5px;
+  margin-left: 3px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 9.8px;
+  background: rgba(245, 158, 11, 0.16);
+  color: var(--amber);
+}
+
+.triad-cross-box {
+  margin-top: 0.6rem;
+  margin-bottom: 0.35rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.triad-cross-head {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--emerald);
+  margin-bottom: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.triad-cross-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.triad-cross-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 7px;
+  border-radius: 7px;
+  background: rgba(11, 15, 23, 0.85);
+  border: 1px solid var(--border);
+  flex: 1 1 280px;
+  min-width: 240px;
+}
+
+.triad-cross-item img {
+  width: 68px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
 /* Standardized 3-Prompt Triad Cards */
 .triad-list {
   display: flex;
