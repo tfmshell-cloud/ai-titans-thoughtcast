@@ -631,9 +631,9 @@ html += f'''
   </section>
 
 </div>
-<script src="data/season1_index.js?v=20261110_v8"></script>
-<script src="data/media_acquisition_pool.js?v=20261110_v8"></script>
-<script src="data/project_vault_inventory.js?v=20261110_v8"></script>
+<script src="data/season1_index.js?v=20261110_v9"></script>
+<script src="data/media_acquisition_pool.js?v=20261110_v9"></script>
+<script src="data/project_vault_inventory.js?v=20261110_v9"></script>
 <script>
 (function () {{
   var season = window.SEASON1_INDEX || [];
@@ -705,12 +705,14 @@ html += f'''
         return !q || (v.display_name + " " + v.file + " " + v.cat_label).toLowerCase().indexOf(q) !== -1;
       }});
       bodyEl.innerHTML = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem;">' + vids.map(function (v) {{
-        var prev = v.preview_path || ("../" + v.rel_path);
+        var prev = v.preview_path || v.thumb || ("../" + v.rel_path);
+        var canPlayVideo = !!v.preview_path || (window.location.protocol === "file:");
+        var playAttr = canPlayVideo ? (' data-play-src="' + esc(v.preview_path || ("../" + v.rel_path)) + '"') : '';
         var thumb = v.thumb || "";
         return '<div class="video-card" style="background:#07090e;">' +
-          '<div data-play-src="' + esc(prev) + '" style="position:relative;aspect-ratio:16/9;background:#020408;cursor:pointer;overflow:hidden;">' +
+          '<div' + playAttr + ' style="position:relative;aspect-ratio:16/9;background:#020408;' + (canPlayVideo ? 'cursor:pointer;' : '') + 'overflow:hidden;">' +
             (thumb ? ('<img src="' + esc(thumb) + '" alt="' + esc(v.display_name) + '" style="width:100%;height:100%;object-fit:cover;">') : '') +
-            '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.28);font-size:28px;">▶️</div>' +
+            '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.28);font-size:28px;">' + (canPlayVideo ? '▶️' : '🎬') + '</div>' +
             '<span style="position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.8);padding:2px 6px;border-radius:4px;font-size:11px;font-family:var(--mono);color:var(--gold);">' + esc(v.res_label || v.ext) + (v.dur_label ? (' • ' + v.dur_label) : '') + '</span>' +
           '</div>' +
           '<div style="padding:0.85rem;">' +

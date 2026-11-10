@@ -26,7 +26,8 @@
 | `SRC_10` | **Big Technology: Why LLMs Won't Reach AGI** | https://www.youtube.com/watch?v=4__gg83s_Do | `transcripts/EP05_TR_11_AlexKantrowitz_Why_LLMs_Wont_Reach_AGI.md` | 3 050 слів — Пряма полеміка проти масштабування LLM на шляху до людського рівня ШІ |
 | `ART_01` | **NYU Academic Profile & LeNet-5 Archive** | http://yann.lecun.com/ & http://yann.lecun.com/exdb/lenet/ | `articles/EP05_ART_01_YannLeCun_NYU_and_LeNet5_Archive.md` | Офіційний академічний профайл NYU та історія LeNet-5 / MNIST (1989–1998) |
 | `ART_02` | **Yann LeCun Structured Biography (2026)** | https://en.wikipedia.org/wiki/Yann_LeCun | `articles/EP05_ART_02_YannLeCun_Wikipedia_Chronicle.md` | Повна хронологія 1960–2026 включно з AMI Labs ($1.03B у березні 2026) |
-| `ART_03` | **I-JEPA & V-JEPA Open-Access Papers** | https://arxiv.org/abs/2301.08243 & https://arxiv.org/abs/2404.08471 | `articles/EP05_ART_03_JEPA_World_Models_arXiv.md` | Наукові релізи архітектури JEPA (примітка: `amturing.acm.org` та `openreview.net` повертають 403 автоматичним клієнтам, замінені відкритими публікаціями NYU / arXiv / ACM Turing Video) |
+| `ART_03` | **I-JEPA & V-JEPA Open-Access Papers** | https://arxiv.org/abs/2301.08243 & https://arxiv.org/abs/2404.08471 | `articles/EP05_ART_03_JEPA_World_Models_arXiv.md` | Наукові релізи архітектури JEPA (I-JEPA 2023 та V-JEPA 2024) |
+| `ART_04` | **ACM A.M. Turing Award 2018 Citation** | https://amturing.acm.org/award_winners/lecun_6017366.cfm | `articles/EP05_ART_04_ACM_Turing_Award_Citation_LeCun.md` | Офіційна цитата Премії Тюрінга 2018 (CNN / Deep Learning) та перелік нагород |
 
 ---
 

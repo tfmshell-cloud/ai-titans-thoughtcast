@@ -1,0 +1,172 @@
+{
+  "episode_id": "EP05",
+  "hero": "Yann LeCun",
+  "hero_ua": "Ян Лекун",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/yann_lecun/",
+  "summary": {
+    "research_docs_count": 18,
+    "transcripts_count": 10,
+    "articles_count": 4,
+    "research_words": 195593,
+    "videos_total": 65,
+    "videos_native": 49,
+    "images_total": 49,
+    "images_native": 36,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 05 — ЯН ЛЕКУН",
+      "rel_path": "01_RESEARCH/yann_lecun/MASTER_DOSSIER_EP05.md",
+      "url": "",
+      "words": 13693
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP05: ЯН ЛЕКУН",
+      "rel_path": "01_RESEARCH/yann_lecun/GLOBAL_MEDIA_ARCHIVES_REGISTRY_YANN_LECUN.md",
+      "url": "https://lexfridman.com/yann-lecun-3-transcript/",
+      "words": 891
+    },
+    {
+      "title": "EP05_TR_01: Lex Fridman Podcast #416 — Yann LeCun (Full Transcript)",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_01_LexFridman_416_Yann_LeCun.md",
+      "url": "https://lexfridman.com/yann-lecun-3-transcript/",
+      "words": 26140
+    },
+    {
+      "title": "Yann LeCun: World Models — Enabling the next AI revolution (ETH Zurich)",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_02_ETH_Zurich_World_Models_JEPA.md",
+      "url": "https://www.youtube.com/watch?v=72Xj8k5WQX4",
+      "words": 11580
+    },
+    {
+      "title": "Geoffrey Hinton & Yann LeCun — 2018 ACM A.M. Turing Award Lecture",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_03_ACM_Turing_Award_2018_Lecture.md",
+      "url": "https://www.youtube.com/watch?v=VsnQf7exv5I",
+      "words": 17738
+    },
+    {
+      "title": "Yann LeCun: Turing Award Lecture Sequel — The Deep Learning Revolution",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_04_Turing_Sequel_Deep_Learning_Revolution.md",
+      "url": "https://www.youtube.com/watch?v=psl1wY2V-L0",
+      "words": 7824
+    },
+    {
+      "title": "Lex Fridman #258: Yann LeCun — Dark Matter of Intelligence & SSL",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_05_LexFridman_258_Dark_Matter_SSL.md",
+      "url": "https://www.youtube.com/watch?v=SGzMElJ11Cc",
+      "words": 34829
+    },
+    {
+      "title": "Lex Fridman #36: Yann LeCun — Deep Learning, ConvNets & Bell Labs",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_06_LexFridman_036_ConvNets_Early_Days.md",
+      "url": "https://www.youtube.com/watch?v=SGSOCuByo24",
+      "words": 14828
+    },
+    {
+      "title": "Nokia Bell Labs Keynote: Yann LeCun — Predictive Learning",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_07_Nokia_Bell_Labs_Predictive_Learning.md",
+      "url": "https://www.youtube.com/watch?v=zaoL0LUctK4",
+      "words": 22824
+    },
+    {
+      "title": "AI House Davos 2026: Yann LeCun — Embodied AI & World Models",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_08_AI_House_Davos_2026_Embodied_AI.md",
+      "url": "https://www.youtube.com/watch?v=pJyoqapCRZE",
+      "words": 12300
+    },
+    {
+      "title": "Unsupervised Learning: Yann LeCun on What Comes After LLMs",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_10_Unsupervised_Learning_After_LLMs.md",
+      "url": "https://www.youtube.com/watch?v=ngBraLDqzdI",
+      "words": 17666
+    },
+    {
+      "title": "Alex Kantrowitz Big Technology: Yann LeCun — We Won't Reach AGI By Scaling LLMs",
+      "rel_path": "01_RESEARCH/yann_lecun/transcripts/EP05_TR_11_AlexKantrowitz_Why_LLMs_Wont_Reach_AGI.md",
+      "url": "https://www.youtube.com/watch?v=4__gg83s_Do",
+      "words": 3050
+    },
+    {
+      "title": "EP05_ART_01: Yann LeCun Official Academic Page & LeNet Archive (NYU / Bell Labs)",
+      "rel_path": "01_RESEARCH/yann_lecun/articles/EP05_ART_01_YannLeCun_NYU_and_LeNet5_Archive.md",
+      "url": "http://yann.lecun.com/`",
+      "words": 6505
+    },
+    {
+      "title": "EP05_ART_02: Yann LeCun — Structured Biographical Chronicle (Wikipedia Extract)",
+      "rel_path": "01_RESEARCH/yann_lecun/articles/EP05_ART_02_YannLeCun_Wikipedia_Chronicle.md",
+      "url": "https://en.wikipedia.org/wiki/Yann_LeCun",
+      "words": 1266
+    },
+    {
+      "title": "EP05_ART_03: JEPA & World Models Open-Access Research Papers (I-JEPA & V-JEPA)",
+      "rel_path": "01_RESEARCH/yann_lecun/articles/EP05_ART_03_JEPA_World_Models_arXiv.md",
+      "url": "https://arxiv.org/abs/2301.08243",
+      "words": 1473
+    },
+    {
+      "title": "EP05_ART_04: ACM A.M. Turing Award (2018) Citation & Honours — Yann LeCun",
+      "rel_path": "01_RESEARCH/yann_lecun/articles/EP05_ART_04_ACM_Turing_Award_Citation_LeCun.md",
+      "url": "https://amturing.acm.org/award_winners/lecun_6017366.cfm",
+      "words": 552
+    },
+    {
+      "title": "Епізод 05 — Ян Лекун: Єретик світла та світових моделей",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 05 — Ян Лекун: Єретик світла та світових моделей.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 05 — ЯН ЛЕКУН",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Яна_Лекуна.md",
+      "url": "",
+      "words": 2434
+    }
+  ],
+  "archival_clips": [
+    "EP05_VID_ARCH_01_ACT2_24FPS_LeCun_BellLabs_1989_Digits.mp4",
+    "EP05_VID_ARCH_02_ACT1_24FPS_LeCun_Chomsky_Piaget_Debate_ETH.mp4",
+    "EP05_VID_ARCH_03_ACT1_24FPS_Hinton_LeCun_Minsky_Perceptrons_Turing.mp4",
+    "EP05_VID_ARCH_04_ACT2_24FPS_LeCun_1989_ConvNet_Restored.mp4",
+    "EP05_VID_ARCH_05_ACT2_24FPS_LeCun_Young_Bell_Labs_Holmdel_Photo.mp4",
+    "EP05_VID_ARCH_06_ACT2_24FPS_LeCun_Hubel_Wiesel_Visual_Cortex.mp4",
+    "EP05_VID_ARCH_07_ACT2_24FPS_LeCun_20_Percent_US_Checks_Turing.mp4",
+    "EP05_VID_ARCH_08_ACT2_24FPS_LeCun_Neural_Net_Winter_SVM_Sequel.mp4",
+    "EP05_VID_ARCH_09_ACT2_24FPS_LeCun_Bell_Labs_DSP_Compiler_Lex36.mp4",
+    "EP05_VID_ARCH_10_ACT3_24FPS_LeCun_FAIR_PyTorch_Open_Source_Lex258.mp4",
+    "EP05_VID_ARCH_11_ACT3_24FPS_LeCun_Gutenberg_Printing_Press_Lex258.mp4",
+    "EP05_VID_ARCH_12_ACT3_24FPS_LeCun_House_Cat_Common_Sense_Lex258.mp4",
+    "EP05_VID_ARCH_13_ACT3_24FPS_LeCun_No_AGI_By_Scaling_LLMs.mp4",
+    "EP05_VID_ARCH_14_ACT4_24FPS_LeCun_JEPA_Architecture_ETH_Zurich.mp4",
+    "EP05_VID_ARCH_15_ACT4_24FPS_LeCun_Baby_3D_Intuitive_Physics_ETH.mp4",
+    "EP05_VID_ARCH_16_ACT4_24FPS_LeCun_Davos_2026_Embodied_AI.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_01_Paris_1977_Opera_Youth_Era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_02_Tektronix_475A_Oscilloscope_1977.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_03_MOS_6502_Microprocessor_Die.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_04_ESIEE_Paris_Engineering_School.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_05_Sorbonne_Paris_PhD_Campus.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_06_Marvin_Minsky_Perceptrons_Rival.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_07_Bell_Labs_Holmdel_Aerial_1987.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_08_Bell_Labs_Holmdel_Mirror_Building.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_09_Courant_Institute_NYU_Weaver_Hall.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_10_Yann_LeCun_Minnesota_CNN_Lecture.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_11_Meta_Menlo_Park_HQ_One_Hacker_Way.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_12_Yann_LeCun_Data_Science_Keynote.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_13_Yann_LeCun_Turing_2018_Portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_14_Gutenberg_Printing_Press_Mainz.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_15_Cat_Physics_Animal_Locomotion.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_16_Yann_LeCun_IP_Paris_2025_Portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_17_Yann_LeCun_Brussels_EU_Summit_2026.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_lecun/EP05_IMG_ARCH_18_Sailing_Close_Hauled_Badewind.jpg"
+  ]
+}

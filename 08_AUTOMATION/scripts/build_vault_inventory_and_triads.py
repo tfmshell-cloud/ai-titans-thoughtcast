@@ -153,21 +153,66 @@ def clean_display_name(fname):
     return cleaned[:92] if cleaned else stem
 
 
-def find_existing_web_preview(fname_lower):
+def build_pool_preview_lookup():
+    """Map raw disk relative paths -> lightweight web previews from media_acquisition_pool.js."""
+    lookup = {}
+    mp_path = os.path.join(DASH_DIR, "data", "media_acquisition_pool.js")
+    if not os.path.exists(mp_path):
+        return lookup
+    try:
+        raw = open(mp_path, encoding="utf-8").read()
+        mp = json.loads(raw[len("window.MEDIA_ACQUISITION_POOL = "):].rstrip(";\n "))
+    except Exception:
+        return lookup
+
+    def reg(raw_p, prev_p):
+        if raw_p and prev_p and os.path.exists(os.path.join(DASH_DIR, prev_p)):
+            lookup[raw_p.lower()] = prev_p
+            lookup[os.path.basename(raw_p).lower()] = prev_p
+
+    for ep_data in mp.values():
+        if not isinstance(ep_data, dict):
+            continue
+        for ph in ep_data.get("archival_photos", []):
+            reg(ph.get("raw_file", ""), ph.get("web_preview", ""))
+        for d in ep_data.get("dossiers", []):
+            reg(d.get("raw_4k_png", ""), d.get("web_preview", ""))
+        for g in ep_data.get("flow_gallery", []):
+            reg(g.get("raw_path", ""), g.get("web_preview", ""))
+        for sc in ep_data.get("scientific_vfx", []):
+            reg(sc.get("raw_path", ""), sc.get("web_preview", ""))
+        for ar in ep_data.get("archives", []):
+            fn = ar.get("file", "")
+            vp = ar.get("video_preview", "")
+            if fn and vp:
+                reg(f"05_RAW_FOOTAGE/archives/{fn}", vp)
+    return lookup
+
+
+def find_existing_web_preview(fname_lower, rel_lower="", pool_prev_map=None):
     """Map disk asset to lightweight preview inside 07_DASHBOARD/assets if present."""
+    if pool_prev_map:
+        if rel_lower and rel_lower in pool_prev_map:
+            return pool_prev_map[rel_lower]
+        if fname_lower in pool_prev_map:
+            return pool_prev_map[fname_lower]
+
     candidates = [
         ("video_previews/flow", [".mp4"]),
         ("video_previews/archives", [".mp4"]),
-        ("video_previews/scientific_vfx", [".mp4"]),
+        ("video_previews/science", [".mp4"]),
         ("video_previews/dossiers", [".mp4"]),
+        ("video_previews/cards", [".mp4"]),
         ("archival_photos", [".jpg", ".jpeg", ".png"]),
         ("dossiers_preview", [".jpg", ".jpeg", ".png"]),
+        ("cards_preview", [".jpg", ".jpeg", ".png"]),
         ("flow_keyframes", [".jpg", ".png"]),
         ("dossiers", [".png", ".jpg"]),
         ("speaker_photos", [".jpg", ".png"]),
     ]
     stem = os.path.splitext(fname_lower)[0]
     m_doc = re.match(r"^(ep\d+_doc_\d+)", stem)
+    m_sci = re.match(r"^(ep\d+_sci_\d+)", stem)
     for sub, exts in candidates:
         folder = os.path.join(DASH_DIR, "assets", sub)
         if not os.path.isdir(folder):
@@ -177,6 +222,8 @@ def find_existing_web_preview(fname_lower):
             if fl == fname_lower or os.path.splitext(fl)[0] == stem:
                 return f"assets/{sub}/{f}"
             if m_doc and sub in ("video_previews/dossiers", "dossiers_preview") and fl.startswith(m_doc.group(1)):
+                return f"assets/{sub}/{f}"
+            if m_sci and sub == "video_previews/science" and fl.startswith(m_sci.group(1)):
                 return f"assets/{sub}/{f}"
     return ""
 
@@ -435,6 +482,7 @@ def build_vault_inventory():
     inventory = {}
     hidden_non_project = []
     tech_cache = load_tech_cache()
+    pool_prev_map = build_pool_preview_lookup()
     for ep, name_ua, name_en, _, primary_dir, vo_dir in EP_META:
         r_docs = collect_research_docs_for_ep(ep, name_ua)
         inventory[ep] = {
@@ -506,7 +554,7 @@ def build_vault_inventory():
                     thumb = make_thumbnail(fp, ep, is_vid)
                     if thumb:
                         total_thumbs += 1
-                    web_prev = find_existing_web_preview(f.lower())
+                    web_prev = find_existing_web_preview(f.lower(), rel_lower, pool_prev_map)
                     tech = probe_media_tech(fp, rel, is_vid, tech_cache)
                     entry = {
                         "file": f,
@@ -974,14 +1022,57 @@ def main():
         shutil.rmtree(DOCS_THUMBS_DIR)
     shutil.copytree(THUMBS_DIR, DOCS_THUMBS_DIR)
 
-    # Summary print
+    # Summary print + 08_METADATA manifests (EP01..EP06)
     print("\n=== SUMMARY ACROSS ALL 10 EPISODES ===")
-    for ep, name_ua, *_ in EP_META:
+    meta_dirs = {
+        "01": "EP01_SAM_ALTMAN",
+        "02": "EP02_JENSEN_HUANG",
+        "03": "EP03_DEMIS_HASSABIS",
+        "04": "EP04_GEOFFREY_HINTON",
+        "05": "EP05_YANN_LECUN",
+        "06": "EP06_ILYA_SUTSKEVER",
+    }
+    for ep, name_ua, name_en, *_ in EP_META:
         s = vault[ep]["summary"]
         tr = triads_pool[ep]
         rdy_v = sum(1 for t in tr if t["status"] == "video_ready")
         rdy_i = sum(1 for t in tr if t["status"] == "image_ready")
         print(f"EP{ep} ({name_ua:15s}): {s['videos_count']:3d} vid | {s['images_count']:3d} img | {s['audio_count']:2d} aud | {len(tr):2d} Flow Triads (✅vid:{rdy_v}, 🖼️img:{rdy_i})")
+        if ep in meta_dirs:
+            mdir = os.path.join(ROOT, "08_METADATA", meta_dirs[ep])
+            os.makedirs(mdir, exist_ok=True)
+            mp_ep = mp.get(ep, {})
+            manifest = {
+                "episode_id": f"EP{ep}",
+                "hero": name_en,
+                "hero_ua": name_ua,
+                "bpm": 92,
+                "status": "ASSETS_INGESTED_AND_SYNCED",
+                "updated_at": datetime.now().strftime("%Y-%m-%d"),
+                "research_directory": f"01_RESEARCH/{EP_RESEARCH_DIRS.get(ep, '')}/",
+                "summary": {
+                    "research_docs_count": s.get("research_docs_count", 0),
+                    "transcripts_count": s.get("transcripts_count", 0),
+                    "articles_count": s.get("articles_count", 0),
+                    "research_words": s.get("research_words", 0),
+                    "videos_total": s.get("videos_count", 0),
+                    "videos_native": s.get("native_videos_count", 0),
+                    "images_total": s.get("images_count", 0),
+                    "images_native": s.get("native_images_count", 0),
+                    "archival_videos": len(mp_ep.get("archives", [])),
+                    "archival_photos": len(mp_ep.get("archival_photos", [])),
+                    "dossiers_4k": len(mp_ep.get("dossiers", [])),
+                    "flow_triads": len(tr),
+                    "audio_stems": len(mp_ep.get("audio", [])),
+                },
+                "research_sources": [
+                    {"title": d["title"], "rel_path": d["rel_path"], "url": d["source_url"], "words": d["word_count"]}
+                    for d in vault[ep].get("research_docs", [])
+                ],
+                "archival_clips": [a.get("file") for a in mp_ep.get("archives", [])],
+                "archival_photos": [p.get("raw_file") for p in mp_ep.get("archival_photos", [])],
+            }
+            open(os.path.join(mdir, "manifest.json"), "w", encoding="utf-8").write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,153 @@
+{
+  "episode_id": "EP02",
+  "hero": "Jensen Huang",
+  "hero_ua": "Дженсен Хуанг",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/jensen_huang/",
+  "summary": {
+    "research_docs_count": 14,
+    "transcripts_count": 10,
+    "articles_count": 0,
+    "research_words": 78325,
+    "videos_total": 75,
+    "videos_native": 52,
+    "images_total": 60,
+    "images_native": 40,
+    "archival_videos": 20,
+    "archival_photos": 19,
+    "dossiers_4k": 6,
+    "flow_triads": 50,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 02 — ДЖЕНСЕН ХУАНГ",
+      "rel_path": "01_RESEARCH/jensen_huang/MASTER_DOSSIER_EP02.md",
+      "url": "",
+      "words": 13287
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ФАКТЧЕК-БАЗА: ДЖЕНСЕН ХУАНГ (JENSEN HUANG)",
+      "rel_path": "01_RESEARCH/jensen_huang/GLOBAL_MEDIA_ARCHIVES_REGISTRY_JENSEN_HUANG.md",
+      "url": "",
+      "words": 539
+    },
+    {
+      "title": "Computer History Museum — Oral History of Jensen Huang (2025)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_01_CHM_Oral_History_Jensen_Huang.md",
+      "url": "https://www.youtube.com/watch?v=0c8i4T9BSqY",
+      "words": 11458
+    },
+    {
+      "title": "Acquired Podcast — NVIDIA CEO Jensen Huang (2023)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_02_Acquired_Podcast_Jensen_Huang.md",
+      "url": "https://www.youtube.com/watch?v=y6NfxiemvHg",
+      "words": 16766
+    },
+    {
+      "title": "Stanford GSB — Jensen Huang View From The Top (2024)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_03_Stanford_GSB_View_From_The_Top.md",
+      "url": "https://www.youtube.com/watch?v=lXLBTBBil2U",
+      "words": 9908
+    },
+    {
+      "title": "Stripe Sessions 2024 — Conversation with Jensen Huang",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_04_Stripe_Sessions_Conversation.md",
+      "url": "https://www.youtube.com/watch?v=8Pfa8kPjUio",
+      "words": 9528
+    },
+    {
+      "title": "Stanford SIEPR Economic Summit Keynote (2024)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_05_Stanford_SIEPR_Economic_Summit.md",
+      "url": "https://www.youtube.com/watch?v=cEg8cOx7UZk",
+      "words": 9143
+    },
+    {
+      "title": "National Taiwan University Commencement Speech (2023)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_06_NTU_Commencement_2023_Run_Dont_Walk.md",
+      "url": "https://www.youtube.com/watch?v=TOXp-Yk_Gsk",
+      "words": 1828
+    },
+    {
+      "title": "CBS 60 Minutes — Nvidia CEO Jensen Huang (2024)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_07_CBS_60_Minutes_Dennys_Profile.md",
+      "url": "https://www.youtube.com/watch?v=DpQQi2scsHo",
+      "words": 1890
+    },
+    {
+      "title": "Entrepreneurship.org — Jensen Huang: First Six Months of NVIDIA (2013)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_08_Entrepreneurship_First_Six_Months_2013.md",
+      "url": "https://www.youtube.com/watch?v=yU3GUHDf0mk",
+      "words": 1045
+    },
+    {
+      "title": "Oregon State University Commencement — Jen-Hsun Huang (2009)",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_09_Oregon_State_Commencement_2009.md",
+      "url": "https://www.youtube.com/watch?v=lMW5v7wK7zo",
+      "words": 1029
+    },
+    {
+      "title": "NVIDIA GTC 2016 — DGX-1 World's First Deep Learning Supercomputer",
+      "rel_path": "01_RESEARCH/jensen_huang/transcripts/EP02_TR_10_NVIDIA_GTC_2016_DGX1_Keynote.md",
+      "url": "https://www.youtube.com/watch?v=1ayGJDO6PKU",
+      "words": 843
+    },
+    {
+      "title": "Епізод 02 — Дженсен Хуанг: Алхімія страждання та кремнію",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 02 — Дженсен Хуанг: Алхімія страждання та кремнію.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 02 — ДЖЕНСЕН ХУАНГ",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Дженсена_Хуанга.md",
+      "url": "",
+      "words": 1061
+    }
+  ],
+  "archival_clips": [
+    "EP02_VID_ARCH_01_ACT3_24FPS_Huang_GTC_Stage_Walk.mp4",
+    "EP02_VID_ARCH_02_ACT3_24FPS_Huang_Blackwell_Wafer_Reveal.mp4",
+    "EP02_VID_ARCH_03_ACT1_24FPS_Huang_Oneida_Bathrooms_Age9.mp4",
+    "EP02_VID_ARCH_04_ACT1_24FPS_Huang_Dennys_Dishwasher_NoTaskBeneath.mp4",
+    "EP02_VID_ARCH_05_ACT1_24FPS_Huang_Dennys_Booth_Founding_60Min.mp4",
+    "EP02_VID_ARCH_06_ACT1_24FPS_Huang_Dennys_Booth_Inside_60Min.mp4",
+    "EP02_VID_ARCH_07_ACT2_24FPS_Huang_2009_OSU_We_Failed.mp4",
+    "EP02_VID_ARCH_08_ACT2_24FPS_Huang_Sega_Lifeline_NTU2023.mp4",
+    "EP02_VID_ARCH_09_ACT2_24FPS_Huang_Invented_CUDA_Stripe2024.mp4",
+    "EP02_VID_ARCH_10_ACT3_24FPS_Huang_GTC2016_DGX1_Reveal.mp4",
+    "EP02_VID_ARCH_11_ACT4_24FPS_Huang_Stanford_Pain_And_Suffering.mp4",
+    "EP02_VID_ARCH_12_ACT4_24FPS_Huang_NTU2023_Run_Dont_Walk.mp4",
+    "EP02_VID_ARCH_13_ACT4_24FPS_NVIDIA_Endeavor_Aerial_Pressroom.mp4",
+    "EP02_VID_ARCH_14_ACT4_24FPS_Huang_Stage_BlackVoid_Pressroom.mp4",
+    "EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4",
+    "EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4",
+    "EP02_VID_ARCH_17_ACT1_24FPS_Huang_CHM_Oneida_Kentucky.mp4",
+    "EP02_VID_ARCH_18_ACT2_24FPS_Huang_CHM_Sega_Generosity.mp4",
+    "EP02_VID_ARCH_19_ACT3_24FPS_Huang_Acquired_DGX_Scale.mp4",
+    "EP02_VID_ARCH_20_ACT2_24FPS_Huang_2013_No_Business_Plan.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_01_Taiwan_Tamsui_1970_Childhood_Era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_02_Oneida_Kentucky_Dorm_Farm_Campus.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_03_Aloha_High_School_Oregon_1981.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_04_Oregon_State_University_Campus_1984.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_05_Dennys_2484_Berryessa_San_Jose_1993.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_06_NVIDIA_NV1_500nm_Silicon_Die_1995.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_07_NVIDIA_RIVA_128_Chip_1997.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_08_Morris_Chang_TSMC_Founder.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_09_NVIDIA_GeForce_256_Worlds_First_GPU_1999.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_10B_EVGA_GeForce_GTX_580_Card_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_10_EVGA_GeForce_GTX_580_AlexNet_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_11_JenHsun_Huang_Engineering_Center_Stanford.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_12_Huang_Early_Leather_Jacket_2014_Portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_13_Jensen_Huang_GTC_Keynote_2016.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_14_NVIDIA_DGX_Supercomputer_Front.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_15_NVIDIA_DGX_B200_HGX_System.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_16_NVIDIA_Endeavor_HQ_Santa_Clara.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_16B_NVIDIA_Endeavor_Grand_Opening_Lobby.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_huang/EP02_IMG_ARCH_17_Jensen_Huang_Stanford_Keynote_Portrait.jpg"
+  ]
+}

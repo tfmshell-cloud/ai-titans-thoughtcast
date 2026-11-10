@@ -1,0 +1,166 @@
+{
+  "episode_id": "EP04",
+  "hero": "Geoffrey Hinton",
+  "hero_ua": "Джеффрі Хінтон",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/geoffrey_hinton/",
+  "summary": {
+    "research_docs_count": 17,
+    "transcripts_count": 10,
+    "articles_count": 3,
+    "research_words": 136661,
+    "videos_total": 62,
+    "videos_native": 49,
+    "images_total": 54,
+    "images_native": 39,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 04 — ДЖЕФФРІ ХІНТОН",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/MASTER_DOSSIER_EP04.md",
+      "url": "",
+      "words": 13492
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP04: ДЖЕФФРІ ХІНТОН",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/GLOBAL_MEDIA_ARCHIVES_REGISTRY_GEOFFREY_HINTON.md",
+      "url": "https://www.youtube.com/watch?v=XDE9DjpcSdI",
+      "words": 801
+    },
+    {
+      "title": "Nobel Prize Lecture: Geoffrey Hinton (Physics 2024 — Boltzmann Machines)",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_01_Nobel_Lecture_Physics_2024_Hinton.md",
+      "url": "https://www.youtube.com/watch?v=XDE9DjpcSdI",
+      "words": 11829
+    },
+    {
+      "title": "CBS 60 Minutes Archive: Geoffrey Hinton — The Godfather of AI",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_02_CBS_60_Minutes_Hinton_Archive.md",
+      "url": "https://www.youtube.com/watch?v=QH6QqjIwv68",
+      "words": 4483
+    },
+    {
+      "title": "Nobel Prize in Physics 2024: Geoffrey Hinton Banquet Speech",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_03_Nobel_Banquet_Speech_2024.md",
+      "url": "https://www.youtube.com/watch?v=-f5WQAk3dYo",
+      "words": 709
+    },
+    {
+      "title": "Nobel Prize Official Interview: Geoffrey Hinton (Stockholm 2024)",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_04_Nobel_Official_Interview_2024.md",
+      "url": "https://www.youtube.com/watch?v=66WiF8fXL0k",
+      "words": 7154
+    },
+    {
+      "title": "Nobel Prize 2024 First Reactions Telephone Interview: Geoffrey Hinton",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_05_Nobel_First_Reactions_Call.md",
+      "url": "https://www.youtube.com/watch?v=-icD_KmvnnM",
+      "words": 2485
+    },
+    {
+      "title": "University of Toronto Press Conference: Geoffrey Hinton Nobel Prize",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_06_UofT_Nobel_Press_Conference_2024.md",
+      "url": "https://www.youtube.com/watch?v=H7DgMFqrON0",
+      "words": 10147
+    },
+    {
+      "title": "ACM A.M. Turing Award 2018: Bengio, LeCun & Hinton",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_07_ACM_Turing_Award_2018_Fathers.md",
+      "url": "https://www.youtube.com/watch?v=HzilDIhWhrE",
+      "words": 2067
+    },
+    {
+      "title": "ACM Turing Award Lecture 2018: Hinton & LeCun",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_08_ACM_Turing_Lecture_DeepLearning.md",
+      "url": "https://www.youtube.com/watch?v=VsnQf7exv5I",
+      "words": 35826
+    },
+    {
+      "title": "BBC News 2023: Geoffrey Hinton Quits Google Over AI Dangers",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_09_BBC_News_Quits_Google_2023.md",
+      "url": "https://www.youtube.com/watch?v=DsBGaHywRhs",
+      "words": 2404
+    },
+    {
+      "title": "The Diary Of A CEO: Geoffrey Hinton Full Biographical Interview",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/transcripts/EP04_TR_10_Diary_Of_A_CEO_Biography_Full.md",
+      "url": "https://www.youtube.com/watch?v=giT0ytynSqg",
+      "words": 38132
+    },
+    {
+      "title": "NobelPrize.org — Official Interview Transcript with Geoffrey Hinton (Physics 2024)",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/articles/EP04_ART_01_NobelPrize_Interview_Transcript_2024.md",
+      "url": "https://www.nobelprize.org/prizes/physics/2024/hinton/1925103-interview-transcript/",
+      "words": 3316
+    },
+    {
+      "title": "U of T News — Geoffrey Hinton delivers Nobel lecture alongside co-laureate & AlexNet history",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/articles/EP04_ART_02_UofT_Nobel_Lecture_AlexNet_History.md",
+      "url": "https://web.cs.toronto.edu/news-events/news/u-of-ts-geoffrey-hinton-delivers-nobel-lecture-alongside-co-laureate",
+      "words": 1086
+    },
+    {
+      "title": "NobelPrize.org — Geoffrey Hinton Facts & Scientific Background (Physics 2024)",
+      "rel_path": "01_RESEARCH/geoffrey_hinton/articles/EP04_ART_03_NobelPrize_Physics_2024_Facts.md",
+      "url": "https://www.nobelprize.org/prizes/physics/2024/hinton/facts/",
+      "words": 282
+    },
+    {
+      "title": "Епізод 04 — Джеффрі Хінтон: Прометей синапсів і тінь предків",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 04 — Джеффрі Хінтон: Прометей синапсів і тінь предків.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 04 — ДЖЕФФРІ ХІНТОН",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Джеффрі_Хінтона.md",
+      "url": "",
+      "words": 2448
+    }
+  ],
+  "archival_clips": [
+    "EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024.mp4",
+    "EP04_VID_ARCH_02_ACT1_24FPS_Hinton_Ancestry_Boole_Everest.mp4",
+    "EP04_VID_ARCH_03_ACT1_24FPS_Hinton_Joan_Los_Alamos_Cousin.mp4",
+    "EP04_VID_ARCH_04_ACT2_24FPS_Hinton_Second_AI_Winter_Turing.mp4",
+    "EP04_VID_ARCH_05_ACT2_24FPS_Hinton_Boltzmann_Machine_Nobel_Lecture.mp4",
+    "EP04_VID_ARCH_06_ACT2_24FPS_Hinton_Backpropagation_Nobel_Lecture.mp4",
+    "EP04_VID_ARCH_07_ACT2_24FPS_Hinton_Sejnowski_1980s_Neuroscience.mp4",
+    "EP04_VID_ARCH_08_ACT3_24FPS_Hinton_Two_Students_GPUs_Turing.mp4",
+    "EP04_VID_ARCH_09_ACT3_24FPS_Hinton_AlexNet_DNNresearch_Auction.mp4",
+    "EP04_VID_ARCH_10_ACT3_24FPS_Hinton_Turing_2018_Three_Fathers.mp4",
+    "EP04_VID_ARCH_11_ACT3_24FPS_Hinton_Leaving_Google_Speak_Freely.mp4",
+    "EP04_VID_ARCH_12_ACT3_24FPS_Hinton_BBC_Regret_Warning_2023.mp4",
+    "EP04_VID_ARCH_13_ACT3_24FPS_Hinton_Digital_Weights_Trillions_Bits.mp4",
+    "EP04_VID_ARCH_14_ACT3_24FPS_Hinton_60Minutes_Species_Control.mp4",
+    "EP04_VID_ARCH_15_ACT4_24FPS_Hinton_UofT_Students_Nobel_Presser.mp4",
+    "EP04_VID_ARCH_16_ACT4_24FPS_Hinton_Banquet_Existential_Threat.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_01_George_Boole_Logician_Ancestor.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_02_Mount_Everest_Peak_Survey_Lineage.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_03_Kings_College_Cambridge_Front_Court.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_04_London_Carpentry_Hand_Plane_Oak.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_05_University_of_Edinburgh_Informatics_Forum.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_06_CMU_Hamerschlag_Hall_Pittsburgh.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_07_University_of_Toronto_Sandford_Fleming.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_08_University_of_Toronto_Bahen_Centre.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_09_University_of_Toronto_Convocation_Hall.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_10_Geoffrey_Hinton_Toronto_Tech_Stage.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_11_Lake_Tahoe_DNNresearch_Auction_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_12_Three_Godfathers_Deep_Learning_Turing_2018.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_13_AI_Benchmarks_1998_2024_Exponential.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_14_Geoffrey_Hinton_Collision_2023_Stage.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_15_Geoffrey_Hinton_Collision_2024_Toronto.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_16_Hinton_Nobel_Physics_Lectures_2024_Stockholm.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_17_Hopfield_Hinton_2024_Nobel_Laureates.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_18_Hinton_2024_Nobel_Prize_Conference.jpg"
+  ]
+}

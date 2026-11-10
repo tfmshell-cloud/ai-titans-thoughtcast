@@ -292,6 +292,47 @@ def main():
         for (pid, code, title, src, url, raw_fn, web_fn, desc) in ARCHIVAL_PHOTOS_EP05
     ]
 
+    ua_card_files = sorted((ROOT / "05_RAW_FOOTAGE" / "dossiers_press" / "ukrainian_quote_cards").glob("EP05_UA_CARD_*.png"))
+    native_flow_ep05 = [
+        ("CONV #01", "FLOW 2K • Школа Електроніки", "01:40–02:20", "Діодний мозок і мідні доріжки сигналу",
+         "1920×1080 2K", "chip-cyan", "assets/flow_keyframes/ep05_flow_img_01_nerve_laser_b.jpg",
+         "05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP05_FLOW_IMG_01_Biological_Synapse_Vs_Digital_Laser_2K.jpg"),
+        ("NAVIGATOR #02", "FLOW 2K • Океан & Світові Моделі", "17:00–18:30", "Кібернетичний штурман крізь шторм даних",
+         "1920×1080 2K", "chip-amber", "assets/flow_keyframes/ep05_flow_img_02_cybernetic_ship_navigator.jpg",
+         "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_02_Cybernetic_Torso_Conducting_Ship_2K.jpg"),
+        ("JEPA #03", "FLOW 2K • Сенсорне сприйняття світу", "15:10–16:40", "Блакитний лазер крізь живу структуру листка",
+         "1920×1080 2K", "chip-purple", "assets/flow_keyframes/ep05_flow_img_03_cyan_laser_leaf.jpg",
+         "05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP05_FLOW_IMG_03_Cyan_Laser_Pulsing_Through_Leaf_2K.jpg"),
+    ]
+    gallery_ep05 = [
+        {
+            "code": code,
+            "badge": badge,
+            "tc": tc,
+            "title": title,
+            "dims": dims,
+            "chip": chip,
+            "web_preview": prev,
+            "raw_path": rawp,
+        }
+        for (code, badge, tc, title, dims, chip, prev, rawp) in native_flow_ep05
+        if (ROOT / rawp).exists() and (ROOT / "07_DASHBOARD" / prev).exists()
+    ]
+    for idx_c, card_p in enumerate(ua_card_files, 1):
+        prev_rel = f"assets/cards_preview/{card_p.stem.lower()}.jpg"
+        if (ROOT / "07_DASHBOARD" / prev_rel).exists():
+            gallery_ep05.append({
+                "code": f"UA CARD #{idx_c:02d}",
+                "badge": "🇺🇦 4K Цитат-Картка",
+                "tc": f"Акт {(idx_c - 1) // 2 + 1}",
+                "title": card_p.stem.replace("EP05_UA_CARD_", "Картка ").replace("_", " "),
+                "dims": "3840×2160 4K",
+                "chip": "chip-emerald",
+                "web_preview": prev_rel,
+                "raw_path": f"05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/{card_p.name}",
+            })
+    ep05["flow_gallery"] = gallery_ep05
+
     MP_PATH.write_text(prefix + json.dumps(mp, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
 
     ua_cards = sorted(p.name for p in (ROOT / "05_RAW_FOOTAGE" / "dossiers_press" / "ukrainian_quote_cards").glob("EP05_*.png"))

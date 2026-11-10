@@ -1,0 +1,80 @@
+{
+  "episode_id": "EP01",
+  "hero": "Sam Altman",
+  "hero_ua": "Сем Альтман",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/sam_altman/",
+  "summary": {
+    "research_docs_count": 5,
+    "transcripts_count": 0,
+    "articles_count": 0,
+    "research_words": 17711,
+    "videos_total": 174,
+    "videos_native": 174,
+    "images_total": 143,
+    "images_native": 141,
+    "archival_videos": 8,
+    "archival_photos": 12,
+    "dossiers_4k": 7,
+    "flow_triads": 50,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 01 — СЕМ АЛЬТМАН",
+      "rel_path": "01_RESEARCH/sam_altman/MASTER_DOSSIER_EP01.md",
+      "url": "",
+      "words": 15348
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ФАКТЧЕК-БАЗА: СЕМ АЛЬТМАН (SAM ALTMAN)",
+      "rel_path": "01_RESEARCH/sam_altman/GLOBAL_MEDIA_ARCHIVES_REGISTRY_SAM_ALTMAN.md",
+      "url": "",
+      "words": 1213
+    },
+    {
+      "title": "setup EP01",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/setup_EP01.sh",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "Епізод 01 — Сем Альтман: Анатомія експоненти",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 01 — Сем Альтман: Анатомія експоненти.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 01 — СЕМ АЛЬТМАН",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Сема_Альтмана.md",
+      "url": "",
+      "words": 1150
+    }
+  ],
+  "archival_clips": [
+    "EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4",
+    "EP01_VID_ARCH_02_ACT3_24FPS_Altman_Senate_Regulation_Statement.mp4",
+    "EP01_VID_ARCH_03_ACT3_24FPS_Senate_Hearing_Opening_Gavel.mp4",
+    "EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4",
+    "EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4",
+    "EP01_VID_ARCH_06_ACT1_24FPS_Altman_2009_Loopt_Era_Portrait.mp4",
+    "EP01_VID_ARCH_07_ACT3_24FPS_Altman_DevDay_2023_Keynote.mp4",
+    "EP01_VID_ARCH_08_ACT4_24FPS_Altman_Helion_Fusion_Polaris.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_02_Altman_Ilya_Sutskever_TAU_2023.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_04_Altman_Stanford_2014_YC_President.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/EP01_PHOTO_01_Sam_Altman_Archival_Portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_08_Altman_TechCrunch_Disrupt_2014_YC_President.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_09_Altman_TechCrunch_Disrupt_2019_OpenAI_CEO.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_10_Altman_TED_Vancouver_2023_GPT4.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_11_Altman_November_2022_ChatGPT_Genesis.jpg"
+  ]
+}

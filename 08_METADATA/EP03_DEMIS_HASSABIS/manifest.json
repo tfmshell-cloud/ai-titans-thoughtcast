@@ -1,0 +1,154 @@
+{
+  "episode_id": "EP03",
+  "hero": "Demis Hassabis",
+  "hero_ua": "Деміс Хассабіс",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/demis_hassabis/",
+  "summary": {
+    "research_docs_count": 15,
+    "transcripts_count": 10,
+    "articles_count": 0,
+    "research_words": 181700,
+    "videos_total": 85,
+    "videos_native": 76,
+    "images_total": 127,
+    "images_native": 121,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 50,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "50 Біографічних Сюжетів & Кінематографічних Тріад: Деміс Гассабіс (Епізод 03)",
+      "rel_path": "01_RESEARCH/demis_hassabis/50_BIOGRAPHICAL_SCENES_VISUALIZATION.md",
+      "url": "",
+      "words": 13213
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 03 — ДЕМІС ГАССАБІС",
+      "rel_path": "01_RESEARCH/demis_hassabis/MASTER_DOSSIER_EP03.md",
+      "url": "",
+      "words": 13327
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP03: ДЕМІС ГАССАБІС",
+      "rel_path": "01_RESEARCH/demis_hassabis/GLOBAL_MEDIA_ARCHIVES_REGISTRY_DEMIS_HASSABIS.md",
+      "url": "https://www.youtube.com/watch?v=YtPaZsasmNA",
+      "words": 741
+    },
+    {
+      "title": "Nobel Prize Lecture: Demis Hassabis (Chemistry 2024)",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_01_Nobel_Lecture_Chemistry_2024.md",
+      "url": "https://www.youtube.com/watch?v=YtPaZsasmNA",
+      "words": 10773
+    },
+    {
+      "title": "EP03 Transcript SRC_02: Lex Fridman Podcast #475 — Demis Hassabis",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_02_LexFridman_475_Demis_Hassabis.md",
+      "url": "https://lexfridman.com/demis-hassabis-2-transcript/",
+      "words": 17240
+    },
+    {
+      "title": "AlphaGo — The Movie (Google DeepMind Full Documentary)",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_03_AlphaGo_Movie_Full_Documentary.md",
+      "url": "https://www.youtube.com/watch?v=WXuK6gekU1Y",
+      "words": 21266
+    },
+    {
+      "title": "The Thinking Game (Google DeepMind Full Documentary)",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_04_The_Thinking_Game_Full_Documentary.md",
+      "url": "https://www.youtube.com/watch?v=d95J8yzvjbQ",
+      "words": 28244
+    },
+    {
+      "title": "Stanford GSB: A Conversation with Demis Hassabis",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_05_Stanford_GSB_Demis_Hassabis.md",
+      "url": "https://www.youtube.com/watch?v=DsewHeVbL-0",
+      "words": 24321
+    },
+    {
+      "title": "Lex Fridman plays chess with Demis Hassabis",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_06_Lex_Plays_Chess_With_Hassabis.md",
+      "url": "https://www.youtube.com/watch?v=UbkB-vhjhHA",
+      "words": 3552
+    },
+    {
+      "title": "CBS 60 Minutes: Inside Google DeepMind with Demis Hassabis",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_07_CBS_60_Minutes_DeepMind.md",
+      "url": "https://www.youtube.com/watch?v=1XF-NG_35NE",
+      "words": 5001
+    },
+    {
+      "title": "WSJ: Demis Hassabis on Why He Sold DeepMind to Google for $650M",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_08_WSJ_Why_Sold_DeepMind_650M.md",
+      "url": "https://www.youtube.com/watch?v=Ea6ajW5hcCY",
+      "words": 5137
+    },
+    {
+      "title": "The Royal Society x Nobel Prize: AI and Science with Demis Hassabis",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_09_Royal_Society_Nobel_AI_Science.md",
+      "url": "https://www.youtube.com/watch?v=bYwHE3sDMtI",
+      "words": 35706
+    },
+    {
+      "title": "AlphaGo Official Trailer (Move 37 / Seoul 2016)",
+      "rel_path": "01_RESEARCH/demis_hassabis/transcripts/EP03_TR_10_AlphaGo_Official_Trailer.md",
+      "url": "https://www.youtube.com/watch?v=8tq1C8spV_g",
+      "words": 564
+    },
+    {
+      "title": "Епізод 03 — Деміс Гассабіс: Гросмейстер біологічного коду",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 03 — Деміс Гассабіс: Гросмейстер біологічного коду.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 03 — ДЕМІС ГАССАБІС",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Деміса_Гассабіса.md",
+      "url": "",
+      "words": 2615
+    }
+  ],
+  "archival_clips": [
+    "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4",
+    "EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction.mp4",
+    "EP03_VID_ARCH_03_ACT1_24FPS_Hassabis_Chess_Age4_WSJ.mp4",
+    "EP03_VID_ARCH_04_ACT1_24FPS_Hassabis_Childhood_Chess_ThinkingGame.mp4",
+    "EP03_VID_ARCH_05_ACT1_24FPS_Hassabis_Playing_Chess_Board.mp4",
+    "EP03_VID_ARCH_06_ACT1_24FPS_Hassabis_Leaving_Chess_Realization.mp4",
+    "EP03_VID_ARCH_07_ACT1_24FPS_Hassabis_Bullfrog_ThemePark_GapYear.mp4",
+    "EP03_VID_ARCH_08_ACT2_24FPS_Hassabis_Neuroscience_Brain_Goal.mp4",
+    "EP03_VID_ARCH_09_ACT2_24FPS_DeepMind_Solve_Intelligence_Plan.mp4",
+    "EP03_VID_ARCH_10_ACT2_24FPS_DeepMind_Atari_Breakout_Tunnel.mp4",
+    "EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics.mp4",
+    "EP03_VID_ARCH_12_ACT3_24FPS_AlphaGo_Move37_Fifth_Line_Shock.mp4",
+    "EP03_VID_ARCH_13_ACT3_24FPS_AlphaFold_200M_Proteins_Open_Data.mp4",
+    "EP03_VID_ARCH_14_ACT3_24FPS_AlphaFold_Protein_Fold_60Minutes.mp4",
+    "EP03_VID_ARCH_15_ACT4_24FPS_Nobel_Lecture_CASP14_Atomic_Accuracy.mp4",
+    "EP03_VID_ARCH_16_ACT4_24FPS_Hassabis_AGI_Horizon_Life_Moment.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_01_North_London_Finchley_Youth_Era.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_02_Staunton_Chess_Board_Strategy.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_03_Garde_Mechanical_Chess_Clock.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_04_Sinclair_ZX_Spectrum_48K_1984.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_05_ZX_Spectrum_48K_Keyboard_Detail.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_06_Queens_College_Cambridge_Gatehouse.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_07_Queens_College_Mathematical_Bridge.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_08_UCL_Main_Quad_Cognitive_Neuroscience.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_09_Demis_Hassabis_DeepMind_Early_Talk_2014.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_10_DeepMind_London_HQ_Kings_Cross.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_11_Goban_Board_Go_Move37_Strategy.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_12_Demis_Hassabis_DeepMind_Era_Portrait.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_13_AlphaFold_ZNF555_Protein_Structure.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_14_AlphaFold2_Transformer_Architecture.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_15_Royal_Society_London_Carlton_Terrace.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_16_Nobel_Lectures_2024_Hassabis_Stockholm.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_17_Nobel_2024_Laureates_Hassabis_Jumper_Baker.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_hassabis/EP03_IMG_ARCH_18_Demis_Hassabis_Nobel_Week_2024_Portrait.jpg"
+  ]
+}

@@ -3145,7 +3145,7 @@
       "      <div class=\"panel-title\">🖼️ Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (" + (epMedia.flow_gallery || []).length + " Кадрів • 05_RAW_FOOTAGE/flow_images/)</div>",
       "      <div class=\"panel-desc\">Усі зображення зберігаються окремо у <code>05_RAW_FOOTAGE/flow_images/</code>. Клікніть на будь-який кадр або кнопку для відкриття у Finder, моніторі або спливаючому вікні.</div>",
       "    </div>",
-      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/\">📁 Папка кадрів у Finder</button>",
+      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(primaryDirDisplay) + "\">📁 Папка кадрів у Finder</button>",
       "  </div>",
       "  <div class=\"node-tree-grid\">" + galleryCardsHtml + "</div>",
       "</div>"
@@ -3209,14 +3209,21 @@
     } else if (curSub === "veo") {
       activeSubPaneHtml = veoMasterSectionHtml || "<div class=\"panel-card\"><div class=\"panel-title\">🎞️ Veo Конвеєр</div><div class=\"panel-desc\">Використовуйте вкладку «🚀 Тріади Flow» для цього епізоду.</div></div>";
     } else {
+      var jumpLinks = [
+        archiveSectionHtml ? "<button class=\"filter-pill active\" data-scroll-arch=\"archSecVideos\">📼 Архівні відео (" + (epMedia.archives || []).length + ")</button>" : "",
+        photoSectionHtml ? "<button class=\"filter-pill\" data-scroll-arch=\"archSecPhotos\">📸 Архівні фото (" + (epMedia.archival_photos || []).length + ")</button>" : "",
+        dossierSectionHtml ? "<button class=\"filter-pill\" data-scroll-arch=\"archSecDossiers\">🗂️ 4K Досьє (" + (epMedia.dossiers || []).length + ")</button>" : "",
+        sciSectionHtml ? "<button class=\"filter-pill\" data-scroll-arch=\"archSecSci\">🔬 Науковий VFX (" + (epMedia.scientific_vfx || []).length + ")</button>" : "",
+        (audioSectionHtml || voSectionHtml) ? "<button class=\"filter-pill\" data-scroll-arch=\"archSecAudio\">🎧 Аудіо WAV (" + ((epMedia.audio || []).length + (epMedia.voiceover || []).length) + ")</button>" : ""
+      ].filter(Boolean).join("");
+      var jumpBar = jumpLinks ? ("<div class=\"panel-card\" style=\"padding:0.65rem 0.9rem;margin-bottom:0.85rem;border-color:rgba(56,189,248,0.35);\"><div class=\"filter-pills\">" + jumpLinks + "</div></div>") : "";
       activeSubPaneHtml = [
-        voSectionHtml,
-        audioSectionHtml,
-        sciSectionHtml,
-        archiveSectionHtml,
-        dossierSectionHtml,
-        photoSectionHtml,
-        nbHtml
+        jumpBar,
+        archiveSectionHtml ? ("<div id=\"archSecVideos\">" + archiveSectionHtml + "</div>") : "",
+        photoSectionHtml ? ("<div id=\"archSecPhotos\">" + photoSectionHtml + "</div>") : "",
+        dossierSectionHtml ? ("<div id=\"archSecDossiers\">" + dossierSectionHtml + "</div>") : "",
+        sciSectionHtml ? ("<div id=\"archSecSci\">" + sciSectionHtml + "</div>") : "",
+        (voSectionHtml || audioSectionHtml || nbHtml) ? ("<div id=\"archSecAudio\">" + [voSectionHtml, audioSectionHtml, nbHtml].filter(Boolean).join("\n") + "</div>") : ""
       ].filter(Boolean).join("\n") || "<div class=\"panel-card\"><div class=\"panel-title\">🎙️ Озвучка та архіви ще не завантажені</div></div>";
     }
 
@@ -3771,6 +3778,16 @@
       btn.addEventListener("click", function () {
         state.mediaSubTab = btn.getAttribute("data-media-subtab");
         renderMedia();
+      });
+    });
+
+    pane.querySelectorAll("[data-scroll-arch]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var tid = btn.getAttribute("data-scroll-arch");
+        var target = tid ? document.getElementById(tid) : null;
+        if (target && target.scrollIntoView) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
     });
 

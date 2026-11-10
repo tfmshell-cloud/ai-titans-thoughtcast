@@ -1,0 +1,172 @@
+{
+  "episode_id": "EP06",
+  "hero": "Ilya Sutskever",
+  "hero_ua": "Ілля Суцкевер",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/ilya_sutskever/",
+  "summary": {
+    "research_docs_count": 18,
+    "transcripts_count": 11,
+    "articles_count": 3,
+    "research_words": 118562,
+    "videos_total": 68,
+    "videos_native": 49,
+    "images_total": 65,
+    "images_native": 45,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 06 — ІЛЛЯ СУЦКЕВЕР",
+      "rel_path": "01_RESEARCH/ilya_sutskever/MASTER_DOSSIER_EP06.md",
+      "url": "",
+      "words": 13582
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP06: ІЛЛЯ СУЦКЕВЕР",
+      "rel_path": "01_RESEARCH/ilya_sutskever/GLOBAL_MEDIA_ARCHIVES_REGISTRY_ILYA_SUTSKEVER.md",
+      "url": "https://www.youtube.com/watch?v=aR20FWCCjAs",
+      "words": 909
+    },
+    {
+      "title": "Dwarkesh Patel: Ilya Sutskever — Moving From Age of Scaling to Age of Research",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_01_Dwarkesh_Age_Of_Research_2025.md",
+      "url": "https://www.youtube.com/watch?v=aR20FWCCjAs",
+      "words": 18972
+    },
+    {
+      "title": "Dwarkesh Patel: Ilya Sutskever — Why Next-Token Prediction Could Surpass Human Intelligence",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_02_Dwarkesh_Next_Token_Compression_2023.md",
+      "url": "https://www.youtube.com/watch?v=Yf1o0TQzry8",
+      "words": 10646
+    },
+    {
+      "title": "No Priors Ep. 39: OpenAI Co-Founder & Chief Scientist Ilya Sutskever",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_03_No_Priors_Ep39_Deep_Learning_Safety.md",
+      "url": "https://www.youtube.com/watch?v=Ft0gTO2K85A",
+      "words": 8763
+    },
+    {
+      "title": "Simons Institute Berkeley: Ilya Sutskever — An Observation on Generalization",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_04_Simons_Observation_Generalization.md",
+      "url": "https://www.youtube.com/watch?v=AKMuA_TVz3A",
+      "words": 9378
+    },
+    {
+      "title": "Simons Institute Berkeley: Ilya Sutskever — RL using Generative Models",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_05_Simons_RL_Generative_Models.md",
+      "url": "https://www.youtube.com/watch?v=TlPaxVVa_WM",
+      "words": 8152
+    },
+    {
+      "title": "NeurIPS 2024 Test of Time Lecture: Ilya Sutskever — Seq2Seq & Pretraining Era",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_06_NeurIPS_2024_Seq2Seq_Test_Of_Time.md",
+      "url": "https://www.youtube.com/watch?v=WQQdd6qGxNs",
+      "words": 4162
+    },
+    {
+      "title": "NVIDIA GTC Fireside Chat: Ilya Sutskever & Jensen Huang (March 2023)",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_07_NVIDIA_GTC_Jensen_Sutskever_Fireside.md",
+      "url": "https://www.youtube.com/watch?v=I6qQinoY9WM",
+      "words": 9455
+    },
+    {
+      "title": "MIT AGI (Lex Fridman): Ilya Sutskever — OpenAI Meta-Learning & Self-Play",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_08_LexFridman_MIT_AGI_SelfPlay.md",
+      "url": "https://www.youtube.com/watch?v=9EN_HoEk3KY",
+      "words": 10921
+    },
+    {
+      "title": "UC Berkeley EECS Colloquium: Ilya Sutskever — OpenAI",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_09_UC_Berkeley_EECS_OpenAI_Lecture.md",
+      "url": "https://www.youtube.com/watch?v=RvEwFvl-TrY",
+      "words": 10741
+    },
+    {
+      "title": "University of Toronto Commencement: Ilya Sutskever Honorary Degree (June 6, 2025)",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_10_UofT_Honorary_Doctorate_2025.md",
+      "url": "https://www.youtube.com/watch?v=zuZ2zaotrJs",
+      "words": 1823
+    },
+    {
+      "title": "Tel Aviv University (June 5, 2023): Sam Altman & Ilya Sutskever",
+      "rel_path": "01_RESEARCH/ilya_sutskever/transcripts/EP06_TR_11_Tel_Aviv_University_2023_Talk.md",
+      "url": "https://www.youtube.com/watch?v=xjDn-kFfpGU",
+      "words": 5268
+    },
+    {
+      "title": "EP06_ART_01: Safe Superintelligence Inc. (SSI) — Official Founding Manifesto",
+      "rel_path": "01_RESEARCH/ilya_sutskever/articles/EP06_ART_01_Safe_Superintelligence_SSI_Manifesto.md",
+      "url": "https://ssi.inc/",
+      "words": 257
+    },
+    {
+      "title": "EP06_ART_02: Ilya Sutskever — Biographical Chronicle (Wikipedia)",
+      "rel_path": "01_RESEARCH/ilya_sutskever/articles/EP06_ART_02_Ilya_Sutskever_Wikipedia_Biography.md",
+      "url": "https://en.wikipedia.org/wiki/Ilya_Sutskever",
+      "words": 1200
+    },
+    {
+      "title": "EP06_ART_03: Landmark Papers — AlexNet (NIPS 2012), Seq2Seq (arXiv:1409.3215), Scaling Laws (arXiv:2001.08361)",
+      "rel_path": "01_RESEARCH/ilya_sutskever/articles/EP06_ART_03_AlexNet_Seq2Seq_ScalingLaws_Papers.md",
+      "url": "",
+      "words": 1832
+    },
+    {
+      "title": "Епізод 06 — Ілля Суцкевер: Алхімік масштабування та тиші",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 06 — Ілля Суцкевер: Алхімік масштабування та тиші.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 06 — ІЛЛЯ СУЦКЕВЕР",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Іллі_Суцкевера.md",
+      "url": "",
+      "words": 2501
+    }
+  ],
+  "archival_clips": [
+    "EP06_VID_ARCH_01_ACT2_24FPS_Sutskever_Simons_Lecture.mp4",
+    "EP06_VID_ARCH_02_ACT1_24FPS_Sutskever_UofT_Convocation_Return_2025.mp4",
+    "EP06_VID_ARCH_03_ACT1_24FPS_Sutskever_Studying_With_Hinton_UofT.mp4",
+    "EP06_VID_ARCH_04_ACT1_24FPS_Sutskever_Pre_AlexNet_2012_NoPriors.mp4",
+    "EP06_VID_ARCH_05_ACT1_24FPS_Sutskever_Jensen_Huang_AlexNet_GTC.mp4",
+    "EP06_VID_ARCH_06_ACT2_24FPS_Sutskever_Seq2Seq_Scaling_NeurIPS2024.mp4",
+    "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4",
+    "EP06_VID_ARCH_08_ACT2_24FPS_Sutskever_Compression_Learning_GTC.mp4",
+    "EP06_VID_ARCH_09_ACT3_24FPS_Sutskever_Detective_Novel_Metaphor_GTC.mp4",
+    "EP06_VID_ARCH_10_ACT3_24FPS_Sutskever_Deep_Learning_Alchemy_TAU2023.mp4",
+    "EP06_VID_ARCH_11_ACT3_24FPS_Sutskever_Next_Token_Dwarkesh2023.mp4",
+    "EP06_VID_ARCH_12_ACT3_24FPS_Sutskever_GPT_Emergent_Behaviors_NoPriors.mp4",
+    "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4",
+    "EP06_VID_ARCH_14_ACT4_24FPS_Sutskever_End_Of_Pretraining_NeurIPS2024.mp4",
+    "EP06_VID_ARCH_15_ACT4_24FPS_Sutskever_Age_Of_Research_SSI_Dwarkesh2025.mp4",
+    "EP06_VID_ARCH_16_ACT4_24FPS_Sutskever_Brain_Biological_Computer_UofT2025.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_01_Gorky_Nizhny_Novgorod_Winter_1986.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_02_Jerusalem_Golden_Limestone_Walls.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_03_Jerusalem_Old_City_Panorama.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_04_University_College_Toronto.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_05_UofT_Sandford_Fleming_2001_Room_4306.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_06_NVIDIA_GTX580_GF110_AlexNet_Die.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_07_AlexNet_CNN_Architecture_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_08_Stanford_University_Quad_2012.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_09_Googleplex_Google_Brain_2014.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_10_Ilya_Sutskever_Google_Brain_Stage_2014.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_11_Ilya_Sutskever_Stanford_Solo_2014.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_12_OpenAI_Pioneer_Building_SF.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_13_Supercomputer_Cluster_Scaling_Laws.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_14_AGI_Effigy_Retreat_Bonfire_2023.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_15_Sutskever_Altman_Tel_Aviv_2023.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_16_Tel_Aviv_University_SSI_Hub.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_17_Toronto_Convocation_Hall_2025.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_sutskever/EP06_IMG_ARCH_18_Safe_Superintelligence_SSI_Monolith.jpg"
+  ]
+}

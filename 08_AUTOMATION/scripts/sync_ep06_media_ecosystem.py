@@ -292,6 +292,22 @@ def main():
         for (pid, code, title, src, url, raw_fn, web_fn, desc) in ARCHIVAL_PHOTOS_EP06
     ]
 
+    existing_fg = [g for g in ep06.get("flow_gallery", []) if not str(g.get("code", "")).startswith("UA CARD")]
+    for idx_c, card_p in enumerate(sorted((ROOT / "05_RAW_FOOTAGE" / "dossiers_press" / "ukrainian_quote_cards").glob("EP06_UA_CARD_*.png")), 1):
+        prev_rel = f"assets/cards_preview/{card_p.stem.lower()}.jpg"
+        if (ROOT / "07_DASHBOARD" / prev_rel).exists():
+            existing_fg.append({
+                "code": f"UA CARD #{idx_c:02d}",
+                "badge": "🇺🇦 4K Цитат-Картка",
+                "tc": f"Акт {(idx_c - 1) // 2 + 1}",
+                "title": card_p.stem.replace("EP06_UA_CARD_", "Картка ").replace("_", " "),
+                "dims": "3840×2160 4K",
+                "chip": "chip-emerald",
+                "web_preview": prev_rel,
+                "raw_path": f"05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/{card_p.name}",
+            })
+    ep06["flow_gallery"] = existing_fg
+
     MP_PATH.write_text(prefix + json.dumps(mp, ensure_ascii=False, indent=2) + ";\n", encoding="utf-8")
 
     ua_cards = sorted(p.name for p in (ROOT / "05_RAW_FOOTAGE" / "dossiers_press" / "ukrainian_quote_cards").glob("EP06_*.png"))
