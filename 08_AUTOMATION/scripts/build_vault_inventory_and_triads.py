@@ -388,9 +388,9 @@ def collect_research_docs_for_ep(ep, name_ua):
                 if not title and s.startswith("# "):
                     title = s[2:].strip()
                 if not url:
-                    m_u = re.search(r"https?://[^\s)\]>\"']+", s)
+                    m_u = re.search(r"https?://[^\s)\]>\"'`]+", s)
                     if m_u:
-                        url = m_u.group(0).rstrip(".,;:")
+                        url = m_u.group(0).rstrip(".,;:`\"'")
         except Exception:
             pass
         return title, url, words

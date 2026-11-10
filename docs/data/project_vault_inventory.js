@@ -20420,7 +20420,7 @@ window.PROJECT_VAULT_INVENTORY = {
         "ext": "MD",
         "word_count": 6505,
         "size_kb": 44.1,
-        "source_url": "http://yann.lecun.com/`"
+        "source_url": "http://yann.lecun.com/"
       },
       {
         "file": "EP05_ART_02_YannLeCun_Wikipedia_Chronicle.md",
