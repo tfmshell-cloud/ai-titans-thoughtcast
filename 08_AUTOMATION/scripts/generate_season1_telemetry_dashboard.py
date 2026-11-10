@@ -23,8 +23,8 @@ EP_META = [
      "DaVinci Studio 21 • Майстер-таймлайн V3 (15:10, 103 відеокліпи V1, 2× 4K ProRes MGFX на V2, 25 UA VO, 7 Suno тем @ -30 dB, Fusion Glow FX). Готово до фінального кольорокору та рендеру."),
     ("02", "jensen_huang", "episode_02_huang", ["ep02", "huang", "blackwell", "nvidia"], "🟡 Повний ресьорч & 20 архівних кліпів", 65, "stage-ingest",
      "Повне досьє + 10 першоджерельних транскриптів (CHM Oral History 72 хв, Acquired 90 хв, Stanford GSB/SIEPR, Stripe, NTU, CBS 60 Min, OSU 2009) + 50 тріад + 20 архівних відео (включно з NVIDIA Pressroom 2026) + 19 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 24 4K кліпи."),
-    ("03", "demis_hassabis", "episode_03_hassabis", ["ep03", "ep02_demis_hassabis", "hassabis"], "🟡 Медіапул зібрано в Resolve", 62, "stage-ingest",
-     "Найглибший ресьорч (26,500+ слів, 50 біографічних сюжетів, 30 тріад). Унікальний інжест у DaVinci (EP03_HASSABIS_CHESS): 24 відео (шахи, ZX Spectrum, вокселі, нейрони, AlphaFold, Переліт), 90 зображень. Наступний крок: озвучка ElevenLabs та збірка таймлайну."),
+    ("03", "demis_hassabis", "episode_03_hassabis", ["ep03", "ep02_demis_hassabis", "hassabis"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 10 першоджерельних транскриптів (Nobel Lecture 2024, Lex #475, The Thinking Game, AlphaGo Movie, Stanford GSB, WSJ $650M, CBS 60 Min, Royal Society) + 50 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia Commons + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
      "Повне досьє + 100 цитат + 100 промптів + 4 Suno стеми + Нобелівський архів 2024 + VFX колапс хвилі + Flow-дослідження. Очікує генерацію відеоряду."),
     ("05", "yann_lecun", "episode_05_lecun", ["ep05", "lecun"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
@@ -133,13 +133,15 @@ def count_project_stats():
             ]
         elif ep == "03":
             bio_sources = [
-                "Nobel Prize Committee in Chemistry 2024 Official Citation & Lecture",
-                "Nature (2021) — «Highly accurate protein structure prediction with AlphaFold»",
-                "Science (2007) — Hassabis et al. Hippocampal Amnesia & Future Imagination",
-                "UCL Cognitive Neuroscience PhD Thesis (Eleanor Maguire Lab, 2009)",
-                "Google DeepMind AlphaGo Documentary (Seoul, March 2016, Move 37)",
-                "British Chess Federation Archives & Bullfrog Theme Park (1994)",
-                "Cambridge Queens' College Double First Class Computer Science Tripos"
+                "Nobel Prize Lecture in Chemistry 2024 (`YtPaZsasmNA` — повний транскрипт + HD кадри)",
+                "Lex Fridman Podcast #475 (`lexfridman.com/demis-hassabis-2-transcript/` — 286 сегментів)",
+                "Google DeepMind — The Thinking Game (`d95J8yzvjbQ` — шахи 1986, Bullfrog, Atari DQN, AlphaFold)",
+                "Google DeepMind — AlphaGo Documentary (`WXuK6gekU1Y` — Сеул 2016, Лі Седоль, Хід 37)",
+                "Stanford GSB Conversation (`DsewHeVbL-0`) & The Royal Society × Nobel Prize (`bYwHE3sDMtI`)",
+                "CBS 60 Minutes Inside DeepMind London (`1XF-NG_35NE`) & WSJ $650M Acquisition (`Ea6ajW5hcCY`)",
+                "Lex Fridman Plays Chess with Demis Hassabis (`UbkB-vhjhHA` — жива партія за дошкою)",
+                "Nature (2021) AlphaFold 2 CASP14 & PNAS (2007) Hippocampal Amnesia (Science Top 10)",
+                "Wikimedia Commons Archival Collection (18 відкритих історичних фото: Finchley → Stockholm 2024)"
             ]
         elif ep == "04":
             bio_sources = [
@@ -729,7 +731,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Медіапул зібрано (EP03)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP03)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

@@ -98,9 +98,23 @@ run_ep02() {
 }
 
 run_ep03() {
-  # EP03 — Деміс Гассабіс: Нобелівська лекція 2024 + документальний фільм AlphaGo (Move 37 в Сеулі)
+  # EP03 — Деміс Гассабіс: Нобелівська лекція 2024 + AlphaGo (Move 37) + The Thinking Game + Stanford GSB + WSJ + CBS 60 Minutes + Lex Chess
   fetch_clip "https://www.youtube.com/watch?v=YtPaZsasmNA" "00:02:15-00:02:23" "EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024"
   fetch_clip "https://www.youtube.com/watch?v=WXuK6gekU1Y" "00:51:20-00:51:28" "EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction"
+  fetch_clip "https://www.youtube.com/watch?v=Ea6ajW5hcCY" "00:00:36-00:00:52" "EP03_VID_ARCH_03_ACT1_24FPS_Hassabis_Chess_Age4_WSJ"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:22:50-00:23:18" "EP03_VID_ARCH_04_ACT1_24FPS_Hassabis_Childhood_Chess_ThinkingGame"
+  fetch_clip "https://www.youtube.com/watch?v=UbkB-vhjhHA" "00:01:25-00:01:45" "EP03_VID_ARCH_05_ACT1_24FPS_Hassabis_Playing_Chess_Board"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:26:20-00:26:39" "EP03_VID_ARCH_06_ACT1_24FPS_Hassabis_Leaving_Chess_Realization"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:39:17-00:39:44" "EP03_VID_ARCH_07_ACT1_24FPS_Hassabis_Bullfrog_ThemePark_GapYear"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:03:20-00:03:38" "EP03_VID_ARCH_08_ACT2_24FPS_Hassabis_Neuroscience_Brain_Goal"
+  fetch_clip "https://www.youtube.com/watch?v=DsewHeVbL-0" "00:09:12-00:09:30" "EP03_VID_ARCH_09_ACT2_24FPS_DeepMind_Solve_Intelligence_Plan"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:11:36-00:11:58" "EP03_VID_ARCH_10_ACT2_24FPS_DeepMind_Atari_Breakout_Tunnel"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "00:35:52-00:36:18" "EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics"
+  fetch_clip "https://www.youtube.com/watch?v=WXuK6gekU1Y" "00:50:00-00:50:25" "EP03_VID_ARCH_12_ACT3_24FPS_AlphaGo_Move37_Fifth_Line_Shock"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "01:15:12-01:15:36" "EP03_VID_ARCH_13_ACT3_24FPS_AlphaFold_200M_Proteins_Open_Data"
+  fetch_clip "https://www.youtube.com/watch?v=1XF-NG_35NE" "00:10:05-00:10:42" "EP03_VID_ARCH_14_ACT3_24FPS_AlphaFold_Protein_Fold_60Minutes"
+  fetch_clip "https://www.youtube.com/watch?v=YtPaZsasmNA" "00:14:20-00:14:46" "EP03_VID_ARCH_15_ACT4_24FPS_Nobel_Lecture_CASP14_Atomic_Accuracy"
+  fetch_clip "https://www.youtube.com/watch?v=d95J8yzvjbQ" "01:19:50-01:20:16" "EP03_VID_ARCH_16_ACT4_24FPS_Hassabis_AGI_Horizon_Life_Moment"
 }
 
 run_ep04() {

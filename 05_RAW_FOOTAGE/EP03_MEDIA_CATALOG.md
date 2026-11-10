@@ -1,53 +1,51 @@
-# EP03 — Деміс Гассабіс | Реєстр Медіаконтенту Google Flow & 2K Keyframes
+# 🎬 МАЙСТЕР-КАТАЛОГ МЕДІАКОНТЕНТУ EP03 (Деміс Гассабіс)
 
-> **Тема епізоду:** «Гросмейстер біологічного коду» (21:30 хв)
-> **Пріоритетна черга:** 10 базових сцен. **Галерея концепт-кадрів та B-roll:** 29 асетів.
+- **📼 Реальні архівні відеокліпи B-Roll (`05_RAW_FOOTAGE/archives/`):** 16
+- **📸 Історичні фото та наукові артефакти (`05_RAW_FOOTAGE/speaker_portraits/young_hassabis/`):** 18
+- **🗂️ 4K Документальні досьє-пластини (`05_RAW_FOOTAGE/dossiers_press/`):** 6
+- **🇺🇦 4K Українські цитат-картки (`ukrainian_quote_cards/`):** 8
+- **🎞️ Ken Burns 4K відеокліпи зі стілів і карток (`rendered_cinematic_stills_4k/`):** 26
 
-## 1. Пріоритетна Черга Google Flow / Veo (10 базових сцен)
+## 📼 Архівні відеокліпи (`EP03_VID_ARCH_01..16`)
 
-| № | Статус | Таймкод | Назва сцени | Файл / Кадр | Технічні характеристики |
-| :-: | :-: | :-: | :--- | :--- | :--- |
-| **01** | 🔵 2K Кадр готовий | `0:00–0:15` | **Падіння дерев'яного короля на шахівницю (Лондон 1980)** | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg` | 2752×1536 (2K Master JPG готовий) • 4-річний вундеркінд Деміс |
-| **02** | ⏳ У розробці | `0:15–0:45` | **3D голографічне згортання білка AlphaFold** | `ep03_flow_02_protein_folding.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **03** | 🔵 2K Кадр готовий | `1:15–1:45` | **Різьблений шаховий кінь Стаунтона над турнірною дошкою** | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg` | 2752×1536 (2K Master JPG готовий) • Дерево рішень та стратегія |
-| **04** | ⏳ У розробці | `2:30–3:30` | **Вінтажний комп'ютер Sinclair ZX Spectrum (1984)** | `ep03_flow_04_zx_spectrum.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **05** | ⏳ У розробці | `5:00–6:15` | **Лабіринт пам'яті гіпокампу та нейронауки UCL** | `ep03_flow_05_hippocampus_maze.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **06** | ⏳ У розробці | `7:30–8:45` | **Атарі Breakout: перша іскра навчання з підкріпленням (DQN)** | `ep03_flow_06_atari_dqn.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **07** | 🔵 2K Кадр готовий | `10:30–12:00` | **AlphaGo: Хід 37 на дошці гобан (Сеул 2016)** | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg` | 2752×1536 (2K Master JPG готовий) • Момент нелюдської інтуїції |
-| **08** | ⏳ У розробці | `14:30–16:00` | **Нобелівський тріумф AlphaFold2: розгадка 200 мільйонів білків** | `ep03_flow_08_alphafold_triumph.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **09** | ⏳ У розробці | `16:45–18:15` | **Штучний інтелект утримує термоядерну плазму в токамаку** | `ep03_flow_09_tokamak_ai.mp4` | ⏳ Очікує генерації Google Flow / Veo |
-| **10** | ⏳ У розробці | `19:00–21:30` | **Цифровий організм: Isomorphic Labs та біологічний код життя** | `ep03_flow_10_biological_code.mp4` | ⏳ Очікує генерації Google Flow / Veo |
+| Код | Таймкод EP03 | Файл | Джерело |
+| :--- | :--- | :--- | :--- |
+| **ARCH #01** | `16:15–16:45` | `EP03_VID_ARCH_01_ACT4_24FPS_Hassabis_Nobel_Lecture_2024.mp4` | Nobel Prize Official Channel (Stockholm, Dec 2024) |
+| **ARCH #02** | `11:00–11:45` | `EP03_VID_ARCH_02_ACT3_24FPS_AlphaGo_Seoul_Move37_Reaction.mp4` | Google DeepMind Official — AlphaGo Documentary |
+| **ARCH #03** | `00:25–01:15` | `EP03_VID_ARCH_03_ACT1_24FPS_Hassabis_Chess_Age4_WSJ.mp4` | Wall Street Journal Interview (YouTube Ea6ajW5hcCY) |
+| **ARCH #04** | `01:30–02:15` | `EP03_VID_ARCH_04_ACT1_24FPS_Hassabis_Childhood_Chess_ThinkingGame.mp4` | Google DeepMind Official — The Thinking Game (d95J8yzvjbQ) |
+| **ARCH #05** | `02:15–02:45` | `EP03_VID_ARCH_05_ACT1_24FPS_Hassabis_Playing_Chess_Board.mp4` | Lex Fridman Chess Session (YouTube UbkB-vhjhHA) |
+| **ARCH #06** | `02:45–04:00` | `EP03_VID_ARCH_06_ACT1_24FPS_Hassabis_Leaving_Chess_Realization.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #07** | `04:00–05:15` | `EP03_VID_ARCH_07_ACT1_24FPS_Hassabis_Bullfrog_ThemePark_GapYear.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #08** | `05:15–06:45` | `EP03_VID_ARCH_08_ACT2_24FPS_Hassabis_Neuroscience_Brain_Goal.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #09** | `06:45–08:15` | `EP03_VID_ARCH_09_ACT2_24FPS_DeepMind_Solve_Intelligence_Plan.mp4` | Stanford Graduate School of Business (YouTube DsewHeVbL-0) |
+| **ARCH #10** | `08:15–09:00` | `EP03_VID_ARCH_10_ACT2_24FPS_DeepMind_Atari_Breakout_Tunnel.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #11** | `09:00–09:40` | `EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #12** | `10:30–11:15` | `EP03_VID_ARCH_12_ACT3_24FPS_AlphaGo_Move37_Fifth_Line_Shock.mp4` | Google DeepMind Official — AlphaGo Documentary (WXuK6gekU1Y) |
+| **ARCH #13** | `14:45–15:45` | `EP03_VID_ARCH_13_ACT3_24FPS_AlphaFold_200M_Proteins_Open_Data.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
+| **ARCH #14** | `15:45–16:15` | `EP03_VID_ARCH_14_ACT3_24FPS_AlphaFold_Protein_Fold_60Minutes.mp4` | CBS 60 Minutes — Google DeepMind London (YouTube 1XF-NG_35NE) |
+| **ARCH #15** | `14:15–14:45` | `EP03_VID_ARCH_15_ACT4_24FPS_Nobel_Lecture_CASP14_Atomic_Accuracy.mp4` | Nobel Prize Official Channel (Stockholm, YouTube YtPaZsasmNA) |
+| **ARCH #16** | `17:30–18:15` | `EP03_VID_ARCH_16_ACT4_24FPS_Hassabis_AGI_Horizon_Life_Moment.mp4` | The Thinking Game Documentary (YouTube d95J8yzvjbQ) |
 
-## 2. Галерея 2K Концепт-Кадрів та Кінокадрів B-Roll (29 асетів)
+## 📸 Хронологічні архівні фото (`EP03_IMG_ARCH_*`)
 
-| Код | Бейдж | Таймкод | Назва асету | Локальний шлях | Роздільна здатність |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **KF #01 (2K)** | 🖼️ 2K Кадр готовий | `00:00–00:15` | Wooden King Falling on Chessboard (Шаховий король падає на дошку) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_01_Wooden_King_Falling_Chessboard_2K.jpg` | 2752×1536 (2K JPG) |
-| **KF #03 (2K)** | 🖼️ 2K Кадр готовий | `01:15–01:45` | Staunton Chess Knight (Різьблений кінь Стаунтона над дошкою) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_03_Staunton_Chess_Knight_Macro_2K.jpg` | 2752×1536 (2K JPG) |
-| **KF #07 (2K)** | 🖼️ 2K Кадр готовий • Хід 37 | `10:30–12:00` | AlphaGo Move 37 Goban Stone (Чорний камінь на 37-му перетині) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/01_primary_keyframes/EP03_FLOW_IMG_07_AlphaGo_Move_37_Goban_Stone_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #07B (2K)** | 🎬 B-Roll Кадр | `10:45–11:15` | Go Stone on Board (Макро-ракурс A) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07B_Go_Stone_CloseA_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #07C (2K)** | 🎬 B-Roll Кадр | `11:15–11:45` | Go Stone on Board (Макро-ракурс B) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07C_Go_Stone_CloseB_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #07D (2K)** | 🎬 B-Roll Кадр | `11:45–12:15` | Fingers Holding Go Stone (Пальці тримають камінь) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07D_Fingers_Holding_Go_Stone_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #07E (2K)** | 🎬 B-Roll Кадр | `12:15–12:45` | Go Stone Landing on Grid (Момент удару об гобан) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07E_Go_Stone_Landing_Grid_2K.jpg` | 2752×1536 (2K JPG) |
-| **B-ROLL #07F (2K)** | 🎬 B-Roll Кадр • Шок гросмейстера | `12:45–13:30` | Grandmaster Lee Sedol (Лі Седоль тримає руки на скронях) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_BROLL_07F_Grandmaster_Lee_Sedol_Temples_2K.jpg` | 2752×1536 (2K JPG) |
-| **STUDY #07G (2K)** | 🎨 Концепт-дослідження | `13:30–14:15` | Go Board MCTS Policy Heatmap (Теплова карта нейрополітики) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07G_MCTS_Policy_Heatmap_2K.jpg` | 2752×1536 (2K JPG) |
-| **STUDY #07H (2K)** | 🎨 Концепт-дослідження | `14:15–15:00` | Go Board in Cosmic Nebula (Гобан у космічній туманності) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_07H_Go_Board_Cosmic_Nebula_2K.jpg` | 2752×1536 (2K JPG) |
-| **STUDY #01B (2K)** | 🎨 Концепт-дослідження | `00:45–01:15` | Chess and Go Boards Floating (Шахівниця і гобан у невагомості) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01B_Chess_Go_Boards_Floating_2K.jpg` | 2752×1536 (2K JPG) |
-| **STUDY #01C (2K)** | 🎨 Концепт-дослідження | `01:45–02:15` | Chess Piece & Go Stone (Шахова королева і камінь Го) | `05_RAW_FOOTAGE/flow_images/EP03_Hassabis/02_broll_stills_and_studies/EP03_FLOW_STUDY_01C_Chess_Piece_Go_Stone_2K.jpg` | 2752×1536 (2K JPG) |
-| **FUSION #04** | ⚛️ Термоядерний синтез • RL Токамак | `12:00–13:30` | Плазма у токамаці під контролем ШІ (DeepMind Swiss Plasma Center) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_09_Fusion_Torus_Plasma_2K.jpg` | 2752×1536 (2K JPG) |
-| **LATTICE #05** | 🧬 3D Моделі білків • AlphaFold | `09:30–11:00` | Нейронна решітка вузлів і зв'язків (AlphaFold 2 Attention Architecture) | `05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_05_Neural_Lattice_Glowing_Nodes_2K.jpg` | 2752×1536 (2K JPG) |
-| **MOVE37 #08** | ♟️ Хід 37 • Камінь на Гобан | `06:30–07:45` | Гравець ставить полірований камінь Го (AlphaGo проти Лі Седоля) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07B_Player_Placing_Go_Stone_2K.jpg` | 2752×1536 (2K JPG) |
-| **MCTS #09** | ⚡ Голографічна решітка • MCTS | `07:00–08:15` | Кібернетичний камінь вдаряє в голографічну решітку імовірностей | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07C_Cybernetic_Stone_Hologram_2K.jpg` | 2752×1536 (2K JPG) |
-| **DUEL #10** | 👤 Людина проти ШІ • Сеул 2016 | `07:30–08:45` | Лі Седоль сидить перед монітором AlphaGo (Драма людського інтелекту) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07D_Human_LeeSedol_Vs_AlphaGo_2K.jpg` | 2752×1536 (2K JPG) |
-| **SELFPLAY #11** | ⚔️ AlphaGo Zero • Самонавчання | `08:15–09:30` | Битва чорних і білих каменів на динамічній цифровій матриці | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07E_Go_Stones_Digital_Grid_Battle_2K.jpg` | 2752×1536 (2K JPG) |
-| **VORTEX #12** | 🌌 10^170 Комбінацій • Нескінченність | `05:00–06:15` | Космічний вир комбінацій гри Го, що перевершує кількість атомів у Всесвіті | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_07F_Cosmic_Go_Vortex_2K.jpg` | 2752×1536 (2K JPG) |
-| **DQN #13** | 🕹️ Atari Breakout 2013 • Прорив DQN | `03:45–05:00` | Екран Atari Breakout вибухає пікселями (Deep Q-Network) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_11_DQN_Atari_Breakout_Shattering_2K.jpg` | 2752×1536 (2K JPG) |
-| **ALPHASTAR #14** | 🛸 StarCraft II • AlphaStar | `09:30–10:45` | Рій юнітів AlphaStar у надлюдському мікроконтролі (StarCraft II) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_09_AlphaStar_Swarm_Units_StarCraft_2K.jpg` | 2752×1536 (2K JPG) |
-| **LIDAR #15** | 📡 Тактичний радар • Туман війни | `10:00–11:00` | Лідарне сканування тактичної карти стратегії під туманом війни | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_10_Lidar_Scanning_Tactical_Map_2K.jpg` | 2752×1536 (2K JPG) |
-| **CODER #16** | ⌨️ 17-річний творець Theme Park | `01:30–02:45` | Пальці на механічній клавіатурі (Гассабіс програмує Theme Park у Bullfrog) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_02D_Hassabis_Bullfrog_ThemePark_Coder_2K.jpg` | 2752×1536 (2K JPG) |
-| **MAP TO LIFE #17** | 🧬 Від карт до білків • AlphaFold 2 | `11:00–12:30` | Стратегічна ігрова карта розгортається у 3D-стрічки білкових молекул | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_08_Map_Morphing_Into_Protein_AlphaFold_2K.jpg` | 2752×1536 (2K JPG) |
-| **ALPHAZERO #18** | 👑 Єдність Шахів і Го • AlphaZero | `08:45–10:00` | Дерев'яний шаховий король та камінь Го поряд у гармонії (AlphaZero) | `05_RAW_FOOTAGE/flow_images/BATCH3_GAMING_CHESS_GO_SCIENCE/EP03_FLOW_IMG_01G_Chess_King_And_Go_Stone_Unified_2K.jpg` | 2752×1536 (2K JPG) |
-| **GENOME #12** | 🧬 AlphaFold2 • Розшифровка 200 млн білків | `13:00–14:30` | Подвійна спіраль ДНК розгортається у каскад двійкового коду | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_12_DNA_Unspooling_Into_Binary_Code_2K.jpg` | 2752×1536 (2K JPG) |
-| **RESONANCE #13** | 🔮 Резонанс Істини • Простір Гри Го | `09:30–11:00` | Сяюча золота сфера, що вібрує гармонійними хвилями у вакуумі | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_13_Golden_Sphere_Vibrating_Resonance_2K.jpg` | 2752×1536 (2K JPG) |
-| **COSMOS #14** | 🌌 Універсальний Розум • Нобелівський Фінал | `18:30–20:00` | Галактики у глибокому космосі, з'єднані сяючими нейронними аксонами | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_14_Galaxies_Connected_By_Golden_Axons_2K.jpg` | 2752×1536 (2K JPG) |
-| **TOKAMAK #15** | ⚛️ Плазма Токамака • DeepMind Physics | `16:00–17:15` | Керування нестабільною термоядерною плазмою нейромережами DeepMind | `05_RAW_FOOTAGE/flow_images/BATCH4_COSMIC_SCALE_BIOLOGY_HARDWARE/EP03_FLOW_IMG_15_Tokamak_Plasma_Magnetic_Confinement_2K.jpg` | 2752×1536 (2K JPG) |
+| Код | Файл | Ліцензія / Джерело |
+| :--- | :--- | :--- |
+| **ФОТО #01 (1976–1980)** | `EP03_IMG_ARCH_01_North_London_Finchley_Youth_Era.jpg` | [Wikimedia Commons (CC BY-SA 2.0)](https://commons.wikimedia.org/wiki/File:East_Finchley_High_Road_geograph-2988922-by-Ben-Brooksbank.jpg) |
+| **ФОТО #02 (1980)** | `EP03_IMG_ARCH_02_Staunton_Chess_Board_Strategy.jpg` | [Wikimedia Commons (CC0 Public Domain)](https://commons.wikimedia.org/wiki/File:Chess_game_Staunton_No._6_perfil_view_8.jpg) |
+| **ФОТО #03 (1984–1990)** | `EP03_IMG_ARCH_03_Garde_Mechanical_Chess_Clock.jpg` | [Wikimedia Commons (CC BY-SA 3.0)](https://commons.wikimedia.org/wiki/File:Garde-chess-clock.jpg) |
+| **ФОТО #04 (1984)** | `EP03_IMG_ARCH_04_Sinclair_ZX_Spectrum_48K_1984.jpg` | [Wikimedia Commons (CC BY 2.0)](https://commons.wikimedia.org/wiki/File:Sinclair_ZX_Spectrum_48k_(7160141482).jpg) |
+| **ФОТО #05 (1985)** | `EP03_IMG_ARCH_05_ZX_Spectrum_48K_Keyboard_Detail.jpg` | [Wikimedia Commons (CC BY-SA 2.5)](https://commons.wikimedia.org/wiki/File:ZXSpectrum48k.jpg) |
+| **ФОТО #06 (1994–1997)** | `EP03_IMG_ARCH_06_Queens_College_Cambridge_Gatehouse.jpg` | [Wikimedia Commons (Public Domain)](https://commons.wikimedia.org/wiki/File:Cambridge_Queens%27_Gatehouse.JPG) |
+| **ФОТО #07 (1995–1997)** | `EP03_IMG_ARCH_07_Queens_College_Mathematical_Bridge.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Queens%27_College_-_Mathematical_Bridge.jpg) |
+| **ФОТО #08 (2005–2009)** | `EP03_IMG_ARCH_08_UCL_Main_Quad_Cognitive_Neuroscience.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:UCL_Main_Building_-_UCL_Illuminated.jpg) |
+| **ФОТО #09 (2014)** | `EP03_IMG_ARCH_09_Demis_Hassabis_DeepMind_Early_Talk_2014.jpg` | [Wikimedia Commons (CC BY-SA 2.0)](https://commons.wikimedia.org/wiki/File:PhotonQ-Demis_Hassabis_on_Artificial_Playful_Intelligence_(15366514658)_(2).jpg) |
+| **ФОТО #10 (Лондон)** | `EP03_IMG_ARCH_10_DeepMind_London_HQ_Kings_Cross.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Google-Deep_Mind_headquarters_in_London,_6_Pancras_Square.jpg) |
+| **ФОТО #11 (2016)** | `EP03_IMG_ARCH_11_Goban_Board_Go_Move37_Strategy.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Go_--_2021_--_6732.jpg) |
+| **ФОТО #12 (2014–2016)** | `EP03_IMG_ARCH_12_Demis_Hassabis_DeepMind_Era_Portrait.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Demis_Hassabis.jpg) |
+| **ФОТО #13 (2020–2022)** | `EP03_IMG_ARCH_13_AlphaFold_ZNF555_Protein_Structure.jpg` | [Wikimedia Commons (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:AlphaFold_ZNF555_Protein_Structure.png) |
+| **ФОТО #14 (2021 • Nature)** | `EP03_IMG_ARCH_14_AlphaFold2_Transformer_Architecture.jpg` | [Wikimedia Commons (CC BY 4.0)](https://commons.wikimedia.org/wiki/File:AlphaFold_2.png) |
+| **ФОТО #15 (2018)** | `EP03_IMG_ARCH_15_Royal_Society_London_Carlton_Terrace.jpg` | [Wikimedia Commons (CC BY-SA 2.0)](https://commons.wikimedia.org/wiki/File:The_Royal_Society_(geograph_5899669).jpg) |
+| **ФОТО #16 (Грудень 2024)** | `EP03_IMG_ARCH_16_Nobel_Lectures_2024_Hassabis_Stockholm.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Demis_Hassabis_at_the_2024_Nobel_Lectures_2.jpg) |
+| **ФОТО #17 (Грудень 2024)** | `EP03_IMG_ARCH_17_Nobel_2024_Laureates_Hassabis_Jumper_Baker.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:David_Baker,_Demis_Hassabis,_and_John_Jumper_at_2024_Nobel_Prize_Conference.jpg) |
+| **ФОТО #18 (Грудень 2024)** | `EP03_IMG_ARCH_18_Demis_Hassabis_Nobel_Week_2024_Portrait.jpg` | [Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Demis_Hassabis_at_2024_Nobel_Week_2.jpg) |
