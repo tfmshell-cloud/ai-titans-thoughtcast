@@ -21,8 +21,8 @@ DOCS_DIR = os.path.join(ROOT, "docs")
 EP_META = [
     ("01", "sam_altman", "episode_01_altman", ["ep01", "altman"], "🟢 В активному фінальному монтажі", 90, "stage-editing",
      "DaVinci Studio 21 • Майстер-таймлайн V3 (15:10, 103 відеокліпи V1, 2× 4K ProRes MGFX на V2, 25 UA VO, 7 Suno тем @ -30 dB, Fusion Glow FX). Готово до фінального кольорокору та рендеру."),
-    ("02", "jensen_huang", "episode_02_huang", ["ep02", "huang", "blackwell", "nvidia"], "🟡 Повний архів & Досьє зібрані", 60, "stage-ingest",
-     "Повне досьє + 50 тріад (150 промптів) + 12 реальних архівних відео (Oneida/Stripe, 60 Minutes Denny's, OSU 2009, NTU 2023, GTC 2016 DGX-1, Stanford SIEPR, Blackwell) + 19 історичних фото + 6 4K Досьє + 8 4K українських цитат-карток + 16 Ken Burns 4K кліпів + 4 Suno стеми. Наступний крок: генерація решти Veo та начитка VO."),
+    ("02", "jensen_huang", "episode_02_huang", ["ep02", "huang", "blackwell", "nvidia"], "🟡 Повний ресьорч & 20 архівних кліпів", 65, "stage-ingest",
+     "Повне досьє + 10 першоджерельних транскриптів (CHM Oral History 72 хв, Acquired 90 хв, Stanford GSB/SIEPR, Stripe, NTU, CBS 60 Min, OSU 2009) + 50 тріад + 20 архівних відео (включно з NVIDIA Pressroom 2026) + 19 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 24 4K кліпи."),
     ("03", "demis_hassabis", "episode_03_hassabis", ["ep03", "ep02_demis_hassabis", "hassabis"], "🟡 Медіапул зібрано в Resolve", 62, "stage-ingest",
      "Найглибший ресьорч (26,500+ слів, 50 біографічних сюжетів, 30 тріад). Унікальний інжест у DaVinci (EP03_HASSABIS_CHESS): 24 відео (шахи, ZX Spectrum, вокселі, нейрони, AlphaFold, Переліт), 90 зображень. Наступний крок: озвучка ElevenLabs та збірка таймлайну."),
     ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
@@ -59,14 +59,18 @@ def count_project_stats():
         s_info = season_idx.get(ep, {})
         ep_js = load_json_js(os.path.join(DASH_DIR, "data", "episodes", f"ep{ep}.js"), "window.EPISODE_DATA = ")
 
-        # 1. Research metrics
+        # 1. Research metrics (walk subdirectories such as transcripts/ accurately)
         r_path = os.path.join(ROOT, "01_RESEARCH", res_dir)
-        r_files = [f for f in os.listdir(r_path) if not f.startswith(".")] if os.path.exists(r_path) else []
+        r_files = []
         r_words = 0
-        for rf in r_files:
-            fp = os.path.join(r_path, rf)
-            if rf.endswith(".md"):
-                r_words += len(open(fp, encoding="utf-8", errors="ignore").read().split())
+        if os.path.exists(r_path):
+            for rr, _dd, fnames in os.walk(r_path):
+                for rf in fnames:
+                    if rf.startswith("."):
+                        continue
+                    r_files.append(rf)
+                    if rf.endswith(".md"):
+                        r_words += len(open(os.path.join(rr, rf), encoding="utf-8", errors="ignore").read().split())
 
         # Also check PDF dossier
         pdf_dir = os.path.join(ROOT, "01_RESEARCH", "source_pdfs_and_dossiers")
@@ -119,13 +123,13 @@ def count_project_stats():
             ]
         elif ep == "02":
             bio_sources = [
+                "Computer History Museum (CHM) — Oral History of Jensen Huang (72 хв повний транскрипт + HD кліпи)",
+                "Acquired Podcast — NVIDIA CEO Jensen Huang (90 хв ретроспектива RIVA 128, CUDA, OpenAI DGX-1)",
+                "NVIDIA Official Pressroom 2026 (`nvidianews.nvidia.com` — Endeavor HQ, GTC Stage, DGX Corridor & Fiber B-Roll)",
                 "CBS 60 Minutes (2024) — Denny's 2484 Berryessa Rd Booth #1 & Commemorative Plaque",
-                "Stanford Graduate School of Business & SIEPR Summit 2024 (No Task Beneath Me / Pain & Suffering)",
-                "Oregon State University Commencement 2009 (Young Jen-Hsun Huang) & Aloha High School",
-                "National Taiwan University Commencement 2023 (Sega $5M Rescue / Run, Don't Walk)",
-                "Stripe Sessions 2024 — Oneida Baptist Institute KY Age-9 & CUDA Zero-Billion Market",
-                "NVIDIA GTC 2016 (DGX-1 Reveal / OpenAI) & Blackwell B200 Keynote",
-                "Wikimedia Commons Archival Collection (Tamsui 1970, OBI, NV1, RIVA 128, GeForce 256, GTX 580, Morris Chang, Endeavor HQ)"
+                "Stanford GSB View From The Top & SIEPR Economic Summit 2024 + Stripe Sessions 2024",
+                "Entrepreneurship.org (2013) & Oregon State University Commencement (2009) & NTU Commencement (2023)",
+                "Wikimedia Commons Archival Collection (19 відкритих історичних фото: Tamsui 1970 → DGX B200)"
             ]
         elif ep == "03":
             bio_sources = [

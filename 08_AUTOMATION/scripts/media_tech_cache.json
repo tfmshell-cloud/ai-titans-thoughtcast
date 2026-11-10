@@ -5958,5 +5958,85 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_13_ACT4_24FPS_NVIDIA_Endeavor_Aerial_Pressroom.mp4": {
+    "mtime": 1794314391.26,
+    "md5": "1b9a661e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_14_ACT4_24FPS_Huang_Stage_BlackVoid_Pressroom.mp4": {
+    "mtime": 1794314393.48,
+    "md5": "1fff8072",
+    "w": 1920,
+    "h": 1080,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4": {
+    "mtime": 1794314395.37,
+    "md5": "c5c788bc",
+    "w": 1920,
+    "h": 1080,
+    "dur": 9.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "9s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4": {
+    "mtime": 1794314397.9,
+    "md5": "f1ba685b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 16.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "16s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_17_ACT1_24FPS_Huang_CHM_Oneida_Kentucky.mp4": {
+    "mtime": 1794314423.54,
+    "md5": "d55acd10",
+    "w": 1920,
+    "h": 1080,
+    "dur": 19.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "19s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_18_ACT2_24FPS_Huang_CHM_Sega_Generosity.mp4": {
+    "mtime": 1794314449.38,
+    "md5": "c162412d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 20.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "20s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_19_ACT3_24FPS_Huang_Acquired_DGX_Scale.mp4": {
+    "mtime": 1794314473.32,
+    "md5": "29af8ad5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 18.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "18s"
+  },
+  "05_RAW_FOOTAGE/archives/EP02_VID_ARCH_20_ACT2_24FPS_Huang_2013_No_Business_Plan.mp4": {
+    "mtime": 1794314482.93,
+    "md5": "2dbdb931",
+    "w": 400,
+    "h": 226,
+    "dur": 18.0,
+    "is_portrait": false,
+    "res_label": "400×226",
+    "dur_label": "18s"
   }
 }

@@ -1,6 +1,6 @@
 # 🎬 МАЙСТЕР-КАТАЛОГ МЕДІАКОНТЕНТУ EP02 (Дженсен Хуанг)
 
-- **📼 Реальні архівні відеокліпи B-Roll (`05_RAW_FOOTAGE/archives/`):** 12
+- **📼 Реальні архівні відеокліпи B-Roll (`05_RAW_FOOTAGE/archives/`):** 20
 - **📸 Історичні фото та апаратні артефакти (`05_RAW_FOOTAGE/speaker_portraits/young_huang/`):** 19
 - **🗂️ 4K Документальні досьє-пластини (`05_RAW_FOOTAGE/dossiers_press/`):** 6
 - **🇺🇦 4K Українські цитат-картки (`ukrainian_quote_cards/`):** 8
@@ -22,6 +22,14 @@
 | **ARCH #10** | `15:25–16:15` | `EP02_VID_ARCH_10_ACT3_24FPS_Huang_GTC2016_DGX1_Reveal.mp4` | NVIDIA Official GTC 2016 Keynote Part 7 (YouTube 1ayGJDO6PKU) |
 | **ARCH #11** | `17:45–18:20` | `EP02_VID_ARCH_11_ACT4_24FPS_Huang_Stanford_Pain_And_Suffering.mp4` | Stanford SIEPR Economic Summit (March 2024, YouTube cEg8cOx7UZk) |
 | **ARCH #12** | `20:05–21:00` | `EP02_VID_ARCH_12_ACT4_24FPS_Huang_NTU2023_Run_Dont_Walk.mp4` | National Taiwan University Commencement 2023 (YouTube TOXp-Yk_Gsk) |
+| **ARCH #13** | `20:05–20:35` | `EP02_VID_ARCH_13_ACT4_24FPS_NVIDIA_Endeavor_Aerial_Pressroom.mp4` | NVIDIA Newsroom Official Press B-Roll (nvidianews.nvidia.com/multimedia) |
+| **ARCH #14** | `19:30–20:05` | `EP02_VID_ARCH_14_ACT4_24FPS_Huang_Stage_BlackVoid_Pressroom.mp4` | NVIDIA Newsroom Official Press B-Roll (nvidianews.nvidia.com/multimedia) |
+| **ARCH #15** | `15:40–16:15` | `EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4` | NVIDIA Newsroom Official Press B-Roll (nvidianews.nvidia.com/multimedia) |
+| **ARCH #16** | `14:55–15:30` | `EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4` | NVIDIA Newsroom Official Press B-Roll (nvidianews.nvidia.com/multimedia) |
+| **ARCH #17** | `00:34–01:02` | `EP02_VID_ARCH_17_ACT1_24FPS_Huang_CHM_Oneida_Kentucky.mp4` | Computer History Museum Oral History (YouTube 0c8i4T9BSqY) |
+| **ARCH #18** | `08:25–09:05` | `EP02_VID_ARCH_18_ACT2_24FPS_Huang_CHM_Sega_Generosity.mp4` | Computer History Museum Oral History (YouTube 0c8i4T9BSqY) |
+| **ARCH #19** | `14:40–15:25` | `EP02_VID_ARCH_19_ACT3_24FPS_Huang_Acquired_DGX_Scale.mp4` | Acquired Podcast Interview with Jensen Huang (YouTube y6NfxiemvHg) |
+| **ARCH #20** | `06:06–06:30` | `EP02_VID_ARCH_20_ACT2_24FPS_Huang_2013_No_Business_Plan.mp4` | Entrepreneurship.org Archival Lecture (2013, YouTube yU3GUHDf0mk) |
 
 ## 📸 Хронологічні архівні фото (`EP02_IMG_ARCH_*`)
 

@@ -90,6 +90,11 @@ run_ep02() {
   fetch_clip "https://www.youtube.com/watch?v=1ayGJDO6PKU" "00:01:26-00:01:44" "EP02_VID_ARCH_10_ACT3_24FPS_Huang_GTC2016_DGX1_Reveal"
   fetch_clip "https://www.youtube.com/watch?v=cEg8cOx7UZk" "00:37:58-00:38:22" "EP02_VID_ARCH_11_ACT4_24FPS_Huang_Stanford_Pain_And_Suffering"
   fetch_clip "https://www.youtube.com/watch?v=TOXp-Yk_Gsk" "00:21:08-00:21:24" "EP02_VID_ARCH_12_ACT4_24FPS_Huang_NTU2023_Run_Dont_Walk"
+  # 13..16: NVIDIA Official Pressroom (nvidianews.nvidia.com corporate B-roll)
+  fetch_clip "https://www.youtube.com/watch?v=0c8i4T9BSqY" "00:01:55-00:02:14" "EP02_VID_ARCH_17_ACT1_24FPS_Huang_CHM_Oneida_Kentucky"
+  fetch_clip "https://www.youtube.com/watch?v=0c8i4T9BSqY" "00:44:45-00:45:05" "EP02_VID_ARCH_18_ACT2_24FPS_Huang_CHM_Sega_Generosity"
+  fetch_clip "https://www.youtube.com/watch?v=y6NfxiemvHg" "00:21:14-00:21:32" "EP02_VID_ARCH_19_ACT3_24FPS_Huang_Acquired_DGX_Scale"
+  fetch_clip "https://www.youtube.com/watch?v=yU3GUHDf0mk" "00:02:50-00:03:08" "EP02_VID_ARCH_20_ACT2_24FPS_Huang_2013_No_Business_Plan"
 }
 
 run_ep03() {
