@@ -910,7 +910,18 @@ ASSET_AFFINITY_MAP = {
         "09": ["asl_biosecurity_vow", "asl_levels_cofounders", "senate_biosecurity_hearing", "senate_testimony_human_level", "catastrophic_cbrn", "bsl4_containment", "ep07_doc_06", "amodei_tokyo_2025"],
         "10": ["loving_grace_finale", "cancer_dna_microscopes", "cancer_fluorescence", "nanobots_repairing_human_cell", "ep07_flow_img_03", "ep07_doc_06"],
     },
-    "08": {"09": ["spatial_intelligence"]},
+    "08": {
+        "01": ["immigrant_20dollars", "chengdu_heritage", "english_chinese_dict", "laundry_silhouette", "father_camera_lens"],
+        "02": ["ormont_double_life", "laundries_princeton", "ormont_iron_press", "princeton_einstein", "ep08_doc_02", "princeton_nassau"],
+        "03": ["mother_blessing", "wall_street_nyse", "caltech_vision_phd", "caltech_beckman", "ep08_doc_03"],
+        "04": ["dark_basement_data", "sleeping_cat_vision", "cambrian_trilobite", "cambrian_explosion", "ep08_flow_img_01", "asteroid_approaching"],
+        "05": ["mechanical_turk", "imagenet_15m_bigdata", "imagenet_14m_miami", "cambrian_eye", "ep08_doc_01", "ep08_doc_04", "asteroid_entering"],
+        "06": ["drycleaner_fund", "imagenet_stage", "imagenet_mturk", "ep08_doc_04", "stanford_gates_cs"],
+        "07": ["maternity_ward_alexnet", "convolutional_net_hinton", "hinton_alexnet_toronto", "imagenet_curve", "ep08_doc_05", "googleplex_cloud"],
+        "08": ["hospital_smart_sensors", "hai_human_dignity", "human_dignity_agency", "hospital_bedside", "stanford_hai_roundtable", "feifei_aiforgood", "robotic_arms"],
+        "09": ["spatial_intelligence", "world_labs_mission", "ep08_doc_06", "ep08_flow_img_02", "world_labs_3d_lidar"],
+        "10": ["spatial_north_star", "young_immigrants_voice", "humanitarian_award", "ep08_flow_img_03", "ep08_doc_06"],
+    },
     "09": {"05": ["attention_vector"]},
     "10": {"01": ["medical_textbook"], "05": ["global_neural_classroom"]},
 }
@@ -1043,6 +1054,7 @@ def main():
         "05": "EP05_YANN_LECUN",
         "06": "EP06_ILYA_SUTSKEVER",
         "07": "EP07_DARIO_AMODEI",
+        "08": "EP08_FEI_FEI_LI",
     }
     for ep, name_ua, name_en, *_ in EP_META:
         s = vault[ep]["summary"]

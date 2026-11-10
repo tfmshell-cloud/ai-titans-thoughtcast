@@ -496,7 +496,7 @@ html = f'''<!DOCTYPE html>
         <div class="badge badge-cyan" style="margin-bottom:0.45rem;">🎬 ЄДИНИЙ МЕДІА-ВОЛТ СЕЗОНУ 1 (EP01 – EP10)</div>
         <h2 style="margin:0 0 0.35rem 0;">УСІ ВІДЕО, АРХІВИ, 4K ДОСЬЄ, ФОТО ТА ТРАНСКРИПТИ ПО КОЖНОМУ ГЕРОЮ</h2>
         <p style="color:var(--text-muted);font-size:0.9rem;max-width:920px;">
-          Живий інтерактивний індекс бази <code style="color:var(--cyan);">PROJECT_VAULT_INVENTORY</code> та <code style="color:var(--gold);">MEDIA_ACQUISITION_POOL</code>. Оберіть титана (зокрема EP05 Ян Лекун або EP06 Ілля Суцкевер), щоб переглянути всі відеокліпи, фото та завантажені першоджерела.
+          Живий інтерактивний індекс бази <code style="color:var(--cyan);">PROJECT_VAULT_INVENTORY</code> та <code style="color:var(--gold);">MEDIA_ACQUISITION_POOL</code>. Оберіть титана (від EP01 Сема Альтмана до EP08 Фей-Фей Лі), щоб переглянути всі відеокліпи, фото та завантажені першоджерела.
         </p>
       </div>
       <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
@@ -631,16 +631,16 @@ html += f'''
   </section>
 
 </div>
-<script src="data/season1_index.js?v=20261110_v10"></script>
-<script src="data/media_acquisition_pool.js?v=20261110_v10"></script>
-<script src="data/project_vault_inventory.js?v=20261110_v10"></script>
+<script src="data/season1_index.js?v=20261110_v11"></script>
+<script src="data/media_acquisition_pool.js?v=20261110_v11"></script>
+<script src="data/project_vault_inventory.js?v=20261110_v11"></script>
 <script>
 (function () {{
   var season = window.SEASON1_INDEX || [];
   var vault = window.PROJECT_VAULT_INVENTORY || {{}};
   var pool = window.MEDIA_ACQUISITION_POOL || {{}};
   var params = new URLSearchParams(window.location.search || "");
-  var activeEp = params.get("ep") || "07";
+  var activeEp = params.get("ep") || "08";
   if (!vault[activeEp] && season.length) activeEp = season[0].ep;
   var activeKind = "videos";
   var searchQ = "";

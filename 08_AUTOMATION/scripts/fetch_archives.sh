@@ -198,8 +198,23 @@ run_ep07() {
 }
 
 run_ep08() {
-  # EP08 — Фей-Фей Лі: Знакова доповідь про створення ImageNet та комп'ютерний зір
+  # EP08 — Фей-Фей Лі: Доповідь TED ImageNet + повний 4-актний архів (16 HD кліпів)
   fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:06:30-00:06:38" "EP08_VID_ARCH_01_ACT2_24FPS_FeiFeiLi_ImageNet_Stage"
+  fetch_clip "https://www.youtube.com/watch?v=hHlpUt7Cqg8" "00:04:28-00:05:03" "EP08_VID_ARCH_02_ACT1_24FPS_FeiFeiLi_Immigrant_20Dollars_Parsippany_Hoover"
+  fetch_clip "https://www.youtube.com/watch?v=hHlpUt7Cqg8" "00:06:57-00:07:36" "EP08_VID_ARCH_03_ACT1_24FPS_FeiFeiLi_Princeton_Einstein_Physics_Hoover"
+  fetch_clip "https://www.youtube.com/watch?v=QWWgr2rN45o" "00:23:47-00:24:26" "EP08_VID_ARCH_04_ACT1_24FPS_FeiFeiLi_Laundries_Princeton_UofT"
+  fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:03:38-00:04:18" "EP08_VID_ARCH_05_ACT1_24FPS_FeiFeiLi_Caltech_Vision_PhD_TED2015"
+  fetch_clip "https://www.youtube.com/watch?v=y8NtMZ7VGmU" "00:00:55-00:01:38" "EP08_VID_ARCH_06_ACT2_24FPS_FeiFeiLi_Cambrian_Explosion_Trilobites_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:07:18-00:07:56" "EP08_VID_ARCH_07_ACT2_24FPS_FeiFeiLi_Mechanical_Turk_167Countries_TED2015"
+  fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:08:14-00:08:52" "EP08_VID_ARCH_08_ACT2_24FPS_FeiFeiLi_DryCleaner_Fund_ImageNet_TED2015"
+  fetch_clip "https://www.youtube.com/watch?v=y8NtMZ7VGmU" "00:02:46-00:03:20" "EP08_VID_ARCH_09_ACT2_24FPS_FeiFeiLi_ImageNet_15M_BigData_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=40riCqvRoMs" "00:09:56-00:10:34" "EP08_VID_ARCH_10_ACT3_24FPS_FeiFeiLi_Convolutional_Net_Hinton_LeCun_TED2015"
+  fetch_clip "https://www.youtube.com/watch?v=QWWgr2rN45o" "00:11:25-00:12:15" "EP08_VID_ARCH_11_ACT3_24FPS_FeiFeiLi_Hinton_AlexNet_Toronto_Dialogue"
+  fetch_clip "https://www.youtube.com/watch?v=y8NtMZ7VGmU" "00:11:34-00:12:14" "EP08_VID_ARCH_12_ACT3_24FPS_FeiFeiLi_Hospital_Smart_Sensors_Ambient_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=z1g1kkA1M-8" "00:41:50-00:42:26" "EP08_VID_ARCH_13_ACT3_24FPS_FeiFeiLi_Human_Dignity_Agency_TimFerriss"
+  fetch_clip "https://www.youtube.com/watch?v=y8NtMZ7VGmU" "00:05:32-00:06:08" "EP08_VID_ARCH_14_ACT4_24FPS_FeiFeiLi_Spatial_Intelligence_3D_Space_TED2024"
+  fetch_clip "https://www.youtube.com/watch?v=z1g1kkA1M-8" "00:46:06-00:46:44" "EP08_VID_ARCH_15_ACT4_24FPS_FeiFeiLi_World_Labs_Mission_TimFerriss"
+  fetch_clip "https://www.youtube.com/watch?v=HiSK7nv-i94" "00:08:12-00:08:46" "EP08_VID_ARCH_16_ACT4_24FPS_FeiFeiLi_Young_Immigrants_Voice_StanfordHAI"
 }
 
 run_ep09() {

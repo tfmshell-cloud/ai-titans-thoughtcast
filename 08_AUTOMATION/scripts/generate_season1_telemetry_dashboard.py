@@ -33,8 +33,8 @@ EP_META = [
      "Повне досьє + 11 транскриптів & 3 статті (Dwarkesh 2023/2025, No Priors, Simons Berkeley, NeurIPS 2024 Seq2Seq, NVIDIA GTC Fireside, Tel Aviv 2023, UofT 2025, SSI.inc, arXiv) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("07", "dario_amodei", "episode_07_amodei", ["ep07", "amodei"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 14 першоджерельних транскриптів & 4 статті (Lex #452 5 год, Dwarkesh 2024/2026, Сенат США 2023, Alignment Salon, Building Anthropic, CBS News, РБ ООН, «Machines of Loving Grace», arXiv Scaling Laws / CAI & Transformer Circuits) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
-    ("08", "fei_fei_li", "episode_08_li", ["ep08", "feifei", "fei_fei", "fei-fei"], "🟠 Розширений препродакшн + Аудіоогляд", 46, "stage-preprod",
-     "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + TED Talk архів + 2 VFX + готовий 26-хв український подкаст NotebookLM Overview! Наступний крок: генерація візуалів ImageNet."),
+    ("08", "fei_fei_li", "episode_08_li", ["ep08", "feifei", "fei_fei", "fei-fei"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 12 першоджерельних транскриптів & 4 статті (TED 2015/2024, Stanford HAI/SIEPR, Hinton & Li UofT, Tim Ferriss, Hoover, No Priors, Latent Space World Labs, arXiv ImageNet & Stanford Vision Lab) + 26-хв NotebookLM + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 цитат-карток + 26 4K кліпів."),
     ("09", "yoshua_bengio", "episode_09_bengio", ["ep09", "bengio"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + свідчення в Сенаті 2023 + 2 наукові VFX + Flow Attention Threads. Очікує генерацію Veo."),
     ("10", "andrew_ng", "episode_10_ng", ["ep10", "andrew_ng", "_ng_"], "🟠 Препродакшн & Стартовий інжест", 40, "stage-preprod",
@@ -193,10 +193,13 @@ def count_project_stats():
             ]
         elif ep == "08":
             bio_sources = [
-                "«The Worlds I See» (2023 Memoir — Stanford / Princeton)",
-                "ImageNet CVPR 2009 Milestone Paper (14M labeled images)",
-                "TED Talk Official Archive & Stanford HAI Keynotes",
-                "World Labs Spatial Intelligence Launch (2024)"
+                "TED 2015 ImageNet (`40riCqvRoMs`) & TED 2024 Spatial Intelligence (`y8NtMZ7VGmU`)",
+                "Stanford HAI Fireside John Hennessy (`HiSK7nv-i94`) & Discovery Loop Jeff Dean (`ooGKNwJWdb8`)",
+                "Stanford SIEPR (`lV29vATjoW4`) & Hoover Institution (`hHlpUt7Cqg8` — $20 NJ & Princeton)",
+                "Geoffrey Hinton & Fei-Fei Li UofT (`QWWgr2rN45o`) & Tim Ferriss North Star (`z1g1kkA1M-8`)",
+                "Latent Space (`60iW8FZ7MJU`), No Priors (`C6Zm5S7JHMw`), a16z & Bloomberg (`ITxsc3mgqts`)",
+                "arXiv `1409.0575` / CVPR 2009 ImageNet, Stanford Vision Lab & `worldlabs.ai/blog`",
+                "Wikimedia Commons Archival Collection (18 відкритих фото: Ченду → Прінстон → пральня → ImageNet → World Labs)"
             ]
         elif ep == "09":
             bio_sources = [
@@ -750,7 +753,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP07)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP08)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>

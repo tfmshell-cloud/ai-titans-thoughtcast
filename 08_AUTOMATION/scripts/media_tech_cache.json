@@ -9878,5 +9878,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_01_chengdu_sichuan_heritage_street.jpg": {
+    "mtime": 1794337778.88,
+    "md5": "6057306f",
+    "w": 2560,
+    "h": 1707,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_02_father_repaired_35mm_camera_lens.jpg": {
+    "mtime": 1794337781.98,
+    "md5": "7915ed04",
+    "w": 3840,
+    "h": 2519,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_03_english_chinese_study_dictionary.jpg": {
+    "mtime": 1794337784.82,
+    "md5": "441270c9",
+    "w": 1920,
+    "h": 3413,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_04_immigrant_laundry_pressing_steam_silhouette.jpg": {
+    "mtime": 1794337785.91,
+    "md5": "edcbf678",
+    "w": 3840,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_05_ormont_cleaners_heavy_iron_press.jpg": {
+    "mtime": 1794337786.52,
+    "md5": "05f719eb",
+    "w": 1844,
+    "h": 1308,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1844×1308",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_06_princeton_nassau_hall_dusk_physics.jpg": {
+    "mtime": 1794337790.39,
+    "md5": "d43f47cb",
+    "w": 3840,
+    "h": 2158,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_07_wall_street_nyse_rejected_offers.jpg": {
+    "mtime": 1794337791.13,
+    "md5": "b9d4234e",
+    "w": 3840,
+    "h": 2564,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_08_caltech_beckman_institute_pasadena.jpg": {
+    "mtime": 1794337795.1,
+    "md5": "e087a0ff",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_09_cambrian_trilobite_evolution_eyes.jpg": {
+    "mtime": 1794337796.28,
+    "md5": "1299f28c",
+    "w": 3840,
+    "h": 2358,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_10_sleeping_cat_computer_vision_challenge.jpg": {
+    "mtime": 1794337797.13,
+    "md5": "5de914b0",
+    "w": 3648,
+    "h": 2736,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_11_stanford_gates_cs_sail_building.jpg": {
+    "mtime": 1794337800.54,
+    "md5": "661e9128",
+    "w": 3840,
+    "h": 2400,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_12_imagenet_alexnet_error_rate_crash.jpg": {
+    "mtime": 1794337801.73,
+    "md5": "5fea9a30",
+    "w": 3840,
+    "h": 4694,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_13_googleplex_cloud_ai_2017.jpg": {
+    "mtime": 1794337802.54,
+    "md5": "40264e30",
+    "w": 3264,
+    "h": 2448,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_14_feifei_li_ai_for_good_2017_keynote.jpg": {
+    "mtime": 1794337803.05,
+    "md5": "df83487d",
+    "w": 909,
+    "h": 1350,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 909×1350",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_15_stanford_hai_roundtable_feifei_li.jpg": {
+    "mtime": 1794337803.7,
+    "md5": "a5e82c78",
+    "w": 3840,
+    "h": 2161,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_16_hospital_bedside_ambient_healthcare_ai.jpg": {
+    "mtime": 1794337804.54,
+    "md5": "6092ad80",
+    "w": 2724,
+    "h": 2148,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_17_feifei_li_global_humanitarian_award_2024.jpg": {
+    "mtime": 1794337805.18,
+    "md5": "2faed193",
+    "w": 1920,
+    "h": 2560,
+    "dur": 0.0,
+    "is_portrait": true,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_18_world_labs_3d_spatial_point_cloud.jpg": {
+    "mtime": 1794337806.43,
+    "md5": "4cdade65",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_02_ACT1_24FPS_FeiFeiLi_Immigrant_20Dollars_Parsippany_Hoover.mp4": {
+    "mtime": 1794338061.23,
+    "md5": "c6dad4e7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 35.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "35s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_03_ACT1_24FPS_FeiFeiLi_Princeton_Einstein_Physics_Hoover.mp4": {
+    "mtime": 1794338087.44,
+    "md5": "d5c2fad6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 39.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "39s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_04_ACT1_24FPS_FeiFeiLi_Laundries_Princeton_UofT.mp4": {
+    "mtime": 1794338124.68,
+    "md5": "152d92d6",
+    "w": 1920,
+    "h": 1080,
+    "dur": 39.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "39s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_05_ACT1_24FPS_FeiFeiLi_Caltech_Vision_PhD_TED2015.mp4": {
+    "mtime": 1794338160.52,
+    "md5": "6ec17ed3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 40.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "40s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_06_ACT2_24FPS_FeiFeiLi_Cambrian_Explosion_Trilobites_TED2024.mp4": {
+    "mtime": 1794338196.41,
+    "md5": "194fd013",
+    "w": 1920,
+    "h": 1080,
+    "dur": 43.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "43s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_07_ACT2_24FPS_FeiFeiLi_Mechanical_Turk_167Countries_TED2015.mp4": {
+    "mtime": 1794338214.99,
+    "md5": "47146aa2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_08_ACT2_24FPS_FeiFeiLi_DryCleaner_Fund_ImageNet_TED2015.mp4": {
+    "mtime": 1794338252.25,
+    "md5": "e4cdb20d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_09_ACT2_24FPS_FeiFeiLi_ImageNet_15M_BigData_TED2024.mp4": {
+    "mtime": 1794338276.22,
+    "md5": "d163cfbe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_10_ACT3_24FPS_FeiFeiLi_Convolutional_Net_Hinton_LeCun_TED2015.mp4": {
+    "mtime": 1794338289.01,
+    "md5": "a0d11300",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_11_ACT3_24FPS_FeiFeiLi_Hinton_AlexNet_Toronto_Dialogue.mp4": {
+    "mtime": 1794338320.6,
+    "md5": "9d0342aa",
+    "w": 1920,
+    "h": 1080,
+    "dur": 50.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "50s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_12_ACT3_24FPS_FeiFeiLi_Hospital_Smart_Sensors_Ambient_TED2024.mp4": {
+    "mtime": 1794338344.72,
+    "md5": "c99cf121",
+    "w": 1920,
+    "h": 1080,
+    "dur": 40.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "40s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_13_ACT3_24FPS_FeiFeiLi_Human_Dignity_Agency_TimFerriss.mp4": {
+    "mtime": 1794338379.62,
+    "md5": "8da78eda",
+    "w": 1920,
+    "h": 1080,
+    "dur": 36.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "36s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_14_ACT4_24FPS_FeiFeiLi_Spatial_Intelligence_3D_Space_TED2024.mp4": {
+    "mtime": 1794338394.08,
+    "md5": "f11d7ddb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 36.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "36s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_15_ACT4_24FPS_FeiFeiLi_World_Labs_Mission_TimFerriss.mp4": {
+    "mtime": 1794338426.74,
+    "md5": "fda75716",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP08_VID_ARCH_16_ACT4_24FPS_FeiFeiLi_Young_Immigrants_Voice_StanfordHAI.mp4": {
+    "mtime": 1794338458.07,
+    "md5": "e7d87b7f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 34.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "34s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_caltech_beckman_6s.mp4": {
+    "mtime": 1794337890.89,
+    "md5": "162e6a2e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_cambrian_trilobite_6s.mp4": {
+    "mtime": 1794337891.75,
+    "md5": "9df4487b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_chengdu_heritage_6s.mp4": {
+    "mtime": 1794337884.87,
+    "md5": "951082c2",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_english_chinese_dict_6s.mp4": {
+    "mtime": 1794337886.37,
+    "md5": "8dbe846c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_father_camera_lens_6s.mp4": {
+    "mtime": 1794337885.62,
+    "md5": "8c57985f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_feifei_aiforgood_2017_6s.mp4": {
+    "mtime": 1794337895.71,
+    "md5": "74b12606",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_googleplex_cloud_2017_6s.mp4": {
+    "mtime": 1794337895.01,
+    "md5": "43db6953",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_hospital_bedside_6s.mp4": {
+    "mtime": 1794337897.43,
+    "md5": "61e36f32",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_humanitarian_award_2024_6s.mp4": {
+    "mtime": 1794337898.24,
+    "md5": "1dc1bbee",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_imagenet_curve_6s.mp4": {
+    "mtime": 1794337894.11,
+    "md5": "9ba66c04",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_laundry_silhouette_6s.mp4": {
+    "mtime": 1794337887.17,
+    "md5": "574ddeb7",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_ormont_iron_press_6s.mp4": {
+    "mtime": 1794337887.9,
+    "md5": "23b8559f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_princeton_nassau_6s.mp4": {
+    "mtime": 1794337888.95,
+    "md5": "0887690e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_sleeping_cat_vision_6s.mp4": {
+    "mtime": 1794337892.53,
+    "md5": "7a3ded37",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_stanford_gates_cs_6s.mp4": {
+    "mtime": 1794337893.58,
+    "md5": "3b2ec80e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_stanford_hai_roundtable_6s.mp4": {
+    "mtime": 1794337896.52,
+    "md5": "4a7f41e8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_wall_street_nyse_6s.mp4": {
+    "mtime": 1794337889.97,
+    "md5": "d36c4ee3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_world_labs_3d_lidar_6s.mp4": {
+    "mtime": 1794337899.39,
+    "md5": "4153e150",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_01_cambrian_eye_540m_10s.mp4": {
+    "mtime": 1794337874.31,
+    "md5": "0e501fec",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_02_ormont_double_life_10s.mp4": {
+    "mtime": 1794337875.6,
+    "md5": "6a42c12d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_03_mother_blessing_1999_10s.mp4": {
+    "mtime": 1794337876.9,
+    "md5": "2f8d684d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_04_dark_basement_data_10s.mp4": {
+    "mtime": 1794337878.19,
+    "md5": "872b94eb",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_05_imagenet_14m_miami_10s.mp4": {
+    "mtime": 1794337879.48,
+    "md5": "9ee6c95e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_06_maternity_ward_alexnet_10s.mp4": {
+    "mtime": 1794337880.77,
+    "md5": "d9c76af5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_07_hai_human_dignity_12s.mp4": {
+    "mtime": 1794337882.26,
+    "md5": "59ca13ea",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_ua_clip_card_08_spatial_north_star_finale_12s.mp4": {
+    "mtime": 1794337883.75,
+    "md5": "35f9e61a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_02_ACT1_chengdu_parsippany_ormont_cleaners_1992.mp4": {
+    "mtime": 1794337863.41,
+    "md5": "40434a96",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_02_ACT1_chengdu_parsippany_ormont_cleaners_1992.png": {
+    "mtime": 1794337861.96,
+    "md5": "45095987",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_03_ACT1_princeton_caltech_neuro_vision_2005.mp4": {
+    "mtime": 1794337865.91,
+    "md5": "78c4745d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_03_ACT1_princeton_caltech_neuro_vision_2005.png": {
+    "mtime": 1794337864.51,
+    "md5": "64faf2ff",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_04_ACT2_imagenet_14m_mturk_miami_boycott_2009.mp4": {
+    "mtime": 1794337868.42,
+    "md5": "d173d84c",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_04_ACT2_imagenet_14m_mturk_miami_boycott_2009.png": {
+    "mtime": 1794337867.04,
+    "md5": "4dd0850c",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_05_ACT3_alexnet_2012_hospital_hai_dignity_2019.mp4": {
+    "mtime": 1794337870.89,
+    "md5": "26c6c704",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_05_ACT3_alexnet_2012_hospital_hai_dignity_2019.png": {
+    "mtime": 1794337869.52,
+    "md5": "f65ce365",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_06_ACT4_world_labs_spatial_intelligence_2024_northstar.mp4": {
+    "mtime": 1794337873.36,
+    "md5": "28315d77",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP08_DOC_06_ACT4_world_labs_spatial_intelligence_2024_northstar.png": {
+    "mtime": 1794337871.99,
+    "md5": "b7421aed",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_01_cambrian_eye_540m_10s.png": {
+    "mtime": 1794337873.47,
+    "md5": "c9825599",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_02_ormont_double_life_10s.png": {
+    "mtime": 1794337874.77,
+    "md5": "56167a43",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_03_mother_blessing_1999_10s.png": {
+    "mtime": 1794337876.06,
+    "md5": "fa8cb0fa",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_04_dark_basement_data_10s.png": {
+    "mtime": 1794337877.36,
+    "md5": "0942aba1",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_05_imagenet_14m_miami_10s.png": {
+    "mtime": 1794337878.65,
+    "md5": "22b1868f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_06_maternity_ward_alexnet_10s.png": {
+    "mtime": 1794337879.94,
+    "md5": "e40e5cb2",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_07_hai_human_dignity_12s.png": {
+    "mtime": 1794337881.22,
+    "md5": "ee7d221b",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/ep08_ua_clip_card_08_spatial_north_star_finale_12s.png": {
+    "mtime": 1794337882.72,
+    "md5": "9190e6cd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

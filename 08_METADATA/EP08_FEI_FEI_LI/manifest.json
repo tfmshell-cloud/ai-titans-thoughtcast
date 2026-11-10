@@ -1,0 +1,196 @@
+{
+  "episode_id": "EP08",
+  "hero": "Fei-Fei Li",
+  "hero_ua": "Фей-Фей Лі",
+  "bpm": 92,
+  "status": "ASSETS_INGESTED_AND_SYNCED",
+  "updated_at": "2026-11-10",
+  "research_directory": "01_RESEARCH/fei_fei_li/",
+  "summary": {
+    "research_docs_count": 22,
+    "transcripts_count": 13,
+    "articles_count": 4,
+    "research_words": 142153,
+    "videos_total": 60,
+    "videos_native": 50,
+    "images_total": 46,
+    "images_native": 37,
+    "archival_videos": 16,
+    "archival_photos": 18,
+    "dossiers_4k": 6,
+    "flow_triads": 10,
+    "audio_stems": 4
+  },
+  "research_sources": [
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ (v2.0 AUDITED): ЕПІЗОД 08 — ФЕЙ-ФЕЙ ЛІ",
+      "rel_path": "01_RESEARCH/fei_fei_li/MASTER_DOSSIER_EP08.md",
+      "url": "",
+      "words": 14314
+    },
+    {
+      "title": "ГЛОБАЛЬНИЙ РЕЄСТР МЕДІААРХІВІВ ТА ПЕРШОДЖЕРЕЛ — EP08: ФЕЙ-ФЕЙ ЛІ",
+      "rel_path": "01_RESEARCH/fei_fei_li/GLOBAL_MEDIA_ARCHIVES_REGISTRY_FEI_FEI_LI.md",
+      "url": "https://www.youtube.com/watch?v=40riCqvRoMs",
+      "words": 1008
+    },
+    {
+      "title": "Fei-Fei Li — Core Architectural & Philosophical Theses (EP08)",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_Core_Theses.md",
+      "url": "",
+      "words": 165
+    },
+    {
+      "title": "TED 2015: How We're Teaching Computers to Understand Pictures — Fei-Fei Li",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_01_TED_2015_Computers_Understand_Pictures.md",
+      "url": "https://www.youtube.com/watch?v=40riCqvRoMs",
+      "words": 2631
+    },
+    {
+      "title": "TED 2024: With Spatial Intelligence, AI Will Understand the Real World — Fei-Fei Li",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_02_TED_2024_Spatial_Intelligence.md",
+      "url": "https://www.youtube.com/watch?v=y8NtMZ7VGmU",
+      "words": 2169
+    },
+    {
+      "title": "Stanford HAI Fireside: Fei-Fei Li & John Hennessy on 'The Worlds I See'",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_03_Stanford_HAI_John_Hennessy_Worlds_I_See.md",
+      "url": "https://www.youtube.com/watch?v=HiSK7nv-i94",
+      "words": 11405
+    },
+    {
+      "title": "Stanford SIEPR: Fei-Fei Li — One Immigrant's American Dream (Dry Cleaner & Princeton)",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_04_Stanford_SIEPR_Immigrants_American_Dream.md",
+      "url": "https://www.youtube.com/watch?v=lV29vATjoW4",
+      "words": 9034
+    },
+    {
+      "title": "Stanford HAI Closing Keynote: Discovery Loop with Jeff Dean and Fei-Fei Li",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_05_Stanford_HAI_Jeff_Dean_FeiFei_Discovery_Loop.md",
+      "url": "https://www.youtube.com/watch?v=ooGKNwJWdb8",
+      "words": 9129
+    },
+    {
+      "title": "University of Toronto: Geoffrey Hinton in Conversation with Fei-Fei Li",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_06_UofT_Geoffrey_Hinton_FeiFeiLi_Responsible_AI.md",
+      "url": "https://www.youtube.com/watch?v=QWWgr2rN45o",
+      "words": 20125
+    },
+    {
+      "title": "Latent Space: After LLMs — Spatial Intelligence & World Models (Fei-Fei Li & Justin Johnson)",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_07_LatentSpace_WorldLabs_Spatial_Models.md",
+      "url": "https://www.youtube.com/watch?v=60iW8FZ7MJU",
+      "words": 14295
+    },
+    {
+      "title": "Hoover Institution: Fei-Fei Li on Curiosity, Audacity, and the Quest for AI",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_08_Hoover_WorldLabs_Curiosity_Audacity.md",
+      "url": "https://www.youtube.com/watch?v=hHlpUt7Cqg8",
+      "words": 8227
+    },
+    {
+      "title": "No Priors Ep. 117: Dr. Fei-Fei Li on Stanford HAI & World Labs",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_09_NoPriors_117_StanfordHAI_WorldLabs.md",
+      "url": "https://www.youtube.com/watch?v=C6Zm5S7JHMw",
+      "words": 6523
+    },
+    {
+      "title": "a16z: Fei-Fei Li on Solving the Hardest Problem in Robotics & Spatial AI",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_10_a16z_Hardest_Problem_In_Robotics_WorldLabs.md",
+      "url": "https://www.youtube.com/watch?v=-tabaM5l3s0",
+      "words": 8519
+    },
+    {
+      "title": "Tim Ferriss Show: Dr. Fei-Fei Li — Asking Audacious Questions & Finding Your North Star",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_11_TimFerriss_FeiFeiLi_NorthStar.md",
+      "url": "https://www.youtube.com/watch?v=z1g1kkA1M-8",
+      "words": 12461
+    },
+    {
+      "title": "Bloomberg Originals (The Circuit): What's Beyond ChatGPT? The Godmother of AI",
+      "rel_path": "01_RESEARCH/fei_fei_li/transcripts/EP08_TR_12_Bloomberg_The_Circuit_Godmother_Of_AI.md",
+      "url": "https://www.youtube.com/watch?v=ITxsc3mgqts",
+      "words": 4452
+    },
+    {
+      "title": "EP08_ART_01: Wikipedia Encyclopedic Chronicles — Fei-Fei Li, ImageNet & Stanford HAI",
+      "rel_path": "01_RESEARCH/fei_fei_li/articles/EP08_ART_01_FeiFeiLi_Wikipedia_Chronicle.md",
+      "url": "",
+      "words": 5260
+    },
+    {
+      "title": "EP08_ART_02: Landmark Scientific Papers — ImageNet (CVPR 2009 / IJCV 2015) & Spatial Intelligence",
+      "rel_path": "01_RESEARCH/fei_fei_li/articles/EP08_ART_02_ImageNet_CVPR2009_and_Visual_Genome_Papers.md",
+      "url": "",
+      "words": 565
+    },
+    {
+      "title": "EP08_ART_03: World Labs Spatial Intelligence Manifesto & Stanford HAI Founding Mission",
+      "rel_path": "01_RESEARCH/fei_fei_li/articles/EP08_ART_03_WorldLabs_Spatial_and_Stanford_HAI.md",
+      "url": "https://profiles.stanford.edu/fei-fei-li",
+      "words": 8497
+    },
+    {
+      "title": "EP08_ART_04: «The Worlds I See» Biographical Context & Image-Net.org Portal",
+      "rel_path": "01_RESEARCH/fei_fei_li/articles/EP08_ART_04_The_Worlds_I_See_and_AI4ALL_Archives.md",
+      "url": "https://ai-4-all.org/about/",
+      "words": 265
+    },
+    {
+      "title": "Епізод 08 — Фей-Фей Лі: Очі машин та пара пральні",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Епізод 08 — Фей-Фей Лі: Очі машин та пара пральні.pdf",
+      "url": "",
+      "words": 0
+    },
+    {
+      "title": "МАСТЕР-ДОСЬЄ ПРОЄКТУ: ЕПІЗОД 08 — ФЕЙ-ФЕЙ ЛІ",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Мастер-досьє__Фей-Фей_Лі.md",
+      "url": "",
+      "words": 3109
+    },
+    {
+      "title": "Фей-Фей Лі",
+      "rel_path": "01_RESEARCH/source_pdfs_and_dossiers/Фей-Фей Лі.pdf",
+      "url": "",
+      "words": 0
+    }
+  ],
+  "archival_clips": [
+    "EP08_VID_ARCH_01_ACT2_24FPS_FeiFeiLi_ImageNet_Stage.mp4",
+    "EP08_VID_ARCH_02_ACT1_24FPS_FeiFeiLi_Immigrant_20Dollars_Parsippany_Hoover.mp4",
+    "EP08_VID_ARCH_03_ACT1_24FPS_FeiFeiLi_Princeton_Einstein_Physics_Hoover.mp4",
+    "EP08_VID_ARCH_04_ACT1_24FPS_FeiFeiLi_Laundries_Princeton_UofT.mp4",
+    "EP08_VID_ARCH_05_ACT1_24FPS_FeiFeiLi_Caltech_Vision_PhD_TED2015.mp4",
+    "EP08_VID_ARCH_06_ACT2_24FPS_FeiFeiLi_Cambrian_Explosion_Trilobites_TED2024.mp4",
+    "EP08_VID_ARCH_07_ACT2_24FPS_FeiFeiLi_Mechanical_Turk_167Countries_TED2015.mp4",
+    "EP08_VID_ARCH_08_ACT2_24FPS_FeiFeiLi_DryCleaner_Fund_ImageNet_TED2015.mp4",
+    "EP08_VID_ARCH_09_ACT2_24FPS_FeiFeiLi_ImageNet_15M_BigData_TED2024.mp4",
+    "EP08_VID_ARCH_10_ACT3_24FPS_FeiFeiLi_Convolutional_Net_Hinton_LeCun_TED2015.mp4",
+    "EP08_VID_ARCH_11_ACT3_24FPS_FeiFeiLi_Hinton_AlexNet_Toronto_Dialogue.mp4",
+    "EP08_VID_ARCH_12_ACT3_24FPS_FeiFeiLi_Hospital_Smart_Sensors_Ambient_TED2024.mp4",
+    "EP08_VID_ARCH_13_ACT3_24FPS_FeiFeiLi_Human_Dignity_Agency_TimFerriss.mp4",
+    "EP08_VID_ARCH_14_ACT4_24FPS_FeiFeiLi_Spatial_Intelligence_3D_Space_TED2024.mp4",
+    "EP08_VID_ARCH_15_ACT4_24FPS_FeiFeiLi_World_Labs_Mission_TimFerriss.mp4",
+    "EP08_VID_ARCH_16_ACT4_24FPS_FeiFeiLi_Young_Immigrants_Voice_StanfordHAI.mp4"
+  ],
+  "archival_photos": [
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_01_chengdu_sichuan_heritage_street.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_02_father_repaired_35mm_camera_lens.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_03_english_chinese_study_dictionary.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_04_immigrant_laundry_pressing_steam_silhouette.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_05_ormont_cleaners_heavy_iron_press.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_06_princeton_nassau_hall_dusk_physics.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_07_wall_street_nyse_rejected_offers.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_08_caltech_beckman_institute_pasadena.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_09_cambrian_trilobite_evolution_eyes.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_10_sleeping_cat_computer_vision_challenge.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_11_stanford_gates_cs_sail_building.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_12_imagenet_alexnet_error_rate_crash.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_13_googleplex_cloud_ai_2017.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_14_feifei_li_ai_for_good_2017_keynote.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_15_stanford_hai_roundtable_feifei_li.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_16_hospital_bedside_ambient_healthcare_ai.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_17_feifei_li_global_humanitarian_award_2024.jpg",
+    "05_RAW_FOOTAGE/speaker_portraits/young_feifei/ep08_img_arch_18_world_labs_3d_spatial_point_cloud.jpg"
+  ]
+}
