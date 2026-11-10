@@ -2976,7 +2976,8 @@
       "05": "Хронологічний фотоархів 1977–2026: Париж, Tektronix 475A, MOS 6502, ESIEE, Сорбонна, Мінський, Bell Labs Holmdel, NYU Курант, Meta FAIR, Гутенберг, Бейдевінд & AMI Labs",
       "06": "Хронологічний фотоархів 1986–2026: Горький, Єрусалим, UofT Кабінет №4306, GTX 580 GF110, Стенфорд, Google Brain 2014, OpenAI Pioneer SF, Багаття AGI, Тель-Авів & SSI",
       "07": "Хронологічний фотоархів 1983–2026: Сан-Франциско, Шкіра батька, Стенфорд, Принстон Сітківка 50x, Baidu, Googleplex, OpenAI, TPU v3, Клод Шеннон, Anthropic 500 Howard, Білий дім, Даунінг-стріт, Токіо 2025, BSL-4 & Онко-ДНК",
-      "08": "Хронологічний фотоархів 1976–2026: Ченду, Фотокамера батька, Словник, Пральня Ormont Cleaners, Прінстон, Уолл-стріт 1999, Калтех, Кембрійські трилобіти, Gates CS SAIL, Графік ImageNet, Googleplex, AI for Good, Stanford HAI, Лікарня & 3D LiDAR World Labs"
+      "08": "Хронологічний фотоархів 1976–2026: Ченду, Фотокамера батька, Словник, Пральня Ormont Cleaners, Прінстон, Уолл-стріт 1999, Калтех, Кембрійські трилобіти, Gates CS SAIL, Графік ImageNet, Googleplex, AI for Good, Stanford HAI, Лікарня & 3D LiDAR World Labs",
+      "09": "Хронологічний фотоархів 1964–2026: Париж 1978, Théâtre de Paris, Азімов, Макгілл 1991, Bell Labs, Університет Монреаля, Зима ШІ, Вектори слів, Cross-Attention, Бульвар Сен-Лоран (Mila), GFlowNets, Капітолій 2023, Блетчлі-Парк, Рада Безпеки ООН, Зимовий велосипед & Сяйво над Канадою"
     };
     var archPhotoEraNote = archPhotoEraMap[epData.ep] || "Автентичні знімки спікера та історичні артефакти епохи";
     var photoSectionHtml = photoCardsHtml ? [
