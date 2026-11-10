@@ -233,15 +233,20 @@ def count_project_stats():
                 sz = os.path.getsize(fp)
 
                 matched_ep = None
+                import re as _re
                 if "ep02_demis_hassabis" in rel:
                     matched_ep = "03"
-                elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel:
-                    matched_ep = "01"
                 else:
-                    for ep, _, _, kws, *_ in EP_META:
-                        if any(k in rel for k in kws):
-                            matched_ep = ep
-                            break
+                    m_ep_explicit = _re.search(r"(?:^|[^a-z0-9])ep(0[1-9]|10)(?:[^0-9]|$)", rel)
+                    if m_ep_explicit:
+                        matched_ep = m_ep_explicit.group(1)
+                    elif "user_ai_generations" in rel or "user_ai_images" in rel or "altman" in rel:
+                        matched_ep = "01"
+                    else:
+                        for ep, _, _, kws, *_ in EP_META:
+                            if any(k in rel for k in kws):
+                                matched_ep = ep
+                                break
 
                 is_vid = ext in [".mp4", ".mov", ".mkv"]
                 is_img = ext in [".jpg", ".jpeg", ".png", ".webp"]

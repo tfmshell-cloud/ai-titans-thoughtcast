@@ -64,12 +64,6 @@ a { color: inherit; text-decoration: none; }
   padding: 0.65rem 1.25rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
-  background: rgba(12, 14, 19, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
-  padding: 0.65rem 1.25rem;
-}
 
 .ep-topbar-inner {
   max-width: 1360px;
@@ -1378,4 +1372,306 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Structured Navigation & Clean Media Pool Sub-Tabs / Vault / Triads
+   ========================================================================== */
+.nav-hub-group {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.btn-nav-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.78rem;
+  border-radius: 7px;
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: #34d399;
+  font-size: 11.8px;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+.btn-nav-stat:hover {
+  background: rgba(16, 185, 129, 0.24);
+  border-color: #34d399;
+}
+
+.btn-nav-context {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.42rem 0.72rem;
+  border-radius: 7px;
+  background: rgba(167, 139, 250, 0.12);
+  border: 1px solid rgba(167, 139, 250, 0.42);
+  color: var(--purple);
+  font-size: 11.5px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.btn-nav-context:hover {
+  background: rgba(167, 139, 250, 0.22);
+  border-color: var(--purple);
+}
+
+.media-subtabs-bar {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  padding: 0.55rem;
+  margin-bottom: 0.9rem;
+  background: rgba(13, 17, 26, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  position: sticky;
+  top: 66px;
+  z-index: 40;
+  backdrop-filter: blur(12px);
+}
+
+.media-subtab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.52rem 0.95rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-elevated);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all 0.15s ease;
+}
+
+.media-subtab-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.media-subtab-btn.active {
+  background: rgba(56, 189, 248, 0.16);
+  color: var(--cyan);
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35);
+}
+
+.media-subtab-count {
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+}
+
+.vault-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 0.85rem;
+}
+
+.vault-card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.vault-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-1px);
+}
+
+.vault-thumb-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #05070c;
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+}
+
+.vault-thumb-box img,
+.vault-thumb-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vault-play-badge {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(8, 12, 20, 0.82);
+  border: 1.5px solid rgba(56, 189, 248, 0.85);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.vault-thumb-box:hover .vault-play-badge {
+  transform: scale(1.08);
+  background: rgba(56, 189, 248, 0.9);
+  color: #05080f;
+}
+
+.vault-tag-tl {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(8, 10, 16, 0.88);
+  color: var(--amber);
+}
+
+.vault-tag-br {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(8, 10, 16, 0.9);
+  color: var(--cyan);
+}
+
+.vault-title {
+  font-size: 12.8px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.vault-path-mono {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.vault-path-mono:hover {
+  color: var(--cyan);
+}
+
+/* Standardized 3-Prompt Triad Cards */
+.triad-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.triad-card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 0.95rem 1.05rem;
+}
+
+.triad-card.status-video_ready {
+  border-color: rgba(52, 211, 153, 0.5);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.triad-card.status-image_ready {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(56, 189, 248, 0.03);
+}
+
+.triad-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.triad-prompts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+@media (max-width: 1050px) {
+  .triad-prompts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.triad-step-box {
+  background: rgba(8, 11, 18, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.triad-step-box.step-1 { border-top: 2px solid var(--cyan); }
+.triad-step-box.step-2 { border-top: 2px solid var(--amber); background: rgba(245, 158, 11, 0.04); }
+.triad-step-box.step-3 { border-top: 2px solid var(--emerald); }
+
+.triad-step-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.triad-prompt-code {
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.5;
+  color: #e2e8f0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  flex: 1;
+}
+
+.triad-footer-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  padding-top: 0.55rem;
+  border-top: 1px dashed var(--border-subtle);
+  font-size: 11.2px;
+  color: var(--text-secondary);
 }

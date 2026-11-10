@@ -12,6 +12,13 @@
   var STORAGE_KEY = "aititans_progress_v2_" + epData.ep;
   var state = {
     activeTab: "sop",
+    mediaSubTab: "videos",
+    vaultVidCat: "all",
+    vaultVidSearch: "",
+    vaultImgCat: "all",
+    vaultImgSearch: "",
+    triadFilter: "all",
+    triadSearch: "",
     scriptMode: "full",
     promptFilter: "all",
     promptSearch: "",
@@ -168,10 +175,17 @@
     var lbl = document.getElementById("epProgressLabel");
     var badgeSop = document.getElementById("badgeSopCount");
     var badgeVid = document.getElementById("badgeVidCount");
+    var badgeMediaTab = document.getElementById("badgeMediaTabCount");
     if (fill) fill.style.width = stats.pct + "%";
     if (lbl) lbl.textContent = stats.pct + "% (" + stats.sopDone + "/" + stats.sopTotal + " SOP)";
     if (badgeSop) badgeSop.textContent = stats.sopDone + "/" + stats.sopTotal;
     if (badgeVid) badgeVid.textContent = stats.vidDone + "/100";
+    if (badgeMediaTab) {
+      var vInv = (window.PROJECT_VAULT_INVENTORY || {})[epData.ep];
+      if (vInv && vInv.summary) {
+        badgeMediaTab.textContent = "🎥 " + (vInv.summary.videos_count || 0) + " • 🖼️ " + (vInv.summary.images_count || 0);
+      }
+    }
   }
 
   function textToSSML(cleanText) {
@@ -392,14 +406,27 @@
       "</div>"
     ].join("\n");
 
-    var totalVidClips = ((epMediaInit.archives || []).length + (epMediaInit.flow_queue || []).length + (epMediaInit.dossiers || []).length);
+    var vSummary = ((window.PROJECT_VAULT_INVENTORY || {})[epData.ep] || {}).summary || {};
+    var totalVidClips = vSummary.videos_count || ((epMediaInit.archives || []).length + (epMediaInit.flow_queue || []).length + (epMediaInit.dossiers || []).length);
+
+    var contextLinksHtml = "<a class=\"btn-nav-stat\" href=\"../season1_telemetry_dashboard.html\">📊 Статистика (10 Героїв)</a>";
+    contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../media_vault_analysis.html\">🗂️ Медіа-Волт</a>";
+    if (epData.ep === "01") {
+      contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../cinematic_innovations.html\">🎬 20 Кіно-Фішок</a>";
+    } else if (epData.ep === "02") {
+      contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../cinematic_innovations_ep02.html\">🎬 20 Тріад (Окрема)</a>";
+    } else if (epData.ep === "03") {
+      contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../50_scenes_hassabis.html\">🎯 50 Сюжетів Хассабіса</a>";
+      contextLinksHtml += "<a class=\"btn-nav-context\" href=\"../cinematic_innovations_ep03.html\">🎬 30 Тріад (Окрема)</a>";
+    }
 
     var app = document.getElementById("episodeApp");
     app.innerHTML = [
       "<header class=\"ep-topbar\">",
       "  <div class=\"ep-topbar-inner\">",
-      "    <div style=\"display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;\">",
-      "      <a class=\"btn-back-hub\" href=\"../index.html\">← Головний Дашборд (10 Титанів)</a>",
+      "    <div class=\"nav-hub-group\">",
+      "      <a class=\"btn-back-hub\" href=\"../index.html\">← Головний Хаб</a>",
+      contextLinksHtml,
       "      <nav class=\"ep-switcher\" aria-label=\"Швидкий перехід між епізодами\">" + switcherHtml + "</nav>",
       "    </div>",
       "    <div class=\"topbar-progress-wrap\">",
@@ -448,7 +475,7 @@
       "    <button class=\"studio-tab-btn\" data-tab=\"prompts\">🎥 4. 100 Візуальних промптів <span class=\"tab-count-badge\" id=\"badgeVidCount\">0/100</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"quotes\">💬 5. 100 Цитат і тез <span class=\"tab-count-badge\">100</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"audio\">🎵 6. Suno 92 BPM & Озвучка <span class=\"tab-count-badge\">4/4 Актів WAV</span></button>",
-      "    <button class=\"studio-tab-btn\" data-tab=\"media\">🗂️ 7. Медіа-Пул, Архіви & Відео <span class=\"tab-count-badge\">🎬 " + totalVidClips + " MP4</span></button>",
+      "    <button class=\"studio-tab-btn\" data-tab=\"media\">🗂️ 7. Медіа-Пул, Архіви & Відео <span class=\"tab-count-badge\" id=\"badgeMediaTabCount\">🎬 " + totalVidClips + " MP4</span></button>",
       "    <button class=\"studio-tab-btn\" data-tab=\"davinci\">🎚️ 8. DaVinci Resolve 19 Студія</button>",
       "  </nav>",
 
@@ -488,6 +515,14 @@
 
   function switchTab(tabId, updateHash) {
     if (tabId) tabId = String(tabId).replace(/^pane-/, "");
+    if (tabId && tabId.indexOf("media-") === 0) {
+      var subPart = tabId.slice("media-".length);
+      if (["videos", "images", "triads", "veo", "archives"].indexOf(subPart) !== -1) {
+        state.mediaSubTab = subPart;
+      }
+      tabId = "media";
+      renderMedia();
+    }
     var valid = ["sop", "bio", "script", "prompts", "quotes", "audio", "media", "davinci"];
     if (valid.indexOf(tabId) === -1) tabId = "sop";
     state.activeTab = tabId;
@@ -1722,7 +1757,7 @@
         track: "DaVinci A1 • Broadcast 48k/24b WAV • 115 WPM",
         desc: (vo.voice || "Adam") + " (" + vo.duration + ") • " + (vo.words || 0) + " слів",
         src: "../" + vo.web_preview,
-        poster: "../assets/speaker_photos/ep01_altman_real.jpg",
+        poster: "../assets/avatars/" + (epData.avatar || "sam_altman.jpg"),
         localPath: repoRoot + vo.wav_master,
         githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + vo.wav_master,
         externalUrl: "",
@@ -1730,7 +1765,329 @@
       });
     });
 
+    // 8. All Disk Vault Videos & Images (ensuring 100% coverage per episode)
+    var seenFiles = {};
+    list.forEach(function (it) {
+      if (it.file) seenFiles[it.file.toLowerCase()] = true;
+    });
+    var vaultEp = getVaultEp();
+    (vaultEp.videos || []).forEach(function (vv, idx) {
+      if (seenFiles[vv.file.toLowerCase()]) return;
+      seenFiles[vv.file.toLowerCase()] = true;
+      var vSrc = resolveMediaSrc(vv.rel_path, vv.preview_path, vv.thumb);
+      list.push({
+        uid: "vault_vid_" + idx,
+        type: "video",
+        kind: "vault_video",
+        kindLabel: vv.cat_label || "🎥 Відео з архіву проєкту",
+        chipClass: "chip-cyan",
+        title: vv.display_name || vv.file,
+        file: vv.file,
+        rel_path: vv.rel_path,
+        tc: vv.size_mb + " MB",
+        track: (vv.cat_label || "Медіа-Пул") + " • " + (vv.ext || "MP4"),
+        desc: "Локальний файл: " + vv.rel_path + " (" + vv.size_mb + " MB)",
+        src: vSrc,
+        poster: vv.thumb ? ("../" + vv.thumb) : "",
+        localPath: repoRoot + vv.rel_path,
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + encodeURIComponent(vv.rel_path).replace(/%2F/g, "/"),
+        externalUrl: "",
+        prompt: ""
+      });
+    });
+
+    (vaultEp.images || []).forEach(function (vi, idx) {
+      if (seenFiles[vi.file.toLowerCase()]) return;
+      seenFiles[vi.file.toLowerCase()] = true;
+      var iSrc = resolveMediaSrc(vi.rel_path, vi.preview_path, vi.thumb);
+      list.push({
+        uid: "vault_img_" + idx,
+        type: "image",
+        kind: "vault_image",
+        kindLabel: vi.cat_label || "🖼️ Зображення проєкту",
+        chipClass: "chip-amber",
+        title: vi.display_name || vi.file,
+        file: vi.file,
+        rel_path: vi.rel_path,
+        tc: vi.size_mb + " MB",
+        track: (vi.cat_label || "Галерея") + " • " + (vi.ext || "JPG"),
+        desc: "Локальний файл: " + vi.rel_path + " (" + vi.size_mb + " MB)",
+        src: iSrc,
+        poster: vi.thumb ? ("../" + vi.thumb) : iSrc,
+        localPath: repoRoot + vi.rel_path,
+        githubUrl: "https://github.com/tfmshell-cloud/ai-titans-thoughtcast/blob/main/" + encodeURIComponent(vi.rel_path).replace(/%2F/g, "/"),
+        externalUrl: "",
+        prompt: ""
+      });
+    });
+
     return list;
+  }
+
+  function getVaultEp() {
+    var v = (window.PROJECT_VAULT_INVENTORY || {})[epData.ep];
+    return v || {
+      ep: epData.ep,
+      primary_footage_dir: "05_RAW_FOOTAGE/",
+      vo_dir: "03_AUDIO/voiceover/",
+      videos: [],
+      images: [],
+      audio: [],
+      summary: { videos_count: 0, images_count: 0, audio_count: 0, vo_count: 0, suno_count: 0, total_mb: 0 }
+    };
+  }
+
+  function getTriadsEp() {
+    var tr = (window.FLOW_TRIADS_POOL || {})[epData.ep];
+    if (tr && tr.length) return tr;
+    return ((window.MEDIA_ACQUISITION_POOL || {})[epData.ep] || {}).flow_queue || [];
+  }
+
+  function resolveMediaSrc(relPath, previewPath, thumbPath) {
+    var isLocalFile = (window.location && window.location.protocol === "file:");
+    if (isLocalFile && relPath) return "../../" + relPath;
+    if (previewPath) return "../" + previewPath;
+    if (thumbPath) return "../" + thumbPath;
+    return relPath ? ("../../" + relPath) : "";
+  }
+
+  function findPlaylistIdxByFileOrPath(playlist, file, relPath) {
+    var fl = (file || "").toLowerCase();
+    var rl = (relPath || "").toLowerCase();
+    for (var i = 0; i < playlist.length; i++) {
+      var p = playlist[i];
+      if (rl && p.rel_path && p.rel_path.toLowerCase() === rl) return i;
+      if (rl && p.localPath && p.localPath.toLowerCase().endsWith("/" + rl)) return i;
+      if (fl && p.file && p.file.toLowerCase() === fl) return i;
+    }
+    return -1;
+  }
+
+  function buildVaultVideosHtml(vaultEp, playlist) {
+    var videos = vaultEp.videos || [];
+    if (!videos.length) {
+      return "<div class=\"panel-card\"><div class=\"panel-title\">🎥 Відеофайли ще не додані для EP" + esc(epData.ep) + "</div><div class=\"panel-desc\">Використайте вкладку «🚀 Тріади Flow» для генерації нових відеосцен або покладіть MP4/MOV файли у папку " + esc(vaultEp.primary_footage_dir) + ".</div></div>";
+    }
+    var catCounts = {};
+    var catLabels = {};
+    videos.forEach(function (v) {
+      catCounts[v.cat] = (catCounts[v.cat] || 0) + 1;
+      catLabels[v.cat] = v.cat_label;
+    });
+    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultVidCat === "all" ? " active" : "") + "\" data-vvid-cat=\"all\">Усі відео (" + videos.length + ")</button>"];
+    Object.keys(catCounts).sort().forEach(function (cat) {
+      pillsHtml.push("<button class=\"filter-pill" + (state.vaultVidCat === cat ? " active" : "") + "\" data-vvid-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
+    });
+
+    var q = (state.vaultVidSearch || "").trim().toLowerCase();
+    var filtered = videos.filter(function (v) {
+      if (state.vaultVidCat !== "all" && v.cat !== state.vaultVidCat) return false;
+      if (q && (v.file + " " + v.display_name + " " + v.rel_path + " " + v.cat_label).toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    });
+
+    var cardsHtml = filtered.map(function (v) {
+      var pIdx = findPlaylistIdxByFileOrPath(playlist, v.file, v.rel_path);
+      var playSrc = resolveMediaSrc(v.rel_path, v.preview_path, "");
+      var thumbSrc = v.thumb ? ("../" + v.thumb) : "";
+      return [
+        "<div class=\"vault-card\">",
+        "  <div class=\"vault-thumb-box\" data-inline-play-vid=\"" + esc(playSrc) + "\" title=\"Клікніть, щоб програти відео прямо тут\">",
+        thumbSrc ? ("    <img src=\"" + esc(thumbSrc) + "\" alt=\"" + esc(v.display_name) + "\" loading=\"lazy\">") : "    <div style=\"display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);\">🎥 " + esc(v.ext) + "</div>",
+        "    <span class=\"vault-tag-tl\">" + esc(v.cat_label) + "</span>",
+        "    <span class=\"vault-tag-br\">" + esc(v.ext) + " • " + esc(v.size_mb) + " MB</span>",
+        "    <div class=\"vault-play-badge\">▶</div>",
+        "  </div>",
+        "  <div class=\"vault-title\">" + esc(v.display_name) + "</div>",
+        "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(v.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(v.file) + "</div>",
+        "  <div class=\"btn-group\">",
+        (pIdx !== -1 ? "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">🖥️ У монітор</button>" : ""),
+        (pIdx !== -1 ? "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-popup-pidx=\"" + pIdx + "\">🔍 Кінозал</button>" : ""),
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-reveal-finder=\"" + esc(v.rel_path) + "\">📁 Finder</button>",
+        "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(v.rel_path) + "\">📋</button>",
+        "  </div>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    return [
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🎥 Усі Згенеровані & Зібрані Відео — EP" + esc(epData.ep) + " (" + videos.length + " файлів)</div>",
+      "      <div class=\"panel-desc\">Клік по прев'ю миттєво запускає HTML5-плеєр на картці. Кнопка «У монітор» або «Кінозал» відкриває відео на великому екрані.</div>",
+      "    </div>",
+      "    <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(vaultEp.primary_footage_dir) + "\">📁 Папка у Finder</button>",
+      "  </div>",
+      "  <div class=\"filter-toolbar\">",
+      "    <div class=\"filter-pills\">" + pillsHtml.join("") + "</div>",
+      "    <input type=\"search\" id=\"vaultVidSearchInput\" class=\"search-input\" placeholder=\"Пошук відео за назвою...\" value=\"" + esc(state.vaultVidSearch) + "\">",
+      "  </div>",
+      "  <div class=\"vault-grid\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Немає відео за цим фільтром.</div>") + "</div>",
+      "</div>"
+    ].join("\n");
+  }
+
+  function buildVaultImagesHtml(vaultEp, playlist) {
+    var images = vaultEp.images || [];
+    if (!images.length) {
+      return "<div class=\"panel-card\"><div class=\"panel-title\">🖼️ Зображення ще не додані для EP" + esc(epData.ep) + "</div></div>";
+    }
+    var catCounts = {};
+    var catLabels = {};
+    images.forEach(function (im) {
+      catCounts[im.cat] = (catCounts[im.cat] || 0) + 1;
+      catLabels[im.cat] = im.cat_label;
+    });
+    var pillsHtml = ["<button class=\"filter-pill" + (state.vaultImgCat === "all" ? " active" : "") + "\" data-vimg-cat=\"all\">Усі зображення (" + images.length + ")</button>"];
+    Object.keys(catCounts).sort().forEach(function (cat) {
+      pillsHtml.push("<button class=\"filter-pill" + (state.vaultImgCat === cat ? " active" : "") + "\" data-vimg-cat=\"" + esc(cat) + "\">" + esc(catLabels[cat]) + " (" + catCounts[cat] + ")</button>");
+    });
+
+    var q = (state.vaultImgSearch || "").trim().toLowerCase();
+    var filtered = images.filter(function (im) {
+      if (state.vaultImgCat !== "all" && im.cat !== state.vaultImgCat) return false;
+      if (q && (im.file + " " + im.display_name + " " + im.rel_path + " " + im.cat_label).toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    });
+
+    var cardsHtml = filtered.map(function (im) {
+      var pIdx = findPlaylistIdxByFileOrPath(playlist, im.file, im.rel_path);
+      var imgSrc = im.thumb ? ("../" + im.thumb) : resolveMediaSrc(im.rel_path, im.preview_path, im.thumb);
+      return [
+        "<div class=\"vault-card\">",
+        "  <div class=\"vault-thumb-box\"" + (pIdx !== -1 ? (" data-popup-pidx=\"" + pIdx + "\"") : (" data-reveal-finder=\"" + esc(im.rel_path) + "\"")) + " title=\"Клікніть, щоб відкрити у великому вікні\">",
+        "    <img src=\"" + esc(imgSrc) + "\" alt=\"" + esc(im.display_name) + "\" loading=\"lazy\">",
+        "    <span class=\"vault-tag-tl\">" + esc(im.cat_label) + "</span>",
+        "    <span class=\"vault-tag-br\">" + esc(im.ext) + " • " + esc(im.size_mb) + " MB</span>",
+        "  </div>",
+        "  <div class=\"vault-title\">" + esc(im.display_name) + "</div>",
+        "  <div class=\"vault-path-mono\" data-reveal-finder=\"" + esc(im.rel_path) + "\" title=\"Відкрити файл у Finder\">📁 " + esc(im.file) + "</div>",
+        "  <div class=\"btn-group\">",
+        (pIdx !== -1 ? "    <button class=\"btn btn-amber\" style=\"padding:3px 8px;font-size:11px;\" data-play-pidx=\"" + pIdx + "\">🖥️ У монітор</button>" : ""),
+        (pIdx !== -1 ? "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-popup-pidx=\"" + pIdx + "\">🔍 Збільшити</button>" : ""),
+        "    <button class=\"btn btn-cyan\" style=\"padding:3px 8px;font-size:11px;\" data-reveal-finder=\"" + esc(im.rel_path) + "\">📁 Finder</button>",
+        "    <button class=\"btn\" style=\"padding:3px 8px;font-size:11px;\" data-copy-text=\"" + esc(im.rel_path) + "\">📋</button>",
+        "  </div>",
+        "</div>"
+      ].join("\n");
+    }).join("\n");
+
+    return [
+      "<div class=\"panel-card\" style=\"border-color:rgba(251,191,36,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🖼️ Галерея Згенерованих Кадрів & Досьє — EP" + esc(epData.ep) + " (" + images.length + " зображень)</div>",
+      "      <div class=\"panel-desc\">2K концепт-кадри для Google Flow, історичні фото, кадри з архіву та 4K плашки. Відфільтровано за тематичними категоріями.</div>",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"filter-toolbar\">",
+      "    <div class=\"filter-pills\">" + pillsHtml.join("") + "</div>",
+      "    <input type=\"search\" id=\"vaultImgSearchInput\" class=\"search-input\" placeholder=\"Пошук зображення за назвою...\" value=\"" + esc(state.vaultImgSearch) + "\">",
+      "  </div>",
+      "  <div class=\"vault-grid\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Немає зображень за цим фільтром.</div>") + "</div>",
+      "</div>"
+    ].join("\n");
+  }
+
+  function buildTriadsQueueHtml(triads, playlist) {
+    var rdyVid = triads.filter(function (t) { return t.status === "video_ready"; }).length;
+    var rdyImg = triads.filter(function (t) { return t.status === "image_ready"; }).length;
+    var todoCnt = triads.length - rdyVid - rdyImg;
+
+    var q = (state.triadSearch || "").trim().toLowerCase();
+    var filtered = triads.filter(function (t) {
+      if (state.triadFilter !== "all" && (t.status || "todo") !== state.triadFilter) return false;
+      if (q && (t.title_ua + " " + t.title_en + " " + t.p1_start + " " + t.p2_flow + " " + t.p3_end).toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    });
+
+    var cardsHtml = filtered.map(function (t) {
+      var isDone = !!state.checked["triad_" + t.num];
+      var statusCls = t.status === "video_ready" ? "status-video_ready" : (t.status === "image_ready" ? "status-image_ready" : "");
+      var statusBadge = t.status === "video_ready"
+        ? "<span class=\"chip chip-emerald\">✅ Відео 24fps готове</span>"
+        : (t.status === "image_ready" ? "<span class=\"chip chip-cyan\">🖼️ Стартовий 2K кадр готовий</span>" : "<span class=\"chip chip-amber\">⏳ Очікує генерації</span>");
+
+      var pVidIdx = t.raw_video_path ? findPlaylistIdxByFileOrPath(playlist, "", t.raw_video_path) : -1;
+      var pImgIdx = t.raw_image_path ? findPlaylistIdxByFileOrPath(playlist, "", t.raw_image_path) : -1;
+
+      var thumbHtml = "";
+      if (t.keyframe_preview || t.raw_video_path) {
+        var thumbSrc = t.keyframe_preview ? ("../" + t.keyframe_preview) : "";
+        if (thumbSrc) {
+          thumbHtml = "<img src=\"" + esc(thumbSrc) + "\" alt=\"" + esc(t.title_ua) + "\" style=\"width:136px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:1px solid var(--border);\">";
+        }
+      }
+
+      return [
+        "<article class=\"triad-card " + statusCls + "\">",
+        "  <div class=\"triad-header\">",
+        "    <div style=\"display:flex;gap:0.75rem;align-items:flex-start;flex:1;min-width:260px;\">",
+        "      <input type=\"checkbox\" class=\"sop-checkbox\" data-triad-check=\"" + esc(t.num) + "\"" + (isDone ? " checked" : "") + " style=\"margin-top:4px;\">",
+        thumbHtml,
+        "      <div>",
+        "        <div style=\"display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:4px;\">",
+        "          <span class=\"tc-badge\">#" + esc(t.num) + " • TC " + esc(t.tc) + "</span>",
+        "          <span class=\"chip chip-purple\">" + esc(t.act) + "</span>",
+        "          <span class=\"chip\">" + esc(t.cat_label || "🎬 Тріада") + "</span>",
+        statusBadge,
+        "        </div>",
+        "        <h4 style=\"font-size:14.5px;color:var(--text-primary);margin-bottom:3px;\">" + esc(t.title_ua) + " <span style=\"color:var(--text-muted);font-weight:500;font-size:12px;\">/ " + esc(t.title_en) + "</span></h4>",
+        (t.concept ? ("        <div style=\"font-size:12px;color:var(--text-secondary);line-height:1.45;\">" + esc(t.concept) + "</div>") : ""),
+        "      </div>",
+        "    </div>",
+        "    <div class=\"btn-group\">",
+        (pVidIdx !== -1 ? "      <button class=\"btn btn-amber\" style=\"padding:4px 9px;font-size:11px;\" data-play-pidx=\"" + pVidIdx + "\">▶️ Відео</button>" : ""),
+        (pImgIdx !== -1 && pVidIdx === -1 ? "      <button class=\"btn btn-cyan\" style=\"padding:4px 9px;font-size:11px;\" data-play-pidx=\"" + pImgIdx + "\">🖼️ Кадр</button>" : ""),
+        (t.raw_video_path ? "      <button class=\"btn btn-cyan\" style=\"padding:4px 9px;font-size:11px;\" data-reveal-finder=\"" + esc(t.raw_video_path) + "\">📁 MP4</button>" : ""),
+        (t.raw_image_path ? "      <button class=\"btn btn-cyan\" style=\"padding:4px 9px;font-size:11px;\" data-reveal-finder=\"" + esc(t.raw_image_path) + "\">📁 JPG</button>" : ""),
+        "      <button class=\"btn btn-emerald\" style=\"padding:4px 10px;font-size:11px;\" data-copy-triad-full=\"" + esc(t.num) + "\">📋 Копіювати Тріаду (1+2+3)</button>",
+        "    </div>",
+        "  </div>",
+        "  <div class=\"triad-prompts-grid\">",
+        "    <div class=\"triad-step-box step-1\">",
+        "      <div class=\"triad-step-head\"><span style=\"color:var(--cyan);\">1. Start Image (Кадр А • 16:9)</span><button class=\"btn\" style=\"padding:2px 7px;font-size:10.5px;\" data-copy-triad-part=\"" + esc(t.num) + ":p1\">📋 Промпт 1</button></div>",
+        "      <pre class=\"triad-prompt-code\">" + esc(t.p1_start) + "</pre>",
+        "    </div>",
+        "    <div class=\"triad-step-box step-2\">",
+        "      <div class=\"triad-step-head\"><span style=\"color:var(--amber);\">2. Video Morph Action (Flow Перехід)</span><button class=\"btn btn-amber\" style=\"padding:2px 7px;font-size:10.5px;\" data-copy-triad-part=\"" + esc(t.num) + ":p2\">📋 Промпт 2</button></div>",
+        "      <pre class=\"triad-prompt-code\">" + esc(t.p2_flow) + "</pre>",
+        "    </div>",
+        "    <div class=\"triad-step-box step-3\">",
+        "      <div class=\"triad-step-head\"><span style=\"color:var(--emerald);\">3. End Image (Кадр В • Фінал)</span><button class=\"btn btn-emerald\" style=\"padding:2px 7px;font-size:10.5px;\" data-copy-triad-part=\"" + esc(t.num) + ":p3\">📋 Промпт 3</button></div>",
+        "      <pre class=\"triad-prompt-code\">" + esc(t.p3_end) + "</pre>",
+        "    </div>",
+        "  </div>",
+        "  <div class=\"triad-footer-meta\">",
+        "    <span><b>✂️ DaVinci Resolve:</b> " + esc(t.davinci_recipe) + "</span>",
+        "    <span><b>🔊 SFX:</b> " + esc(t.sfx_cue) + "</span>",
+        "  </div>",
+        "</article>"
+      ].join("\n");
+    }).join("\n");
+
+    return [
+      "<div class=\"panel-card\" style=\"border-color:rgba(167,139,250,0.45);\">",
+      "  <div class=\"panel-head\">",
+      "    <div>",
+      "      <div class=\"panel-title\">🚀 Пріоритетна Черга Google Flow — Стандарт 3-Промптної Тріади (" + triads.length + " сцен × 3 промпти)</div>",
+      "      <div class=\"panel-desc\">Єдиний формат по всіх 10 титанах: <b>Промпт 1 (Start Кадр A)</b> ➔ <b>Промпт 2 (Рух/Морф Flow 24fps)</b> ➔ <b>Промпт 3 (End Кадр B)</b>. Всі тексти очищено для 100% проходження фільтрів безпеки Google Flow (Policy-Safe).</div>",
+      "    </div>",
+      "    <span class=\"chip chip-emerald\">🛡️ 100% Policy-Safe</span>",
+      "  </div>",
+      "  <div class=\"filter-toolbar\">",
+      "    <div class=\"filter-pills\">",
+      "      <button class=\"filter-pill" + (state.triadFilter === "all" ? " active" : "") + "\" data-triad-filter=\"all\">Усі (" + triads.length + ")</button>",
+      "      <button class=\"filter-pill" + (state.triadFilter === "video_ready" ? " active" : "") + "\" data-triad-filter=\"video_ready\">✅ Відео готові (" + rdyVid + ")</button>",
+      "      <button class=\"filter-pill" + (state.triadFilter === "image_ready" ? " active" : "") + "\" data-triad-filter=\"image_ready\">🖼️ Лише 2K кадр (" + rdyImg + ")</button>",
+      "      <button class=\"filter-pill" + (state.triadFilter === "todo" ? " active" : "") + "\" data-triad-filter=\"todo\">⏳ В черзі (" + todoCnt + ")</button>",
+      "    </div>",
+      "    <input type=\"search\" id=\"triadSearchInput\" class=\"search-input\" placeholder=\"Пошук сцен та промптів...\" value=\"" + esc(state.triadSearch) + "\">",
+      "  </div>",
+      "  <div class=\"triad-list\">" + (cardsHtml || "<div style='color:var(--text-muted);padding:1rem;'>Сцен за цим фільтром не знайдено.</div>") + "</div>",
+      "</div>"
+    ].join("\n");
   }
 
   function selectDockClip(playlistIndex, scrollIntoViewCard) {
@@ -1811,10 +2168,12 @@
     var sideItemsHtml = playlist.map(function (item, idx) {
       var activeCls = idx === playlistIndex ? " active" : "";
       var thumbHtml = item.type === "image"
-        ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" style=\"object-fit:cover;\">"
+        ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.poster || item.src) + "\" loading=\"lazy\" style=\"object-fit:cover;\">"
         : (item.type === "audio"
           ? "<div class=\"reel-thumb-video\" style=\"background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;\">🎙️</div>"
-          : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>");
+          : (item.poster
+            ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.poster) + "\" loading=\"lazy\" style=\"object-fit:cover;\">"
+            : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>"));
 
       return [
         "<div class=\"reel-item-card" + activeCls + "\" data-modal-pidx=\"" + idx + "\">",
@@ -2419,10 +2778,12 @@
       if (state.mediaDockFilter !== "all" && item.kind !== state.mediaDockFilter) return "";
       var activeCls = idx === state.mediaActiveIndex ? " active" : "";
       var thumbHtml = item.type === "image"
-        ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" style=\"object-fit:cover;\">"
+        ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.poster || item.src) + "\" loading=\"lazy\" style=\"object-fit:cover;\">"
         : (item.type === "audio"
           ? "<div class=\"reel-thumb-video\" style=\"background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;font-size:22px;\">🎙️</div>"
-          : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>");
+          : (item.kind === "vault_video" && item.poster
+            ? "<img class=\"reel-thumb-video\" src=\"" + esc(item.poster) + "\" loading=\"lazy\" style=\"object-fit:cover;\">"
+            : "<video class=\"reel-thumb-video\" src=\"" + esc(item.src) + "\" muted loop playsinline preload=\"metadata\"></video>"));
 
       return [
         "<div class=\"reel-item-card" + activeCls + "\" data-pidx=\"" + idx + "\">",
@@ -2453,12 +2814,16 @@
     var nSciCount = countKind("science");
     var nPhotoCount = countKind("archival_photo");
     var nBrollCount = countKind("broll");
+    var nVaultVid = countKind("vault_video");
+    var nVaultImg = countKind("vault_image");
 
     var filterPillsHtml = [
       '<button class="dock-pill' + (state.mediaDockFilter === "all" ? " active" : "") + '" data-dock-filter="all">Усі (' + playlist.length + ')</button>'
     ];
     if (nVoCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "voiceover" ? " active" : "") + '" data-dock-filter="voiceover">🎙️ Голос (' + nVoCount + ')</button>');
     if (nFlowVid > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_video" ? " active" : "") + '" data-dock-filter="flow_video">🚀 Flow Відео (' + nFlowVid + ')</button>');
+    if (nVaultVid > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "vault_video" ? " active" : "") + '" data-dock-filter="vault_video">🎥 Ваулт Відео (' + nVaultVid + ')</button>');
+    if (nVaultImg > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "vault_image" ? " active" : "") + '" data-dock-filter="vault_image">🖼️ Ваулт Фото (' + nVaultImg + ')</button>');
     if (nFlowImg > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "flow_image" ? " active" : "") + '" data-dock-filter="flow_image">🖼️ 2K Кадри (' + nFlowImg + ')</button>');
     if (nArchCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "archive" ? " active" : "") + '" data-dock-filter="archive">📼 Архіви (' + nArchCount + ')</button>');
     if (nDosCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "dossier" ? " active" : "") + '" data-dock-filter="dossier">🗂️ Досьє (' + nDosCount + ')</button>');
@@ -2466,31 +2831,35 @@
     if (nPhotoCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "archival_photo" ? " active" : "") + '" data-dock-filter="archival_photo">📸 Фото (' + nPhotoCount + ')</button>');
     if (nBrollCount > 0) filterPillsHtml.push('<button class="dock-pill' + (state.mediaDockFilter === "broll" ? " active" : "") + '" data-dock-filter="broll">🎞️ B-Roll (' + nBrollCount + ')</button>');
 
+    var vaultEp = getVaultEp();
+    var vSum = vaultEp.summary || {};
+    var triadsEp = getTriadsEp();
+    var readyTriadVids = triadsEp.filter(function (t) { return t.status === "video_ready"; }).length;
+    var readyTriadImgs = triadsEp.filter(function (t) { return t.status === "image_ready"; }).length;
+    var voTotalDisplay = Math.max(nVoCount, vSum.vo_count || 0);
+    var sunoTotalDisplay = Math.max((epMedia.audio || []).length, vSum.suno_count || 0);
+    var primaryDirDisplay = vaultEp.primary_footage_dir || "05_RAW_FOOTAGE/";
+    var voDirDisplay = vaultEp.vo_dir || "03_AUDIO/voiceover/";
+
     var executiveHeroHtml = [
-      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.4);background:linear-gradient(180deg, rgba(17,23,38,0.85), rgba(11,15,23,0.9));\">",
+      "<div class=\"panel-card\" style=\"border-color:rgba(56,189,248,0.4);background:linear-gradient(180deg, rgba(17,23,38,0.85), rgba(11,15,23,0.9));margin-bottom:0.85rem;\">",
       "  <div class=\"panel-head\" style=\"border-bottom:none;padding-bottom:0;\">",
       "    <div>",
-      "      <div class=\"panel-title\" style=\"font-size:16.5px;color:var(--text-primary);display:flex;align-items:center;gap:10px;\">",
-      "        <span>🎬 Візуальний & Аудіо Пул Епізоду " + esc(epData.ep) + " (" + playlist.length + " готових медіа-елементів)</span>",
-      "        <span class=\"chip chip-emerald\">✅ 17/17 Тейків Голосу A1</span>",
-      "        <span class=\"chip chip-cyan\">✅ 10/10 Flow Відео</span>",
+      "      <div class=\"panel-title\" style=\"font-size:16px;color:var(--text-primary);display:flex;align-items:center;gap:8px;flex-wrap:wrap;\">",
+      "        <span>🗂️ Медіа-Пул Епізоду " + esc(epData.ep) + " • " + esc(epData.name) + "</span>",
+      "        <span class=\"chip chip-cyan\">🎥 " + (vSum.videos_count || 0) + " Відео</span>",
+      "        <span class=\"chip chip-amber\">🖼️ " + (vSum.images_count || 0) + " Зображень</span>",
+      "        <span class=\"chip chip-purple\">🚀 " + triadsEp.length + " Тріад Flow (3-Промпт)</span>",
+      "        <span class=\"chip chip-emerald\">🎙️ " + voTotalDisplay + " Голос • 🎵 " + sunoTotalDisplay + " Suno</span>",
       "      </div>",
-      "      <div class=\"panel-desc\">Повний виробничий конвеєр епізоду: офіційні дикторські доріжки A1 (ElevenLabs Adam • 48kHz WAV), відео 24fps для DaVinci V1/V2, 2K концепт-кадри для Veo 2 / Flow, автентичні архіви B-Roll, 4K досьє та аудіо-стеми 48kHz. Усі файли синхронізовані на локальному диску, у Finder, GitHub та Google Drive.</div>",
+      "      <div class=\"panel-desc\" style=\"margin-top:4px;\">Окрема чиста навігація: переглядайте всі відео окремо від зображень, копіюйте уніфіковані 3-промптні Тріади (Start A ➔ Flow Morph ➔ End B) та відкривайте файли у Finder.</div>",
       "    </div>",
       "    <div class=\"btn-group\">",
-      "      <button class=\"btn btn-amber\" id=\"btnOpenFullCinemaHero\">🔍 Відкрити Спливаючий Кінозал (" + playlist.length + " медіа)</button>",
-      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"03_AUDIO/voiceover/EP01_ALTMAN/\">🎙️ Папка Голосу у Finder</button>",
-      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"05_RAW_FOOTAGE/\">📁 05_RAW_FOOTAGE у Finder</button>",
-      "      <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри V3 (.srt)</button>",
+      "      <button class=\"btn btn-amber\" id=\"btnOpenFullCinemaHero\">🔍 Кінозал (" + playlist.length + ")</button>",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(primaryDirDisplay) + "\">📁 Папка Футажів</button>",
+      "      <button class=\"btn btn-cyan\" data-reveal-finder=\"" + esc(voDirDisplay) + "\">🎙️ Папка Голосу</button>",
+      "      <button class=\"btn btn-emerald\" id=\"btnDownloadEpSrt\">📥 Титри (.srt)</button>",
       "    </div>",
-      "  </div>",
-      "  <div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:1rem;\">",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Диктор A1 (ElevenLabs)</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + nVoCount + " Тейків</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові (48k WAV)</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Flow 4K/HD Відео</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + nFlowVid + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">100% готові для EP" + esc(epData.ep) + "</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--purple);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">Архіви B-Roll</div><div style=\"font-size:20px;font-weight:800;color:var(--purple);margin:2px 0;\">" + nArchCount + " MP4</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">Історичні плани</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--amber);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">4K Досьє</div><div style=\"font-size:20px;font-weight:800;color:var(--amber);margin:2px 0;\">" + nDosCount + " Пластин</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">3840×2160 + Zoom MP4</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">2K Кадри & Фото</div><div style=\"font-size:20px;font-weight:800;color:var(--cyan);margin:2px 0;\">" + ((epMedia.flow_gallery || []).length + (epMedia.archival_photos || []).length) + " Кадрів</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">2752×1536 під Veo/Flow</div></div>",
-      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);padding:10px;\"><div style=\"font-size:10px;color:var(--text-muted);text-transform:uppercase;font-weight:700;\">DaVinci Музика</div><div style=\"font-size:20px;font-weight:800;color:var(--emerald);margin:2px 0;\">" + (epMedia.audio || []).length + " Треки</div><div style=\"font-size:10.5px;color:var(--text-secondary);\">48 kHz / 24-bit WAV</div></div>",
       "  </div>",
       "</div>"
     ].join("\n");
@@ -2560,20 +2929,47 @@
       "</div>"
     ].join("\n");
 
+    var curSub = state.mediaSubTab || "videos";
+    var hasVeo = !!(veoMasterSectionHtml && veoMasterSectionHtml.trim());
+    var audioArchCount = (epMedia.voiceover || []).length + (epMedia.audio || []).length + (epMedia.archives || []).length + (epMedia.dossiers || []).length + (epMedia.scientific_vfx || []).length + (epMedia.archival_photos || []).length + (epMedia.notebooklm_overview ? 1 : 0);
+
+    var mediaSubTabsHtml = [
+      "<nav class=\"media-subtabs-bar\" aria-label=\"Розділи медіапулу\">",
+      "  <button class=\"media-subtab-btn" + (curSub === "videos" ? " active" : "") + "\" data-media-subtab=\"videos\">🎥 Відеофайли <span class=\"media-subtab-count\">" + (vaultEp.videos || []).length + "</span></button>",
+      "  <button class=\"media-subtab-btn" + (curSub === "images" ? " active" : "") + "\" data-media-subtab=\"images\">🖼️ Зображення <span class=\"media-subtab-count\">" + (vaultEp.images || []).length + "</span></button>",
+      "  <button class=\"media-subtab-btn" + (curSub === "triads" ? " active" : "") + "\" data-media-subtab=\"triads\">🚀 Тріади Flow (3 Промпти) <span class=\"media-subtab-count\">" + triadsEp.length + "</span></button>",
+      (hasVeo ? ("  <button class=\"media-subtab-btn" + (curSub === "veo" ? " active" : "") + "\" data-media-subtab=\"veo\">🎞️ Veo Конвеєр</button>") : ""),
+      "  <button class=\"media-subtab-btn" + (curSub === "archives" ? " active" : "") + "\" data-media-subtab=\"archives\">🎙️ Озвучка, Досьє & Архіви <span class=\"media-subtab-count\">" + audioArchCount + "</span></button>",
+      "</nav>"
+    ].filter(Boolean).join("\n");
+
+    var activeSubPaneHtml = "";
+    if (curSub === "videos") {
+      activeSubPaneHtml = buildVaultVideosHtml(vaultEp, playlist);
+    } else if (curSub === "images") {
+      activeSubPaneHtml = buildVaultImagesHtml(vaultEp, playlist);
+    } else if (curSub === "triads") {
+      activeSubPaneHtml = buildTriadsQueueHtml(triadsEp, playlist);
+    } else if (curSub === "veo") {
+      activeSubPaneHtml = veoMasterSectionHtml || "<div class=\"panel-card\"><div class=\"panel-title\">🎞️ Veo Конвеєр</div><div class=\"panel-desc\">Використовуйте вкладку «🚀 Тріади Flow» для цього епізоду.</div></div>";
+    } else {
+      activeSubPaneHtml = [
+        voSectionHtml,
+        audioSectionHtml,
+        sciSectionHtml,
+        archiveSectionHtml,
+        dossierSectionHtml,
+        photoSectionHtml,
+        nbHtml
+      ].filter(Boolean).join("\n") || "<div class=\"panel-card\"><div class=\"panel-title\">🎙️ Озвучка та архіви ще не завантажені</div></div>";
+    }
+
     pane.innerHTML = [
       "<div class=\"media-split-layout\">",
       "  <div class=\"media-main-col\">",
       executiveHeroHtml,
-      voSectionHtml,
-      veoMasterSectionHtml,
-      flowSectionHtml,
-      gallerySectionHtml,
-      archiveSectionHtml,
-      dossierSectionHtml,
-      photoSectionHtml,
-      sciSectionHtml,
-      audioSectionHtml,
-      nbHtml,
+      mediaSubTabsHtml,
+      "    <div id=\"mediaSubPaneBody\">" + activeSubPaneHtml + "</div>",
       "  </div>",
 
       "  <aside class=\"media-dock-right\" aria-label=\"Правий блок прокрутки та анімації медіа\">",
@@ -2936,6 +3332,163 @@
         openCinemaModal(pIdx);
       });
     });
+
+    function refreshSubPaneOnly(subType, focusId) {
+      var bodyEl = document.getElementById("mediaSubPaneBody");
+      if (!bodyEl) return;
+      var vEp = getVaultEp();
+      var trEp = getTriadsEp();
+      if (subType === "videos") bodyEl.innerHTML = buildVaultVideosHtml(vEp, playlist);
+      else if (subType === "images") bodyEl.innerHTML = buildVaultImagesHtml(vEp, playlist);
+      else if (subType === "triads") bodyEl.innerHTML = buildTriadsQueueHtml(trEp, playlist);
+      bindMediaDynamicControls(bodyEl);
+      if (focusId) {
+        var inp = document.getElementById(focusId);
+        if (inp) {
+          inp.focus();
+          try { var L = inp.value.length; inp.setSelectionRange(L, L); } catch (e) {}
+        }
+      }
+    }
+
+    function bindMediaDynamicControls(scopeEl) {
+      scopeEl.querySelectorAll("[data-vvid-cat]").forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          state.vaultVidCat = pill.getAttribute("data-vvid-cat");
+          refreshSubPaneOnly("videos", null);
+        });
+      });
+      var vidSearchEl = scopeEl.querySelector("#vaultVidSearchInput");
+      if (vidSearchEl) {
+        vidSearchEl.addEventListener("input", function () {
+          state.vaultVidSearch = vidSearchEl.value || "";
+          refreshSubPaneOnly("videos", "vaultVidSearchInput");
+        });
+      }
+
+      scopeEl.querySelectorAll("[data-vimg-cat]").forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          state.vaultImgCat = pill.getAttribute("data-vimg-cat");
+          refreshSubPaneOnly("images", null);
+        });
+      });
+      var imgSearchEl = scopeEl.querySelector("#vaultImgSearchInput");
+      if (imgSearchEl) {
+        imgSearchEl.addEventListener("input", function () {
+          state.vaultImgSearch = imgSearchEl.value || "";
+          refreshSubPaneOnly("images", "vaultImgSearchInput");
+        });
+      }
+
+      scopeEl.querySelectorAll("[data-triad-filter]").forEach(function (pill) {
+        pill.addEventListener("click", function () {
+          state.triadFilter = pill.getAttribute("data-triad-filter");
+          refreshSubPaneOnly("triads", null);
+        });
+      });
+      var trSearchEl = scopeEl.querySelector("#triadSearchInput");
+      if (trSearchEl) {
+        trSearchEl.addEventListener("input", function () {
+          state.triadSearch = trSearchEl.value || "";
+          refreshSubPaneOnly("triads", "triadSearchInput");
+        });
+      }
+
+      scopeEl.querySelectorAll("[data-inline-play-vid]").forEach(function (box) {
+        box.addEventListener("click", function () {
+          if (box.querySelector("video")) return;
+          var src = box.getAttribute("data-inline-play-vid");
+          if (!src) return;
+          box.innerHTML = "<video src=\"" + esc(src) + "\" controls autoplay playsinline style=\"width:100%;height:100%;object-fit:contain;background:#04060a;\"></video>";
+          box.style.cursor = "default";
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-copy-triad-part]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var parts = btn.getAttribute("data-copy-triad-part").split(":");
+          var num = parts[0], field = parts[1];
+          var t = getTriadsEp().find(function (x) { return x.num === num; });
+          if (!t) return;
+          var txt = field === "p1" ? t.p1_start : (field === "p2" ? t.p2_flow : t.p3_end);
+          copyText(txt, "Тріада #" + num + " (" + field.toUpperCase() + ")");
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-copy-triad-full]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var num = btn.getAttribute("data-copy-triad-full");
+          var t = getTriadsEp().find(function (x) { return x.num === num; });
+          if (!t) return;
+          var full = [
+            "=== ТРІАДА #" + t.num + ": " + t.title_ua + " (" + t.tc + ") ===",
+            "1) START IMAGE (Frame A):",
+            t.p1_start,
+            "",
+            "2) GOOGLE FLOW MORPH (Action A -> B):",
+            t.p2_flow,
+            "",
+            "3) END IMAGE (Frame B):",
+            t.p3_end
+          ].join("\n");
+          copyText(full, "Повна Тріада #" + num);
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-triad-check]").forEach(function (chk) {
+        chk.addEventListener("change", function () {
+          var k = "triad_" + chk.getAttribute("data-triad-check");
+          if (chk.checked) state.checked[k] = true;
+          else delete state.checked[k];
+          saveProgress();
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-play-pidx]").forEach(function (btn) {
+        if (btn.getAttribute("data-bound")) return;
+        btn.setAttribute("data-bound", "1");
+        btn.addEventListener("click", function () {
+          var pIdx = parseInt(btn.getAttribute("data-play-pidx"), 10);
+          selectDockClip(pIdx, true);
+          showToast("▶️ Завантажено у правий Відео-Монітор");
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-popup-pidx]").forEach(function (btn) {
+        if (btn.getAttribute("data-bound")) return;
+        btn.setAttribute("data-bound", "1");
+        btn.addEventListener("click", function () {
+          var pIdx = parseInt(btn.getAttribute("data-popup-pidx"), 10);
+          openCinemaModal(pIdx);
+        });
+      });
+
+      scopeEl.querySelectorAll("[data-copy-text]").forEach(function (btn) {
+        if (btn.getAttribute("data-bound")) return;
+        btn.setAttribute("data-bound", "1");
+        btn.addEventListener("click", function () {
+          var txt = btn.getAttribute("data-copy-text");
+          if (txt) copyText(txt, "шлях файлу");
+        });
+      });
+    }
+
+    // Mark already-bound elements outside/inside pane so refreshSubPaneOnly never double-binds
+    pane.querySelectorAll("[data-play-pidx], [data-popup-pidx], [data-copy-text]").forEach(function (el) {
+      el.setAttribute("data-bound", "1");
+    });
+
+    pane.querySelectorAll("[data-media-subtab]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.mediaSubTab = btn.getAttribute("data-media-subtab");
+        renderMedia();
+      });
+    });
+
+    var subPaneBodyEl = document.getElementById("mediaSubPaneBody");
+    if (subPaneBodyEl) {
+      bindMediaDynamicControls(subPaneBodyEl);
+    }
 
     setupReelAnimationObserver();
   }
