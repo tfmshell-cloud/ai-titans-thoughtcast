@@ -6798,5 +6798,775 @@
     "is_portrait": false,
     "res_label": "🖼️ 4K",
     "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_01_George_Boole_Logician_Ancestor.jpg": {
+    "mtime": 1794316100.51,
+    "md5": "65800059",
+    "w": 4560,
+    "h": 3040,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_02_Mount_Everest_Peak_Survey_Lineage.jpg": {
+    "mtime": 1794316113.25,
+    "md5": "8e6ebadc",
+    "w": 3200,
+    "h": 1096,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_03_Kings_College_Cambridge_Front_Court.jpg": {
+    "mtime": 1794315975.87,
+    "md5": "6637df12",
+    "w": 3024,
+    "h": 2016,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_04_London_Carpentry_Hand_Plane_Oak.jpg": {
+    "mtime": 1794315989.57,
+    "md5": "793bea92",
+    "w": 3199,
+    "h": 2136,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_05_University_of_Edinburgh_Informatics_Forum.jpg": {
+    "mtime": 1794315993.55,
+    "md5": "aa5a4d7f",
+    "w": 3200,
+    "h": 2133,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_06_CMU_Hamerschlag_Hall_Pittsburgh.jpg": {
+    "mtime": 1794316002.58,
+    "md5": "3884157f",
+    "w": 3200,
+    "h": 1799,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_07_University_of_Toronto_Sandford_Fleming.jpg": {
+    "mtime": 1794316005.66,
+    "md5": "2a5e513e",
+    "w": 1024,
+    "h": 679,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1024×679",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_08_University_of_Toronto_Bahen_Centre.jpg": {
+    "mtime": 1794316009.87,
+    "md5": "763ad96c",
+    "w": 3072,
+    "h": 2304,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_09_University_of_Toronto_Convocation_Hall.jpg": {
+    "mtime": 1794316014.82,
+    "md5": "28603628",
+    "w": 3200,
+    "h": 2125,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_10_Geoffrey_Hinton_Toronto_Tech_Stage.jpg": {
+    "mtime": 1794316114.93,
+    "md5": "2f22217d",
+    "w": 3200,
+    "h": 2133,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_11_Lake_Tahoe_DNNresearch_Auction_2012.jpg": {
+    "mtime": 1794316021.87,
+    "md5": "dfb1bf7d",
+    "w": 3200,
+    "h": 2400,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_12_Three_Godfathers_Deep_Learning_Turing_2018.jpg": {
+    "mtime": 1794316024.9,
+    "md5": "84c63ed1",
+    "w": 2044,
+    "h": 1277,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_13_AI_Benchmarks_1998_2024_Exponential.jpg": {
+    "mtime": 1794316027.49,
+    "md5": "be37df3d",
+    "w": 1466,
+    "h": 817,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 1466×817",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_14_Geoffrey_Hinton_Collision_2023_Stage.jpg": {
+    "mtime": 1794316030.87,
+    "md5": "e652450c",
+    "w": 3200,
+    "h": 2133,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_15_Geoffrey_Hinton_Collision_2024_Toronto.jpg": {
+    "mtime": 1794316035.56,
+    "md5": "bf9cc8ae",
+    "w": 3200,
+    "h": 2134,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_16_Hinton_Nobel_Physics_Lectures_2024_Stockholm.jpg": {
+    "mtime": 1794316039.33,
+    "md5": "aa62bcd4",
+    "w": 3199,
+    "h": 2133,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_17_Hopfield_Hinton_2024_Nobel_Laureates.jpg": {
+    "mtime": 1794316042.72,
+    "md5": "9210e31f",
+    "w": 3200,
+    "h": 2525,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/speaker_portraits/young_hinton/EP04_IMG_ARCH_18_Hinton_2024_Nobel_Prize_Conference.jpg": {
+    "mtime": 1794316046.56,
+    "md5": "bf47c517",
+    "w": 3200,
+    "h": 2133,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 2K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_02_ACT1_24FPS_Hinton_Ancestry_Boole_Everest.mp4": {
+    "mtime": 1794316312.84,
+    "md5": "11941735",
+    "w": 1920,
+    "h": 1080,
+    "dur": 31.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "31s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_03_ACT1_24FPS_Hinton_Joan_Los_Alamos_Cousin.mp4": {
+    "mtime": 1794316333.57,
+    "md5": "59aa6e5e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_04_ACT2_24FPS_Hinton_Second_AI_Winter_Turing.mp4": {
+    "mtime": 1794316371.4,
+    "md5": "1a8d9bf5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 32.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "32s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_05_ACT2_24FPS_Hinton_Boltzmann_Machine_Nobel_Lecture.mp4": {
+    "mtime": 1794316419.09,
+    "md5": "2a37de9b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 28.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "28s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_06_ACT2_24FPS_Hinton_Backpropagation_Nobel_Lecture.mp4": {
+    "mtime": 1794316448.87,
+    "md5": "51cedf66",
+    "w": 1920,
+    "h": 1080,
+    "dur": 24.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "24s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_07_ACT2_24FPS_Hinton_Sejnowski_1980s_Neuroscience.mp4": {
+    "mtime": 1794316464.57,
+    "md5": "8afd0489",
+    "w": 1920,
+    "h": 1080,
+    "dur": 25.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "25s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_08_ACT3_24FPS_Hinton_Two_Students_GPUs_Turing.mp4": {
+    "mtime": 1794316495.25,
+    "md5": "4f357e7e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 24.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "24s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_09_ACT3_24FPS_Hinton_AlexNet_DNNresearch_Auction.mp4": {
+    "mtime": 1794316532.9,
+    "md5": "2ec9b706",
+    "w": 1920,
+    "h": 1080,
+    "dur": 37.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "37s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_10_ACT3_24FPS_Hinton_Turing_2018_Three_Fathers.mp4": {
+    "mtime": 1794316546.69,
+    "md5": "e60cf786",
+    "w": 1920,
+    "h": 1080,
+    "dur": 24.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "24s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_11_ACT3_24FPS_Hinton_Leaving_Google_Speak_Freely.mp4": {
+    "mtime": 1794316576.61,
+    "md5": "34cc065b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 22.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "22s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_12_ACT3_24FPS_Hinton_BBC_Regret_Warning_2023.mp4": {
+    "mtime": 1794316600.46,
+    "md5": "29ea12db",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_13_ACT3_24FPS_Hinton_Digital_Weights_Trillions_Bits.mp4": {
+    "mtime": 1794316634.71,
+    "md5": "98a3a44f",
+    "w": 1920,
+    "h": 1080,
+    "dur": 33.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "33s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_14_ACT3_24FPS_Hinton_60Minutes_Species_Control.mp4": {
+    "mtime": 1794316653.52,
+    "md5": "25101275",
+    "w": 1920,
+    "h": 1080,
+    "dur": 38.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "38s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_15_ACT4_24FPS_Hinton_UofT_Students_Nobel_Presser.mp4": {
+    "mtime": 1794316683.5,
+    "md5": "b851b84d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 24.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "24s"
+  },
+  "05_RAW_FOOTAGE/archives/EP04_VID_ARCH_16_ACT4_24FPS_Hinton_Banquet_Existential_Threat.mp4": {
+    "mtime": 1794316712.43,
+    "md5": "c23f8593",
+    "w": 1920,
+    "h": 1080,
+    "dur": 26.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "26s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_AI_Benchmarks_Curve_6s.mp4": {
+    "mtime": 1794316231.85,
+    "md5": "31624b3a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_CMU_Pittsburgh_6s.mp4": {
+    "mtime": 1794316227.31,
+    "md5": "5979b272",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Cambridge_KingsCollege_6s.mp4": {
+    "mtime": 1794316224.87,
+    "md5": "d8d44e73",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Edinburgh_Informatics_6s.mp4": {
+    "mtime": 1794316226.52,
+    "md5": "ec73c952",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_George_Boole_1847_6s.mp4": {
+    "mtime": 1794316224.08,
+    "md5": "c8c9b0db",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hinton_Collision_2023_6s.mp4": {
+    "mtime": 1794316232.67,
+    "md5": "338f408e",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hinton_Collision_2024_6s.mp4": {
+    "mtime": 1794316233.39,
+    "md5": "8e2e4d2d",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hinton_Collision_Stage_6s.mp4": {
+    "mtime": 1794316268.42,
+    "md5": "ee2b508a",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hinton_Nobel_Lecture_6s.mp4": {
+    "mtime": 1794316234.21,
+    "md5": "e18f6956",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hinton_Stockholm_Conf_6s.mp4": {
+    "mtime": 1794316235.71,
+    "md5": "c1716360",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Hopfield_Hinton_Nobel_6s.mp4": {
+    "mtime": 1794316234.96,
+    "md5": "08a6eb72",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Lake_Tahoe_2012_6s.mp4": {
+    "mtime": 1794316230.52,
+    "md5": "3d0380d9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_London_Carpentry_Plane_6s.mp4": {
+    "mtime": 1794316225.68,
+    "md5": "db425824",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Mount_Everest_Lineage_6s.mp4": {
+    "mtime": 1794316267.68,
+    "md5": "7a27ce9b",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Three_Godfathers_Turing_6s.mp4": {
+    "mtime": 1794316231.3,
+    "md5": "82c6cad3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Toronto_Bahen_Centre_6s.mp4": {
+    "mtime": 1794316228.82,
+    "md5": "023ffe79",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Toronto_Convocation_Hall_6s.mp4": {
+    "mtime": 1794316229.58,
+    "md5": "0ee56d25",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_Toronto_Sandford_Fleming_6s.mp4": {
+    "mtime": 1794316228.04,
+    "md5": "2c029605",
+    "w": 1920,
+    "h": 1080,
+    "dur": 6.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "6s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_01_Error_Geometry_10s.mp4": {
+    "mtime": 1794316216.24,
+    "md5": "2d485879",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_02_Carpenter_Honesty_10s.mp4": {
+    "mtime": 1794316217.21,
+    "md5": "2e6d63a5",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_03_Backprop_Fuel_10s.mp4": {
+    "mtime": 1794316218.16,
+    "md5": "6b1bd0ce",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_04_Thirty_Years_Winter_10s.mp4": {
+    "mtime": 1794316219.1,
+    "md5": "ded8b507",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_05_Pentagon_Toronto_10s.mp4": {
+    "mtime": 1794316220.05,
+    "md5": "fabc25a8",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_06_AlexNet_2012_10s.mp4": {
+    "mtime": 1794316221.0,
+    "md5": "6317bf83",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_07_Google_Exit_Regret_12s.mp4": {
+    "mtime": 1794316222.15,
+    "md5": "51650625",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_UA_CLIP_CARD_08_Nobel_Warning_Finale_12s.mp4": {
+    "mtime": 1794316223.31,
+    "md5": "6871efb9",
+    "w": 1920,
+    "h": 1080,
+    "dur": 12.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "12s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_02_ACT1_Bristol_Lineage_Boole_Everest_1947.png": {
+    "mtime": 1794316203.74,
+    "md5": "5e627367",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_02_Lineage_Boole_10s.mp4": {
+    "mtime": 1794316205.22,
+    "md5": "fa5fad18",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_03_ACT2_Ackley_Hinton_Sejnowski_Boltzmann_1985.png": {
+    "mtime": 1794316206.41,
+    "md5": "6166431a",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_03_Boltzmann_1985_10s.mp4": {
+    "mtime": 1794316207.78,
+    "md5": "f498eabf",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_04_ACT3_AlexNet_ImageNet_NIPS_2012.png": {
+    "mtime": 1794316208.9,
+    "md5": "09b6d7fd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_04_AlexNet_2012_10s.mp4": {
+    "mtime": 1794316210.3,
+    "md5": "41e95fbe",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_05_ACT3_Turing_2018_And_Google_Resignation_2023.png": {
+    "mtime": 1794316211.4,
+    "md5": "6087561f",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_05_Google_Exit_2023_10s.mp4": {
+    "mtime": 1794316212.78,
+    "md5": "d08f39f3",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_06_ACT4_Nobel_Physics_2024_Stockholm_Citation.png": {
+    "mtime": 1794316213.91,
+    "md5": "99efd778",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/EP04_DOC_06_Nobel_2024_10s.mp4": {
+    "mtime": 1794316215.28,
+    "md5": "71f347ba",
+    "w": 1920,
+    "h": 1080,
+    "dur": 10.0,
+    "is_portrait": false,
+    "res_label": "1080p 16:9",
+    "dur_label": "10s"
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_01_Thought_As_Error_Geometry.png": {
+    "mtime": 1794316215.4,
+    "md5": "2f37e483",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_02_London_Carpenter_Honest_Matter.png": {
+    "mtime": 1794316216.36,
+    "md5": "e59f8c05",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_03_Backprop_Error_As_Fuel.png": {
+    "mtime": 1794316217.32,
+    "md5": "e3487507",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_04_Standing_Alone_Against_Consensus.png": {
+    "mtime": 1794316218.27,
+    "md5": "14ca0790",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_05_Refusing_Pentagon_Toronto_Floor.png": {
+    "mtime": 1794316219.21,
+    "md5": "dc7afb32",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_06_AlexNet_Dawn_After_Thirty_Years.png": {
+    "mtime": 1794316220.16,
+    "md5": "fa548f26",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_07_Digital_Weights_Speed_Of_Light.png": {
+    "mtime": 1794316221.11,
+    "md5": "f36ad2dd",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
+  },
+  "05_RAW_FOOTAGE/dossiers_press/ukrainian_quote_cards/EP04_UA_CARD_08_Courage_Of_Lonely_Doubters_Finale.png": {
+    "mtime": 1794316222.26,
+    "md5": "eec2b5c1",
+    "w": 3840,
+    "h": 2160,
+    "dur": 0.0,
+    "is_portrait": false,
+    "res_label": "🖼️ 4K",
+    "dur_label": ""
   }
 }

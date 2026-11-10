@@ -118,8 +118,23 @@ run_ep03() {
 }
 
 run_ep04() {
-  # EP04 — Джеффрі Хінтон: Промова на Нобелівському банкеті з фізики 2024
+  # EP04 — Джеффрі Хінтон: Стокгольм Нобель 2024 + CBS 60 Minutes + BBC + Diary Of A CEO + ACM Turing 2018 + UofT Presser
   fetch_clip "https://www.youtube.com/watch?v=-f5WQAk3dYo" "00:00:35-00:00:43" "EP04_VID_ARCH_01_ACT4_24FPS_Hinton_Nobel_Warning_2024"
+  fetch_clip "https://www.youtube.com/watch?v=giT0ytynSqg" "01:19:53-01:20:24" "EP04_VID_ARCH_02_ACT1_24FPS_Hinton_Ancestry_Boole_Everest"
+  fetch_clip "https://www.youtube.com/watch?v=giT0ytynSqg" "01:20:39-01:21:05" "EP04_VID_ARCH_03_ACT1_24FPS_Hinton_Joan_Los_Alamos_Cousin"
+  fetch_clip "https://www.youtube.com/watch?v=HzilDIhWhrE" "00:01:44-00:02:16" "EP04_VID_ARCH_04_ACT2_24FPS_Hinton_Second_AI_Winter_Turing"
+  fetch_clip "https://www.youtube.com/watch?v=XDE9DjpcSdI" "00:01:46-00:02:14" "EP04_VID_ARCH_05_ACT2_24FPS_Hinton_Boltzmann_Machine_Nobel_Lecture"
+  fetch_clip "https://www.youtube.com/watch?v=XDE9DjpcSdI" "00:20:15-00:20:39" "EP04_VID_ARCH_06_ACT2_24FPS_Hinton_Backpropagation_Nobel_Lecture"
+  fetch_clip "https://www.youtube.com/watch?v=66WiF8fXL0k" "00:16:45-00:17:10" "EP04_VID_ARCH_07_ACT2_24FPS_Hinton_Sejnowski_1980s_Neuroscience"
+  fetch_clip "https://www.youtube.com/watch?v=VsnQf7exv5I" "00:27:12-00:27:36" "EP04_VID_ARCH_08_ACT3_24FPS_Hinton_Two_Students_GPUs_Turing"
+  fetch_clip "https://www.youtube.com/watch?v=giT0ytynSqg" "01:11:51-01:12:28" "EP04_VID_ARCH_09_ACT3_24FPS_Hinton_AlexNet_DNNresearch_Auction"
+  fetch_clip "https://www.youtube.com/watch?v=HzilDIhWhrE" "00:04:50-00:05:14" "EP04_VID_ARCH_10_ACT3_24FPS_Hinton_Turing_2018_Three_Fathers"
+  fetch_clip "https://www.youtube.com/watch?v=giT0ytynSqg" "01:15:02-01:15:24" "EP04_VID_ARCH_11_ACT3_24FPS_Hinton_Leaving_Google_Speak_Freely"
+  fetch_clip "https://www.youtube.com/watch?v=DsBGaHywRhs" "00:00:02-00:00:28" "EP04_VID_ARCH_12_ACT3_24FPS_Hinton_BBC_Regret_Warning_2023"
+  fetch_clip "https://www.youtube.com/watch?v=giT0ytynSqg" "00:57:41-00:58:14" "EP04_VID_ARCH_13_ACT3_24FPS_Hinton_Digital_Weights_Trillions_Bits"
+  fetch_clip "https://www.youtube.com/watch?v=QH6QqjIwv68" "00:11:50-00:12:28" "EP04_VID_ARCH_14_ACT3_24FPS_Hinton_60Minutes_Species_Control"
+  fetch_clip "https://www.youtube.com/watch?v=H7DgMFqrON0" "00:03:16-00:03:40" "EP04_VID_ARCH_15_ACT4_24FPS_Hinton_UofT_Students_Nobel_Presser"
+  fetch_clip "https://www.youtube.com/watch?v=-f5WQAk3dYo" "00:02:26-00:02:52" "EP04_VID_ARCH_16_ACT4_24FPS_Hinton_Banquet_Existential_Threat"
 }
 
 run_ep05() {

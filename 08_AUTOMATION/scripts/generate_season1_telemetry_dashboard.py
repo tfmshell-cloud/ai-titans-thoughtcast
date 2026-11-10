@@ -25,8 +25,8 @@ EP_META = [
      "Повне досьє + 10 першоджерельних транскриптів (CHM Oral History 72 хв, Acquired 90 хв, Stanford GSB/SIEPR, Stripe, NTU, CBS 60 Min, OSU 2009) + 50 тріад + 20 архівних відео (включно з NVIDIA Pressroom 2026) + 19 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 24 4K кліпи."),
     ("03", "demis_hassabis", "episode_03_hassabis", ["ep03", "ep02_demis_hassabis", "hassabis"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
      "Повне досьє + 10 першоджерельних транскриптів (Nobel Lecture 2024, Lex #475, The Thinking Game, AlphaGo Movie, Stanford GSB, WSJ $650M, CBS 60 Min, Royal Society) + 50 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia Commons + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
-    ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
-     "Повне досьє + 100 цитат + 100 промптів + 4 Suno стеми + Нобелівський архів 2024 + VFX колапс хвилі + Flow-дослідження. Очікує генерацію відеоряду."),
+    ("04", "geoffrey_hinton", "episode_04_hinton", ["ep04", "hinton"], "🟡 Повний ресьорч & 16 архівних кліпів", 68, "stage-ingest",
+     "Повне досьє + 10 транскриптів & 3 статті (Nobel Lecture 2024, CBS 60 Minutes, BBC News 2023, ACM Turing 2018, U of T, NobelPrize.org, Diary Of A CEO) + 10 тріад (100% B-Roll) + 16 HD архівних відео + 18 фото Wikimedia + 6 4K Досьє + 8 укр. цитат-карток + 26 4K кліпів."),
     ("05", "yann_lecun", "episode_05_lecun", ["ep05", "lecun"], "🔵 Ресьорч, Сценарій & Базовий арт", 34, "stage-research",
      "Повне досьє + сценарій + 100 промптів + 4 Suno стеми + архів Bell Labs 1989 + VFX осцилятор + Flow JEPA рендер. Очікує розширення B-Roll."),
     ("06", "ilya_sutskever", "episode_06_sutskever", ["ep06", "sutskever"], "🟠 Препродакшн & Стартовий інжест", 42, "stage-preprod",
@@ -145,11 +145,15 @@ def count_project_stats():
             ]
         elif ep == "04":
             bio_sources = [
-                "Nobel Prize in Physics 2024 Official Citation & Banquet Speech",
-                "ACM A.M. Turing Award 2018 Lecture (Deep Learning)",
-                "Nature (1986) — Rumelhart, Hinton, Williams: Backpropagation",
-                "University of Toronto / CIFAR Neural Computation Archive",
-                "ImageNet 2012 (AlexNet) & NYT 2023 Google Exit Interview"
+                "Nobel Prize Lecture in Physics 2024 (`XDE9DjpcSdI` — Boltzmann Machines & Backprop)",
+                "CBS 60 Minutes Archive (`QH6QqjIwv68` — Scott Pelley інтерв'ю про ризики ШІ)",
+                "NobelPrize.org Official Interview Transcript (`1925103`) & Nobel Physics 2024 Facts",
+                "U of T News: Nobel Lecture & AlexNet Archive (`web.cs.toronto.edu` + `H7DgMFqrON0`)",
+                "ACM A.M. Turing Award 2018 & Deep Learning Lecture (`HzilDIhWhrE`, `VsnQf7exv5I`)",
+                "BBC News (травень 2023): Відставка з Google (`DsBGaHywRhs`) & Banquet Warning (`-f5WQAk3dYo`)",
+                "Nature (1986) Backpropagation & Cognitive Science (1985) Boltzmann Machine",
+                "The Diary Of A CEO Archive (`giT0ytynSqg` — Буль, Еверест, Джоан Хінтон, Тахо $44M)",
+                "Wikimedia Commons Archival Collection (18 відкритих історичних фото: Буль → Стокгольм 2024)"
             ]
         elif ep == "05":
             bio_sources = [
@@ -731,7 +735,7 @@ def build_html(ep_stats, shared, resolve_info):
       <div class="filter-chips">
         <button class="chip active" onclick="filterCards('all', this)">Усі 10 Титанів</button>
         <button class="chip" onclick="filterCards('stage-editing', this)">🟢 В активному монтажі (EP01)</button>
-        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP03)</button>
+        <button class="chip" onclick="filterCards('stage-ingest', this)">🟡 Повний ресьорч & Архів (EP02–EP04)</button>
         <button class="chip" onclick="filterCards('stage-preprod', this)">🟠 Препродакшн & Інжест</button>
         <button class="chip" onclick="filterCards('stage-research', this)">🔵 Базовий ресьорч & Скрипт</button>
       </div>
