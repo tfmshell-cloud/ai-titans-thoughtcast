@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.8">
+  <resources>
+    <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <asset id="r2" name="ep01_flow_01_mac_chassis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r3" name="EP01_CLIP_STILL_Neural_Lattice_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Neural_Lattice_10s.mp4" start="0s" duration="24100/2400s" hasVideo="1" format="r1"/>
+    <asset id="r4" name="EP01_CLIP_STILL_Young_Altman_Portrait_5s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Young_Altman_Portrait_5s.mp4" start="0s" duration="12000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r5" name="EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r6" name="EP01_V2_ARCH_06_Childhood_Mac_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_06_Childhood_Mac_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r7" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Boy_viewing_glowing_terminal_code_a3fe5f00_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r8" name="Camera_moving_through_computer_m_clip_2acf3bda_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_moving_through_computer_m_clip_2acf3bda_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r9" name="ep01_flow_02_crt_code" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r10" name="ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r11" name="ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r12" name="EP01_CLIP_V1_06_Boy_Room_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_06_Boy_Room_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r13" name="EP01_CLIP_STILL_Boy_Watching_Code_5s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boy_Watching_Code_5s.mp4" start="0s" duration="12000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r14" name="EP01_CLIP_V1_07_Phosphor_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r15" name="EP01_V2_ARCH_05_Burroughs_Campus_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r16" name="EP01_V1_CREATIVE_01_Equations_Void_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r17" name="EP01_CLIP_STILL_School_Auditorium_5s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_School_Auditorium_5s.mp4" start="0s" duration="12000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r18" name="ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow%2C_powerful__2026-11-09T12_52_53.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r19" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Teenage_boy_speaking_into_microp%E2%80%A6_9259f8fe_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r20" name="EP01_CLIP_STILL_Math_Decision_Tree_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Math_Decision_Tree_8s.mp4" start="0s" duration="18500/2400s" hasVideo="1" format="r1"/>
+    <asset id="r21" name="Young_Altman_School_Auditorium_Microphone_2001_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/images_vault/Young_Altman_School_Auditorium_Microphone_2001_2K.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r22" name="EP01_V1_CREATIVE_02_Galaxies_Axons_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r23" name="ep01_flow_08_golden_signatures" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r24" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r25" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v%E2%80%A6_de18897e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r26" name="ep01_flow_04_exponential_line" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4" start="0s" duration="24000/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r27" name="ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r28" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r29" name="EP01_V1_NEW_04_Smartphone_Loopt_16s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_04_Smartphone_Loopt_16s.mp4" start="0s" duration="38400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r30" name="Light_point_explodes_into_streaks_0827d703_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_0827d703_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r31" name="EP01_DOC_01_YC_2005_Program_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_YC_2005_Program_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r32" name="EP01_V2_ARCH_07_Loopt_Founder_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_07_Loopt_Founder_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r33" name="ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r34" name="EP01_V1_NEW_03_Window_Rain_16s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4" start="0s" duration="38400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r35" name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4" start="0s" duration="31400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r36" name="EP01_UA_CARD_09_Green_Dot_43M_2012" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_UA_CARD_09_Green_Dot_43M_2012.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r37" name="EP01_CLIP_STILL_Altman_2009_Loopt_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Altman_2009_Loopt_6s.mp4" start="0s" duration="14200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r38" name="EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r39" name="Laser_forms_text_words_89a267cd_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Laser_forms_text_words_89a267cd_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r40" name="EP01_UA_CLIP_CARD_02_Psychological_Friction_18s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_02_Psychological_Friction_18s.mp4" start="0s" duration="43600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r41" name="Boy_aging_into_tech_leader_cd380219_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Boy_aging_into_tech_leader_cd380219_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r42" name="EP01_CLIP_V1_19_CurveHero_17s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_19_CurveHero_17s.mp4" start="0s" duration="40800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r43" name="Light_point_explodes_into_streaks_c712a46e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Light_point_explodes_into_streaks_c712a46e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r44" name="Camera_accelerating_through_lett_clip_24ed2370_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_accelerating_through_lett_clip_24ed2370_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r45" name="EP01_CLIP_V1_16_ServerCold_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_16_ServerCold_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r46" name="EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r47" name="EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture.mp4" start="0s" duration="43400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r48" name="EP01_V2_B2_02_Stanford_2014_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_02_Stanford_2014_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r49" name="EP01_V1_B2_00_Startup_Engine_Matrix_14s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_00_Startup_Engine_Matrix_14s.mp4" start="0s" duration="33600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r50" name="EP01_V1_B2_07_Corporate_Transmutation_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_07_Corporate_Transmutation_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r51" name="ep01_flow_09_fusion_torus" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_09_fusion_torus.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r52" name="EP01_V1_B2_01_Retro_Cellular_14s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_01_Retro_Cellular_14s.mp4" start="0s" duration="33600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r53" name="ep08_clip_still_wall_street_nyse_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_wall_street_nyse_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r54" name="EP01_CLIP_STILL_TechCrunch_2014_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_TechCrunch_2014_10s.mp4" start="0s" duration="23000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r55" name="EP01_UA_CLIP_CARD_03_Exponential_Risk_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_03_Exponential_Risk_15s.mp4" start="0s" duration="36600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r56" name="Photographic_strobe_inverting_image_81594c7e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r57" name="EP01_V1_B3_02_Boardroom_Void_14s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_02_Boardroom_Void_14s.mp4" start="0s" duration="33600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r58" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r59" name="EP02_CLIP_STILL_GF110_GTX580_Die_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP02_CLIP_STILL_GF110_GTX580_Die_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r60" name="Camera_zooms_out_from_microchip_9bc5eb71_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/from_downloads/Camera_zooms_out_from_microchip_9bc5eb71_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r61" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r62" name="Four_men_sitting_at_table_3911bdbc_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Four_men_sitting_at_table_3911bdbc_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r63" name="EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4" start="0s" duration="71900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r64" name="EP06_SCI_01_Alcubierre_Warp_Drive_Metric" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/scientific_animations/EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r65" name="EP03_CLIP_STILL_DeepMind_KingsCross_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP03_CLIP_STILL_DeepMind_KingsCross_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r66" name="EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics.mp4" start="0s" duration="62500/2400s" hasVideo="1" format="r1"/>
+    <asset id="r67" name="Camera_moving_through_server_aisle_48549a87_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/from_downloads/Camera_moving_through_server_aisle_48549a87_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r68" name="EP01_DOC_02_OpenAI_Introducing_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_02_OpenAI_Introducing_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r69" name="EP06_CLIP_STILL_OpenAI_Pioneer_Building_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_OpenAI_Pioneer_Building_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r70" name="EP01_V1_B2_06_Server_Matrix_Billions_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_06_Server_Matrix_Billions_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r71" name="Fiber-optic_nodes_pulse_and_expand_da399bab_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/from_downloads/Fiber-optic_nodes_pulse_and_expand_da399bab_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r72" name="EP01_V1_NEW_01_Silhouette_Dorm_14s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_01_Silhouette_Dorm_14s.mp4" start="0s" duration="33600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r73" name="EP01_V1_B2_04_Robotic_Dexterity_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_04_Robotic_Dexterity_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r74" name="EP01_V1_B2_03_Singularity_Threat_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_03_Singularity_Threat_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r75" name="EP01_V1_B2_05_Swarm_Gaming_RL_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r76" name="EP03_CLIP_STILL_Royal_Society_London_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP03_CLIP_STILL_Royal_Society_London_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r77" name="EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r78" name="EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r79" name="EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4" start="0s" duration="38400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r80" name="EP10_SCI_01_Tesla_Coil_Electric_Discharges" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/scientific_animations/EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4" start="0s" duration="48000/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r81" name="Glass_shatters_into_voxel_bricks_6403835d_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r82" name="EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r83" name="Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r84" name="EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block2_master/EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r85" name="EP01_UA_CLIP_CARD_04_Compute_Equations_18s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_04_Compute_Equations_18s.mp4" start="0s" duration="43600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r86" name="EP01_CLIP_STILL_Boardroom_Tense_9s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boardroom_Tense_9s.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r87" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r88" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_ChatGPT_Genesis_7s.mp4" start="0s" duration="16600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r89" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r90" name="EP04_CLIP_STILL_AI_Benchmarks_Curve_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_AI_Benchmarks_Curve_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r91" name="Aerial_view_of_city_center_41b81743_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r92" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v%E2%80%A6_de18897e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r93" name="EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4" start="0s" duration="103200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r94" name="ep09_clip_still_bletchley_summit_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bletchley_summit_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r95" name="ep07_clip_still_white_house_2023_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_white_house_2023_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r96" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4" start="0s" duration="29000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r97" name="Mouse_click_triggers_flash_42a0e76f_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Mouse_click_triggers_flash_42a0e76f_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r98" name="Photographic_strobe_inverting_image_81594c7e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r99" name="EP06_CLIP_STILL_Sutskever_TAU_2023_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r100" name="ep01_flow_07_boardroom_noir" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_07_boardroom_noir.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r101" name="EP01_V1_B3_01_Chess_King_Falling_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_B3_01_Chess_King_Falling_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r102" name="EP01_DOC_03_Board_Ouster_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_Board_Ouster_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r103" name="EP01_V1_ASSOC_01_Lidar_City_Grid_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r104" name="ep01_flow_07_boardroom_noir_ua_alt" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/alternate_takes/ep01_flow_07_boardroom_noir_ua_alt.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r105" name="Finger_slamming_clock_plunger_dd1a4152_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r106" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4" start="0s" duration="71900/2400s" hasVideo="1" format="r1"/>
+    <asset id="r107" name="EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r108" name="Holographic_game_data_streams_fl…_0aa820c5_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl%E2%80%A6_0aa820c5_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r109" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r110" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Guest_Badge_Desk_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r111" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_05_Guest_Badge_8s.mp4" start="0s" duration="18600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r112" name="EP01_CLIP_STILL_Employees_Solidarity_9s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r113" name="EP01_DOC_05_Employees_Letter_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_Employees_Letter_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r114" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4" start="0s" duration="25700/2400s" hasVideo="1" format="r1"/>
+    <asset id="r115" name="EP01_DOC_04_Sutskever_Regret_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r116" name="EP06_DOC_05_Nov2023_Rift_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP06_DOC_05_Nov2023_Rift_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r117" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block3_master/EP01_V2_B3_01_Altman_ChatGPT_Launch_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r118" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r119" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r120" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m%E2%80%A6_ed88b1bf_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r121" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4" start="0s" duration="34000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r122" name="EP01_V1_B4_CLOSER_DeepSpace_154f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B4_CLOSER_DeepSpace_154f.mp4" start="0s" duration="15400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r123" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_06_Cosmic_Dyson_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r124" name="Electrical_spark_traveling_neuro…_362f1f95_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro%E2%80%A6_362f1f95_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r125" name="Plane_blade_transforming_into_ci…_97ad6a7c_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Plane_blade_transforming_into_ci%E2%80%A6_97ad6a7c_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r126" name="EP02_CLIP_STILL_DGX_B200_HGX_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP02_CLIP_STILL_DGX_B200_HGX_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r127" name="EP01_DOC_06_Stargate_100B_Report_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_06_Stargate_100B_Report_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r128" name="EP01_DOC_07_7_Trillion_Chip_Network_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_07_7_Trillion_Chip_Network_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r129" name="Finger_drawing_glowing_algorithm…_57eaed58_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Finger_drawing_glowing_algorithm%E2%80%A6_57eaed58_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r130" name="EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/scientific_animations/EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r131" name="ep10_clip_still_earth_dawn_lights_finale_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep10_clip_still_earth_dawn_lights_finale_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r132" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_07_Three_Rules_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r133" name="ep01_flow_03_silicon_laser" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r134" name="EP01_UA_CLIP_CARD_08_Plastic_Reality_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_08_Plastic_Reality_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r135" name="Aircraft_climbing_into_stratosph…_081016cf_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/00_TRANSATLANTIC_FLIGHT_MORPH/Aircraft_climbing_into_stratosph%E2%80%A6_081016cf_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r136" name="EP01_V1_B2_10_Earth_Horizon_Finale_550f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_10_Earth_Horizon_Finale_550f.mp4" start="0s" duration="55000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r137" name="EP01_END_CARD" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_END_CARD.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r138" name="EP01_MGFX_01_Burroughs_Turning_Point_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_01_Burroughs_Turning_Point_10s.mov" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r139" name="EP01_MGFX_02_Autonomy_Axiom_Quote_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_MGFX_02_Autonomy_Axiom_Quote_12s.mov" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r140" name="EP01_SUPER_00_Act_I_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_00_Act_I_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r141" name="EP01_SUPER_01_St_Louis_1993" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_01_St_Louis_1993.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r142" name="EP01_SUPER_02_Stanford_2003" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_02_Stanford_2003.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r143" name="EP01_SUPER_03_Loopt_2005_2012" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_03_Loopt_2005_2012.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r144" name="EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav" start="0s" duration="33700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r145" name="EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_LC_II_Indifference" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_LC_II_Indifference.wav" start="0s" duration="105400/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r146" name="EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School.wav" start="0s" duration="109600/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r147" name="EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav" start="0s" duration="83900/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r148" name="EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav" start="0s" duration="128200/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r149" name="EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav" start="0s" duration="39700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r150" name="EP01_MUS_ActI_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActI_ducked_Claude.wav" start="0s" duration="572000/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r151" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan.wav" start="0s" duration="19300/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r152" name="EP01_SFX_Keyboard_Typing_Burst_4s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_SFX_Keyboard_Typing_Burst_4s.wav" start="0s" duration="9600/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r153" name="EP01_SFX_Mechanical_Keyboard_Typing" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_SFX_Mechanical_Keyboard_Typing.wav" start="0s" duration="21000/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r154" name="EP01_SUPER_10_Act_II_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_10_Act_II_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r155" name="EP01_SUPER_11_YC_2014" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_11_YC_2014.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r156" name="EP01_SUPER_12_Rosewood_2015" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_12_Rosewood_2015.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r157" name="EP01_SUPER_13_SF_2019" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_13_SF_2019.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r158" name="EP01_VO_UA_07_ACT2_04_45_05_45_YC_President_28yo" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_07_ACT2_04_45_05_45_YC_President_28yo.wav" start="0s" duration="117300/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r159" name="EP01_VO_UA_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_08_ACT2_05_45_07_00_Rosewood_Dinner_Google_Threat.wav" start="0s" duration="117100/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r160" name="EP01_VO_UA_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_09_ACT2_07_00_08_15_OpenAI_Founding_Dec2015.wav" start="0s" duration="109400/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r161" name="EP01_VO_UA_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_10_ACT2_08_15_09_30_Capped_Profit_Microsoft_Bill.wav" start="0s" duration="104800/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r162" name="EP01_MUS_ActII_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActII_ducked_Claude.wav" start="0s" duration="507100/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r163" name="EP01_SUPER_20_Act_III_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_20_Act_III_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r164" name="EP01_SUPER_21_ChatGPT_2022" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_21_ChatGPT_2022.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r165" name="EP01_SUPER_22_Friday_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_22_Friday_Nov17.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r166" name="EP01_SUPER_23_120_Hours" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_23_120_Hours.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r167" name="EP01_SUPER_24_Wednesday_Nov22" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_24_Wednesday_Nov22.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r168" name="EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav" start="0s" duration="110700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r169" name="EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav" start="0s" duration="120700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r170" name="EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav" start="0s" duration="105000/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r171" name="EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav" start="0s" duration="130700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r172" name="EP01_MUS_ActIII_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActIII_ducked_Claude.wav" start="0s" duration="513400/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r173" name="EP01_SUPER_30_Act_IV_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_30_Act_IV_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r174" name="EP01_RULE_A_Belief" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_RULE_A_Belief.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r175" name="EP01_RULE_B_Code" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_RULE_B_Code.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r176" name="EP01_RULE_C_Exponent" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_RULE_C_Exponent.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r177" name="EP01_VO_UA_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_15_ACT4_15_30_17_00_Stargate_Helion_Energy_Physics.wav" start="0s" duration="115700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r178" name="EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav" start="0s" duration="143200/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r179" name="EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav" start="0s" duration="63500/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r180" name="EP01_MUS_ActIV_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActIV_ducked_Claude.wav" start="0s" duration="419500/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+  </resources>
+  <library>
+    <event name="SEM_EP01_Claude">
+      <project name="EP01_FULL_UA_Claude_DirectorsCut">
+        <sequence format="r1" duration="2012000/2400s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <asset-clip ref="r2" offset="0/2400s" name="ep01_flow_01_mac_chassis" start="4100/2400s" duration="12200/2400s">
+              <video ref="r140" lane="2" offset="4100/2400s" name="EP01_SUPER_00_Act_I_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r150" lane="-2" offset="4100/2400s" name="EP01_MUS_ActI_ducked_Claude" start="0s" duration="572000/2400s" audioRole="music"/>
+              <asset-clip ref="r151" lane="-3" offset="4100/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-3.1dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r3" offset="12200/2400s" name="EP01_CLIP_STILL_Neural_Lattice_10s" start="0/2400s" duration="14000/2400s">
+              <asset-clip ref="r144" lane="-1" offset="300/2400s" name="VO_UA_01" start="0s" duration="33600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r4" offset="26200/2400s" name="EP01_CLIP_STILL_Young_Altman_Portrait_5s" start="0/2400s" duration="11900/2400s"/>
+            <asset-clip ref="r5" offset="38100/2400s" name="EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s" start="0/2400s" duration="17200/2400s"/>
+            <asset-clip ref="r6" offset="55300/2400s" name="EP01_V2_ARCH_06_Childhood_Mac_10s" start="0/2400s" duration="6900/2400s">
+              <video ref="r141" lane="2" offset="0/2400s" name="EP01_SUPER_01_St_Louis_1993" start="0s" duration="6900/2400s"/>
+              <asset-clip ref="r145" lane="-1" offset="1000/2400s" name="VO_UA_02" start="0s" duration="105300/2400s" audioRole="dialogue"><adjust-volume amount="-0.5dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r7" offset="62200/2400s" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" start="1400/2400s" duration="13100/2400s" audioRole="effects">
+              <adjust-volume amount="-2.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r8" offset="75300/2400s" name="Camera_moving_through_computer_m_clip_2acf3bda_1080p" start="0/2400s" duration="18800/2400s" audioRole="effects">
+              <adjust-volume amount="-18.2dB"/>
+            </asset-clip>
+            <asset-clip ref="r9" offset="94100/2400s" name="ep01_flow_02_crt_code" start="2400/2400s" duration="2900/2400s"/>
+            <asset-clip ref="r10" offset="97000/2400s" name="ElevenLabs_video_seedance-2-5_Seamless_stylis_2026-11-09T12_34_37" start="0/2400s" duration="12000/2400s" audioRole="effects">
+              <adjust-volume amount="-9.4dB"/>
+            </asset-clip>
+            <asset-clip ref="r11" offset="109000/2400s" name="ElevenLabs_video_seedance-2-5_Authentic_histo_2026-11-09T12_29_51" start="1400/2400s" duration="10500/2400s" audioRole="effects">
+              <adjust-volume amount="-3.9dB"/>
+            </asset-clip>
+            <asset-clip ref="r12" offset="119500/2400s" name="EP01_CLIP_V1_06_Boy_Room_12s" start="0/2400s" duration="12600/2400s">
+              <asset-clip ref="r152" lane="-3" offset="0/2400s" name="EP01_SFX_Keyboard_Typing_Burst_4s" start="0s" duration="9600/2400s" audioRole="effects"><adjust-volume amount="6.0dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r13" offset="132100/2400s" name="EP01_CLIP_STILL_Boy_Watching_Code_5s" start="0/2400s" duration="10800/2400s"/>
+            <asset-clip ref="r9" offset="142900/2400s" name="ep01_flow_02_crt_code" start="7200/2400s" duration="11300/2400s"/>
+            <asset-clip ref="r14" offset="154200/2400s" name="EP01_CLIP_V1_07_Phosphor_12s" start="0/2400s" duration="14500/2400s"/>
+            <asset-clip ref="r15" offset="168700/2400s" name="EP01_V2_ARCH_05_Burroughs_Campus_12s" start="0/2400s" duration="14400/2400s">
+              <asset-clip ref="r146" lane="-1" offset="300/2400s" name="VO_UA_03" start="0s" duration="109500/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r16" offset="183100/2400s" name="EP01_V1_CREATIVE_01_Equations_Void_8s" start="0/2400s" duration="10000/2400s"/>
+            <asset-clip ref="r17" offset="193100/2400s" name="EP01_CLIP_STILL_School_Auditorium_5s" start="0/2400s" duration="8200/2400s"/>
+            <asset-clip ref="r18" offset="201300/2400s" name="ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53" start="0/2400s" duration="12000/2400s" audioRole="effects">
+              <adjust-volume amount="-4.4dB"/>
+            </asset-clip>
+            <asset-clip ref="r19" offset="213300/2400s" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" start="0/2400s" duration="18200/2400s">
+              <asset-clip ref="r138" lane="1" offset="2200/2400s" name="EP01_MGFX_01_Burroughs_Turning_Point_10s" start="0s" duration="24000/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r20" offset="231500/2400s" name="EP01_CLIP_STILL_Math_Decision_Tree_8s" start="0/2400s" duration="9600/2400s"/>
+            <video ref="r21" offset="241100/2400s" name="Young_Altman_School_Auditorium_Microphone_2001_2K" start="0/2400s" duration="10400/2400s"/>
+            <asset-clip ref="r22" offset="251500/2400s" name="EP01_V1_CREATIVE_02_Galaxies_Axons_12s" start="0/2400s" duration="18000/2400s">
+              <asset-clip ref="r139" lane="1" offset="12000/2400s" name="EP01_MGFX_02_Autonomy_Axiom_Quote_12s" start="0s" duration="24200/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r23" offset="269500/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="18200/2400s"/>
+            <asset-clip ref="r24" offset="287700/2400s" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" start="0/2400s" duration="15200/2400s" audioRole="effects">
+              <adjust-volume amount="-12.5dB"/>
+              <video ref="r142" lane="2" offset="0/2400s" name="EP01_SUPER_02_Stanford_2003" start="0s" duration="8600/2400s"/>
+              <asset-clip ref="r147" lane="-1" offset="300/2400s" name="VO_UA_04" start="0s" duration="83800/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r25" offset="302900/2400s" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" start="1000/2400s" duration="22600/2400s" audioRole="effects">
+              <adjust-volume amount="-12.3dB"/>
+            </asset-clip>
+            <asset-clip ref="r26" offset="325500/2400s" name="ep01_flow_04_exponential_line" start="1000/2400s" duration="10000/2400s" audioRole="effects">
+              <adjust-volume amount="-21.1dB"/>
+            </asset-clip>
+            <asset-clip ref="r27" offset="335500/2400s" name="ElevenLabs_video_seedance-2-5_Dynamic_camera__2026-11-09T12_53_36" start="0/2400s" duration="12000/2400s" audioRole="effects">
+              <adjust-volume amount="-1.4dB"/>
+            </asset-clip>
+            <asset-clip ref="r28" offset="347500/2400s" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" start="14400/2400s" duration="6800/2400s"/>
+            <asset-clip ref="r29" offset="354300/2400s" name="EP01_V1_NEW_04_Smartphone_Loopt_16s" start="0/2400s" duration="8700/2400s"/>
+            <asset-clip ref="r30" offset="363000/2400s" name="Light_point_explodes_into_streaks_0827d703_1080p" start="2400/2400s" duration="18600/2400s" audioRole="effects">
+              <adjust-volume amount="-18.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r31" offset="381600/2400s" name="EP01_DOC_01_YC_2005_Program_10s" start="0/2400s" duration="17400/2400s">
+              <asset-clip ref="r148" lane="-1" offset="300/2400s" name="VO_UA_05" start="0s" duration="128100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r32" offset="399000/2400s" name="EP01_V2_ARCH_07_Loopt_Founder_12s" start="0/2400s" duration="13800/2400s">
+              <video ref="r143" lane="2" offset="0/2400s" name="EP01_SUPER_03_Loopt_2005_2012" start="0s" duration="9600/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r33" offset="412800/2400s" name="ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53" start="0/2400s" duration="12000/2400s" audioRole="effects">
+              <adjust-volume amount="-8.2dB"/>
+            </asset-clip>
+            <asset-clip ref="r34" offset="424800/2400s" name="EP01_V1_NEW_03_Window_Rain_16s" start="0/2400s" duration="14600/2400s">
+              <asset-clip ref="r153" lane="-3" offset="0/2400s" name="EP01_SFX_Mechanical_Keyboard_Typing" start="0s" duration="14400/2400s" audioRole="effects"><adjust-volume amount="2.7dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r35" offset="439400/2400s" name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" start="14400/2400s" duration="7500/2400s"/>
+            <video ref="r36" offset="446900/2400s" name="EP01_UA_CARD_09_Green_Dot_43M_2012" start="0/2400s" duration="15100/2400s"/>
+            <asset-clip ref="r37" offset="462000/2400s" name="EP01_CLIP_STILL_Altman_2009_Loopt_6s" start="0/2400s" duration="13900/2400s"/>
+            <asset-clip ref="r38" offset="475900/2400s" name="EP01_V1_CREATIVE_08_Gold_Melting_Brain_15s" start="0/2400s" duration="11300/2400s"/>
+            <asset-clip ref="r39" offset="487200/2400s" name="Laser_forms_text_words_89a267cd_1080p" start="2400/2400s" duration="8400/2400s" audioRole="effects">
+              <adjust-volume amount="-17.1dB"/>
+            </asset-clip>
+            <asset-clip ref="r40" offset="495600/2400s" name="EP01_UA_CLIP_CARD_02_Psychological_Friction_18s" start="0/2400s" duration="23800/2400s"/>
+            <asset-clip ref="r41" offset="519400/2400s" name="Boy_aging_into_tech_leader_cd380219_1080p" start="0/2400s" duration="14700/2400s" audioRole="effects">
+              <adjust-volume amount="-12.9dB"/>
+              <asset-clip ref="r149" lane="-1" offset="300/2400s" name="VO_UA_06" start="0s" duration="39600/2400s" audioRole="dialogue"><adjust-volume amount="-1.5dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r42" offset="534100/2400s" name="EP01_CLIP_V1_19_CurveHero_17s" start="0/2400s" duration="10500/2400s"/>
+            <asset-clip ref="r43" offset="544600/2400s" name="Light_point_explodes_into_streaks_c712a46e_1080p" start="0/2400s" duration="14600/2400s" audioRole="effects">
+              <adjust-volume amount="-23.8dB"/>
+            </asset-clip>
+            <asset-clip ref="r44" offset="559200/2400s" name="Camera_accelerating_through_lett_clip_24ed2370_1080p" start="0/2400s" duration="12800/2400s" audioRole="effects">
+              <adjust-volume amount="-17.1dB"/>
+            </asset-clip>
+            <asset-clip ref="r45" offset="572000/2400s" name="EP01_CLIP_V1_16_ServerCold_8s" start="0/2400s" duration="12200/2400s">
+              <video ref="r154" lane="2" offset="0/2400s" name="EP01_SUPER_10_Act_II_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r162" lane="-2" offset="0/2400s" name="EP01_MUS_ActII_ducked_Claude" start="0s" duration="507100/2400s" audioRole="music"/>
+            </asset-clip>
+            <asset-clip ref="r46" offset="584200/2400s" name="EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s" start="0/2400s" duration="12200/2400s">
+              <video ref="r155" lane="2" offset="0/2400s" name="EP01_SUPER_11_YC_2014" start="0s" duration="8600/2400s"/>
+              <asset-clip ref="r158" lane="-1" offset="300/2400s" name="VO_UA_07" start="0s" duration="117200/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r47" offset="596400/2400s" name="EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture" start="4800/2400s" duration="14000/2400s"/>
+            <asset-clip ref="r48" offset="610400/2400s" name="EP01_V2_B2_02_Stanford_2014_10s" start="0/2400s" duration="13000/2400s"/>
+            <asset-clip ref="r49" offset="623400/2400s" name="EP01_V1_B2_00_Startup_Engine_Matrix_14s" start="0/2400s" duration="12300/2400s"/>
+            <asset-clip ref="r50" offset="635700/2400s" name="EP01_V1_B2_07_Corporate_Transmutation_15s" start="0/2400s" duration="8000/2400s"/>
+            <asset-clip ref="r51" offset="643700/2400s" name="ep01_flow_09_fusion_torus" start="0/2400s" duration="12500/2400s"/>
+            <asset-clip ref="r52" offset="656200/2400s" name="EP01_V1_B2_01_Retro_Cellular_14s" start="0/2400s" duration="9200/2400s"/>
+            <asset-clip ref="r53" offset="665400/2400s" name="ep08_clip_still_wall_street_nyse_6s" start="0/2400s" duration="9500/2400s"/>
+            <asset-clip ref="r54" offset="674900/2400s" name="EP01_CLIP_STILL_TechCrunch_2014_10s" start="4800/2400s" duration="6600/2400s"/>
+            <asset-clip ref="r55" offset="681500/2400s" name="EP01_UA_CLIP_CARD_03_Exponential_Risk_15s" start="0/2400s" duration="27900/2400s"/>
+            <asset-clip ref="r56" offset="709400/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="12700/2400s">
+              <asset-clip ref="r159" lane="-1" offset="300/2400s" name="VO_UA_08" start="0s" duration="117000/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r57" offset="722100/2400s" name="EP01_V1_B3_02_Boardroom_Void_14s" start="0/2400s" duration="12100/2400s"/>
+            <asset-clip ref="r58" offset="734200/2400s" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" start="0/2400s" duration="8800/2400s" audioRole="effects">
+              <adjust-volume amount="-21.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r59" offset="743000/2400s" name="EP02_CLIP_STILL_GF110_GTX580_Die_6s" start="0/2400s" duration="8100/2400s"/>
+            <asset-clip ref="r60" offset="751100/2400s" name="Camera_zooms_out_from_microchip_9bc5eb71_1080p" start="0/2400s" duration="12100/2400s" audioRole="effects">
+              <adjust-volume amount="-20.4dB"/>
+            </asset-clip>
+            <asset-clip ref="r61" offset="763200/2400s" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" start="0/2400s" duration="12200/2400s">
+              <video ref="r156" lane="2" offset="0/2400s" name="EP01_SUPER_12_Rosewood_2015" start="0s" duration="8600/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r62" offset="775400/2400s" name="Four_men_sitting_at_table_3911bdbc_1080p" start="0/2400s" duration="8400/2400s"/>
+            <asset-clip ref="r63" offset="783800/2400s" name="EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors" start="38400/2400s" duration="10100/2400s"/>
+            <asset-clip ref="r64" offset="793900/2400s" name="EP06_SCI_01_Alcubierre_Warp_Drive_Metric" start="0/2400s" duration="5600/2400s"/>
+            <asset-clip ref="r65" offset="799500/2400s" name="EP03_CLIP_STILL_DeepMind_KingsCross_6s" start="0/2400s" duration="5700/2400s"/>
+            <asset-clip ref="r66" offset="805200/2400s" name="EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics" start="26400/2400s" duration="5600/2400s"/>
+            <asset-clip ref="r67" offset="810800/2400s" name="Camera_moving_through_server_aisle_48549a87_1080p" start="0/2400s" duration="23900/2400s" audioRole="effects">
+              <adjust-volume amount="-21.8dB"/>
+            </asset-clip>
+            <asset-clip ref="r68" offset="834700/2400s" name="EP01_DOC_02_OpenAI_Introducing_12s" start="0/2400s" duration="15700/2400s">
+              <asset-clip ref="r160" lane="-1" offset="300/2400s" name="VO_UA_09" start="0s" duration="109300/2400s" audioRole="dialogue"><adjust-volume amount="-1.2dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r69" offset="850400/2400s" name="EP06_CLIP_STILL_OpenAI_Pioneer_Building_6s" start="0/2400s" duration="8400/2400s"/>
+            <asset-clip ref="r70" offset="858800/2400s" name="EP01_V1_B2_06_Server_Matrix_Billions_15s" start="0/2400s" duration="9300/2400s"/>
+            <asset-clip ref="r71" offset="868100/2400s" name="Fiber-optic_nodes_pulse_and_expand_da399bab_1080p" start="0/2400s" duration="15700/2400s" audioRole="effects">
+              <adjust-volume amount="-10.2dB"/>
+            </asset-clip>
+            <asset-clip ref="r72" offset="883800/2400s" name="EP01_V1_NEW_01_Silhouette_Dorm_14s" start="0/2400s" duration="7500/2400s"/>
+            <asset-clip ref="r73" offset="891300/2400s" name="EP01_V1_B2_04_Robotic_Dexterity_15s" start="0/2400s" duration="7300/2400s"/>
+            <asset-clip ref="r74" offset="898600/2400s" name="EP01_V1_B2_03_Singularity_Threat_12s" start="0/2400s" duration="5900/2400s"/>
+            <asset-clip ref="r75" offset="904500/2400s" name="EP01_V1_B2_05_Swarm_Gaming_RL_12s" start="0/2400s" duration="5600/2400s"/>
+            <asset-clip ref="r76" offset="910100/2400s" name="EP03_CLIP_STILL_Royal_Society_London_6s" start="0/2400s" duration="14100/2400s"/>
+            <asset-clip ref="r63" offset="924200/2400s" name="EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors" start="50400/2400s" duration="14800/2400s"/>
+            <asset-clip ref="r77" offset="939000/2400s" name="EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020" start="0/2400s" duration="14600/2400s"/>
+            <asset-clip ref="r78" offset="953600/2400s" name="EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom" start="0/2400s" duration="13300/2400s">
+              <asset-clip ref="r161" lane="-1" offset="300/2400s" name="VO_UA_10" start="0s" duration="104700/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r79" offset="966900/2400s" name="EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom" start="0/2400s" duration="7800/2400s"/>
+            <asset-clip ref="r80" offset="974700/2400s" name="EP10_SCI_01_Tesla_Coil_Electric_Discharges" start="0/2400s" duration="8900/2400s" audioRole="effects">
+              <adjust-volume amount="-13.6dB"/>
+            </asset-clip>
+            <asset-clip ref="r81" offset="983600/2400s" name="Glass_shatters_into_voxel_bricks_6403835d_1080p" start="0/2400s" duration="12500/2400s" audioRole="effects">
+              <adjust-volume amount="-20.9dB"/>
+              <video ref="r157" lane="2" offset="0/2400s" name="EP01_SUPER_13_SF_2019" start="0s" duration="8600/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r82" offset="996100/2400s" name="EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s" start="0/2400s" duration="14100/2400s"/>
+            <asset-clip ref="r83" offset="1010200/2400s" name="Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p" start="0/2400s" duration="16000/2400s" audioRole="effects">
+              <adjust-volume amount="-8.3dB"/>
+            </asset-clip>
+            <asset-clip ref="r84" offset="1026200/2400s" name="EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s" start="0/2400s" duration="14000/2400s"/>
+            <asset-clip ref="r85" offset="1040200/2400s" name="EP01_UA_CLIP_CARD_04_Compute_Equations_18s" start="0/2400s" duration="38900/2400s"/>
+            <asset-clip ref="r86" offset="1079100/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="0/2400s" duration="12200/2400s">
+              <video ref="r163" lane="2" offset="0/2400s" name="EP01_SUPER_20_Act_III_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r172" lane="-2" offset="0/2400s" name="EP01_MUS_ActIII_ducked_Claude" start="0s" duration="513400/2400s" audioRole="music"/>
+            </asset-clip>
+            <asset-clip ref="r87" offset="1091300/2400s" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" start="0/2400s" duration="23400/2400s" audioRole="effects">
+              <adjust-volume amount="-18.5dB"/>
+              <video ref="r164" lane="2" offset="0/2400s" name="EP01_SUPER_21_ChatGPT_2022" start="0s" duration="8600/2400s"/>
+              <asset-clip ref="r168" lane="-1" offset="300/2400s" name="VO_UA_11" start="0s" duration="110600/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r88" offset="1114700/2400s" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" start="0/2400s" duration="10000/2400s"/>
+            <asset-clip ref="r89" offset="1124700/2400s" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" start="0/2400s" duration="15600/2400s" audioRole="effects">
+              <adjust-volume amount="-6.8dB"/>
+            </asset-clip>
+            <asset-clip ref="r90" offset="1140300/2400s" name="EP04_CLIP_STILL_AI_Benchmarks_Curve_6s" start="0/2400s" duration="11900/2400s"/>
+            <asset-clip ref="r91" offset="1152200/2400s" name="Aerial_view_of_city_center_41b81743_1080p" start="0/2400s" duration="7300/2400s"/>
+            <asset-clip ref="r92" offset="1159500/2400s" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" start="16300/2400s" duration="7400/2400s"/>
+            <asset-clip ref="r93" offset="1166900/2400s" name="EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT" start="19200/2400s" duration="7200/2400s"/>
+            <asset-clip ref="r94" offset="1174100/2400s" name="ep09_clip_still_bletchley_summit_6s" start="0/2400s" duration="8700/2400s"/>
+            <asset-clip ref="r95" offset="1182800/2400s" name="ep07_clip_still_white_house_2023_6s" start="0/2400s" duration="9300/2400s"/>
+            <asset-clip ref="r96" offset="1192100/2400s" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" start="0/2400s" duration="11900/2400s"/>
+            <asset-clip ref="r61" offset="1204000/2400s" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" start="12000/2400s" duration="17400/2400s">
+              <video ref="r165" lane="2" offset="12000/2400s" name="EP01_SUPER_22_Friday_Nov17" start="0s" duration="12000/2400s"/>
+              <asset-clip ref="r169" lane="-1" offset="12300/2400s" name="VO_UA_12" start="0s" duration="120600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r97" offset="1221400/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="0/2400s" duration="4800/2400s" audioRole="effects">
+              <adjust-volume amount="-12.8dB"/>
+            </asset-clip>
+            <asset-clip ref="r98" offset="1226200/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="4600/2400s" audioRole="effects">
+              <adjust-volume amount="-0.5dB"/>
+            </asset-clip>
+            <asset-clip ref="r62" offset="1230800/2400s" name="Four_men_sitting_at_table_3911bdbc_1080p" start="10800/2400s" duration="9800/2400s"/>
+            <asset-clip ref="r99" offset="1240600/2400s" name="EP06_CLIP_STILL_Sutskever_TAU_2023_6s" start="0/2400s" duration="3000/2400s"/>
+            <asset-clip ref="r100" offset="1243600/2400s" name="ep01_flow_07_boardroom_noir" start="0/2400s" duration="8600/2400s"/>
+            <asset-clip ref="r98" offset="1252200/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="4800/2400s" duration="10800/2400s" audioRole="effects">
+              <adjust-volume amount="-21.0dB"/>
+            </asset-clip>
+            <asset-clip ref="r101" offset="1263000/2400s" name="EP01_V1_B3_01_Chess_King_Falling_12s" start="0/2400s" duration="7700/2400s"/>
+            <asset-clip ref="r102" offset="1270700/2400s" name="EP01_DOC_03_Board_Ouster_10s" start="0/2400s" duration="18900/2400s"/>
+            <asset-clip ref="r53" offset="1289600/2400s" name="ep08_clip_still_wall_street_nyse_6s" start="0/2400s" duration="8000/2400s"/>
+            <asset-clip ref="r103" offset="1297600/2400s" name="EP01_V1_ASSOC_01_Lidar_City_Grid_8s" start="0/2400s" duration="7700/2400s"/>
+            <asset-clip ref="r104" offset="1305300/2400s" name="ep01_flow_07_boardroom_noir_ua_alt" start="12000/2400s" duration="5600/2400s"/>
+            <asset-clip ref="r34" offset="1310900/2400s" name="EP01_V1_NEW_03_Window_Rain_16s" start="14400/2400s" duration="18300/2400s"/>
+            <asset-clip ref="r105" offset="1329200/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="0/2400s" duration="11200/2400s" audioRole="effects">
+              <adjust-volume amount="-10.0dB"/>
+              <video ref="r166" lane="2" offset="0/2400s" name="EP01_SUPER_23_120_Hours" start="0s" duration="9100/2400s"/>
+              <asset-clip ref="r170" lane="-1" offset="300/2400s" name="VO_UA_13" start="0s" duration="104900/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r106" offset="1340400/2400s" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" start="4800/2400s" duration="9700/2400s"/>
+            <asset-clip ref="r107" offset="1350100/2400s" name="EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s" start="0/2400s" duration="9700/2400s"/>
+            <asset-clip ref="r108" offset="1359800/2400s" name="Holographic_game_data_streams_fl…_0aa820c5_1080p" start="0/2400s" duration="14400/2400s" audioRole="effects">
+              <adjust-volume amount="-11.6dB"/>
+            </asset-clip>
+            <asset-clip ref="r109" offset="1374200/2400s" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" start="0/2400s" duration="11000/2400s"/>
+            <asset-clip ref="r58" offset="1385200/2400s" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" start="3100/2400s" duration="20700/2400s" audioRole="effects">
+              <adjust-volume amount="-24.5dB"/>
+            </asset-clip>
+            <asset-clip ref="r97" offset="1405900/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="5500/2400s" duration="14700/2400s" audioRole="effects">
+              <adjust-volume amount="-13.5dB"/>
+            </asset-clip>
+            <asset-clip ref="r110" offset="1420600/2400s" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" start="0/2400s" duration="5400/2400s"/>
+            <asset-clip ref="r111" offset="1426000/2400s" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" start="0/2400s" duration="15900/2400s"/>
+            <asset-clip ref="r112" offset="1441900/2400s" name="EP01_CLIP_STILL_Employees_Solidarity_9s" start="0/2400s" duration="15100/2400s">
+              <asset-clip ref="r171" lane="-1" offset="300/2400s" name="VO_UA_14" start="0s" duration="130600/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r113" offset="1457000/2400s" name="EP01_DOC_05_Employees_Letter_12s" start="0/2400s" duration="10300/2400s"/>
+            <asset-clip ref="r114" offset="1467300/2400s" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" start="0/2400s" duration="16800/2400s"/>
+            <asset-clip ref="r115" offset="1484100/2400s" name="EP01_DOC_04_Sutskever_Regret_10s" start="0/2400s" duration="8900/2400s"/>
+            <asset-clip ref="r116" offset="1493000/2400s" name="EP06_DOC_05_Nov2023_Rift_10s" start="0/2400s" duration="8900/2400s"/>
+            <asset-clip ref="r117" offset="1501900/2400s" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" start="0/2400s" duration="13000/2400s">
+              <video ref="r167" lane="2" offset="0/2400s" name="EP01_SUPER_24_Wednesday_Nov22" start="0s" duration="9600/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r118" offset="1514900/2400s" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" start="0/2400s" duration="6100/2400s"/>
+            <asset-clip ref="r119" offset="1521000/2400s" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" start="0/2400s" duration="11300/2400s"/>
+            <asset-clip ref="r120" offset="1532300/2400s" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" start="0/2400s" duration="15200/2400s" audioRole="effects">
+              <adjust-volume amount="-17.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r23" offset="1547500/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="18700/2400s"/>
+            <asset-clip ref="r121" offset="1566200/2400s" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" start="0/2400s" duration="26300/2400s"/>
+            <asset-clip ref="r122" offset="1592500/2400s" name="EP01_V1_B4_CLOSER_DeepSpace_154f" start="0/2400s" duration="12200/2400s">
+              <video ref="r173" lane="2" offset="0/2400s" name="EP01_SUPER_30_Act_IV_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r180" lane="-2" offset="0/2400s" name="EP01_MUS_ActIV_ducked_Claude" start="0s" duration="419500/2400s" audioRole="music"/>
+            </asset-clip>
+            <asset-clip ref="r123" offset="1604700/2400s" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" start="0/2400s" duration="16700/2400s">
+              <asset-clip ref="r177" lane="-1" offset="300/2400s" name="VO_UA_15" start="0s" duration="115600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r124" offset="1621400/2400s" name="Electrical_spark_traveling_neuro…_362f1f95_1080p" start="0/2400s" duration="12100/2400s" audioRole="effects">
+              <adjust-volume amount="-18.6dB"/>
+            </asset-clip>
+            <asset-clip ref="r125" offset="1633500/2400s" name="Plane_blade_transforming_into_ci…_97ad6a7c_1080p" start="6000/2400s" duration="6500/2400s" audioRole="effects">
+              <adjust-volume amount="-0.5dB"/>
+            </asset-clip>
+            <asset-clip ref="r80" offset="1640000/2400s" name="EP10_SCI_01_Tesla_Coil_Electric_Discharges" start="9600/2400s" duration="9200/2400s" audioRole="effects">
+              <adjust-volume amount="-15.6dB"/>
+            </asset-clip>
+            <asset-clip ref="r126" offset="1649200/2400s" name="EP02_CLIP_STILL_DGX_B200_HGX_6s" start="0/2400s" duration="6200/2400s"/>
+            <asset-clip ref="r127" offset="1655400/2400s" name="EP01_DOC_06_Stargate_100B_Report_10s" start="0/2400s" duration="8600/2400s"/>
+            <asset-clip ref="r67" offset="1664000/2400s" name="Camera_moving_through_server_aisle_48549a87_1080p" start="13200/2400s" duration="8800/2400s" audioRole="effects">
+              <adjust-volume amount="-21.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r128" offset="1672800/2400s" name="EP01_DOC_07_7_Trillion_Chip_Network_10s" start="0/2400s" duration="8700/2400s"/>
+            <asset-clip ref="r51" offset="1681500/2400s" name="ep01_flow_09_fusion_torus" start="7200/2400s" duration="10600/2400s"/>
+            <asset-clip ref="r129" offset="1692100/2400s" name="Finger_drawing_glowing_algorithm…_57eaed58_1080p" start="4800/2400s" duration="11500/2400s" audioRole="effects">
+              <adjust-volume amount="-4.3dB"/>
+            </asset-clip>
+            <asset-clip ref="r130" offset="1703600/2400s" name="EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly" start="12000/2400s" duration="10100/2400s" audioRole="effects">
+              <adjust-volume amount="-25.0dB"/>
+            </asset-clip>
+            <asset-clip ref="r131" offset="1713700/2400s" name="ep10_clip_still_earth_dawn_lights_finale_6s" start="0/2400s" duration="10000/2400s"/>
+            <asset-clip ref="r132" offset="1723700/2400s" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" start="0/2400s" duration="14100/2400s">
+              <asset-clip ref="r178" lane="-1" offset="300/2400s" name="VO_UA_16" start="0s" duration="143100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r19" offset="1737800/2400s" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" start="4800/2400s" duration="9500/2400s">
+              <video ref="r174" lane="2" offset="4800/2400s" name="EP01_RULE_A_Belief" start="0s" duration="22800/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r3" offset="1747300/2400s" name="EP01_CLIP_STILL_Neural_Lattice_10s" start="9600/2400s" duration="13300/2400s"/>
+            <asset-clip ref="r41" offset="1760600/2400s" name="Boy_aging_into_tech_leader_cd380219_1080p" start="6000/2400s" duration="14400/2400s" audioRole="effects">
+              <adjust-volume amount="-13.3dB"/>
+            </asset-clip>
+            <asset-clip ref="r9" offset="1775000/2400s" name="ep01_flow_02_crt_code" start="0/2400s" duration="8300/2400s">
+              <video ref="r175" lane="2" offset="0/2400s" name="EP01_RULE_B_Code" start="0s" duration="21000/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r5" offset="1783300/2400s" name="EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s" start="9600/2400s" duration="12700/2400s"/>
+            <asset-clip ref="r7" offset="1796000/2400s" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" start="9600/2400s" duration="12900/2400s" audioRole="effects">
+              <adjust-volume amount="1.9dB"/>
+            </asset-clip>
+            <asset-clip ref="r133" offset="1808900/2400s" name="ep01_flow_03_silicon_laser" start="0/2400s" duration="12000/2400s"/>
+            <asset-clip ref="r26" offset="1820900/2400s" name="ep01_flow_04_exponential_line" start="4800/2400s" duration="6800/2400s" audioRole="effects">
+              <adjust-volume amount="-21.8dB"/>
+              <video ref="r176" lane="2" offset="4800/2400s" name="EP01_RULE_C_Exponent" start="0s" duration="19700/2400s"/>
+            </asset-clip>
+            <asset-clip ref="r105" offset="1827700/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="10800/2400s" duration="12900/2400s" audioRole="effects">
+              <adjust-volume amount="-16.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r71" offset="1840600/2400s" name="Fiber-optic_nodes_pulse_and_expand_da399bab_1080p" start="0/2400s" duration="17500/2400s" audioRole="effects">
+              <adjust-volume amount="-9.9dB"/>
+            </asset-clip>
+            <asset-clip ref="r30" offset="1858100/2400s" name="Light_point_explodes_into_streaks_0827d703_1080p" start="7900/2400s" duration="15800/2400s" audioRole="effects">
+              <adjust-volume amount="-14.2dB"/>
+            </asset-clip>
+            <asset-clip ref="r4" offset="1873900/2400s" name="EP01_CLIP_STILL_Young_Altman_Portrait_5s" start="0/2400s" duration="9600/2400s">
+              <asset-clip ref="r179" lane="-1" offset="300/2400s" name="VO_UA_17" start="0s" duration="63400/2400s" audioRole="dialogue"><adjust-volume amount="-0.8dB"/></asset-clip>
+            </asset-clip>
+            <asset-clip ref="r134" offset="1883500/2400s" name="EP01_UA_CLIP_CARD_08_Plastic_Reality_10s" start="0/2400s" duration="13600/2400s"/>
+            <asset-clip ref="r135" offset="1897100/2400s" name="Aircraft_climbing_into_stratosph…_081016cf_1080p" start="0/2400s" duration="10400/2400s" audioRole="effects">
+              <adjust-volume amount="-26.7dB"/>
+            </asset-clip>
+            <asset-clip ref="r33" offset="1907500/2400s" name="ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53" start="0/2400s" duration="12100/2400s" audioRole="effects">
+              <adjust-volume amount="-8.2dB"/>
+            </asset-clip>
+            <asset-clip ref="r7" offset="1919600/2400s" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" start="1400/2400s" duration="6400/2400s" audioRole="effects">
+              <adjust-volume amount="-4.9dB"/>
+            </asset-clip>
+            <asset-clip ref="r60" offset="1926000/2400s" name="Camera_zooms_out_from_microchip_9bc5eb71_1080p" start="12000/2400s" duration="5900/2400s" audioRole="effects">
+              <adjust-volume amount="-25.6dB"/>
+            </asset-clip>
+            <asset-clip ref="r44" offset="1931900/2400s" name="Camera_accelerating_through_lett_clip_24ed2370_1080p" start="7900/2400s" duration="15800/2400s" audioRole="effects">
+              <adjust-volume amount="-20.8dB"/>
+            </asset-clip>
+            <asset-clip ref="r136" offset="1947700/2400s" name="EP01_V1_B2_10_Earth_Horizon_Finale_550f" start="0/2400s" duration="33600/2400s"/>
+            <asset-clip ref="r2" offset="1981300/2400s" name="ep01_flow_01_mac_chassis" start="4800/2400s" duration="13200/2400s">
+              <asset-clip ref="r151" lane="-3" offset="4800/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="4.9dB"/></asset-clip>
+            </asset-clip>
+            <video ref="r137" offset="1994500/2400s" name="EP01_END_CARD" start="0/2400s" duration="17500/2400s"/>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

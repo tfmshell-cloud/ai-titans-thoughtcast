@@ -1555,9 +1555,45 @@
   }
 
   /* ---------------- TAB 7: DAVINCI RESOLVE 19 STUDIO ---------------- */
+  function renderMontageStatus() {
+    var ms = window.MONTAGE_STATUS && window.MONTAGE_STATUS[epData.ep];
+    if (!ms) return "";
+    var rows = (ms.acts || []).map(function (a) {
+      return "<tr><td><strong>Акт " + esc(a.act) + "</strong><br><span style=\"color:var(--text-muted);font-size:11px;\">" + esc(a.title) + "</span></td>" +
+        "<td style=\"font-family:var(--mono);\">" + esc(a.start) + "</td><td style=\"font-family:var(--mono);\">" + esc(a.duration) + "</td>" +
+        "<td>" + esc(a.shots) + "</td><td>Д" + a.dubs.map(function (d) { return ("0" + d).slice(-2); }).join(", Д") + "</td>" +
+        "<td style=\"font-size:11px;\">" + esc(a.music) + "</td>" +
+        "<td style=\"font-family:var(--mono);font-size:11px;color:var(--cyan);\">" + esc(a.timeline) + "</td></tr>";
+    }).join("");
+    var cross = Object.keys(ms.cross_episode || {}).map(function (ep) {
+      return "<span class=\"pill pill-purple\" title=\"" + esc(ms.cross_episode[ep].join("\n")) + "\">EP" + esc(ep) + ": " + ms.cross_episode[ep].length + " кліпів</span>";
+    }).join(" ");
+    var li = function (arr) { return (arr || []).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join(""); };
+    var td = "padding:6px 8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top;";
+    return [
+      "<div class=\"panel-card\" style=\"border-color:rgba(245,158,11,0.5);background:linear-gradient(180deg,rgba(245,158,11,0.07),transparent);margin-bottom:1rem;\">",
+      "  <div class=\"panel-head\"><div>",
+      "    <div class=\"panel-title\">🎬 " + esc(ms.headline) + "</div>",
+      "    <div class=\"panel-desc\">Проєкт <strong>" + esc(ms.project) + "</strong> • таймлайн <code style=\"color:var(--cyan);font-family:var(--mono);\">" + esc(ms.full_timeline) + "</code> • <strong>" + esc(ms.total_duration) + "</strong> • " + esc(ms.total_shots) + " планів • оновлено " + esc(ms.updated) + "</div>",
+      "  </div></div>",
+      "  <p style=\"font-size:13px;color:var(--text-secondary);margin:0 0 0.8rem;\">" + esc(ms.concept) + "</p>",
+      "  <div style=\"overflow-x:auto;\"><table style=\"width:100%;border-collapse:collapse;font-size:12.5px;\">",
+      "    <thead><tr><th style=\"" + td + "\">Акт</th><th style=\"" + td + "\">Старт</th><th style=\"" + td + "\">Довжина</th><th style=\"" + td + "\">Планів</th><th style=\"" + td + "\">Дублі</th><th style=\"" + td + "\">Музика</th><th style=\"" + td + "\">Таймлайн у Resolve</th></tr></thead>",
+      "    <tbody>" + rows.replace(/<td/g, "<td style=\"" + td + "\"").replace(/style="([^"]*)" style="/g, "style=\"$1") + "</tbody>",
+      "  </table></div>",
+      "  <div class=\"node-tree-grid\" style=\"margin-top:0.9rem;\">",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);\"><h4>🎧 Звук</h4><ul style=\"font-size:12px;color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.audio) + "</ul></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--purple);\"><h4>🔗 Матеріали інших епізодів</h4><div style=\"display:flex;flex-wrap:wrap;gap:6px;\">" + cross + "</div></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);\"><h4>⚙️ Скрипти збірки</h4><ul style=\"font-size:11.5px;font-family:var(--mono);color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.scripts) + "</ul></div>",
+      "    <div class=\"node-box\" style=\"border-top-color:var(--amber);\"><h4>⏭️ Далі</h4><ul style=\"font-size:12px;color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.next) + "</ul></div>",
+      "  </div>",
+      "</div>"
+    ].join("\n");
+  }
+
   function renderDaVinci() {
     var pane = document.getElementById("pane-davinci");
-    pane.innerHTML = [
+    pane.innerHTML = renderMontageStatus() + [
       "<div class=\"panel-card\">",
       "  <div class=\"panel-head\">",
       "    <div>",

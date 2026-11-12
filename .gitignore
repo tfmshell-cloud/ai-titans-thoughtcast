@@ -39,3 +39,6 @@ CacheClip/
 09_BACKUPS/*.tar.gz
 09_BACKUPS/*.zip
 09_BACKUPS/*.bak
+
+# Мікси й кеш аналізу звуку (відтворюються скриптами 08_AUTOMATION/build_ep01_acts.py)
+03_AUDIO/claude_mix/

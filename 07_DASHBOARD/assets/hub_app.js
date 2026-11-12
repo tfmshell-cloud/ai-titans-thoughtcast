@@ -220,6 +220,9 @@
         "      <div class=\"hero-badges-line\">",
         "        <span class=\"pill pill-purple\">" + esc(h.archetype) + "</span>",
         "        <span class=\"pill pill-emerald\">" + esc(h.duration) + " • " + esc(h.bpm) + "</span>",
+        (window.MONTAGE_STATUS && window.MONTAGE_STATUS[h.ep]
+          ? "        <span class=\"pill\" style=\"background:rgba(245,158,11,0.15);color:#f5b544;border:1px solid rgba(245,158,11,0.45);\" title=\"" + esc(window.MONTAGE_STATUS[h.ep].headline) + "\">🎬 Змонтовано: " + esc(window.MONTAGE_STATUS[h.ep].total_duration) + "</span>"
+          : ""),
         "      </div>",
         "      <h3 class=\"hero-name\">" + esc(h.name) + " <span class=\"hero-latin-inline\">// " + esc(h.latin) + "</span></h3>",
         "      <div class=\"hero-ep-title\">«" + esc(h.title) + "»</div>",

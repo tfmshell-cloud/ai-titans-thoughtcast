@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.8">
+  <resources>
+    <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <asset id="a1" name="ep01_flow_01_mac_chassis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4" start="0s" duration="18800/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a2" name="EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT.mp4" start="0s" duration="18800/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a3" name="EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a4" name="EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a5" name="EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a6" name="EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a7" name="ep01_flow_02_crt_code" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_02_crt_code.mp4" start="0s" duration="18700/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a8" name="EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a9" name="EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a10" name="EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a11" name="EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/02_broll_stills_and_studies/EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a12" name="EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a13" name="ep01_flow_03_silicon_laser" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_03_silicon_laser.mp4" start="0s" duration="18800/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a14" name="EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a15" name="EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a16" name="EP01_IMG_ARCH_01_Altman_2009_Loopt_Era" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_01_Altman_2009_Loopt_Era.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a17" name="EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a18" name="EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/speaker_portraits/young_altman/EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt.jpg" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a19" name="ep01_flow_04_exponential_line" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_04_exponential_line.mp4" start="0s" duration="18800/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a20" name="EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_images/EP01_Altman/01_primary_keyframes/EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="a21" name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs.mp4" start="0s" duration="18800/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="a22" name="EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_01_ACT1_00_00_00_15_Pressure_Of_Rules.wav" start="0s" duration="33700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a23" name="EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_LC_II_Indifference" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_02_ACT1_00_15_00_45_Macintosh_LC_II_Indifference.wav" start="0s" duration="105300/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a24" name="EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_03_ACT1_00_45_01_30_John_Burroughs_School.wav" start="0s" duration="109500/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a25" name="EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_04_ACT1_01_30_02_30_Stanford_Loopt_Genesis.wav" start="0s" duration="83800/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a26" name="EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav" start="0s" duration="128100/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a27" name="EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav" start="0s" duration="39600/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="a28" name="EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/suno_stems/EP01_ALTMAN_SMART_BINS/EP01_MUS_01_ACT1_92BPM_Mac_Childhood_Intro.wav" start="0s" duration="572100/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+  </resources>
+  <library>
+    <event name="SEM_EP01">
+      <project name="EP01_ActI_UA">
+        <sequence format="r1" duration="682400/2400s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
+          <spine>
+            <gap name="Akt_I" offset="0s" start="0s" duration="682400/2400s">
+              <asset-clip ref="a1" lane="1" offset="0/2400s" name="ep01_flow_01_mac_chassis" start="0s" duration="18800/2400s" audioRole="effects"/>
+              <asset-clip ref="a2" lane="1" offset="18800/2400s" name="EP01_VID_ARCH_03_ACT1_24FPS_Apple_Macintosh_1992_CRT" start="0s" duration="18800/2400s" audioRole="effects"/>
+              <video ref="a3" lane="1" offset="37600/2400s" name="EP01_FLOW_IMG_02C_Phosphor_Triad_Subpixel_Macro" start="0s" duration="18700/2400s"/>
+              <video ref="a4" lane="1" offset="56300/2400s" name="EP01_IMG_ARCH_06_Altman_Childhood_Macintosh_LC_II_1993" start="0s" duration="18800/2400s"/>
+              <video ref="a5" lane="1" offset="75100/2400s" name="EP01_FLOW_IMG_02D_Boy_At_Vintage_CRT_1993_Room" start="0s" duration="18800/2400s"/>
+              <marker start="93900/2400s" duration="100/2400s" value="ЦИТАТА Д02 (накладка тексту, бари 15-18): Ця машина розмила лінію між моїм внутрішнім світом і зовнішньою реальністю"/>
+              <video ref="a6" lane="1" offset="93900/2400s" name="EP01_FLOW_IMG_02B_Child_Eye_Green_Code_Macro" start="0s" duration="25100/2400s"/>
+              <asset-clip ref="a7" lane="1" offset="119000/2400s" name="ep01_flow_02_crt_code" start="0s" duration="18700/2400s" audioRole="effects"/>
+              <video ref="a8" lane="1" offset="137700/2400s" name="EP01_FLOW_IMG_02_CRT_Code_Eye_Reflection_Hero" start="0s" duration="18800/2400s"/>
+              <video ref="a9" lane="1" offset="156500/2400s" name="EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus" start="0s" duration="25100/2400s"/>
+              <marker start="181600/2400s" duration="100/2400s" value="ПРОПУСК Д03: потрібен кадр актової зали або сцени. Тимчасово повтор PHOTO 06 (інший кроп)"/>
+              <video ref="a9" lane="1" offset="181600/2400s" name="EP01_IMG_ARCH_05_Altman_John_Burroughs_School_Campus" start="0s" duration="25000/2400s"/>
+              <marker start="206600/2400s" duration="100/2400s" value="КОНЦЕПТ-ДОСЛІДЖЕННЯ: перевірте, чи підходить за тоном"/>
+              <video ref="a10" lane="1" offset="206600/2400s" name="EP01_FLOW_STUDY_02E_CRT_Computer_Boardroom_2K" start="0s" duration="25100/2400s"/>
+              <video ref="a11" lane="1" offset="231700/2400s" name="EP01_FLOW_STUDY_01D_Mac_Boardroom_StudyA_2K" start="0s" duration="25000/2400s"/>
+              <video ref="a12" lane="1" offset="256700/2400s" name="EP01_FLOW_IMG_01_Macintosh_LC_II_Keyframe" start="0s" duration="18800/2400s"/>
+              <asset-clip ref="a13" lane="1" offset="275500/2400s" name="ep01_flow_03_silicon_laser" start="0s" duration="18800/2400s" audioRole="effects"/>
+              <video ref="a14" lane="1" offset="294300/2400s" name="EP01_FLOW_IMG_03_Silicon_Wafer_Cyan_Laser_Hero" start="0s" duration="25000/2400s"/>
+              <video ref="a15" lane="1" offset="319300/2400s" name="EP01_IMG_ARCH_07_Altman_Loopt_Shirt_Founder_Era" start="0s" duration="25000/2400s"/>
+              <video ref="a16" lane="1" offset="344300/2400s" name="EP01_IMG_ARCH_01_Altman_2009_Loopt_Era" start="0s" duration="25100/2400s"/>
+              <video ref="a17" lane="1" offset="369400/2400s" name="EP01_DOC_01_ACT1_YC_2005_Summer_Founders_Program" start="0s" duration="31300/2400s"/>
+              <video ref="a18" lane="1" offset="400700/2400s" name="EP01_IMG_ARCH_03_Altman_WWDC_2008_SteveJobs_Loopt" start="0s" duration="31300/2400s"/>
+              <marker start="432000/2400s" duration="100/2400s" value="ГРАФІКА Д05: плашка «$43 млн · Green Dot · 2012»"/>
+              <marker start="457000/2400s" duration="100/2400s" value="ГРАФІКА Д05: цитатна плашка «Більшість людей здаються не тому, що їхня ідея хибна…»"/>
+              <asset-clip ref="a19" lane="1" offset="494600/2400s" name="ep01_flow_04_exponential_line" start="0s" duration="18800/2400s" audioRole="effects"/>
+              <video ref="a20" lane="1" offset="513400/2400s" name="EP01_FLOW_IMG_04_Golden_Exponential_Curve_Hero" start="0s" duration="31300/2400s"/>
+              <marker start="544700/2400s" duration="100/2400s" value="НИЗЬКА РОЗДІЛЬНІСТЬ: 640x480, апскейл або менший розмір у кадрі"/>
+              <asset-clip ref="a21" lane="1" offset="544700/2400s" name="EP01_VID_ARCH_04_ACT1_24FPS_Altman_WWDC_2008_Loopt_SteveJobs" start="0s" duration="18800/2400s" audioRole="effects"/>
+              <marker start="563500/2400s" duration="100/2400s" value="ARCH 06 (відео-паралакс) відсутнє на диску: тимчасово стоп-кадр PHOTO 01, додайте рух або замініть"/>
+              <video ref="a16" lane="1" offset="563500/2400s" name="EP01_IMG_ARCH_01_Altman_2009_Loopt_Era" start="0s" duration="18800/2400s"/>
+              <marker start="582300/2400s" duration="100/2400s" value="РІШЕННЯ ПОТРІБНЕ: 16 тактів (близько 42 с) без голосу і без кадрів. Скоротити Акт I або додати 2-3 плани"/>
+              <asset-clip ref="a22" lane="-1" offset="0/2400s" name="VO_UA_01" start="0s" duration="33600/2400s" audioRole="dialogue"/>
+              <marker start="0/2400s" duration="100/2400s" value="Д01 старт (бар 0)"/>
+              <asset-clip ref="a23" lane="-1" offset="43800/2400s" name="VO_UA_02" start="0s" duration="105300/2400s" audioRole="dialogue"/>
+              <marker start="43800/2400s" duration="100/2400s" value="Д02 старт (бар 7)"/>
+              <asset-clip ref="a24" lane="-1" offset="156500/2400s" name="VO_UA_03" start="0s" duration="109500/2400s" audioRole="dialogue"/>
+              <marker start="156500/2400s" duration="100/2400s" value="Д03 старт (бар 25)"/>
+              <asset-clip ref="a25" lane="-1" offset="275500/2400s" name="VO_UA_04" start="0s" duration="83800/2400s" audioRole="dialogue"/>
+              <marker start="275500/2400s" duration="100/2400s" value="Д04 старт (бар 44)"/>
+              <asset-clip ref="a26" lane="-1" offset="369400/2400s" name="VO_UA_05" start="0s" duration="128100/2400s" audioRole="dialogue"/>
+              <marker start="369400/2400s" duration="100/2400s" value="Д05 старт (бар 59)"/>
+              <asset-clip ref="a27" lane="-1" offset="507100/2400s" name="VO_UA_06" start="0s" duration="39600/2400s" audioRole="dialogue"/>
+              <marker start="507100/2400s" duration="100/2400s" value="Д06 старт (бар 81)"/>
+              <asset-clip ref="a28" lane="-2" offset="0s" name="MUS_01_Act1" start="0s" duration="572000/2400s" audioRole="music"/>
+            </gap>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
