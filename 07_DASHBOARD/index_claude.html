@@ -173,7 +173,17 @@ select.input{flex:0 0 auto;min-width:0}
 .vob{display:grid;grid-template-columns:44px 1fr;gap:14px}
 .vob .n{font:600 18px var(--serif);color:var(--brass-hi)}
 .vob .n small{display:block;font:10.5px var(--mono);color:var(--dim);margin-top:2px}
-.vob.rec{border-color:rgba(143,179,138,.3)}
+.vob .n{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.chk{width:32px;height:32px;border-radius:8px;border:1.5px solid var(--line);display:grid;place-items:center;color:transparent;font:700 16px var(--font);background:var(--bg)}
+.chk:hover{border-color:var(--brass)}
+.chk[disabled]{cursor:default}
+.vob.done{border-color:rgba(143,179,138,.35)}
+.vob.done .chk{background:var(--ok);border-color:var(--ok);color:#0d0e10}
+.vob.done pre.tx{color:var(--muted)}
+.vob.next{border-color:var(--brass);box-shadow:0 0 0 1px var(--brass-line)}
+.vprog{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.vprog .bar{flex:1;min-width:160px;height:6px}
+.vprog .bar i{background:var(--ok)}
 
 /* media */
 .thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
@@ -246,6 +256,7 @@ select.input{flex:0 0 auto;min-width:0}
   .stages{grid-template-columns:repeat(2,minmax(0,1fr))}
   .thumbs{grid-template-columns:repeat(2,minmax(0,1fr))}
   .vob{grid-template-columns:minmax(0,1fr)}
+  .vob .n{flex-direction:row;align-items:center;gap:12px}
   .kv{grid-template-columns:minmax(0,1fr)}
   .kv dt{margin-top:6px}
 }
@@ -296,7 +307,17 @@ function loadScript(path){if(loaded[path])return loaded[path];
 function need(file,glob){if(window[glob])return Promise.resolve(window[glob]);return loadScript(file).then(function(){return window[glob]})}
 function needWB(ep){if(window.WB&&window.WB[ep])return Promise.resolve(window.WB[ep]);return loadScript("workbench/ep"+ep+".js").then(function(){return window.WB[ep]})}
 function byEp(ep){return S.filter(function(h){return h.ep===ep})[0]}
-function sum(ep){return SUM.eps[ep]||{pct:0,stages:[],next:[],counts:{}}}
+/* відмітки «озвучено»: файли, що вже лежать у 03_AUDIO, + ручні галочки в цьому браузері */
+var VOK="aititans_vo_done_v1";
+function voMarks(ep,lang){var m=store(VOK)||{};return(m[ep]&&m[ep][lang])||[]}
+function setVoMark(ep,lang,i,on){var m=store(VOK)||{};m[ep]=m[ep]||{};var a=(m[ep][lang]||[]).filter(function(x){return x!==i});if(on)a.push(i);m[ep][lang]=a.sort(function(x,y){return x-y});store(VOK,m)}
+function voDone(ep){var raw=SUM.eps[ep]||{},d={};(raw.vo_rec_idx||[]).concat(voMarks(ep,"UA")).forEach(function(i){d[i]=1});return Object.keys(d).length}
+function sum(ep){var raw=SUM.eps[ep];if(!raw)return{pct:0,stages:[],next:[],counts:{}};
+  var tot=raw.counts.vo_blocks||0,done=Math.min(tot,voDone(ep)),pct=0;
+  var stages=raw.stages.map(function(s){var x={};for(var k in s)x[k]=s[k];if(s.id==="vo"&&tot){x.pct=Math.round(100*done/tot);x.d="озвучено "+done+" з "+tot+" блоків"}pct+=x.w*x.pct/100;return x});
+  var next=raw.next.map(function(n){return/^Озвучити/.test(n.t)?(done<tot?{t:"Озвучити в ElevenLabs ще "+(tot-done)+" з "+tot+" блоків",tab:"vo"}:null):n}).filter(Boolean);
+  var c={};for(var k in raw.counts)c[k]=raw.counts[k];c.vo_done=done;
+  return{pct:Math.round(pct),stages:stages,next:next,counts:c}}
 var ON_PAGES=/github\.io$/.test(location.hostname);
 // оригінали медіа: локально — з папки проєкту, на GitHub Pages — з репозиторію
 function mediaURL(p){return ON_PAGES?"https://raw.githubusercontent.com/"+REPO+"/main/"+p.split("/").map(encodeURIComponent).join("/"):"../"+p.split("/").map(encodeURIComponent).join("/")}
@@ -341,14 +362,14 @@ VIEWS.overview=function(){
   var h=head("Сезон 1 — огляд","Обери героя в меню ліворуч — відкриється його робочий стіл: озвучка для ElevenLabs, промпти анімації, музика, медіа по сценах і дослідження. ⌘K — швидкий перехід куди завгодно.");
   h+='<div class="grid g4 kpis">'+kpi("Середня готовність",avg+"%","за реальними файлами, 7 етапів")+kpi("Медіа в базі",(SUM.media_total||0).toLocaleString("uk-UA"),"відео й зображень у проєкті")+kpi("Підібрано по сценах",(pool.pick||0)+(pool.hero||0),"з бази в наступні епізоди")+kpi("Блоків озвучки",S.reduce(function(a,e){return a+(sum(e.ep).counts.vo_blocks||0)},0),"готові тексти для ElevenLabs")+'</div>';
   if(m){var e1=byEp("01");h+='<div class="sec"><h2>Зараз у роботі</h2><a class="card" href="#/ep/01/montage" style="display:block"><div class="ep-top" style="margin-bottom:10px"><img src="'+esc(e1.avatar)+'" alt=""><div><small>EP01 · '+sum("01").pct+'% · МОНТАЖ ЗІБРАНО</small><b>'+esc(m.headline)+'</b><span>'+esc(m.full_timeline)+' · '+esc(m.total_duration)+' · '+m.total_shots+' планів · оновлено '+esc(m.updated)+'</span></div></div><p class="muted" style="font-size:13px">Залишилось: '+esc((m.next||[]).join(" · "))+'</p></a></div>'}
-  h+='<div class="sec"><h2>Герої</h2><div class="grid g3">'+S.map(function(e){var s=sum(e.ep),n=(s.next||[])[0];return'<a class="card ep" href="#/ep/'+e.ep+'"><div class="ep-top"><img src="'+esc(e.avatar)+'" alt="'+esc(e.name)+'" loading="lazy"><div><small>EP'+e.ep+' · '+esc(e.archetype)+'</small><b>'+esc(e.name)+'</b><span>'+esc(e.title)+'</span></div></div><div><div class="ep-meta" style="margin-bottom:6px"><span>'+esc(e.duration)+' · '+(s.counts.media||0)+' медіа · '+(s.counts.vo_blocks||0)+' блоків VO</span><span class="mono brass">'+s.pct+'%</span></div>'+minis(e.ep)+'</div>'+(n?'<span class="dim" style="font-size:12px">Далі: '+esc(n.t)+'</span>':'')+'</a>'}).join("")+'</div></div>';
+  h+='<div class="sec"><h2>Герої</h2><div class="grid g3">'+S.map(function(e){var s=sum(e.ep),n=(s.next||[])[0];return'<a class="card ep" href="#/ep/'+e.ep+'"><div class="ep-top"><img src="'+esc(e.avatar)+'" alt="'+esc(e.name)+'" loading="lazy"><div><small>EP'+e.ep+' · '+esc(e.archetype)+'</small><b>'+esc(e.name)+'</b><span>'+esc(e.title)+'</span></div></div><div><div class="ep-meta" style="margin-bottom:6px"><span>'+esc(e.duration)+' · '+(s.counts.media||0)+' медіа · '+(s.counts.vo_done||0)+"/"+(s.counts.vo_blocks||0)+' озвучено</span><span class="mono brass">'+s.pct+'%</span></div>'+minis(e.ep)+'</div>'+(n?'<span class="dim" style="font-size:12px">Далі: '+esc(n.t)+'</span>':'')+'</a>'}).join("")+'</div></div>';
   h+='<p class="dim" style="font-size:12px;margin-top:18px">Етапи готовності: дослідження 5 · сценарій 10 · озвучка 15 · музика 10 · візуал 20 · монтаж 30 · рендер 10. Дані оновлено '+esc(SUM.generated||"")+' скриптом <span class="mono">08_AUTOMATION/build_episode_workbench.py</span>.</p>';
   return h};
 
 /* ---- робочий стіл героя ---- */
 function heroHead(e,tab){var s=sum(e.ep);
   return'<div class="hero"><img src="'+esc(e.avatar)+'" alt=""><div style="min-width:0"><small>EP'+e.ep+' · '+esc(e.archetype)+' · '+esc(e.duration)+'</small><h1>'+esc(e.name)+' — '+esc(e.title)+'</h1><span>'+esc(e.role)+'</span></div><div class="ring" style="--p:'+s.pct+'" title="Готовність епізоду"><b>'+s.pct+'%</b></div></div>'+
-  '<nav class="tabs">'+tabsFor(e.ep).map(function(t){var c=s.counts||{},n={vo:c.vo_blocks,anim:c.prompts,music:c.music,media:c.media,docs:c.docs}[t[0]];
+  '<nav class="tabs">'+tabsFor(e.ep).map(function(t){var c=s.counts||{},n={vo:c.vo_blocks?(c.vo_done||0)+"/"+c.vo_blocks:0,anim:c.prompts,music:c.music,media:c.media,docs:c.docs}[t[0]];
     return'<a href="#/ep/'+e.ep+'/'+t[0]+'" class="'+(t[0]===tab?"on":"")+'" title="'+esc(TAB_HINT[t[0]])+'">'+t[1]+(n?'<span>'+n+'</span>':'')+'</a>'}).join("")+'</nav>'}
 VIEWS.ep=function(r){var ep=r.arg,e=byEp(ep);if(!e)return'<div class="empty">Епізод не знайдено</div>';
   var tab=r.tab||"overview";if(!TAB_VIEWS[tab]||(tab==="montage"&&!MON[ep]))tab="overview";
@@ -361,7 +382,7 @@ TAB_VIEWS.overview=function(e,wb){var s=sum(e.ep),ep=e.ep,m=MON[ep];
   var h='<div class="stages">'+s.stages.map(function(st,i){return'<a class="stage'+(st.pct>=100?" done":"")+'" href="#/ep/'+ep+'/'+st.tab+'"><small>'+(i+1)+' · ВАГА '+st.w+'</small><b>'+esc(st.t)+' '+(st.pct>=100?"✓":st.pct+"%")+'</b><div class="bar"><i style="width:'+st.pct+'%"></i></div><span>'+esc(st.d)+'</span></a>'}).join("")+'</div>';
   h+='<div class="grid g2 sec"><div class="card"><h3>Що робити далі</h3>'+(s.next.length?'<ul class="list">'+s.next.map(function(n){return'<li><a href="#/ep/'+ep+'/'+n.tab+'">'+esc(n.t)+' →</a></li>'}).join("")+'</ul>':'<p class="dim">Усе готово</p>')+'</div>';
   h+='<div class="card"><h3>Головна цитата</h3><p style="font:500 17px/1.5 var(--serif)">'+esc(e.key_quote)+'</p></div></div>';
-  h+='<div class="grid g4 kpis sec">'+kpi("Озвучка",(s.counts.vo_rec||0)+" / "+(s.counts.vo_blocks||0),"блоків записано")+kpi("Медіа",s.counts.media||0,(s.counts.own||0)+" власних · "+(s.counts.picked||0)+" з бази")+kpi("Промпти",(s.counts.prompts||0)+(s.counts.triads?" + "+s.counts.triads:""),"кадрів"+(s.counts.triads?" + тріад Flow":""))+kpi("Музика",(s.counts.music_have||0)+" / "+(s.counts.music||0),"треків у бінах")+'</div>';
+  h+='<div class="grid g4 kpis sec">'+kpi("Озвучка",(s.counts.vo_done||0)+" / "+(s.counts.vo_blocks||0),"блоків озвучено")+kpi("Медіа",s.counts.media||0,(s.counts.own||0)+" власних · "+(s.counts.picked||0)+" з бази")+kpi("Промпти",(s.counts.prompts||0)+(s.counts.triads?" + "+s.counts.triads:""),"кадрів"+(s.counts.triads?" + тріад Flow":""))+kpi("Музика",(s.counts.music_have||0)+" / "+(s.counts.music||0),"треків у бінах")+'</div>';
   h+='<div class="grid g2 sec"><div class="card"><h3>Акти</h3><ul class="list">'+(wb.acts||[]).map(function(a){return'<li><div><b>Акт '+esc(a.n)+'. '+esc(a.t)+'</b> <span class="dim mono">'+esc(a.time)+'</span><div class="dim" style="font-size:12px">'+esc(a.music)+'</div></div></li>'}).join("")+'</ul></div>';
   h+='<div class="card"><h3>Візуальний ключ</h3><p class="muted" style="font-size:13px">'+esc(wb.visual_key)+'</p><div class="kv" style="margin-top:12px"><dt>Оптика</dt><dd>'+esc(wb.lens)+'</dd><dt>Голос</dt><dd>'+esc(wb.vo.settings_hero)+'</dd><dt>Темп</dt><dd>'+esc(wb.vo.tone||e.wpm)+'</dd><dt>Сітка</dt><dd>'+esc(e.bpm)+'</dd><dt>Імена файлів</dt><dd class="mono">'+esc(wb.bin_rule)+'</dd></div><div class="tools" style="margin:14px 0 0"><a class="btn" href="'+esc(e.page_url)+'">Стара сторінка епізоду (чеклисти SOP) →</a></div></div></div>';
   if(m)h+='<div class="sec"><h2>Монтаж</h2><a class="card" href="#/ep/'+ep+'/montage" style="display:block"><b>'+esc(m.headline)+'</b><p class="muted" style="margin-top:4px">'+esc(m.total_duration)+' · '+m.total_shots+' планів · '+esc(m.project)+'</p></a></div>';
@@ -372,13 +393,20 @@ function pad(n){return(n<10?"0":"")+n}
 function voName(ep,lang,i,b){return"EP"+ep+"_VO_"+lang+"_"+pad(i)+"_"+b.start.replace(":","_")+"_"+b.end.replace(":","_")+".mp3"}
 TAB_VIEWS.vo=function(e,wb,q){var lang=(q.lang==="EN"&&wb.vo.en)?"EN":"UA",doc=lang==="EN"?wb.vo.en:wb.vo.ua,ep=e.ep;
   if(!doc)return'<div class="empty">Текст для ElevenLabs ще не підготовлено</div>';
-  var bl=doc.blocks,rec=bl.filter(function(b){return b.rec&&b.rec.length}).length,words=bl.reduce(function(a,b){return a+b.words},0),st=doc.settings||{};
+  var bl=doc.blocks,marks=voMarks(ep,lang),isDone=function(b,i){return(b.rec&&b.rec.length)||marks.indexOf(i)>-1},words=bl.reduce(function(a,b){return a+b.words},0),st=doc.settings||{};
+  var done=bl.filter(isDone).length,nextI=-1;bl.some(function(b,i){if(!isDone(b,i)){nextI=i;return true}return false});
   var h='<div class="grid g2"><div class="card"><h3>Налаштування ElevenLabs</h3><div class="kv"><dt>Модель</dt><dd>'+esc(st.Standard||"Multilingual v2")+'</dd><dt>Темп і голос</dt><dd>'+esc(st["Speed Calibration"]||"")+'</dd><dt>Профіль героя</dt><dd>'+esc(wb.vo.settings_hero)+'</dd><dt>Подача</dt><dd>'+esc(wb.vo.tone)+'</dd><dt>Синхронізація</dt><dd>'+esc(st["Metronome Sync"]||"")+'</dd></div></div>';
-  h+='<div class="card"><h3>Як працювати</h3><ul class="list"><li>Копіюй блок → встав у ElevenLabs → згенеруй.</li><li>Збережи файл під назвою з кнопки «Назва файлу» в папку <span class="mono">03_AUDIO/voiceover/EP'+ep+'_…/</span></li><li>Після перезбору даних блок позначиться як записаний, а етап «Озвучка» оновиться.</li></ul></div></div>';
+  h+='<div class="card"><h3>Як працювати</h3><ul class="list"><li>Копіюй блок → встав у ElevenLabs → згенеруй.</li><li>Збережи файл під назвою з кнопки «Назва файлу» в папку <span class="mono">03_AUDIO/voiceover/EP'+ep+'_…/</span></li><li>Постав галочку ліворуч від блоку — так видно, де ти зупинився. Блоки, для яких уже є файл, відмічаються самі.</li></ul></div></div>';
+  h+='<div class="card sec vprog"><b style="font:600 22px var(--serif)">'+done+' / '+bl.length+'</b><span class="muted" style="font-size:13px">блоків озвучено'+(lang==="EN"?" (EN)":"")+'</span><div class="bar"><i style="width:'+Math.round(100*done/(bl.length||1))+'%"></i></div>'+(nextI>-1?'<button class="btn pri" data-vo-next="'+nextI+'">↓ Наступний: блок '+pad(nextI+1)+'</button>':'<span class="tag ok">✓ Усе озвучено</span>')+(marks.length?'<button class="btn sm" data-vo-reset="'+lang+'">Скинути мої галочки</button>':'')+'</div>';
   h+='<div class="tools sec">'+(wb.vo.en?[["UA","Українська"],["EN","English"]].map(function(x){return'<a class="chip'+(lang===x[0]?" on":"")+'" href="#/ep/'+ep+'/vo?lang='+x[0]+'">'+x[1]+'</a>'}).join(""):'<span class="chip on">Українська</span>')+
-    '<span class="dim" style="font-size:12.5px">'+bl.length+' блоків · '+words+' слів · записано '+rec+' / '+bl.length+'</span><span class="sp1"></span><button class="btn pri" data-vo-all="'+lang+'">Копіювати весь текст</button><button class="btn" data-copy="'+esc(doc.file)+'">Шлях до файлу</button></div>';
-  h+='<div class="grid">'+bl.map(function(b,i){var n=i+1,r=b.rec&&b.rec.length;return'<div class="card vob'+(r?" rec":"")+'"><div class="n">'+pad(n)+'<small>'+esc(b.tc)+'</small></div><div style="min-width:0"><div class="row" style="margin-bottom:8px"><span class="tag">'+b.words+' слів</span>'+(r?'<span class="tag ok">✓ записано</span>':'<span class="tag br">треба записати</span>')+'<span class="sp1"></span><button class="btn sm pri" data-vo="'+lang+'|'+i+'">Копіювати блок</button><button class="btn sm" data-copy="'+esc(voName(ep,lang,n,b))+'">Назва файлу</button></div><pre class="tx">'+esc(b.text)+'</pre>'+(b.play?'<audio controls preload="none" src="'+esc(b.play)+'" style="margin-top:10px"></audio>':'')+(r?'<div class="dim mono" style="font-size:11px;margin-top:6px">'+esc(b.rec[0])+'</div>':'')+'</div></div>'}).join("")+'</div>';
+    '<span class="dim" style="font-size:12.5px">'+bl.length+' блоків · '+words+' слів</span><span class="sp1"></span><button class="btn pri" data-vo-all="'+lang+'">Копіювати весь текст</button><button class="btn" data-copy="'+esc(doc.file)+'">Шлях до файлу</button></div>';
+  h+='<div class="grid">'+bl.map(function(b,i){var n=i+1,r=b.rec&&b.rec.length,dn=isDone(b,i);
+    return'<div class="card vob'+(dn?" done":"")+(i===nextI?" next":"")+'" id="vob'+i+'"><div class="n">'+pad(n)+'<small>'+esc(b.tc)+'</small><button class="chk" data-vodone="'+lang+'|'+i+'"'+(r?' disabled title="Є записаний файл — відмічено автоматично"':' title="'+(dn?"Зняти відмітку":"Відмітити як озвучене")+'"')+' aria-pressed="'+(dn?"true":"false")+'" aria-label="Блок '+pad(n)+' озвучено">✓</button></div><div style="min-width:0"><div class="row" style="margin-bottom:8px"><span class="tag">'+b.words+' слів</span>'+(r?'<span class="tag ok">✓ є файл</span>':dn?'<span class="tag ok">✓ озвучено</span>':i===nextI?'<span class="tag br">▶ наступний</span>':'<span class="tag">не озвучено</span>')+'<span class="sp1"></span><button class="btn sm pri" data-vo="'+lang+'|'+i+'">Копіювати блок</button><button class="btn sm" data-copy="'+esc(voName(ep,lang,n,b))+'">Назва файлу</button></div><pre class="tx">'+esc(b.text)+'</pre>'+(b.play?'<audio controls preload="none" src="'+esc(b.play)+'" style="margin-top:10px"></audio>':'')+(r?'<div class="dim mono" style="font-size:11px;margin-top:6px">'+esc(b.rec[0])+'</div>':'')+'</div></div>'}).join("")+'</div>';
   return h};
+function refreshVo(){var r=curRoute,e=byEp(r.arg),wb=wbCur(),y=window.scrollY;if(!e||!wb)return;
+  $("#tab").innerHTML=TAB_VIEWS.vo(e,wb,r.q);renderNav("ep",r.arg);
+  var s=sum(r.arg),ring=$(".ring");if(ring){ring.style.setProperty("--p",s.pct);$("b",ring).textContent=s.pct+"%"}
+  var tb=$('.tabs a[href$="/vo"] span');if(tb)tb.textContent=s.counts.vo_done+"/"+s.counts.vo_blocks;pills();window.scrollTo(0,y)}
 
 /* анімація */
 function actNum(a){var m=String(a||"").match(/(\d)/);return m?m[1]:""}
@@ -531,15 +559,20 @@ function route(){var r=parse();
   document.body.classList.remove("nav-on");if(!r.keep)window.scrollTo(0,0);
   var sel=$("#veoEp");if(sel)sel.addEventListener("change",function(){location.hash="#/veo?f="+(r.q.f||"all")+(sel.value?"&ep="+sel.value:"")})}
 window.addEventListener("hashchange",route);
+// галочки з іншої вкладки браузера
+window.addEventListener("storage",function(ev){if(ev.key===VOK){if(curRoute.id==="ep"&&(curRoute.tab||"")==="vo")refreshVo();else{renderNav(curRoute.id==="ep"?"ep":curRoute.id,curRoute.id==="ep"?curRoute.arg:null);pills()}}});
 
 function wbCur(){return window.WB&&window.WB[curRoute.arg]}
-document.addEventListener("click",function(ev){var t=ev.target.closest("[data-copy],[data-veo],[data-copyveo],[data-tpl],[data-go],[data-vo],[data-vo-all],[data-pr],[data-tr],[data-mu],[data-media]");if(!t)return;
+document.addEventListener("click",function(ev){var t=ev.target.closest("[data-vodone],[data-vo-next],[data-vo-reset],[data-copy],[data-veo],[data-copyveo],[data-tpl],[data-go],[data-vo],[data-vo-all],[data-pr],[data-tr],[data-mu],[data-media]");if(!t)return;
   var d=t.dataset,wb=wbCur();
   if(d.go){location.hash=d.go;return}
   if(d.copy){copy(d.copy);return}
   if(d.tpl){copy(TPL[+d.tpl][2],TPL[+d.tpl][0]);return}
   if(d.media){openMedia(curRoute.arg,+d.media);return}
   if(d.voAll&&wb){var doc=d.voAll==="EN"?wb.vo.en:wb.vo.ua;copy(doc.blocks.map(function(b){return b.clean}).join("\n\n"),"весь текст ("+doc.blocks.length+" блоків)");return}
+  if(d.vodone&&wb){if(t.disabled)return;var z=d.vodone.split("|"),zi=+z[1],on=voMarks(curRoute.arg,z[0]).indexOf(zi)<0;setVoMark(curRoute.arg,z[0],zi,on);refreshVo();toast(on?"Блок "+pad(zi+1)+" озвучено ✓":"Відмітку блоку "+pad(zi+1)+" знято");return}
+  if(d.voNext){var nb=$("#vob"+d.voNext);if(nb){window.scrollTo(0,nb.getBoundingClientRect().top+window.scrollY-120);nb.animate&&nb.animate([{boxShadow:"0 0 0 3px rgba(200,169,106,.6)"},{boxShadow:"0 0 0 1px rgba(200,169,106,.35)"}],{duration:900})}return}
+  if(d.voReset){if(confirm("Скинути всі ручні галочки озвучки для цього героя? Блоки з файлами лишаться відміченими.")){var mm=store(VOK)||{};if(mm[curRoute.arg])mm[curRoute.arg][d.voReset]=[];store(VOK,mm);refreshVo();toast("Галочки скинуто")}return}
   if(d.vo&&wb){var a=d.vo.split("|"),dc=a[0]==="EN"?wb.vo.en:wb.vo.ua,b=dc.blocks[+a[1]];copy(b.clean,"блок "+pad(+a[1]+1)+" · "+b.words+" слів");return}
   if(d.pr&&wb){var p=wb.prompts[+d.pr];copy(p.p,"промпт №"+p.num);return}
   if(d.mu&&wb){var m=wb.music[+d.mu];copy(m.prompt,"промпт Suno · "+m.t);return}

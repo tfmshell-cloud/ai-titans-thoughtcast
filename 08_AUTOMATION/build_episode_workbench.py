@@ -618,7 +618,8 @@ def main():
             nxt = [{"t": x, "tab": "montage"} for x in (m.get("next") or [])] + [x for x in nxt if x["tab"] == "montage"]
 
         counts = Counter(x["k"] for x in med)
-        summary["eps"][ep] = {"pct": pct, "stages": stages, "next": nxt[:5],
+        rec_idx = [i for i, b in enumerate(ua["blocks"] if ua else []) if b["rec"]]
+        summary["eps"][ep] = {"pct": pct, "stages": stages, "next": nxt[:5], "vo_rec_idx": rec_idx,
                               "counts": {"media": len(med), "own": len(med) - len(picks), "picked": len(picks),
                                          "video": sum(1 for x in med if x["v"]), "image": sum(1 for x in med if not x["v"]),
                                          "vo_blocks": n_blocks, "vo_rec": n_rec, "music": len(music), "music_have": n_mus,
