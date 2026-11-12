@@ -554,6 +554,8 @@ def main():
                 b["play"] = vo_preview(fs[0]) if fs else ""
         n_blocks = len(ua["blocks"]) if ua else 0
         n_rec = sum(1 for b in (ua["blocks"] if ua else []) if b["rec"])
+        n_blocks_en = len(en["blocks"]) if en else 0
+        n_rec_en = sum(1 for b in (en["blocks"] if en else []) if b["rec"])
 
         music = []
         for r in e.get("suno_registry", []):
@@ -588,8 +590,9 @@ def main():
              "d": "Мастер-досьє і стенограми", "tab": "docs"},
             {"id": "script", "t": "Сценарій", "w": 10, "pct": 100 if ua else 50,
              "d": f"{e.get('script_total_words') or s.get('script_words')} слів · {n_blocks} блоків ElevenLabs", "tab": "vo"},
-            {"id": "vo", "t": "Озвучка", "w": 15, "pct": round(100 * n_rec / n_blocks) if n_blocks else 0,
-             "d": f"записано {n_rec} з {n_blocks} блоків", "tab": "vo"},
+            {"id": "vo", "t": "Озвучка UA + EN", "w": 15,
+             "pct": round(100 * (n_rec + n_rec_en) / (n_blocks + n_blocks_en)) if n_blocks + n_blocks_en else 0,
+             "d": f"UA {n_rec}/{n_blocks} · EN {n_rec_en}/{n_blocks_en}", "tab": "vo"},
             {"id": "music", "t": "Музика", "w": 10, "pct": 100 if m else round(100 * n_mus / max(1, len(music))),
              "d": ("музику зведено в монтажі" if m else f"{n_mus} з {len(music)} треків у бінах"), "tab": "music"},
             {"id": "visual", "t": "Візуал", "w": 20, "pct": 100 if m else min(100, round(100 * len(own_vis) / 100)),
@@ -605,7 +608,10 @@ def main():
             if st["pct"] >= 100:
                 continue
             if st["id"] == "vo":
-                nxt.append({"t": f"Озвучити в ElevenLabs {n_blocks - n_rec} блоків", "tab": "vo"})
+                if n_blocks - n_rec:
+                    nxt.append({"t": f"Озвучити українською {n_blocks - n_rec} блоків", "tab": "vo", "lang": "UA"})
+                if n_blocks_en - n_rec_en:
+                    nxt.append({"t": f"Озвучити англійською {n_blocks_en - n_rec_en} блоків", "tab": "vo", "lang": "EN"})
             elif st["id"] == "music":
                 nxt.append({"t": f"Згенерувати в Suno {len(music) - n_mus} треків за промптами", "tab": "music"})
             elif st["id"] == "visual":
@@ -619,10 +625,11 @@ def main():
 
         counts = Counter(x["k"] for x in med)
         rec_idx = [i for i, b in enumerate(ua["blocks"] if ua else []) if b["rec"]]
-        summary["eps"][ep] = {"pct": pct, "stages": stages, "next": nxt[:5], "vo_rec_idx": rec_idx,
+        rec_idx_en = [i for i, b in enumerate(en["blocks"] if en else []) if b["rec"]]
+        summary["eps"][ep] = {"pct": pct, "stages": stages, "next": nxt[:5], "vo_rec_idx": rec_idx, "vo_rec_idx_en": rec_idx_en,
                               "counts": {"media": len(med), "own": len(med) - len(picks), "picked": len(picks),
                                          "video": sum(1 for x in med if x["v"]), "image": sum(1 for x in med if not x["v"]),
-                                         "vo_blocks": n_blocks, "vo_rec": n_rec, "music": len(music), "music_have": n_mus,
+                                         "vo_blocks": n_blocks, "vo_rec": n_rec, "vo_blocks_en": n_blocks_en, "vo_rec_en": n_rec_en, "music": len(music), "music_have": n_mus,
                                          "prompts": len(prompts), "triads": len(tri), "docs": 0, **counts}}
         docs = docs_for(ep)
         summary["eps"][ep]["counts"]["docs"] = len(docs)

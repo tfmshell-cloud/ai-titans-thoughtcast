@@ -1,0 +1,55 @@
+=== ELEVENLABS MASTER VOICEOVER SCRIPT (ENGLISH) // EPISODE 09 ===
+Standard: ElevenLabs Multilingual v2 / Turbo v2.5 / English Voice
+Recommended Voices: George (Warm & Resonant), Adam (Deep & Authoritative), Brian (Narrative Documentary)
+Speed Calibration: 115 WPM (Pacing: Calm, principled, quietly urgent — a conscience, not a prophet)
+Metronome Sync: Suno Pro 92 BPM (Beat: 2.61s)
+==================================================================
+
+[0:00 - 0:25] (92 words)
+What is a person's right to speak the truth worth? In today's world of high technology, that price has an exact figure: hundreds of millions of dollars in stock and options, with which corporations buy the silence and loyalty of the planet's greatest scientists. Of the three "godfathers" of modern artificial intelligence, only one flatly refused to put his signature on a corporate contract. He kept riding an ordinary bicycle to work through the snows of Quebec, to preserve for humanity the last free bastion of science. His name is Yoshua Bengio.
+
+[0:25 - 1:45] (136 words)
+His roots go back to an ancient community of Moroccan Jews. He was born in Paris in 1964 into a family that lived for art and for rebellion against bourgeois convention. His father, Carlo, was a pharmacist who left the pharmacy to write plays and direct a Sephardic theater troupe; his mother, Célia, was an artist and a community activist. In their home, money was never considered the measure of success — the measure was the depth of your thinking, and whether you stood up for the weak. When Yoshua was twelve, the family moved to Montreal. There, at the crossroads of French philosophy and North American freedom, he and his younger brother Samy devoured the novels of Isaac Asimov and asked themselves: how does the symphony of human understanding arise from simple electrical rules inside cells?
+
+[1:45 - 3:30] (100 words)
+At McGill University in the late nineteen-eighties, young Bengio read Geoffrey Hinton's first papers — and caught the idea of neural networks for good. After defending his dissertation, he goes to the United States: first to MIT, and then to the legendary Bell Labs, to work with Yann LeCun. It is there, in New Jersey, that three young rebels — Hinton, LeCun, and Bengio — form their unspoken alliance. But when the time comes to choose his future, Bengio makes a move that surprises all his American colleagues: he packs his things and goes back home, to the quiet, French-speaking University of Montreal.
+
+[3:30 - 5:15] (71 words)
+For twenty years of the "AI winter," his small lab in Montreal survived on almost no money. While American universities were shutting down neural network programs, Bengio gathered around him students who believed not in career grants, but in pure science. He set a law in his lab that broke all the cruel rules of academic competition: no infighting between students, no secrets — everyone shares ideas with everyone, like one family.
+
+[5:15 - 7:15] (127 words)
+In 2000, Yoshua Bengio publishes a paper that few mention in the news today, but without which there would be no ChatGPT or Claude: "A Neural Probabilistic Language Model." Before Bengio, linguists and computer scientists treated words as dead tokens in a table: to a computer, the words "cat" and "dog" were as far apart as "cat" and "synchrophasotron." Because of this, models choked on the "curse of dimensionality." Bengio carried out a revolution: he turned every word into a point in a multidimensional geometric space — a word embedding. As the neural network learned to predict the next word, concepts related in meaning drew together on their own in that cosmos! A word stopped being a set of letters — a word became a coordinate of pure meaning.
+
+[7:15 - 9:30] (202 words)
+And in 2014, in Bengio's lab in Montreal, a discovery is made that turned the whole world upside down. The recurrent neural networks of the time read text word by word and tried to cram the meaning of an entire long sentence into a single, tiny fixed-size vector. Bengio compared it to trying to translate a page of a book after glancing at it once and burning the original. Together with his young graduate student Dzmitry Bahdanau and Kyunghyun Cho, he asks a simple question: how does a living person translate a sentence? We do not hold the whole book in our heads — we keep glancing back, focusing our attention on exactly the word in the original we are translating at that second! They called this mathematical mechanism attention. When, three years later, Google engineers took the attention mechanism invented in Montreal and made it the foundation of the Transformer architecture, the modern era of generative AI was born. And in that very same year, 2014, another of Bengio's students — Ian Goodfellow — after an evening argument in a Montreal pub, wrote overnight the code for generative adversarial networks, GANs, teaching two neural networks to create art in a duel with each other.
+
+[9:30 - 11:15] (161 words)
+The world realized that the heart of a new revolution was beating in snowy Montreal. The corporate hunt began. Tech giants bought up nearly all the stars of academia, offering packages of ten, twenty, fifty million dollars. They came to Bengio too, putting a check in front of him with any amount he chose. And they heard an answer that shocked Wall Street:
+
+«Thank you, but I am not for sale. If I took your billions, I would no longer belong to humanity — I would belong to your shareholders. One of us has to stay free, to have the right to tell the truth when your race for profit goes too far.»
+
+Instead of personal enrichment, he builds up Mila in Montreal — one of the largest independent academic AI institutes on the planet, with more than a thousand researchers, where every formula is published openly, and major resources are directed at fighting climate change, discovering new antibiotics, and protecting human rights.
+
+[11:15 - 13:15] (178 words)
+In the spring of 2023, after the release of GPT-4, Yoshua Bengio loses sleep. He looks into the eyes of his little grandson and suddenly realizes, with horror: the world in which this child will come of age, fifteen years from now, risks no longer belonging to humans at all. If Geoffrey Hinton feared the intellectual superiority of machines, Bengio — the son of activists and human rights defenders — saw a double threat: either an uncontrolled autonomous AI breaks free, driven by an instinct for self-preservation, or a handful of dictators and corporate oligarchs uses this absolute weapon to establish an eternal global tyranny that could never again be overthrown. That is why his decision, made twenty years earlier, not to take corporate money turned out to be prophetic: when world leaders at the UN, in London, and in Paris searched for a single scientist of the highest rank with no financial conflict of interest to lead the writing of the first International Scientific Report on the Safety of Advanced AI, the planet had only one candidate — Yoshua Bengio.
+
+[13:15 - 15:15] (86 words)
+But how do you guarantee safety mathematically? Bengio points to a fundamental blind spot in today's models. Using the terminology of the Nobel-winning psychologist Daniel Kahneman, all current chatbots are System 1: a fast, intuitive stream of associations that does not understand cause and effect and knows no doubt. When such a system makes a mistake, it lies with the absolute confidence of a fanatic. To create a safe scientific mind, Bengio is developing at Mila a next-generation architecture — System 2 — and flow networks called GFlowNets.
+
+[15:15 - 16:45] (81 words)
+He proposes abandoning the dangerous race for autonomous "agents" that act in the world on their own and strive to survive, and instead building a "Scientist AI" — a system of pure reason without selfish will, one that can reason according to the laws of causality, build trees of hypotheses, and, most importantly, has a built-in mathematical humility: it knows exactly the limit of its own ignorance, and stops wherever there is even a one percent risk of harming a human being.
+
+[16:45 - 18:15] (118 words)
+Back in 2018, long before the world summits, Bengio gathered ordinary citizens, philosophers, doctors, and engineers in Montreal to write the Montreal Declaration for a Responsible Development of Artificial Intelligence. It enshrines a principle he defends today in parliaments around the world: no algorithm has the right to make the decision to take a human life, and no artificial intelligence has the right to pass itself off as a living person, manipulating our trust. Riding home in the evening on his old bicycle through the snowy streets of Quebec, the Turing Award laureate and the most-cited living computer scientist on the planet remains faithful to the small Paris apartment of his childhood, where conscience was valued above gold.
+
+[18:15 - 19:50] (150 words)
+What three commandments of character does the life of Yoshua Bengio give us?
+
+1. Guard your independence — do not sell the right to your own voice. Money and high positions are often golden shackles that force a person to stay silent when conscience demands they speak out. Stay in a position where no one can buy your truth.
+
+2. Direct your attention. Just as a neural network becomes intelligent only when it cuts out the noise and points the beam of attention at the key words, your life is defined by what you focus on. Cut out the bustle and the contests of vanity.
+
+3. Develop System 2 and intellectual humility within yourself. Do not trust your first impulsive reactions or blind self-assurance. True wisdom begins with the ability to doubt your own rightness and to ask yourself: "What if I am wrong? What will my mistake cost other people?"
+
+[19:50 - 21:00] (62 words)
+Science without humanism is only the cold blueprint of a machine in a void. And while the world races into the unknown at breakneck speed, we have a chance to hold on at the edge of the abyss only as long as there are guardians among us who have not traded the compass of conscience for all the treasures of the world.

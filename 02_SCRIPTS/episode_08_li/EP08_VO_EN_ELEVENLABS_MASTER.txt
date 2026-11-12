@@ -1,0 +1,57 @@
+=== ELEVENLABS MASTER VOICEOVER SCRIPT (ENGLISH) // EPISODE 08 ===
+Standard: ElevenLabs Multilingual v2 / Turbo v2.5 / English Voice
+Recommended Voices: George (Warm & Resonant), Adam (Deep & Authoritative), Brian (Narrative Documentary)
+Speed Calibration: 115 WPM (Pacing: Warm, intimate, quietly determined)
+Metronome Sync: Suno Pro 92 BPM (Beat: 2.61s)
+==================================================================
+
+[0:00 - 0:25] (105 words)
+Five hundred and forty million years ago, absolute darkness ruled the Earth. Life existed as blind organisms on the ocean floor that did not even suspect the sun was shining above them. And then, suddenly, the first living cell developed a light-sensitive spot — the embryo of an eye. And in a geological instant, the Cambrian explosion happened: life learned to see space, to hunt, to build, and to think. In the twenty-first century, the very same revolution for the blind world of computers was carried out by one slight young woman from China's Sichuan province, whose hands smelled of laundry detergent and cheap dry cleaning.
+
+[0:25 - 1:45] (117 words)
+1992. The town of Parsippany, New Jersey. Sixteen-year-old Fei-Fei Li steps off a plane with her parents and twenty dollars in her pocket. Back home in Chengdu, her father had been an engineer, and her mother an intellectual. In America, without any English, they instantly fall to the very bottom of society: her mother works a supermarket cash register, her father repairs broken cameras, and Fei-Fei herself, after school, wipes tables and peels garlic in the kitchen of a Chinese restaurant for two dollars an hour. At night, in a half-basement apartment furnished with pieces picked up from the curb, the girl sleeps four hours a night, translating every word of her math textbook with a dictionary.
+
+[1:45 - 3:30] (154 words)
+Her high school math teacher, Mr. Sabella, sees the fire of a physicist in the quiet girl and helps her win a near-full scholarship to Princeton University. But so that the family can simply afford food and treatment for her mother's ailing heart, they go into debt and buy a tiny, struggling dry-cleaning shop. Four years of an incredible double life begin. From Monday to Friday, Fei-Fei walks beneath the Gothic arches of Princeton among the children of senators and billionaires, studying quantum mechanics and Einstein's theory of relativity. And every Friday, at four in the afternoon, she gets on a train, goes home, puts on a work apron, and all weekend, until Sunday night, she takes in dirty shirts, removes sauce stains, and stands at a scorching-hot press. Even on weekdays, between lectures in advanced mathematics, she is on the phone dealing with angry dry-cleaning customers, because her parents cannot answer in English.
+
+[3:30 - 5:30] (132 words)
+In 1999, she graduates from Princeton with honors. Investment banks on Wall Street offer her jobs with huge starting salaries that would wipe out all of the family's debts in a single day. And here her gravely ill mother shows true greatness of spirit. She takes her daughter by the hands and says:
+
+«Fei-Fei, we did not cross an ocean and endure humiliation in this laundry so that you could sell your dream to the banks. Your mind belongs to science. We will manage. Go to your Caltech, and figure out how we see the world.»
+
+Those years behind the dry-cleaning counter forged a steel rod inside her: once you have seen real life at the very bottom, you will never again be afraid to go against the opinion of academic snobs.
+
+[5:30 - 7:15] (134 words)
+2006. The world of computer vision is in deep paralysis. For thirty years, the planet's best mathematicians had tried to teach computers to recognize objects using handcrafted formulas: they wrote one algorithm to find a cat's ears, another for a bicycle's wheels, and trained them on laughably small datasets of a few thousand images. The machines were blind: if a cat curled up into a ball or lay down in the shadows, the algorithm saw a stone or a loaf of bread. A young professor, Fei-Fei Li, looks at this and makes a diagnosis that sounds like a slap in the face of the entire scientific community: "For thirty years you have been treating the wrong disease. No algorithm will work as long as you keep the machine in a dark basement without data."
+
+[7:15 - 9:15] (114 words)
+She works out the biological math: a human child learns no equations in the first three years of life, but its eyes take several snapshots of the world every second. By the time a toddler goes to preschool, its brain has seen hundreds of millions of real scenes, from every angle and in every kind of light! For a computer to gain sight, it has to be shown the entire visible human world. She takes the linguistic dictionary WordNet, selects twenty-two thousand categories from it — from the Siberian husky and the fire truck to hundreds of species of orchid — and announces the launch of the ImageNet project: to collect and hand-verify fifteen million photographs.
+
+[9:15 - 11:30] (186 words)
+The reaction of the scientific world was devastating. Why collect millions of messy pictures from the internet, when real science is clean equations on a blackboard? Her grant applications are turned down again and again, with reviews delivering humiliating verdicts: "The project contains no scientific novelty and is a waste of time." Close friends who are professors beg her to stop: "Fei-Fei, you don't have tenure yet — they'll fire you from the university for this madness!" For a moment, she even considers reopening a dry-cleaning business to fund her servers. By her calculations, if her students labeled the photographs themselves, it would take them nineteen years without sleep. And then they find a brilliant move — Amazon Mechanical Turk, a crowdsourcing service that had only just launched. Over three years, nearly fifty thousand people from a hundred and sixty-seven countries clean and label fourteen million images. But when Fei-Fei Li brings the finished ImageNet to a major world conference in Miami in 2009, the organizers do not even give her a slot on stage — only a corner for a paper poster, near the exit to the restrooms.
+
+[11:30 - 13:30] (136 words)
+Since no one wanted to take her data voluntarily, Li creates an annual world championship — the ImageNet Challenge. And in the autumn of 2012 comes an explosion that divided human history into "before" and "after." Geoffrey Hinton and Ilya Sutskever submit their deep neural network, AlexNet, fed on fourteen million ImageNet photographs. Neural networks, which for thirty years had been starving on small datasets, finally received an ocean of data comparable to the experience of a human child! In an instant, the machines could see. Fei-Fei Li could not attend the final of the competition in person — she had just given birth to her son. But lying with her newborn on her chest and listening over the phone to a student's report on AlexNet's results, she understood: the Cambrian explosion of artificial intelligence had just begun.
+
+[13:30 - 15:15] (167 words)
+But when a trillion-dollar gold rush swept the industry, Fei-Fei Li went against the current once again. Her mother was hospitalized again with a stroke and heart failure. Spending nights on a cot in the hospital room beside her mother, the Stanford professor watched exhausted nurses physically unable to keep up with dozens of critically ill patients, saw elderly people fall at night, and saw how a doctor's fatigue-driven mistake could cost a life. And so she co-founds the Stanford Institute for Human-Centered Artificial Intelligence — Stanford HAI — and builds a system of "eyes of mercy" for hospitals: computer vision using infrared depth sensors that cannot see faces and preserves privacy, yet watches over patients' sleep around the clock.
+
+«Technology has no morality of its own. If we allow artificial intelligence to become merely a tool for enriching the strong and watching over the weak, we betray the very essence of science. At the center of every algorithm must always stand the dignity of a living human being.»
+
+[15:15 - 17:00] (106 words)
+And in 2024, Fei-Fei Li opens the third great front of her career — she founds World Labs to build spatial intelligence. She sees the main flaw of today's generative AI: language models and video generators still live in a flat, two-dimensional world of words and pixels. They do not know that a cup has weight, that the back of a chair has another side, or that water flows downward. Li is teaching artificial minds to see the world in three dimensions, with the full physics of matter — so that tomorrow, robots can enter the real world not as blind destroyers, but as sighted helpers to humankind.
+
+[17:00 - 18:30] (81 words)
+In her memoir, "The Worlds I See," she often recalls that same old dry cleaner's in New Jersey. She has advised the White House, been elected to the National Academy of Engineering, and become one of the most influential scientists of the century. But when young students from poor families come to her, afraid there is no place for them in high science, she looks at them through the eyes of that sixteen-year-old girl who peeled garlic in a restaurant basement.
+
+[18:30 - 20:15] (169 words)
+What three pillars of Fei-Fei Li's character are worth building into our own worldview?
+
+1. A hard background is not a brand of shame — it is your armor. Never be ashamed of poverty or simple physical labor at the start. A person who has endured years at the ironing press and the night shifts gains a reserve of grit before which any scientific or personal crisis retreats.
+
+2. Look for what others consider "not noble enough." Everyone wanted to write elegant formulas, and no one wanted to do the "dirty work" of collecting fourteen million ImageNet images. The greatest treasure always lies where pride keeps others from bending down and getting their hands dirty.
+
+3. Hold your course by your own North Star. Money and positions come and go. The only thing that gives you the strength not to break under the pressure of skeptics and rejections is the great question you asked yourself in your youth — and love for those who believed in you at the very beginning.
+
+[20:15 - 21:30] (48 words)
+To see the world is not simply to record light on a retina or a silicon sensor. True sight begins in the heart: in the ability to glimpse an infinite universe through the fogged-up glass of a small laundry — and to give that light to all of humanity.

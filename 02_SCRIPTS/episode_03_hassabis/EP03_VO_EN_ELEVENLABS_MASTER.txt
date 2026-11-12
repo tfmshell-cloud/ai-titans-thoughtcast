@@ -1,0 +1,60 @@
+=== ELEVENLABS MASTER VOICEOVER SCRIPT (ENGLISH) // EPISODE 03 ===
+Standard: ElevenLabs Multilingual v2 / Turbo v2.5 / English Voice
+Recommended Voices: George (Warm & Resonant), Adam (Deep & Authoritative), Brian (Narrative Documentary)
+Speed Calibration: 115 WPM (Pacing: Deliberate, contemplative, intellectual)
+Metronome Sync: Suno Pro 92 BPM (Beat: 2.61s)
+==================================================================
+
+[0:00 - 0:25] (58 words)
+Everything in the universe is information. From the path of a raindrop falling onto the cobblestones of London — to the way a hemoglobin molecule carries oxygen through your blood. Most people see around them a chaotic stream of accidents. And only a few are born with the ability to see, behind that stream, a hidden tree of decisions.
+
+[0:25 - 1:30] (107 words)
+North London, 1980. In a bohemian flat, where the father — a musician and songwriter of Greek-Cypriot descent — argues about art, a four-year-old boy named Demis silently watches the hands of his father and his uncle. They are moving wooden pieces across a checkered board. The child does not ask for toys. He asks them to explain the rules. Two weeks later, the four-year-old begins beating the adults. To him, chess was not a game. In a chaotic, creative home, the chessboard became an island of absolute order — a closed cosmos of sixty-four squares, with no room for blind luck, where every action has a mathematically inevitable consequence.
+
+[1:30 - 2:45] (111 words)
+At eight, Demis wins his first major junior tournament. With the prize money, he does not buy a bicycle. He buys a second-hand ZX Spectrum 48K microcomputer with rubber keys and a book on Z80 assembly programming. He takes other people's code apart to make the computer play Othello and chess with him. And it is then, inside an eight-year-old's head, that a question is born which will define the fate of the twenty-first century:
+
+«When I play chess, I don't calculate millions of variations. I simply feel the shape of the position. Why is my biological brain capable of intuition, while a silicon machine is doomed to blind brute force?»
+
+[2:45 - 4:00] (116 words)
+At thirteen, Demis Hassabis becomes a chess master with a rating of 2300 — the second-highest-rated player in the world for his age, after the legendary Judit Polgár. But during an exhausting ten-hour game at a tournament in Liechtenstein, he has an intellectual epiphany. He looks across a hall filled with the best grandmasters in the world and is suddenly horrified: the greatest minds of a generation are burning millions of hours of their one and only life moving little wooden figures in an invented game. And outside the window — incurable diseases, aging cells, the unsolved physics of the universe. Chess had only been a training ground. It was time to head out into the open ocean.
+
+[4:00 - 5:15] (94 words)
+At sixteen, he passes the Cambridge entrance exams early. The university is stunned, but asks the young man to wait a year — he is too young. And that year of waiting becomes a springboard: seventeen-year-old Demis joins Peter Molyneux's studio and, almost single-handedly, writes the core engine of the cult game Theme Park. The game sells millions of copies. The teenager makes a fortune before his first university lecture and sees for the first time, in practice, how thousands of simple digital agents on a screen give rise to a living, unpredictable economic ecosystem.
+
+[5:15 - 6:45] (151 words)
+After graduating from Cambridge with top honors, Hassabis makes an unexpected move. Instead of building a tech company right away, he locks himself in the labs of University College London and earns a PhD in cognitive neuroscience. His logic is ironclad: you cannot build an artificial mind unless you have taken apart, screw by screw, the only working prototype in the universe — the human brain. He studies patients with damage to the hippocampus — people with amnesia who cannot remember their past. And he discovers a fundamental law that the journal Science will name one of the top ten breakthroughs of the year: people who have lost the memory of their past are physically unable to imagine their own future. Memory and imagination are one and the same neural mechanism for constructing scenes. The brain does not merely record experience — every night, during sleep, it replays it, building a simulation of tomorrow.
+
+[6:45 - 8:15] (84 words)
+Autumn 2010. London. Armed with the code of computer games, the mathematics of chess, and the neuroanatomy of the hippocampus, Demis Hassabis, together with Shane Legg and Mustafa Suleyman, founds DeepMind. At the time, all of Silicon Valley considered artificial general intelligence — AGI — an indecent, science-fiction word. Investors laughed in their faces. But on the first slide of his pitch, Hassabis writes a two-step plan that will go into the history books:
+
+«Step one: solve intelligence. Step two: use it to solve everything else.»
+
+[8:15 - 10:30] (244 words)
+They cross deep neural networks with reinforcement learning — deep reinforcement learning — and add a biological mechanism borrowed from the hippocampus: experience replay. The system is given classic Atari games — with no rules at all, only raw pixels on the screen and a score counter. Within a few hours, the machine discovers on its own a strategy in Breakout: tunneling through behind the wall of bricks — a move even professional gamers did not immediately think of. In 2014, Google buys DeepMind for half a billion dollars, but Hassabis sets an unprecedented condition: an independent ethics board, and a ban on using their algorithms in military weapons.
+
+And then comes March 2016. The Four Seasons Hotel in Seoul. Seated at a Go board is Lee Sedol — a living legend of the East, holder of eighteen world championship titles. Facing him is the AlphaGo system. The Western world did not grasp the scale of the event. In chess, a position offers on average thirty-five possible moves. In the ancient game of Go — two hundred and fifty, and the total number of possible board configurations is ten to the power of one hundred and seventy. That is more than the number of atoms in the entire observable universe. No computer could physically calculate Go by brute force. In the East, Go was considered a sacred art of pure spirit, ruled by human intuition alone. Every expert predicted the machine would be crushed for at least another ten years.
+
+[10:30 - 12:15] (181 words)
+Game two of the match in Seoul. Move thirty-seven. Lee Sedol has stepped out of the hall for a cigarette. At that moment, AlphaGo instructs its operator to place a black stone on the fifth line — into the emptiness on the right side of the board. According to millennia of canon from the Go schools of Japan, China, and Korea, a stone is never placed on the fifth line in the early game. Commentators, live in front of a hundred million viewers, freeze, assuming it is a software glitch. The probability that a human would have played that move was one in ten thousand. Lee Sedol returns to the table, looks at the board — and goes pale. For fifteen minutes, he sits motionless. A hundred moves later, scattered stones across the entire board suddenly weave themselves around that same lonely thirty-seventh stone into a deadly web. AlphaGo wins. In that second, humanity saw for the first time not an imitation of its own mind — it saw the birth of an alien machine creativity, free from three thousand years of human dogma.
+
+[12:15 - 14:15] (150 words)
+The morning after the triumph in Seoul, Demis Hassabis gathers his team in a hotel room and says: "The games are over. We are moving on to step two." For fifty years, the central riddle of biology had been the protein folding problem. Everything alive on Earth — your muscles, neurons, immune antibodies, enzymes — is built from proteins. Every protein begins as a flat string of amino acids, which within milliseconds folds itself into an incredibly complex three-dimensional knot — a biological origami. It is the three-dimensional shape of a protein that determines whether it becomes a medicine or a deadly toxin. To decode the shape of just one protein in the lab using X-ray crystallography, a scientist could spend up to five years of their life and hundreds of thousands of dollars. Nature holds more than two hundred million proteins. At the old pace, humanity would have needed a billion years.
+
+[14:15 - 16:45] (143 words)
+For four years, Hassabis's team builds the AlphaFold system. In 2018, they enter the world's leading biology olympiad, CASP. The first version wins, but its accuracy is still not good enough for medicine. Hassabis makes a hard decision: tear the old architecture down to its foundations and rewrite everything from a blank page, building a geometric attention mechanism directly into the physics of atomic bonds. November 2020. AlphaFold 2 achieves accuracy at the width of a single atom — ninety-two points out of a hundred. Biology's fifty-year problem is solved for good. Over the following year, DeepMind decodes the structures of all two hundred million proteins known to science on planet Earth — and releases that library completely free and open to every doctor and biologist in the world. In the autumn of 2024, in Stockholm, Demis Hassabis is awarded the Nobel Prize in Chemistry.
+
+[16:45 - 18:15] (115 words)
+Today, under Hassabis's leadership, the unified Google DeepMind tackles problems that take your breath away: algorithms hold plasma heated to a hundred million degrees inside fusion reactors, design new crystalline materials for clean batteries — the GNoME system discovered two million new crystals in a week, the equivalent of eight hundred years of human chemistry — and model a living virtual cell at Isomorphic Labs. But the secret of Demis Hassabis's personality lies in his polymathy — the ability to unite worlds others consider incompatible. Every night, he works in his study from midnight until four in the morning — in the hours of absolute silence, when all of London sleeps — drinking green tea and listening to ambient music.
+
+[18:15 - 20:00] (179 words)
+Which rules of thinking from this modern-day Leonardo da Vinci can we build into our own minds?
+
+1. Train your inner decision tree. Stop reacting to life on impulse. Like the four-year-old chess player at the board, make it a rule, before any important step, to calculate the branches of consequences five moves ahead. The greatest defeats come not from weakness, but from zugzwang — a position a person has driven themselves into for lack of strategy.
+
+2. Build bridges between different sciences. Narrow specialists become hostages of their own templates. DeepMind's breakthrough was possible only because chess combinatorics, video game design, the neuroscience of the hippocampus, and the physics of proteins all met inside one head. Study what lies beyond the borders of your profession.
+
+3. Use the principle of self-play. The AlphaZero system became invincible when it abandoned human textbooks and played millions of games against itself, ruthlessly correcting every one of its own weaknesses. Become your own most honest sparring partner: an evening review of your own mistakes, without excuses, grows the scale of a personality exponentially.
+
+[20:00 - 21:30] (67 words)
+The matter of the universe spent fourteen billion years assembling itself into atoms, molecules, proteins, and neurons capable of becoming aware of themselves. And when, in the middle of the night, a monitor lights up in a quiet London study, it is not just a computer program running. It is life itself — through the digital telescope it has built — finally beginning to read its own source code.

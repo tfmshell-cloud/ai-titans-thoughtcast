@@ -1,0 +1,67 @@
+=== ELEVENLABS MASTER VOICEOVER SCRIPT (ENGLISH) // EPISODE 02 ===
+Standard: ElevenLabs Multilingual v2 / Turbo v2.5 / English Voice
+Recommended Voices: George (Warm & Resonant), Adam (Deep & Authoritative), Brian (Narrative Documentary)
+Speed Calibration: 115 WPM (Pacing: Low, slightly husky, restrained — a man who knows the weight of physical work)
+Metronome Sync: Suno Pro 92 BPM (Beat: 2.61s)
+==================================================================
+
+[0:00 - 0:20] (71 words)
+The modern world of technology loves sterile legends. We are told about geniuses in sunny California garages, about golden children of prestigious universities, handed shares in future monopolies from the cradle. But the real empire on whose shoulders the entire artificial intelligence of the planet rests today was not born in a university club. It was born on the cold tiled floor of a public restroom in the backwoods of Kentucky.
+
+[0:20 - 1:15] (103 words)
+1972. A nine-year-old boy from Taiwan named Jensen Huang arrives in the United States with his older brother. Their parents sent them ahead — to an uncle — hoping to give the children an elite American education. The uncle opens a directory and sees the name: Oneida Baptist Institute. It sounds to him like a boarding school for gifted young men. In reality, it was a Baptist reform school in the Appalachian mountains for troubled, unruly teenagers. Jensen is nine. He barely understands English. He is roomed with a seventeen-year-old whose body is covered in tattoos and fresh knife scars. The older roommate cannot read.
+
+[1:15 - 2:15] (127 words)
+In a place like that, weakness is a sentence. If you start crying or feeling sorry for yourself, the system will chew you up before breakfast. The little immigrant makes his first adult calculation. He does not hide in a corner. He strikes a pact with the leader of the dormitory: every evening, under a dim lamp, nine-year-old Jensen teaches the seventeen-year-old fighter to read, syllable by syllable. And in return, the fighter teaches him to do a hundred push-ups at a time and to defend his life with his fists. And by day, the work duty begins. Every student at the reform school has a job. The older boys get the kitchen or the yard. The youngest gets to clean every toilet in the boys' dormitory.
+
+[2:15 - 3:30] (88 words)
+He scrubs toilets every day for two years. Half a century later, standing on a stage before the elite of Stanford in the black leather jacket of a man whose company is worth trillions of dollars, he will say something that brings dead silence to the hall:
+
+«You have no idea how well I cleaned those toilets. And do you know what it gave me? It burned the arrogance out of my soul for good. There is no such thing as menial work. There is only lazy work.»
+
+[3:30 - 5:15] (156 words)
+When his parents finally move to Oregon, fifteen-year-old Jensen takes his first official job — as a night dishwasher at a roadside Denny's. He was a painfully shy teenager. He was afraid to look strangers in the eye. But at the steaming sink, he turns the chaos of dirty dishes into an engineering conveyor: he sorts plates by geometry, optimizes the angle of the water jet, cuts every wasted motion of his hands. He becomes the fastest dishwasher on the shift. When they move him out to bus tables and take orders, his fear of people burns away. You cannot be afraid of the world when, night after night, you serve dozens of exhausted truck drivers. And it is there, at a cheap plastic table at Denny's, beneath the hum of the coffee machine and the smell of frying bacon, that fifteen years later he will sketch on a napkin a plan to overthrow the computing world.
+
+[5:15 - 6:30] (111 words)
+April 1993. San Jose. The same Denny's chain, on the corner of Berryessa Road. Three engineers — Jensen Huang, Chris Malachowsky, and Curtis Priem — spend hours drinking cheap coffee with free refills. Outside, there is gunfire — the restaurant windows are pierced by bullets from local gangs, but they don't even turn their heads. They see what Intel does not. The whole world is building general-purpose CPUs that execute operations sequentially — step by step, like a bookkeeper with an abacus. But the future is three-dimensional simulation, video games, and visual worlds where millions of pixels must be computed at once. In parallel. They name the company NVIDIA — from the Latin word invidia, "envy."
+
+[6:30 - 8:00] (92 words)
+And they make a fatal mistake. Two years of work. All of the investors' money poured into the first chip — the NV1. Huang and his team decide to build 3D graphics on quadratic surfaces. It was elegant, complex, and original. But at that very moment, Microsoft releases the Direct3D standard, which tells the entire industry to build graphics exclusively out of triangles. And at the same time, thirty-eight other graphics chip startups flood the market. The NV1 is stillborn. Nobody buys it. The company has exactly enough money left for thirty days.
+
+[8:00 - 9:30] (170 words)
+This is the point where ninety-nine percent of entrepreneurs break. Huang gathers every employee in the main hall and lays off half the company. Out of a hundred people, forty remain. He has one desperate move left. Japan's Sega had commissioned NVIDIA to develop the NV2 chip for its new console — but the NV2 is built on the same flawed quadratic architecture. If Huang keeps fulfilling the contract, Sega gets a failed product and NVIDIA dies within six months. If he admits the architecture is wrong, Sega will immediately demand its advance back, and NVIDIA goes bankrupt tomorrow morning. Huang flies to Tokyo to see Sega's president, Shoichiro Irimajiri. He looks the Japanese executive straight in the eye and says the unthinkable:
+
+«Mr. President, our chip is not right for you. You must cancel the contract with us immediately. But you have to pay us the remaining five million dollars for the work we will not do — otherwise my company will cease to exist by the end of the month.»
+
+[9:30 - 10:45] (134 words)
+Absolute, naked honesty in the face of death disarmed the old-school samurai. Sega wires five million dollars in exchange for a stake in a half-dead company. That money gives NVIDIA six months of oxygen. In those six months, Huang buys a software emulator and designs the RIVA 128 chip blind — without a single physical prototype, testing transistors only in virtual memory. When the first batch of silicon comes out of the foundry ovens in Taiwan, the chip boots on the very first try. Within four months, a million units are sold. NVIDIA comes back from the dead. But from that day on, and for the next thirty years, Jensen Huang opens every meeting at the company with the very same sentence:
+
+«Gentlemen, never forget: our company is thirty days from going out of business.»
+
+[10:45 - 12:15] (99 words)
+In 1999, NVIDIA releases the GeForce 256 and gives the world the very concept of the GPU — the graphics processing unit. The company goes public, and the stock soars. It would seem the time had come to sit back and enjoy a monopoly in the world of video games. But in 2006, Jensen Huang takes a step Wall Street will call "financial suicide." He looks at his graphics cards and sees a sleeping supercomputer inside them. He orders his engineers to create CUDA — a software architecture that turns a graphics chip into a universal matrix for heavy scientific computation.
+
+[12:15 - 13:45] (100 words)
+Huang demands that hardware support for CUDA be built into every single NVIDIA chip, without exception. It costs the company billions of dollars. The die grows larger, the cost per chip climbs, and there is no demand. For ten long years, at every quarterly report, shareholders demand that Huang stop burning money on a CUDA nobody needs. In 2008, NVIDIA's market value collapses by eighty percent. But Huang stands like a rock:
+
+«We are not chasing the current market. We are building a market that today is worth zero billion dollars — and tomorrow will be worth the entire world economy.»
+
+[13:45 - 16:15] (136 words)
+And then comes 2012. In a cold room in Toronto, two of Geoffrey Hinton's graduate students — Alex Krizhevsky and Ilya Sutskever — buy two ordinary GeForce GTX 580 gaming cards at a regular store. Thanks to the CUDA system built into them, they train a deep neural network called AlexNet. What would have taken ordinary processors years, Huang's graphics cards compute in six days. Ten years of stubborn waiting in the dark pay off in a single historic second. While other corporations are still reading the scientific papers, Huang bets the entire existence of NVIDIA on a single card — deep learning. In 2016, he personally delivers a heavy steel box to OpenAI's modest lab: the world's first supercomputer built for artificial intelligence, the DGX-1. He signs the case with a marker and hands it to Ilya Sutskever.
+
+[16:15 - 17:45] (109 words)
+Today, NVIDIA is the core of a new industrial revolution. Yet inside this trillion-dollar empire, the rules break every management textbook. Jensen Huang has no private office. He works at an ordinary desk in the middle of an open floor, or in meeting rooms beside a whiteboard. More than fifty executives report to him directly at the same time. He abolished status reports and private one-on-one meetings:
+
+«If information has to pass through five floors of managers, the truth dies on the way. Any junior engineer in this company has the right to write to me directly at three in the morning if they have found a fundamental problem.»
+
+[17:45 - 19:30] (176 words)
+What code of life does a boy leave us, who went from a toilet brush in a reform school to the forge of the world's intelligence?
+
+1. Learn to love pain and suffering. Speaking to Stanford students, Huang stunned the audience: "People with very high expectations have very low resilience. And so, from the bottom of my heart, I wish upon you ample doses of pain and suffering." Greatness is not born from intelligence. It is born from character — when your plans fall into the abyss, and you step back up to the workbench anyway.
+
+2. Turn any work into a high craft. It doesn't matter what you are doing today — washing plates in a diner or designing the architecture of code. Do it with such engineering precision, as if the fate of the universe depended on it.
+
+3. Create zero-billion-dollar markets. Never run to where hundreds of players are already fighting over a slice of the pie. Look for problems that seem insane or impossibly hard to others. Difficulty itself is your only reliable moat.
+
+[19:30 - 21:00] (91 words)
+On Jensen Huang's left shoulder, beneath the black leather jacket, there is a tattoo — the NVIDIA logo. When they got those tattoos thirty years ago, he cried from the pain in the artist's chair. Today, that mark is engraved into the foundation of all human civilization. And every morning, waking at five o'clock, the most powerful engineer on the planet looks into the mirror not as a winner. Deep in his eyes there still stands that nine-year-old boy from Kentucky, who knows: you cannot relax. Bankruptcy is exactly thirty days away.

@@ -1,0 +1,85 @@
+=== ELEVENLABS MASTER VOICEOVER SCRIPT (ENGLISH) // EPISODE 10 ===
+Standard: ElevenLabs Multilingual v2 / Turbo v2.5 / English Voice
+Recommended Voices: George (Warm & Resonant), Adam (Deep & Authoritative), Brian (Narrative Documentary)
+Speed Calibration: 115 WPM (Pacing: Warm, clear, teacherly — a season finale with quiet optimism)
+Metronome Sync: Suno Pro 92 BPM (Beat: 2.61s)
+==================================================================
+
+[0:00 - 0:25] (106 words)
+In the ancient myths, Prometheus stole fire from the gods of Olympus not to lock it away in his own palace — he gave it to ordinary people, so that every hut would have warmth and light. Over nine episodes, we have watched the titans of our era forge the divine fire of artificial intelligence in closed laboratories. But this revolution would have remained the privilege of a handful of chosen billionaires, if not for one man in a simple blue shirt, who opened the gates of Stanford and handed that fire to eight million people in every corner of the planet. His name is Andrew Ng.
+
+[0:25 - 1:45] (139 words)
+He was born in London in 1976 to a family of immigrants from Hong Kong, and spent his childhood and youth between Hong Kong and Singapore. His father, Ronald Ng, was a hematologist who read medical journals in the evenings and tried to write a simple computer program to diagnose lung diseases.
+
+The boy sat beside him, watching his father translate human experience into the language of conditional statements. At Singapore's renowned Raffles Institution, Andrew spent hours in the library, retyping BASIC listings by hand from yellowed magazines. Every missing comma broke the program — and it instilled in him an almost surgical respect for precision.
+
+«As a child in Singapore, I typed my first programs out of magazines, dreaming of the day when machines would be able to see and learn on their own, freeing people from routine work.»
+
+[1:45 - 3:15] (116 words)
+His academic trajectory looked like a three-stage rocket: a triple major at Carnegie Mellon in computer science, statistics, and economics; a master's degree at MIT; and then a PhD at Berkeley under Michael Jordan, one of the leading mathematical minds of machine learning.
+
+At Berkeley, the twenty-four-year-old graduate student takes on a task aircraft designers considered almost suicidal for an algorithm: teaching a radio-controlled helicopter to fly on its own. An ordinary airplane seeks stability: let go of the controls, and the wings will level out the airflow. A helicopter is physical instability in its purest form. Every second, it tries to flip over and fall, like a ball balanced on the tip of a needle.
+
+[3:15 - 5:15] (133 words)
+Having become a professor at Stanford at a remarkably young age, Ng pushes this experiment to the edge of science fiction. Instead of writing thousands of lines of aerodynamic equations by hand, his team records the movements of a virtuoso human pilot and runs reinforcement learning.
+
+On the hills behind the Stanford campus, the machine rises into the sky, flips upside down, and hovers a meter above the ground, performing aerobatic maneuvers only a handful of people on the planet can manage. At the same time, he launches the STAIR project — the Stanford AI Robot. It is then that Andrew Ng formulates the main conclusion of the first half of his life: the bottleneck of artificial intelligence lies not in the hardware of servo motors, but in the scale of the brain itself.
+
+[5:15 - 6:45] (102 words)
+By 2010, through rare meetings with Geoffrey Hinton and his students, Andrew Ng becomes fully convinced of the central hypothesis: old algorithms hit a ceiling when there is too much data, and only deep neural networks keep growing without stopping — if you give them enough computation.
+
+But where could a university get a supercomputer of that scale? In 2011, Ng walks into the secret Google X lab in Mountain View and joins forces with the legendary architect of distributed systems, Jeff Dean. And so Google Brain is born — a project destined to transform a search company into an empire of artificial intelligence.
+
+[6:45 - 8:30] (113 words)
+Google did not yet have specialized GPU clusters for deep learning. So Ng and Dean make a move of pure engineering audacity: they wire together a thousand ordinary servers — sixteen thousand processor cores — into a single neural network.
+
+And then they run an experiment that sounded like a question from children's philosophy: what happens if you connect a newborn digital brain with a billion connections simply to a stream of random YouTube videos — and explain not a single word to it? No labels. No captions saying "this is a person," "this is a car," "this is a house." For a week, sixteen thousand cores silently gaze into ten million frames of human life.
+
+[8:30 - 10:45] (157 words)
+When the researchers opened the visualization of individual neurons in the network's upper layers, dead silence fell over the lab. On the dark monitor, like a ghost made of pure statistics, a blurred but unmistakably recognizable face appeared — the face of a cat.
+
+No one had ever told the machine that cats even exist in nature. It invented the concept of "cat" on its own, out of the chaos of light and shadow — exactly as an infant does in its cradle. The next morning, a story on the front page of The New York Times went around the world.
+
+«The Google Brain experiment proved something fundamental: the raw world around us is overflowing with patterns, and a large enough neural network can extract meaning from it on its own.»
+
+But at the very moment when corporations rushed to buy up every scientist on the planet with multimillion-dollar contracts, Andrew Ng makes a turn nobody expected of him.
+
+[10:45 - 12:30] (147 words)
+Every year, four hundred students came to Stanford's lecture hall for his famous machine learning course, CS229. Andrew understood the bitter injustice of elite education: beyond the walls of that hall, in Lagos, Kyiv, Bangalore, São Paulo, and Manila, live millions of equally talented minds who simply were not lucky enough to be born with the right zip code.
+
+In the summer of 2011, he sets up an ordinary camera in a small room, turns on a tablet, and in simple, crystal-clear language — without hiding behind academic snobbery — records his lectures for free access on the internet. He tells friends: maybe a few thousand people will sign up.
+
+Within weeks, the registration counter crosses one hundred thousand students. One man with a marker in his hand, in a single summer, taught as many people as he would have taught at Stanford in two hundred and fifty years.
+
+[12:30 - 14:30] (121 words)
+Together with his Stanford colleague Daphne Koller, he founds Coursera, and later — DeepLearning.AI. A great many of today's AI engineers around the world — from Silicon Valley startups to leading research centers in Europe and Asia — began their journey with one quiet sentence from a laptop screen: "Don't worry if you don't understand this matrix derivative right away — that's completely fine."
+
+He stripped artificial intelligence of the robes of a priestly cult. And in 2014, he went to Beijing as chief scientist of the tech giant Baidu, where, under his leadership, a team of some thirteen hundred researchers moved voice search, self-driving cars, and industrial services for hundreds of millions of people onto the rails of deep learning within three years.
+
+[14:30 - 16:15] (106 words)
+It is at the crossroads of East and West, academia and heavy industry, that he formulates the defining historical metaphor of the twenty-first century:
+
+«AI is the new electricity. A hundred years ago, electricity transformed one industry after another — agriculture, medicine, transportation, communication. Today, we are watching artificial intelligence do the same.»
+
+While the media frightened society with terminators and philosophers argued about a soul in silicon, Andrew Ng looked at AI through the eyes of civilization's chief electrician: where to run the cable, how to reduce losses in the grid, and how to put the switch into the hands of every doctor, farmer, and teacher.
+
+[16:15 - 18:00] (119 words)
+Returning to Palo Alto and founding the venture studio AI Fund, Ng notices a dangerous disease in modern science: everyone is obsessed with chasing ever more gigantic model architectures, while beyond the five big internet companies, the real world is suffocating on small and messy data. A steel parts factory does not have a billion photos of defects — it has fifty. A rural clinic does not have a million X-rays of a rare tumor.
+
+And so he proclaims a crusade for data-centric AI — engineering focused on data:
+
+«Stop endlessly tuning the hyperparameters of your code. Hold the model fixed, and clean your data with loving engineering care. A clean drop of truth is stronger than an ocean of noise.»
+
+[18:00 - 19:45] (142 words)
+And when, in the mid-twenties, a new wave of fear sweeps the industry — this time an attempt by closed monopolies to convince governments that open-source artificial intelligence should be licensed and banned like nuclear weapons — the quiet professor in the blue shirt unexpectedly becomes an iron defender of freedom. Together with Yann LeCun, he publicly exposes regulatory capture of the market: banning open model weights would mean burning the modern printing press of Gutenberg.
+
+More than that, he demonstrates the elegant concept of agentic workflows: even a small open model that is allowed not to give the first random answer in a second, but to pause, check its own code, find its own mistake, and rewrite the draft in a loop of self-reflection, can outperform far larger closed monoliths. Thinking is not the instant flash of an oracle. Thinking is patient iteration.
+
+[19:45 - 21:30] (165 words)
+Looking back across the whole gallery of ten architects of the mind — from Altman's exponent and Huang's silicon forge to Hassabis's biological code, Hinton's prophetic pain, LeCun's Cartesian sail, Sutskever's monastic silence, Amodei's constitution, Fei-Fei Li's humane sight, and Bengio's Montreal watch — it becomes clear why it is Andrew Ng who closes the circle.
+
+Because every revolution ends not on the day the engine is invented, but on the day an ordinary person sits down at a desk at dawn, opens a blank file, and, without fear, begins to build.
+
+His final lesson sounds as simple as the formula of compound interest applied to a human life:
+
+«Don't ask whether artificial intelligence will replace you. Read one paper and write ten lines of code every day — and in a year, you won't recognize your own strength. The future isn't something you wait for in the news. The future is assembled with your own hands. Brick by brick. Until a light switches on in every home.»
