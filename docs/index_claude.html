@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Архітектори Розуму — Студія</title>
-<meta name="description" content="Cinematic Thoughtcast: AI Titans — робочий хаб сезону 1: епізоди, монтаж, анімація, музика, медіа, цитати.">
+<meta name="description" content="Cinematic Thoughtcast: AI Titans — робоча студія сезону 1: кожен герой має власний робочий стіл з озвучкою ElevenLabs, промптами анімації, музикою, медіа й дослідженнями.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
@@ -14,10 +14,11 @@
   --line:#26292e; --line-soft:#1d1f23;
   --text:#ebe7df; --muted:#a29e95; --dim:#6f6c66;
   --brass:#c8a96a; --brass-hi:#dcc28a; --brass-soft:rgba(200,169,106,.12); --brass-line:rgba(200,169,106,.35);
+  --ok:#8fb38a;
   --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --serif:"Fraunces",Georgia,serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
-  --r:10px; --side:256px;
+  --r:10px; --side:264px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--bg);color:var(--text)}
@@ -29,100 +30,165 @@ img{display:block;max-width:100%}
 
 /* ---------- sidebar ---------- */
 .side{position:fixed;inset:0 auto 0 0;width:var(--side);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:40}
-.brand{padding:22px 20px 16px;border-bottom:1px solid var(--line-soft)}
+.brand{padding:20px 20px 14px;border-bottom:1px solid var(--line-soft)}
 .brand small{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
 .brand b{display:block;font:600 19px/1.2 var(--serif);margin-top:4px}
 .brand span{display:block;font-size:12px;color:var(--dim);margin-top:2px}
-.kbtn{margin:14px 14px 6px;display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;color:var(--dim);font-size:13px;background:var(--bg)}
+.kbtn{margin:12px 14px 4px;display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;color:var(--dim);font-size:13px;background:var(--bg)}
 .kbtn:hover{border-color:var(--brass-line);color:var(--muted)}
 .kbtn kbd{margin-left:auto;font:11px var(--mono);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
-nav{flex:1;overflow:auto;padding:6px 10px 20px}
-.ng{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);padding:16px 10px 6px}
-.ni{display:flex;flex-direction:column;padding:7px 10px;border-radius:7px;border-left:2px solid transparent}
+nav{flex:1;overflow:auto;padding:4px 10px 20px}
+.ng{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);padding:14px 10px 6px}
+.ni{display:flex;flex-direction:column;padding:6px 10px;border-radius:7px;border-left:2px solid transparent}
 .ni b{font-weight:500;font-size:13.5px}
 .ni i{font-style:normal;font-size:11.5px;color:var(--dim);line-height:1.35}
-.ni:hover{background:var(--surface-2)}
-.ni.on{background:var(--brass-soft);border-left-color:var(--brass)}
-.ni.on b{color:var(--brass-hi)}
+.ni:hover,.nh:hover{background:var(--surface-2)}
+.ni.on,.nh.on{background:var(--brass-soft);border-left-color:var(--brass)}
+.ni.on b,.nh.on b{color:var(--brass-hi)}
 .ni.ext b::after{content:" ↗";color:var(--dim);font-weight:400}
-.side-foot{padding:12px 20px;border-top:1px solid var(--line-soft);font-size:11.5px;color:var(--dim)}
+.nh{display:grid;grid-template-columns:26px 1fr auto;gap:9px;align-items:center;padding:5px 10px;border-radius:7px;border-left:2px solid transparent}
+.nh img{width:26px;height:26px;border-radius:50%;object-fit:cover;filter:grayscale(.35);border:1px solid var(--line)}
+.nh b{font-weight:500;font-size:13px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nh small{display:block;font:10.5px var(--mono);color:var(--dim)}
+.nh em{font:normal 11px var(--mono);color:var(--muted)}
+.nh .mbar{grid-column:2/4;height:2px;background:var(--surface-3);border-radius:2px;overflow:hidden;margin-top:-2px}
+.nh .mbar i{display:block;height:100%;background:var(--brass)}
+details.more summary{list-style:none;cursor:pointer}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary.ng::after{content:" +";color:var(--dim)}
+details.more[open] summary.ng::after{content:" −"}
+.side-foot{padding:10px 20px;border-top:1px solid var(--line-soft);font-size:11.5px;color:var(--dim)}
 
 /* ---------- main ---------- */
 .main{margin-left:var(--side);min-height:100vh}
-.top{position:sticky;top:0;z-index:30;background:rgba(13,14,16,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);padding:14px 36px;display:flex;align-items:center;gap:14px}
-.crumbs{font-size:12.5px;color:var(--dim)}
+.top{position:sticky;top:0;z-index:30;background:rgba(13,14,16,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);padding:12px 36px;display:flex;align-items:center;gap:14px}
+.crumbs{font-size:12.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .crumbs a:hover{color:var(--text)}
 .crumbs b{color:var(--muted);font-weight:500}
-.menu-btn{display:none;width:34px;height:34px;border:1px solid var(--line);border-radius:8px}
+.menu-btn{display:none;width:34px;height:34px;border:1px solid var(--line);border-radius:8px;flex:none}
 .top .sp{flex:1}
 .pill{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;white-space:nowrap}
 .pill.br{color:var(--brass-hi);border-color:var(--brass-line);background:var(--brass-soft)}
-.wrap{padding:30px 36px 80px;max-width:1240px}
-.head{margin-bottom:24px}
+.wrap{padding:28px 36px 80px;max-width:1260px}
+.head{margin-bottom:22px}
 .head h1{font:600 30px/1.15 var(--serif);letter-spacing:-.01em}
-.head p{color:var(--muted);margin-top:6px;max-width:720px}
+.head p{color:var(--muted);margin-top:6px;max-width:740px}
 
 /* ---------- blocks ---------- */
 .grid{display:grid;gap:14px}
 .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;min-width:0}
 .card h3{font-size:14px;font-weight:600;margin-bottom:10px}
 .card h3 em{font-style:normal;color:var(--dim);font-weight:400;margin-left:6px}
+a.card:hover{border-color:var(--brass-line)}
 .kpi small{display:block;font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
 .kpi b{display:block;font:600 28px/1.1 var(--serif);margin-top:6px}
 .kpi span{font-size:12px;color:var(--muted)}
-.sec{margin-top:30px}
+.sec{margin-top:28px}
 .sec>h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:10px}
 .sec>h2::after{content:"";flex:1;height:1px;background:var(--line-soft)}
 .bar{height:4px;background:var(--surface-3);border-radius:4px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--brass);border-radius:4px}
-.muted{color:var(--muted)} .dim{color:var(--dim)} .brass{color:var(--brass-hi)}
+.muted{color:var(--muted)} .dim{color:var(--dim)} .brass{color:var(--brass-hi)} .ok{color:var(--ok)}
 .mono{font-family:var(--mono);font-size:12px}
-.tag{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 7px;margin:0 4px 4px 0}
-.btn{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;border:1px solid var(--line);border-radius:7px;padding:6px 11px;color:var(--muted);background:var(--surface-2)}
+.tag{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 7px;margin:0 4px 4px 0;background:none}
+.tag.br{color:var(--brass-hi);border-color:var(--brass-line)}
+.tag.ok{color:var(--ok);border-color:rgba(143,179,138,.4)}
+.btn{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;border:1px solid var(--line);border-radius:7px;padding:6px 11px;color:var(--muted);background:var(--surface-2);white-space:nowrap}
 .btn:hover{border-color:var(--brass-line);color:var(--text)}
 .btn.pri{border-color:var(--brass-line);color:var(--brass-hi);background:var(--brass-soft)}
+.btn.sm{padding:3px 8px;font-size:11.5px}
 .list{list-style:none}
 .list li{padding:8px 0;border-bottom:1px solid var(--line-soft);display:flex;gap:10px}
 .list li:last-child{border-bottom:0}
 .list li::before{content:"";flex:none;width:5px;height:5px;border-radius:50%;background:var(--brass);margin-top:8px}
+.list a:hover{color:var(--brass-hi)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{text-align:left;font-weight:500;color:var(--dim);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:8px 10px;border-bottom:1px solid var(--line)}
 td{padding:10px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+tr[data-go]{cursor:pointer}
 tr:hover td{background:var(--surface-2)}
 .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
 .av{width:36px;height:36px;border-radius:50%;object-fit:cover;filter:grayscale(.35);border:1px solid var(--line)}
 audio{width:100%;height:30px;filter:invert(.88) sepia(.25) hue-rotate(5deg)}
+pre.tx{white-space:pre-wrap;word-break:break-word;font:13.5px/1.65 var(--font);color:var(--text)}
+pre.tpl{white-space:pre-wrap;word-break:break-word;font:12.5px/1.6 var(--mono);color:var(--muted);background:var(--bg);border:1px solid var(--line-soft);border-radius:8px;padding:12px;margin:10px 0}
+.empty{color:var(--dim);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:var(--r)}
+.loading{color:var(--dim);padding:40px 0}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sp1{flex:1}
+
+/* hero header + tabs */
+.hero{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.hero img{width:72px;height:72px;border-radius:50%;object-fit:cover;filter:grayscale(.3);border:1px solid var(--line);flex:none}
+.hero small{font:11px var(--mono);color:var(--brass);letter-spacing:.04em}
+.hero h1{font:600 27px/1.15 var(--serif);margin:2px 0}
+.hero span{font-size:12.5px;color:var(--dim)}
+.ring{margin-left:auto;flex:none;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--brass) calc(var(--p)*1%),var(--surface-3) 0)}
+.ring b{width:52px;height:52px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font:600 15px var(--mono)}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line);margin:0 0 22px;overflow-x:auto;scrollbar-width:none;position:sticky;top:55px;background:var(--bg);z-index:20}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:10px 14px;font-size:13.5px;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs a span{font:11px var(--mono);color:var(--dim);margin-left:5px}
+.tabs a:hover{color:var(--text)}
+.tabs a.on{color:var(--brass-hi);border-bottom-color:var(--brass)}
+
+/* stage pipeline */
+.stages{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stage:hover{border-color:var(--brass-line)}
+.stage small{font:10.5px var(--mono);color:var(--dim);letter-spacing:.04em}
+.stage b{font-size:13px;font-weight:600}
+.stage span{font-size:11.5px;color:var(--dim);line-height:1.35}
+.stage.done{border-color:rgba(143,179,138,.35)}
+.stage.done b{color:var(--ok)}
 
 /* episodes */
-.ep{display:flex;flex-direction:column;gap:12px;transition:border-color .15s}
-.ep:hover{border-color:var(--brass-line)}
+.ep{display:flex;flex-direction:column;gap:10px;transition:border-color .15s}
 .ep-top{display:flex;gap:12px;align-items:center}
-.ep-top img{width:54px;height:54px;border-radius:50%;object-fit:cover;filter:grayscale(.3);border:1px solid var(--line)}
+.ep-top img{width:50px;height:50px;border-radius:50%;object-fit:cover;filter:grayscale(.3);border:1px solid var(--line)}
 .ep-top small{font:11px var(--mono);color:var(--brass)}
 .ep-top b{display:block;font-size:15px}
 .ep-top span{font-size:12px;color:var(--dim)}
 .ep h4{font:500 17px/1.25 var(--serif)}
-.ep q{font-size:12.5px;color:var(--muted);quotes:none;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.ep-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--dim)}
+.ep-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--dim);gap:8px}
+.minis{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.minis i{height:4px;border-radius:2px;background:var(--surface-3);position:relative;overflow:hidden}
+.minis i::after{content:"";position:absolute;inset:0;width:var(--p);background:var(--brass)}
 
 /* filters */
-.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
-.input{flex:1;min-width:220px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px;color:var(--text);font:inherit}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.input{flex:1;min-width:200px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 12px;color:var(--text);font:inherit}
 .input:focus{outline:none;border-color:var(--brass-line)}
 select.input{flex:0 0 auto;min-width:0}
-.chip{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--muted)}
+.chip{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--muted);white-space:nowrap}
+.chip:hover{color:var(--text)}
 .chip.on{border-color:var(--brass-line);color:var(--brass-hi);background:var(--brass-soft)}
+.chip span{font:11px var(--mono);color:var(--dim);margin-left:4px}
+.fl{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-right:2px}
+
+/* VO blocks */
+.vob{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.vob .n{font:600 18px var(--serif);color:var(--brass-hi)}
+.vob .n small{display:block;font:10.5px var(--mono);color:var(--dim);margin-top:2px}
+.vob.rec{border-color:rgba(143,179,138,.3)}
 
 /* media */
-.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
-.th{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.th{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;text-align:left;display:flex;flex-direction:column;min-width:0}
+.th:hover{border-color:var(--brass-line)}
+.th .im{position:relative}
 .th img,.th .ph{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--surface-3)}
-.th div{padding:7px 9px;font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.th div span{color:var(--dim)}
-.veo img,.veo video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:7px;border:1px solid var(--line);margin-bottom:12px;background:var(--surface-3)}
+.th .badge{position:absolute;left:6px;top:6px;font:10px var(--mono);background:rgba(13,14,16,.82);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--muted)}
+.th .badge.pk{color:var(--brass-hi);border-color:var(--brass-line)}
+.th .play{position:absolute;right:6px;bottom:6px;font-size:10px;background:rgba(13,14,16,.82);border-radius:4px;padding:1px 5px;color:var(--text)}
+.th .cap{padding:7px 9px 9px;font-size:12px;line-height:1.35}
+.th .cap b{display:block;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.th .cap span{display:block;color:var(--dim);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.th .cap em{display:block;font-style:normal;color:var(--brass);font-size:11px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.veo img,.veo video,.kf{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:7px;border:1px solid var(--line);margin-bottom:12px;background:var(--surface-3)}
 .veo.done{border-color:var(--brass-line)}
 .q{display:flex;flex-direction:column;gap:10px}
 .q p{font:500 15px/1.5 var(--serif)}
@@ -132,9 +198,20 @@ select.input{flex:0 0 auto;min-width:0}
 .step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;border:1px solid var(--brass-line);color:var(--brass-hi);display:grid;place-items:center;font:12px var(--mono)}
 .step small{font:11px var(--mono);color:var(--brass);letter-spacing:.06em}
 .step b{display:block;margin:2px 0 4px}
-pre.tpl{white-space:pre-wrap;font:12.5px/1.6 var(--mono);color:var(--muted);background:var(--bg);border:1px solid var(--line-soft);border-radius:8px;padding:12px;margin:10px 0}
-.empty{color:var(--dim);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:var(--r)}
-.loading{color:var(--dim);padding:40px 0}
+.pp{border-top:1px solid var(--line-soft);padding-top:10px;margin-top:10px}
+.pp small{font:10.5px var(--mono);color:var(--brass);letter-spacing:.06em;display:flex;justify-content:space-between;align-items:center;gap:8px}
+
+/* modal */
+.mod-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(3px);z-index:80;display:none;align-items:center;justify-content:center;padding:20px}
+.mod-bg.on{display:flex}
+.mod{width:min(980px,100%);max-height:92vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.mod .media{background:#000;display:grid;place-items:center}
+.mod .media video,.mod .media img{max-width:100%;max-height:60vh;width:auto;display:block}
+.mod .body{padding:18px 20px 20px;display:grid;gap:12px}
+.mod .x{position:sticky;top:0;float:right;margin:10px;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);z-index:2}
+.kv{display:grid;grid-template-columns:130px 1fr;gap:6px 14px;font-size:13px}
+.kv dt{color:var(--dim)}
+.kv dd{min-width:0;word-break:break-word}
 
 /* palette */
 .pal-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);z-index:90;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
@@ -150,6 +227,7 @@ pre.tpl{white-space:pre-wrap;font:12.5px/1.6 var(--mono);color:var(--muted);back
 .toast.on{opacity:1;transform:translateX(-50%)}
 .scrim{display:none}
 
+@media (max-width:1180px){.stages{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:1100px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){
   .side{transform:translateX(-100%);transition:transform .2s;width:min(300px,86vw)}
@@ -159,20 +237,26 @@ pre.tpl{white-space:pre-wrap;font:12.5px/1.6 var(--mono);color:var(--muted);back
   .menu-btn{display:grid;place-items:center}
   .top{padding:10px 16px}
   .top .pill{display:none}
-  .wrap{padding:22px 16px 60px}
+  .wrap{padding:20px 16px 60px}
   .head h1{font-size:25px}
+  .hero img{width:54px;height:54px}.hero h1{font-size:21px}.ring{width:52px;height:52px}.ring b{width:42px;height:42px;font-size:13px}
+  .tabs{top:55px;margin:0 -16px 18px;padding:0 8px}
   .g4,.g3,.g2{grid-template-columns:minmax(0,1fr)}
   .g4.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stages{grid-template-columns:repeat(2,minmax(0,1fr))}
   .thumbs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vob{grid-template-columns:minmax(0,1fr)}
+  .kv{grid-template-columns:minmax(0,1fr)}
+  .kv dt{margin-top:6px}
 }
 </style>
 </head>
 <body>
 <aside class="side" id="side">
-  <div class="brand"><small>Cinematic Thoughtcast</small><b>Архітектори Розуму</b><span>AI Titans · Сезон 1 · 10 епізодів</span></div>
+  <div class="brand"><small>Cinematic Thoughtcast</small><b>Архітектори Розуму</b><span>AI Titans · Сезон 1 · 10 героїв</span></div>
   <button class="kbtn" id="openPal" aria-label="Пошук і перехід">Пошук і перехід… <kbd>⌘K</kbd></button>
   <nav id="nav"></nav>
-  <div class="side-foot">Версія Claude · дані з <span class="mono">data/*.js</span></div>
+  <div class="side-foot" id="sideFoot">Версія Claude</div>
 </aside>
 <div class="scrim" id="scrim"></div>
 <div class="main">
@@ -185,18 +269,20 @@ pre.tpl{white-space:pre-wrap;font:12.5px/1.6 var(--mono);color:var(--muted);back
   </header>
   <main class="wrap" id="view"><div class="loading">Завантаження…</div></main>
 </div>
-<div class="pal-bg" id="palBg"><div class="pal" role="dialog" aria-label="Пошук"><input id="palIn" placeholder="Куди перейти? Розділ, герой, або текст для пошуку в цитатах" autocomplete="off"><ul id="palList"></ul></div></div>
+<div class="mod-bg" id="modBg"><div class="mod" role="dialog" aria-label="Медіафайл"><button class="x" id="modX" aria-label="Закрити">✕</button><div id="modIn"></div></div></div>
+<div class="pal-bg" id="palBg"><div class="pal" role="dialog" aria-label="Пошук"><input id="palIn" placeholder="Герой, розділ або текст для пошуку в цитатах" autocomplete="off"><ul id="palList"></ul></div></div>
 <div class="toast" id="toast"></div>
 
-<script src="data/season1_index.js?v=20261112_c1"></script>
-<script src="data/suno_master_pool.js?v=20261112_c1"></script>
-<script src="data/veo_animation_pipeline.js?v=20261112_c1"></script>
-<script src="data/montage_status.js?v=20261112_c1"></script>
+<script src="data/season1_index.js?v=20261112_c2"></script>
+<script src="data/suno_master_pool.js?v=20261112_c2"></script>
+<script src="data/veo_animation_pipeline.js?v=20261112_c2"></script>
+<script src="data/montage_status.js?v=20261112_c2"></script>
+<script src="data/workbench/summary.js?v=20261112_c2"></script>
 <script>
 (function(){
 "use strict";
-var V="20261112_c1";
-var S=window.SEASON1_INDEX||[], SUNO=window.SUNO_MASTER_POOL||[], VEO=window.VEO_ANIMATION_PIPELINE||[], MON=window.MONTAGE_STATUS||{};
+var V="20261112_c2", REPO="tfmshell-cloud/ai-titans-thoughtcast";
+var S=window.SEASON1_INDEX||[], SUNO=window.SUNO_MASTER_POOL||[], VEO=window.VEO_ANIMATION_PIPELINE||[], MON=window.MONTAGE_STATUS||{}, SUM=window.WB_SUMMARY||{eps:{}};
 var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function store(k,v){try{if(v===undefined){var r=localStorage.getItem(k);return r?JSON.parse(r):null}localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
@@ -205,110 +291,192 @@ function copy(txt,label){var done=function(){toast("Скопійовано: "+(l
   if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(done,fb)}else fb();
   function fb(){var a=document.createElement("textarea");a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand("copy");done()}catch(e){}a.remove()}}
 var loaded={};
-function need(file,glob){if(window[glob])return Promise.resolve(window[glob]);if(loaded[file])return loaded[file];
-  loaded[file]=new Promise(function(res,rej){var s=document.createElement("script");s.src="data/"+file+"?v="+V;s.onload=function(){res(window[glob])};s.onerror=rej;document.head.appendChild(s)});return loaded[file]}
+function loadScript(path){if(loaded[path])return loaded[path];
+  loaded[path]=new Promise(function(res,rej){var s=document.createElement("script");s.src="data/"+path+"?v="+V;s.onload=function(){res()};s.onerror=function(){delete loaded[path];rej()};document.head.appendChild(s)});return loaded[path]}
+function need(file,glob){if(window[glob])return Promise.resolve(window[glob]);return loadScript(file).then(function(){return window[glob]})}
+function needWB(ep){if(window.WB&&window.WB[ep])return Promise.resolve(window.WB[ep]);return loadScript("workbench/ep"+ep+".js").then(function(){return window.WB[ep]})}
 function byEp(ep){return S.filter(function(h){return h.ep===ep})[0]}
-
-/* ---- readiness (та сама формула, що й у старому хабі) ---- */
-function heroTracks(ep){var out=[];SUNO.forEach(function(t){if(t.hero_ep===ep)out.push(t);else(t.extra_bins||[]).forEach(function(b){if(b.ep===ep||String(b.smart_bin).indexOf("EP"+ep+"_")===0)out.push(t)})});return out}
-function act1(ep){return SUNO.filter(function(t){return t.hero_ep===ep&&t.smart_bin.indexOf("_ACT1_")>-1})[0]}
-function ready(h){var c=store("aititans_progress_v2_"+h.ep)||{},sopT=h.sop_tasks_count||22,sop=0,vid=0,vo=0;
-  Object.keys(c).forEach(function(k){if(k.indexOf("ep"+h.ep+"_s")===0&&c[k])sop++});
-  for(var i=1;i<=100;i++)if(c["vid_"+i])vid++;
-  var sT=h.suno_count||16,sd=Math.min(sT,(heroTracks(h.ep).length||4)+Object.keys(c).filter(function(k){return/^suno_/.test(k)&&c[k]}).length);
-  var voT=h.vo_count||10;for(var v=0;v<voT;v++)if(c["vo_"+v])vo++;
-  var p=Math.round(sop/sopT*70+vid/100*15+sd/sT*10+vo/voT*5);if(sop===sopT&&sopT>0&&!vid&&!vo)p=100;
-  return{pct:Math.min(100,p),sop:sop,sopT:sopT}}
+function sum(ep){return SUM.eps[ep]||{pct:0,stages:[],next:[],counts:{}}}
+var ON_PAGES=/github\.io$/.test(location.hostname);
+// оригінали медіа: локально — з папки проєкту, на GitHub Pages — з репозиторію
+function mediaURL(p){return ON_PAGES?"https://raw.githubusercontent.com/"+REPO+"/main/"+p.split("/").map(encodeURIComponent).join("/"):"../"+p.split("/").map(encodeURIComponent).join("/")}
+function ghURL(p){return"https://github.com/"+REPO+"/blob/main/"+p.split("/").map(encodeURIComponent).join("/")}
 function veoMap(){var m=store("ai_titans_veo_status");if(m)return m;m={};VEO.forEach(function(v){m[v.id]=!!v.default_done});return m}
+function heroTracks(ep){var out=[];SUNO.forEach(function(t){if(t.hero_ep===ep)out.push(t);else(t.extra_bins||[]).forEach(function(b){if(b.ep===ep||String(b.smart_bin).indexOf("EP"+ep+"_")===0)out.push(t)})});return out}
 
-/* ---- navigation ---- */
-var NAV=[
- {g:"Сезон",items:[
-  {id:"overview",t:"Огляд",d:"Стан сезону й що робити далі"},
-  {id:"episodes",t:"Епізоди",d:"10 героїв, готовність, сторінки"}]},
- {g:"Виробництво",items:[
-  {id:"montage",t:"Монтаж",d:"Режисерська версія EP01 у Resolve"},
-  {id:"veo",t:"Анімація Veo",d:"14 ключових сцен, позначки готовності"},
-  {id:"music",t:"Музика Suno",d:"16 треків 92 BPM з прослуховуванням"},
-  {id:"media",t:"Медіа-сховище",d:"Відео, фото, архіви по героях"}]},
- {g:"Знання",items:[
-  {id:"quotes",t:"Цитати",d:"1000 цитат, пошук і копіювання"},
-  {id:"pipeline",t:"Пайплайн",d:"8 кроків, цехи, 5-денний спринт"},
-  {id:"templates",t:"Шаблони промптів",d:"AI Studio, Veo, Flow, Suno"}]},
- {g:"Інші сторінки",items:[
-  {href:"season1_telemetry_dashboard.html",t:"Телеметрія сезону",d:"Статистика по всіх епізодах"},
-  {href:"media_vault_analysis.html",t:"Аналіз медіа-волту",d:"Посекундний розбір футажів"},
-  {href:"cinematic_innovations.html",t:"20 фішок монтажу",d:"Тріади Google Flow"},
-  {href:"50_scenes_hassabis.html",t:"50 сцен Гассабіса",d:"Біографічні сюжети EP03"},
-  {href:"index_legacy.html",t:"Хаб Antigravity",d:"Попередня версія, збережена"}]}
-];
-function title(id){var r=null;NAV.forEach(function(g){g.items.forEach(function(i){if(i.id===id)r=i})});return r}
-function renderNav(cur){$("#nav").innerHTML=NAV.map(function(g){return'<div class="ng">'+esc(g.g)+'</div>'+g.items.map(function(i){
-  var on=i.id&&(cur===i.id||(cur==="ep"&&i.id==="episodes"));
-  return i.href?'<a class="ni ext" href="'+i.href+'" target="_blank" rel="noopener"><b>'+esc(i.t)+'</b><i>'+esc(i.d)+'</i></a>'
-   :'<a class="ni'+(on?" on":"")+'" href="#/'+i.id+'"><b>'+esc(i.t)+'</b><i>'+esc(i.d)+'</i></a>'}).join("")}).join("")}
+/* ---- навігація ---- */
+var LIB=[
+  {id:"music",t:"Музика Suno",d:"16 треків майстер-бібліотеки"},
+  {id:"veo",t:"Анімація Veo",d:"Ключові сцени сезону"},
+  {id:"media",t:"Медіабаза",d:"Усі файли й розподіл по героях"},
+  {id:"quotes",t:"Цитати",d:"1000 цитат, пошук"}];
+var REF=[
+  {id:"pipeline",t:"Пайплайн",d:"8 кроків, цехи, спринт"},
+  {id:"templates",t:"Шаблони промптів",d:"AI Studio, Veo, Flow, Suno"}];
+var EXT=[
+  {href:"season1_telemetry_dashboard.html",t:"Телеметрія сезону"},
+  {href:"media_vault_analysis.html",t:"Аналіз медіа-волту"},
+  {href:"cinematic_innovations.html",t:"20 фішок монтажу"},
+  {href:"50_scenes_hassabis.html",t:"50 сцен Гассабіса"},
+  {href:"index_legacy.html",t:"Хаб Antigravity (стара версія)"}];
+var TABS=[["overview","Огляд"],["vo","Озвучка"],["anim","Анімація"],["music","Музика"],["media","Медіа"],["docs","Дослідження"],["quotes","Цитати"],["montage","Монтаж"]];
+var TAB_HINT={overview:"етапи й наступні кроки",vo:"тексти ElevenLabs по блоках",anim:"промпти Flow і Veo",music:"промпти Suno і треки",media:"відео, фото, архіви по сценах",docs:"досьє, стенограми, сценарій",quotes:"100 цитат героя",montage:"таймлайн у Resolve"};
+function tabsFor(ep){return TABS.filter(function(t){return t[0]!=="montage"||MON[ep]})}
+function renderNav(cur,ep){
+  var h='<a class="ni'+(cur==="overview"?" on":"")+'" href="#/overview"><b>Огляд сезону</b><i>Готовність і що робити далі</i></a>';
+  h+='<div class="ng">Герої</div>'+S.map(function(e){var p=sum(e.ep).pct;return'<a class="nh'+(ep===e.ep?" on":"")+'" href="#/ep/'+e.ep+'" title="'+esc(e.title)+'"><img src="'+esc(e.avatar)+'" alt="" loading="lazy"><div style="min-width:0"><small>EP'+e.ep+'</small><b>'+esc(e.name)+'</b></div><em>'+p+'%</em><div class="mbar"><i style="width:'+p+'%"></i></div></a>'}).join("");
+  h+='<div class="ng">Бібліотеки сезону</div>'+LIB.map(function(i){return'<a class="ni'+(cur===i.id?" on":"")+'" href="#/'+i.id+'"><b>'+esc(i.t)+'</b><i>'+esc(i.d)+'</i></a>'}).join("");
+  h+='<div class="ng">Довідка</div>'+REF.map(function(i){return'<a class="ni'+(cur===i.id?" on":"")+'" href="#/'+i.id+'"><b>'+esc(i.t)+'</b><i>'+esc(i.d)+'</i></a>'}).join("");
+  h+='<details class="more"><summary class="ng">Інші сторінки</summary>'+EXT.map(function(i){return'<a class="ni ext" href="'+i.href+'" target="_blank" rel="noopener"><b>'+esc(i.t)+'</b></a>'}).join("")+'</details>';
+  $("#nav").innerHTML=h}
 function head(h,p){return'<div class="head"><h1>'+h+'</h1>'+(p?'<p>'+p+'</p>':'')+'</div>'}
 function crumbs(parts){$("#crumbs").innerHTML='<a href="#/overview">Студія</a>'+parts.map(function(p){return' · '+(p.h?'<a href="'+p.h+'">'+esc(p.t)+'</a>':'<b>'+esc(p.t)+'</b>')}).join("")}
+function kpi(a,b,c){return'<div class="card kpi"><small>'+a+'</small><b>'+b+'</b><span>'+c+'</span></div>'}
+function minis(ep){return'<div class="minis" title="'+esc(sum(ep).stages.map(function(s){return s.t+" "+s.pct+"%"}).join(" · "))+'">'+sum(ep).stages.map(function(s){return'<i style="--p:'+s.pct+'%"></i>'}).join("")+'</div>'}
 
-/* ---- views ---- */
+/* ---- огляд сезону ---- */
 var VIEWS={};
 VIEWS.overview=function(){
-  var words=S.reduce(function(a,h){return a+(h.script_words||0)},0), r=S.map(ready), avg=Math.round(r.reduce(function(a,x){return a+x.pct},0)/(S.length||1));
-  var vm=veoMap(), vd=VEO.filter(function(v){return vm[v.id]}).length, m=MON["01"];
-  var h=head("Сезон 1 — огляд","Усе виробництво «Архітекторів Розуму» в одному місці. Ліворуч розділи за етапами роботи; ⌘K — швидкий перехід куди завгодно.");
-  h+='<div class="grid g4 kpis">'+
-   kpi("Епізодів",S.length,"герої від Альтмана до Ина")+
-   kpi("Слів сценарію",words.toLocaleString("uk-UA"),"у всіх 10 сценаріях")+
-   kpi("Анімація Veo",vd+" / "+VEO.length,"ключових сцен готово")+
-   kpi("Середня готовність",avg+"%","за чеклистами епізодів")+'</div>';
-  if(m){h+='<div class="sec"><h2>Зараз у роботі</h2><a class="card" href="#/montage" style="display:block"><div class="ep-top" style="margin-bottom:10px"><img src="'+esc(byEp("01").avatar)+'" alt=""><div><small>EP01 · МОНТАЖ</small><b>'+esc(m.headline)+'</b><span>'+esc(m.full_timeline)+' · '+esc(m.total_duration)+' · '+m.total_shots+' планів · оновлено '+esc(m.updated)+'</span></div></div><p class="muted" style="font-size:13px">'+esc(m.concept)+'</p></a></div>';
-   h+='<div class="sec"><h2>Наступні кроки</h2><div class="card"><ul class="list">'+(m.next||[]).map(function(x){return'<li>'+esc(x)+'</li>'}).join("")+'</ul></div></div>'}
-  h+='<div class="sec"><h2>Готовність по епізодах</h2><div class="tbl"><table><thead><tr><th></th><th>Епізод</th><th>Назва</th><th>Тривалість</th><th style="width:30%">Готовність</th></tr></thead><tbody>'+
-   S.map(function(e,i){return'<tr style="cursor:pointer" data-go="#/ep/'+e.ep+'"><td><img class="av" src="'+esc(e.avatar)+'" alt=""></td><td><span class="mono brass">EP'+e.ep+'</span> '+esc(e.name)+'</td><td class="muted">'+esc(e.title)+'</td><td class="dim">'+esc(e.duration)+'</td><td><div style="display:flex;align-items:center;gap:10px"><div class="bar" style="flex:1"><i style="width:'+r[i].pct+'%"></i></div><span class="mono">'+r[i].pct+'%</span></div></td></tr>'}).join("")+'</tbody></table></div></div>';
-  return h};
-function kpi(a,b,c){return'<div class="card kpi"><small>'+a+'</small><b>'+b+'</b><span>'+c+'</span></div>'}
-
-VIEWS.episodes=function(){
-  return head("Епізоди","Натисни картку — відкриється коротке досьє героя в хабі; звідти — повна сторінка епізоду з чеклистами, промптами й монтажем.")+
-  '<div class="grid g3">'+S.map(function(e){var r=ready(e),t=act1(e.ep);return'<a class="card ep" href="#/ep/'+e.ep+'"><div class="ep-top"><img src="'+esc(e.avatar)+'" alt="'+esc(e.name)+'" loading="lazy"><div><small>EP'+e.ep+' · '+esc(e.archetype)+'</small><b>'+esc(e.name)+'</b><span>'+esc(e.role)+'</span></div></div><h4>'+esc(e.title)+'</h4><q>'+esc(e.key_quote)+'</q><div><div class="ep-meta" style="margin-bottom:6px"><span>'+esc(e.duration)+' · '+esc(e.bpm)+'</span><span class="mono">'+r.pct+'%</span></div><div class="bar"><i style="width:'+r.pct+'%"></i></div></div>'+(t?'<span class="dim" style="font-size:12px">♪ '+esc(t.orig_name.replace(/\.wav$/,""))+'</span>':'')+'</a>'}).join("")+'</div>'};
-
-VIEWS.ep=function(ep){var e=byEp(ep);if(!e)return'<div class="empty">Епізод не знайдено</div>';
-  var r=ready(e),tr=heroTracks(ep),veo=VEO.filter(function(v){return v.ep===ep}),vm=veoMap(),m=MON[ep];
-  var h='<div class="ep-top" style="margin-bottom:20px"><img src="'+esc(e.avatar)+'" alt="" style="width:76px;height:76px"><div><small>EP'+ep+' · '+esc(e.archetype)+'</small><b style="font:600 28px/1.15 var(--serif)">'+esc(e.name)+' — '+esc(e.title)+'</b><span>'+esc(e.role)+'</span></div></div>';
-  h+='<div class="tools"><a class="btn pri" href="'+esc(e.page_url)+'">Відкрити повну сторінку епізоду →</a>'+(m?'<a class="btn" href="'+esc(e.page_url)+'#davinci">Монтаж у DaVinci</a>':'')+'<button class="btn" data-copy="'+esc(e.dossier_path)+'">Шлях до досьє</button></div>';
-  h+='<div class="card" style="margin-bottom:14px"><p style="font:500 18px/1.5 var(--serif)">'+esc(e.key_quote)+'</p></div>';
-  h+='<div class="grid g4 kpis">'+kpi("Готовність",r.pct+"%","SOP "+r.sop+" / "+r.sopT)+kpi("Сценарій",e.script_words,"слів · "+esc(e.wpm))+kpi("Хронометраж",esc(m?m.total_duration:e.duration),m?"змонтовано":"за сценарієм")+kpi("Цитат",e.quotes_count,"у базі героя")+'</div>';
-  h+='<div class="grid g2 sec" style="margin-top:14px"><div class="card"><h3>Музика героя<em>'+tr.length+' треки</em></h3>'+(tr.length?tr.map(function(t){return'<div style="margin-bottom:12px"><div style="font-size:13px">'+esc(t.orig_name.replace(/\.wav$/,""))+' <span class="dim">· '+esc(t.act)+' · '+esc(t.duration)+'</span></div><audio controls preload="none" src="assets/audio_previews/'+esc(t.preview)+'"></audio></div>'}).join(""):'<p class="dim">Треків ще немає</p>')+'</div>';
-  h+='<div class="card"><h3>Голос і ритм</h3><ul class="list"><li>'+esc(e.vo_settings)+'</li><li>Темп диктора: '+esc(e.wpm)+'</li><li>Музична сітка: '+esc(e.bpm)+'</li><li>Дублів озвучки: '+e.vo_count+' · промптів: '+e.prompts_count+'</li></ul></div></div>';
-  if(veo.length)h+='<div class="sec"><h2>Анімація Veo для героя</h2><div class="grid g2">'+veo.map(function(v){return veoCard(v,vm)}).join("")+'</div></div>';
-  if(m)h+='<div class="sec"><h2>Монтаж</h2><a class="card" href="#/montage" style="display:block"><b>'+esc(m.headline)+'</b><p class="muted" style="margin-top:4px">'+esc(m.total_duration)+' · '+m.total_shots+' планів · '+esc(m.project)+'</p></a></div>';
-  h+='<div class="sec"><h2>Цитати</h2><div id="epQuotes" class="loading">Завантаження цитат…</div></div>';
-  setTimeout(function(){need("titans_1000_quotes.js","TITANS_1000_QUOTES").then(function(db){var hq=(db||[]).filter(function(x){return x.ep===ep})[0],el=$("#epQuotes");if(!el)return;
-    var qs=(hq&&hq.quotes_100||[]).slice(0,6);el.className="grid g2";el.innerHTML=qs.map(function(q){return quoteCard(q,e)}).join("")+'<a class="btn" href="#/quotes?ep='+ep+'" style="justify-self:start">Усі '+(hq?hq.quotes_100.length:0)+' цитат героя →</a>'})},0);
+  var avg=Math.round(S.reduce(function(a,e){return a+sum(e.ep).pct},0)/(S.length||1)), m=MON["01"], pool=SUM.pool||{};
+  var h=head("Сезон 1 — огляд","Обери героя в меню ліворуч — відкриється його робочий стіл: озвучка для ElevenLabs, промпти анімації, музика, медіа по сценах і дослідження. ⌘K — швидкий перехід куди завгодно.");
+  h+='<div class="grid g4 kpis">'+kpi("Середня готовність",avg+"%","за реальними файлами, 7 етапів")+kpi("Медіа в базі",(SUM.media_total||0).toLocaleString("uk-UA"),"відео й зображень у проєкті")+kpi("Підібрано по сценах",(pool.pick||0)+(pool.hero||0),"з бази в наступні епізоди")+kpi("Блоків озвучки",S.reduce(function(a,e){return a+(sum(e.ep).counts.vo_blocks||0)},0),"готові тексти для ElevenLabs")+'</div>';
+  if(m){var e1=byEp("01");h+='<div class="sec"><h2>Зараз у роботі</h2><a class="card" href="#/ep/01/montage" style="display:block"><div class="ep-top" style="margin-bottom:10px"><img src="'+esc(e1.avatar)+'" alt=""><div><small>EP01 · '+sum("01").pct+'% · МОНТАЖ ЗІБРАНО</small><b>'+esc(m.headline)+'</b><span>'+esc(m.full_timeline)+' · '+esc(m.total_duration)+' · '+m.total_shots+' планів · оновлено '+esc(m.updated)+'</span></div></div><p class="muted" style="font-size:13px">Залишилось: '+esc((m.next||[]).join(" · "))+'</p></a></div>'}
+  h+='<div class="sec"><h2>Герої</h2><div class="grid g3">'+S.map(function(e){var s=sum(e.ep),n=(s.next||[])[0];return'<a class="card ep" href="#/ep/'+e.ep+'"><div class="ep-top"><img src="'+esc(e.avatar)+'" alt="'+esc(e.name)+'" loading="lazy"><div><small>EP'+e.ep+' · '+esc(e.archetype)+'</small><b>'+esc(e.name)+'</b><span>'+esc(e.title)+'</span></div></div><div><div class="ep-meta" style="margin-bottom:6px"><span>'+esc(e.duration)+' · '+(s.counts.media||0)+' медіа · '+(s.counts.vo_blocks||0)+' блоків VO</span><span class="mono brass">'+s.pct+'%</span></div>'+minis(e.ep)+'</div>'+(n?'<span class="dim" style="font-size:12px">Далі: '+esc(n.t)+'</span>':'')+'</a>'}).join("")+'</div></div>';
+  h+='<p class="dim" style="font-size:12px;margin-top:18px">Етапи готовності: дослідження 5 · сценарій 10 · озвучка 15 · музика 10 · візуал 20 · монтаж 30 · рендер 10. Дані оновлено '+esc(SUM.generated||"")+' скриптом <span class="mono">08_AUTOMATION/build_episode_workbench.py</span>.</p>';
   return h};
 
-VIEWS.montage=function(){var m=MON["01"],e=byEp("01");if(!m)return head("Монтаж","")+'<div class="empty">Стан монтажу ще не згенеровано</div>';
-  var h=head("Монтаж — EP01 · "+esc(e.name),esc(m.headline)+". Проєкт "+esc(m.project)+", таймлайн <span class=\"mono\">"+esc(m.full_timeline)+"</span>.");
-  h+='<div class="grid g4 kpis">'+kpi("Хронометраж",esc(m.total_duration),"повний епізод")+kpi("Планів",m.total_shots,"у 4 актах")+kpi("Актів",(m.acts||[]).length,"окремі таймлайни + FULL")+kpi("Оновлено",esc(String(m.updated).split(" ")[1]||""),esc(String(m.updated).split(" ")[0]))+'</div>';
-  h+='<div class="card sec"><h3>Концепція</h3><p class="muted">'+esc(m.concept)+'</p></div>';
+/* ---- робочий стіл героя ---- */
+function heroHead(e,tab){var s=sum(e.ep);
+  return'<div class="hero"><img src="'+esc(e.avatar)+'" alt=""><div style="min-width:0"><small>EP'+e.ep+' · '+esc(e.archetype)+' · '+esc(e.duration)+'</small><h1>'+esc(e.name)+' — '+esc(e.title)+'</h1><span>'+esc(e.role)+'</span></div><div class="ring" style="--p:'+s.pct+'" title="Готовність епізоду"><b>'+s.pct+'%</b></div></div>'+
+  '<nav class="tabs">'+tabsFor(e.ep).map(function(t){var c=s.counts||{},n={vo:c.vo_blocks,anim:c.prompts,music:c.music,media:c.media,docs:c.docs}[t[0]];
+    return'<a href="#/ep/'+e.ep+'/'+t[0]+'" class="'+(t[0]===tab?"on":"")+'" title="'+esc(TAB_HINT[t[0]])+'">'+t[1]+(n?'<span>'+n+'</span>':'')+'</a>'}).join("")+'</nav>'}
+VIEWS.ep=function(r){var ep=r.arg,e=byEp(ep);if(!e)return'<div class="empty">Епізод не знайдено</div>';
+  var tab=r.tab||"overview";if(!TAB_VIEWS[tab]||(tab==="montage"&&!MON[ep]))tab="overview";
+  var h=heroHead(e,tab)+'<div id="tab"><div class="loading">Завантаження робочого столу…</div></div>';
+  setTimeout(function(){needWB(ep).then(function(wb){var el=$("#tab");if(!el||curRoute.arg!==ep)return;el.innerHTML=TAB_VIEWS[tab](e,wb,r.q);(TAB_AFTER[tab]||function(){})(e,wb,r.q)}).catch(function(){var el=$("#tab");if(el)el.innerHTML='<div class="empty">Не вдалося завантажити data/workbench/ep'+ep+'.js</div>'})},0);
+  return h};
+var TAB_VIEWS={},TAB_AFTER={};
+
+TAB_VIEWS.overview=function(e,wb){var s=sum(e.ep),ep=e.ep,m=MON[ep];
+  var h='<div class="stages">'+s.stages.map(function(st,i){return'<a class="stage'+(st.pct>=100?" done":"")+'" href="#/ep/'+ep+'/'+st.tab+'"><small>'+(i+1)+' · ВАГА '+st.w+'</small><b>'+esc(st.t)+' '+(st.pct>=100?"✓":st.pct+"%")+'</b><div class="bar"><i style="width:'+st.pct+'%"></i></div><span>'+esc(st.d)+'</span></a>'}).join("")+'</div>';
+  h+='<div class="grid g2 sec"><div class="card"><h3>Що робити далі</h3>'+(s.next.length?'<ul class="list">'+s.next.map(function(n){return'<li><a href="#/ep/'+ep+'/'+n.tab+'">'+esc(n.t)+' →</a></li>'}).join("")+'</ul>':'<p class="dim">Усе готово</p>')+'</div>';
+  h+='<div class="card"><h3>Головна цитата</h3><p style="font:500 17px/1.5 var(--serif)">'+esc(e.key_quote)+'</p></div></div>';
+  h+='<div class="grid g4 kpis sec">'+kpi("Озвучка",(s.counts.vo_rec||0)+" / "+(s.counts.vo_blocks||0),"блоків записано")+kpi("Медіа",s.counts.media||0,(s.counts.own||0)+" власних · "+(s.counts.picked||0)+" з бази")+kpi("Промпти",(s.counts.prompts||0)+(s.counts.triads?" + "+s.counts.triads:""),"кадрів"+(s.counts.triads?" + тріад Flow":""))+kpi("Музика",(s.counts.music_have||0)+" / "+(s.counts.music||0),"треків у бінах")+'</div>';
+  h+='<div class="grid g2 sec"><div class="card"><h3>Акти</h3><ul class="list">'+(wb.acts||[]).map(function(a){return'<li><div><b>Акт '+esc(a.n)+'. '+esc(a.t)+'</b> <span class="dim mono">'+esc(a.time)+'</span><div class="dim" style="font-size:12px">'+esc(a.music)+'</div></div></li>'}).join("")+'</ul></div>';
+  h+='<div class="card"><h3>Візуальний ключ</h3><p class="muted" style="font-size:13px">'+esc(wb.visual_key)+'</p><div class="kv" style="margin-top:12px"><dt>Оптика</dt><dd>'+esc(wb.lens)+'</dd><dt>Голос</dt><dd>'+esc(wb.vo.settings_hero)+'</dd><dt>Темп</dt><dd>'+esc(wb.vo.tone||e.wpm)+'</dd><dt>Сітка</dt><dd>'+esc(e.bpm)+'</dd><dt>Імена файлів</dt><dd class="mono">'+esc(wb.bin_rule)+'</dd></div><div class="tools" style="margin:14px 0 0"><a class="btn" href="'+esc(e.page_url)+'">Стара сторінка епізоду (чеклисти SOP) →</a></div></div></div>';
+  if(m)h+='<div class="sec"><h2>Монтаж</h2><a class="card" href="#/ep/'+ep+'/montage" style="display:block"><b>'+esc(m.headline)+'</b><p class="muted" style="margin-top:4px">'+esc(m.total_duration)+' · '+m.total_shots+' планів · '+esc(m.project)+'</p></a></div>';
+  return h};
+
+/* озвучка ElevenLabs */
+function pad(n){return(n<10?"0":"")+n}
+function voName(ep,lang,i,b){return"EP"+ep+"_VO_"+lang+"_"+pad(i)+"_"+b.start.replace(":","_")+"_"+b.end.replace(":","_")+".mp3"}
+TAB_VIEWS.vo=function(e,wb,q){var lang=(q.lang==="EN"&&wb.vo.en)?"EN":"UA",doc=lang==="EN"?wb.vo.en:wb.vo.ua,ep=e.ep;
+  if(!doc)return'<div class="empty">Текст для ElevenLabs ще не підготовлено</div>';
+  var bl=doc.blocks,rec=bl.filter(function(b){return b.rec&&b.rec.length}).length,words=bl.reduce(function(a,b){return a+b.words},0),st=doc.settings||{};
+  var h='<div class="grid g2"><div class="card"><h3>Налаштування ElevenLabs</h3><div class="kv"><dt>Модель</dt><dd>'+esc(st.Standard||"Multilingual v2")+'</dd><dt>Темп і голос</dt><dd>'+esc(st["Speed Calibration"]||"")+'</dd><dt>Профіль героя</dt><dd>'+esc(wb.vo.settings_hero)+'</dd><dt>Подача</dt><dd>'+esc(wb.vo.tone)+'</dd><dt>Синхронізація</dt><dd>'+esc(st["Metronome Sync"]||"")+'</dd></div></div>';
+  h+='<div class="card"><h3>Як працювати</h3><ul class="list"><li>Копіюй блок → встав у ElevenLabs → згенеруй.</li><li>Збережи файл під назвою з кнопки «Назва файлу» в папку <span class="mono">03_AUDIO/voiceover/EP'+ep+'_…/</span></li><li>Після перезбору даних блок позначиться як записаний, а етап «Озвучка» оновиться.</li></ul></div></div>';
+  h+='<div class="tools sec">'+(wb.vo.en?[["UA","Українська"],["EN","English"]].map(function(x){return'<a class="chip'+(lang===x[0]?" on":"")+'" href="#/ep/'+ep+'/vo?lang='+x[0]+'">'+x[1]+'</a>'}).join(""):'<span class="chip on">Українська</span>')+
+    '<span class="dim" style="font-size:12.5px">'+bl.length+' блоків · '+words+' слів · записано '+rec+' / '+bl.length+'</span><span class="sp1"></span><button class="btn pri" data-vo-all="'+lang+'">Копіювати весь текст</button><button class="btn" data-copy="'+esc(doc.file)+'">Шлях до файлу</button></div>';
+  h+='<div class="grid">'+bl.map(function(b,i){var n=i+1,r=b.rec&&b.rec.length;return'<div class="card vob'+(r?" rec":"")+'"><div class="n">'+pad(n)+'<small>'+esc(b.tc)+'</small></div><div style="min-width:0"><div class="row" style="margin-bottom:8px"><span class="tag">'+b.words+' слів</span>'+(r?'<span class="tag ok">✓ записано</span>':'<span class="tag br">треба записати</span>')+'<span class="sp1"></span><button class="btn sm pri" data-vo="'+lang+'|'+i+'">Копіювати блок</button><button class="btn sm" data-copy="'+esc(voName(ep,lang,n,b))+'">Назва файлу</button></div><pre class="tx">'+esc(b.text)+'</pre>'+(b.play?'<audio controls preload="none" src="'+esc(b.play)+'" style="margin-top:10px"></audio>':'')+(r?'<div class="dim mono" style="font-size:11px;margin-top:6px">'+esc(b.rec[0])+'</div>':'')+'</div></div>'}).join("")+'</div>';
+  return h};
+
+/* анімація */
+function actNum(a){var m=String(a||"").match(/(\d)/);return m?m[1]:""}
+TAB_VIEWS.anim=function(e,wb,q){var ep=e.ep,tr=wb.triads||[],pr=wb.prompts||[],veo=VEO.filter(function(v){return v.ep===ep}),vm=veoMap();
+  var sub=q.sub||(tr.length?"triads":"prompts"),act=q.act||"";
+  var subs=[["triads","Тріади Flow",tr.length],["prompts","100 покадрових промптів",pr.length],["veo","Ключові сцени Veo",veo.length]].filter(function(x){return x[2]});
+  var h='<div class="tools">'+subs.map(function(x){return'<a class="chip'+(sub===x[0]?" on":"")+'" href="#/ep/'+ep+'/anim?sub='+x[0]+'">'+x[1]+'<span>'+x[2]+'</span></a>'}).join("")+'</div>';
+  if(sub==="veo")return h+'<div class="grid g2">'+veo.map(function(v){return veoCard(v,vm)}).join("")+'</div>';
+  h+='<div class="tools"><span class="fl">Акт</span>'+["","1","2","3","4"].map(function(a){return'<a class="chip'+(act===a?" on":"")+'" href="#/ep/'+ep+'/anim?sub='+sub+(a?"&act="+a:"")+'">'+(a?"Акт "+a:"Усі")+'</a>'}).join("")+'<input class="input" id="aS" placeholder="Пошук у промптах і репліках…"></div><div id="aG"></div>';
+  return h};
+TAB_AFTER.anim=function(e,wb,q){var ep=e.ep,tr=wb.triads||[],pr=wb.prompts||[],sub=q.sub||(tr.length?"triads":"prompts"),act=q.act||"";if(sub==="veo")return;
+  function draw(){var s=($("#aS")||{value:""}).value.trim().toLowerCase(),g=$("#aG");if(!g)return;
+    if(sub==="triads"){var f=tr.map(function(t,i){return[t,i]}).filter(function(x){var t=x[0];return(!act||actNum(t.act)===act)&&(!s||(t.t+" "+t.vo+" "+t.p1+" "+t.p2+" "+t.p3).toLowerCase().indexOf(s)>-1)});
+      g.className="grid g2";g.innerHTML=f.map(function(x){var t=x[0],i=x[1];return'<div class="card">'+(t.kf?'<img class="kf" src="'+esc(t.kf)+'" alt="" loading="lazy">':'')+'<div class="ep-meta"><span class="mono brass">ТРІАДА '+esc(t.num)+' · '+esc(t.tc)+'</span><span>'+esc(t.act)+'</span></div><h4 style="font:500 16px/1.35 var(--serif);margin:6px 0">'+esc(t.t)+'</h4><p class="dim" style="font-size:12.5px">'+esc(t.vo)+'</p>'+
+        [["p1","1 · Старт (Veo / Flow)"],["p2","2 · Рух (Flow)"],["p3","3 · Фінал"]].map(function(p){return t[p[0]]?'<div class="pp"><small>'+p[1]+'<button class="btn sm" data-tr="'+i+'|'+p[0]+'">Копіювати</button></small><pre class="tpl" style="margin:6px 0 0">'+esc(t[p[0]])+'</pre></div>':''}).join("")+
+        (t.dv?'<div class="pp"><small>DAVINCI</small><p class="muted" style="font-size:12.5px;margin-top:4px">'+esc(t.dv)+'</p></div>':'')+'<div class="tools" style="margin:10px 0 0"><button class="btn pri" data-tr="'+i+'|all">Копіювати тріаду</button></div></div>'}).join("")||'<div class="empty">Нічого не знайдено</div>'}
+    else{var f2=pr.map(function(p,i){return[p,i]}).filter(function(x){var p=x[0];return(!act||String(p.act)===act)&&(!s||(p.p+" "+p.cue+" "+p.f).toLowerCase().indexOf(s)>-1)});
+      g.className="grid g2";g.innerHTML=f2.map(function(x){var p=x[0],i=x[1];return'<div class="card"><div class="ep-meta"><span class="mono brass">№'+esc(p.num)+' · АКТ '+esc(p.act)+' · '+esc(p.tc)+'</span>'+(p.key?'<span class="tag br">ключовий</span>':'')+'</div><p style="font:500 14.5px/1.45 var(--serif);margin:8px 0">'+esc(p.cue)+'</p><pre class="tpl">'+esc(p.p)+'</pre><div class="row"><button class="btn sm pri" data-pr="'+i+'">Копіювати промпт</button><button class="btn sm" data-copy="'+esc(p.f)+'">Назва файлу</button><a class="btn sm" href="#/ep/'+ep+'/media?scene='+esc(p.num)+'">Медіа для сцени</a></div></div>'}).join("")||'<div class="empty">Нічого не знайдено</div>'}}
+  var inp=$("#aS");if(inp)inp.addEventListener("input",draw);draw()};
+function veoCard(v,vm){var d=!!vm[v.id];return'<div class="card veo'+(d?" done":"")+'">'+(d&&v.video_preview?'<video src="'+esc(v.video_preview)+'" controls loop muted playsinline preload="metadata" poster="'+esc(v.web_preview)+'"></video>':'<img src="'+esc(v.web_preview)+'" alt="" loading="lazy">')+
+ '<div class="ep-meta"><span class="mono brass">'+esc(v.id)+' · EP'+esc(v.ep)+'</span><span>'+esc(v.tc)+' · '+esc(v.duration)+'</span></div><h4 style="font:500 16px/1.35 var(--serif);margin:6px 0">'+esc(v.title)+'</h4><div class="dim" style="font-size:12px;margin-bottom:10px">'+esc(v.hero)+' · '+esc(v.act)+'</div><div class="tools" style="margin:0"><button class="btn'+(d?" pri":"")+'" data-veo="'+esc(v.id)+'">'+(d?"✓ Готово":"Позначити готовим")+'</button><button class="btn" data-copyveo="'+esc(v.id)+'">Копіювати промпт</button></div></div>'}
+
+/* музика героя */
+TAB_VIEWS.music=function(e,wb){var mu=wb.music||[],have=mu.filter(function(m){return m.have}).length;
+  var h='<p class="muted" style="margin-bottom:14px">'+have+' з '+mu.length+' треків уже лежать у бінах <span class="mono">03_AUDIO/suno_stems/</span>. Решту генеруй у Suno за промптом і зберігай під вказаною назвою.</p>';
+  return h+'<div class="grid g2">'+mu.map(function(m,i){return'<div class="card"><div class="ep-meta"><span class="mono brass">'+esc(m.cat)+' · '+esc(m.act)+'</span>'+(m.have?'<span class="tag ok">✓ є файл</span>':'<span class="tag br">згенерувати</span>')+'</div><h4 style="font:500 17px/1.3 var(--serif);margin:6px 0 4px">'+esc(m.t)+'</h4><div class="dim" style="font-size:12px;margin-bottom:8px">'+esc(m.track)+'</div>'+(m.prev?'<audio controls preload="none" src="'+esc(m.prev)+'"></audio><div class="dim" style="font-size:11.5px;margin:2px 0 6px">Прев\'ю: '+esc(m.orig)+'</div>':'')+'<pre class="tpl">'+esc(m.prompt)+'</pre><div class="row"><button class="btn sm pri" data-mu="'+i+'">Копіювати промпт Suno</button><button class="btn sm" data-copy="'+esc(m.f)+'">Назва файлу</button></div></div>'}).join("")+'</div>'};
+
+/* медіа героя */
+var KIND=[["","Усе"],["vid","Відео"],["img","Фото й кадри"],["archive","Архіви"],["doc","Документи"],["graphic","Титри й картки"]];
+function kindOk(x,k){if(!k)return true;if(k==="vid")return x.v&&x.k!=="archive";if(k==="img")return!x.v&&(x.k==="ai"||x.k==="flowimg"||x.k==="still"||x.k==="photo");return x.k===k}
+var WHY={own:"Власні",pick:"Підібрано з бази",hero:"Герой згадується"};
+TAB_VIEWS.media=function(e,wb,q){var ep=e.ep,md=wb.media||[],src=q.src||"",k=q.k||"",act=q.act||"";
+  function link(o){var p={src:src,k:k,act:act};for(var x in o)p[x]=o[x];var s=Object.keys(p).filter(function(x){return p[x]}).map(function(x){return x+"="+encodeURIComponent(p[x])}).join("&");return"#/ep/"+ep+"/media"+(s?"?"+s:"")}
+  function cnt(f){return md.filter(f).length}
+  var h='<div class="tools"><span class="fl">Джерело</span>'+[["","Усе"],["own","Власні"],["pick","Підібрано з бази"],["hero","Герой згадується"]].map(function(x){var n=cnt(function(m){return!x[0]||m.why===x[0]});return n||!x[0]?'<a class="chip'+(src===x[0]?" on":"")+'" href="'+link({src:x[0]})+'">'+x[1]+'<span>'+n+'</span></a>':''}).join("")+'</div>';
+  h+='<div class="tools"><span class="fl">Тип</span>'+KIND.map(function(x){var n=cnt(function(m){return kindOk(m,x[0])});return n||!x[0]?'<a class="chip'+(k===x[0]?" on":"")+'" href="'+link({k:x[0]})+'">'+x[1]+'<span>'+n+'</span></a>':''}).join("")+'<span class="fl" style="margin-left:8px">Акт</span>'+["","1","2","3","4"].map(function(a){return'<a class="chip'+(act===a?" on":"")+'" href="'+link({act:a})+'">'+(a||"Усі")+'</a>'}).join("")+'</div>';
+  if(q.scene)h+='<div class="tools"><span class="chip on">Сцена №'+esc(q.scene)+'</span><a class="btn sm" href="#/ep/'+ep+'/media">Скинути</a></div>';
+  h+='<div class="tools"><input class="input" id="mS" placeholder="Пошук за назвою, сценою, ключовим словом…"><span class="dim" id="mC" style="font-size:12.5px"></span></div><div class="thumbs" id="mG"></div><div style="text-align:center;margin-top:16px"><button class="btn" id="mM">Показати ще</button></div>';
+  if(e.ep!=="01")h+='<p class="dim" style="font-size:12px;margin-top:14px">«Підібрано з бази» — файли з загальної медіабази (ШІ-генерації, Flow, наукові анімації, кадри інших епізодів і SSD), чиї назви й поняття збігаються з промптами конкретних сцен цього сценарію. Біля кожного — акт, таймкод і репліка, під яку він підходить.</p>';
+  return h};
+TAB_AFTER.media=function(e,wb,q){var md=wb.media||[],src=q.src||"",k=q.k||"",act=q.act||"",shown=60;
+  var base=md.filter(function(x){return(!src||x.why===src)&&kindOk(x,k)&&(!act||(x.sc&&actNum(x.sc.act)===act))&&(!q.scene||(x.sc&&String(x.sc.num)===String(q.scene)&&x.sc.t==="prompt"))});
+  function draw(){var s=$("#mS").value.trim().toLowerCase(),f=base.filter(function(x){return!s||(x.n+" "+x.f+" "+x.c+" "+(x.sc?(x.sc.cue+" "+(x.sc.kw||[]).join(" ")):"")+" "+(x.use||"")).toLowerCase().indexOf(s)>-1});
+    $("#mC").textContent=f.length+" файлів";
+    $("#mG").innerHTML=f.slice(0,shown).map(function(x){var i=md.indexOf(x),sc=x.sc;return'<button class="th" data-media="'+i+'"><div class="im">'+(x.t?'<img src="'+esc(x.t)+'" alt="" loading="lazy">':'<div class="ph"></div>')+'<span class="badge'+(x.why!=="own"?" pk":"")+'">'+esc(x.why==="own"?x.c:WHY[x.why])+'</span>'+(x.v?'<span class="play">▶ '+esc(x.d||"відео")+'</span>':'')+'</div><div class="cap"><b title="'+esc(x.n)+'">'+esc(x.n)+'</b><span>'+esc(x.why==="own"?(x.r||x.mb+" МБ"):x.c)+'</span>'+(sc&&(sc.act||sc.tc)?'<em>'+esc([sc.act,sc.tc].filter(Boolean).join(" · "))+(sc.cue?" — "+esc(sc.cue):"")+'</em>':'')+'</div></button>'}).join("")||'<div class="empty" style="grid-column:1/-1">Нічого не знайдено</div>';
+    $("#mM").style.display=f.length>shown?"":"none"}
+  $("#mS").addEventListener("input",function(){shown=60;draw()});$("#mM").addEventListener("click",function(){shown+=60;draw()});draw()};
+function openMedia(ep,i){var x=window.WB[ep].media[i];if(!x)return;var u=mediaURL(x.p),sc=x.sc;
+  var pv=x.v?'<video controls playsinline preload="metadata" poster="'+esc(x.t||"")+'" src="'+esc(u)+'"></video>':'<img src="'+esc(u)+'" alt="">';
+  var h='<div class="media" id="modMedia">'+pv+'</div><div class="body"><div><div class="mono brass" style="font-size:11px">'+esc(WHY[x.why]||"")+' · '+esc(x.c)+'</div><h3 style="font:500 20px/1.3 var(--serif);margin-top:4px">'+esc(x.n)+'</h3></div>';
+  h+='<dl class="kv">';
+  if(sc&&(sc.act||sc.tc||sc.cue))h+='<dt>Де використати</dt><dd><b>'+esc([sc.act,sc.tc].filter(Boolean).join(" · "))+'</b>'+(sc.t==="prompt"?' · сцена №'+esc(sc.num):sc.t==="triad"?' · тріада '+esc(sc.num):'')+(sc.cue?'<div class="muted">'+esc(sc.cue)+'</div>':'')+(sc.kw&&sc.kw.length||sc.cn&&sc.cn.length?'<div style="margin-top:4px">'+(sc.kw||[]).map(function(w){return'<span class="tag">'+esc(w)+'</span>'}).join("")+(sc.cn||[]).map(function(w){return'<span class="tag br">#'+esc(w)+'</span>'}).join("")+'</div>':'')+'</dd>';
+  if(x.use)h+='<dt>Примітка</dt><dd class="muted">'+esc(x.use)+'</dd>';
+  h+='<dt>Файл</dt><dd class="mono" style="font-size:11.5px">'+esc(x.p)+'</dd><dt>Параметри</dt><dd>'+esc([x.d,x.r,x.mb+" МБ"].filter(Boolean).join(" · "))+'</dd>';
+  if(x.src)h+='<dt>Джерело</dt><dd>'+(x.url?'<a class="brass" href="'+esc(x.url)+'" target="_blank" rel="noopener">'+esc(x.src)+' ↗</a>':esc(x.src))+'</dd>';
+  h+='</dl><div class="row"><button class="btn pri" data-copy="'+esc(x.p)+'">Копіювати шлях</button><a class="btn" href="'+esc(u)+'" target="_blank" rel="noopener">Відкрити оригінал ↗</a></div><p class="dim" id="modNote" style="font-size:12px"></p></div>';
+  $("#modIn").innerHTML=h;$("#modBg").classList.add("on");
+  var el=$("#modMedia video,#modMedia img");if(el)el.addEventListener("error",function(){$("#modMedia").innerHTML=x.t?'<img src="'+esc(x.t)+'" alt="">':'';$("#modNote").textContent=ON_PAGES?"Оригінал ще не опубліковано на GitHub — показано мініатюру.":"Оригінал не знайдено за відносним шляхом. Відкрий хаб через сервер із коренем репозиторію або з папки проєкту."},true)}
+function closeMod(){$("#modBg").classList.remove("on");$("#modIn").innerHTML=""}
+
+/* дослідження */
+TAB_VIEWS.docs=function(e,wb){var g={};(wb.docs||[]).forEach(function(d){(g[d.c]=g[d.c]||[]).push(d)});
+  var order=["Досьє","Сценарій / озвучка","Промпти","Стенограма","Стаття","Першоджерело"];
+  return'<p class="muted" style="margin-bottom:14px">Посилання відкривають файл на GitHub (Markdown показується відформатованим). Кнопка «шлях» копіює розташування в проєкті.</p><div class="grid g2">'+order.filter(function(c){return g[c]}).map(function(c){return'<div class="card"><h3>'+esc(c)+'<em>'+g[c].length+'</em></h3><ul class="list">'+g[c].map(function(d){return'<li><div style="min-width:0;flex:1"><a href="'+esc(ghURL(d.p))+'" target="_blank" rel="noopener">'+esc(d.n)+' ↗</a><div class="dim mono" style="font-size:11px">'+d.kb+' КБ</div></div><button class="btn sm" data-copy="'+esc(d.p)+'">шлях</button></li>'}).join("")+'</ul></div>'}).join("")+'</div>'};
+
+/* цитати героя */
+TAB_VIEWS.quotes=function(e){return'<div id="hq" class="loading">Завантаження цитат…</div>'};
+TAB_AFTER.quotes=function(e){need("titans_1000_quotes.js","TITANS_1000_QUOTES").then(function(db){var hq=(db||[]).filter(function(x){return x.ep===e.ep})[0],el=$("#hq");if(!el)return;
+  el.className="";el.innerHTML='<div class="tools"><input class="input" id="hqs" placeholder="Пошук у цитатах героя…"><a class="btn" href="#/quotes?ep='+e.ep+'">Усі цитати сезону →</a></div><div class="grid g2" id="hqg"></div>';
+  function draw(){var s=$("#hqs").value.trim().toLowerCase();$("#hqg").innerHTML=(hq?hq.quotes_100:[]).filter(function(q){return!s||(q.text+" "+q.cat).toLowerCase().indexOf(s)>-1}).map(function(q){return quoteCard(q,e)}).join("")||'<div class="empty">Нічого не знайдено</div>'}
+  $("#hqs").addEventListener("input",draw);draw()})};
+
+/* монтаж */
+TAB_VIEWS.montage=function(e){var m=MON[e.ep];if(!m)return'<div class="empty">Монтаж ще не почато</div>';
+  var h='<div class="grid g4 kpis">'+kpi("Хронометраж",esc(m.total_duration),"повний епізод")+kpi("Планів",m.total_shots,"у 4 актах")+kpi("Актів",(m.acts||[]).length,"окремі таймлайни + FULL")+kpi("Оновлено",esc(String(m.updated).split(" ")[1]||""),esc(String(m.updated).split(" ")[0]))+'</div>';
+  h+='<div class="grid g2 sec"><div class="card"><h3>Що залишилось</h3><ul class="list">'+(m.next||[]).map(function(x){return'<li>'+esc(x)+'</li>'}).join("")+'</ul></div><div class="card"><h3>Концепція</h3><p class="muted">'+esc(m.concept)+'</p><p class="dim mono" style="margin-top:10px">'+esc(m.project)+' · '+esc(m.full_timeline)+'</p></div></div>';
   h+='<div class="sec"><h2>Акти</h2><div class="grid g2">'+(m.acts||[]).map(function(a){return'<div class="card"><div class="ep-meta"><span class="mono brass">АКТ '+esc(a.act)+'</span><span>'+esc(a.start)+' · '+esc(a.duration)+' · '+a.shots+' планів</span></div><h4 style="font:500 18px/1.3 var(--serif);margin:6px 0 10px">'+esc(a.title)+'</h4><div class="dim mono" style="margin-bottom:8px">'+esc(a.timeline)+'</div>'+(a.music?'<div style="font-size:12.5px;margin-bottom:8px">♪ <span class="muted">'+esc(a.music)+'</span></div>':'')+'<ul class="list">'+(a.markers||[]).map(function(x){return'<li>'+esc(x)+'</li>'}).join("")+'</ul></div>'}).join("")+'</div></div>';
   h+='<div class="grid g2 sec"><div class="card"><h3>Звукорежисура</h3><ul class="list">'+(m.audio||[]).map(function(x){return'<li>'+esc(x)+'</li>'}).join("")+'</ul></div><div class="card"><h3>Виправлено</h3><ul class="list">'+(m.fixes||[]).map(function(x){return'<li>'+esc(x)+'</li>'}).join("")+'</ul></div></div>';
   var ce=m.cross_episode||{};h+='<div class="sec"><h2>Матеріали з інших епізодів</h2><div class="card">'+Object.keys(ce).map(function(k){var x=byEp(k);return'<div style="margin-bottom:10px"><b class="mono brass">EP'+k+'</b> <span class="muted">'+esc(x?x.name:"")+'</span><div style="margin-top:4px">'+ce[k].map(function(f){return'<span class="tag">'+esc(f)+'</span>'}).join("")+'</div></div>'}).join("")+'</div></div>';
   h+='<div class="sec"><h2>Скрипти збірки</h2><div class="card">'+(m.scripts||[]).map(function(s){return'<button class="tag mono" data-copy="'+esc(s)+'">'+esc(s)+'</button>'}).join("")+'</div></div>';
   return h};
 
-function veoCard(v,vm){var d=!!vm[v.id];return'<div class="card veo'+(d?" done":"")+'">'+(d&&v.video_preview?'<video src="'+esc(v.video_preview)+'" controls loop muted playsinline preload="metadata" poster="'+esc(v.web_preview)+'"></video>':'<img src="'+esc(v.web_preview)+'" alt="" loading="lazy">')+
- '<div class="ep-meta"><span class="mono brass">'+esc(v.id)+' · EP'+esc(v.ep)+'</span><span>'+esc(v.tc)+' · '+esc(v.duration)+'</span></div><h4 style="font:500 16px/1.35 var(--serif);margin:6px 0">'+esc(v.title)+'</h4><div class="dim" style="font-size:12px;margin-bottom:10px">'+esc(v.hero)+' · '+esc(v.act)+'</div><div class="tools" style="margin:0"><button class="btn'+(d?" pri":"")+'" data-veo="'+esc(v.id)+'">'+(d?"✓ Готово":"Позначити готовим")+'</button><button class="btn" data-copyveo="'+esc(v.id)+'">Копіювати промпт</button></div></div>'}
+/* ---- бібліотеки сезону ---- */
+VIEWS.media=function(){var pool=SUM.pool||{};
+  return head("Медіабаза сезону",(SUM.media_total||0)+" відео й зображень у проєкті. Кожен файл розкладено по героях: власні матеріали, підібрані до сцен сценарію з загальної бази, і файли, де згадується інший герой. Натисни рядок — відкриються медіа героя.")+
+  '<div class="grid g4 kpis">'+kpi("Файлів",SUM.media_total||0,"у 05_RAW_FOOTAGE і 04_ASSETS")+kpi("Власних прив\'язок",pool.own||0,"файл → свій епізод")+kpi("Підібрано по сценах",pool.pick||0,"у наступні епізоди")+kpi("Згадки героїв",pool.hero||0,"перехресні архіви")+'</div>'+
+  '<div class="sec tbl"><table><thead><tr><th>Герой</th><th>Усього</th><th>Власні</th><th>З бази</th><th>Відео</th><th>Зображення</th><th>Архіви</th><th>Документи</th></tr></thead><tbody>'+S.map(function(e){var c=sum(e.ep).counts;return'<tr data-go="#/ep/'+e.ep+'/media"><td><span class="mono brass">EP'+e.ep+'</span> '+esc(e.name)+'</td><td>'+(c.media||0)+'</td><td>'+(c.own||0)+'</td><td><a class="brass" href="#/ep/'+e.ep+'/media?src=pick">'+(c.picked||0)+'</a></td><td>'+(c.video||0)+'</td><td>'+(c.image||0)+'</td><td>'+(c.archive||0)+'</td><td>'+(c.doc||0)+'</td></tr>'}).join("")+'</tbody></table></div>'};
+
 VIEWS.veo=function(q){var vm=veoMap(),f=q.f||"all",ep=q.ep||"";
   var list=VEO.filter(function(v){return(!ep||v.ep===ep)&&(f==="all"||(f==="done")===!!vm[v.id])}),done=VEO.filter(function(v){return vm[v.id]}).length;
-  return head("Анімація Veo","Топ-14 ключових сцен сезону. Позначки готовності зберігаються в цьому браузері й спільні зі старим хабом та сторінками епізодів.")+
+  return head("Анімація Veo","Ключові сцени сезону. Позначки готовності зберігаються в цьому браузері й спільні зі старим хабом і сторінками епізодів.")+
   '<div class="tools">'+[["all","Усі "+VEO.length],["todo","Залишилось "+(VEO.length-done)],["done","Готово "+done]].map(function(x){return'<a class="chip'+(f===x[0]?" on":"")+'" href="#/veo?f='+x[0]+(ep?"&ep="+ep:"")+'">'+x[1]+'</a>'}).join("")+
   '<select class="input" id="veoEp"><option value="">Усі герої</option>'+S.map(function(e){return'<option value="'+e.ep+'"'+(e.ep===ep?" selected":"")+'>EP'+e.ep+' · '+esc(e.name)+'</option>'}).join("")+'</select></div>'+
   (list.length?'<div class="grid g2">'+list.map(function(v){return veoCard(v,vm)}).join("")+'</div>':'<div class="empty">Нічого не знайдено</div>')};
 
 VIEWS.music=function(){var total=0;SUNO.forEach(function(t){var p=String(t.duration).split(":");total+=(+p[0]*60+(+p[1]||0))});
-  return head("Музика Suno","Майстер-бібліотека: "+SUNO.length+" треків, "+Math.floor(total/60)+" хв "+total%60+" с, усі на 92 BPM. Кожен герой має власну тему Акту I.")+
-  '<div class="grid g2">'+SUNO.map(function(t){var e=byEp(t.hero_ep);return'<div class="card"><div class="ep-meta"><span class="mono brass">№'+esc(t.num)+' · EP'+esc(t.hero_ep)+' '+esc(e?e.name:"")+'</span><span>'+esc(t.duration)+'</span></div><h4 style="font:500 17px/1.3 var(--serif);margin:6px 0 4px">'+esc(t.orig_name.replace(/\.wav$/,""))+'</h4><div class="dim" style="font-size:12px;margin-bottom:10px">'+esc(t.module)+' · '+esc(t.act)+' · '+esc(t.track)+'</div><audio controls preload="none" src="assets/audio_previews/'+esc(t.preview)+'"></audio><p class="muted" style="font-size:12.5px;margin-top:8px">'+esc(t.usage)+'</p><button class="tag mono" style="margin-top:8px" data-copy="'+esc(t.bin_dir+"/"+t.smart_bin)+'">'+esc(t.smart_bin)+'</button>'+(t.extra_bins&&t.extra_bins.length?'<div class="dim" style="font-size:12px;margin-top:4px">Також: '+t.extra_bins.map(function(b){return"EP"+esc(b.ep||"")}).join(", ")+'</div>':'')+'</div>'}).join("")+'</div>'};
+  return head("Музика Suno","Майстер-бібліотека: "+SUNO.length+" треків, "+Math.floor(total/60)+" хв "+total%60+" с, усі на 92 BPM. Промпти для решти треків кожного героя — у вкладці «Музика» його робочого столу.")+
+  '<div class="grid g2">'+SUNO.map(function(t){var e=byEp(t.hero_ep);return'<div class="card"><div class="ep-meta"><a class="mono brass" href="#/ep/'+esc(t.hero_ep)+'/music">№'+esc(t.num)+' · EP'+esc(t.hero_ep)+' '+esc(e?e.name:"")+'</a><span>'+esc(t.duration)+'</span></div><h4 style="font:500 17px/1.3 var(--serif);margin:6px 0 4px">'+esc(t.orig_name.replace(/\.wav$/,""))+'</h4><div class="dim" style="font-size:12px;margin-bottom:10px">'+esc(t.module)+' · '+esc(t.act)+' · '+esc(t.track)+'</div><audio controls preload="none" src="assets/audio_previews/'+esc(t.preview)+'"></audio><p class="muted" style="font-size:12.5px;margin-top:8px">'+esc(t.usage)+'</p><button class="tag mono" style="margin-top:8px" data-copy="'+esc(t.bin_dir+"/"+t.smart_bin)+'">'+esc(t.smart_bin)+'</button></div>'}).join("")+'</div>'};
 
 function quoteCard(q,h){return'<div class="card q"><p>'+esc(q.text)+'</p><footer><span>'+esc(h.name)+' · '+esc(q.cat)+'</span><button class="btn" data-copy="'+esc(q.text+" — "+h.name)+'">Копіювати</button></footer></div>'}
 VIEWS.quotes=function(q){setTimeout(function(){need("titans_1000_quotes.js","TITANS_1000_QUOTES").then(function(db){quotesUI(db||[],q)})},0);
@@ -322,30 +490,13 @@ function quotesUI(db,q){var el=$("#qUI");if(!el)return;var ep=q.ep||"",text=q.s|
     $("#qm").style.display=f.length>shown?"":"none"}
   $("#qs").addEventListener("input",function(){shown=40;draw()});$("#qe").addEventListener("change",function(){shown=40;draw()});$("#qm").addEventListener("click",function(){shown+=40;draw()});draw()}
 
-VIEWS.media=function(q){setTimeout(function(){Promise.all([need("project_vault_inventory.js","PROJECT_VAULT_INVENTORY"),need("media_acquisition_pool.js","MEDIA_ACQUISITION_POOL")]).then(function(r){mediaUI(r[0]||{},r[1]||{},q)})},0);
-  return head("Медіа-сховище","Усе, що зібрано для сезону: ШІ-генерації, архівні відео, фото й документи. Обери героя — побачиш його матеріали.")+'<div id="mUI" class="loading">Завантаження каталогу медіа (≈3 МБ)…</div>'};
-function mediaUI(vault,acq,q){var el=$("#mUI");if(!el)return;var ep=q.ep||"01",kind=q.k||"videos",shown=48;
-  var rows=S.map(function(e){var v=vault[e.ep]||{},s=v.summary||{},a=acq[e.ep]||{};return'<tr style="cursor:pointer" data-go="#/media?ep='+e.ep+'"><td><span class="mono brass">EP'+e.ep+'</span> '+esc(e.name)+'</td><td>'+(s.videos_count||0)+'</td><td>'+(s.images_count||0)+'</td><td>'+(s.audio_count||0)+'</td><td>'+((a.archives||[]).length)+'</td><td>'+((a.dossiers||[]).length)+'</td><td class="dim">'+(s.total_mb?(s.total_mb/1024).toFixed(1)+" ГБ":"—")+'</td></tr>'}).join("");
-  var v=vault[ep]||{},a=acq[ep]||{},e=byEp(ep);
-  var tabs=[["videos","Відео",(v.videos||[]).length],["images","Фото",(v.images||[]).length],["archives","Архіви",(a.archives||[]).length],["dossiers","Документи",(a.dossiers||[]).length],["audio","Аудіо",(v.audio||[]).length]];
-  el.className="";el.innerHTML='<div class="tbl"><table><thead><tr><th>Герой</th><th>Відео</th><th>Фото</th><th>Аудіо</th><th>Архіви</th><th>Досьє</th><th>Обсяг</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
-   '<div class="sec"><h2>EP'+ep+' · '+esc(e?e.name:"")+'</h2><div class="tools">'+tabs.map(function(t){return'<a class="chip'+(t[0]===kind?" on":"")+'" href="#/media?ep='+ep+'&k='+t[0]+'">'+t[1]+' '+t[2]+'</a>'}).join("")+'</div><div id="mG"></div><div style="text-align:center;margin-top:16px"><button class="btn" id="mM">Показати ще</button></div></div>';
-  function item(x){
-    if(kind==="archives")return'<div class="th">'+(x.web_preview?'<video src="'+esc(x.web_preview)+'#t=1" preload="metadata" muted controls playsinline style="width:100%;aspect-ratio:16/9;background:var(--surface-3)"></video>':'<div class="ph"></div>')+'<div title="'+esc(x.title)+'">'+esc(x.code||"")+' <span>'+esc(x.title)+'</span></div></div>';
-    if(kind==="dossiers")return'<div class="card" style="padding:12px"><div class="mono brass" style="font-size:11px">'+esc(x.id)+' · '+esc(x.timecode||"")+'</div><b style="display:block;font-size:13px;margin:4px 0">'+esc(x.title)+'</b><div class="dim" style="font-size:12px">'+esc(x.source_label||"")+'</div></div>';
-    if(kind==="audio")return'<div class="card" style="padding:10px 12px;font-size:12.5px"><div style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(x.display_name||x.file)+'</div><div class="dim mono" style="font-size:11px">'+esc(x.cat_label||"")+' · '+esc(x.dur_label||"")+'</div></div>';
-    return'<div class="th">'+(x.thumb?'<img src="'+esc(x.thumb)+'" alt="" loading="lazy">':'<div class="ph"></div>')+'<div title="'+esc(x.rel_path||x.file)+'">'+esc(x.display_name||x.file)+' <span>'+esc([x.dur_label,x.res_label].filter(Boolean).join(" · "))+'</span></div></div>'}
-  function draw(){var src=(kind==="archives"||kind==="dossiers")?(a[kind]||[]):(v[kind]||[]),g=$("#mG");
-    g.className=(kind==="dossiers"||kind==="audio")?"grid g3":"thumbs";g.innerHTML=src.slice(0,shown).map(item).join("")||'<div class="empty">Порожньо</div>';$("#mM").style.display=src.length>shown?"":"none"}
-  $("#mM").addEventListener("click",function(){shown+=48;draw()});draw()}
-
 VIEWS.pipeline=function(){var steps=[
  ["База знань","100 цитат + досьє","Верифіковані першоджерела, хронологія криз, стенограми лекцій."],
  ["NotebookLM","Фактчекінг і Audio Overview","Ізольований блокнот на епізод, без галюцинацій; пошук драматургічного нерва."],
  ["Gemini","4-актний сценарій","Походження → Велика самотність → Зсув парадигми → Кодекс творця (18–22 хв)."],
  ["Google AI Studio","Промпти + SSML","Покадрові промпти Veo/Flow і SSML-розмітка (rate 84%, pitch −1.5st)."],
- ["Antigravity / Claude Code","DevOps і веб-студія","Структура папок, сторінки героїв, синхронізація GitHub і Google Drive."],
- ["TTS · Suno · Veo/Flow","Синтез матеріалу","Дві доріжки WAV 48 kHz (UA + EN), треки 92 BPM, пул 4K 24 fps."],
+ ["Antigravity / Claude Code","DevOps і веб-студія","Структура папок, робочі столи героїв, синхронізація GitHub і Google Drive."],
+ ["ElevenLabs · Suno · Veo/Flow","Синтез матеріалу","Дві доріжки WAV 48 kHz (UA + EN), треки 92 BPM, пул 4K 24 fps."],
  ["DaVinci Resolve","Edit · Fairlight · Color · Fusion","Монтаж на сітці 92 BPM, даккінг музики під голос, Kodak 2383, титри."],
  ["YouTube","Реліз і Shorts","4K-майстер із двома аудіодоріжками та три вертикальні Shorts."]];
  var sprint=[["День 1","Дослідження й сценарій","Сценарій UA + EN у 02_SCRIPTS/"],["День 2","Промпти й звук","Аудіо-каркас випуску в 03_AUDIO/"],["День 3","Генерація візуалу","Пул іменованих кліпів у 05_RAW_FOOTAGE/"],["День 4","Монтаж і мастеринг","Експортований 4K-майстер"],["День 5","Дистрибуція","Двомовний реліз і 3 Shorts"]];
@@ -365,38 +516,56 @@ var TPL=[
 VIEWS.templates=function(){return head("Шаблони промптів","Еталонні тексти для кожного цеху. Кнопка копіює шаблон повністю.")+
  '<div class="grid g2">'+TPL.map(function(t,i){return'<div class="card"><div class="ep-meta"><span class="mono brass">'+esc(t[0])+'</span></div><h3 style="margin-top:6px">'+esc(t[1])+'</h3><pre class="tpl">'+esc(t[2])+'</pre><button class="btn pri" data-tpl="'+i+'">Копіювати шаблон</button></div>'}).join("")+'</div>'};
 
-/* ---- router ---- */
+/* ---- маршрутизатор ---- */
+var NAMES={overview:"Огляд сезону",music:"Музика Suno",veo:"Анімація Veo",media:"Медіабаза",quotes:"Цитати",pipeline:"Пайплайн",templates:"Шаблони промптів"};
+var curRoute={};
 function parse(){var h=location.hash.replace(/^#\/?/,"")||"overview",p=h.split("?"),path=p[0].split("/"),q={};
-  (p[1]||"").split("&").forEach(function(kv){if(kv){var a=kv.split("=");q[a[0]]=decodeURIComponent(a[1]||"")}});return{id:path[0],arg:path[1],q:q}}
-function route(){var r=parse(),fn=VIEWS[r.id]||VIEWS.overview,id=VIEWS[r.id]?r.id:"overview";
-  $("#view").innerHTML=fn(r.id==="ep"?r.arg:r.q);renderNav(id);
-  if(id==="ep"){var e=byEp(r.arg);crumbs([{t:"Епізоди",h:"#/episodes"},{t:e?"EP"+e.ep+" · "+e.name:"?"}]);document.title=(e?e.name+" — ":"")+"Архітектори Розуму"}
-  else{var t=title(id);crumbs([{t:t.t}]);document.title=t.t+" — Архітектори Розуму"}
-  document.body.classList.remove("nav-on");window.scrollTo(0,0);
+  (p[1]||"").split("&").forEach(function(kv){if(kv){var a=kv.split("=");q[a[0]]=decodeURIComponent(a[1]||"")}});return{id:path[0],arg:path[1],tab:path[2],q:q}}
+function route(){var r=parse();
+  if(r.id==="episodes"){location.replace("#/overview");return}
+  if(r.id==="montage"){location.replace("#/ep/01/montage");return}
+  curRoute=r;var id=VIEWS[r.id]?r.id:"overview";
+  $("#view").innerHTML=VIEWS[id](id==="ep"?r:r.q);renderNav(id,id==="ep"?r.arg:null);
+  if(id==="ep"){var e=byEp(r.arg),tab=r.tab||"overview",tn=(TABS.filter(function(t){return t[0]===tab})[0]||TABS[0])[1];crumbs([{t:e?"EP"+e.ep+" · "+e.name:"?",h:"#/ep/"+r.arg},{t:tn}]);document.title=(e?e.name+" · "+tn+" — ":"")+"Архітектори Розуму"}
+  else{crumbs([{t:NAMES[id]}]);document.title=NAMES[id]+" — Архітектори Розуму"}
+  document.body.classList.remove("nav-on");if(!r.keep)window.scrollTo(0,0);
   var sel=$("#veoEp");if(sel)sel.addEventListener("change",function(){location.hash="#/veo?f="+(r.q.f||"all")+(sel.value?"&ep="+sel.value:"")})}
 window.addEventListener("hashchange",route);
 
-document.addEventListener("click",function(ev){var t=ev.target.closest("[data-copy],[data-veo],[data-copyveo],[data-tpl],[data-go]");if(!t)return;
-  if(t.dataset.go){location.hash=t.dataset.go;return}
-  if(t.dataset.copy){copy(t.dataset.copy);return}
-  if(t.dataset.tpl){copy(TPL[+t.dataset.tpl][2],TPL[+t.dataset.tpl][0]);return}
-  if(t.dataset.copyveo){var v=VEO.filter(function(x){return x.id===t.dataset.copyveo})[0];if(v)copy(v.prompt,v.id);return}
-  if(t.dataset.veo){ev.preventDefault();var m=veoMap();m[t.dataset.veo]=!m[t.dataset.veo];store("ai_titans_veo_status",m);toast(m[t.dataset.veo]?"Позначено готовим":"Знято позначку");var y=window.scrollY;route();window.scrollTo(0,y);pills()}});
+function wbCur(){return window.WB&&window.WB[curRoute.arg]}
+document.addEventListener("click",function(ev){var t=ev.target.closest("[data-copy],[data-veo],[data-copyveo],[data-tpl],[data-go],[data-vo],[data-vo-all],[data-pr],[data-tr],[data-mu],[data-media]");if(!t)return;
+  var d=t.dataset,wb=wbCur();
+  if(d.go){location.hash=d.go;return}
+  if(d.copy){copy(d.copy);return}
+  if(d.tpl){copy(TPL[+d.tpl][2],TPL[+d.tpl][0]);return}
+  if(d.media){openMedia(curRoute.arg,+d.media);return}
+  if(d.voAll&&wb){var doc=d.voAll==="EN"?wb.vo.en:wb.vo.ua;copy(doc.blocks.map(function(b){return b.clean}).join("\n\n"),"весь текст ("+doc.blocks.length+" блоків)");return}
+  if(d.vo&&wb){var a=d.vo.split("|"),dc=a[0]==="EN"?wb.vo.en:wb.vo.ua,b=dc.blocks[+a[1]];copy(b.clean,"блок "+pad(+a[1]+1)+" · "+b.words+" слів");return}
+  if(d.pr&&wb){var p=wb.prompts[+d.pr];copy(p.p,"промпт №"+p.num);return}
+  if(d.mu&&wb){var m=wb.music[+d.mu];copy(m.prompt,"промпт Suno · "+m.t);return}
+  if(d.tr&&wb){var x=d.tr.split("|"),tr=wb.triads[+x[0]];copy(x[1]==="all"?["1 · START: "+tr.p1,"2 · FLOW: "+tr.p2,"3 · END: "+tr.p3].join("\n\n"):tr[x[1]],"тріада "+tr.num);return}
+  if(d.copyveo){var v=VEO.filter(function(y){return y.id===d.copyveo})[0];if(v)copy(v.prompt,v.id);return}
+  if(d.veo){ev.preventDefault();var vm=veoMap();vm[d.veo]=!vm[d.veo];store("ai_titans_veo_status",vm);toast(vm[d.veo]?"Позначено готовим":"Знято позначку");var y=window.scrollY;route();window.scrollTo(0,y);pills()}});
 $("#menuBtn").addEventListener("click",function(){document.body.classList.toggle("nav-on")});
 $("#scrim").addEventListener("click",function(){document.body.classList.remove("nav-on")});
-// одночасно грає лише одне аудіо
+$("#modX").addEventListener("click",closeMod);
+$("#modBg").addEventListener("click",function(ev){if(ev.target.id==="modBg")closeMod()});
+// одночасно грає лише одне аудіо чи відео
 document.addEventListener("play",function(ev){$$("audio,video").forEach(function(a){if(a!==ev.target)a.pause()})},true);
 
-/* ---- ⌘K palette ---- */
+/* ---- ⌘K ---- */
 var palItems=[],palIdx=0;
-function palSource(){var a=[];NAV.forEach(function(g){g.items.forEach(function(i){a.push({t:i.t,d:g.g,go:i.href||"#/"+i.id,ext:!!i.href})})});
-  S.forEach(function(e){a.push({t:"EP"+e.ep+" · "+e.name,d:e.title,go:"#/ep/"+e.ep});a.push({t:"Сторінка епізоду: "+e.name,d:"повна сторінка",go:e.page_url,ext:false,page:true})});return a}
-function palDraw(){var s=$("#palIn").value.trim().toLowerCase(),src=palSource();
-  palItems=src.filter(function(x){return!s||(x.t+" "+x.d).toLowerCase().indexOf(s)>-1}).slice(0,12);
-  if(s)palItems.push({t:"Шукати «"+$("#palIn").value.trim()+"» у цитатах",d:"1000 цитат",go:"#/quotes?s="+encodeURIComponent($("#palIn").value.trim())});
+function palSource(){var a=[{t:"Огляд сезону",d:"Студія",go:"#/overview"}];
+  S.forEach(function(e){a.push({t:"EP"+e.ep+" · "+e.name,d:e.title,go:"#/ep/"+e.ep});
+    tabsFor(e.ep).slice(1).forEach(function(t){a.push({t:e.name+" → "+t[1],d:TAB_HINT[t[0]],go:"#/ep/"+e.ep+"/"+t[0]})})});
+  LIB.concat(REF).forEach(function(i){a.push({t:i.t,d:i.d,go:"#/"+i.id})});
+  EXT.forEach(function(i){a.push({t:i.t,d:"окрема сторінка",go:i.href,ext:true})});return a}
+function palDraw(){var raw=$("#palIn").value.trim(),s=raw.toLowerCase(),src=palSource();
+  palItems=src.filter(function(x){return!s||(x.t+" "+x.d).toLowerCase().indexOf(s)>-1}).slice(0,14);
+  if(s)palItems.push({t:"Шукати «"+raw+"» у цитатах",d:"1000 цитат",go:"#/quotes?s="+encodeURIComponent(raw)});
   palIdx=Math.min(palIdx,palItems.length-1);if(palIdx<0)palIdx=0;
   $("#palList").innerHTML=palItems.map(function(x,i){return'<li data-i="'+i+'" class="'+(i===palIdx?"on":"")+'">'+esc(x.t)+'<span>'+esc(x.d)+'</span></li>'}).join("")}
-function palGo(i){var x=palItems[i];if(!x)return;palClose();if(x.ext)window.open(x.go,"_blank","noopener");else if(x.page)location.href=x.go;else location.hash=x.go}
+function palGo(i){var x=palItems[i];if(!x)return;palClose();if(x.ext)window.open(x.go,"_blank","noopener");else location.hash=x.go}
 function palOpen(){$("#palBg").classList.add("on");$("#palIn").value="";palIdx=0;palDraw();setTimeout(function(){$("#palIn").focus()},10)}
 function palClose(){$("#palBg").classList.remove("on")}
 $("#openPal").addEventListener("click",palOpen);
@@ -405,6 +574,7 @@ $("#palList").addEventListener("click",function(ev){var li=ev.target.closest("li
 $("#palBg").addEventListener("click",function(ev){if(ev.target.id==="palBg")palClose()});
 document.addEventListener("keydown",function(ev){
   if((ev.metaKey||ev.ctrlKey)&&ev.key.toLowerCase()==="k"){ev.preventDefault();$("#palBg").classList.contains("on")?palClose():palOpen();return}
+  if(ev.key==="Escape"&&$("#modBg").classList.contains("on")){closeMod();return}
   if(ev.key==="/"&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){ev.preventDefault();palOpen();return}
   if(!$("#palBg").classList.contains("on"))return;
   if(ev.key==="Escape")palClose();
@@ -413,9 +583,9 @@ document.addEventListener("keydown",function(ev){
   else if(ev.key==="Enter")palGo(palIdx)});
 
 function pills(){var m=MON["01"];$("#pillMontage").textContent=m?"EP01 змонтовано · "+m.total_duration:"";$("#pillMontage").style.display=m?"":"none";
-  var vm=veoMap();$("#pillReady").textContent="Veo "+VEO.filter(function(v){return vm[v.id]}).length+"/"+VEO.length}
+  var avg=Math.round(S.reduce(function(a,e){return a+sum(e.ep).pct},0)/(S.length||1));$("#pillReady").textContent="Сезон "+avg+"%"}
+$("#sideFoot").textContent="Версія Claude · дані "+(SUM.generated||"");
 pills();route();
-window.addEventListener("storage",function(){pills()});
 })();
 </script>
 </body>
