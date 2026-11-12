@@ -1585,6 +1585,7 @@
       "    <div class=\"node-box\" style=\"border-top-color:var(--emerald);\"><h4>🎧 Звук</h4><ul style=\"font-size:12px;color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.audio) + "</ul></div>",
       "    <div class=\"node-box\" style=\"border-top-color:var(--purple);\"><h4>🔗 Матеріали інших епізодів</h4><div style=\"display:flex;flex-wrap:wrap;gap:6px;\">" + cross + "</div></div>",
       "    <div class=\"node-box\" style=\"border-top-color:var(--cyan);\"><h4>⚙️ Скрипти збірки</h4><ul style=\"font-size:11.5px;font-family:var(--mono);color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.scripts) + "</ul></div>",
+      (ms.fixes ? "    <div class=\"node-box\" style=\"border-top-color:var(--rose,#f43f5e);\"><h4>🛠️ Виправлено</h4><ul style=\"font-size:12px;color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.fixes) + "</ul></div>" : ""),
       "    <div class=\"node-box\" style=\"border-top-color:var(--amber);\"><h4>⏭️ Далі</h4><ul style=\"font-size:12px;color:var(--text-secondary);padding-left:1.1rem;margin:0;\">" + li(ms.next) + "</ul></div>",
       "  </div>",
       "</div>"

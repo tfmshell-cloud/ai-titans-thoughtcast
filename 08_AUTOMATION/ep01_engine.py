@@ -135,7 +135,34 @@ CACHE = os.path.join(BASE, "03_AUDIO", "claude_mix", "_cache")
 VO_TARGET, MUS_GAP, MUS_DUCK, FX_UNDER_VO, FX_GAP = -20.0, -22.0, -32.0, -36.0, -28.0
 
 
+def mp4_frames(path):
+    """Тривалість mp4/mov у кадрах з атома mvhd (без ffprobe)."""
+    try:
+        data = open(path, "rb").read()
+        i = data.find(b"mvhd")
+        if i < 0:
+            return None
+        ver = data[i + 4]
+        if ver == 1:
+            ts = int.from_bytes(data[i + 24:i + 28], "big"); du = int.from_bytes(data[i + 28:i + 36], "big")
+        else:
+            ts = int.from_bytes(data[i + 16:i + 20], "big"); du = int.from_bytes(data[i + 20:i + 24], "big")
+        return int(du / ts * FPS)
+    except Exception:
+        return None
+
+
+def still_ok(path):
+    """Розширення має збігатися зі справжнім форматом (Resolve не читає JPEG з розширенням .png)."""
+    head = open(path, "rb").read(8)
+    if path.lower().endswith(".png"):
+        return head.startswith(b"\x89PNG")
+    return head.startswith(b"\xff\xd8")
+
+
 def media_frames(path):
+    if path.lower().endswith((".mp4", ".mov")):
+        return lengths().get(path) or mp4_frames(path)
     if path.lower().endswith(".wav"):
         w = wave.open(path)
         return int(math.ceil(w.getnframes() / w.getframerate() * FPS))
@@ -209,8 +236,13 @@ def t(f):
     return f"{int(f) * 100}/2400s"
 
 
-def build_fcpxml(acts, idx, timeline):
-    """acts: [(act, offset_f, music_mix_path)] — склеює акти в один таймлайн."""
+DISSOLVE_UID = "FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"
+
+
+def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=0, extra_sfx=None):
+    """acts: [(act, offset_f, music_mix_path)] — склеює акти в один таймлайн.
+    Наплави: act["dissolves"] = {кадр_склейки: півтривалість}, extra_dissolves — глобальні (межі актів).
+    fade_in / fade_out — поява з чорного та затемнення (кадрів)."""
     problems, assets, order, spine = [], {}, [], []
     L = lengths()
 
@@ -240,32 +272,63 @@ def build_fcpxml(acts, idx, timeline):
         return aid
 
     report = []
+    shots = []
     for act, off, mix in acts:
         v1 = act["v1"]
         vr = vo_ranges(act)
         for i, (f0, name, src_in, db, note) in enumerate(v1):
             f1 = v1[i + 1][0] if i + 1 < len(v1) else act["end_f"]
-            dur, in_f = f1 - f0, int(round(src_in * FPS))
-            if dur <= 0:
-                problems.append(f"{act['name']}: {name} ({note}) — нульова тривалість")
-                continue
+            path = find(idx, name)
             still = name.lower().endswith(STILL_EXT)
-            ln = L.get(find(idx, name) or "")
-            if not still and ln and in_f + dur > ln:
-                problems.append(f"{act['name']}: {name} ({note}) — потрібно {dur} кадрів, у джерелі {ln - in_f}")
-            if db is not None and not still:
-                under = overlap(f0, f0 + dur, vr) > 0.3
-                db = fx_gain(find(idx, name), src_in, dur / FPS, under)
-                report.append((act["name"], name, db, "під голосом" if under else "пауза"))
-            kind = "still" if still else ("av" if db is not None else "video")
-            aid = asset(name, kind)
-            if not aid:
-                continue
-            tag = "video" if still else "asset-clip"
-            head = (f'<{tag} ref="{aid}" offset="{t(off + f0)}" name={quoteattr(os.path.splitext(name)[0])} '
-                    f'start="{t(in_f)}" duration="{t(dur)}"' + (' audioRole="effects"' if kind == "av" else ""))
-            kids = [f'<adjust-volume amount="{db}dB"/>'] if kind == "av" else []
-            spine.append([off + f0, dur, in_f, head, tag, kids])
+            if still and path and not still_ok(path):
+                problems.append(f"{act['name']}: {name} — розширення не відповідає формату файлу (Resolve покаже битий кадр)")
+            shots.append(dict(act=act, off=off, vr=vr, f0=f0, f1=f1, name=name, in_f=int(round(src_in * FPS)), db=db,
+                              note=note, still=still, ln=None if still else (media_frames(path) if path else None)))
+    diss = {}
+    for act, off, mix in acts:
+        for c, h in (act.get("dissolves") or {}).items():
+            diss[off + c] = h
+    diss.update(extra_dissolves or {})
+    trans = {}
+    for i in range(1, len(shots)):
+        a, b = shots[i - 1], shots[i]
+        c = b["off"] + b["f0"]
+        if c not in diss:
+            continue
+        inf = 10 ** 6
+        tail = inf if a["still"] or not a["ln"] else a["ln"] - (a["in_f"] + a["f1"] - a["f0"])
+        room = inf if b["still"] or not b["ln"] else b["ln"] - (b["in_f"] + b["f1"] - b["f0"])
+        head = inf if b["still"] else b["in_f"] + room
+        h = min(diss[c], tail, head)
+        if h < 4:
+            problems.append(f"наплав на {c / FPS:.1f} с ({b['name'][:40]}): замало кадрів у джерелі — лишаю склейку")
+            continue
+        if not b["still"] and b["in_f"] < h:
+            b["in_f"] = h                     # зсуваємо вхід, щоб з'явилась «ручка»
+        trans[c] = h
+    for sh in shots:
+        act, off, vr, f0, f1, name, in_f, db, note, still, ln = (sh[k] for k in ("act", "off", "vr", "f0", "f1", "name", "in_f", "db", "note", "still", "ln"))
+        src_in = in_f / FPS
+        dur = f1 - f0
+        if dur <= 0:
+            problems.append(f"{act['name']}: {name} ({note}) — нульова тривалість")
+            continue
+        still = name.lower().endswith(STILL_EXT)
+        if not still and ln and in_f + dur > ln:
+            problems.append(f"{act['name']}: {name} ({note}) — потрібно {dur} кадрів, у джерелі {ln - in_f}")
+        if db is not None and not still:
+            under = overlap(f0, f0 + dur, vr) > 0.3
+            db = fx_gain(find(idx, name), src_in, dur / FPS, under)
+            report.append((act["name"], name, db, "під голосом" if under else "пауза"))
+        kind = "still" if still else ("av" if db is not None else "video")
+        aid = asset(name, kind)
+        if not aid:
+            continue
+        tag = "video" if still else "asset-clip"
+        head = (f'<{tag} ref="{aid}" offset="{t(off + f0)}" name={quoteattr(os.path.splitext(name)[0])} '
+                f'start="{t(in_f)}" duration="{t(dur)}"' + (' audioRole="effects"' if kind == "av" else ""))
+        kids = [f'<adjust-volume amount="{db}dB"/>'] if kind == "av" else []
+        spine.append([off + f0, dur, in_f, head, tag, kids])
 
     def attach(frame, xml):
         p = next((s for s in spine if s[0] <= frame < s[0] + s[1]), spine[-1])
@@ -307,16 +370,34 @@ def build_fcpxml(acts, idx, timeline):
             if aid:
                 attach(off + f0, f'<asset-clip ref="{aid}" lane="-3" offset="@OFF@" name={quoteattr(os.path.splitext(name)[0])} start="0s" duration="{t(int(secs * FPS))}" audioRole="effects"><adjust-volume amount="{db}dB"/></asset-clip>')
 
+    for f0, name, secs in (extra_sfx or []):
+        db = fx_gain(find(idx, name), 0, secs, False)
+        report.append(("Епізод", name, db, "міст"))
+        aid = asset(name, "audio")
+        if aid and db is not None:
+            attach(f0, f'<asset-clip ref="{aid}" lane="-4" offset="@OFF@" name={quoteattr(os.path.splitext(name)[0])} start="0s" duration="{t(int(secs * FPS))}" audioRole="effects"><adjust-volume amount="{db}dB"/></asset-clip>')
+
     total = max(off + a["end_f"] for a, off, _ in acts)
+    fx_id = "r1fx"
+    tr = lambda o, d: (f'<transition name="Cross Dissolve" offset="{t(o)}" duration="{t(d)}">'
+                       f'<filter-video ref="{fx_id}" name="Cross Dissolve"/></transition>')
     body = []
+    if fade_in:
+        body.append(tr(0, fade_in))
     for f0, dur, in_f, head, tag, kids in spine:
+        if f0 in trans:
+            body.append(tr(f0 - trans[f0], 2 * trans[f0]))
         body += ([head + ">"] + ["  " + k for k in kids] + [f"</{tag}>"]) if kids else [head + "/>"]
+    if fade_out:
+        body.append(tr(total - fade_out, fade_out))
+    build_fcpxml.transitions = trans
     res = "\n    ".join(assets[k][1] for k in order)
     xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fcpxml>
 <fcpxml version="1.8">
   <resources>
     <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <effect id="r1fx" name="Cross Dissolve" uid="{DISSOLVE_UID}"/>
     {res}
   </resources>
   <library>
@@ -337,6 +418,8 @@ def build_fcpxml(acts, idx, timeline):
         paths.add(mix)
         for row in a["v1"] + a.get("v2", []) + a.get("v3", []) + a.get("sfx", []):
             paths.add(find(idx, row[1]))
+    for row in (extra_sfx or []):
+        paths.add(find(idx, row[1]))
         for v in a["vo"].values():
             paths.add(find(idx, v[0]))
     build_fcpxml.report = report
@@ -344,6 +427,33 @@ def build_fcpxml(acts, idx, timeline):
 
 
 # ------------------------------------------------------------------ Resolve
+def fusion_title_fade(item, n=6, blur=12.0):
+    """Fusion-композиція на титрі: поява з розмиття й прозорості за n кадрів і так само зникнення."""
+    comp = item.GetFusionCompByIndex(1) if item.GetFusionCompCount() else item.AddFusionComp()
+    if not comp or comp.FindTool("TitleFade_BC"):
+        return 0
+    a = comp.GetAttrs()
+    s, e = int(a["COMPN_RenderStart"]), int(a["COMPN_RenderEnd"])
+    comp.Lock()
+    mi, mo = comp.FindTool("MediaIn1"), comp.FindTool("MediaOut1")
+    bl = comp.AddTool("Blur", -32768, -32768)
+    bc = comp.AddTool("BrightnessContrast", -32768, -32768)
+    bl.SetAttrs({"TOOLS_Name": "TitleFade_Blur"})
+    bc.SetAttrs({"TOOLS_Name": "TitleFade_BC"})
+    bl.Input = mi.Output
+    bc.Input = bl.Output
+    mo.Input = bc.Output
+    bc.SetInput("Alpha", 1)
+    bl.AddModifier("XBlurSize", "BezierSpline")
+    bc.AddModifier("Gain", "BezierSpline")
+    for fr, v in ((s, blur), (s + n, 0.0), (e - n, 0.0), (e, blur * 0.7)):
+        bl.SetInput("XBlurSize", v, fr)
+    for fr, v in ((s, 0.0), (s + n, 1.0), (e - n, 1.0), (e, 0.0)):
+        bc.SetInput("Gain", v, fr)
+    comp.Unlock()
+    return 1
+
+
 def to_resolve(xml_path, paths, timeline, markers, replace=False):
     sys.path.append("/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/Modules")
     import DaVinciResolveScript as bmd
@@ -396,7 +506,7 @@ def to_resolve(xml_path, paths, timeline, markers, replace=False):
         tl.AddMarker(s0 + f0, col, nm, note, 1)
     items = [i for kk in ("video", "audio") for nn in range(1, tl.GetTrackCount(kk) + 1)
              for i in (tl.GetItemListInTrack(kk, nn) or [])]
-    bad = [i.GetName() for i in items if i.GetMediaPoolItem() is None]
+    bad = [i.GetName() for i in items if i.GetMediaPoolItem() is None and "Dissolve" not in i.GetName()]
     # звірка: кліп на таймлайні має посилатися саме на свій файл (Resolve іноді склеює PNG у послідовність)
     for i in items:
         m = i.GetMediaPoolItem()
@@ -405,6 +515,12 @@ def to_resolve(xml_path, paths, timeline, markers, replace=False):
             fp = os.path.basename(m.GetClipProperty("File Path") or "")
             if stem and fp and not fp.startswith(stem[:20]) and not stem.startswith(("VO_UA", "EP01_MUS", "MUS_")):
                 bad.append(f"{i.GetName()} → {fp}")
+    animated = 0
+    for kk in range(1, tl.GetTrackCount("video") + 1):
+        for it in tl.GetItemListInTrack("video", kk) or []:
+            if it.GetName().startswith(("EP01_SUPER", "EP01_RULE")):
+                animated += fusion_title_fade(it)
     p.SetCurrentTimeline(tl)
     pm.SaveProject()
+    print(f"  Fusion: анімовано титрів — {animated}")
     print(f"✓ Таймлайн «{name}»: {(tl.GetEndFrame() - s0 + 1) / FPS:.1f} с; без медіа: {bad or 'немає'}")

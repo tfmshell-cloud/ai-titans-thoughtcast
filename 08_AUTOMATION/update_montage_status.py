@@ -77,11 +77,18 @@ def main():
                 "Живий звук кліпів і SFX: нормалізовано за виміряною гучністю, −36 під голосом / −28 у паузах",
                 "Акт III: повна тиша на звільненні (Д12) за сценарієм, повернення ритму на «120 годинах»",
                 "Пік −2 dBFS; для YouTube у Deliver увімкнути нормалізацію до −14 LUFS",
+                "Ембієнт-мости між актами (8 с педу) замість провалів тиші",
             ],
             "cross_episode": {ep: sorted(v) for ep, v in sorted(cross.items())},
             "scripts": ["08_AUTOMATION/build_ep01_actI_claude_cut.py", "08_AUTOMATION/build_ep01_acts.py",
                         "08_AUTOMATION/ep01_engine.py", "08_AUTOMATION/make_ep01_actI_graphics.py",
                         "08_AUTOMATION/make_ep01_green_dot_card.py", "08_AUTOMATION/update_montage_status.py"],
+            "fixes": [
+                "Битий кадр 1:40 (JPEG з розширенням .png) замінено відновленим 4K-кліпом із повільним наїздом",
+                "Сцена в соборі (1:22): новий 4K-кліп «крихітна постать у соборі»",
+                "Наплави між дублями й актами, поява з чорного та фінальне затемнення",
+                "Fusion: усі титри з'являються з розмиття й прозорості за 6 кадрів",
+            ],
             "next": [
                 "Прослухати мікс наживо (особливо Акт III і фінал)",
                 "Deliver: нормалізація гучності −14 LUFS для YouTube",

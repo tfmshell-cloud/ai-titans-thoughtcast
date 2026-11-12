@@ -3,6 +3,7 @@
 <fcpxml version="1.8">
   <resources>
     <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <effect id="r1fx" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
     <asset id="r2" name="EP01_V1_B4_CLOSER_DeepSpace_154f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B4_CLOSER_DeepSpace_154f.mp4" start="0s" duration="15400/2400s" hasVideo="1" format="r1"/>
     <asset id="r3" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_06_Cosmic_Dyson_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
     <asset id="r4" name="Electrical_spark_traveling_neuro…_362f1f95_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Electrical_spark_traveling_neuro%E2%80%A6_362f1f95_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
@@ -52,12 +53,14 @@
       <project name="EP01_ActIV_UA_Claude">
         <sequence format="r1" duration="419500/2400s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
           <spine>
+            <transition name="Cross Dissolve" offset="0/2400s" duration="1200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r2" offset="0/2400s" name="EP01_V1_B4_CLOSER_DeepSpace_154f" start="0/2400s" duration="12200/2400s">
               <video ref="r36" lane="2" offset="0/2400s" name="EP01_SUPER_30_Act_IV_Title" start="0s" duration="12200/2400s"/>
               <asset-clip ref="r43" lane="-2" offset="0/2400s" name="EP01_MUS_ActIV_ducked_Claude" start="0s" duration="419500/2400s" audioRole="music"/>
             </asset-clip>
-            <asset-clip ref="r3" offset="12200/2400s" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" start="0/2400s" duration="16700/2400s">
-              <asset-clip ref="r40" lane="-1" offset="300/2400s" name="VO_UA_15" start="0s" duration="115600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="11400/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r3" offset="12200/2400s" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" start="800/2400s" duration="16700/2400s">
+              <asset-clip ref="r40" lane="-1" offset="1100/2400s" name="VO_UA_15" start="0s" duration="115600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r4" offset="28900/2400s" name="Electrical_spark_traveling_neuro…_362f1f95_1080p" start="0/2400s" duration="12100/2400s" audioRole="effects">
               <adjust-volume amount="-18.6dB"/>
@@ -82,8 +85,9 @@
               <adjust-volume amount="-25.0dB"/>
             </asset-clip>
             <asset-clip ref="r14" offset="121200/2400s" name="ep10_clip_still_earth_dawn_lights_finale_6s" start="0/2400s" duration="10000/2400s"/>
-            <asset-clip ref="r15" offset="131200/2400s" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" start="0/2400s" duration="14100/2400s">
-              <asset-clip ref="r41" lane="-1" offset="300/2400s" name="VO_UA_16" start="0s" duration="143100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="130000/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r15" offset="131200/2400s" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" start="1200/2400s" duration="14100/2400s">
+              <asset-clip ref="r41" lane="-1" offset="1500/2400s" name="VO_UA_16" start="0s" duration="143100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r16" offset="145300/2400s" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" start="4800/2400s" duration="9500/2400s">
               <video ref="r37" lane="2" offset="4800/2400s" name="EP01_RULE_A_Belief" start="0s" duration="22800/2400s"/>
@@ -133,10 +137,13 @@
               <adjust-volume amount="-20.8dB"/>
             </asset-clip>
             <asset-clip ref="r33" offset="355200/2400s" name="EP01_V1_B2_10_Earth_Horizon_Finale_550f" start="0/2400s" duration="33600/2400s"/>
+            <transition name="Cross Dissolve" offset="387200/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r34" offset="388800/2400s" name="ep01_flow_01_mac_chassis" start="4800/2400s" duration="13200/2400s">
               <asset-clip ref="r44" lane="-3" offset="4800/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="4.9dB"/></asset-clip>
             </asset-clip>
+            <transition name="Cross Dissolve" offset="401000/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <video ref="r35" offset="402000/2400s" name="EP01_END_CARD" start="0/2400s" duration="17500/2400s"/>
+            <transition name="Cross Dissolve" offset="417700/2400s" duration="1800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
           </spine>
         </sequence>
       </project>

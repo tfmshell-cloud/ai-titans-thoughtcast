@@ -107,6 +107,7 @@ ACT2 = dict(
     music=[("EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav", 0, 0, bar(81), 3.0)],
 )
 ACT2["markers"] = vo_markers(vo2)
+ACT2["dissolves"] = {a(7, 0): 8, a(8, 0): 10, a(9, 0): 10, a(10, 0): 10}
 
 # =========================================================================== АКТ III
 vo3, s3 = vo_block({11: (2, 46.11), 12: (20, 50.29), 13: (40, 43.73), 14: (58, 54.44)})
@@ -168,6 +169,7 @@ ACT3 = dict(
     music=[("EP01_MUS_09_ACT3_92BPM_ChatGPT_Explosion.wav", 0, 0, s3[12] - 20, 0.05),          # різкий обрив
            ("EP01_MUS_B3_PART1_08_00_to_10_00_120s.wav", 0, s3[13] - bar(1), bar(82), 3.0)],    # повернення ритму
 )
+ACT3["dissolves"] = {a(11, 0): 8, a(13, 0): 12, a(14, 0): 10, a(14, 51.8): 12}   # Д11→Д12 — різка склейка (шок)
 ACT3["markers"] = vo_markers(vo3) + [(s3[12] - 20, "Red", "ТИША", "Різкий обрив музики: Д12 звучить без музики (за сценарієм)")]
 
 # =========================================================================== АКТ IV
@@ -221,13 +223,16 @@ ACT4 = dict(
     music=[("EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav", 0, 0, bar(67), 6.0)],
 )
 ACT4["markers"] = vo_markers(vo4)
+ACT4["dissolves"] = {a(15, 0): 8, a(16, 0): 12, a(17, 0): 12, int(148.0 * F): 16, int(162.0 * F): 16, int(167.5 * F): 16}
 
 
 # =========================================================================== Акт I (з режисерської версії)
 def act1():
     vo = {n: (f, A1.vo_f(n), s) for n, (f, b, s) in A1.VO.items()}
     v2 = [(f0, n, d or (A1.at(4, 0.0) - f0)) for f0, n, d in A1.V2]
-    return dict(name="Акт I", end_f=A1.END_F, vo=vo,
+    at = A1.at
+    diss = {at(1, 0): 8, at(2, -0.3): 12, at(3, 0.0): 12, at(3, 42.0): 10, at(4, 0.0): 12, at(5, 0.0): 10, at(6, 0.0): 12}
+    return dict(name="Акт I", end_f=A1.END_F, vo=vo, dissolves=diss,
                 v1=[(f0, n, si, db, note) for f0, n, si, ln, db, note in A1.V1],
                 v2=v2, v3=A1.V3, sfx=A1.SFX,
                 music=[(A1.MUSIC_SRC, 0, 0, A1.END_F, 3.0)],
@@ -235,6 +240,29 @@ def act1():
 
 
 ACTS = {"I": (act1(), "EP01_ActI_UA_Claude_DirectorsCut"), "II": (ACT2, "EP01_ActII_UA_Claude"), "III": (ACT3, "EP01_ActIII_UA_Claude"), "IV": (ACT4, "EP01_ActIV_UA_Claude")}
+
+
+def make_bridge(idx, n):
+    """Ембієнт-міст між актами: 8 с педу з плавною появою і згасанням (замість провалу тиші)."""
+    import audioop
+    import wave
+    src = E.find(idx, "EP01_MUS_01_ACT1_Monumental_Silence.wav")
+    w = wave.open(src)
+    sr, ch = w.getframerate(), w.getnchannels()
+    w.setpos(int((40 + 9 * n) * sr))
+    raw = w.readframes(8 * sr)
+    blk = int(0.01 * sr) * ch * 2
+    out = []
+    for k in range(0, len(raw), blk):
+        tt = k / (sr * ch * 2)
+        g = min(1.0, tt / 2.5, max(0.0, (8 - tt) / 3.0))
+        out.append(audioop.mul(raw[k:k + blk], 2, g))
+    path = os.path.join(E.BASE, "03_AUDIO", "claude_mix", f"EP01_BRIDGE_Act{n}_to_Act{n + 1}.wav")
+    o = wave.open(path, "wb")
+    o.setnchannels(ch), o.setsampwidth(2), o.setframerate(sr)
+    o.writeframes(b"".join(out))
+    o.close()
+    return os.path.basename(path)
 
 
 def mix_path(key):
@@ -255,16 +283,18 @@ def main():
         print(f"{act['name']}: {len(act['v1'])} планів, {act['end_f'] / E.FPS:.1f} с")
         if not (a_.skip_mix and os.path.exists(mix_path(k))):
             E.mix_music(act, idx, mix_path(k))
-        xml, probs, paths = E.build_fcpxml([(act, 0, mix_path(k))], idx, tl)
+        xml, probs, paths = E.build_fcpxml([(act, 0, mix_path(k))], idx, tl, fade_in=12, fade_out=18)
         p = os.path.join(out_dir, f"{tl}.fcpxml")
         open(p, "w", encoding="utf-8").write(xml)
         for pr in probs:
             print("  УВАГА:", pr)
+        print(f"    наплавів: {len(E.build_fcpxml.transitions)}")
         for row in E.build_fcpxml.report:
             print(f"    {row[3]:12} {str(row[2]):>6} dB  {row[1][:60]}")
         if a_.resolve:
             E.to_resolve(p, paths, tl, act["markers"], replace=True)
     if a_.only in (None, "FULL"):
+        bounds = []
         a1 = ACTS["I"][0]
         seq, off = [(a1, 0, mix_path("I"))], a1["end_f"]
         markers = list(a1["markers"])
@@ -272,9 +302,13 @@ def main():
             act = ACTS[k][0]
             seq.append((act, off, mix_path(k)))
             markers += [(f + off, c, n, note) for f, c, n, note in act["markers"]]
+            bounds.append(off)
             off += act["end_f"]
         tl = "EP01_FULL_UA_Claude_DirectorsCut"
-        xml, probs, paths = E.build_fcpxml(seq, idx, tl)
+        bridges = [(b - 4 * E.FPS, make_bridge(idx, i + 1), 8.0) for i, b in enumerate(bounds)]
+        idx = E.index_files()
+        xml, probs, paths = E.build_fcpxml(seq, idx, tl, extra_dissolves={b: 16 for b in bounds},
+                                           fade_in=12, fade_out=24, extra_sfx=bridges)
         p = os.path.join(out_dir, f"{tl}.fcpxml")
         open(p, "w", encoding="utf-8").write(xml)
         print(f"Повний епізод: {int(off / E.FPS // 60)} хв {off / E.FPS % 60:.0f} с")

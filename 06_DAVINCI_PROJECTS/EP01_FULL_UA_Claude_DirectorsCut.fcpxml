@@ -3,6 +3,7 @@
 <fcpxml version="1.8">
   <resources>
     <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
+    <effect id="r1fx" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
     <asset id="r2" name="ep01_flow_01_mac_chassis" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_01_mac_chassis.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
     <asset id="r3" name="EP01_CLIP_STILL_Neural_Lattice_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Neural_Lattice_10s.mp4" start="0s" duration="24100/2400s" hasVideo="1" format="r1"/>
     <asset id="r4" name="EP01_CLIP_STILL_Young_Altman_Portrait_5s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Young_Altman_Portrait_5s.mp4" start="0s" duration="12000/2400s" hasVideo="1" format="r1"/>
@@ -18,11 +19,11 @@
     <asset id="r14" name="EP01_CLIP_V1_07_Phosphor_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_CLIP_V1_07_Phosphor_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
     <asset id="r15" name="EP01_V2_ARCH_05_Burroughs_Campus_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_master_clips/EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
     <asset id="r16" name="EP01_V1_CREATIVE_01_Equations_Void_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_01_Equations_Void_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
-    <asset id="r17" name="EP01_CLIP_STILL_School_Auditorium_5s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_School_Auditorium_5s.mp4" start="0s" duration="12000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r17" name="EP01_RESTORED_Church_Wide_PushIn_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/restored/EP01_RESTORED_Church_Wide_PushIn_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r18" name="ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/ElevenLabs_video_seedance-2-5_Slow%2C_powerful__2026-11-09T12_52_53.mp4" start="0s" duration="12100/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
     <asset id="r19" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Teenage_boy_speaking_into_microp%E2%80%A6_9259f8fe_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
     <asset id="r20" name="EP01_CLIP_STILL_Math_Decision_Tree_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Math_Decision_Tree_8s.mp4" start="0s" duration="18500/2400s" hasVideo="1" format="r1"/>
-    <asset id="r21" name="Young_Altman_School_Auditorium_Microphone_2001_2K" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/images_vault/Young_Altman_School_Auditorium_Microphone_2001_2K.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r21" name="EP01_RESTORED_Church_FrontMic_PushIn_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/restored/EP01_RESTORED_Church_FrontMic_PushIn_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r22" name="EP01_V1_CREATIVE_02_Galaxies_Axons_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_creative_master/EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
     <asset id="r23" name="ep01_flow_08_golden_signatures" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
     <asset id="r24" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_orbiting_desk_photograph_2c2a80a3_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
@@ -182,25 +183,31 @@
     <asset id="r178" name="EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_16_ACT4_17_00_18_30_Three_Rules_Of_Exponential_Life.wav" start="0s" duration="143200/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
     <asset id="r179" name="EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_17_ACT4_18_30_20_00_Future_Is_Created_Now_Outro.wav" start="0s" duration="63500/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
     <asset id="r180" name="EP01_MUS_ActIV_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActIV_ducked_Claude.wav" start="0s" duration="419500/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r181" name="EP01_BRIDGE_Act1_to_Act2" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_BRIDGE_Act1_to_Act2.wav" start="0s" duration="19200/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r182" name="EP01_BRIDGE_Act2_to_Act3" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_BRIDGE_Act2_to_Act3.wav" start="0s" duration="19200/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r183" name="EP01_BRIDGE_Act3_to_Act4" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_BRIDGE_Act3_to_Act4.wav" start="0s" duration="19200/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
   </resources>
   <library>
     <event name="SEM_EP01_Claude">
       <project name="EP01_FULL_UA_Claude_DirectorsCut">
         <sequence format="r1" duration="2012000/2400s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
           <spine>
+            <transition name="Cross Dissolve" offset="0/2400s" duration="1200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r2" offset="0/2400s" name="ep01_flow_01_mac_chassis" start="4100/2400s" duration="12200/2400s">
               <video ref="r140" lane="2" offset="4100/2400s" name="EP01_SUPER_00_Act_I_Title" start="0s" duration="12200/2400s"/>
               <asset-clip ref="r150" lane="-2" offset="4100/2400s" name="EP01_MUS_ActI_ducked_Claude" start="0s" duration="572000/2400s" audioRole="music"/>
               <asset-clip ref="r151" lane="-3" offset="4100/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-3.1dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r3" offset="12200/2400s" name="EP01_CLIP_STILL_Neural_Lattice_10s" start="0/2400s" duration="14000/2400s">
-              <asset-clip ref="r144" lane="-1" offset="300/2400s" name="VO_UA_01" start="0s" duration="33600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="11400/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r3" offset="12200/2400s" name="EP01_CLIP_STILL_Neural_Lattice_10s" start="800/2400s" duration="14000/2400s">
+              <asset-clip ref="r144" lane="-1" offset="1100/2400s" name="VO_UA_01" start="0s" duration="33600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r4" offset="26200/2400s" name="EP01_CLIP_STILL_Young_Altman_Portrait_5s" start="0/2400s" duration="11900/2400s"/>
             <asset-clip ref="r5" offset="38100/2400s" name="EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s" start="0/2400s" duration="17200/2400s"/>
-            <asset-clip ref="r6" offset="55300/2400s" name="EP01_V2_ARCH_06_Childhood_Mac_10s" start="0/2400s" duration="6900/2400s">
-              <video ref="r141" lane="2" offset="0/2400s" name="EP01_SUPER_01_St_Louis_1993" start="0s" duration="6900/2400s"/>
-              <asset-clip ref="r145" lane="-1" offset="1000/2400s" name="VO_UA_02" start="0s" duration="105300/2400s" audioRole="dialogue"><adjust-volume amount="-0.5dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="54100/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r6" offset="55300/2400s" name="EP01_V2_ARCH_06_Childhood_Mac_10s" start="1200/2400s" duration="6900/2400s">
+              <video ref="r141" lane="2" offset="1200/2400s" name="EP01_SUPER_01_St_Louis_1993" start="0s" duration="6900/2400s"/>
+              <asset-clip ref="r145" lane="-1" offset="2200/2400s" name="VO_UA_02" start="0s" duration="105300/2400s" audioRole="dialogue"><adjust-volume amount="-0.5dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r7" offset="62200/2400s" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" start="1400/2400s" duration="13100/2400s" audioRole="effects">
               <adjust-volume amount="-2.7dB"/>
@@ -221,11 +228,12 @@
             <asset-clip ref="r13" offset="132100/2400s" name="EP01_CLIP_STILL_Boy_Watching_Code_5s" start="0/2400s" duration="10800/2400s"/>
             <asset-clip ref="r9" offset="142900/2400s" name="ep01_flow_02_crt_code" start="7200/2400s" duration="11300/2400s"/>
             <asset-clip ref="r14" offset="154200/2400s" name="EP01_CLIP_V1_07_Phosphor_12s" start="0/2400s" duration="14500/2400s"/>
-            <asset-clip ref="r15" offset="168700/2400s" name="EP01_V2_ARCH_05_Burroughs_Campus_12s" start="0/2400s" duration="14400/2400s">
-              <asset-clip ref="r146" lane="-1" offset="300/2400s" name="VO_UA_03" start="0s" duration="109500/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="167500/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r15" offset="168700/2400s" name="EP01_V2_ARCH_05_Burroughs_Campus_12s" start="1200/2400s" duration="14400/2400s">
+              <asset-clip ref="r146" lane="-1" offset="1500/2400s" name="VO_UA_03" start="0s" duration="109500/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r16" offset="183100/2400s" name="EP01_V1_CREATIVE_01_Equations_Void_8s" start="0/2400s" duration="10000/2400s"/>
-            <asset-clip ref="r17" offset="193100/2400s" name="EP01_CLIP_STILL_School_Auditorium_5s" start="0/2400s" duration="8200/2400s"/>
+            <asset-clip ref="r17" offset="193100/2400s" name="EP01_RESTORED_Church_Wide_PushIn_6s" start="0/2400s" duration="8200/2400s"/>
             <asset-clip ref="r18" offset="201300/2400s" name="ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53" start="0/2400s" duration="12000/2400s" audioRole="effects">
               <adjust-volume amount="-4.4dB"/>
             </asset-clip>
@@ -233,11 +241,12 @@
               <asset-clip ref="r138" lane="1" offset="2200/2400s" name="EP01_MGFX_01_Burroughs_Turning_Point_10s" start="0s" duration="24000/2400s"/>
             </asset-clip>
             <asset-clip ref="r20" offset="231500/2400s" name="EP01_CLIP_STILL_Math_Decision_Tree_8s" start="0/2400s" duration="9600/2400s"/>
-            <video ref="r21" offset="241100/2400s" name="Young_Altman_School_Auditorium_Microphone_2001_2K" start="0/2400s" duration="10400/2400s"/>
+            <asset-clip ref="r21" offset="241100/2400s" name="EP01_RESTORED_Church_FrontMic_PushIn_6s" start="0/2400s" duration="10400/2400s"/>
             <asset-clip ref="r22" offset="251500/2400s" name="EP01_V1_CREATIVE_02_Galaxies_Axons_12s" start="0/2400s" duration="18000/2400s">
               <asset-clip ref="r139" lane="1" offset="12000/2400s" name="EP01_MGFX_02_Autonomy_Axiom_Quote_12s" start="0s" duration="24200/2400s"/>
             </asset-clip>
-            <asset-clip ref="r23" offset="269500/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="18200/2400s"/>
+            <transition name="Cross Dissolve" offset="268700/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r23" offset="269500/2400s" name="ep01_flow_08_golden_signatures" start="800/2400s" duration="18200/2400s"/>
             <asset-clip ref="r24" offset="287700/2400s" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" start="0/2400s" duration="15200/2400s" audioRole="effects">
               <adjust-volume amount="-12.5dB"/>
               <video ref="r142" lane="2" offset="0/2400s" name="EP01_SUPER_02_Stanford_2003" start="0s" duration="8600/2400s"/>
@@ -257,8 +266,9 @@
             <asset-clip ref="r30" offset="363000/2400s" name="Light_point_explodes_into_streaks_0827d703_1080p" start="2400/2400s" duration="18600/2400s" audioRole="effects">
               <adjust-volume amount="-18.7dB"/>
             </asset-clip>
-            <asset-clip ref="r31" offset="381600/2400s" name="EP01_DOC_01_YC_2005_Program_10s" start="0/2400s" duration="17400/2400s">
-              <asset-clip ref="r148" lane="-1" offset="300/2400s" name="VO_UA_05" start="0s" duration="128100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="380600/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r31" offset="381600/2400s" name="EP01_DOC_01_YC_2005_Program_10s" start="1000/2400s" duration="17400/2400s">
+              <asset-clip ref="r148" lane="-1" offset="1300/2400s" name="VO_UA_05" start="0s" duration="128100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r32" offset="399000/2400s" name="EP01_V2_ARCH_07_Loopt_Founder_12s" start="0/2400s" duration="13800/2400s">
               <video ref="r143" lane="2" offset="0/2400s" name="EP01_SUPER_03_Loopt_2005_2012" start="0s" duration="9600/2400s"/>
@@ -277,9 +287,10 @@
               <adjust-volume amount="-17.1dB"/>
             </asset-clip>
             <asset-clip ref="r40" offset="495600/2400s" name="EP01_UA_CLIP_CARD_02_Psychological_Friction_18s" start="0/2400s" duration="23800/2400s"/>
-            <asset-clip ref="r41" offset="519400/2400s" name="Boy_aging_into_tech_leader_cd380219_1080p" start="0/2400s" duration="14700/2400s" audioRole="effects">
-              <adjust-volume amount="-12.9dB"/>
-              <asset-clip ref="r149" lane="-1" offset="300/2400s" name="VO_UA_06" start="0s" duration="39600/2400s" audioRole="dialogue"><adjust-volume amount="-1.5dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="518200/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r41" offset="519400/2400s" name="Boy_aging_into_tech_leader_cd380219_1080p" start="1200/2400s" duration="14700/2400s" audioRole="effects">
+              <adjust-volume amount="-13.2dB"/>
+              <asset-clip ref="r149" lane="-1" offset="1500/2400s" name="VO_UA_06" start="0s" duration="39600/2400s" audioRole="dialogue"><adjust-volume amount="-1.5dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r42" offset="534100/2400s" name="EP01_CLIP_V1_19_CurveHero_17s" start="0/2400s" duration="10500/2400s"/>
             <asset-clip ref="r43" offset="544600/2400s" name="Light_point_explodes_into_streaks_c712a46e_1080p" start="0/2400s" duration="14600/2400s" audioRole="effects">
@@ -287,14 +298,17 @@
             </asset-clip>
             <asset-clip ref="r44" offset="559200/2400s" name="Camera_accelerating_through_lett_clip_24ed2370_1080p" start="0/2400s" duration="12800/2400s" audioRole="effects">
               <adjust-volume amount="-17.1dB"/>
+              <asset-clip ref="r181" lane="-4" offset="3200/2400s" name="EP01_BRIDGE_Act1_to_Act2" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-7.7dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r45" offset="572000/2400s" name="EP01_CLIP_V1_16_ServerCold_8s" start="0/2400s" duration="12200/2400s">
-              <video ref="r154" lane="2" offset="0/2400s" name="EP01_SUPER_10_Act_II_Title" start="0s" duration="12200/2400s"/>
-              <asset-clip ref="r162" lane="-2" offset="0/2400s" name="EP01_MUS_ActII_ducked_Claude" start="0s" duration="507100/2400s" audioRole="music"/>
+            <transition name="Cross Dissolve" offset="570400/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r45" offset="572000/2400s" name="EP01_CLIP_V1_16_ServerCold_8s" start="1600/2400s" duration="12200/2400s">
+              <video ref="r154" lane="2" offset="1600/2400s" name="EP01_SUPER_10_Act_II_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r162" lane="-2" offset="1600/2400s" name="EP01_MUS_ActII_ducked_Claude" start="0s" duration="507100/2400s" audioRole="music"/>
             </asset-clip>
-            <asset-clip ref="r46" offset="584200/2400s" name="EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s" start="0/2400s" duration="12200/2400s">
-              <video ref="r155" lane="2" offset="0/2400s" name="EP01_SUPER_11_YC_2014" start="0s" duration="8600/2400s"/>
-              <asset-clip ref="r158" lane="-1" offset="300/2400s" name="VO_UA_07" start="0s" duration="117200/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="583400/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r46" offset="584200/2400s" name="EP01_V2_B2_01_TechCrunch_Disrupt_2014_10s" start="800/2400s" duration="12200/2400s">
+              <video ref="r155" lane="2" offset="800/2400s" name="EP01_SUPER_11_YC_2014" start="0s" duration="8600/2400s"/>
+              <asset-clip ref="r158" lane="-1" offset="1100/2400s" name="VO_UA_07" start="0s" duration="117200/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r47" offset="596400/2400s" name="EP01_VID_ARCH_05_ACT2_24FPS_Altman_Stanford_CS183B_Lecture" start="4800/2400s" duration="14000/2400s"/>
             <asset-clip ref="r48" offset="610400/2400s" name="EP01_V2_B2_02_Stanford_2014_10s" start="0/2400s" duration="13000/2400s"/>
@@ -305,8 +319,9 @@
             <asset-clip ref="r53" offset="665400/2400s" name="ep08_clip_still_wall_street_nyse_6s" start="0/2400s" duration="9500/2400s"/>
             <asset-clip ref="r54" offset="674900/2400s" name="EP01_CLIP_STILL_TechCrunch_2014_10s" start="4800/2400s" duration="6600/2400s"/>
             <asset-clip ref="r55" offset="681500/2400s" name="EP01_UA_CLIP_CARD_03_Exponential_Risk_15s" start="0/2400s" duration="27900/2400s"/>
-            <asset-clip ref="r56" offset="709400/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="12700/2400s">
-              <asset-clip ref="r159" lane="-1" offset="300/2400s" name="VO_UA_08" start="0s" duration="117000/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="708400/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r56" offset="709400/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="1000/2400s" duration="12700/2400s">
+              <asset-clip ref="r159" lane="-1" offset="1300/2400s" name="VO_UA_08" start="0s" duration="117000/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r57" offset="722100/2400s" name="EP01_V1_B3_02_Boardroom_Void_14s" start="0/2400s" duration="12100/2400s"/>
             <asset-clip ref="r58" offset="734200/2400s" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" start="0/2400s" duration="8800/2400s" audioRole="effects">
@@ -342,8 +357,9 @@
             <asset-clip ref="r76" offset="910100/2400s" name="EP03_CLIP_STILL_Royal_Society_London_6s" start="0/2400s" duration="14100/2400s"/>
             <asset-clip ref="r63" offset="924200/2400s" name="EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors" start="50400/2400s" duration="14800/2400s"/>
             <asset-clip ref="r77" offset="939000/2400s" name="EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020" start="0/2400s" duration="14600/2400s"/>
-            <asset-clip ref="r78" offset="953600/2400s" name="EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom" start="0/2400s" duration="13300/2400s">
-              <asset-clip ref="r161" lane="-1" offset="300/2400s" name="VO_UA_10" start="0s" duration="104700/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="952600/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r78" offset="953600/2400s" name="EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom" start="1000/2400s" duration="13300/2400s">
+              <asset-clip ref="r161" lane="-1" offset="1300/2400s" name="VO_UA_10" start="0s" duration="104700/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r79" offset="966900/2400s" name="EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom" start="0/2400s" duration="7800/2400s"/>
             <asset-clip ref="r80" offset="974700/2400s" name="EP10_SCI_01_Tesla_Coil_Electric_Discharges" start="0/2400s" duration="8900/2400s" audioRole="effects">
@@ -358,15 +374,19 @@
               <adjust-volume amount="-8.3dB"/>
             </asset-clip>
             <asset-clip ref="r84" offset="1026200/2400s" name="EP01_V2_B2_04_TechCrunch_Disrupt_2019_OpenAI_CEO_10s" start="0/2400s" duration="14000/2400s"/>
-            <asset-clip ref="r85" offset="1040200/2400s" name="EP01_UA_CLIP_CARD_04_Compute_Equations_18s" start="0/2400s" duration="38900/2400s"/>
-            <asset-clip ref="r86" offset="1079100/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="0/2400s" duration="12200/2400s">
-              <video ref="r163" lane="2" offset="0/2400s" name="EP01_SUPER_20_Act_III_Title" start="0s" duration="12200/2400s"/>
-              <asset-clip ref="r172" lane="-2" offset="0/2400s" name="EP01_MUS_ActIII_ducked_Claude" start="0s" duration="513400/2400s" audioRole="music"/>
+            <asset-clip ref="r85" offset="1040200/2400s" name="EP01_UA_CLIP_CARD_04_Compute_Equations_18s" start="0/2400s" duration="38900/2400s">
+              <asset-clip ref="r182" lane="-4" offset="29300/2400s" name="EP01_BRIDGE_Act2_to_Act3" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-8.0dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r87" offset="1091300/2400s" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" start="0/2400s" duration="23400/2400s" audioRole="effects">
-              <adjust-volume amount="-18.5dB"/>
-              <video ref="r164" lane="2" offset="0/2400s" name="EP01_SUPER_21_ChatGPT_2022" start="0s" duration="8600/2400s"/>
-              <asset-clip ref="r168" lane="-1" offset="300/2400s" name="VO_UA_11" start="0s" duration="110600/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="1077500/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r86" offset="1079100/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="1600/2400s" duration="12200/2400s">
+              <video ref="r163" lane="2" offset="1600/2400s" name="EP01_SUPER_20_Act_III_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r172" lane="-2" offset="1600/2400s" name="EP01_MUS_ActIII_ducked_Claude" start="0s" duration="513400/2400s" audioRole="music"/>
+            </asset-clip>
+            <transition name="Cross Dissolve" offset="1090800/2400s" duration="1000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r87" offset="1091300/2400s" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" start="500/2400s" duration="23400/2400s" audioRole="effects">
+              <adjust-volume amount="-18.6dB"/>
+              <video ref="r164" lane="2" offset="500/2400s" name="EP01_SUPER_21_ChatGPT_2022" start="0s" duration="8600/2400s"/>
+              <asset-clip ref="r168" lane="-1" offset="800/2400s" name="VO_UA_11" start="0s" duration="110600/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r88" offset="1114700/2400s" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" start="0/2400s" duration="10000/2400s"/>
             <asset-clip ref="r89" offset="1124700/2400s" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" start="0/2400s" duration="15600/2400s" audioRole="effects">
@@ -401,10 +421,11 @@
             <asset-clip ref="r103" offset="1297600/2400s" name="EP01_V1_ASSOC_01_Lidar_City_Grid_8s" start="0/2400s" duration="7700/2400s"/>
             <asset-clip ref="r104" offset="1305300/2400s" name="ep01_flow_07_boardroom_noir_ua_alt" start="12000/2400s" duration="5600/2400s"/>
             <asset-clip ref="r34" offset="1310900/2400s" name="EP01_V1_NEW_03_Window_Rain_16s" start="14400/2400s" duration="18300/2400s"/>
-            <asset-clip ref="r105" offset="1329200/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="0/2400s" duration="11200/2400s" audioRole="effects">
-              <adjust-volume amount="-10.0dB"/>
-              <video ref="r166" lane="2" offset="0/2400s" name="EP01_SUPER_23_120_Hours" start="0s" duration="9100/2400s"/>
-              <asset-clip ref="r170" lane="-1" offset="300/2400s" name="VO_UA_13" start="0s" duration="104900/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="1328000/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r105" offset="1329200/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="1200/2400s" duration="11200/2400s" audioRole="effects">
+              <adjust-volume amount="-12.3dB"/>
+              <video ref="r166" lane="2" offset="1200/2400s" name="EP01_SUPER_23_120_Hours" start="0s" duration="9100/2400s"/>
+              <asset-clip ref="r170" lane="-1" offset="1500/2400s" name="VO_UA_13" start="0s" duration="104900/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r106" offset="1340400/2400s" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" start="4800/2400s" duration="9700/2400s"/>
             <asset-clip ref="r107" offset="1350100/2400s" name="EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s" start="0/2400s" duration="9700/2400s"/>
@@ -420,8 +441,9 @@
             </asset-clip>
             <asset-clip ref="r110" offset="1420600/2400s" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" start="0/2400s" duration="5400/2400s"/>
             <asset-clip ref="r111" offset="1426000/2400s" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" start="0/2400s" duration="15900/2400s"/>
-            <asset-clip ref="r112" offset="1441900/2400s" name="EP01_CLIP_STILL_Employees_Solidarity_9s" start="0/2400s" duration="15100/2400s">
-              <asset-clip ref="r171" lane="-1" offset="300/2400s" name="VO_UA_14" start="0s" duration="130600/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="1440900/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r112" offset="1441900/2400s" name="EP01_CLIP_STILL_Employees_Solidarity_9s" start="1000/2400s" duration="15100/2400s">
+              <asset-clip ref="r171" lane="-1" offset="1300/2400s" name="VO_UA_14" start="0s" duration="130600/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r113" offset="1457000/2400s" name="EP01_DOC_05_Employees_Letter_12s" start="0/2400s" duration="10300/2400s"/>
             <asset-clip ref="r114" offset="1467300/2400s" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" start="0/2400s" duration="16800/2400s"/>
@@ -436,13 +458,17 @@
               <adjust-volume amount="-17.7dB"/>
             </asset-clip>
             <asset-clip ref="r23" offset="1547500/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="18700/2400s"/>
-            <asset-clip ref="r121" offset="1566200/2400s" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" start="0/2400s" duration="26300/2400s"/>
-            <asset-clip ref="r122" offset="1592500/2400s" name="EP01_V1_B4_CLOSER_DeepSpace_154f" start="0/2400s" duration="12200/2400s">
-              <video ref="r173" lane="2" offset="0/2400s" name="EP01_SUPER_30_Act_IV_Title" start="0s" duration="12200/2400s"/>
-              <asset-clip ref="r180" lane="-2" offset="0/2400s" name="EP01_MUS_ActIV_ducked_Claude" start="0s" duration="419500/2400s" audioRole="music"/>
+            <asset-clip ref="r121" offset="1566200/2400s" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" start="0/2400s" duration="26300/2400s">
+              <asset-clip ref="r183" lane="-4" offset="16700/2400s" name="EP01_BRIDGE_Act3_to_Act4" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-7.6dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r123" offset="1604700/2400s" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" start="0/2400s" duration="16700/2400s">
-              <asset-clip ref="r177" lane="-1" offset="300/2400s" name="VO_UA_15" start="0s" duration="115600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="1590900/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r122" offset="1592500/2400s" name="EP01_V1_B4_CLOSER_DeepSpace_154f" start="1600/2400s" duration="12200/2400s">
+              <video ref="r173" lane="2" offset="1600/2400s" name="EP01_SUPER_30_Act_IV_Title" start="0s" duration="12200/2400s"/>
+              <asset-clip ref="r180" lane="-2" offset="1600/2400s" name="EP01_MUS_ActIV_ducked_Claude" start="0s" duration="419500/2400s" audioRole="music"/>
+            </asset-clip>
+            <transition name="Cross Dissolve" offset="1603900/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r123" offset="1604700/2400s" name="EP01_V1_NEW_06_Cosmic_Dyson_12s" start="800/2400s" duration="16700/2400s">
+              <asset-clip ref="r177" lane="-1" offset="1100/2400s" name="VO_UA_15" start="0s" duration="115600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r124" offset="1621400/2400s" name="Electrical_spark_traveling_neuro…_362f1f95_1080p" start="0/2400s" duration="12100/2400s" audioRole="effects">
               <adjust-volume amount="-18.6dB"/>
@@ -467,8 +493,9 @@
               <adjust-volume amount="-25.0dB"/>
             </asset-clip>
             <asset-clip ref="r131" offset="1713700/2400s" name="ep10_clip_still_earth_dawn_lights_finale_6s" start="0/2400s" duration="10000/2400s"/>
-            <asset-clip ref="r132" offset="1723700/2400s" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" start="0/2400s" duration="14100/2400s">
-              <asset-clip ref="r178" lane="-1" offset="300/2400s" name="VO_UA_16" start="0s" duration="143100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="1722500/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r132" offset="1723700/2400s" name="EP01_UA_CLIP_CARD_07_Three_Rules_12s" start="1200/2400s" duration="14100/2400s">
+              <asset-clip ref="r178" lane="-1" offset="1500/2400s" name="VO_UA_16" start="0s" duration="143100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r19" offset="1737800/2400s" name="Teenage_boy_speaking_into_microp…_9259f8fe_1080p" start="4800/2400s" duration="9500/2400s">
               <video ref="r174" lane="2" offset="4800/2400s" name="EP01_RULE_A_Belief" start="0s" duration="22800/2400s"/>
@@ -518,10 +545,13 @@
               <adjust-volume amount="-20.8dB"/>
             </asset-clip>
             <asset-clip ref="r136" offset="1947700/2400s" name="EP01_V1_B2_10_Earth_Horizon_Finale_550f" start="0/2400s" duration="33600/2400s"/>
+            <transition name="Cross Dissolve" offset="1979700/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r2" offset="1981300/2400s" name="ep01_flow_01_mac_chassis" start="4800/2400s" duration="13200/2400s">
               <asset-clip ref="r151" lane="-3" offset="4800/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="4.9dB"/></asset-clip>
             </asset-clip>
+            <transition name="Cross Dissolve" offset="1993500/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <video ref="r137" offset="1994500/2400s" name="EP01_END_CARD" start="0/2400s" duration="17500/2400s"/>
+            <transition name="Cross Dissolve" offset="2009600/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
           </spine>
         </sequence>
       </project>

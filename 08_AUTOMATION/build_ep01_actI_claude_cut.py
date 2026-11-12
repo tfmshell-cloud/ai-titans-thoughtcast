@@ -86,11 +86,12 @@ V1 = [
     # Д03 — сцена: друга межа
     (at(3, 0.0),    "EP01_V2_ARCH_05_Burroughs_Campus_12s.mp4", 0, 288, None, "Д03 «Джон Берроуз Скул»"),
     (at(3, 5.98),   "EP01_V1_CREATIVE_01_Equations_Void_8s.mp4", 0, 192, None, "Д03 «зрізала кути індивідуальності» — фігура під аркою"),
-    (at(3, 10.18),  "EP01_CLIP_STILL_School_Auditorium_5s.mp4", 0, 120, None, "Д03 «У шістнадцять років…» зала"),
+    (at(3, 10.18),  "EP01_RESTORED_Church_Wide_PushIn_6s.mp4", 0, 144, None, "Д03 «У шістнадцять років…» — крихітна постать у соборі (відновлено 4K)"),
     (at(3, 13.6),   "ElevenLabs_video_seedance-2-5_Slow,_powerful__2026-11-09T12_52_53.mp4", 0, 121, -14, "Д03 «виходить на сцену» — МОРФІНГ аніме→реальність"),
     (at(3, 18.6),   "Teenage_boy_speaking_into_microp…_9259f8fe_1080p.mp4", 0, 239, None, "Д03 «християнською спільнотою… гомосексуальність»"),
     (at(3, 26.16),  "EP01_CLIP_STILL_Math_Decision_Tree_8s.mp4", 0, 185, None, "Д03 «стратегічний розрахунок»"),
-    (at(3, 30.18),  "Young_Altman_School_Auditorium_Microphone_2001_2K.png", 0, None, None, "Д03 «найбільш вразливу правду»"),
+    # Young_Altman_School_Auditorium_Microphone_2001_2K.png — JPEG з розширенням .png, Resolve показував битий кадр
+    (at(3, 30.18),  "EP01_RESTORED_Church_FrontMic_PushIn_6s.mp4", 0, 144, None, "Д03 «найбільш вразливу правду» — погляд у камеру (відновлено 4K)"),
     (at(3, 34.5),   "EP01_V1_CREATIVE_02_Galaxies_Axons_12s.mp4", 0, 288, None, "Д03 «страх розсіюється»"),
     (at(3, 42.0),   "ep01_flow_08_golden_signatures.mp4", 0, 190, None, "Д03 цитата автономії: вибух світла"),
     # Д04 — Стенфорд: третя межа
