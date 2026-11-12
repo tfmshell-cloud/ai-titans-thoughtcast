@@ -71,7 +71,7 @@
           <spine>
             <transition name="Cross Dissolve" offset="0/2400s" duration="1200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r2" offset="0/2400s" name="ep01_flow_01_mac_chassis" start="4100/2400s" duration="12200/2400s">
-              <video ref="r47" lane="2" offset="4100/2400s" name="EP01_SUPER_00_Act_I_Title" start="0s" duration="12200/2400s"/>
+              <spine lane="2" offset="4100/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r47" offset="0s" name="EP01_SUPER_00_Act_I_Title" start="0s" duration="12200/2400s"/><transition name="Cross Dissolve" offset="11400/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
               <asset-clip ref="r57" lane="-2" offset="4100/2400s" name="EP01_MUS_ActI_ducked_Claude" start="0s" duration="572000/2400s" audioRole="music"/>
               <asset-clip ref="r58" lane="-3" offset="4100/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-3.1dB"/></asset-clip>
             </asset-clip>
@@ -83,7 +83,7 @@
             <asset-clip ref="r5" offset="38100/2400s" name="EP01_V1_CREATIVE_04_Mind_Radiating_Light_12s" start="0/2400s" duration="17200/2400s"/>
             <transition name="Cross Dissolve" offset="54100/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r6" offset="55300/2400s" name="EP01_V2_ARCH_06_Childhood_Mac_10s" start="1200/2400s" duration="6900/2400s">
-              <video ref="r48" lane="2" offset="1200/2400s" name="EP01_SUPER_01_St_Louis_1993" start="0s" duration="6900/2400s"/>
+              <spine lane="2" offset="1200/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r48" offset="0s" name="EP01_SUPER_01_St_Louis_1993" start="0s" duration="6900/2400s"/><transition name="Cross Dissolve" offset="6100/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
               <asset-clip ref="r52" lane="-1" offset="2200/2400s" name="VO_UA_02" start="0s" duration="105300/2400s" audioRole="dialogue"><adjust-volume amount="-0.5dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r7" offset="62200/2400s" name="Boy_viewing_glowing_terminal_code_a3fe5f00_1080p" start="1400/2400s" duration="13100/2400s" audioRole="effects">
@@ -123,11 +123,12 @@
               <asset-clip ref="r46" lane="1" offset="12000/2400s" name="EP01_MGFX_02_Autonomy_Axiom_Quote_12s" start="0s" duration="24200/2400s"/>
             </asset-clip>
             <transition name="Cross Dissolve" offset="268700/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r23" offset="269500/2400s" name="ep01_flow_08_golden_signatures" start="800/2400s" duration="18200/2400s"/>
-            <asset-clip ref="r24" offset="287700/2400s" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" start="0/2400s" duration="15200/2400s" audioRole="effects">
-              <adjust-volume amount="-12.5dB"/>
-              <video ref="r49" lane="2" offset="0/2400s" name="EP01_SUPER_02_Stanford_2003" start="0s" duration="8600/2400s"/>
-              <asset-clip ref="r54" lane="-1" offset="300/2400s" name="VO_UA_04" start="0s" duration="83800/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
+            <asset-clip ref="r23" offset="269500/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="17800/2400s"/>
+            <transition name="Cross Dissolve" offset="286100/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r24" offset="287300/2400s" name="Camera_orbiting_desk_photograph_2c2a80a3_1080p" start="1200/2400s" duration="15600/2400s" audioRole="effects">
+              <adjust-volume amount="-12.4dB"/>
+              <spine lane="2" offset="1600/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r49" offset="0s" name="EP01_SUPER_02_Stanford_2003" start="0s" duration="8600/2400s"/><transition name="Cross Dissolve" offset="7800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
+              <asset-clip ref="r54" lane="-1" offset="1900/2400s" name="VO_UA_04" start="0s" duration="83800/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r25" offset="302900/2400s" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" start="1000/2400s" duration="22600/2400s" audioRole="effects">
               <adjust-volume amount="-12.3dB"/>
@@ -148,7 +149,7 @@
               <asset-clip ref="r55" lane="-1" offset="1300/2400s" name="VO_UA_05" start="0s" duration="128100/2400s" audioRole="dialogue"><adjust-volume amount="-0.6dB"/></asset-clip>
             </asset-clip>
             <asset-clip ref="r32" offset="399000/2400s" name="EP01_V2_ARCH_07_Loopt_Founder_12s" start="0/2400s" duration="13800/2400s">
-              <video ref="r50" lane="2" offset="0/2400s" name="EP01_SUPER_03_Loopt_2005_2012" start="0s" duration="9600/2400s"/>
+              <spine lane="2" offset="0/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r50" offset="0s" name="EP01_SUPER_03_Loopt_2005_2012" start="0s" duration="9600/2400s"/><transition name="Cross Dissolve" offset="8800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
             </asset-clip>
             <asset-clip ref="r33" offset="412800/2400s" name="ElevenLabs_video_seedance-2-5_Intense_macro_r_2026-11-09T12_58_53" start="0/2400s" duration="12000/2400s" audioRole="effects">
               <adjust-volume amount="-8.2dB"/>

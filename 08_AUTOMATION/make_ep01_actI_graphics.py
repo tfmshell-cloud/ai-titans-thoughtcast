@@ -34,12 +34,12 @@ def super_place(name, kicker, line):
     im.save(os.path.join(OUT, name))
 
 
-def act_title(name, act="АКТ I", subtitle="ПОХОДЖЕННЯ ТА КРЕМНІЄВИЙ ЩИТ"):
+def act_title(name, act="АКТ I", subtitle="ПОХОДЖЕННЯ ТА КРЕМНІЄВИЙ ЩИТ", kicker="THOUGHTCAST // AI TITANS // EP01: СЕМ АЛЬТМАН"):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     x, y = 230, 1480
     d.rectangle([x, y, x + 220, y + 7], fill=ORANGE)
-    shadowed(d, (x, y + 45), "THOUGHTCAST // AI TITANS // EP01: СЕМ АЛЬТМАН", font(MONO, 46), (210, 214, 220, 255))
+    shadowed(d, (x, y + 45), kicker, font(MONO, 46), (210, 214, 220, 255))
     shadowed(d, (x - 8, y + 120), act, font(SANS, 230, 1), (245, 245, 245, 255))
     shadowed(d, (x, y + 390), subtitle, font(SANS, 84), (242, 160, 60, 255))
     im.save(os.path.join(OUT, name))

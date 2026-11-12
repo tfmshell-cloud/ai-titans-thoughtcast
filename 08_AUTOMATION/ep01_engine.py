@@ -62,7 +62,11 @@ def find(idx, name):
 def _env(path, block):
     w = wave.open(path)
     ch, sr = w.getnchannels(), w.getframerate()
-    a = array.array("h", w.readframes(w.getnframes()))
+    raw = w.readframes(w.getnframes())
+    if w.getsampwidth() != 2:                 # 24/32-біт → 16 для оцінки огинаючої
+        import audioop as _ao
+        raw = _ao.lin2lin(raw, w.getsampwidth(), 2)
+    a = array.array("h", raw)
     step = int(block * sr / 48000) * ch
     return [math.sqrt(sum(x * x for x in a[i:i + step:ch * 3]) / max(1, len(a[i:i + step:ch * 3]))) / 32768
             for i in range(0, len(a), step)]
@@ -238,6 +242,7 @@ def t(f):
 
 DISSOLVE_UID = "FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"
 TITLE_FADE = 8          # кадрів наплаву на появу/зникнення титру
+VO_LABEL = "VO_UA"      # для англійської версії build_ep01_en.py ставить "VO_EN"
 
 
 def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=0, extra_sfx=None):
@@ -298,6 +303,23 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             continue
         inf = 10 ** 6
         tail = inf if a["still"] or not a["ln"] else a["ln"] - (a["in_f"] + a["f1"] - a["f0"])
+        need = diss[c]
+        if tail < need and a["in_f"] > 0:          # беремо вихідний кліп трохи раніше — з'являється «хвіст»
+            back = min(a["in_f"], need - tail)
+            a["in_f"] -= back
+            tail += back
+        b_room = inf if b["still"] or not b["ln"] else b["ln"] - (b["in_f"] + b["f1"] - b["f0"])
+        short = need - tail
+        if 0 < short <= 14 and b_room >= short and a["f1"] - a["f0"] > short + FPS:
+            # склейка на кілька кадрів раніше (голос не рухається) — місце для наплаву
+            a["f1"] -= short
+            b["f0"] -= short
+            del diss[c]
+            c -= short
+            diss[c] = need
+            tail = need
+        if c not in diss:
+            continue
         room = inf if b["still"] or not b["ln"] else b["ln"] - (b["in_f"] + b["f1"] - b["f0"])
         head = inf if b["still"] else b["in_f"] + room
         h = min(diss[c], tail, head)
@@ -364,7 +386,7 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             if aid:
                 g = round(VO_TARGET - level_db(find(idx, name), active_only=True), 1)
                 report.append((act["name"], name, g, "голос"))
-                attach(off + f0, f'<asset-clip ref="{aid}" lane="-1" offset="@OFF@" name="VO_UA_{n:02d}" start="0s" duration="{t(int(secs * FPS))}" audioRole="dialogue"><adjust-volume amount="{g}dB"/></asset-clip>')
+                attach(off + f0, f'<asset-clip ref="{aid}" lane="-1" offset="@OFF@" name="{VO_LABEL}_{n:02d}" start="0s" duration="{t(int(secs * FPS))}" audioRole="dialogue"><adjust-volume amount="{g}dB"/></asset-clip>')
         aid = asset(os.path.basename(mix), "audio", path=mix)
         if aid:
             attach(off, f'<asset-clip ref="{aid}" lane="-2" offset="@OFF@" name={quoteattr(os.path.splitext(os.path.basename(mix))[0])} start="0s" duration="{t(act["end_f"])}" audioRole="music"/>')
@@ -513,7 +535,7 @@ def to_resolve(xml_path, paths, timeline, markers, replace=False):
         if m is not None:
             stem = os.path.splitext(i.GetName())[0].split("[")[0]
             fp = os.path.basename(m.GetClipProperty("File Path") or "")
-            if stem and fp and not fp.startswith(stem[:20]) and not stem.startswith(("VO_UA", "EP01_MUS", "MUS_")):
+            if stem and fp and not fp.startswith(stem[:20]) and not stem.startswith(("VO_UA", "VO_EN", "EP01_MUS", "MUS_")):
                 bad.append(f"{i.GetName()} → {fp}")
     animated = 0
     for kk in range(1, tl.GetTrackCount("video") + 1):
