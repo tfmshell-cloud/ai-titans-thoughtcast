@@ -1,0 +1,107 @@
+[
+ {
+  "block": 1,
+  "tc": "0:00–0:20",
+  "file": "EP02_VO_UA_01_0_00_0_20",
+  "source": "ElevenLabs_2026-11-12T16_00_13_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 2,
+  "tc": "0:20–1:15",
+  "file": "EP02_VO_UA_02_0_20_1_15",
+  "source": "ElevenLabs_2026-11-12T16_00_47_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 3,
+  "tc": "1:15–2:15",
+  "file": "EP02_VO_UA_03_1_15_2_15",
+  "source": "ElevenLabs_2026-11-12T16_01_30_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 4,
+  "tc": "2:15–3:30",
+  "file": "EP02_VO_UA_04_2_15_3_30",
+  "source": "ElevenLabs_2026-11-12T16_02_11_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 5,
+  "tc": "3:30–5:15",
+  "file": "EP02_VO_UA_05_3_30_5_15",
+  "source": "ElevenLabs_2026-11-12T16_02_38_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 6,
+  "tc": "5:15–6:30",
+  "file": "EP02_VO_UA_06_5_15_6_30",
+  "source": "ElevenLabs_2026-11-12T16_03_18_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 7,
+  "tc": "6:30–8:00",
+  "file": "EP02_VO_UA_07_6_30_8_00",
+  "source": "ElevenLabs_2026-11-12T16_06_21_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 8,
+  "tc": "8:00–9:30",
+  "file": "EP02_VO_UA_08_8_00_9_30",
+  "source": "ElevenLabs_2026-11-12T16_06_57_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 9,
+  "tc": "9:30–10:45",
+  "file": "EP02_VO_UA_09_9_30_10_45",
+  "source": "ElevenLabs_2026-11-12T16_07_41_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 10,
+  "tc": "10:45–12:15",
+  "file": "EP02_VO_UA_10_10_45_12_15",
+  "source": "ElevenLabs_2026-11-12T16_08_25_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 11,
+  "tc": "12:15–13:45",
+  "file": "EP02_VO_UA_11_12_15_13_45",
+  "source": "ElevenLabs_2026-11-12T16_09_01_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 12,
+  "tc": "13:45–16:15",
+  "file": "EP02_VO_UA_12_13_45_16_15",
+  "source": "ElevenLabs_2026-11-12T16_09_44_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 13,
+  "tc": "16:15–17:45",
+  "file": "EP02_VO_UA_13_16_15_17_45",
+  "source": "ElevenLabs_2026-11-12T16_10_41_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 14,
+  "tc": "17:45–19:30",
+  "file": "EP02_VO_UA_14_17_45_19_30",
+  "source": "ElevenLabs_2026-11-12T16_11_16_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ },
+ {
+  "block": 15,
+  "tc": "19:30–21:00",
+  "file": "EP02_VO_UA_15_19_30_21_00",
+  "source": "ElevenLabs_2026-11-12T16_12_00_Maks Tsukrenko - Confident Podcast_pvc_s50_sim75_v4.mp3",
+  "voice": "Maks Tsukrenko - Confident Podcast (ElevenLabs v4, s50 sim75)"
+ }
+]
