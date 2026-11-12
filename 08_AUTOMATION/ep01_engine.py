@@ -237,6 +237,7 @@ def t(f):
 
 
 DISSOLVE_UID = "FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"
+TITLE_FADE = 8          # кадрів наплаву на появу/зникнення титру
 
 
 def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=0, extra_sfx=None):
@@ -351,7 +352,13 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             secs = (f1 - f0) / FPS
             aid = asset(name, "still")
             if aid:
-                attach(off + f0, f'<video ref="{aid}" lane="2" offset="@OFF@" name={quoteattr(os.path.splitext(name)[0])} start="0s" duration="{t(int(secs * FPS))}"/>')
+                d = int(secs * FPS)
+                n = min(TITLE_FADE, d // 4)
+                fx = lambda o: (f'<transition name="Cross Dissolve" offset="{t(o)}" duration="{t(n)}">'
+                                f'<filter-video ref="r1fx" name="Cross Dissolve"/></transition>')
+                attach(off + f0, f'<spine lane="2" offset="@OFF@">' + fx(0) +
+                       f'<video ref="{aid}" offset="0s" name={quoteattr(os.path.splitext(name)[0])} start="0s" duration="{t(d)}"/>'
+                       + fx(d - n) + '</spine>')
         for n, (name, f0, secs) in act["vo"].items():
             aid = asset(name, "audio")
             if aid:
@@ -418,38 +425,31 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
         paths.add(mix)
         for row in a["v1"] + a.get("v2", []) + a.get("v3", []) + a.get("sfx", []):
             paths.add(find(idx, row[1]))
-    for row in (extra_sfx or []):
-        paths.add(find(idx, row[1]))
         for v in a["vo"].values():
             paths.add(find(idx, v[0]))
+    for row in (extra_sfx or []):
+        paths.add(find(idx, row[1]))
     build_fcpxml.report = report
     return xml, problems, sorted(p for p in paths if p)
 
 
 # ------------------------------------------------------------------ Resolve
-def fusion_title_fade(item, n=6, blur=12.0):
-    """Fusion-композиція на титрі: поява з розмиття й прозорості за n кадрів і так само зникнення."""
+def fusion_title_fade(item, n=8, blur=10.0):
+    """Fusion на титрі: розмиття на появі й зникненні (прозорість дає нативний наплав із FCPXML)."""
     comp = item.GetFusionCompByIndex(1) if item.GetFusionCompCount() else item.AddFusionComp()
-    if not comp or comp.FindTool("TitleFade_BC"):
+    if not comp or comp.FindTool("TitleFade_Blur"):
         return 0
     a = comp.GetAttrs()
     s, e = int(a["COMPN_RenderStart"]), int(a["COMPN_RenderEnd"])
     comp.Lock()
     mi, mo = comp.FindTool("MediaIn1"), comp.FindTool("MediaOut1")
     bl = comp.AddTool("Blur", -32768, -32768)
-    bc = comp.AddTool("BrightnessContrast", -32768, -32768)
     bl.SetAttrs({"TOOLS_Name": "TitleFade_Blur"})
-    bc.SetAttrs({"TOOLS_Name": "TitleFade_BC"})
     bl.Input = mi.Output
-    bc.Input = bl.Output
-    mo.Input = bc.Output
-    bc.SetInput("Alpha", 1)
+    mo.Input = bl.Output
     bl.AddModifier("XBlurSize", "BezierSpline")
-    bc.AddModifier("Gain", "BezierSpline")
     for fr, v in ((s, blur), (s + n, 0.0), (e - n, 0.0), (e, blur * 0.7)):
         bl.SetInput("XBlurSize", v, fr)
-    for fr, v in ((s, 0.0), (s + n, 1.0), (e - n, 1.0), (e, 0.0)):
-        bc.SetInput("Gain", v, fr)
     comp.Unlock()
     return 1
 
@@ -522,5 +522,5 @@ def to_resolve(xml_path, paths, timeline, markers, replace=False):
                 animated += fusion_title_fade(it)
     p.SetCurrentTimeline(tl)
     pm.SaveProject()
-    print(f"  Fusion: анімовано титрів — {animated}")
+    print(f"  Титри: наплави з FCPXML; Fusion-розмиття додано на {animated} (у складених кліпах — пропускається)")
     print(f"✓ Таймлайн «{name}»: {(tl.GetEndFrame() - s0 + 1) / FPS:.1f} с; без медіа: {bad or 'немає'}")
