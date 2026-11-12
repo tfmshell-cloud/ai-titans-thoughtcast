@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Thoughtcast: Архітектори Розуму (AI Titans) — Головний Командний Дашборд</title>
+  <style>
+    :root {
+      /* Scandinavian Nordic Dark Slate / Graphite Studio Theme */
+      --bg: #0b0f17;
+      --bg-gradient: radial-gradient(ellipse 80% 50% at 50% -15%, #182438 0%, #0b0f17 100%), #0b0f17;
+      --surface: #111724;
+      --surface-elevated: #161e2e;
+      --surface-hover: #1c273c;
+      --surface-glass: rgba(17, 23, 36, 0.85);
+      --border: #1e293b;
+      --border-subtle: #172132;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --cyan: #38bdf8;
+      --cyan-subtle: rgba(56, 189, 248, 0.12);
+      --emerald: #10b981;
+      --emerald-subtle: rgba(16, 185, 129, 0.12);
+      --amber: #f59e0b;
+      --amber-subtle: rgba(245, 158, 11, 0.12);
+      --purple: #a78bfa;
+      --purple-subtle: rgba(167, 139, 250, 0.12);
+      --rose: #fb7185;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: var(--bg-gradient);
+      background-attachment: fixed;
+      color: var(--text-primary);
+      font-family: var(--font);
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 1.15rem;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .app-shell { max-width: 1420px; margin: 0 auto; }
+
+    /* Top Header */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.85rem 1.15rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      margin-bottom: 0.9rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand-wrap { display: flex; align-items: center; gap: 0.75rem; }
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: #0b0d13;
+      flex-shrink: 0;
+    }
+    .title-group h1 { font-size: 15.5px; font-weight: 700; color: var(--text-primary); }
+    .title-group p { font-size: 11.8px; color: var(--text-secondary); }
+
+    .stats-inline { display: flex; gap: 0.45rem; align-items: center; flex-wrap: wrap; }
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--emerald-subtle);
+      color: var(--emerald);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+    .dot-live { width: 6px; height: 6px; border-radius: 50%; background: var(--emerald); }
+    .metric-pill {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 4px 9px;
+      font-size: 11.5px;
+      color: var(--text-secondary);
+    }
+    .metric-pill strong { color: var(--text-primary); font-family: var(--mono); }
+
+    /* Main Navigation Bar */
+    .main-nav-tabs {
+      display: flex;
+      gap: 0.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.4rem;
+      margin-bottom: 1rem;
+      overflow-x: auto;
+    }
+    .hub-tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 0.52rem 0.9rem;
+      border-radius: 7px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: var(--font);
+      transition: all 0.15s ease;
+    }
+    .hub-tab-btn:hover { color: var(--text-primary); background: var(--surface-hover); }
+    .hub-tab-btn.active {
+      background: var(--cyan-subtle);
+      color: var(--cyan);
+      border-color: rgba(56, 189, 248, 0.38);
+    }
+
+    /* Main 2-Column Workspace Layout (Content + Right Project Sidebar) */
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 315px;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .hub-pane { display: none; }
+    .hub-pane.active { display: block; animation: fadeUp 0.18s ease; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 1rem 1.1rem;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-title { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+
+    /* 10 ACTIVE HERO CARDS */
+    .heroes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+      gap: 0.9rem;
+    }
+    .hero-card {
+      background: linear-gradient(155deg, #161a26 0%, #12151f 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.05rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.68rem;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+    .hero-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--cyan);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(56, 189, 248, 0.22);
+    }
+    .hero-card-top {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 0.9rem;
+      align-items: start;
+    }
+    .hero-avatar-wrap {
+      width: 82px;
+      height: 98px;
+      border-radius: 9px;
+      overflow: hidden;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      position: relative;
+      background: var(--surface-elevated);
+    }
+    .hero-avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .ep-num-badge {
+      position: absolute;
+      bottom: 4px;
+      left: 4px;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      background: rgba(12, 14, 19, 0.9);
+      color: var(--cyan);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+    .hero-badges-line { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 4px; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--surface-elevated);
+      color: var(--text-secondary);
+    }
+    .pill-cyan { background: var(--cyan-subtle); color: var(--cyan); border-color: rgba(56, 189, 248, 0.3); }
+    .pill-emerald { background: var(--emerald-subtle); color: var(--emerald); border-color: rgba(52, 211, 153, 0.3); }
+    .pill-purple { background: var(--purple-subtle); color: var(--purple); border-color: rgba(167, 139, 250, 0.3); }
+    .pill-amber { background: var(--amber-subtle); color: var(--amber); border-color: rgba(251, 191, 36, 0.3); }
+
+    .hero-name { font-size: 16px; font-weight: 700; color: var(--text-primary); }
+    .hero-latin-inline { font-size: 11.5px; font-weight: 500; color: var(--text-muted); font-family: var(--mono); }
+    .hero-ep-title { font-size: 13px; font-weight: 600; color: var(--cyan); margin-top: 1px; }
+    .hero-role { font-size: 11.5px; color: var(--text-secondary); margin-top: 2px; }
+
+    .hero-conflict-box {
+      font-size: 11.8px;
+      color: #cbd5e1;
+      background: rgba(25, 29, 41, 0.72);
+      border: 1px solid var(--border-subtle);
+      border-radius: 7px;
+      padding: 0.48rem 0.65rem;
+    }
+    .hero-conflict-box strong { color: var(--amber); }
+
+    .hero-quote-mini {
+      font-size: 11.8px;
+      font-style: italic;
+      color: var(--text-secondary);
+      border-left: 2px solid var(--purple);
+      padding-left: 0.55rem;
+    }
+    .hero-metrics-strip {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      font-size: 11px;
+      color: var(--text-secondary);
+      padding: 0.38rem 0.55rem;
+      background: var(--surface);
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+    }
+    .hero-prog-row { display: flex; flex-direction: column; gap: 4px; }
+    .hero-prog-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+    .hero-prog-label strong { color: var(--emerald); font-family: var(--mono); }
+    .hero-prog-bar {
+      height: 6px;
+      background: #0b0d13;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+    .hero-prog-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan), var(--emerald));
+      border-radius: 999px;
+      transition: width 0.25s ease;
+    }
+
+    .hero-deep-links {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .deep-chip {
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      transition: all 0.14s ease;
+    }
+    .deep-chip:hover {
+      color: var(--cyan);
+      border-color: var(--cyan);
+      background: var(--cyan-subtle);
+    }
+
+    .hero-open-cta {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.55rem 0.8rem;
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgba(56, 189, 248, 0.16), rgba(167, 139, 250, 0.14));
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .hero-open-cta:hover {
+      background: var(--cyan);
+      color: #0b0d13;
+    }
+
+    /* Architecture Pipeline & Tables */
+    .pipeline-flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .pipe-step {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--cyan);
+      border-radius: 9px;
+      padding: 0.75rem 0.85rem;
+    }
+    .pipe-step-num {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--cyan);
+      text-transform: uppercase;
+    }
+    .pipe-step h4 { font-size: 13px; margin: 3px 0 4px; color: var(--text-primary); }
+    .pipe-step p { font-size: 11.5px; color: var(--text-secondary); }
+
+    .hub-table-wrap { overflow-x: auto; }
+    .hub-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .hub-table th {
+      text-align: left;
+      padding: 0.58rem 0.7rem;
+      background: var(--surface-elevated);
+      color: var(--text-secondary);
+      font-size: 10.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .hub-table td {
+      padding: 0.62rem 0.7rem;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+    }
+
+    .code-template-box {
+      background: #0b0d13;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.75rem 0.9rem;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      line-height: 1.55;
+      color: #bae6fd;
+      white-space: pre-wrap;
+      margin-top: 0.45rem;
+    }
+
+    /* Global 1,000 Quotes Tab */
+    .q-filter-bar { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 0.75rem; }
+    .q-filter-btn {
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface-elevated);
+      color: var(--text-secondary);
+      font-family: var(--font);
+    }
+    .q-filter-btn.active {
+      background: var(--cyan-subtle);
+      color: var(--cyan);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+    .g-quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 0.7rem;
+    }
+    .g-quote-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 0.8rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .g-quote-top { display: flex; justify-content: space-between; gap: 5px; flex-wrap: wrap; }
+    .g-quote-body { font-size: 12.5px; color: var(--text-primary); line-height: 1.5; }
+    .btn-copy-sm, .btn-mini-open {
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--cyan);
+      font-family: var(--font);
+      display: inline-flex;
+      align-items: center;
+    }
+    .btn-copy-sm:hover, .btn-mini-open:hover { background: var(--cyan-subtle); border-color: var(--cyan); }
+
+    /* Right Column: Project Catalog Sidebar */
+    .folder-list { display: flex; flex-direction: column; gap: 0.35rem; }
+    .folder-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.38rem 0.55rem;
+      border-radius: 6px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-subtle);
+    }
+    .folder-row-link:hover {
+      border-color: var(--cyan);
+      background: var(--surface-hover);
+    }
+    .folder-name { font-family: var(--mono); font-size: 11px; color: var(--text-primary); }
+    .folder-tag { font-size: 10.5px; color: var(--text-secondary); white-space: nowrap; }
+
+    .footer-bar {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 11.5px;
+      color: var(--text-secondary);
+    }
+
+    .hub-toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: #161b28;
+      border: 1px solid var(--emerald);
+      color: var(--text-primary);
+      padding: 0.6rem 0.95rem;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+      transition: all 0.18s ease;
+    }
+    .hub-toast.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1080px) {
+      .workspace-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .heroes-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top Header -->
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-icon">CT</div>
+        <div class="title-group">
+          <h1>Cinematic Thoughtcast // Архітектори Розуму (AI Titans)</h1>
+          <p>Віртуальна кіностудія одного шоуранера • Командний пункт Сезону 1 (10 Мастер-Досьє)</p>
+        </div>
+      </div>
+      <div class="stats-inline">
+        <span class="badge-status"><span class="dot-live"></span> Усі 10 епізодів активні</span>
+        <span class="metric-pill">Героїв: <strong>10</strong></span>
+        <span class="metric-pill">Цитат: <strong>1,000</strong></span>
+        <span class="metric-pill">Промптів 4K: <strong>1,000</strong></span>
+        <span class="metric-pill">Диктор: <strong id="statTotalWords">13,700+ слів</strong></span>
+        <span class="metric-pill">Готовність: <strong id="statSeasonReadiness">0% SOP</strong></span>
+      </div>
+    </header>
+
+    <!-- Clear 5-Tab Studio Navigation -->
+        <!-- Executive Next-Actions Roadmap Banner -->
+    <div class="card" style="margin-bottom:1rem;padding:0.9rem 1.15rem;background:linear-gradient(90deg,rgba(16,185,129,0.12),rgba(56,189,248,0.08),rgba(251,191,36,0.09));border-color:rgba(56,189,248,0.35);">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;">
+        <div style="display:flex;align-items:center;gap:0.85rem;">
+          <div style="font-size:26px;">🚀</div>
+          <div>
+            <div style="font-size:13.5px;font-weight:700;color:var(--text-primary);display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              Операційний План Виробництва • Сезон 1
+              <span class="pill pill-emerald" style="font-size:10.5px;">Сценарії 100% (10/10)</span>
+              <span class="pill pill-purple" style="font-size:10.5px;">Suno 92 BPM (16 stems у 03_AUDIO)</span>
+              <span class="pill pill-amber" style="font-size:10.5px;" id="hubTopVeoBadge">Veo Анімації (4/14 Готово)</span>
+            </div>
+            <div style="font-size:11.8px;color:var(--text-secondary);margin-top:3px;">
+              Поточний фокус: генерація 10 ключових 6–10с анімацій у <strong>Google Veo 2 / Flow</strong> (ТОП-14) та вивантаження голосу ElevenLabs для чистової збірки монтажних таймлайнів у <strong>DaVinci Resolve 19</strong>.
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:0.45rem;flex-wrap:wrap;align-items:center;">
+          <a class="btn" style="padding:0.45rem 0.85rem;font-size:12px;background:linear-gradient(135deg,rgba(16,185,129,0.35),rgba(56,189,248,0.35));border:1px solid rgba(56,189,248,0.7);color:#fff;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:5px;" href="season1_telemetry_dashboard.html">📊 Телеметрія & Стадії 10 Титанів ↗</a>
+          <a class="btn" style="padding:0.45rem 0.85rem;font-size:12px;background:linear-gradient(135deg,rgba(239,68,68,0.35),rgba(245,158,11,0.35));border:1px solid rgba(239,68,68,0.65);color:#fff;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:5px;" href="media_vault_analysis.html?ep=10">🎥 Медіа-Сховище (EP01–EP10) ↗</a>
+          <button class="btn btn-emerald" style="padding:0.45rem 0.85rem;font-size:12px;font-weight:600;cursor:pointer;" onclick="document.querySelector('[data-hub-tab=&quot;animation&quot;]').click();">🎬 Відкрити ТОП-14 Анімацій Veo</button>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep01_altman.html#media">🎙️ EP01 Альтман</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep02_huang.html#media">🎙️ EP02 Хуанг</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep03_hassabis.html#media">🎙️ EP03 Гассабіс</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep04_hinton.html#media">🎙️ EP04 Хінтон</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep05_lecun.html#media-archives">🎙️ EP05 Лекун</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep06_sutskever.html#media-archives">🎙️ EP06 Суцкевер</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep07_amodei.html#media-archives">🎙️ EP07 Амодей</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);text-decoration:none;" href="episodes/ep08_li.html#media-archives">🎙️ EP08 Фей-Фей Лі</a>
+          <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);color:#e2e8f0;text-decoration:none;" href="episodes/ep09_bengio.html#media-archives">🎙️ EP09 Йошуа Бенжіо →</a>
+      <a class="btn" style="padding:0.4rem 0.72rem;font-size:11.5px;background:linear-gradient(135deg,rgba(56,189,248,0.34),rgba(245,158,11,0.30));border:1px solid rgba(56,189,248,0.70);color:#fff;text-decoration:none;font-weight:700;" href="episodes/ep10_ng.html#media-archives">⚡ EP10 Ендрю Ин (Архів & Медіа • Фінал Сезону) →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clear 6-Tab Studio Navigation -->
+    <nav class="main-nav-tabs" aria-label="Навігація студією">
+      <button class="hub-tab-btn active" data-hub-tab="heroes">🎴 1. 10 Героїв (Активні блоки Мастер-Досьє)</button>
+      <button class="hub-tab-btn" data-hub-tab="animation" style="border-color:rgba(251,191,36,0.45);color:var(--amber);">🎬 2. План Анімацій Veo (ТОП-14) & Матриця Готовності</button>
+      <button class="hub-tab-btn" data-hub-tab="architecture">🏛️ 3. Генеральна Архітектура & Дорожня Карта (8 Цехів)</button>
+      <button class="hub-tab-btn" data-hub-tab="quotes">💬 4. База 1,000 Цитат (Пошук по всіх 10 героях)</button>
+      <button class="hub-tab-btn" data-hub-tab="standards">🎵 5. Бібліотека Suno (16 WAV • 10 Героїв) • AI Studio • DaVinci 19</button>
+      <button class="hub-tab-btn" data-hub-tab="registry">📊 6. Виробничий Реєстр Сезону 1</button>
+      <a class="hub-tab-btn" style="text-decoration:none;border-color:rgba(167,139,250,0.45);color:var(--purple);display:inline-flex;align-items:center;gap:6px;" href="cinematic_innovations.html">✨ 7. 20 Фішок Монтажу ↗</a>
+      <a class="hub-tab-btn" style="text-decoration:none;border-color:rgba(239,68,68,0.55);color:#f87171;display:inline-flex;align-items:center;gap:6px;" href="media_vault_analysis.html">🎥 8. AI Медіа-Сховище ↗</a>
+    </nav>
+
+    <!-- Main Workspace + Preserved Right Project Catalog -->
+    <div class="workspace-grid">
+      <div>
+        <!-- PANE 1: 10 ACTIVE HERO BLOCKS -->
+        <section id="hub-pane-heroes" class="hub-pane active">
+          <div class="card" style="margin-bottom:0.9rem;padding:0.8rem 1rem;background:linear-gradient(90deg,rgba(56,189,248,0.09),rgba(52,211,153,0.07));border-color:rgba(56,189,248,0.28);">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+              <div>
+                <strong style="color:var(--cyan);font-size:13px;">⚡ Кожен із 10 блоків нижче є повністю активним:</strong>
+                <span style="color:var(--text-secondary);font-size:12.2px;"> натисніть на картку будь-якого героя, щоб відкрити його окрему персональну вебсторінку з покроковим алгоритмом дій (SOP), біографією, повним сценарієм + SSML, 100 візуальними промптами Veo/Flow, 100 цитатами, 16 треками Suno 92 BPM та конструктором DaVinci Resolve 19.</span>
+              </div>
+            </div>
+          </div>
+          <div id="heroesGridContainer" class="heroes-grid"></div>
+        </section>
+        <!-- PANE: VEO ANIMATION PIPELINE & PRODUCTION READINESS MATRIX -->
+        <section id="hub-pane-animation" class="hub-pane">
+          <div id="animationPaneContainer"></div>
+        </section>
+
+        <!-- PANE 3: GENERAL ARCHITECTURE & ROADMAP (FROM 11-PAGE SPEC) -->
+        <section id="hub-pane-architecture" class="hub-pane">
+          <div class="card" style="margin-bottom:1rem;">
+            <div class="section-head">
+              <span class="section-title">🔄 Архітектурна схема руху даних (Data Flow Pipeline: Крок 1 → Крок 8)</span>
+              <span class="pill pill-cyan">Віртуальна кіностудія 1 шоуранера = штат 40 фахівців</span>
+            </div>
+            <div class="pipeline-flow">
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 1 • БАЗА ЗНАНЬ</div><h4>100 цитат + Досьє</h4><p>Верифіковані першоджерела, хронологія криз та стенограми лекцій (Stanford, TED, Lex Fridman).</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 2 • NOTEBOOKLM</div><h4>Фактчекінг & Audio Overview</h4><p>Ізольований блокнот <code>AI_Titans_EpXX</code> без галюцинацій + EN Audio Overview для пошуку драматургічного нерва.</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 3 • GEMINI</div><h4>4-Актний Сценарій</h4><p>Походження/Опір → Велика самотність → Зсув парадигми → Кодекс творця (18–22 хв).</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 4 • GOOGLE AI STUDIO</div><h4>Промпти + SSML (Temp 0.45)</h4><p>Гілка А: покадрові промпти Veo/Flow. Гілка Б: SSML-розмітка (<code>rate="84%" pitch="-1.5st"</code>, паузи <code>&lt;break&gt;</code>).</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 5 • ANTIGRAVITY</div><h4>DevOps & Веб-Студія</h4><p>Папки <code>01_RESEARCH..09_BACKUPS</code>, 10 вебсторінок героїв, синхронізація GitHub + Google Drive.</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 6A/B/C • СИНТЕЗ</div><h4>TTS + Suno 92 BPM + Veo/Flow</h4><p>Дві майстер-доріжки WAV 48kHz/24-bit (UA+EN), 16 треків Suno 92 BPM та пул 4K 24fps футажів.</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 7 • DAVINCI RESOLVE 19</div><h4>Edit • Fairlight • Color • Fusion</h4><p>Монтаж на піках 92 BPM (кожні 62–63 кадри), сайдчейн -3.2 dB, Kodak 2383 + 35mm Grain, титри Inter +0.04.</p></div>
+              <div class="pipe-step"><div class="pipe-step-num">КРОК 8 • YOUTUBE RELEASE</div><h4>Multi-Language Audio + Shorts</h4><p>Публікація 4K майстра з двома аудіодоріжками (UA + EN) та нарізка 3 вертикальних Shorts із гострими цитатами.</p></div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom:1rem;">
+            <div class="section-head">
+              <span class="section-title">🏭 Матриця 8 виробничих цехів екосистеми та суворі обмеження</span>
+            </div>
+            <div class="hub-table-wrap">
+              <table class="hub-table">
+                <thead>
+                  <tr><th>Цех / Платформа</th><th>Роль у віртуальній студії</th><th>Вхідні дані (Input)</th><th>Вихідний артефакт (Output)</th><th>Головне табу (Чого НЕ робити)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>1. Google NotebookLM</strong></td><td>Закритий архівний інститут і фактчекер</td><td>100 цитат, біографічне досьє, стенограми</td><td>Верифіковані зв'язки + EN Audio Overview</td><td style="color:var(--rose);">Не генерувати фінальний художній закадровий текст</td></tr>
+                  <tr><td><strong>2. Gemini</strong></td><td>Головний драматург і співрежисер</td><td>Інсайти з NotebookLM, хронологія криз</td><td>4-актний режисерський сценарій з таймкодами</td><td style="color:var(--rose);">Не вигадувати дати без опори на базу</td></tr>
+                  <tr><td><strong>3. Google AI Studio</strong></td><td>Лабораторія промпт-інженерії (Temp 0.45)</td><td>Готовий сценарій + System Instructions</td><td>Покадрові промпти Flow/Veo та SSML-код</td><td style="color:var(--rose);">Не використовувати як неструктурований чат</td></tr>
+                  <tr><td><strong>4. Google AntiGravity</strong></td><td>Командний центр DevOps та дашборду</td><td>Мастер-досьє, скрипти Python/Bash</td><td>Дерево папок, 10 сторінок героїв, GitHub + GDrive</td><td style="color:var(--rose);">Не зберігати сирі 4K відео всередині Git</td></tr>
+                  <tr><td><strong>5. Cloud TTS & ElevenLabs</strong></td><td>Цех двомовного дубляжу (UA + EN)</td><td>Текст із паузами / SSML (115–120 WPM)</td><td>2 синхронні доріжки WAV 48kHz / 24-bit</td><td style="color:var(--rose);">Не читати на швидкості 150+ слів/хв</td></tr>
+                  <tr><td><strong>6. Suno Pro</strong></td><td>Симфонічно-електронний оркестр</td><td>Custom Instrumental промпти (рівно 92 BPM)</td><td>Модулі Introspection, Tension, Transcendence</td><td style="color:var(--rose);">Жодного вокалу або зміни BPM усередині випуску</td></tr>
+                  <tr><td><strong>7. Google Flow & Veo</strong></td><td>Цех 3D-візуалізації та макро-фізики</td><td>100 інженерних промптів на епізод</td><td>Пул 4K 24fps кліпів (макро + 3D кожні 12–15 с)</td><td style="color:var(--rose);">Категорична заборона штучних «балакучих облич»</td></tr>
+                  <tr><td><strong>8. DaVinci Resolve 19</strong></td><td>Фінальний монтажно-тонувальний комплекс</td><td>A1 (VO), A2 (92 BPM), A3 (AMB), A4 (SFX), V1/V2</td><td>4K Master із сайдчейном -3.2dB і Kodak 2383</td><td style="color:var(--rose);">Не робити склейки поза сіткою 92 BPM (2.61 с)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">🗓️ П'ятиденний спринт-календар шоуранера на 1 епізод (Definition of Done)</span>
+            </div>
+            <div class="hub-table-wrap">
+              <table class="hub-table">
+                <thead>
+                  <tr><th>Фаза спринту</th><th>Інструменти</th><th>Операційні дії</th><th>Критерій готовності (Definition of Done)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>День 1: Дослідження та Сценарій</strong></td><td>NotebookLM + Gemini + AntiGravity</td><td>Завантаження 100 цитат і біографії в NotebookLM, генерація Audio Overview, затвердження 4-актного сценарію.</td><td>Готовий сценарій UA + EN у папці <code>02_SCRIPTS/</code>.</td></tr>
+                  <tr><td><strong>День 2: Промпти та Звук</strong></td><td>AI Studio + Suno Pro + ElevenLabs</td><td>Експорт SSML / чистого тексту зі студії героя, генерація треків 92 BPM у Suno Pro, синтез WAV (UA + EN).</td><td>Повний аудіо-каркас випуску лежить у <code>03_AUDIO/</code>.</td></tr>
+                  <tr><td><strong>День 3: Генерація візуалу (VFX)</strong></td><td>Google Veo + Google Flow</td><td>Генерація 4K 24fps сцен за 100 промптами (макро-фізика в Veo + просторові переходи у Flow) + архівні фото з паралаксом.</td><td>Пул іменованих кліпів у <code>05_RAW_FOOTAGE/</code>.</td></tr>
+                  <tr><td><strong>День 4: Монтаж та Мастеринг</strong></td><td>DaVinci Resolve 19 + AntiGravity</td><td>Імпорт у Smart Bins + маркери CSV, монтаж під 92 BPM, Fairlight -3.2dB, Kodak 2383 D60, титри Fusion.</td><td>Експортований 4K Master + запущений <code>./run_pipeline.sh</code>.</td></tr>
+                  <tr><td><strong>День 5: Дистрибуція та Shorts</strong></td><td>YouTube Studio + DaVinci Resolve</td><td>Завантаження 4K-відео на YouTube, прикріплення 2 аудіодоріжок (UA + EN), нарізка 3 вертикальних Shorts.</td><td>Опублікований двомовний реліз та 3 промо-ролики Shorts.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANE 3: GLOBAL 1,000 QUOTES DATABASE -->
+        <section id="hub-pane-quotes" class="hub-pane">
+          <div class="card">
+            <div class="section-head">
+              <div>
+                <div class="section-title">💬 Повна верифікована база 1,000 цитат і фундаментальних тез (по 100 на кожного з 10 героїв)</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Миттєвий пошук та фільтрація по всьому сезону або перехід безпосередньо у вкладку цитат будь-якого героя.</div>
+              </div>
+              <input type="search" id="globalQuotesSearch" placeholder="Пошук серед 1,000 цитат (ключове слово, ідея, герой)..." style="background:var(--surface-elevated);border:1px solid var(--border);border-radius:7px;padding:0.45rem 0.8rem;color:var(--text-primary);min-width:290px;font-size:12.5px;outline:none;">
+            </div>
+            <div id="globalQuotesHeroPills" class="q-filter-bar"></div>
+            <div id="globalQuotesCount" style="font-size:12px;color:var(--text-secondary);margin-bottom:0.75rem;"></div>
+            <div id="globalQuotesGrid" class="g-quotes-grid"></div>
+            <div style="text-align:center;margin-top:1rem;">
+              <button id="btnLoadMoreQuotes" class="btn-copy-sm" style="padding:0.5rem 1.1rem;font-size:12px;">Показати ще</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANE 4: ENGINEERING TEMPLATES (SUNO POOL / AI STUDIO / VEO / DAVINCI) -->
+        <section id="hub-pane-standards" class="hub-pane">
+          <div class="card" style="margin-bottom:1rem;border-color:rgba(52,211,153,0.38);">
+            <div class="section-head">
+              <div>
+                <div class="section-title">🎧 Імпортована Майстер-Бібліотека Suno Pro (16 WAV-треків у 10 папках Smart Bins • 61 хв 31 с • 48 kHz)</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Кожен із 10 героїв (EP01–EP10) отримав власну унікальну тему Акту 1 (Introspection) без повторів + готові кульмінації й фінали.</div>
+              </div>
+              <span class="pill pill-emerald">48,000 Hz • C2PA Verified</span>
+            </div>
+            <div class="hub-table-wrap">
+              <table class="hub-table">
+                <thead>
+                  <tr><th>№</th><th>Оригінал Suno → Smart Bin (.wav)</th><th>Модуль & Акустика</th><th>Прослухати</th><th>Призначення в монтажі</th><th>Шлях WAV</th></tr>
+                </thead>
+                <tbody id="hubSunoPoolBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom:1rem;">
+            <div class="section-head">
+              <span class="section-title">🤖 Еталонна системна інструкція для Google AI Studio (Temperature = 0.45, Top-P = 0.85)</span>
+              <button class="btn-copy-sm" data-copy-template="tplAiStudio" data-label="System Instruction для Google AI Studio">📋 Копіювати System Prompt</button>
+            </div>
+            <pre class="code-template-box" id="tplAiStudio">Ти — головний технічний режисер та промпт-інженер документального проекту «Cinematic Thoughtcast».
+Твоє завдання — приймати готовий дикторський сценарій українською мовою і конвертувати його у два строгі технічні артефакти:
+1. Таблицю візуальних промптів для генераторів Google Flow / Google Veo (англійською мовою). Кожен промпт має відповідати формулі:
+[Camera Movement & Lens] + [Physical/Abstract Subject in Macro or IMAX Scale] + [Lighting & Color Palette] + [35mm Film Grain, Octane Render, 4k 24fps].
+ЗАБОРОНЕНО генерувати обличчя реальних людей — використовуй лише метафори матеріального світу, архітектуру, кремній, оптику та фізичні стихії.
+2. Повний дикторський скрипт, розмічений тегами стандарту SSML (&lt;speak&gt;, &lt;prosody rate="84%" pitch="-1.5st"&gt;, &lt;break time="1.0s"/&gt;, &lt;emphasis&gt;) для синтезу голосу зі швидкістю рівно 115 слів на хвилину.</pre>
+          </div>
+
+          <div class="card" style="margin-bottom:1rem;">
+            <div class="section-head">
+              <span class="section-title">🎥 Шаблони візуального контрасту кожні 12–15 с (Google Veo Реалізм + Google Flow 3D)</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0.8rem;">
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <strong style="color:var(--amber);">Google Veo (Тактильний макро-реалізм)</strong>
+                  <button class="btn-copy-sm" data-copy-template="tplVeo" data-label="шаблон Google Veo">📋 Копіювати</button>
+                </div>
+                <pre class="code-template-box" id="tplVeo">Cinematic macro shot, slow dolly in, [Subject], moody low-key tungsten lighting, volumetric dust motes, shallow depth of field, shot on Arri Alexa 65, Kodak Vision3 500T 5219 film stock, 4k 24fps.</pre>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <strong style="color:var(--cyan);">Google Flow (Багатовимірна 3D-абстракція)</strong>
+                  <button class="btn-copy-sm" data-copy-template="tplFlow" data-label="шаблон Google Flow">📋 Копіювати</button>
+                </div>
+                <pre class="code-template-box" id="tplFlow">Seamless spatial transition through a dark multidimensional geometric lattice of glowing neural weights, coherent cyan and gold laser filaments, physical particle simulation, Octane render aesthetic, 8k 24fps.</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">🎵 Золотий стандарт Suno Pro (Custom Instrumental • 92 BPM) & DaVinci Resolve 19</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0.8rem;">
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <strong style="color:var(--emerald);">Модуль A: Introspection (Акт 1)</strong>
+                  <button class="btn-copy-sm" data-copy-template="tplSunoA" data-label="Suno Модуль A">📋</button>
+                </div>
+                <pre class="code-template-box" id="tplSunoA">Instrumental ambient trip-hop, 92 bpm, deep warm analog sub-bass, sparse Rhodes electric piano chords, dusty vinyl crackle texture, slow hypnotic downtempo groove, distant clean guitar harmonics, melancholic philosophical mood, wide stereo mastering.</pre>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <strong style="color:var(--purple);">Модуль B: Tension & Crisis (Акти 2–3)</strong>
+                  <button class="btn-copy-sm" data-copy-template="tplSunoB" data-label="Suno Модуль B">📋</button>
+                </div>
+                <pre class="code-template-box" id="tplSunoB">Instrumental dark industrial downtempo, 92 bpm, clockwork ticking metallic percussion, driving muted analog bassline, brooding dark saxophone drone in deep reverb, modular synth arpeggio tension, psychological thriller score, high dynamic clarity.</pre>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <strong style="color:var(--amber);">Модуль C: Transcendence (Акт 4)</strong>
+                  <button class="btn-copy-sm" data-copy-template="tplSunoC" data-label="Suno Модуль C">📋</button>
+                </div>
+                <pre class="code-template-box" id="tplSunoC">Instrumental monumental neo-classical trip-hop, 92 bpm, Vangelis style soaring analog brass synthesizers, deep resonant sub-bass pulse, celestial ambient pad, slow triumphant rhythm, cosmic scale, IMAX documentary soundtrack mastering.</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANE 5: SEASON 1 PRODUCTION REGISTRY -->
+        <section id="hub-pane-registry" class="hub-pane">
+          <div class="card">
+            <div class="section-head">
+              <span class="section-title">📊 Повний виробничий реєстр 10 епізодів першого сезону «Архітектори Розуму»</span>
+              <span class="pill pill-emerald">Усі 10 епізодів укомплектовано на 100%</span>
+            </div>
+            <div class="hub-table-wrap">
+              <table class="hub-table">
+                <thead>
+                  <tr><th>Епізод</th><th>Герой випуску</th><th>Назва епізоду</th><th>Ключовий конфлікт і точка опори</th><th>Статус комплектації</th><th>SOP Прогрес</th><th>Студія</th></tr>
+                </thead>
+                <tbody id="seasonRegistryBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN: PRESERVED PROJECT CATALOG SIDEBAR -->
+      <aside class="card">
+        <div class="section-head">
+          <span class="section-title">Каталог проєкту</span>
+          <button class="btn-copy-sm" id="btnCopyRepoPath">Копіювати шлях</button>
+        </div>
+
+        <!-- 9 Core Production Directories -->
+        <div class="folder-list">
+          <div class="folder-row"><span class="folder-name">📁 01_RESEARCH</span><span class="folder-tag">10 Мастер-Досьє ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📝 02_SCRIPTS</span><span class="folder-tag">10 сценаріїв ✓</span></div>
+          <div class="folder-row folder-row-link" id="sidebarOpenAudioBtn" style="cursor:pointer;"><span class="folder-name">🎵 03_AUDIO</span><span class="folder-tag" style="color:var(--emerald);">16 WAV • 40 слотів ✓</span></div>
+          <div class="folder-row"><span class="folder-name">🎬 04_VIDEO_PROMPTS</span><span class="folder-tag">1,000 промптів ✓</span></div>
+          <div class="folder-row"><span class="folder-name">🎞️ 05_RAW_FOOTAGE</span><span class="folder-tag" style="color:var(--emerald);">14 4K Досьє + Архіви ✓</span></div>
+          <div class="folder-row"><span class="folder-name">🎚️ 06_DAVINCI_PROJECTS</span><span class="folder-tag" style="color:var(--emerald);">4-Pass + .srt + Fusion ✓</span></div>
+          <div class="folder-row"><span class="folder-name">📊 07_DASHBOARD</span><span class="folder-tag" style="color:var(--emerald);">11 сторінок • 8 вкладок ✓</span></div>
+          <div class="folder-row"><span class="folder-name">⚙️ 08_AUTOMATION</span><span class="folder-tag" style="color:var(--cyan);">fetch_archives.sh ✓</span></div>
+          <div class="folder-row"><span class="folder-name">💾 09_BACKUPS</span><span class="folder-tag">GitHub + GDrive</span></div>
+        </div>
+
+        <!-- Direct Quick Access to 10 Hero Studio Pages -->
+        <div style="margin-top:0.85rem;padding-top:0.75rem;border-top:1px solid var(--border-subtle);display:flex;flex-direction:column;gap:0.35rem;">
+          <div style="font-size:10.5px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:0.4px;">
+            Швидкий перехід у студії 10 героїв
+          </div>
+          <div id="sidebarHeroLinks" class="folder-list"></div>
+        </div>
+
+        <!-- Key Scripts, Audio & Automation Files -->
+        <div style="margin-top:0.85rem;padding-top:0.75rem;border-top:1px solid var(--border-subtle);display:flex;flex-direction:column;gap:0.38rem;">
+          <div style="font-size:10.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;">
+            Ключові скрипти та аудіо-специфікації
+          </div>
+          <div class="folder-row folder-row-link" id="sidebarOpenSunoCatalogBtn" style="cursor:pointer;">
+            <span class="folder-name" style="font-size:10.3px;">🎵 03_AUDIO/SUNO_MASTER_LIBRARY_AND_PROMPTS.md</span>
+            <span class="folder-tag" style="color:var(--emerald);">16 WAV Плеєр</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">🏛️ 01_RESEARCH/GENERAL_ARCHITECTURAL_SPECIFICATION.md</span>
+            <span class="folder-tag" style="color:var(--amber);">8 Цехів</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">🎵 03_AUDIO/AUDIO_ENGINEERING_GUIDE.md</span>
+            <span class="folder-tag" style="color:var(--cyan);">Інструкція</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">📝 02_SCRIPTS/episode_01_altman/voiceover_ssml_template.xml</span>
+            <span class="folder-tag" style="color:var(--emerald);">SSML 115 WPM</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">🎚️ 06_DAVINCI_PROJECTS/episode_01_davinci_spec.md</span>
+            <span class="folder-tag" style="color:var(--purple);">Kodak 2383</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">🚀 ./run_pipeline.sh</span>
+            <span class="folder-tag" style="color:var(--emerald);">Master Sync</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">⚙️ 08_AUTOMATION/scripts/sync_github.sh</span>
+            <span class="folder-tag">GitHub</span>
+          </div>
+          <div class="folder-row">
+            <span class="folder-name" style="font-size:10.3px;">⚙️ 08_AUTOMATION/scripts/backup_gdrive.sh</span>
+            <span class="folder-tag">GDrive</span>
+          </div>
+        </div>
+
+        <!-- Technical Audio & DaVinci Specs -->
+        <div style="margin-top:0.85rem;padding-top:0.75rem;border-top:1px solid var(--border-subtle);display:flex;flex-direction:column;gap:0.3rem;">
+          <div style="font-size:11px;color:var(--text-muted);">Багатомовний YouTube стандарт:</div>
+          <div style="font-size:11px;color:var(--cyan);">WAV 48 kHz / 24-bit • 115 WPM (Speed 0.86) • UA + EN</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:3px;">Метроном та сайдчейн Fairlight:</div>
+          <div style="font-size:11px;color:var(--emerald);">Suno Pro 92 BPM (2.61с) • Ducking -3.2 dB</div>
+          <div style="margin-top:0.55rem;display:flex;gap:6px;flex-wrap:wrap;">
+            <a class="btn-mini-open" href="https://github.com/tfmshell-cloud/ai-titans-thoughtcast" target="_blank" rel="noopener">GitHub Repo ↗</a>
+            <a class="btn-mini-open" href="https://tfmshell-cloud.github.io/ai-titans-thoughtcast/" target="_blank" rel="noopener">GitHub Pages Live ↗</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer-bar">
+      <div>Синхронізовано з локальним репозиторієм macOS, GitHub (<code>tfmshell-cloud/ai-titans-thoughtcast</code>) та Google Drive</div>
+      <div id="cTime" style="font-family:var(--mono);"></div>
+    </footer>
+  </div>
+
+  <div class="hub-toast" id="hubToast"></div>
+
+  <script src="data/season1_index.js?v=20261110_v13"></script>
+  <script src="data/suno_master_pool.js?v=20261110_v13"></script>
+  <script src="data/media_acquisition_pool.js?v=20261110_v13"></script>
+  <script src="data/veo_animation_pipeline.js?v=20261110_v13"></script>
+  <script src="data/project_vault_inventory.js?v=20261110_v13"></script>
+  <script src="data/flow_triads_pool.js?v=20261110_v13"></script>
+  <script src="data/titans_1000_quotes.js?v=20261110_v13"></script>
+  <script src="data/montage_status.js?v=20261112_v15"></script>
+  <script src="assets/hub_app.js?v=20261112_v14"></script>
+</body>
+</html>
