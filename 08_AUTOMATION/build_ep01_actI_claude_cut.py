@@ -134,7 +134,7 @@ V3 = [
 ]
 # A4 бібліотечні SFX: старт, файл, тривалість с, dB
 SFX = [
-    (0, "EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan.wav", 8.01, -4),
+    (0, "EP01_SFX_CRT_PowerOn_Clean_Claude.wav", 6.0, -4),   # архівний CRT_Scan мав чоловічі голоси — замінено чистим синтезом
     (at(2, 26.46), "EP01_SFX_Keyboard_Typing_Burst_4s.wav", 4.0, -2),
     (at(5, 17.98), "EP01_SFX_Mechanical_Keyboard_Typing.wav", 6.0, -6),
 ]

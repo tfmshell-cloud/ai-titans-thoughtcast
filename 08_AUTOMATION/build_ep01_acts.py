@@ -219,7 +219,7 @@ ACT4 = dict(
         (a(16, 5.9), "EP01_RULE_A_Belief.png", 9.0),
         (a(16, 21.5), "EP01_RULE_B_Code.png", 8.0),
         (a(16, 40.6), "EP01_RULE_C_Exponent.png", 8.0)],
-    sfx=[(int(162.0 * F), "EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan.wav", 8.0, -6)],
+    sfx=[(int(162.0 * F), "EP01_SFX_CRT_PowerOn_Clean_Claude.wav", 6.0, -6)],   # без голосів з архіву
     music=[("EP01_MUS_15_ACT4_92BPM_Future_Horizon_Finale.wav", 0, 0, bar(67), 6.0)],
 )
 ACT4["markers"] = vo_markers(vo4)

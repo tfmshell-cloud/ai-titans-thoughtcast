@@ -153,7 +153,7 @@
     <asset id="r148" name="EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_05_ACT1_02_30_03_30_YC_Batch1_Scurvy_Grit.wav" start="0s" duration="128200/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
     <asset id="r149" name="EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_06_ACT1_03_30_04_45_Compound_Interest_Mindset.wav" start="0s" duration="39700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
     <asset id="r150" name="EP01_MUS_ActI_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActI_ducked_Claude.wav" start="0s" duration="572000/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
-    <asset id="r151" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan.wav" start="0s" duration="19300/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r151" name="EP01_SFX_CRT_PowerOn_Clean_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_SFX_CRT_PowerOn_Clean_Claude.wav" start="0s" duration="14400/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
     <asset id="r152" name="EP01_SFX_Keyboard_Typing_Burst_4s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_SFX_Keyboard_Typing_Burst_4s.wav" start="0s" duration="9600/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
     <asset id="r153" name="EP01_SFX_Mechanical_Keyboard_Typing" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/sfx/EP01_SFX_Mechanical_Keyboard_Typing.wav" start="0s" duration="21000/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
     <asset id="r154" name="EP01_SUPER_10_Act_II_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_10_Act_II_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
@@ -196,7 +196,7 @@
             <asset-clip ref="r2" offset="0/2400s" name="ep01_flow_01_mac_chassis" start="4100/2400s" duration="12200/2400s">
               <spine lane="2" offset="4100/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r140" offset="0s" name="EP01_SUPER_00_Act_I_Title" start="0s" duration="12200/2400s"/><transition name="Cross Dissolve" offset="11400/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
               <asset-clip ref="r150" lane="-2" offset="4100/2400s" name="EP01_MUS_ActI_ducked_Claude" start="0s" duration="572000/2400s" audioRole="music"/>
-              <asset-clip ref="r151" lane="-3" offset="4100/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="-3.1dB"/></asset-clip>
+              <asset-clip ref="r151" lane="-3" offset="4100/2400s" name="EP01_SFX_CRT_PowerOn_Clean_Claude" start="0s" duration="14400/2400s" audioRole="effects"><adjust-volume amount="-4.0dB"/></asset-clip>
             </asset-clip>
             <transition name="Cross Dissolve" offset="11400/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r3" offset="12200/2400s" name="EP01_CLIP_STILL_Neural_Lattice_10s" start="800/2400s" duration="14000/2400s">
@@ -552,7 +552,7 @@
             <asset-clip ref="r136" offset="1947700/2400s" name="EP01_V1_B2_10_Earth_Horizon_Finale_550f" start="1600/2400s" duration="33600/2400s"/>
             <transition name="Cross Dissolve" offset="1979700/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <asset-clip ref="r2" offset="1981300/2400s" name="ep01_flow_01_mac_chassis" start="4200/2400s" duration="13200/2400s">
-              <asset-clip ref="r151" lane="-3" offset="4200/2400s" name="EP01_ARCH_AUDIO_Macintosh_1992_CRT_Scan" start="0s" duration="19200/2400s" audioRole="effects"><adjust-volume amount="4.9dB"/></asset-clip>
+              <asset-clip ref="r151" lane="-3" offset="4200/2400s" name="EP01_SFX_CRT_PowerOn_Clean_Claude" start="0s" duration="14400/2400s" audioRole="effects"><adjust-volume amount="-4.0dB"/></asset-clip>
             </asset-clip>
             <transition name="Cross Dissolve" offset="1992900/2400s" duration="3200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
             <video ref="r137" offset="1994500/2400s" name="EP01_END_CARD" start="0/2400s" duration="17500/2400s"/>
