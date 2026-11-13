@@ -371,6 +371,8 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
         extra = sh.get("extra", 0)
         if not still and ln and in_f + dur + extra > ln:
             factor = (in_f + dur + 6 + extra) / ln
+            if in_f * factor + dur + extra + 2 > ln * factor:   # вхід теж зсувається ×factor — інакше кінець кадру чорний
+                factor = (dur + extra + 6) / max(1, ln - in_f)
             if factor <= 2.0:                       # плавне сповільнення замість чорного кадру
                 src_path = retime(find(idx, name), factor)
                 retimed.add(src_path)

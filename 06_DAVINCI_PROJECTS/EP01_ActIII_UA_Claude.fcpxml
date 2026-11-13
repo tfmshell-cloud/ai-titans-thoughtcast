@@ -5,14 +5,14 @@
     <format id="r1" name="FFVideoFormat3840x2160p24" frameDuration="100/2400s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)"/>
     <effect id="r1fx" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
     <asset id="r2" name="EP01_CLIP_STILL_Boardroom_Tense_9s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Boardroom_Tense_9s.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
-    <asset id="r3" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Camera_plunges_into_terminal_screen_11075f8d_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r3" name="Camera_plunges_into_terminal_screen_11075f8d_1080p_slow1109" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/retime/Camera_plunges_into_terminal_screen_11075f8d_1080p_slow1109.mp4" start="0s" duration="26300/2400s" hasVideo="1" format="r1"/>
     <asset id="r4" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_ChatGPT_Genesis_7s.mp4" start="0s" duration="16600/2400s" hasVideo="1" format="r1"/>
     <asset id="r5" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Physical_matter_dissolves_into_b_clip_f843df4f_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
     <asset id="r6" name="EP04_CLIP_STILL_AI_Benchmarks_Curve_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP04_CLIP_STILL_AI_Benchmarks_Curve_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r7" name="Aerial_view_of_city_center_41b81743_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Aerial_view_of_city_center_41b81743_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
     <asset id="r8" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Walls_dissolving_into_textbook_v%E2%80%A6_de18897e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" format="r1"/>
     <asset id="r9" name="EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4" start="0s" duration="103200/2400s" hasVideo="1" format="r1"/>
-    <asset id="r10" name="ep09_clip_still_bletchley_summit_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep09_clip_still_bletchley_summit_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
+    <asset id="r10" name="ep09_clip_still_bletchley_summit_6s_slow1222" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/retime/ep09_clip_still_bletchley_summit_6s_slow1222.mp4" start="0s" duration="17400/2400s" hasVideo="1" format="r1"/>
     <asset id="r11" name="ep07_clip_still_white_house_2023_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_white_house_2023_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r12" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4" start="0s" duration="29000/2400s" hasVideo="1" format="r1"/>
     <asset id="r13" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
@@ -24,38 +24,37 @@
     <asset id="r19" name="EP01_V1_B3_01_Chess_King_Falling_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_B3_01_Chess_King_Falling_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
     <asset id="r20" name="EP01_DOC_03_Board_Ouster_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_03_Board_Ouster_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
     <asset id="r21" name="ep08_clip_still_wall_street_nyse_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep08_clip_still_wall_street_nyse_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
-    <asset id="r22" name="EP01_V1_ASSOC_01_Lidar_City_Grid_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/05_GO_AND_GAMING_STRATEGY/EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4" start="0s" duration="19200/2400s" hasVideo="1" format="r1"/>
+    <asset id="r22" name="EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r23" name="ep01_flow_07_boardroom_noir_ua_alt" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/alternate_takes/ep01_flow_07_boardroom_noir_ua_alt.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
     <asset id="r24" name="EP01_V1_NEW_03_Window_Rain_16s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_NEW_03_Window_Rain_16s.mp4" start="0s" duration="38400/2400s" hasVideo="1" format="r1"/>
     <asset id="r25" name="Finger_slamming_clock_plunger_dd1a4152_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/Finger_slamming_clock_plunger_dd1a4152_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
     <asset id="r26" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4" start="0s" duration="71900/2400s" hasVideo="1" format="r1"/>
-    <asset id="r27" name="EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
-    <asset id="r28" name="Holographic_game_data_streams_fl…_0aa820c5_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/02_ZX_SPECTRUM_AND_GAMES/Holographic_game_data_streams_fl%E2%80%A6_0aa820c5_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
-    <asset id="r29" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
-    <asset id="r30" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/03_NEUROSCIENCE_AND_AI/Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
-    <asset id="r31" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Guest_Badge_Desk_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r32" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_05_Guest_Badge_8s.mp4" start="0s" duration="18600/2400s" hasVideo="1" format="r1"/>
-    <asset id="r33" name="EP01_CLIP_STILL_Employees_Solidarity_9s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
-    <asset id="r34" name="EP01_DOC_05_Employees_Letter_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_Employees_Letter_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
-    <asset id="r35" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4" start="0s" duration="25700/2400s" hasVideo="1" format="r1"/>
-    <asset id="r36" name="EP01_DOC_04_Sutskever_Regret_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r37" name="EP06_DOC_05_Nov2023_Rift_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP06_DOC_05_Nov2023_Rift_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r38" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block3_master/EP01_V2_B3_01_Altman_ChatGPT_Launch_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r39" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r40" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r41" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m%E2%80%A6_ed88b1bf_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
-    <asset id="r42" name="ep01_flow_08_golden_signatures" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r43" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4" start="0s" duration="34000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r44" name="EP01_SUPER_20_Act_III_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_20_Act_III_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
-    <asset id="r45" name="EP01_SUPER_21_ChatGPT_2022" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_21_ChatGPT_2022.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
-    <asset id="r46" name="EP01_SUPER_22_Friday_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_22_Friday_Nov17.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
-    <asset id="r47" name="EP01_SUPER_23_120_Hours" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_23_120_Hours.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
-    <asset id="r48" name="EP01_SUPER_24_Wednesday_Nov22" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_24_Wednesday_Nov22.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
-    <asset id="r49" name="EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav" start="0s" duration="110700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
-    <asset id="r50" name="EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav" start="0s" duration="120700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
-    <asset id="r51" name="EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav" start="0s" duration="105000/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
-    <asset id="r52" name="EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav" start="0s" duration="130700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
-    <asset id="r53" name="EP01_MUS_ActIII_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActIII_ducked_Claude.wav" start="0s" duration="513400/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
+    <asset id="r27" name="EP01_V1_B2_09_Researchers_Compute_Core_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block2_master/EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r28" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r29" name="Neuron_morphs_into_GPU_chip_23314d03_1080p_slow1075" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/retime/Neuron_morphs_into_GPU_chip_23314d03_1080p_slow1075.mp4" start="0s" duration="25500/2400s" hasVideo="1" format="r1"/>
+    <asset id="r30" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Guest_Badge_Desk_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r31" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_05_Guest_Badge_8s.mp4" start="0s" duration="18600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r32" name="EP01_CLIP_STILL_Employees_Solidarity_9s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_CLIP_STILL_Employees_Solidarity_9s.mp4" start="0s" duration="21600/2400s" hasVideo="1" format="r1"/>
+    <asset id="r33" name="EP01_DOC_05_Employees_Letter_12s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_05_Employees_Letter_12s.mp4" start="0s" duration="28800/2400s" hasVideo="1" format="r1"/>
+    <asset id="r34" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/EP01_UA_CLIP_CARD_06_730_Employees_11s.mp4" start="0s" duration="25700/2400s" hasVideo="1" format="r1"/>
+    <asset id="r35" name="EP01_DOC_04_Sutskever_Regret_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP01_DOC_04_Sutskever_Regret_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r36" name="EP06_DOC_05_Nov2023_Rift_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/dossiers_press/EP06_DOC_05_Nov2023_Rift_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r37" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/v2_block3_master/EP01_V2_B3_01_Altman_ChatGPT_Launch_10s.mp4" start="0s" duration="24000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r38" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/01_ORIGINS_AND_CHESS/EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r39" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_block3_master/EP01_V1_B3_04_Golden_Grid_Stabilizing_15s.mp4" start="0s" duration="36000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r40" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/ep02_demis_hassabis/04_BIOLOGY_AND_ALPHAFOLD/Timber_dissolving_into_crystal_m%E2%80%A6_ed88b1bf_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r41" name="ep01_flow_08_golden_signatures" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_08_golden_signatures.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r42" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/v1_gapless_master/EP01_V1_B3_CLOSER_GoldenGrid_340f.mp4" start="0s" duration="34000/2400s" hasVideo="1" format="r1"/>
+    <asset id="r43" name="EP01_SUPER_20_Act_III_Title" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_20_Act_III_Title.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r44" name="EP01_SUPER_21_ChatGPT_2022" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_21_ChatGPT_2022.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r45" name="EP01_SUPER_22_Friday_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_22_Friday_Nov17.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r46" name="EP01_SUPER_23_120_Hours" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_23_120_Hours.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r47" name="EP01_SUPER_24_Wednesday_Nov22" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_SUPER_24_Wednesday_Nov22.png" start="0s" duration="0s" hasVideo="1" format="r1"/>
+    <asset id="r48" name="EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_11_ACT3_09_30_10_45_ChatGPT_Launch_100M_Users.wav" start="0s" duration="110700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r49" name="EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_12_ACT3_10_45_12_15_Friday_Board_Coup_Nov17.wav" start="0s" duration="120700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r50" name="EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_13_ACT3_12_15_13_45_120_Hours_Drama_Guest_Badge.wav" start="0s" duration="105000/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r51" name="EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/voiceover/EP01_ALTMAN_UA_MASTER/EP01_VO_UA_14_ACT3_13_45_15_30_730_Signatures_Triumphant_Return.wav" start="0s" duration="130700/2400s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r52" name="EP01_MUS_ActIII_ducked_Claude" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/03_AUDIO/claude_mix/EP01_MUS_ActIII_ducked_Claude.wav" start="0s" duration="513400/2400s" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000"/>
   </resources>
   <library>
     <event name="SEM_EP01_Claude">
@@ -63,88 +62,85 @@
         <sequence format="r1" duration="513400/2400s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k">
           <spine>
             <transition name="Cross Dissolve" offset="0/2400s" duration="1200/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r2" offset="0/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="0/2400s" duration="12200/2400s">
-              <spine lane="2" offset="0/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r44" offset="0s" name="EP01_SUPER_20_Act_III_Title" start="0s" duration="12200/2400s"/><transition name="Cross Dissolve" offset="11400/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
-              <asset-clip ref="r53" lane="-2" offset="0/2400s" name="EP01_MUS_ActIII_ducked_Claude" start="0s" duration="513400/2400s" audioRole="music"/>
+            <asset-clip ref="r2" offset="0/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="0/2400s" duration="12100/2400s">
+              <spine lane="2" offset="0/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r43" offset="0s" name="EP01_SUPER_20_Act_III_Title" start="0s" duration="12100/2400s"/><transition name="Cross Dissolve" offset="11300/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
+              <asset-clip ref="r52" lane="-2" offset="0/2400s" name="EP01_MUS_ActIII_ducked_Claude" start="0s" duration="513400/2400s" audioRole="music"/>
             </asset-clip>
-            <transition name="Cross Dissolve" offset="11700/2400s" duration="1000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r3" offset="12200/2400s" name="Camera_plunges_into_terminal_screen_11075f8d_1080p" start="500/2400s" duration="23400/2400s" audioRole="effects">
-              <adjust-volume amount="-18.6dB"/>
-              <spine lane="2" offset="500/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r45" offset="0s" name="EP01_SUPER_21_ChatGPT_2022" start="0s" duration="8600/2400s"/><transition name="Cross Dissolve" offset="7800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
-              <asset-clip ref="r49" lane="-1" offset="800/2400s" name="VO_UA_11" start="0s" duration="110600/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
+            <transition name="Cross Dissolve" offset="11300/2400s" duration="1600/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r3" offset="12100/2400s" name="Camera_plunges_into_terminal_screen_11075f8d_1080p_slow1109" start="800/2400s" duration="24300/2400s">
+              <spine lane="2" offset="800/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r44" offset="0s" name="EP01_SUPER_21_ChatGPT_2022" start="0s" duration="8600/2400s"/><transition name="Cross Dissolve" offset="7800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
+              <asset-clip ref="r48" lane="-1" offset="1200/2400s" name="VO_UA_11" start="0s" duration="110600/2400s" audioRole="dialogue"><adjust-volume amount="-1.0dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r4" offset="35600/2400s" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" start="0/2400s" duration="10000/2400s"/>
-            <asset-clip ref="r5" offset="45600/2400s" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" start="0/2400s" duration="15600/2400s" audioRole="effects">
+            <asset-clip ref="r4" offset="36400/2400s" name="EP01_CLIP_STILL_ChatGPT_Genesis_7s" start="0/2400s" duration="9100/2400s"/>
+            <asset-clip ref="r5" offset="45500/2400s" name="Physical_matter_dissolves_into_b_clip_f843df4f_1080p" start="0/2400s" duration="15500/2400s" audioRole="effects">
               <adjust-volume amount="-6.8dB"/>
             </asset-clip>
-            <asset-clip ref="r6" offset="61200/2400s" name="EP04_CLIP_STILL_AI_Benchmarks_Curve_6s" start="0/2400s" duration="11900/2400s"/>
-            <asset-clip ref="r7" offset="73100/2400s" name="Aerial_view_of_city_center_41b81743_1080p" start="0/2400s" duration="7300/2400s"/>
-            <asset-clip ref="r8" offset="80400/2400s" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" start="16300/2400s" duration="7400/2400s"/>
-            <asset-clip ref="r9" offset="87800/2400s" name="EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT" start="19200/2400s" duration="7200/2400s"/>
-            <asset-clip ref="r10" offset="95000/2400s" name="ep09_clip_still_bletchley_summit_6s" start="0/2400s" duration="8700/2400s"/>
-            <asset-clip ref="r11" offset="103700/2400s" name="ep07_clip_still_white_house_2023_6s" start="0/2400s" duration="9300/2400s"/>
-            <asset-clip ref="r12" offset="113000/2400s" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" start="0/2400s" duration="11900/2400s"/>
-            <asset-clip ref="r13" offset="124900/2400s" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" start="12000/2400s" duration="17400/2400s">
-              <spine lane="2" offset="12000/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r46" offset="0s" name="EP01_SUPER_22_Friday_Nov17" start="0s" duration="12000/2400s"/><transition name="Cross Dissolve" offset="11200/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
-              <asset-clip ref="r50" lane="-1" offset="12300/2400s" name="VO_UA_12" start="0s" duration="120600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
+            <asset-clip ref="r6" offset="61000/2400s" name="EP04_CLIP_STILL_AI_Benchmarks_Curve_6s" start="0/2400s" duration="12000/2400s"/>
+            <asset-clip ref="r7" offset="73000/2400s" name="Aerial_view_of_city_center_41b81743_1080p" start="0/2400s" duration="6600/2400s"/>
+            <asset-clip ref="r8" offset="79600/2400s" name="Walls_dissolving_into_textbook_v…_de18897e_1080p" start="16300/2400s" duration="7200/2400s"/>
+            <asset-clip ref="r9" offset="86800/2400s" name="EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT" start="19200/2400s" duration="8400/2400s"/>
+            <asset-clip ref="r10" offset="95200/2400s" name="ep09_clip_still_bletchley_summit_6s_slow1222" start="0/2400s" duration="17000/2400s"/>
+            <asset-clip ref="r11" offset="112200/2400s" name="ep07_clip_still_white_house_2023_6s" start="0/2400s" duration="4500/2400s"/>
+            <asset-clip ref="r12" offset="116700/2400s" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" start="0/2400s" duration="9000/2400s">
+              <asset-clip ref="r49" lane="-1" offset="8500/2400s" name="VO_UA_12" start="0s" duration="120600/2400s" audioRole="dialogue"><adjust-volume amount="-0.9dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r14" offset="142300/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="0/2400s" duration="4800/2400s" audioRole="effects">
-              <adjust-volume amount="-12.8dB"/>
+            <asset-clip ref="r13" offset="125700/2400s" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" start="12000/2400s" duration="16400/2400s">
+              <spine lane="2" offset="12000/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r45" offset="0s" name="EP01_SUPER_22_Friday_Nov17" start="0s" duration="12000/2400s"/><transition name="Cross Dissolve" offset="11200/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
             </asset-clip>
-            <asset-clip ref="r15" offset="147100/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="4600/2400s" audioRole="effects">
-              <adjust-volume amount="-0.5dB"/>
+            <asset-clip ref="r14" offset="142100/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="0/2400s" duration="9500/2400s" audioRole="effects">
+              <adjust-volume amount="-14.9dB"/>
             </asset-clip>
-            <asset-clip ref="r16" offset="151700/2400s" name="Four_men_sitting_at_table_3911bdbc_1080p" start="10800/2400s" duration="9800/2400s"/>
-            <asset-clip ref="r17" offset="161500/2400s" name="EP06_CLIP_STILL_Sutskever_TAU_2023_6s" start="0/2400s" duration="3000/2400s"/>
-            <asset-clip ref="r18" offset="164500/2400s" name="ep01_flow_07_boardroom_noir" start="0/2400s" duration="8600/2400s"/>
-            <asset-clip ref="r15" offset="173100/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="4800/2400s" duration="10800/2400s" audioRole="effects">
-              <adjust-volume amount="-21.0dB"/>
+            <asset-clip ref="r15" offset="151600/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="2400/2400s" audioRole="effects">
+              <adjust-volume amount="1.1dB"/>
             </asset-clip>
-            <asset-clip ref="r19" offset="183900/2400s" name="EP01_V1_B3_01_Chess_King_Falling_12s" start="0/2400s" duration="7700/2400s"/>
-            <asset-clip ref="r20" offset="191600/2400s" name="EP01_DOC_03_Board_Ouster_10s" start="0/2400s" duration="18900/2400s"/>
-            <asset-clip ref="r21" offset="210500/2400s" name="ep08_clip_still_wall_street_nyse_6s" start="0/2400s" duration="8000/2400s"/>
-            <asset-clip ref="r22" offset="218500/2400s" name="EP01_V1_ASSOC_01_Lidar_City_Grid_8s" start="0/2400s" duration="7700/2400s"/>
-            <asset-clip ref="r23" offset="226200/2400s" name="ep01_flow_07_boardroom_noir_ua_alt" start="12000/2400s" duration="5600/2400s"/>
-            <asset-clip ref="r24" offset="231800/2400s" name="EP01_V1_NEW_03_Window_Rain_16s" start="14400/2400s" duration="18300/2400s"/>
-            <transition name="Cross Dissolve" offset="248900/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r25" offset="250100/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="1200/2400s" duration="11200/2400s" audioRole="effects">
-              <adjust-volume amount="-12.3dB"/>
-              <spine lane="2" offset="1200/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r47" offset="0s" name="EP01_SUPER_23_120_Hours" start="0s" duration="9100/2400s"/><transition name="Cross Dissolve" offset="8300/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
-              <asset-clip ref="r51" lane="-1" offset="1500/2400s" name="VO_UA_13" start="0s" duration="104900/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <asset-clip ref="r16" offset="154000/2400s" name="Four_men_sitting_at_table_3911bdbc_1080p" start="10800/2400s" duration="7300/2400s"/>
+            <asset-clip ref="r17" offset="161300/2400s" name="EP06_CLIP_STILL_Sutskever_TAU_2023_6s" start="0/2400s" duration="11700/2400s"/>
+            <asset-clip ref="r18" offset="173000/2400s" name="ep01_flow_07_boardroom_noir" start="0/2400s" duration="4900/2400s"/>
+            <asset-clip ref="r15" offset="177900/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="4800/2400s" duration="9700/2400s" audioRole="effects">
+              <adjust-volume amount="-21.3dB"/>
             </asset-clip>
-            <asset-clip ref="r26" offset="261300/2400s" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" start="4800/2400s" duration="9700/2400s"/>
-            <asset-clip ref="r27" offset="271000/2400s" name="EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s" start="0/2400s" duration="9700/2400s"/>
-            <asset-clip ref="r28" offset="280700/2400s" name="Holographic_game_data_streams_fl…_0aa820c5_1080p" start="0/2400s" duration="14400/2400s" audioRole="effects">
-              <adjust-volume amount="-11.6dB"/>
+            <asset-clip ref="r19" offset="187600/2400s" name="EP01_V1_B3_01_Chess_King_Falling_12s" start="0/2400s" duration="2800/2400s"/>
+            <asset-clip ref="r20" offset="190400/2400s" name="EP01_DOC_03_Board_Ouster_10s" start="0/2400s" duration="19900/2400s"/>
+            <asset-clip ref="r21" offset="210300/2400s" name="ep08_clip_still_wall_street_nyse_6s" start="0/2400s" duration="8200/2400s"/>
+            <asset-clip ref="r22" offset="218500/2400s" name="EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s" start="0/2400s" duration="7700/2400s"/>
+            <asset-clip ref="r23" offset="226200/2400s" name="ep01_flow_07_boardroom_noir_ua_alt" start="12000/2400s" duration="5500/2400s"/>
+            <asset-clip ref="r24" offset="231700/2400s" name="EP01_V1_NEW_03_Window_Rain_16s" start="14400/2400s" duration="12000/2400s"/>
+            <transition name="Cross Dissolve" offset="242500/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r25" offset="243700/2400s" name="Finger_slamming_clock_plunger_dd1a4152_1080p" start="1200/2400s" duration="6300/2400s" audioRole="effects">
+              <adjust-volume amount="-7.7dB"/>
+              <spine lane="2" offset="1200/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r46" offset="0s" name="EP01_SUPER_23_120_Hours" start="0s" duration="9100/2400s"/><transition name="Cross Dissolve" offset="8300/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
             </asset-clip>
-            <asset-clip ref="r29" offset="295100/2400s" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" start="0/2400s" duration="11000/2400s"/>
-            <asset-clip ref="r30" offset="306100/2400s" name="Neuron_morphs_into_GPU_chip_23314d03_1080p" start="3100/2400s" duration="20700/2400s" audioRole="effects">
-              <adjust-volume amount="-24.5dB"/>
+            <asset-clip ref="r2" offset="250000/2400s" name="EP01_CLIP_STILL_Boardroom_Tense_9s" start="7200/2400s" duration="11200/2400s">
+              <asset-clip ref="r50" lane="-1" offset="7600/2400s" name="VO_UA_13" start="0s" duration="104900/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r14" offset="326800/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="5500/2400s" duration="14700/2400s" audioRole="effects">
-              <adjust-volume amount="-13.5dB"/>
+            <asset-clip ref="r26" offset="261200/2400s" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" start="4800/2400s" duration="19300/2400s"/>
+            <asset-clip ref="r27" offset="280500/2400s" name="EP01_V1_B2_09_Researchers_Compute_Core_12s" start="0/2400s" duration="14300/2400s"/>
+            <asset-clip ref="r28" offset="294800/2400s" name="EP01_V1_B3_03_Two_Silhouettes_Nadella_12s" start="0/2400s" duration="11000/2400s"/>
+            <asset-clip ref="r29" offset="305800/2400s" name="Neuron_morphs_into_GPU_chip_23314d03_1080p_slow1075" start="3300/2400s" duration="22000/2400s"/>
+            <asset-clip ref="r14" offset="327800/2400s" name="Mouse_click_triggers_flash_42a0e76f_1080p" start="5500/2400s" duration="13900/2400s" audioRole="effects">
+              <adjust-volume amount="-13.8dB"/>
             </asset-clip>
-            <asset-clip ref="r31" offset="341500/2400s" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" start="0/2400s" duration="5400/2400s"/>
-            <asset-clip ref="r32" offset="346900/2400s" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" start="0/2400s" duration="15900/2400s"/>
-            <transition name="Cross Dissolve" offset="361800/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r33" offset="362800/2400s" name="EP01_CLIP_STILL_Employees_Solidarity_9s" start="1000/2400s" duration="15100/2400s">
-              <asset-clip ref="r52" lane="-1" offset="1300/2400s" name="VO_UA_14" start="0s" duration="130600/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
+            <asset-clip ref="r30" offset="341700/2400s" name="EP01_CLIP_STILL_Guest_Badge_Desk_10s" start="0/2400s" duration="5000/2400s"/>
+            <asset-clip ref="r31" offset="346700/2400s" name="EP01_UA_CLIP_CARD_05_Guest_Badge_8s" start="0/2400s" duration="16000/2400s"/>
+            <transition name="Cross Dissolve" offset="361700/2400s" duration="2000/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r32" offset="362700/2400s" name="EP01_CLIP_STILL_Employees_Solidarity_9s" start="1000/2400s" duration="15100/2400s">
+              <asset-clip ref="r51" lane="-1" offset="1400/2400s" name="VO_UA_14" start="0s" duration="130600/2400s" audioRole="dialogue"><adjust-volume amount="-1.1dB"/></asset-clip>
             </asset-clip>
-            <asset-clip ref="r34" offset="377900/2400s" name="EP01_DOC_05_Employees_Letter_12s" start="0/2400s" duration="10300/2400s"/>
-            <asset-clip ref="r35" offset="388200/2400s" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" start="0/2400s" duration="16800/2400s"/>
-            <asset-clip ref="r36" offset="405000/2400s" name="EP01_DOC_04_Sutskever_Regret_10s" start="0/2400s" duration="8900/2400s"/>
-            <asset-clip ref="r37" offset="413900/2400s" name="EP06_DOC_05_Nov2023_Rift_10s" start="0/2400s" duration="8900/2400s"/>
-            <asset-clip ref="r38" offset="422800/2400s" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" start="0/2400s" duration="13000/2400s">
-              <spine lane="2" offset="0/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r48" offset="0s" name="EP01_SUPER_24_Wednesday_Nov22" start="0s" duration="9600/2400s"/><transition name="Cross Dissolve" offset="8800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
+            <asset-clip ref="r33" offset="377800/2400s" name="EP01_DOC_05_Employees_Letter_12s" start="0/2400s" duration="18400/2400s"/>
+            <asset-clip ref="r34" offset="396200/2400s" name="EP01_UA_CLIP_CARD_06_730_Employees_11s" start="0/2400s" duration="16400/2400s"/>
+            <asset-clip ref="r35" offset="412600/2400s" name="EP01_DOC_04_Sutskever_Regret_10s" start="0/2400s" duration="14600/2400s"/>
+            <asset-clip ref="r36" offset="427200/2400s" name="EP06_DOC_05_Nov2023_Rift_10s" start="0/2400s" duration="8400/2400s"/>
+            <asset-clip ref="r37" offset="435600/2400s" name="EP01_V2_B3_01_Altman_ChatGPT_Launch_10s" start="0/2400s" duration="17500/2400s">
+              <spine lane="2" offset="0/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r47" offset="0s" name="EP01_SUPER_24_Wednesday_Nov22" start="0s" duration="9600/2400s"/><transition name="Cross Dissolve" offset="8800/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
             </asset-clip>
-            <asset-clip ref="r39" offset="435800/2400s" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" start="0/2400s" duration="6100/2400s"/>
-            <asset-clip ref="r40" offset="441900/2400s" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" start="0/2400s" duration="11300/2400s"/>
-            <asset-clip ref="r41" offset="453200/2400s" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" start="0/2400s" duration="15200/2400s" audioRole="effects">
-              <adjust-volume amount="-17.7dB"/>
+            <asset-clip ref="r38" offset="453100/2400s" name="EP01_V1_CREATIVE_03_Chess_Simulation_Grid_15s" start="0/2400s" duration="6300/2400s"/>
+            <asset-clip ref="r39" offset="459400/2400s" name="EP01_V1_B3_04_Golden_Grid_Stabilizing_15s" start="0/2400s" duration="11900/2400s"/>
+            <asset-clip ref="r40" offset="471300/2400s" name="Timber_dissolving_into_crystal_m…_ed88b1bf_1080p" start="0/2400s" duration="7700/2400s" audioRole="effects">
+              <adjust-volume amount="-19.7dB"/>
             </asset-clip>
-            <asset-clip ref="r42" offset="468400/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="17800/2400s"/>
-            <transition name="Cross Dissolve" offset="485000/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
-            <asset-clip ref="r43" offset="486200/2400s" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" start="1200/2400s" duration="27200/2400s"/>
+            <asset-clip ref="r41" offset="479000/2400s" name="ep01_flow_08_golden_signatures" start="0/2400s" duration="8100/2400s"/>
+            <transition name="Cross Dissolve" offset="485900/2400s" duration="2400/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
+            <asset-clip ref="r42" offset="487100/2400s" name="EP01_V1_B3_CLOSER_GoldenGrid_340f" start="1200/2400s" duration="26300/2400s"/>
             <transition name="Cross Dissolve" offset="511600/2400s" duration="1800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition>
           </spine>
         </sequence>

@@ -270,6 +270,41 @@ def make_bridge(idx, n):
     return os.path.basename(path)
 
 
+# Заміни кадрів лише української збірки (рядок плану → старий файл, новий файл, точка входу)
+UA_SHOT_FIXES = {
+    "II": {18: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_A_only.mp4", 0.0),
+           32: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_B_only.mp4", 0.35)},
+    "III": {12: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_NoBlack.mp4", 0.0),       # без чорної паузи
+            15: ("EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4",
+                 "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4", 18.0),                # лише Ілля
+            30: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_Badge_Walk_part.mp4", 0.0)},
+}
+
+
+def ua_act(k):
+    """Акт для української збірки: план ACTS + UA-заміни кадрів (EN будується з незміненого плану)."""
+    act = ACTS[k][0]
+    fx = UA_SHOT_FIXES.get(k)
+    if fx:
+        v1 = list(act["v1"])
+        for i, (old, new, si) in fx.items():
+            f0, name, _, db, note = v1[i]
+            assert name == old, f"Акт {k} UA, план {i}: очікував {old}, а стоїть {name}"
+            v1[i] = (f0, new, si, None if "STILL" in old or "Badge" in new else db, note + " [UA-правка]")
+        act = dict(act, v1=v1)
+    return act
+
+
+def ua_mix_act(k):
+    """Музика лише української збірки (план акту, з якого будується EN, не змінюється)."""
+    act = ua_act(k)
+    if k == "III":   # «П'ятниця, 17 листопада»: плавне згасання замість зрізу і напружена підкладка замість 50 с тиші
+        a, b = sorted(act["music"], key=lambda m: m[2])
+        act = dict(act, music=[a[:4] + (2.5,),
+                               ("EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav", 20.0, a[3], b[2], 1.5, 2.5), b])
+    return act
+
+
 def mix_path(key):
     return os.path.join(E.BASE, "03_AUDIO", "claude_mix", f"EP01_MUS_Act{key}_ducked_Claude.wav")
 
@@ -284,10 +319,10 @@ def main():
     out_dir = os.path.join(E.BASE, "06_DAVINCI_PROJECTS")
     keys = [] if a_.only == "FULL" else ([a_.only] if a_.only else ["I", "II", "III", "IV"])
     for k in keys:
-        act, tl = ACTS[k]
+        act, tl = ua_act(k), ACTS[k][1]
         print(f"{act['name']}: {len(act['v1'])} планів, {act['end_f'] / E.FPS:.1f} с")
         if not (a_.skip_mix and os.path.exists(mix_path(k))):
-            E.mix_music(act, idx, mix_path(k))
+            E.mix_music(ua_mix_act(k), idx, mix_path(k))
         xml, probs, paths = E.build_fcpxml([(act, 0, mix_path(k))], idx, tl, fade_in=12, fade_out=18)
         p = os.path.join(out_dir, f"{tl}.fcpxml")
         open(p, "w", encoding="utf-8").write(xml)
@@ -300,11 +335,11 @@ def main():
             E.to_resolve(p, paths, tl, act["markers"], replace=True)
     if a_.only in (None, "FULL"):
         bounds = []
-        a1 = ACTS["I"][0]
+        a1 = ua_act("I")
         seq, off = [(a1, 0, mix_path("I"))], a1["end_f"]
         markers = list(a1["markers"])
         for k in ("II", "III", "IV"):
-            act = ACTS[k][0]
+            act = ua_act(k)
             seq.append((act, off, mix_path(k)))
             markers += [(f + off, c, n, note) for f, c, n, note in act["markers"]]
             bounds.append(off)
