@@ -90,6 +90,8 @@ def ua_to_en():
     for n, *_ in MGFX:
         m[n + ".mov"] = n + "_EN.mov"
     m["ep01_flow_07_boardroom_noir_ua_alt.mp4"] = "ep01_flow_07_boardroom_noir.mp4"   # на телефоні напис українською
+    m["EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020.mp4"] = "EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020_EN.mp4"
+    m["EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s.mp4"] = "EP01_CLAUDE_MSFT_Crash_Nov17_6s.mp4"   # графік: UA-версія → англійська
     return m
 
 

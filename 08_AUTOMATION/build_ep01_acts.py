@@ -136,7 +136,7 @@ ACT3 = dict(
         (a(12, 24.58), "EP01_V1_B3_01_Chess_King_Falling_12s.mp4", 0, None, "Д12 «його звільнено» — король падає"),
         (a(12, 27.8),  "EP01_DOC_03_Board_Ouster_10s.mp4", 0, None, "Д12 прес-реліз і формулювання"),
         (a(12, 35.66), "ep08_clip_still_wall_street_nyse_6s.mp4", 0, None, "Д12 «підриває світові біржі»"),
-        (a(12, 39.02), "EP01_CLAUDE_MSFT_Crash_Nov17_6s.mp4", 0, None, "Д12 акції Microsoft падають — графік обвалу MSFT"),
+        (a(12, 39.02), "EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s.mp4", 0, None, "Д12 акції Microsoft падають — графік обвалу MSFT (UA)"),
         (a(12, 42.2),  "ep01_flow_07_boardroom_noir_ua_alt.mp4", 5.0, None, "Д12 «індустрія застигає» — СИСТЕМУ ЗАБЛОКОВАНО"),
         (a(12, 44.54), "EP01_V1_NEW_03_Window_Rain_16s.mp4", 6.0, None, "Д12 «викинуто з компанії»"),
         (a(13, 0),     "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4", 0, -10, "Д13 «сто двадцять годин»"),

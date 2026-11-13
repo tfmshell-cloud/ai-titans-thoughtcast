@@ -10,7 +10,15 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(BASE, "05_RAW_FOOTAGE", "claude_graphics", "EP01_CLAUDE_MSFT_Crash_Nov17_6s.mp4")
+import sys
+LANG = "UA" if "--ua" in sys.argv else "EN"
+OUT = os.path.join(BASE, "05_RAW_FOOTAGE", "claude_graphics",
+                   "EP01_CLAUDE_MSFT_Crash_Nov17_UA_6s.mp4" if LANG == "UA" else "EP01_CLAUDE_MSFT_Crash_Nov17_6s.mp4")
+T = {"EN": dict(sub="MICROSOFT CORP · FRI 17 NOV 2023 · INTRADAY", lab="15:28 ET · OPENAI BOARD OUSTS SAM ALTMAN", brk="BREAKING",
+                msg="   OPENAI BOARD REMOVES CEO SAM ALTMAN  ·  MICROSOFT SHARES SLIDE ON THE NEWS  ·  SILICON VALLEY IN SHOCK  ·"),
+     "UA": dict(sub="MICROSOFT CORP · ПТ 17.11.2023 · ТОРГИ", lab="15:28 (НЬЮ-ЙОРК) · РАДА OPENAI ЗВІЛЬНЯЄ АЛЬТМАНА", brk="ТЕРМІНОВО",
+                msg="   РАДА OPENAI ЗВІЛЬНИЛА CEO СЕМА АЛЬТМАНА  ·  АКЦІЇ MICROSOFT ПАДАЮТЬ НА НОВИНІ  ·  КРЕМНІЄВА ДОЛИНА В ШОЦІ  ·"),
+     }[LANG]
 FFMPEG = os.path.expanduser("~/Library/Python/3.9/bin/ffmpeg")
 W, H, FPS, SECS = 1920, 1080, 24, 6.0
 MONO = "/System/Library/Fonts/Menlo.ttc"
@@ -48,7 +56,7 @@ def frame(t):
         mins = (int(lab[:2]) * 60 + int(lab[3:])) - 570
         d.text((X0 + (X1 - X0) * mins / 390 - 28, Y1 + 18), lab, font=ImageFont.truetype(MONO, 20), fill=DIM)
     d.text((X0, 120), "NASDAQ: MSFT", font=ImageFont.truetype(SANS, 54, 1), fill=WHITE)
-    d.text((X0 + 430, 140), "MICROSOFT CORP · FRI 17 NOV 2023 · INTRADAY", font=ImageFont.truetype(MONO, 26), fill=DIM)
+    d.text((X0 + 430, 140), T["sub"], font=ImageFont.truetype(MONO, 26), fill=DIM)
     reveal = min(N - 1, int((N - 1) * min(1.0, t / 4.6)))
     pts = [xy(i) for i in range(reveal + 1)]
     crashed = reveal >= CRASH
@@ -69,7 +77,7 @@ def frame(t):
         k = (reveal - CRASH) / (N - 1 - CRASH)
         cx, _ = xy(CRASH)
         d.line([(cx, Y0 - 20), (cx, Y1)], fill=(120, 40, 40), width=2)
-        lab = "15:28 ET · OPENAI BOARD OUSTS SAM ALTMAN"
+        lab = T["lab"]
         lf = ImageFont.truetype(MONO, 22)
         d.text((cx - 12 - d.textlength(lab, font=lf), Y0 - 16), lab, font=lf, fill=RED)
         pct = -1.7 * min(1.0, k * 1.15)
@@ -78,8 +86,8 @@ def frame(t):
     # біжучий рядок новин
     d.rectangle([0, 930, W, 1000], fill=(18, 20, 26))
     d.rectangle([60, 930, 290, 1000], fill=RED)
-    d.text((86, 946), "BREAKING", font=ImageFont.truetype(SANS, 34, 1), fill=WHITE)
-    msg = "   OPENAI BOARD REMOVES CEO SAM ALTMAN  ·  MICROSOFT SHARES SLIDE ON THE NEWS  ·  SILICON VALLEY IN SHOCK  ·"
+    d.text((86, 946), T["brk"], font=ImageFont.truetype(SANS, 34 if LANG == "EN" else 30, 1), fill=WHITE)
+    msg = T["msg"]
     f = ImageFont.truetype(MONO, 30)
     off = int(t * 260)
     tw = d.textlength(msg, font=f)
@@ -87,7 +95,7 @@ def frame(t):
         d.text((310 - off % int(tw) + rep * tw, 950), msg, font=f, fill=WHITE)
     d.rectangle([0, 930, 60, 1000], fill=(18, 20, 26))
     d.rectangle([60, 930, 290, 1000], fill=RED)
-    d.text((86, 946), "BREAKING", font=ImageFont.truetype(SANS, 34, 1), fill=WHITE)
+    d.text((86, 946), T["brk"], font=ImageFont.truetype(SANS, 34 if LANG == "EN" else 30, 1), fill=WHITE)
     if crashed and int(t * 4) % 2 == 0:
         d.ellipse([X1 - 30, 60, X1 - 10, 80], fill=RED)
     z = 1.0 + 0.02 * t / SECS                                   # повільний наїзд

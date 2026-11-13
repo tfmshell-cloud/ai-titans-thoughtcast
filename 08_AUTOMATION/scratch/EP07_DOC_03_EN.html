@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 3840px; height: 2160px; overflow: hidden;
+  background: radial-gradient(circle at 22% 18%, #162032 0%, #090d16 58%, #04060b 100%);
+  color: #e6eef8; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+.grid-bg {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 2px, transparent 2px);
+  background-size: 96px 96px;
+}
+.frame {
+  position: relative; width: 3560px; height: 1880px; margin: 140px;
+  border: 3px solid rgba(255,255,255,0.16); border-radius: 28px;
+  background: linear-gradient(160deg, rgba(16,24,39,0.92), rgba(8,12,20,0.96));
+  box-shadow: 0 50px 140px rgba(0,0,0,0.75); padding: 92px 110px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.topbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(255,255,255,0.14); padding-bottom: 36px; }
+.kicker { font-family: "SF Mono", Menlo, monospace; font-size: 32px; letter-spacing: 3px; color: #38bdf8; font-weight: 700; }
+.stamp { border: 4px solid #38bdf8; color: #38bdf8; font-family: "SF Mono", Menlo, monospace; font-size: 34px; font-weight: 800; padding: 14px 32px; border-radius: 12px; letter-spacing: 3px; background: rgba(255,255,255,0.03); }
+h1 { font-size: 82px; line-height: 1.12; letter-spacing: -1.5px; color: #ffffff; margin: 38px 0 34px; font-weight: 800; }
+.meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 36px; margin-bottom: 34px; }
+.meta-box { background: rgba(255,255,255,0.04); border-left: 6px solid #38bdf8; padding: 22px 30px; border-radius: 10px; }
+.meta-k { font-family: "SF Mono", Menlo, monospace; font-size: 24px; letter-spacing: 2px; color: #94a3b8; margin-bottom: 8px; }
+.meta-v { font-size: 33px; font-weight: 600; color: #f1f5f9; }
+.paras { display: flex; flex-direction: column; gap: 22px; margin-bottom: 34px; }
+.paras p { font-size: 36px; line-height: 1.44; color: #cbd5e1; }
+.quote-box {
+  background: rgba(15, 23, 42, 0.85); border: 2px solid #38bdf8; border-radius: 18px;
+  padding: 44px 56px; font-family: "Georgia", serif; font-size: 46px; line-height: 1.38; color: #f8fafc;
+}
+.hl { background: rgba(245, 185, 65, 0.24); color: #fde68a; padding: 4px 12px; border-radius: 8px; font-weight: 700; }
+.foot { display: flex; justify-content: space-between; align-items: center; border-top: 2px solid rgba(255,255,255,0.12); padding-top: 30px; font-family: "SF Mono", Menlo, monospace; font-size: 28px; color: #64748b; letter-spacing: 2px; }
+</style></head><body>
+<div class="grid-bg"></div>
+<div class="frame">
+  <div>
+    <div class="topbar">
+      <div class="kicker">EP07 // ACT II: BAIDU ➔ GOOGLE BRAIN ➔ OPENAI VP OF RESEARCH (2014–2020)</div>
+      <div class="stamp">arXiv:2001.08361</div>
+    </div>
+    <h1>Scaling Laws (2020): A Straight Line Across Seven Orders of Magnitude</h1>
+    <div class="meta-grid"><div class="meta-box"><div class="meta-k">BAIDU &amp; GOOGLE BRAIN</div><div class="meta-v">Deep Speech 2 (2014) ➔ Concrete Problems in AI Safety (2016)</div></div><div class="meta-box"><div class="meta-k">OPENAI VP RESEARCH</div><div class="meta-v">Led GPT-2 and GPT-3 and shaped the RLHF approach</div></div><div class="meta-box"><div class="meta-k">LAW L(N, D, C)</div><div class="meta-v">Precise power-law loss curves across 7 orders of compute</div></div><div class="meta-box"><div class="meta-k">PARADIGM SHIFT</div><div class="meta-v">Deep learning becomes the statistical physics of the mind</div></div></div>
+    <div class="paras"><p>The paper by Kaplan, McCandlish and Amodei (January 2020) showed that the cross-entropy loss of language models falls not in random jumps, but along a perfectly straight line on a log scale across seven orders of magnitude.</p><p>The discovery gave Amodei mathematical confidence that AGI-level systems would arrive within years — and that safety had to be built before superpowerful intelligence appeared.</p></div>
+  </div>
+  <div>
+    <div class="quote-box">“Intelligence obeys smooth empirical power laws: scale compute, dataset size, and parameters in harmony, and loss drops along a <span class="hl">straight line across seven orders of magnitude</span>.”</div>
+    <div class="foot">
+      <span>ARCHIVE: KAPLAN, MCCANDLISH, AMODEI ET AL. // OPENAI SCALING LAWS (2020)</span>
+      <span>3840×2160 UHD // 24FPS MASTER PLATE</span>
+    </div>
+  </div>
+</div>
+</body></html>
