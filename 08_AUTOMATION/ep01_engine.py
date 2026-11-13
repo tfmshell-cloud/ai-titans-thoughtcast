@@ -245,6 +245,10 @@ TITLE_FADE = 8          # кадрів наплаву на появу/зникн
 VO_LABEL = "VO_UA"      # для англійської версії build_ep01_en.py ставить "VO_EN"
 
 
+def b_room_now(b):
+    return b["ln"] - (b["in_f"] + b["f1"] - b["f0"])
+
+
 RETIME_DIR = os.path.join(BASE, "05_RAW_FOOTAGE", "claude_graphics", "retime")
 
 
@@ -342,6 +346,9 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
         if tail < diss[c] and not a["still"] and a["ln"]:
             a["extra"] = diss[c] - tail             # сповільнимо вихідний кліп і на довжину наплаву
             tail = diss[c]
+        if not b["still"] and b["ln"] and b["in_f"] + b_room_now(b) < diss[c]:
+            b["extra"] = b.get("extra", 0) + diss[c]  # і вхідний — щоб на початку були кадри для наплаву
+            head = diss[c] + b["in_f"]
         h = min(diss[c], tail, head)
         if h < 4:
             problems.append(f"наплав на {c / FPS:.1f} с ({b['name'][:40]}): замало кадрів у джерелі — лишаю склейку")
@@ -361,7 +368,7 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
         extra = sh.get("extra", 0)
         if not still and ln and in_f + dur + extra > ln:
             factor = (in_f + dur + 6 + extra) / ln
-            if factor <= 1.45:                      # плавне сповільнення замість чорного кадру
+            if factor <= 2.0:                       # плавне сповільнення замість чорного кадру
                 src_path = retime(find(idx, name), factor)
                 retimed.add(src_path)
                 in_f = int(in_f * factor)

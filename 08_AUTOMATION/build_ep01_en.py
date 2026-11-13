@@ -25,6 +25,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "scripts"))
 import ep01_engine as E                 # noqa: E402
 import build_ep01_acts as B             # noqa: E402
+import ep01_resync as RS                # noqa: E402
 from make_ep01_en_graphics import UA_TO_EN, CARDS   # noqa: E402
 
 F = E.FPS
@@ -155,6 +156,9 @@ def main():
     for key in ("I", "II", "III", "IV"):
         ua, _ = B.ACTS[key]
         act, M = warp_act(ua)
+        RS.resync(act, lang="EN")              # усі акти
+        if False:
+            pass              # склейки — за реальним англійським мовленням
         print(f"{act['name']}: {len(act['v1'])} планів, UA {ua['end_f'] / F:.1f} с → EN {act['end_f'] / F:.1f} с")
         if not (a_.skip_mix and os.path.exists(mix_path(key))):
             E.mix_music(act, idx, mix_path(key))

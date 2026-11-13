@@ -240,10 +240,11 @@ def act1():
 
 
 import ep01_resync as RS   # noqa: E402  — склейки за реальним мовленням (акти II–IV)
+_ACT1 = RS.resync(act1())
 for _act in (ACT2, ACT3, ACT4):
     RS.resync(_act)
 
-ACTS = {"I": (act1(), "EP01_ActI_UA_Claude_DirectorsCut"), "II": (ACT2, "EP01_ActII_UA_Claude"), "III": (ACT3, "EP01_ActIII_UA_Claude"), "IV": (ACT4, "EP01_ActIV_UA_Claude")}
+ACTS = {"I": (_ACT1, "EP01_ActI_UA_Claude_DirectorsCut"), "II": (ACT2, "EP01_ActII_UA_Claude"), "III": (ACT3, "EP01_ActIII_UA_Claude"), "IV": (ACT4, "EP01_ActIV_UA_Claude")}
 
 
 def make_bridge(idx, n):
