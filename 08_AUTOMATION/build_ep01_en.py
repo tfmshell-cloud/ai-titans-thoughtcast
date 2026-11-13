@@ -109,6 +109,24 @@ def warp_act(act):
     return out, M
 
 
+# Правки лише англійського Акту III (рядок плану → новий файл, точка входу, звук)
+ACT_III_EN = {
+    12: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_Laptop_part.mp4", 0.0),      # без чорної паузи
+    15: ("EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4",
+         "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4", 18.0),                     # лише Ілля
+    30: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_Badge_Walk_part.mp4", 0.0),  # одразу з бейджем
+}
+
+
+def act_iii_en_fixes(act):
+    v1 = list(act["v1"])
+    for i, (old, new, si) in ACT_III_EN.items():
+        f0, name, _, _, note = v1[i]
+        assert name == old, f"Акт III EN, план {i}: очікував {old}, а стоїть {name}"
+        v1[i] = (f0, new, si, None, note + " [EN-правка]")
+    act["v1"] = v1
+
+
 def mix_path(key):
     return os.path.join(E.BASE, "03_AUDIO", "claude_mix", f"EP01_MUS_Act{key}_ducked_EN.wav")
 
@@ -166,6 +184,8 @@ def main():
         ua, _ = B.ACTS[key]
         act, M = warp_act(ua)
         RS.resync(act, lang="EN")              # усі акти
+        if key == "III":
+            act_iii_en_fixes(act)
         if False:
             pass              # склейки — за реальним англійським мовленням
         print(f"{act['name']}: {len(act['v1'])} планів, UA {ua['end_f'] / F:.1f} с → EN {act['end_f'] / F:.1f} с")
