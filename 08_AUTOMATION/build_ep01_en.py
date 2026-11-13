@@ -69,6 +69,15 @@ def warp_act(act):
         a0, a1, b0, b1 = ua[i - 1], ua[i], en[i - 1], en[i]
         return int(round(b0 + (f - a0) * (b1 - b0) / (a1 - a0))) if a1 > a0 else b0
 
+    ua_starts = {f0: vo[n][1] for n, (_, f0, _) in items}
+
+    def music_end(f1):
+        """Обрив музики перед блоком — з тим самим відступом до голосу, що й в українській."""
+        for s0, e0 in ua_starts.items():
+            if 0 < s0 - f1 <= 48:
+                return e0 - (s0 - f1)
+        return M(f1)
+
     tr = lambda name: UA_TO_EN.get(name, name)
     v1 = [(M(f0), tr(n), si, db, note) for f0, n, si, db, note in act["v1"]]
     for i in range(1, len(v1)):                        # склейки строго по черзі
@@ -93,7 +102,7 @@ def warp_act(act):
                v2=[(M(f0), tr(n), M(f0 + d) - M(f0)) for f0, n, d in act.get("v2", [])],
                v3=[(M(f0), tr(n), (M(f0 + int(s * F)) - M(f0)) / F) for f0, n, s in act.get("v3", [])],
                sfx=[(M(f0), n, s, db) for f0, n, s, db in act.get("sfx", [])],
-               music=[(n, si, M(f0), M(f1), fd) for n, si, f0, f1, fd in act["music"]],
+               music=[(n, si, M(f0), music_end(f1), fd) for n, si, f0, f1, fd in act["music"]],
                dissolves=diss,
                markers=[(M(f), c, nm, note) for f, c, nm, note in act.get("markers", []) if not nm.startswith("Д")]
                + [(f0, "Blue", f"EN{n:02d}", name) for n, (name, f0, s) in vo.items()])
