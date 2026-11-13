@@ -77,14 +77,16 @@ def mix_music(act, idx, out_path, gap_db=None, duck_db=None, log=print):
     sr, ch, BL = 48000, 2, 480
     total = int(act["end_f"] / FPS * sr)
     out = array.array("h", bytes(total * ch * 2))
-    for name, src_in, f0, f1, fade in act["music"]:
+    for m in act["music"]:
+        name, src_in, f0, f1, fade = m[:5]
+        fade_in = m[5] if len(m) > 5 else 0.02        # 6-й елемент — м'який вхід підкладки
         w = wave.open(find(idx, name))
         assert w.getframerate() == sr and w.getnchannels() == ch and w.getsampwidth() == 2
         w.setpos(int(src_in * sr))
         n = int((f1 - f0) / FPS * sr)
         seg = array.array("h", w.readframes(n))
         n = len(seg) // ch
-        fi, fo = int(0.02 * sr), int(max(0.02, fade) * sr)
+        fi, fo = int(max(0.02, fade_in) * sr), int(max(0.02, fade) * sr)
         t0 = int(f0 / FPS * sr)
         for i in range(n):
             g = min(1.0, i / fi, (n - i) / fo)
@@ -92,7 +94,8 @@ def mix_music(act, idx, out_path, gap_db=None, duck_db=None, log=print):
             if j + 1 < len(out):
                 out[j] = int(seg[i * ch] * g)
                 out[j + 1] = int(seg[i * ch + 1] * g)
-    src_lv = sum(level_db(find(idx, m[0]), m[1], (m[3] - m[2]) / FPS) for m in act["music"]) / len(act["music"])
+    main = [m for m in act["music"] if len(m) == 5] or act["music"]   # підкладки не змінюють рівень основної музики
+    src_lv = sum(level_db(find(idx, m[0]), m[1], (m[3] - m[2]) / FPS) for m in main) / len(main)
     gap_db = MUS_GAP - src_lv if gap_db is None else gap_db
     duck_db = MUS_DUCK - src_lv if duck_db is None else duck_db
     nb = total // BL + 1

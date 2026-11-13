@@ -127,6 +127,30 @@ def act_iii_en_fixes(act):
     act["v1"] = v1
 
 
+# Правки лише англійського Акту II: Суцкевер з No Priors — вирізки без ведучої (0–3,75 с і 16,55–25,45 с джерела)
+ACT_II_EN = {
+    18: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_A_only.mp4", 0.0),
+    32: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_B_only.mp4", 0.35),
+}
+
+
+def act_ii_en_fixes(act):
+    v1 = list(act["v1"])
+    for i, (old, new, si) in ACT_II_EN.items():
+        f0, name, _, db, note = v1[i]
+        assert name == old, f"Акт II EN, план {i}: очікував {old}, а стоїть {name}"
+        v1[i] = (f0, new, si, db, note + " [EN-правка: лише Ілля]")
+    act["v1"] = v1
+
+
+def act_iii_en_music(act):
+    """Блок 12 (звільнення): замість 42 с тиші — тиха напружена підкладка між двома треками."""
+    mus = sorted(act["music"], key=lambda m: m[2])
+    a, b = mus[0], mus[1]
+    if b[2] - a[3] > 5 * F:
+        act["music"] = mus[:1] + [("EP01_AMB_07_ACT2_DRONE_Server_Matrix_Tension.wav", 20.0, a[3], b[2], 1.5, 2.5)] + mus[1:]
+
+
 def mix_path(key):
     return os.path.join(E.BASE, "03_AUDIO", "claude_mix", f"EP01_MUS_Act{key}_ducked_EN.wav")
 
@@ -184,8 +208,11 @@ def main():
         ua, _ = B.ACTS[key]
         act, M = warp_act(ua)
         RS.resync(act, lang="EN")              # усі акти
+        if key == "II":
+            act_ii_en_fixes(act)
         if key == "III":
             act_iii_en_fixes(act)
+            act_iii_en_music(act)
         if False:
             pass              # склейки — за реальним англійським мовленням
         print(f"{act['name']}: {len(act['v1'])} планів, UA {ua['end_f'] / F:.1f} с → EN {act['end_f'] / F:.1f} с")
