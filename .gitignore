@@ -42,3 +42,7 @@ CacheClip/
 
 # Мікси й кеш аналізу звуку (відтворюються скриптами 08_AUTOMATION/build_ep01_acts.py)
 03_AUDIO/claude_mix/
+
+# Фінальні 4K-мастери — лише Google Drive
+10_MASTERS/
+05_RAW_FOOTAGE/claude_graphics/retime/

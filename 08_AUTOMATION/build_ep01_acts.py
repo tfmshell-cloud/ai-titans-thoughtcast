@@ -74,8 +74,8 @@ ACT2 = dict(
         (a(8, 17.36), "Camera_zooms_out_from_microchip_9bc5eb71_1080p.mp4", 0, -14, "Д08 «у мільярд разів» — від чипа до планети"),
         (a(8, 22.4),  "EP01_V1_B2_02_Rosewood_Boardroom_15s.mp4", 0, None, "Д08 вечеря в Rosewood"),
         (a(8, 27.5),  "Four_men_sitting_at_table_3911bdbc_1080p.mp4", 0, None, "Д08 «зводить разом…»"),
-        (a(8, 31.0),  "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", 16.0, None, "Д08 Ілля Суцкевер (EP06)"),
-        (a(8, 35.22), "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4", 0, None, "Д08 «тема — екзистенційна»"),
+        (a(8, 31.0),  "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", 0.3, None, "Д08 Ілля Суцкевер (EP06) — лише Ілля, 0–3,8 с джерела"),
+        (a(8, 35.22), "EP01_CLAUDE_KB_Astronaut_BlackHole_6s.mp4", 0, None, "Д08 «тема — екзистенційна» — астронавт перед чорною дірою (EP06, 16:9)"),
         (a(8, 37.56), "EP03_CLIP_STILL_DeepMind_KingsCross_6s.mp4", 0, None, "Д08 Google купив DeepMind (EP03)"),
         (a(8, 39.9),  "EP03_VID_ARCH_11_ACT2_24FPS_Google_650M_Deal_Military_Ethics.mp4", 11.0, None, "Д08 Деміс Гассабіс (EP03)"),
         (a(8, 42.25), "Camera_moving_through_server_aisle_48549a87_1080p.mp4", 0, -12, "Д08 «концентрація інтелекту… смертельно небезпечно»"),
@@ -88,11 +88,11 @@ ACT2 = dict(
         (a(9, 26.62), "EP01_V1_B2_03_Singularity_Threat_12s.mp4", 0, None, "Д09 Dota 2"),
         (a(9, 29.08), "EP01_V1_B2_05_Swarm_Gaming_RL_12s.mp4", 0, None, "Д09 «академія глузувала»"),
         (a(9, 31.4),  "EP03_CLIP_STILL_Royal_Society_London_6s.mp4", 0, None, "Д09 «піар-майданчик мільярдерів» (EP03)"),
-        (a(9, 37.3),  "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", 21.0, None, "Д09 гіпотеза Суцкевера (EP06)"),
+        (a(9, 37.3),  "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", 16.9, None, "Д09 гіпотеза Суцкевера (EP06) — лише Ілля, 16,5–25,5 с джерела"),
         (a(9, 43.46), "EP07_DOC_03_ACT2_scaling_laws_7orders_openai_2020.mp4", 0, None, "Д09 «Масштаб вирішує все» (EP07)"),
         (a(10, 0),    "EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4", 0, None, "Д10 гіпотеза масштабування (EP02)"),
         (a(10, 5.56), "EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4", 0, None, "Д10 «десятки мільйонів… чіпи» (EP02)"),
-        (a(10, 8.8),  "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4", 0, -16, "Д10 «електроенергія» (EP10)"),
+        (a(10, 8.8),  "ep10_clip_still_new_electricity_filament_6s.mp4", 0, None, "Д10 «електроенергія» — нитка розжарення 16:9 (EP10)"),
         (a(10, 12.48), "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4", 0, -12, "Д10 «хід, який розколює індустрію»"),
         (a(10, 17.7), "EP01_V1_CREATIVE_07_Golden_Transistor_Dust_8s.mp4", 0, None, "Д10 capped-profit"),
         (a(10, 23.6), "Spark_disruption_in_corporate_bo_clip_a6171ebf_1080p.mp4", 0, -14, "Д10 мільярд від Microsoft — лабораторія → рукостискання"),
@@ -136,13 +136,13 @@ ACT3 = dict(
         (a(12, 24.58), "EP01_V1_B3_01_Chess_King_Falling_12s.mp4", 0, None, "Д12 «його звільнено» — король падає"),
         (a(12, 27.8),  "EP01_DOC_03_Board_Ouster_10s.mp4", 0, None, "Д12 прес-реліз і формулювання"),
         (a(12, 35.66), "ep08_clip_still_wall_street_nyse_6s.mp4", 0, None, "Д12 «підриває світові біржі»"),
-        (a(12, 39.02), "EP01_V1_ASSOC_01_Lidar_City_Grid_8s.mp4", 0, None, "Д12 акції Microsoft падають"),
+        (a(12, 39.02), "EP01_CLAUDE_MSFT_Crash_Nov17_6s.mp4", 0, None, "Д12 акції Microsoft падають — графік обвалу MSFT"),
         (a(12, 42.2),  "ep01_flow_07_boardroom_noir_ua_alt.mp4", 5.0, None, "Д12 «індустрія застигає» — СИСТЕМУ ЗАБЛОКОВАНО"),
         (a(12, 44.54), "EP01_V1_NEW_03_Window_Rain_16s.mp4", 6.0, None, "Д12 «викинуто з компанії»"),
         (a(13, 0),     "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4", 0, -10, "Д13 «сто двадцять годин»"),
-        (a(13, 4.66),  "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4", 2.0, None, "Д13 рада: «нехтує безпекою» (EP06)"),
-        (a(13, 8.7),   "EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s.mp4", 0, None, "Д13 страх AGI (EP06)"),
-        (a(13, 12.74), "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4", 0, -14, "Д13 «співробітники — це вчені»"),
+        (a(13, 4.0),   "EP01_CLIP_STILL_Boardroom_Tense_9s.mp4", 3.0, None, "Д13 «Рада директорів була переконана» — зала ради"),
+        (a(13, 10.0),  "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4", 2.0, None, "Д13 рада: «нехтує безпекою» (EP06)"),
+        (a(13, 12.74), "EP01_V1_B2_09_Researchers_Compute_Core_12s.mp4", 0, None, "Д13 «співробітники — це вчені» — дослідники біля обчислювального ядра"),
         (a(13, 18.74), "EP01_V1_B3_03_Two_Silhouettes_Nadella_12s.mp4", 0, None, "Д13 «природа лояльності»"),
         (a(13, 23.32), "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4", 1.3, -14, "Д13 Наделла: лабораторія з необмеженим бюджетом"),
         (a(13, 31.94), "Mouse_click_triggers_flash_42a0e76f_1080p.mp4", 2.3, -12, "Д13 гостьовий бейдж на шиї"),
@@ -183,14 +183,14 @@ ACT4 = dict(
         (a(15, 0),     "EP01_V1_NEW_06_Cosmic_Dyson_12s.mp4", 0, None, "Д15 «далеко за межі софту»"),
         (a(15, 6.96),  "Electrical_spark_traveling_neuro…_362f1f95_1080p.mp4", 0, -16, "Д15 «інтелект — не абстрактна наука»"),
         (a(15, 12.02), "Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4", 2.5, -14, "Д15 «інтелект став фізичним товаром» — дерево стає чипом"),
-        (a(15, 14.72), "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4", 4.0, -14, "Д15 тервати енергії (EP10)"),
+        (a(15, 14.72), "ep10_clip_still_edison_bulb_glow_6s.mp4", 0, None, "Д15 тераватів енергії — лампа Едісона 16:9 (EP10)"),
         (a(15, 18.54), "EP02_CLIP_STILL_DGX_B200_HGX_6s.mp4", 0, None, "Д15 мільйони чіпів (EP02)"),
         (a(15, 21.12), "EP01_DOC_06_Stargate_100B_Report_10s.mp4", 0, None, "Д15 Stargate"),
         (a(15, 24.7),  "Camera_moving_through_server_aisle_48549a87_1080p.mp4", 5.5, -12, "Д15 кластери на сотні мільярдів"),
         (a(15, 28.38), "EP01_DOC_07_7_Trillion_Chip_Network_10s.mp4", 0, None, "Д15 переговори з виробниками чипів"),
         (a(15, 32.0),  "ep01_flow_09_fusion_torus.mp4", 3.0, None, "Д15 ядерна енергетика і синтез"),
         (a(15, 36.4),  "Finger_drawing_glowing_algorithm…_57eaed58_1080p.mp4", 2.0, -16, "Д15 термодинамічна формула"),
-        (a(15, 41.22), "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4", 5.0, -14, "Д15 «вартість близька до нуля» (EP02)"),
+        (a(15, 41.22), "EP01_CLAUDE_KB_Energy_Pulses_Earth_6s.mp4", 0, None, "Д15 «вартість близька до нуля» — енергомережа Землі (EP10, 16:9)"),
         (a(15, 45.4),  "ep10_clip_still_earth_dawn_lights_finale_6s.mp4", 0, None, "Д15 дефіцит зникне (EP10)"),
         (a(16, 0),     "EP01_UA_CLIP_CARD_07_Three_Rules_12s.mp4", 0, None, "Д16 «який головний урок…»"),
         (a(16, 5.88),  "Teenage_boy_speaking_into_microp…_9259f8fe_1080p.mp4", 2.0, None, "ПРАВИЛО 1 — рима: підліток на сцені"),
@@ -238,6 +238,10 @@ def act1():
                 music=[(A1.MUSIC_SRC, 0, 0, A1.END_F, 3.0)],
                 markers=vo_markers(vo) + list(A1.MARKERS))
 
+
+import ep01_resync as RS   # noqa: E402  — склейки за реальним мовленням (акти II–IV)
+for _act in (ACT2, ACT3, ACT4):
+    RS.resync(_act)
 
 ACTS = {"I": (act1(), "EP01_ActI_UA_Claude_DirectorsCut"), "II": (ACT2, "EP01_ActII_UA_Claude"), "III": (ACT3, "EP01_ActIII_UA_Claude"), "IV": (ACT4, "EP01_ActIV_UA_Claude")}
 

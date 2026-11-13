@@ -1,7 +1,7 @@
 // Згенеровано 08_AUTOMATION/update_montage_status.py — не редагувати вручну
 window.MONTAGE_STATUS = {
   "01": {
-    "updated": "2026-11-13 13:32",
+    "updated": "2026-11-13 14:42",
     "headline": "Режисерська версія «Розмита межа» зібрана повністю",
     "concept": "Альтман пише, що Mac «розмив лінію між внутрішнім світом і зовнішньою реальністю». Внутрішній світ показано анімацією, реальний — фото й архівом; кожен поворотний момент героя — морфінг анімації в реальність. Фінал римується з початком: CRT хлопчика вмикається знову, корпус Mac із клацанням реле замикає епізод.",
     "project": "SEM (DaVinci Resolve Studio)",
@@ -96,7 +96,6 @@ window.MONTAGE_STATUS = {
       "02": [
         "EP02_CLIP_STILL_DGX_B200_HGX_6s.mp4",
         "EP02_CLIP_STILL_GF110_GTX580_Die_6s.mp4",
-        "EP02_SCI_01_Nanobots_Graphene_Lattice_Assembly.mp4",
         "EP02_VID_ARCH_15_ACT3_24FPS_NVIDIA_DGX_Server_Hallway_Pressroom.mp4",
         "EP02_VID_ARCH_16_ACT3_24FPS_NVIDIA_NVLink_Fiber_Rack_Pressroom.mp4"
       ],
@@ -109,7 +108,6 @@ window.MONTAGE_STATUS = {
         "Finger_drawing_glowing_algorithm…_57eaed58_1080p.mp4",
         "Finger_slamming_clock_plunger_dd1a4152_1080p.mp4",
         "Glass_shatters_into_voxel_bricks_6403835d_1080p.mp4",
-        "Holographic_game_data_streams_fl…_0aa820c5_1080p.mp4",
         "Neuron_morphs_into_GPU_chip_23314d03_1080p.mp4",
         "Plane_blade_transforming_into_ci…_97ad6a7c_1080p.mp4",
         "Timber_dissolving_into_crystal_m…_ed88b1bf_1080p.mp4"
@@ -118,11 +116,9 @@ window.MONTAGE_STATUS = {
         "EP04_CLIP_STILL_AI_Benchmarks_Curve_6s.mp4"
       ],
       "06": [
-        "EP06_CLIP_STILL_AGI_Effigy_Bonfire_6s.mp4",
         "EP06_CLIP_STILL_OpenAI_Pioneer_Building_6s.mp4",
         "EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4",
         "EP06_DOC_05_Nov2023_Rift_10s.mp4",
-        "EP06_SCI_01_Alcubierre_Warp_Drive_Metric.mp4",
         "EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4",
         "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4"
       ],
@@ -137,9 +133,10 @@ window.MONTAGE_STATUS = {
         "ep09_clip_still_bletchley_summit_6s.mp4"
       ],
       "10": [
-        "EP10_SCI_01_Tesla_Coil_Electric_Discharges.mp4",
         "EP10_VID_ARCH_14_ACT4_24FPS_AndrewNg_Sequoia_Agentic_Workflows_GPT.mp4",
-        "ep10_clip_still_earth_dawn_lights_finale_6s.mp4"
+        "ep10_clip_still_earth_dawn_lights_finale_6s.mp4",
+        "ep10_clip_still_edison_bulb_glow_6s.mp4",
+        "ep10_clip_still_new_electricity_filament_6s.mp4"
       ]
     },
     "scripts": [
@@ -162,6 +159,12 @@ window.MONTAGE_STATUS = {
       "Відновлено 4 наплави, що раніше випадали в жорсткі склейки (5:47, 10:52, 13:00, 13:31)",
       "Повернуто 77 зниклих аудіофайлів (мікси музики, мости, треки Suno) з копії на Google Drive",
       "Прибрано архівний звук із чоловічими голосами на 0:00 і 13:45 — замість нього чистий синтез увімкнення CRT",
+      "Акти II–IV: склейки переставлено за реальним мовленням у дублях (карта часу фраз vo_align.py) — кадр з'являється на своєму слові",
+      "5:23–5:35: вечеря в Rosewood тягнеться до Суцкевера; з архіву No Priors взято лише кадри з Іллею (ведучу прибрано, також на 6:25)",
+      "Котушку Тесла 9:16 замінено кадрами 16:9: нитка розжарення (6:45) і лампа Едісона (11:23)",
+      "9:00: замість кадру-«стрілялки» — анімований графік обвалу акцій MSFT 17.11.2023",
+      "9:22: прибрано вогнище; «співробітники — це вчені» — дослідники біля обчислювального ядра",
+      "Закороткі кліпи плавно сповільнено (3–26%), щоб склейка лишалась на слові",
       "Англійська версія EP01_FULL_EN (12:39): англійський голос, титри й картки, свій мікс музики; бін 00_EP01_MASTER_UA_EN"
     ],
     "next": [

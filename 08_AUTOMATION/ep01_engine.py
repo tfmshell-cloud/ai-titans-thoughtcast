@@ -245,6 +245,22 @@ TITLE_FADE = 8          # кадрів наплаву на появу/зникн
 VO_LABEL = "VO_UA"      # для англійської версії build_ep01_en.py ставить "VO_EN"
 
 
+RETIME_DIR = os.path.join(BASE, "05_RAW_FOOTAGE", "claude_graphics", "retime")
+
+
+def retime(path, factor):
+    """Сповільнена копія кліпу (×factor) з плавним змішуванням кадрів; кешується."""
+    os.makedirs(RETIME_DIR, exist_ok=True)
+    stem = os.path.splitext(os.path.basename(path))[0]
+    out = os.path.join(RETIME_DIR, f"{stem}_slow{int(round(factor * 1000))}.mp4")
+    if not os.path.exists(out):
+        ff = os.path.expanduser("~/Library/Python/3.9/bin/ffmpeg")
+        subprocess.run([ff, "-loglevel", "error", "-y", "-i", path, "-an",
+                        "-vf", f"setpts={factor:.4f}*PTS,minterpolate=fps=24:mi_mode=blend",
+                        "-r", "24", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", out], check=True)
+    return out
+
+
 def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=0, extra_sfx=None):
     """acts: [(act, offset_f, music_mix_path)] — склеює акти в один таймлайн.
     Наплави: act["dissolves"] = {кадр_склейки: півтривалість}, extra_dissolves — глобальні (межі актів).
@@ -279,6 +295,7 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
 
     report = []
     shots = []
+    retimed = set()
     for act, off, mix in acts:
         v1 = act["v1"]
         vr = vo_ranges(act)
@@ -322,6 +339,9 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             continue
         room = inf if b["still"] or not b["ln"] else b["ln"] - (b["in_f"] + b["f1"] - b["f0"])
         head = inf if b["still"] else b["in_f"] + room
+        if tail < diss[c] and not a["still"] and a["ln"]:
+            a["extra"] = diss[c] - tail             # сповільнимо вихідний кліп і на довжину наплаву
+            tail = diss[c]
         h = min(diss[c], tail, head)
         if h < 4:
             problems.append(f"наплав на {c / FPS:.1f} с ({b['name'][:40]}): замало кадрів у джерелі — лишаю склейку")
@@ -337,14 +357,25 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             problems.append(f"{act['name']}: {name} ({note}) — нульова тривалість")
             continue
         still = name.lower().endswith(STILL_EXT)
-        if not still and ln and in_f + dur > ln:
-            problems.append(f"{act['name']}: {name} ({note}) — потрібно {dur} кадрів, у джерелі {ln - in_f}")
+        src_path = None
+        extra = sh.get("extra", 0)
+        if not still and ln and in_f + dur + extra > ln:
+            factor = (in_f + dur + 6 + extra) / ln
+            if factor <= 1.45:                      # плавне сповільнення замість чорного кадру
+                src_path = retime(find(idx, name), factor)
+                retimed.add(src_path)
+                in_f = int(in_f * factor)
+                name = os.path.basename(src_path)
+                db = None                           # у сповільненої копії живого звуку немає
+                report.append((act["name"], name, round(factor, 3), "сповільнено"))
+            else:
+                problems.append(f"{act['name']}: {name} ({note}) — потрібно {dur} кадрів, у джерелі {ln - in_f}")
         if db is not None and not still:
             under = overlap(f0, f0 + dur, vr) > 0.3
             db = fx_gain(find(idx, name), src_in, dur / FPS, under)
             report.append((act["name"], name, db, "під голосом" if under else "пауза"))
         kind = "still" if still else ("av" if db is not None else "video")
-        aid = asset(name, kind)
+        aid = asset(name, kind, path=src_path)
         if not aid:
             continue
         tag = "video" if still else "asset-clip"
@@ -451,6 +482,7 @@ def build_fcpxml(acts, idx, timeline, extra_dissolves=None, fade_in=0, fade_out=
             paths.add(find(idx, v[0]))
     for row in (extra_sfx or []):
         paths.add(find(idx, row[1]))
+    paths |= retimed                                # сповільнені копії теж мають бути в медіапулі
     build_fcpxml.report = report
     return xml, problems, sorted(p for p in paths if p)
 

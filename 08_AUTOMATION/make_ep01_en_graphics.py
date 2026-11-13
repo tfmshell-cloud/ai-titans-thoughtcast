@@ -89,6 +89,7 @@ def ua_to_en():
     m["EP01_UA_CARD_09_Green_Dot_43M_2012.png"] = "EP01_EN_CARD_09_Green_Dot_43M_2012.png"
     for n, *_ in MGFX:
         m[n + ".mov"] = n + "_EN.mov"
+    m["ep01_flow_07_boardroom_noir_ua_alt.mp4"] = "ep01_flow_07_boardroom_noir.mp4"   # на телефоні напис українською
     return m
 
 
