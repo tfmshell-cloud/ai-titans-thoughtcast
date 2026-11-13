@@ -100,7 +100,7 @@
     <asset id="r95" name="ep09_clip_still_bletchley_summit_6s_slow1222" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/retime/ep09_clip_still_bletchley_summit_6s_slow1222.mp4" start="0s" duration="17400/2400s" hasVideo="1" format="r1"/>
     <asset id="r96" name="ep07_clip_still_white_house_2023_6s" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/rendered_cinematic_stills_4k/ep07_clip_still_white_house_2023_6s.mp4" start="0s" duration="14400/2400s" hasVideo="1" format="r1"/>
     <asset id="r97" name="EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP01_VID_ARCH_01_ACT3_24FPS_Altman_Senate_Oath_Closeup.mp4" start="0s" duration="29000/2400s" hasVideo="1" format="r1"/>
-    <asset id="r98" name="EP01_CLAUDE_Mouse_Click_NoBlack" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_CLAUDE_Mouse_Click_NoBlack.mp4" start="0s" duration="20400/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
+    <asset id="r98" name="EP01_CLAUDE_Mouse_Click_Laptop_Flash" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/claude_graphics/EP01_CLAUDE_Mouse_Click_Laptop_Flash.mp4" start="0s" duration="9700/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
     <asset id="r99" name="Photographic_strobe_inverting_image_81594c7e_1080p" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/user_ai_generations/Photographic_strobe_inverting_image_81594c7e_1080p.mp4" start="0s" duration="23900/2400s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="r1"/>
     <asset id="r100" name="EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/archives/EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4" start="0s" duration="71900/2400s" hasVideo="1" format="r1"/>
     <asset id="r101" name="ep01_flow_07_boardroom_noir" src="file:///Users/volodymyrkatasonov/.gemini/antigravity/scratch/ai-titans-thoughtcast/05_RAW_FOOTAGE/flow_renders/ep01_flow_07_boardroom_noir.mp4" start="0s" duration="19000/2400s" hasVideo="1" format="r1"/>
@@ -401,8 +401,8 @@
             <asset-clip ref="r61" offset="1204800/2400s" name="EP01_V1_B2_02_Rosewood_Boardroom_15s" start="12000/2400s" duration="16400/2400s">
               <spine lane="2" offset="12000/2400s"><transition name="Cross Dissolve" offset="0/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition><video ref="r172" offset="0s" name="EP01_SUPER_22_Friday_Nov17" start="0s" duration="12000/2400s"/><transition name="Cross Dissolve" offset="11200/2400s" duration="800/2400s"><filter-video ref="r1fx" name="Cross Dissolve"/></transition></spine>
             </asset-clip>
-            <asset-clip ref="r98" offset="1221200/2400s" name="EP01_CLAUDE_Mouse_Click_NoBlack" start="0/2400s" duration="9500/2400s" audioRole="effects">
-              <adjust-volume amount="-15.5dB"/>
+            <asset-clip ref="r98" offset="1221200/2400s" name="EP01_CLAUDE_Mouse_Click_Laptop_Flash" start="0/2400s" duration="9500/2400s" audioRole="effects">
+              <adjust-volume amount="-13.3dB"/>
             </asset-clip>
             <asset-clip ref="r99" offset="1230700/2400s" name="Photographic_strobe_inverting_image_81594c7e_1080p" start="0/2400s" duration="2400/2400s" audioRole="effects">
               <adjust-volume amount="1.1dB"/>

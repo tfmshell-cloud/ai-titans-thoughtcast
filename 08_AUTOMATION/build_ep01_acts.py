@@ -274,7 +274,7 @@ def make_bridge(idx, n):
 UA_SHOT_FIXES = {
     "II": {18: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_A_only.mp4", 0.0),
            32: ("EP06_VID_ARCH_07_ACT2_24FPS_Sutskever_OpenAI_Origins_NoPriors.mp4", "EP01_CLAUDE_Ilya_NoPriors_B_only.mp4", 0.35)},
-    "III": {12: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_NoBlack.mp4", 0.0),       # без чорної паузи
+    "III": {12: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_Laptop_Flash.mp4", 0.0),   # лише Альтман за ноутбуком і спалах, без чоловіка з бейджем
             15: ("EP06_CLIP_STILL_Sutskever_TAU_2023_6s.mp4",
                  "EP06_VID_ARCH_13_ACT3_24FPS_Sutskever_Superalignment_Safety_NoPriors.mp4", 18.0),                # лише Ілля
             30: ("Mouse_click_triggers_flash_42a0e76f_1080p.mp4", "EP01_CLAUDE_Mouse_Click_Badge_Walk_part.mp4", 0.0)},
