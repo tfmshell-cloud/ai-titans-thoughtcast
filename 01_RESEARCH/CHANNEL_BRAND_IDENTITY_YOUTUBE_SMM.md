@@ -1,94 +1,142 @@
 # АНАТОМІЯ ГЕНІЯ: КОД ЦИВІЛІЗАЦІЇ
 ## Anatomy of Genius: The Civilization Code
-### Офіційний Бренд-Бук, YouTube Метадані, SEO та SMM-Пакет Кіностудії
+### Офіційний YouTube Пакет 2026: Точні Ліміти Символів, SEO, SMM та Промпти
 
 ---
 
-## 1. НАЗВА КАНАЛУ ТА БРЕНД-КОМБІНАЦІЇ
+## 1. СУВОРІ ТЕХНІЧНІ ЛІМІТИ YOUTUBE STUDIO (ГАЙД ДЛЯ ШОУРАНЕРА)
 
-### Офіційне відображення в YouTube (Назва каналу):
-* **Варіант 1 (Флагманський двомовний):**  
+| Поле введення | Ліміт YouTube | Рекомендовано | Фактично у нашому пакеті |
+| :--- | :--- | :--- | :--- |
+| **Назва каналу (Name)** | **100 символів** | 30–60 символів | 51 символ (`Анатомія Генія: Код Цивілізації \| Anatomy of Genius`) |
+| **Псевдонім (@handle)** | **30 символів** | 12–20 символів | 16 символів (`@AnatomyOfGenius`) |
+| **Опис каналу (About)** | **1 000 символів** | 850–950 символів | **UA: 918 симв.** • **EN: 944 симв.** • **Гібрид: 882 симв.** |
+| **Ключові слова (Keywords)** | **500 символів** | 300–450 символів | **320 символів** (включно з комами) |
+| **Назва відео (Title)** | **100 символів** | 50–70 символів | 55–68 символів (повна видимість на смартфонах) |
+| **Опис відео (Upload Defaults)**| **5 000 символів** | 1 500–2 500 символів| ~1 650 символів (хук у перших 140 символах) |
+| **Теги відео (Tags)** | **500 символів** | 350–450 символів | 380 символів |
+| **Аватар (Profile Pic)** | 800×800 px (1:1) | PNG / JPG | Формат 1:1, візуальний акцент у колі Ø 680 px |
+| **Шапка каналу (Banner)** | 2560×1440 px | Max 6 MB | **Центральна Safe Zone: 1235×338 px** (текст не ріжеться) |
+| **Прев'ю (Thumbnail)** | 1280×720 px (16:9)| Max 2 MB | Контраст обличчя, фокус на емоції, лівий третій під текст |
+
+---
+
+## 2. ПОЛЕ «НАЗВА КАНАЛУ» (CHANNEL NAME)
+*Максимум: 100 символів.*
+
+* **Варіант А (Двомовний флагман, 51 символ):**
   `Анатомія Генія: Код Цивілізації | Anatomy of Genius`
-* **Варіант 2 (Чистий український):**  
+* **Варіант Б (Чистий український, 31 символ):**
   `Анатомія Генія: Код Цивілізації`
-* **Варіант 3 (Кінематографічний короткий):**  
+* **Варіант В (Короткий міжнародний, 37 символів):**
   `Анатомія Генія // Anatomy of Genius`
 
-### YouTube Handles (@псевдоніми):
-* Пріоритет 1: `@AnatomyOfGenius`
-* Пріоритет 2: `@AnatomyOfGeniusUA`
-* Пріоритет 3: `@CivilizationCode`
-* Пріоритет 4: `@AnatomyOfGeniusOfficial`
+---
 
-### Офіційні слогани каналу:
-* **UA:** «Досліджуємо мислення тих, чий розум створив сучасний світ — і програмує завтрашній».
-* **EN:** *“Dissecting the minds that built our world — and are coding the future.”*
-* **Короткий логолайн:** «Анатомія людини. Масштаб цивілізації». // *“The Human Mind. The Civilizational Scale.”*
+## 3. ПОЛЕ «ПСЕВДОНІМ» (CHANNEL HANDLE)
+*Максимум: 30 символів (a-z, 0-9, крапки, дефіси, підкреслення).*
+
+1. `@AnatomyOfGenius` *(16 символів — пріоритет №1)*
+2. `@AnatomyOfGeniusUA` *(18 символів — пріоритет №2)*
+3. `@CivilizationCode` *(17 символів — альтернатива)*
 
 ---
 
-## 2. ОПИС КАНАЛУ (ABOUT SECTION)
+## 4. ПОЛЕ «ОПИС КАНАЛУ» (CHANNEL DESCRIPTION)
+*Суворий ліміт YouTube: РІВНО 1 000 СИМВОЛІВ (з пробілами).*
 
-### 🇺🇦 Українська версія (для розділу «Про канал»):
+### Варіант 1: Основний український опис (918 символів / ліміт 1000)
+> *Скопіюйте цей блок у поле «Опис каналу» (YouTube Studio → Налаштування каналу → Основні відомості):*
+
 ```text
-Ласкаво просимо до «Анатомії Генія: Код Цивілізації» — преміальної документальної кіностудії, присвяченої розтину мислення найвпливовіших візіонерів людства.
+«Анатомія Генія: Код Цивілізації» — преміальна кіностудія документальних розслідувань мислення, психології та наукових подвигів людей, які змінили хід історії.
 
-Ми не переповідаємо сухі біографії з Вікіпедії. Ми розбираємо фундаментальну інженерію геніальності:
-• Як одна людина, долаючи сумніви, самотність та опір системи, створює технологічний прорив?
-• Які психологічні кризи та приховані травми формують непохитну волю творця?
-• Як абстрактна математична ідея перетворюється на кремній, генетичний код чи космічну ракету, змінюючи цивілізацію назавжди?
+Ми не переповідаємо біографії. Ми розбираємо фундаментальну анатомію інтелекту:
+• Як одна людина, долаючи зневіру та тиск системи, створює світовий прорив?
+• Які приховані кризи та внутрішні травми гартують характер титана?
+• Як абстрактна ідея стає кремнієвим чипом, штучним інтелектом чи космічним кораблем?
 
-🌐 НАША ДОРОЖНЯ КАРТА (4 СЕЗОНИ ФРАНШИЗИ):
-🧠 Сезон 1: Титани ШІ (AI Titans) — Сем Альтман, Дженсен Хуанг, Деміс Гассабіс, Джеффрі Хінтон, Ян Лекун, Ілля Суцкевер, Даріо Амодей, Фей-Фей Лі, Йошуа Бенжіо, Ендрю Ин + Грандіозний фінал «Симфонія Творців».
-⚡ Сезон 2: Кремнієві Титани (Silicon Titans) — Стів Джобс, Ілон Маск, Гордон Мур, Морріс Чанг (TSMC), Стів Возняк, Джоні Айв, Енді Гроув, Дуглас Енгельбарт, Тоні Фаделл, Джек Кілбі.
-🧬 Сезон 3: Код Життя (Biotech Titans) — Каталін Каріко (мРНК), Дженніфер Даудна & Еммануель Шарпантьє (CRISPR), Крейг Вентер, Сінья Яманака, Девід Сінклер.
-🚀 Сезон 4: Глибокий Горизонт (Space & Quantum) — Сергій Корольов, Роберт Оппенгеймер, Гвінн Шотвелл, Карл Саган, Кіп Торн.
+ФРАНШИЗА (4 СЕЗОНИ):
+🧠 S1: Титани ШІ (Альтман, Хуанг, Гассабіс, Суцкевер, Хінтон та ін.)
+⚡ S2: Кремнієві Титани (Джобс, Маск, Мур, Морріс Чанг, Возняк)
+🧬 S3: Код Життя (Каріко, CRISPR, Вентер, Яманака, Сінклер)
+🚀 S4: Глибокий Горизонт (Корольов, Оппенгеймер, Шотвелл, Саган)
 
-Кожен фільм — це поєднання ретельного фактчекінгу, рідкісних історичних архівів, кінематографічного 4K-візуалу та авторського оригінального саундтреку (92 BPM Cinematic Pulse).
-
-🔔 Підписуйтесь на канал та вмикайте дзвіночок, щоб побачити анатомію тих, хто переписав реальність.
-Співпраця та ідеї: [contact@email.com]
-```
-
-### 🇬🇧 English version (International Audience & Multi-Audio Track):
-```text
-Welcome to “Anatomy of Genius: The Civilization Code” — a cinematic documentary channel dedicated to dissecting the minds, psychology, and engineering feats of humanity’s greatest pioneers.
-
-We do not recite Wikipedia. We investigate the anatomy of groundbreaking intellect:
-• How do solitary thinkers overcome doubt, existential crises, and institutional resistance to spark a revolution?
-• What is the internal architecture of obsession, intuition, and grit?
-• How does pure thought transform into silicon chips, neural networks, genetic reprogramming, and interplanetary rockets?
-
-🌐 THE 4-SEASON FRANCHISE ROADMAP:
-🧠 Season 1: AI Titans (Altman, Huang, Hassabis, Hinton, LeCun, Sutskever, Amodei, Li, Bengio, Ng + Finale).
-⚡ Season 2: Silicon Titans (Jobs, Musk, Moore & Noyce, Morris Chang / TSMC, Wozniak, Jony Ive, Andy Grove).
-🧬 Season 3: Code of Life (Karikó, Doudna & Charpentier, Venter, Yamanaka, Sinclair).
-🚀 Season 4: Deep Horizon (Korolev, Oppenheimer, Shotwell, Sagan, Thorne).
-
-Every episode features exhaustive research, restored archival footage, high-fidelity 4K cinematic visualization, and bespoke 92 BPM neo-classical electronic sound design.
-
-🔔 Subscribe and hit the bell icon to decode the minds that built our world.
-Business inquiries: [contact@email.com]
+4K Ultra HD • Ексклюзивний саундтрек 92 BPM • Архіви та фактчекінг.
+Підписуйтесь, щоб розшифрувати код тих, хто побудував наш світ.
+Співпраця: contact@anatomyofgenius.com
 ```
 
 ---
 
-## 3. SEO ТЕГИ КАНАЛУ (CHANNEL KEYWORDS)
-
-Скопіюйте цей готовий блок у налаштування YouTube Studio (Налаштування → Канал → Ключові слова):
+### Варіант 2: Англійський опис для мовної локалізації (944 символи / ліміт 1000)
+> *Скопіюйте у вкладку перекладу: YouTube Studio → Основні відомості → «Додати мову перекладу: Англійська». Англомовні глядачі по всьому світу автоматично бачитимуть цей текст:*
 
 ```text
-Анатомія Генія, Код Цивілізації, Anatomy of Genius, The Civilization Code, штучний інтелект, документальний фільм, історія успіху, біографія, Сем Альтман, Дженсен Хуанг, Деміс Гассабіс, Ілля Суцкевер, Джеффрі Хінтон, Стів Джобс, Ілон Маск, OpenAI, NVIDIA, DeepMind, TSMC, кремнієва долина, наука і технології, інженерія, філософія майбутнього, AGI, машини, технологічна революція, документалістика українською, AI Titans, Silicon Valley, Documentary, Computer History, Deep Learning, Neural Networks, Tech Visionaries
+“Anatomy of Genius: The Civilization Code” is a cinematic documentary studio dissecting the minds, psychology, and engineering feats of humanity’s greatest pioneers.
+
+We don’t recite Wikipedia. We investigate the core anatomy of breakthroughs:
+• How do solitary thinkers overcome self-doubt and institutional resistance to spark a revolution?
+• What is the internal architecture of obsession, grit, and intuition?
+• How does pure thought transform into silicon chips, AI, and interplanetary rockets?
+
+4-SEASON ROADMAP:
+🧠 S1: AI Titans (Altman, Huang, Hassabis, Sutskever, Hinton & more)
+⚡ S2: Silicon Titans (Jobs, Musk, Moore, Morris Chang, Wozniak)
+🧬 S3: Code of Life (Karikó, CRISPR, Venter, Yamanaka, Sinclair)
+🚀 S4: Deep Horizon (Korolev, Oppenheimer, Shotwell, Sagan, Thorne)
+
+4K Ultra HD • Bespoke 92 BPM Soundtrack • Dual Audio (UA / EN).
+Subscribe to decode the minds that built our civilization.
+Inquiries: contact@anatomyofgenius.com
 ```
 
 ---
 
-## 4. ШАБЛОН ОПИСУ ПІД ВІДЕО (DEFAULT UPLOAD TEMPLATE)
+### Варіант 3: Гібридний комбінований опис UA + EN в одному вікні (882 символи / ліміт 1000)
+> *Використовуйте, якщо не налаштовуєте мовні переклади, а хочете дати обидві мови в єдиному текстовому полі:*
+
+```text
+«Анатомія Генія: Код Цивілізації» — преміальна кіностудія розслідувань мислення та наукових проривів людей, які змінили хід історії.
+
+Ми розбираємо фундаментальну інженерію геніальності:
+• Як одна людина долає кризу і здійснює світовий прорив?
+• Як абстрактна думка стає чипом, штучним інтелектом чи ракетою?
+
+ФРАНШИЗА:
+🧠 S1: Титани ШІ (Альтман, Хуанг, Гассабіс, Суцкевер...)
+⚡ S2: Кремнієві Титани (Джобс, Маск, Мур, Чанг, Возняк)
+🧬 S3: Код Життя • 🚀 S4: Глибокий Горизонт
+
+4K Ultra HD • Авторський саундтрек 92 BPM • Рідкісні архіви.
+Співпраця: contact@anatomyofgenius.com
+
+---
+“Anatomy of Genius: The Civilization Code” — cinematic documentaries dissecting the minds and psychology of history's greatest visionaries.
+From silicon chips to AGI and space exploration.
+4K Ultra HD • Bespoke 92 BPM Soundtrack • Dual Audio (UA/EN).
+Subscribe to decode the minds that built our world.
+```
+
+---
+
+## 5. ПОЛЕ «КЛЮЧОВІ СЛОВА КАНАЛУ» (CHANNEL KEYWORDS)
+*Суворий ліміт YouTube: РІВНО 500 СИМВОЛІВ.*  
+*Фактична довжина блоку нижче: **320 символів** (включаючи коми) — 100% гарантія успішного збереження.*
+
+```text
+Анатомія Генія,Код Цивілізації,Anatomy of Genius,The Civilization Code,штучний інтелект,документальний фільм,історія успіху,біографія,Сем Альтман,Дженсен Хуанг,Ілля Суцкевер,Стів Джобс,Ілон Маск,OpenAI,NVIDIA,кремнієва долина,наука,інженерія,технології,AGI,AI Titans,Documentary,Silicon Valley,Deep Learning,Tech History
+```
+
+---
+
+## 6. ШАБЛОН ДЛЯ ОПИСУ ОКРЕМОГО ВІДЕО (DEFAULT UPLOAD TEMPLATE)
+*Ліміт YouTube: 5 000 символів. Нижче — збалансований блок на ~1 650 символів.*
 
 ```markdown
-«[Влучна цитата героя фільму або драматичний інтригуючий хук на 1–2 рядки]»
+«[Влучна цитата героя фільму або гострий інтригуючий хук на 1–2 рядки]»
 
-У цьому фільмі «Анатомії Генія» ми препаруємо історію [Ім'я Героя]: від [походження / першої кризи / дитинства] до [моменту всесвітнього прориву / створення індустрії]. Це хроніка подолання неможливого, анатомія мислення та народження технології, що стала новим кодом цивілізації.
+У цьому фільмі «Анатомії Генія» ми препаруємо історію [Ім'я Героя]: від [походження / першої кризи] до [моменту всесвітнього прориву]. Це хроніка подолання неможливого, анатомія людського мислення та народження технології, що стала новим кодом цивілізації.
 
 ⏱️ ТАЙМКОДИ:
 00:00 — Пролог: Момент Істини
@@ -98,19 +146,19 @@ Business inquiries: [contact@email.com]
 18:25 — Акт 4: Кодекс Творця & Спадок
 
 🌐 ФРАНШИЗА «АНАТОМІЯ ГЕНІЯ: КОД ЦИВІЛІЗАЦІЇ»:
-Попередній випуск: [Посилання на попередній епізод]
-Плейлист 1 Сезону (Титани ШІ): [Посилання на плейлист]
+Попередній випуск: [Посилання]
+Плейлист 1 Сезону (Титани ШІ): [Посилання]
 Інтерактивний дашборд проєкту: https://tfmshell-cloud.github.io/ai-titans-thoughtcast/
 
 🎵 МУЗИКА ТА САУНДТРЕК:
-Оригінальний саундтрек створено ексклюзивно для кіностудії (92 BPM Cinematic Ambient Trip-Hop).
+Оригінальний саундтрек створено ексклюзивно для кіностудії (92 BPM Cinematic Pulse).
 Мастеринг: Fairlight Studio (24-bit / 48 kHz).
 
 🎙️ МОВА ТА ДОСВІД:
-Цей фільм доступний у 4K Ultra HD з підтримкою багатомовного аудіо (Українська та Англійська доріжки — обирайте в налаштуваннях шестірні ⚙️).
+Фільм доступний у 4K Ultra HD з підтримкою двох аудіодоріжок (Українська та Англійська — перемикайте в налаштуваннях шестірні ⚙️).
 
 📌 ПІДПИСУЙТЕСЬ НА НАШІ СОЦМЕРЕЖІ:
-Telegram з інсайтами та досьє: https://t.me/[channel]
+Telegram з досьє та архівами: https://t.me/[channel]
 X (Twitter): https://x.com/[handle]
 Instagram: https://instagram.com/[handle]
 
@@ -119,44 +167,42 @@ Instagram: https://instagram.com/[handle]
 
 ---
 
-## 5. SMM СТРАТЕГІЯ: ФОРМАТИ & ХУКИ ДЛЯ СОЦМЕРЕЖ
+## 7. НОВІ ПРОМПТИ ДЛЯ ГЕНЕРАЦІЇ ГРАФІКИ ТА БРЕНДИНГУ (AI ART 2026)
 
-### А. YouTube Shorts / TikTok / Instagram Reels (Вертикальний вірусний контент)
-* **Концепція:** «30 секунд анатомії одного прориву» або «Цитата, яка коштує трильйон доларів».
-* **Шаблон перших 3 секунд (Хук):**
-  * *«У 1995 році Дженсен Хуанг мив посуд у забігайлівці Denny's. Сьогодні його чипи керують планетою. Як влаштований його мозок?»*
-  * *«Чому Ілля Суцкевер пішов із OpenAI у повну тишу, коли світ молився на ChatGPT?»*
-  * *«Стів Джобс плакав у кабінеті, коли його звільнили з Apple. Через 12 років він повернувся і врятував компанію від смерті за 90 днів».*
-* **CTA в кінці шортса:** *«Повний документальний розтин дивись на каналі "Анатомія Генія" за посиланням у шапці».*
+### 🎨 Промпт 1: Офіційний Аватар Каналу (Profile Picture / Icon 1:1)
+*Формат: 800×800 px. Оптимізовано під круглу маску YouTube (головні деталі строго в центрі).*
 
-### Б. Telegram-канал (Інтелектуальне ком'юніті)
-* **Назва:** Анатомія Генія | Код Цивілізації
-* **Біо:** «Лабораторія фактчекінгу, досьє, рідкісні архіви та філософія тих, хто переписує реальність. Офіційний хаб документального каналу».
-* **Типи постів:**
-  1. *Архівний артефакт:* Фото розписки, першого чека або паяльника героя з поясненням контексту.
-  2. *Ментальна модель:* Як герой ухвалює рішення в умовах 100% невизначеності (перші принципи, експоненційне мислення).
-  3. *Бекстейдж виробництва:* Рендер кадрів DaVinci Resolve, промпти Veo, музичні треки Suno 92 BPM.
-
-### В. X (Twitter)
-* **Біо:** *“Anatomy of Genius: The Civilization Code. Dissecting the minds, friction, and engineering behind humanity’s pivotal leaps. By @creator.”*
-* **Формат тредів:** Тред із 8 твітів напередодні релізу фільму з інтригуючими рідкісними фактами та GIF-кадрами з фільму.
+* **Midjourney v6.1 / FLUX.1 Pro:**
+```text
+Minimalist iconic emblem for "Anatomy of Genius: The Civilization Code", circular composition optimized for YouTube avatar profile picture. An abstract polished titanium human head silhouette in profile, with the brain area transforming into glowing cyan mathematical topology lines and deep amber microchip circuitry. Dark matte graphite background (#0b0f17) with subtle vignette. Ultra-clean lines, Scandinavian luxury design, Apple Keynote aesthetic, octane render, sharp 8k vector perfection, no text, perfectly centered inside circle boundary --ar 1:1 --v 6.1 --style raw
+```
 
 ---
 
-## 6. ПРОМПТИ ДЛЯ ГЕНЕРАЦІЇ ВІЗУАЛЬНОГО БРЕНДИНГУ (AI ART GENERATION)
-
-### 🎨 Промпт 1: Офіційний Аватар / Логотип Каналу (1:1 Square)
-> **Model:** Midjourney v6.1 / FLUX.1 Pro / Imagen 3  
-> **Prompt:**  
-> `Minimalist iconic cinematic emblem for "Anatomy of Genius: The Civilization Code", a stylized abstract human cerebral cortex silhouette seamlessly fusing into glowing geometric silicon wafer circuits and a subtle double helix DNA strand. Ultra-clean typography monogram subtly integrated, matte deep graphite slate background (#0b0f17) with glowing electric cyan (#38bdf8), subtle amber gold (#f59e0b) and neon ultraviolet highlights. Premium Nordic design aesthetic, Apple Keynote and A24 documentary poster graphic style, octane render, 8k, sharp vector-like perfection, centered composition, luxury tech brand identity --ar 1:1 --v 6.1 --style raw`
-
 ### 🎨 Промпт 2: Шапка YouTube-Каналу (Header Banner 2560×1440)
-*(Центральна безпечна зона 1546×423 містить основну графіку та напис)*
-> **Model:** Midjourney v6.1 / FLUX.1 Pro / Imagen 3  
-> **Prompt:**  
-> `Wide cinematic banner for YouTube channel "Anatomy of Genius: The Civilization Code", 2560x1440 resolution. In the center safe zone: a monumental dark glass and titanium monolith displaying glowing mathematical topology equations, neural network synaptic pulses, and quantum light beams. On the left side: vintage warm archival textures of early computing laboratory with blueprint schematics. On the right side: vast cosmic nebula and deep space horizon with relativistic gravitational lens distortion. Scandinavian dark slate studio aesthetic (#0b0f17), soft volumetric lighting, anamorphic lens flare, Christopher Nolan and Denis Villeneuve cinematic film still, IMAX 70mm look, hyper-detailed, clean empty center space for bold typography --ar 16:9 --v 6.1 --stylize 250`
+*Формат: 2560×1440 px. Зображення спеціально враховує центральну безпечну смугу (Safe Zone 1235×338 px): ліворуч — історичні архіви, праворуч — космос і кванти, центр — темний чистий простір під логотип і слоган.*
 
-### 🎨 Промпт 3: Майстер-Стиль Обкладинки Відео (YouTube Thumbnail Master Template)
-> **Model:** Midjourney v6.1 / FLUX.1 Pro / Imagen 3  
-> **Prompt:**  
-> `Ultra-dramatic high-contrast cinematic documentary YouTube thumbnail, extreme close-up emotional portrait of a visionary tech creator, intense contemplative gaze looking slightly off-camera. Half of the face lit by cold surgical cyan edge lighting, the other half engulfed in deep moody shadows with a faint golden rim light. In the background: dark blurred server farm blinking lights and floating glowing code geometry. Photorealistic skin pores, 8k film grain, shot on ARRI Alexa 65 with Master Prime lens, Kodak 2383 film LUT color grading, hyper-realistic, maximum visual intrigue, high CTR composition, clean negative space on the left third for bold title text --ar 16:9 --v 6.1`
+* **Midjourney v6.1 / FLUX.1 Pro:**
+```text
+Ultra-wide 16:9 cinematic YouTube banner background for "Anatomy of Genius: The Civilization Code", 2560x1440. Horizontal triptych structure: on the far left, dark moody retro archival engineering laboratory with warm tungsten lamps, vintage oscilloscopes, chalkboards with quantum equations; on the far right, cold deep space nebula, glowing blue event horizon, and fiber-optic neural constellation. In the dead center 1235x338 horizontal zone: minimal dark matte obsidian glass table with soft cyan ambient underglow, perfectly clean empty negative space for typography overlay. Anamorphic lens flare, Christopher Nolan cinematography, 8k film still, master documentary production quality --ar 16:9 --v 6.1 --stylize 200
+```
+
+---
+
+### 🎨 Промпт 3: Майстер-Стиль Відео-Прев'ю (High-CTR Thumbnail Template 16:9)
+*Формат: 1280×720 px. Максимальний емоційний контраст, кінематографічне світло, негативний простір зліва під великий напис.*
+
+* **Midjourney v6.1 / FLUX.1 Pro:**
+```text
+High-CTR cinematic YouTube thumbnail master composition, dramatic intense close-up portrait of an enigmatic genius visionary scientist, deep focused eye contact looking towards the viewer, skin texture and micro-expressions visible. Split lighting: one side sculpted by cool surgical cyan light (#38bdf8), the opposite side in deep rich shadow with warm golden tungsten rim light (#f59e0b). In the dark blurred background: monolithic server rack lights and floating faint cybernetic code glyphs. ARRI Alexa 65 portrait, Kodak 2383 cinematic film grade, ultra-sharp focus on the eyes, uncluttered composition with generous negative space on the left third for high-contrast title text --ar 16:9 --v 6.1
+```
+
+---
+
+### 🎨 Промпт 4: Арт для Вкладки «Спільнота» (Community Tab Post Art 1:1)
+*Формат: 1:1 для анонсів, опитувань та цитат титанів.*
+
+* **Midjourney v6.1 / FLUX.1 Pro:**
+```text
+Cinematic concept art for YouTube community post, a glowing translucent holographic glass cube floating above a dark slate pedestal, inside the cube a miniature glowing silicon crystal chip intertwines with a bioluminescent DNA helix and a swirling miniature galaxy. Dark studio background with atmospheric haze, volumetric cyan and amber rim lighting, Hasselblad medium format photography, 8k resolution, minimalist luxury science documentary aesthetic --ar 1:1 --v 6.1
+```
