@@ -12,10 +12,10 @@
 | :--- | :--- | :--- | :--- |
 | **Назва каналу (Name)** | Налаштування каналу → Профіль | **До 50 символів** (зміна: не частіше 3 разів на 90 днів) | UA: **31 симв.** • EN: **40 симв.** |
 | **Псевдонім (@handle)** | Налаштування каналу → Профіль | **3–30 символів** (`a-z`, `0-9`, `_`, `-`, `.`) | `@AnatomyOfGenius` (**16 симв.**) |
-| **Опис каналу (Description)** | Налаштування каналу → Профіль | **До 1 000 символів** (перші ~150 видно до кнопки «Ще») | UA: **875 симв.** • EN: **931 симв.** • Гібрид: **916 симв.** |
-| **Посилання (Links)** | Налаштування каналу → Профіль | До **14 посилань**; назва посилання: бажано **до 30 символів** | До 21 символу (UA / EN) |
+| **Опис каналу (Description)** | Налаштування каналу → Профіль | **До 1 000 символів** (перші ~150 видно до кнопки «Ще») | UA: **846 симв.** (852 CRLF) • EN: **945 симв.** (951 CRLF) • Гібрид: **891 симв.** (898 CRLF) |
+| **Посилання (Links)** | Налаштування каналу → Профіль | До **14 посилань**; назва посилання: бажано **до 30 символів** | До 11 символів (UA / EN) |
 | **Контактний email** | Налаштування каналу → Профіль | Дійсна адреса електронної пошти | Плейсхолдер під вашу пошту |
-| **Ключові слова каналу** | Налаштування → Канал → Основна інф. | **До 500 символів** сумарно (з комами й лапками) | **403 симв.** за формулою YouTube (373 без лапок) |
+| **Ключові слова каналу** | Налаштування → Канал → Основна інф. | **До 500 символів** сумарно (з комами й лапками) | **428 симв.** за формулою YouTube (390 без лапок) |
 | **Переклад каналу** | Налаштування каналу → Мови | Локалізація назви та опису каналу під мову глядача | Точний 1-в-1 переклад UA ↔ EN |
 | **Назва відео (Title)** | Відомості про відео | **До 100 символів** (на мобільних обрізається після ~55–60) | Структура: головна інтрига в перших 55 символах |
 | **Опис відео (Description)** | Завантаження → Основна інформація | **До 5 000 символів**; перші ~150 видно до згортання | Хук до 140 симв. + таймкоди + 5 хештегів |
@@ -49,69 +49,46 @@
 
 ### 2.3. Опис каналу (Description) — ліміт 1 000 символів
 
-#### 🇺🇦 Основний текст українською (875 символів / 888 з CRLF)
+#### 🇺🇦 Основний текст українською (846 символів / 852 з CRLF)
 ```text
-«Анатомія генія. Код цивілізації» — документальна кіностудія про мислення, психологію та наукові відкриття людей, які змінили хід історії.
+«Анатомія генія. Код цивілізації» — документальна кіностудія, де наука, драма та психологія розкривають справжню ціну великих відкриттів.
 
-Ми не переповідаємо енциклопедії, а розкриваємо внутрішню механіку геніальності:
-• Як одна людина долає сумніви, самотність та опір системи заради прориву?
-• Які кризи та випробування формують характер творця?
-• Як ідея стає алгоритмом, мікрочипом, кодом життя чи космічною технологією?
+За кожним винаходом, що переписав реальність, стоїть не суха формула, а жива людина — її тиха одержимість, самотність, біль поразок і мить, коли весь світ опирається її задуму. Ми не переповідаємо енциклопедії, а досліджуємо анатомію розуму на межі неможливого.
 
-План сезонів:
-• Сезон 1: Титани штучного інтелекту (Альтман, Хуанг, Гассабіс, Хінтон, Лекун, Суцкевер, Амодей, Лі, Бенжіо, Ин)
-• Сезон 2: Кремнієві титани (Джобс, Маск, Мур, Чанг, Возняк та ін.)
-• Сезон 3: Код життя (біотехнології та геноміка)
-• Сезон 4: Глибокий горизонт (космос, енергія, квантова фізика)
+Перша глава нашої хроніки присвячена титанам штучного інтелекту — тим, хто наважився навчити неживу матерію думати. Та ця розповідь лише набирає обертів: поза кадром уже формуються наступні сезони про нові рубежі людського дерзання. Якими вони будуть — залишиться таємницею до премʼєри.
 
-Документальні фільми 4K на основі першоджерел, архівів та оригінального саундтреку. Підписуйтеся, щоб зрозуміти розум творців майбутнього.
+Документальне кіно 4K на основі першоджерел, рідкісних архівів та оригінального саундтреку. Підписуйтеся, щоб відкривати код майбутнього першими. Далі буде.
 ```
 
-#### 🇬🇧 Дослівний переклад англійською (931 символ / 944 з CRLF)
+#### 🇬🇧 Дослівний переклад англійською (945 символів / 951 з CRLF)
 *(Для поля «Переклад опису каналу → Англійська»)*
 ```text
-"Anatomy of Genius. The Civilization Code" is a documentary studio about the thinking, psychology, and scientific discoveries of people who changed the course of history.
+"Anatomy of Genius. The Civilization Code" is a documentary studio where science, drama, and psychology reveal the true price of great discoveries.
 
-We do not retell encyclopedias, we reveal the inner mechanics of genius:
-• How does one person overcome doubt, loneliness, and systemic resistance for a breakthrough?
-• What crises and trials shape a creator's character?
-• How does an idea become an algorithm, a microchip, the code of life, or space technology?
+Behind every invention that rewrote reality stands not a dry formula, but a living person — their quiet obsession, loneliness, pain of defeat, and the moment the whole world resists their vision. We do not retell encyclopedias; we explore the anatomy of a mind on the edge of the impossible.
 
-Season roadmap:
-• Season 1: AI Titans (Altman, Huang, Hassabis, Hinton, LeCun, Sutskever, Amodei, Li, Bengio, Ng)
-• Season 2: Silicon Titans (Jobs, Musk, Moore, Chang, Wozniak, etc.)
-• Season 3: Code of Life (biotechnology and genomics)
-• Season 4: Deep Horizon (space, energy, quantum physics)
+The first chapter of our chronicle is dedicated to the titans of artificial intelligence — those who dared to teach non-living matter to think. Yet this story is only gaining momentum: behind the scenes, the next seasons about new frontiers of human daring are already taking shape. What they will be remains a secret until premiere.
 
-4K documentary films based on primary sources, archives, and an original soundtrack. Subscribe to understand the minds of the creators of the future.
+4K documentary cinema based on primary sources, rare archives, and an original soundtrack. Subscribe to be the first to uncover the code of the future. To be continued.
 ```
 
-#### 🌐 Комбінований опис UA + EN в одному полі (916 символів / 933 з CRLF)
+#### 🌐 Комбінований опис UA + EN в одному полі (891 символ / 898 з CRLF)
 *(Використовуйте лише в разі, якщо хочете показати обидві мови одразу в одному текстовому вікні без локалізації):*
 ```text
-«Анатомія генія. Код цивілізації» — документальна кіностудія про мислення, психологію та відкриття людей, які змінили хід історії.
+«Анатомія генія. Код цивілізації» — документальна кіностудія про ціну великих відкриттів. За кожним винаходом стоїть жива людина — її одержимість, самотність і мить на межі неможливого.
 
-Ми розкриваємо механіку геніальності:
-• Як долаються сумніви, самотність і тиск системи?
-• Як ідея стає алгоритмом, мікрочипом, кодом життя чи космічною технологією?
-
-4 сезони: Титани ШІ • Кремнієві титани • Код життя • Глибокий горизонт.
-Фільми 4K • Першоджерела та архіви • Оригінальний саундтрек.
+Перша глава — титани штучного інтелекту. Та історія лише починається: наступні сезони вже готуються в тиші й залишаються таємницею до премʼєри. Фільми 4K • Першоджерела та архіви • Власний саундтрек. Далі буде.
 
 ---
-"Anatomy of Genius. The Civilization Code" is a documentary studio about the thinking, psychology, and discoveries of people who changed the course of history.
+"Anatomy of Genius. The Civilization Code" is a documentary studio about the price of great discoveries. Behind every invention stands a living person — their obsession, loneliness, and a moment on the edge of the impossible.
 
-We reveal the mechanics of genius:
-• How are doubt, loneliness, and systemic pressure overcome?
-• How does an idea become an algorithm, a microchip, the code of life, or space technology?
-
-4 seasons: AI Titans • Silicon Titans • Code of Life • Deep Horizon.
-4K films • Primary sources & archives • Original soundtrack.
+The first chapter is the titans of artificial intelligence. Yet the story is only beginning: the next seasons are already being prepared in silence and remain a secret until premiere. 4K films • Primary sources & archives • Original soundtrack. To be continued.
 ```
 
 ### 2.4. Посилання (Links) та Контактна інформація
 *До 14 посилань. Назви тримаємо до 30 символів, із перекладом UA ↔ EN:*
-* `Інтерактивний дашборд` *(21 симв.)* / `Interactive Dashboard` *(21 симв.)* → `https://tfmshell-cloud.github.io/ai-titans-thoughtcast/`
+> **Безпека від спойлерів:** публічне посилання на GitHub Pages дашборд (`tfmshell-cloud.github.io`) тимчасово вилучено з відкритих YouTube-шаблонів, оскільки на внутрішньому дашборді наразі відкрита дорожня карта Сезонів 2–4.
+
 * `Telegram` *(8 симв.)* / `Telegram` *(8 симв.)* → `[посилання на ваш Telegram]`
 * `Instagram` *(9 симв.)* / `Instagram` *(9 симв.)* → `[посилання на ваш Instagram]`
 * `X (Twitter)` *(11 симв.)* / `X (Twitter)` *(11 симв.)* → `[посилання на ваш X]`
@@ -123,10 +100,10 @@ We reveal the mechanics of genius:
 ## 3. НАЛАШТУВАННЯ → КАНАЛ → ОСНОВНА ІНФОРМАЦІЯ (КЛЮЧОВІ СЛОВА)
 
 *Суворий ліміт YouTube: **500 символів** (разом із комами та прихованими лапками для фраз із пробілами). У YouTube Studio це одне спільне поле, тому воно об'єднує ключові запити обома мовами.*  
-*Довжина блоку нижче: 373 символи без лапок / **403 символи** за підрахунком YouTube (перевірено):*
+*Довжина блоку нижче: 390 символів без лапок / **428 символів** за підрахунком YouTube (перевірено):*
 
 ```text
-Анатомія генія,Код цивілізації,Анатомія генія Код цивілізації,Anatomy of Genius,The Civilization Code,Anatomy of Genius The Civilization Code,штучний інтелект,документальні фільми,біографія,історія технологій,нейромережі,наука,Кремнієва долина,інженерія,artificial intelligence,documentary,biography,tech history,neural networks,science,Silicon Valley,engineering,AI Titans
+Анатомія генія,Код цивілізації,Анатомія генія Код цивілізації,Anatomy of Genius,The Civilization Code,Anatomy of Genius The Civilization Code,штучний інтелект,документальне кіно,біографія,історія науки,нейромережі,людський геній,технології майбутнього,Титани ШІ,artificial intelligence,documentary cinema,biography,history of science,neural networks,human genius,future technology,AI Titans
 ```
 
 ---
@@ -151,7 +128,6 @@ We reveal the mechanics of genius:
 📺 Дивіться також:
 • Попередній випуск: [Посилання]
 • Усі випуски Сезону 1 «Титани ШІ»: [Посилання на плейлист]
-• Інтерактивна карта проєкту: https://tfmshell-cloud.github.io/ai-titans-thoughtcast/
 
 🎵 Музика та звук:
 Оригінальний саундтрек студії (92 BPM) • Зведення звуку 48 kHz / 24-bit.
@@ -184,7 +160,6 @@ In this documentary film on the "Anatomy of Genius. The Civilization Code" chann
 📺 Watch also:
 • Previous episode: [Link]
 • Full Season 1 "AI Titans" playlist: [Playlist Link]
-• Interactive project dashboard: https://tfmshell-cloud.github.io/ai-titans-thoughtcast/
 
 🎵 Music and sound:
 Original studio soundtrack (92 BPM) • Audio mastering 48 kHz / 24-bit.
@@ -244,17 +219,17 @@ Anatomy of Genius,The Civilization Code,documentary film,artificial intelligence
   * **EN (176 симв.):** `Official channel of "Anatomy of Genius. The Civilization Code" studio. Dossiers on science and technology visionaries, archival documents, mental models, and 4K film premieres.`
 
 * **Instagram (ліміт: 150 символів):**
-  * **UA (132 симв.):**
+  * **UA (112 симв.):**
     ```text
     Анатомія генія. Код цивілізації
-    Документальна кіностудія 4K про мислення тих, хто змінив світ.
-    Титани ШІ • Кремній • Біотех • Космос
+    4K-документалістика про людей, які змінили світ.
+    Сезон 1: Титани ШІ • Далі буде…
     ```
-  * **EN (148 симв.):**
+  * **EN (132 симв.):**
     ```text
     Anatomy of Genius. The Civilization Code
-    4K documentary studio on the thinking of those who changed the world.
-    AI Titans • Silicon • Biotech • Space
+    4K documentaries about people who changed the world.
+    Season 1: AI Titans • To be continued…
     ```
 
 * **X / Twitter (ліміт: 160 символів):**
@@ -279,22 +254,22 @@ Minimalist emblem icon centered inside a dark obsidian space, refined silver-tit
 ```
 
 ### 6.2. Фон шапки YouTube-каналу (Banner Background — 16:9, без тексту)
-*Генерується в 16:9, експортується у 2560×1440 px. Центральна горизонтальна смуга спеціально темна й чиста під накладання українського або англійського напису у Safe Area (1546×423 / 1235×338 px).*
+*Генерується в 16:9, експортується у 2560×1440 px. Центральна горизонтальна смуга спеціально темна й чиста під накладання українського або англійського напису у Safe Area (1546×423 / 1235×338 px). Без спойлерів майбутніх сезонів — лише атмосфера дослідження розуму, архівного кіно й таємниці наступних глав.*
 
 ```text
-Ultra-wide cinematic documentary studio background in triptych balance, keeping a wide dark clean empty obsidian center horizontal strip completely uncluttered for typography overlay. On the far left edge: atmospheric retro archival engineering laboratory softly lit by warm amber tungsten lamps, blueprint sketches and glass vacuum tubes. On the far right edge: deep space horizon with luminous cyan neural light filaments, microscopic silicon wafer lattice and subtle gravitational arc light. Deep dark slate blue-black shadows, subtle anamorphic flare, 35mm fine film grain, IMAX documentary mood, no text, no words, no logos --ar 16:9
+Ultra-wide cinematic documentary studio background in triptych balance, keeping a wide dark clean empty obsidian center horizontal strip completely uncluttered for typography overlay. On the far left edge: atmospheric archival study room softly lit by warm amber tungsten lamp, vintage brass camera lens, handwritten notebook pages fading into deep shadow. On the far right edge: enigmatic obsidian night horizon with delicate luminous cyan neural light filaments and glowing dust drifting into mysterious mist. Deep dark slate blue-black shadows, subtle anamorphic flare, 35mm fine film grain, IMAX documentary mood, no text, no words, no logos --ar 16:9
 ```
 
 ### 6.3. Шапка каналу з англійським написом (варіант для Imagen / Nano Banana / Ideogram)
 *Якщо хочете спробувати згенерувати банер одразу з готовим англійським заголовком у центральній безпечній зоні:*
 
 ```text
-Minimalist wide cinematic YouTube channel banner on a deep matte dark slate background. Centered strictly inside a compact horizontal middle area with very wide empty dark margins on top, bottom, left, and right: crisp white luxury sans-serif typography reading "ANATOMY OF GENIUS" on the first line and slightly smaller subtle cyan uppercase text "THE CIVILIZATION CODE" directly below it. Softly faded near the far left and far right edges: faint atmospheric silhouettes of silicon chip pathways and cosmic light arcs, understated Christopher Nolan documentary aesthetic --ar 16:9
+Minimalist wide cinematic YouTube channel banner on a deep matte dark slate background. Centered strictly inside a compact horizontal middle area with very wide empty dark margins on top, bottom, left, and right: crisp white luxury sans-serif typography reading "ANATOMY OF GENIUS" on the first line and slightly smaller subtle cyan uppercase text "THE CIVILIZATION CODE" directly below it. Softly faded near the far left and far right edges: faint atmospheric silhouettes of archival manuscript pages in warm amber rim light and delicate luminous cyan neural light threads dissolving into mysterious dark fog, understated Christopher Nolan documentary aesthetic --ar 16:9
 ```
 
 ### 6.4. Водяний знак плеєра (Video Watermark — 1:1, 150×150 px)
 ```text
-Ultra-simple minimalist monochrome white geometric icon centered on a solid pure black background, single continuous crisp architectural line forming a human profile fused with a single square microchip node, thick clean lines readable at very small icon scale, flat graphic design, wide black margins, no text, no gradients --ar 1:1
+Ultra-simple minimalist monochrome white geometric icon centered on a solid pure black background, single continuous crisp architectural line forming a human profile fused with a single glowing geometric neural node, thick clean lines readable at very small icon scale, flat graphic design, wide black margins, no text, no gradients --ar 1:1
 ```
 
 ### 6.5. Майстер-шаблон прев'ю відео (YouTube Thumbnail — 16:9, 1280×720 px)
