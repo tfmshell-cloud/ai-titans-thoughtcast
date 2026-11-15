@@ -1,6 +1,6 @@
 /**
  * SEASONS ROADMAP & MULTI-SEASON FRANCHISE REGISTRY
- * Cinematic Thoughtcast / Код Реальності: Архітектори Цивілізації
+ * Анатомія генія. Код цивілізації // Anatomy of Genius. The Civilization Code
  * 
  * Defines the 4-Season Architecture (AI Titans, Silicon Titans, Biotech Titans, Space & Quantum Titans)
  * + Episode 11 Master Crossover Finale for Season 1.
