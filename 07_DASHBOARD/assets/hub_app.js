@@ -19,6 +19,7 @@
 
   var state = {
     tab: "heroes",
+    selectedSeason: 1,
     quoteHero: "all",
     quoteQuery: "",
     quoteLimit: 120,
@@ -736,8 +737,224 @@
     });
   }
 
+  function renderSeasonsPane() {
+    var container = document.getElementById("seasonsPaneContainer");
+    if (!container) return;
+
+    var roadmap = window.SEASONS_ROADMAP || [];
+    if (!roadmap.length) {
+      container.innerHTML = "<p style='color:var(--text-muted);padding:1rem;'>Дані про дорожню карту сезонів завантажуються...</p>";
+      return;
+    }
+
+    var activeSeason = roadmap.find(function (s) { return s.season_id === state.selectedSeason; }) || roadmap[0];
+
+    // 1. Season Selector Tabs
+    var navHtml = ['<div class="season-nav-bar">'];
+    roadmap.forEach(function (s) {
+      var isActive = s.season_id === activeSeason.season_id;
+      navHtml.push(
+        '<button class="season-nav-btn' + (isActive ? ' active' : '') + '" data-select-season="' + s.season_id + '">',
+        '  <div class="season-nav-head">',
+        '    <span class="season-nav-code">' + esc(s.code) + '</span>',
+        '    <span class="pill ' + esc(s.status_pill_class) + '" style="font-size:10px;">' + esc(s.badge) + '</span>',
+        '  </div>',
+        '  <div class="season-nav-title">' + esc(s.icon) + ' ' + esc(s.title_ua.split('(')[0].trim()) + '</div>',
+        '  <div class="season-nav-sub">' + esc(s.timeframe) + ' • ' + esc(s.status_label) + '</div>',
+        '</button>'
+      );
+    });
+    navHtml.push('</div>');
+
+    // 2. Active Season Hero Banner
+    var bannerHtml = [
+      '<div class="season-hero-banner" style="border-color:' + esc(activeSeason.theme_color) + '55;">',
+      '  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:0.75rem;">',
+      '    <div>',
+      '      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;">',
+      '        <span style="font-size:26px;">' + esc(activeSeason.icon) + '</span>',
+      '        <h2 style="font-size:18px;font-weight:800;color:var(--text-primary);margin:0;">' + esc(activeSeason.title_ua) + '</h2>',
+      '        <span class="pill ' + esc(activeSeason.status_pill_class) + '">' + esc(activeSeason.status_label) + '</span>',
+      '        <span class="metric-pill" style="font-size:11px;">' + esc(activeSeason.timeframe) + '</span>',
+      '      </div>',
+      '      <div style="font-size:13px;font-family:var(--mono);color:var(--cyan);font-weight:600;">' + esc(activeSeason.title_en) + '</div>',
+      '      <div style="font-size:13px;font-style:italic;color:var(--amber);margin-top:6px;max-width:920px;">«' + esc(activeSeason.tagline) + '»</div>',
+      '    </div>',
+      '  </div>',
+      '  <p style="font-size:12.5px;color:var(--text-secondary);line-height:1.6;margin-top:0.5rem;max-width:980px;">' + esc(activeSeason.synopsis) + '</p>',
+      '  <div style="margin-top:1rem;">',
+      '    <div style="font-size:11px;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Ключові технологічні вектори та осі сезону:</div>',
+      '    <div class="pillars-grid">'
+    ];
+
+    (activeSeason.thematic_pillars || []).forEach(function (pil, pIdx) {
+      bannerHtml.push(
+        '      <div class="pillar-card">',
+        '        <span style="color:var(--cyan);font-weight:700;font-family:var(--mono);">' + (pIdx + 1) + '.</span>',
+        '        <div>' + esc(pil) + '</div>',
+        '      </div>'
+      );
+    });
+    bannerHtml.push('    </div>', '  </div>', '</div>');
+
+    // 3. Heroes Grid for Active Season
+    var heroesGridHtml = [
+      '<div class="section-head" style="margin-top:1.25rem;">',
+      '  <span class="section-title">👥 Ростер героїв: ' + esc(activeSeason.title_ua) + ' (' + (activeSeason.episodes || []).length + ' епізодів)</span>',
+      '  <span class="pill ' + esc(activeSeason.status_pill_class) + '">' + esc(activeSeason.status_label) + '</span>',
+      '</div>',
+      '<div class="roadmap-heroes-grid">'
+    ];
+
+    var s1Slugs = {
+      "01": "altman", "02": "huang", "03": "hassabis", "04": "hinton", "05": "lecun",
+      "06": "sutskever", "07": "amodei", "08": "li", "09": "bengio", "10": "ng"
+    };
+
+    (activeSeason.episodes || []).forEach(function (ep) {
+      var isS1 = activeSeason.season_id === 1;
+      var isEp11 = ep.ep === "11";
+      var linkAttr = (isS1 && !isEp11 && s1Slugs[ep.ep])
+        ? (' data-open-hero-url="episodes/ep' + ep.ep + '_' + s1Slugs[ep.ep] + '.html"')
+        : '';
+
+      heroesGridHtml.push(
+        '<div class="roadmap-hero-card"' + linkAttr + ' style="' + (isEp11 ? 'border-color:rgba(245,158,11,0.5);background:linear-gradient(145deg,#1b1f2e,#141824);' : (isS1 ? 'cursor:pointer;' : '')) + '">',
+        '  <div class="rm-hero-header">',
+        '    <div class="rm-hero-names">',
+        '      <div style="display:flex;align-items:center;gap:6px;">',
+        '        <span class="pill" style="font-family:var(--mono);font-size:10px;font-weight:700;color:var(--cyan);">' + (isEp11 ? 'FINALE' : ('EP ' + esc(ep.ep))) + '</span>',
+        '        <span class="pill ' + (isS1 ? 'pill-emerald' : (activeSeason.season_id === 2 ? 'pill-cyan' : 'pill-purple')) + '" style="font-size:10px;">' + esc(ep.status) + '</span>',
+        '      </div>',
+        '      <h4 style="margin-top:4px;">' + esc(ep.name) + ' <span class="rm-hero-latin">(' + esc(ep.latin) + ')</span></h4>',
+        '      <div class="rm-hero-title">' + esc(ep.title) + '</div>',
+        '      <div class="rm-hero-role">' + esc(ep.role) + '</div>',
+        '    </div>',
+        '  </div>',
+        '  <div style="font-size:11px;color:var(--purple);font-weight:600;">Архетип: ' + esc(ep.archetype) + '</div>',
+        ep.conflict ? ('  <div class="rm-hero-conflict"><strong>Драматичний нерв:</strong> ' + esc(ep.conflict) + '</div>') : '',
+        isS1 && !isEp11 ? '  <div style="margin-top:auto;display:flex;justify-content:flex-end;"><span class="btn-copy-sm" style="font-size:10.5px;">Відкрити Досьє & Студію ↗</span></div>' : '',
+        isEp11 ? '  <div class="rm-hero-conflict" style="border-color:rgba(245,158,11,0.4);background:rgba(245,158,11,0.08);"><strong>Спецформат:</strong> Поліфонічний кросовер усіх 10 героїв першого сезону. Зіткнення філософій відкритого/закритого коду, прискорення проти безпеки, та світанок штучної свідомості.</div>' : '',
+        '</div>'
+      );
+    });
+    heroesGridHtml.push('</div>');
+
+    // 4. Franchise Big Picture Continuum Matrix
+    var matrixHtml = [
+      '<div class="card" style="margin-top:1.5rem;background:var(--surface);">',
+      '  <div class="section-head">',
+      '    <span class="section-title">🌐 Мульти-Сезонна Франшиза: Глобальна Матриця (41 Документальний Фільм)</span>',
+      '    <span class="pill pill-cyan">4 Виміри Людської Трансформації</span>',
+      '  </div>',
+      '  <div class="hub-table-wrap">',
+      '    <table class="hub-table">',
+      '      <thead>',
+      '        <tr><th>Сезон</th><th>Тематичний Фронтир</th><th>Ключова Парадигма</th><th>Епізодів</th><th>Період</th><th>Статус</th></tr>',
+      '      </thead>',
+      '      <tbody>',
+      '        <tr>',
+      '          <td><strong style="color:var(--cyan);">Сезон 1: Титани ШІ</strong></td>',
+      '          <td>Штучний Розум & Нейромережі</td>',
+      '          <td>«Навчити пісок мислити»: від зворотного поширення помилки до AGI</td>',
+      '          <td><strong style="font-family:var(--mono);">10 + EP11 (11)</strong></td>',
+      '          <td>2024–2026</td>',
+      '          <td><span class="pill pill-emerald">100% Досліджено & Готово</span></td>',
+      '        </tr>',
+      '        <tr>',
+      '          <td><strong style="color:#06b6d4;">Сезон 2: Кремнієві Титани</strong></td>',
+      '          <td>Матерія, Залізо & Мікрочипи</td>',
+      '          <td>«Анатомія Заліза»: як викарбувати логіку в кремнієвому кристалі</td>',
+      '          <td><strong style="font-family:var(--mono);">10</strong></td>',
+      '          <td>2026–2027</td>',
+      '          <td><span class="pill pill-cyan">В розробці / Препродакшн</span></td>',
+      '        </tr>',
+      '        <tr>',
+      '          <td><strong style="color:var(--purple);">Сезон 3: Код Життя</strong></td>',
+      '          <td>Геноміка, Біоінженерія & Довголіття</td>',
+      '          <td>«Анатомія Геному»: переписування коду з чотирьох літер та перемога над старінням</td>',
+      '          <td><strong style="font-family:var(--mono);">10</strong></td>',
+      '          <td>2027</td>',
+      '          <td><span class="pill pill-purple">Заплановано</span></td>',
+      '        </tr>',
+      '        <tr>',
+      '          <td><strong style="color:var(--amber);">Сезон 4: Глибокий Горизонт</strong></td>',
+      '          <td>Космос, Кванти & Термоядерна Енергія</td>',
+      '          <td>«Архітектура Всесвіту»: розрив земного тяжіння та підкорення енергії зірок</td>',
+      '          <td><strong style="font-family:var(--mono);">10</strong></td>',
+      '          <td>2027–2028</td>',
+      '          <td><span class="pill pill-amber">Концептуальний план</span></td>',
+      '        </tr>',
+      '      </tbody>',
+      '    </table>',
+      '  </div>',
+      '</div>'
+    ];
+
+    // 5. Channel Brand Identity & Naming Synthesis
+    var brandHtml = [
+      '<div class="brand-hybrid-card">',
+      '  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;margin-bottom:0.75rem;">',
+      '    <div>',
+      '      <div style="font-size:11px;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:0.5px;">Стратегічний Брейншторм • Бренд YouTube-Каналу</div>',
+      '      <h3 style="font-size:16px;font-weight:800;color:var(--text-primary);margin-top:2px;">Гібридний Синтез: «Анатомія Генія» + «Код Цивілізації» + «Архітектори Реальності»</h3>',
+      '    </div>',
+      '    <span class="pill pill-purple">Універсальна парасолька для всіх 4 сезонів</span>',
+      '  </div>',
+      '  <p style="font-size:12px;color:var(--text-secondary);line-height:1.55;">',
+      '    Універсальна назва каналу має бездоганно пасувати до всіх 4 сезонів: штучного інтелекту (S1), апаратного заліза та гаджетів (S2), біотеху та ДНК (S3) і космічних квантів (S4). Топ-кандидати синтезу:',
+      '  </p>',
+      '  <div class="brand-candidate-grid">',
+      '    <div class="brand-item-box">',
+      '      <div style="font-size:11px;font-family:var(--mono);color:var(--cyan);font-weight:700;">КАНДИДАТ #1 (ФЛАГМАН)</div>',
+      '      <div style="font-size:14px;font-weight:800;color:#fff;margin-top:3px;">Код Реальності // Code of Reality</div>',
+      '      <div style="font-size:11.5px;color:var(--amber);margin-top:2px;">Підзаголовок: Анатомія Генія • Творці Цивілізації</div>',
+      '      <div style="font-size:11.5px;color:var(--text-secondary);margin-top:5px;line-height:1.4;">Ідеально масштабується на всі 4 сезони: код розуму (ШІ), код матеріалу (кремній), код клітини (ДНК), код Всесвіту (кванти). Handle: <code>@CodeOfReality</code></div>',
+      '    </div>',
+      '    <div class="brand-item-box">',
+      '      <div style="font-size:11px;font-family:var(--mono);color:var(--cyan);font-weight:700;">КАНДИДАТ #2 (КІНЕМАТОГРАФІЧНИЙ)</div>',
+      '      <div style="font-size:14px;font-weight:800;color:#fff;margin-top:3px;">Архітектори Цивілізації // Architects of Civilization</div>',
+      '      <div style="font-size:11.5px;color:var(--emerald);margin-top:2px;">Підзаголовок: Код Генія • Анатомія Прориву</div>',
+      '      <div style="font-size:11.5px;color:var(--text-secondary);margin-top:5px;line-height:1.4;">Монументальний тон Netflix / BBC. Фокус на особистостях-титанах, що збудували сучасний світ. Handle: <code>@ArchitectsOfCivilization</code></div>',
+      '    </div>',
+      '    <div class="brand-item-box">',
+      '      <div style="font-size:11px;font-family:var(--mono);color:var(--cyan);font-weight:700;">КАНДИДАТ #3 (ГЛИБОКИЙ АНАЛІТИЧНИЙ)</div>',
+      '      <div style="font-size:14px;font-weight:800;color:#fff;margin-top:3px;">Анатомія Реальності // Anatomy of Reality</div>',
+      '      <div style="font-size:11.5px;color:var(--purple);margin-top:2px;">Підзаголовок: Код Творців • Архітектори Майбутнього</div>',
+      '      <div style="font-size:11.5px;color:var(--text-secondary);margin-top:5px;line-height:1.4;">Розтин внутрішнього мислення геніїв та механіки перетворення абстрактних ідей у відчутний світ. Handle: <code>@AnatomyOfReality</code></div>',
+      '    </div>',
+      '    <div class="brand-item-box">',
+      '      <div style="font-size:11px;font-family:var(--mono);color:var(--cyan);font-weight:700;">КАНДИДАТ #4 (ТЕХНО-ФІЛОСОФСЬКИЙ)</div>',
+      '      <div style="font-size:14px;font-weight:800;color:#fff;margin-top:3px;">Архітектори Коду // Architects of the Code</div>',
+      '      <div style="font-size:11.5px;color:var(--cyan);margin-top:2px;">Підзаголовок: Анатомія Генія, що переписав реальність</div>',
+      '      <div style="font-size:11.5px;color:var(--text-secondary);margin-top:5px;line-height:1.4;">Підкреслює, що сучасний світ керується кодами: числовим, алгоритмічним, молекулярним. Handle: <code>@CodeArchitectsUA</code></div>',
+      '    </div>',
+      '  </div>',
+      '</div>'
+    ];
+
+    container.innerHTML = navHtml.join("\n") + bannerHtml.join("\n") + heroesGridHtml.join("\n") + matrixHtml.join("\n") + brandHtml.join("\n");
+
+    // Bind click events on season nav buttons
+    container.querySelectorAll("[data-select-season]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var sId = parseInt(btn.getAttribute("data-select-season"), 10);
+        state.selectedSeason = sId;
+        renderSeasonsPane();
+      });
+    });
+
+    // Bind click events on season 1 hero cards
+    container.querySelectorAll("[data-open-hero-url]").forEach(function (card) {
+      card.addEventListener("click", function () {
+        var url = card.getAttribute("data-open-hero-url");
+        if (url) window.location.href = url;
+      });
+    });
+  }
+
   function switchHubTab(tabId) {
-    var tabs = ["heroes", "animation", "architecture", "quotes", "standards", "registry"];
+    var tabs = ["heroes", "seasons", "animation", "architecture", "quotes", "standards", "registry"];
     if (tabs.indexOf(tabId) === -1) tabId = "heroes";
     state.tab = tabId;
 
@@ -749,6 +966,7 @@
       if (el) el.classList.toggle("active", t === tabId);
     });
     if (tabId === "animation") renderAnimationPane();
+    if (tabId === "seasons") renderSeasonsPane();
   }
 
   function bindStaticActions() {
@@ -825,10 +1043,18 @@
     if (cTime) {
       cTime.textContent = "Season 1 • 10 Episodes • 16 WAV Masters (40 Smart Bin Tracks) • 14 4K Dossiers • 1,000 Prompts";
     }
+
+    var hash = (window.location.hash || "").replace("#", "");
+    var urlParams = new URLSearchParams(window.location.search);
+    var tabParam = urlParams.get("tab") || hash;
+    if (tabParam && ["heroes", "seasons", "animation", "architecture", "quotes", "standards", "registry"].indexOf(tabParam) !== -1) {
+      switchHubTab(tabParam);
+    }
   }
 
   function init() {
     renderHeroesGrid();
+    renderSeasonsPane();
     renderSeasonRegistry();
     renderGlobalQuotes();
     renderSunoMasterPool();
