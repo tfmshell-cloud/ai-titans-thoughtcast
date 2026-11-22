@@ -1,0 +1,137 @@
+[
+  {
+    "num": 1,
+    "tc": "[0:00 - 0:20] (58 слів)",
+    "file_txt": "EP02_VO_UA_01_ACT1_00_00_00_20_Sterile_Legends_Kentucky_Floor.txt",
+    "target_wav": "EP02_VO_UA_01_ACT1_00_00_00_20_Sterile_Legends_Kentucky_Floor.wav",
+    "target_mp3": "EP02_VO_UA_01_ACT1_00_00_00_20_Sterile_Legends_Kentucky_Floor.mp3",
+    "words": 58,
+    "sample": "Сучасний світ технологій любить стерильні легенди. Нам розпо..."
+  },
+  {
+    "num": 2,
+    "tc": "[0:20 - 1:15] (90 слів)",
+    "file_txt": "EP02_VO_UA_02_ACT1_00_20_01_15_Oneida_Reformatory_1972.txt",
+    "target_wav": "EP02_VO_UA_02_ACT1_00_20_01_15_Oneida_Reformatory_1972.wav",
+    "target_mp3": "EP02_VO_UA_02_ACT1_00_20_01_15_Oneida_Reformatory_1972.mp3",
+    "words": 90,
+    "sample": "1972 рік. Дев'ятирічний хлопчик із Тайваню на ім'я Дженсен Х..."
+  },
+  {
+    "num": 3,
+    "tc": "[1:15 - 2:15] (92 слів)",
+    "file_txt": "EP02_VO_UA_03_ACT1_01_15_02_15_Pact_With_Dorm_Leader.txt",
+    "target_wav": "EP02_VO_UA_03_ACT1_01_15_02_15_Pact_With_Dorm_Leader.wav",
+    "target_mp3": "EP02_VO_UA_03_ACT1_01_15_02_15_Pact_With_Dorm_Leader.mp3",
+    "words": 92,
+    "sample": "У такому місці слабкість — це вирок. Якщо ти почнеш плакати ..."
+  },
+  {
+    "num": 4,
+    "tc": "[2:15 - 3:30] (66 слів)",
+    "file_txt": "EP02_VO_UA_04_ACT1_02_15_03_30_Toilets_Humility_Quote.txt",
+    "target_wav": "EP02_VO_UA_04_ACT1_02_15_03_30_Toilets_Humility_Quote.wav",
+    "target_mp3": "EP02_VO_UA_04_ACT1_02_15_03_30_Toilets_Humility_Quote.mp3",
+    "words": 66,
+    "sample": "Він миє унітази щодня протягом двох років. Через пів столітт..."
+  },
+  {
+    "num": 5,
+    "tc": "[3:30 - 5:15] (118 слів)",
+    "file_txt": "EP02_VO_UA_05_ACT1_03_30_05_15_Dennys_Dishwasher.txt",
+    "target_wav": "EP02_VO_UA_05_ACT1_03_30_05_15_Dennys_Dishwasher.wav",
+    "target_mp3": "EP02_VO_UA_05_ACT1_03_30_05_15_Dennys_Dishwasher.mp3",
+    "words": 118,
+    "sample": "Коли батьки нарешті переїжджають до Орегону, п'ятнадцятирічн..."
+  },
+  {
+    "num": 6,
+    "tc": "[5:15 - 6:30] (98 слів)",
+    "file_txt": "EP02_VO_UA_06_ACT2_05_15_06_30_NVIDIA_Founding_Dennys_1993.txt",
+    "target_wav": "EP02_VO_UA_06_ACT2_05_15_06_30_NVIDIA_Founding_Dennys_1993.wav",
+    "target_mp3": "EP02_VO_UA_06_ACT2_05_15_06_30_NVIDIA_Founding_Dennys_1993.mp3",
+    "words": 98,
+    "sample": "Квітень 1993 року. Сан-Хосе. Та сама мережа закусочних Denny..."
+  },
+  {
+    "num": 7,
+    "tc": "[6:30 - 8:00] (84 слів)",
+    "file_txt": "EP02_VO_UA_07_ACT2_06_30_08_00_NV1_Fatal_Mistake.txt",
+    "target_wav": "EP02_VO_UA_07_ACT2_06_30_08_00_NV1_Fatal_Mistake.wav",
+    "target_mp3": "EP02_VO_UA_07_ACT2_06_30_08_00_NV1_Fatal_Mistake.mp3",
+    "words": 84,
+    "sample": "І вони роблять фатальну помилку. Два роки праці. Усі гроші і..."
+  },
+  {
+    "num": 8,
+    "tc": "[8:00 - 9:30] (140 слів)",
+    "file_txt": "EP02_VO_UA_08_ACT2_08_00_09_30_Sega_Honesty_Gambit.txt",
+    "target_wav": "EP02_VO_UA_08_ACT2_08_00_09_30_Sega_Honesty_Gambit.wav",
+    "target_mp3": "EP02_VO_UA_08_ACT2_08_00_09_30_Sega_Honesty_Gambit.mp3",
+    "words": 140,
+    "sample": "Це точка, де ламаються 99% підприємців. Хуанг збирає всіх пр..."
+  },
+  {
+    "num": 9,
+    "tc": "[9:30 - 10:45] (110 слів)",
+    "file_txt": "EP02_VO_UA_09_ACT2_09_30_10_45_RIVA128_Thirty_Days.txt",
+    "target_wav": "EP02_VO_UA_09_ACT2_09_30_10_45_RIVA128_Thirty_Days.wav",
+    "target_mp3": "EP02_VO_UA_09_ACT2_09_30_10_45_RIVA128_Thirty_Days.mp3",
+    "words": 110,
+    "sample": "Абсолютна, оголена чесність перед лицем смерті обеззброїла с..."
+  },
+  {
+    "num": 10,
+    "tc": "[10:45 - 12:15] (76 слів)",
+    "file_txt": "EP02_VO_UA_10_ACT3_10_45_12_15_GeForce256_CUDA_Bet.txt",
+    "target_wav": "EP02_VO_UA_10_ACT3_10_45_12_15_GeForce256_CUDA_Bet.wav",
+    "target_mp3": "EP02_VO_UA_10_ACT3_10_45_12_15_GeForce256_CUDA_Bet.mp3",
+    "words": 76,
+    "sample": "У 1999 році NVIDIA випускає GeForce 256 і дарує світові саме..."
+  },
+  {
+    "num": 11,
+    "tc": "[12:15 - 13:45] (81 слів)",
+    "file_txt": "EP02_VO_UA_11_ACT3_12_15_13_45_CUDA_Decade_Zero_Market.txt",
+    "target_wav": "EP02_VO_UA_11_ACT3_12_15_13_45_CUDA_Decade_Zero_Market.wav",
+    "target_mp3": "EP02_VO_UA_11_ACT3_12_15_13_45_CUDA_Decade_Zero_Market.mp3",
+    "words": 81,
+    "sample": "Хуанг вимагає вбудовувати апаратну підтримку CUDA у кожен бе..."
+  },
+  {
+    "num": 12,
+    "tc": "[13:45 - 16:15] (118 слів)",
+    "file_txt": "EP02_VO_UA_12_ACT3_13_45_16_15_AlexNet_2012_DGX1.txt",
+    "target_wav": "EP02_VO_UA_12_ACT3_13_45_16_15_AlexNet_2012_DGX1.wav",
+    "target_mp3": "EP02_VO_UA_12_ACT3_13_45_16_15_AlexNet_2012_DGX1.mp3",
+    "words": 118,
+    "sample": "І ось настає 2012 рік. У холодній кімнаті в Торонто двоє асп..."
+  },
+  {
+    "num": 13,
+    "tc": "[16:15 - 17:45] (94 слів)",
+    "file_txt": "EP02_VO_UA_13_ACT4_16_15_17_45_No_Office_Flat_Leadership.txt",
+    "target_wav": "EP02_VO_UA_13_ACT4_16_15_17_45_No_Office_Flat_Leadership.wav",
+    "target_mp3": "EP02_VO_UA_13_ACT4_16_15_17_45_No_Office_Flat_Leadership.mp3",
+    "words": 94,
+    "sample": "Сьогодні NVIDIA — це серцевина нової промислової революції. ..."
+  },
+  {
+    "num": 14,
+    "tc": "[17:45 - 19:30] (143 слів)",
+    "file_txt": "EP02_VO_UA_14_ACT4_17_45_19_30_Three_Rules_Of_Pain.txt",
+    "target_wav": "EP02_VO_UA_14_ACT4_17_45_19_30_Three_Rules_Of_Pain.wav",
+    "target_mp3": "EP02_VO_UA_14_ACT4_17_45_19_30_Three_Rules_Of_Pain.mp3",
+    "words": 143,
+    "sample": "Який головний кодекс життя залишає нам хлопець, який пройшов..."
+  },
+  {
+    "num": 15,
+    "tc": "[19:30 - 21:00] (76 слів)",
+    "file_txt": "EP02_VO_UA_15_ACT4_19_30_21_00_Tattoo_Thirty_Days_Outro.txt",
+    "target_wav": "EP02_VO_UA_15_ACT4_19_30_21_00_Tattoo_Thirty_Days_Outro.wav",
+    "target_mp3": "EP02_VO_UA_15_ACT4_19_30_21_00_Tattoo_Thirty_Days_Outro.mp3",
+    "words": 76,
+    "sample": "На лівому плечі Дженсена Хуанга під чорною шкіряною курткою ..."
+  }
+]
